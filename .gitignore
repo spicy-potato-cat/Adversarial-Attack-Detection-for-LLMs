@@ -1,8 +1,16 @@
-@'
 # ============================================================
 # Adversarial Attack Detection for LLMs
 # Git ignore rules
 # ============================================================
+
+# ------------------------------------------------------------
+# Local dataset corpus and forensic payloads
+# ------------------------------------------------------------
+# Large local dataset corpus; do not commit or stage by default.
+Dataset/
+
+# Phase-3 raw acquisition payloads must remain local and immutable.
+PHASE-3/01_acquisition/raw/
 
 # ------------------------------------------------------------
 # Secrets / local configuration
@@ -83,17 +91,6 @@ temp/
 *.index
 
 # ------------------------------------------------------------
-# Phase-3 raw acquisition payloads
-# These should remain local and immutable, not stored in Git.
+# Keep docs and project metadata visible to Git.
 # ------------------------------------------------------------
-PHASE-3/01_acquisition/raw/
-
-# ------------------------------------------------------------
-# IMPORTANT:
-# Dataset/ is NOT ignored globally yet.
-#
-# The local dataset corpus is ~27 GB and MUST NOT be staged.
-# Exact Dataset/ ignore rules will be added after the
-# Phase-3 agent finishes artifact classification.
-# ------------------------------------------------------------
-'@ | Set-Content .gitignore
+# No broad ignore rules for markdown, scripts, manifests, or configs.
