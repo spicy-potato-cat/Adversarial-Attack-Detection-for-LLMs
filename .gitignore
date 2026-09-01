@@ -1,0 +1,99 @@
+@'
+# ============================================================
+# Adversarial Attack Detection for LLMs
+# Git ignore rules
+# ============================================================
+
+# ------------------------------------------------------------
+# Secrets / local configuration
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+.venv/
+venv/
+env/
+
+# ------------------------------------------------------------
+# Node / JavaScript
+# ------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------
+# IDE / Editor
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------------------------------------------
+# Windows / OS junk
+# ------------------------------------------------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ------------------------------------------------------------
+# Temporary / cache files
+# ------------------------------------------------------------
+.cache/
+tmp/
+temp/
+*.tmp
+*.log
+
+# ------------------------------------------------------------
+# ML model weights / large model artifacts
+# ------------------------------------------------------------
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# ------------------------------------------------------------
+# Vector / embedding indexes
+# ------------------------------------------------------------
+*.faiss
+*.index
+
+# ------------------------------------------------------------
+# Phase-3 raw acquisition payloads
+# These should remain local and immutable, not stored in Git.
+# ------------------------------------------------------------
+PHASE-3/01_acquisition/raw/
+
+# ------------------------------------------------------------
+# IMPORTANT:
+# Dataset/ is NOT ignored globally yet.
+#
+# The local dataset corpus is ~27 GB and MUST NOT be staged.
+# Exact Dataset/ ignore rules will be added after the
+# Phase-3 agent finishes artifact classification.
+# ------------------------------------------------------------
+'@ | Set-Content .gitignore
