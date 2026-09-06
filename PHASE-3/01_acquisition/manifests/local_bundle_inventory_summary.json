@@ -1,0 +1,61 @@
+{
+  "inventory_version": "0.1",
+  "run_id": "PILOT-01-LOCAL-INVENTORY-20260901T211213Z",
+  "started_at": "2026-09-01T21:12:13.481181+00:00",
+  "completed_at": "2026-09-01T21:34:49.263345+00:00",
+  "script_version": "0.1.0",
+  "root": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\Dataset\\Raw\\datasets",
+  "root_policy": "COMMANDER_PROVIDED_RAW_READ_ONLY_INPUT",
+  "network_access": "DISABLED",
+  "file_count_discovered": 46753,
+  "hashed_files": 46752,
+  "failed_files": 1,
+  "total_bytes": 27212988016,
+  "source_bytes": {
+    "GitHub": 1826198973,
+    "HuggingFace": 25386773628,
+    "download-status.csv": 13452,
+    "validated-manifest.csv": 1963
+  },
+  "collection_bytes": {
+    "GitHub/Agent Security Bench": 87481968,
+    "GitHub/AgentDojo": 471510178,
+    "GitHub/AutoDAN": 1196273,
+    "GitHub/BIPIA": 3141149,
+    "GitHub/Do-Not-Answer": 105769712,
+    "GitHub/FigStep-SafeBench": 96157124,
+    "GitHub/HarmBench": 490320645,
+    "GitHub/InjecAgent": 8086742,
+    "GitHub/JailbreakBench": 3814390,
+    "GitHub/LLM-Attacks": 469635,
+    "GitHub/LLMail-Inject": 53430817,
+    "GitHub/MM-SafetyBench": 25071354,
+    "GitHub/OR-Bench": 41764089,
+    "GitHub/SALAD-Bench": 1078704,
+    "GitHub/Tensor Trust": 15923070,
+    "GitHub/WASP": 414295299,
+    "GitHub/XSTest": 6687824,
+    "HuggingFace/CyberSecEval3-Visual-Prompt-Injection": 2530818419,
+    "HuggingFace/JailBreakV-28K": 557145715,
+    "HuggingFace/VLGuard": 1680182932,
+    "HuggingFace/VLSBench": 20021554302,
+    "HuggingFace/WildGuardMix": 56011793,
+    "HuggingFace/WildJailbreak": 540916536,
+    "HuggingFace/authenticated-download-status.csv": 1320,
+    "HuggingFace/bucket-download-status-final.csv": 332,
+    "HuggingFace/bucket-download-status.csv": 790,
+    "HuggingFace/deepset-prompt-injections": 141489,
+    "download-status.csv/NOT_APPLICABLE": 13452,
+    "validated-manifest.csv/NOT_APPLICABLE": 1963
+  },
+  "failures": [
+    {
+      "relative_path": "HuggingFace/VLSBench/.git/lfs/tmp/2703061825",
+      "error": "[WinError 2] The system cannot find the file specified: 'C:\\\\Users\\\\harsh\\\\Adversarial-Attack-Detection-for-LLMs\\\\Dataset\\\\Raw\\\\datasets\\\\HuggingFace\\\\VLSBench\\\\.git\\\\lfs\\\\tmp\\\\2703061825'"
+    }
+  ],
+  "inventory_csv": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\PHASE-3\\01_acquisition\\hashes\\local_bundle_inventory.csv",
+  "inventory_csv_sha256": "2bbead4df3737b1f626ea0dc8fb40f3c5a276973015c7091abba76bf2246f723",
+  "python": "3.11.7 (main, Dec  7 2023, 09:09:57)  [GCC UCRT 13.2.0 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0"
+}

@@ -1,0 +1,30 @@
+{
+  "pilot_id": "PILOT-01",
+  "inventory_version": "0.1",
+  "inventory_sha256": "2bbead4df3737b1f626ea0dc8fb40f3c5a276973015c7091abba76bf2246f723",
+  "inventory_rows": 46753,
+  "hashed_rows": 46752,
+  "failed_rows": 1,
+  "total_bytes": 27212988016,
+  "current_files_force_hidden": 46753,
+  "git_internal_files": 3892,
+  "file_count_explanation": {
+    "earlier_count": 42860,
+    "hidden_git_files": 3892,
+    "current_visible_plus_hidden": 46753,
+    "final_inventory_extra": "one VLSBench .git/lfs/tmp file discovered at scan start vanished before hashing",
+    "equation": "42,860 + 3,892 = 46,752 current files; + 1 vanished temp = 46,753 discovered"
+  },
+  "source_roots": [
+    "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\Dataset\\Raw\\datasets"
+  ],
+  "tool": {
+    "script": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\PHASE-3\\scripts\\post_hash_audit.py",
+    "version": "0.1.0"
+  },
+  "environment": {
+    "python": "3.11.7 (main, Dec  7 2023, 09:09:57)  [GCC UCRT 13.2.0 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "frozen_at": "2026-09-01T21:49:02.459945+00:00"
+}

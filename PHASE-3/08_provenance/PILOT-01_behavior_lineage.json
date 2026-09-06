@@ -1,0 +1,273 @@
+{
+  "pilot_id": "PILOT-01",
+  "status": "MEASURED",
+  "method": "N1 identity of source-preserved base_behavior_text; this does not by itself prove lineage",
+  "eligible_records": {
+    "DS-TXT-008": 500,
+    "DS-TXT-015": 520,
+    "DS-TXT-013": 520,
+    "DS-TXT-007": 970,
+    "DS-TXT-009": 450,
+    "DS-TXT-014": 100
+  },
+  "directional_relationships": {
+    "DS-TXT-013->DS-TXT-013": {
+      "status": "NOT_APPLICABLE"
+    },
+    "DS-TXT-013->DS-TXT-014": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 11,
+      "eligible_records": 520,
+      "percent": 2.1154,
+      "shared_unique_behavior_hashes": 11
+    },
+    "DS-TXT-013->DS-TXT-015": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 520,
+      "eligible_records": 520,
+      "percent": 100.0,
+      "shared_unique_behavior_hashes": 520
+    },
+    "DS-TXT-013->DS-TXT-007": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 520,
+      "eligible_records": 520,
+      "percent": 100.0,
+      "shared_unique_behavior_hashes": 520
+    },
+    "DS-TXT-013->DS-TXT-008": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 97,
+      "eligible_records": 520,
+      "percent": 18.6538,
+      "shared_unique_behavior_hashes": 97
+    },
+    "DS-TXT-013->DS-TXT-009": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 0,
+      "eligible_records": 520,
+      "percent": 0.0,
+      "shared_unique_behavior_hashes": 0
+    },
+    "DS-TXT-014->DS-TXT-013": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 11,
+      "eligible_records": 100,
+      "percent": 11.0,
+      "shared_unique_behavior_hashes": 11
+    },
+    "DS-TXT-014->DS-TXT-014": {
+      "status": "NOT_APPLICABLE"
+    },
+    "DS-TXT-014->DS-TXT-015": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 11,
+      "eligible_records": 100,
+      "percent": 11.0,
+      "shared_unique_behavior_hashes": 11
+    },
+    "DS-TXT-014->DS-TXT-007": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 21,
+      "eligible_records": 100,
+      "percent": 21.0,
+      "shared_unique_behavior_hashes": 21
+    },
+    "DS-TXT-014->DS-TXT-008": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 95,
+      "eligible_records": 100,
+      "percent": 95.0,
+      "shared_unique_behavior_hashes": 95
+    },
+    "DS-TXT-014->DS-TXT-009": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 0,
+      "eligible_records": 100,
+      "percent": 0.0,
+      "shared_unique_behavior_hashes": 0
+    },
+    "DS-TXT-015->DS-TXT-013": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 520,
+      "eligible_records": 520,
+      "percent": 100.0,
+      "shared_unique_behavior_hashes": 520
+    },
+    "DS-TXT-015->DS-TXT-014": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 11,
+      "eligible_records": 520,
+      "percent": 2.1154,
+      "shared_unique_behavior_hashes": 11
+    },
+    "DS-TXT-015->DS-TXT-015": {
+      "status": "NOT_APPLICABLE"
+    },
+    "DS-TXT-015->DS-TXT-007": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 520,
+      "eligible_records": 520,
+      "percent": 100.0,
+      "shared_unique_behavior_hashes": 520
+    },
+    "DS-TXT-015->DS-TXT-008": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 97,
+      "eligible_records": 520,
+      "percent": 18.6538,
+      "shared_unique_behavior_hashes": 97
+    },
+    "DS-TXT-015->DS-TXT-009": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 0,
+      "eligible_records": 520,
+      "percent": 0.0,
+      "shared_unique_behavior_hashes": 0
+    },
+    "DS-TXT-007->DS-TXT-013": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 520,
+      "eligible_records": 970,
+      "percent": 53.6082,
+      "shared_unique_behavior_hashes": 520
+    },
+    "DS-TXT-007->DS-TXT-014": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 24,
+      "eligible_records": 970,
+      "percent": 2.4742,
+      "shared_unique_behavior_hashes": 21
+    },
+    "DS-TXT-007->DS-TXT-015": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 520,
+      "eligible_records": 970,
+      "percent": 53.6082,
+      "shared_unique_behavior_hashes": 520
+    },
+    "DS-TXT-007->DS-TXT-007": {
+      "status": "NOT_APPLICABLE"
+    },
+    "DS-TXT-007->DS-TXT-008": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 110,
+      "eligible_records": 970,
+      "percent": 11.3402,
+      "shared_unique_behavior_hashes": 107
+    },
+    "DS-TXT-007->DS-TXT-009": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 0,
+      "eligible_records": 970,
+      "percent": 0.0,
+      "shared_unique_behavior_hashes": 0
+    },
+    "DS-TXT-008->DS-TXT-013": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 161,
+      "eligible_records": 500,
+      "percent": 32.2,
+      "shared_unique_behavior_hashes": 97
+    },
+    "DS-TXT-008->DS-TXT-014": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 113,
+      "eligible_records": 500,
+      "percent": 22.6,
+      "shared_unique_behavior_hashes": 95
+    },
+    "DS-TXT-008->DS-TXT-015": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 161,
+      "eligible_records": 500,
+      "percent": 32.2,
+      "shared_unique_behavior_hashes": 97
+    },
+    "DS-TXT-008->DS-TXT-007": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 171,
+      "eligible_records": 500,
+      "percent": 34.2,
+      "shared_unique_behavior_hashes": 107
+    },
+    "DS-TXT-008->DS-TXT-008": {
+      "status": "NOT_APPLICABLE"
+    },
+    "DS-TXT-008->DS-TXT-009": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 100,
+      "eligible_records": 500,
+      "percent": 20.0,
+      "shared_unique_behavior_hashes": 100
+    },
+    "DS-TXT-009->DS-TXT-013": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 0,
+      "eligible_records": 450,
+      "percent": 0.0,
+      "shared_unique_behavior_hashes": 0
+    },
+    "DS-TXT-009->DS-TXT-014": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 0,
+      "eligible_records": 450,
+      "percent": 0.0,
+      "shared_unique_behavior_hashes": 0
+    },
+    "DS-TXT-009->DS-TXT-015": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 0,
+      "eligible_records": 450,
+      "percent": 0.0,
+      "shared_unique_behavior_hashes": 0
+    },
+    "DS-TXT-009->DS-TXT-007": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 0,
+      "eligible_records": 450,
+      "percent": 0.0,
+      "shared_unique_behavior_hashes": 0
+    },
+    "DS-TXT-009->DS-TXT-008": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "matched_records": 100,
+      "eligible_records": 450,
+      "percent": 22.2222,
+      "shared_unique_behavior_hashes": 100
+    },
+    "DS-TXT-009->DS-TXT-009": {
+      "status": "NOT_APPLICABLE"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "decision": "DEC-P3-006",
+  "pilot_id": "PILOT-01",
+  "status": "APPROVED_WITH_ISOLATION",
+  "artifacts": [
+    "ART-P01-JBB-001",
+    "ART-P01-JBB-002",
+    "ART-P01-JBB-003",
+    "ART-P01-GCG-001"
+  ],
+  "controls": {
+    "evidence_scope": "PILOT_EVIDENCE_ONLY",
+    "source": "PRE_UPDATE_PINNED",
+    "commander_bundle_equivalent": "NO_COMMANDER_BUNDLE_EQUIVALENT",
+    "main_corpus_promotion": "DENIED"
+  }
+}

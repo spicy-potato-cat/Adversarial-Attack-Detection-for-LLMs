@@ -1,0 +1,64 @@
+{
+  "action": "PRESERVE_FROZEN_INVENTORY; DO_NOT_OVERWRITE",
+  "current_file_count": 46748,
+  "current_git_internal_count": 3888,
+  "frozen_inventory_rows": 46753,
+  "frozen_inventory_sha256": "2bbead4df3737b1f626ea0dc8fb40f3c5a276973015c7091abba76bf2246f723",
+  "observed_at": "2026-09-06T14:50:37.765955+00:00",
+  "only_current": [
+    {
+      "classification": "GIT_LFS_OBJECT",
+      "relative_path": "HuggingFace/VLSBench/.git/lfs/objects/ef/6f/ef6f431266954ee13153c07a838fb0f738f850ef8366a242f1221b28ceee3135",
+      "sha256": "ef6f431266954ee13153c07a838fb0f738f850ef8366a242f1221b28ceee3135",
+      "size_bytes": 918861900
+    }
+  ],
+  "only_in_frozen_inventory": [
+    {
+      "classification": "GIT_LFS_TEMPORARY",
+      "inventory_status": "HASHED_VERIFIED",
+      "relative_path": "HuggingFace/VLSBench/.git/lfs/tmp/1548533105",
+      "sha256": "79f147cf904eaeb02c7e2cece9f79957cca914654e2dac629dae154955ad556f",
+      "size_bytes": "54461440"
+    },
+    {
+      "classification": "GIT_LFS_TEMPORARY",
+      "inventory_status": "HASHED_VERIFIED",
+      "relative_path": "HuggingFace/VLSBench/.git/lfs/tmp/159729303",
+      "sha256": "933da73a5fc669dc8bc68ab68e8d35d6c7d99cef87eac0270ee243a58d4fca78",
+      "size_bytes": "34014208"
+    },
+    {
+      "classification": "GIT_LFS_TEMPORARY",
+      "inventory_status": "HASHED_VERIFIED",
+      "relative_path": "HuggingFace/VLSBench/.git/lfs/tmp/1597317815",
+      "sha256": "ea03ab2ae005def4368ce65ec4d8d216730650c9b911b19a931838e4d64981f9",
+      "size_bytes": "2136900608"
+    },
+    {
+      "classification": "GIT_LFS_TEMPORARY",
+      "inventory_status": "HASHED_VERIFIED",
+      "relative_path": "HuggingFace/VLSBench/.git/lfs/tmp/2512511024",
+      "sha256": "bd5aa96dc2efcc0fa9faf5f8e000ae791d28cd63418e0239413156fd0d9c9331",
+      "size_bytes": "2136638464"
+    },
+    {
+      "classification": "GIT_LFS_TEMPORARY",
+      "inventory_status": "HASHED_VERIFIED",
+      "relative_path": "HuggingFace/VLSBench/.git/lfs/tmp/258494454",
+      "sha256": "c95bd5a033c4e10b5a902110feafd2160d1d61ff602e786c86249c76ee123a00",
+      "size_bytes": "20677632"
+    },
+    {
+      "classification": "GIT_LFS_TEMPORARY",
+      "inventory_status": "FAILED",
+      "relative_path": "HuggingFace/VLSBench/.git/lfs/tmp/2703061825",
+      "sha256": "NOT_MEASURED",
+      "size_bytes": "NOT_MEASURED"
+    }
+  ],
+  "pilot_id": "PILOT-01",
+  "pilot_payload_impact": "NONE_IDENTIFIED; all changed paths are VLSBench Git LFS internals outside Pilot-01",
+  "script_version": "0.1.0",
+  "status": "MEASURED_POST_FREEZE_DRIFT"
+}
