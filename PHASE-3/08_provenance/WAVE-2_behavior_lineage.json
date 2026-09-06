@@ -1,0 +1,619 @@
+{
+  "wave": "WAVE-2",
+  "method": "N1 identity of source-preserved base behavior; similarity alone does not prove lineage",
+  "eligible_records": {
+    "DS-TXT-001": 261559,
+    "DS-TXT-002": 46708,
+    "DS-TXT-016": 127,
+    "DS-TXT-017": 939,
+    "DS-TXT-018": 662,
+    "DS-TXT-007": 970,
+    "DS-TXT-008": 500,
+    "DS-TXT-009": 450,
+    "DS-TXT-013": 520,
+    "DS-TXT-014": 100,
+    "DS-TXT-015": 520
+  },
+  "pairwise": {
+    "DS-TXT-001|DS-TXT-002": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 10229,
+      "a_to_b": {
+        "count": 28227,
+        "denominator": 261559,
+        "percent": 10.7918
+      },
+      "b_to_a": {
+        "count": 23675,
+        "denominator": 46708,
+        "percent": 50.6872
+      }
+    },
+    "DS-TXT-001|DS-TXT-016": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 261559,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 127,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-001|DS-TXT-017": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 261559,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 939,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-001|DS-TXT-018": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 261559,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 662,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-002|DS-TXT-016": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 8,
+      "a_to_b": {
+        "count": 8,
+        "denominator": 46708,
+        "percent": 0.0171
+      },
+      "b_to_a": {
+        "count": 8,
+        "denominator": 127,
+        "percent": 6.2992
+      }
+    },
+    "DS-TXT-002|DS-TXT-017": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 1,
+      "a_to_b": {
+        "count": 1,
+        "denominator": 46708,
+        "percent": 0.0021
+      },
+      "b_to_a": {
+        "count": 1,
+        "denominator": 939,
+        "percent": 0.1065
+      }
+    },
+    "DS-TXT-002|DS-TXT-018": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 46708,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 662,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-016|DS-TXT-017": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 9,
+      "a_to_b": {
+        "count": 9,
+        "denominator": 127,
+        "percent": 7.0866
+      },
+      "b_to_a": {
+        "count": 9,
+        "denominator": 939,
+        "percent": 0.9585
+      }
+    },
+    "DS-TXT-016|DS-TXT-018": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 127,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 662,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-017|DS-TXT-018": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 939,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 662,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-001|DS-TXT-007": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 261559,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 970,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-001|DS-TXT-008": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 1,
+      "a_to_b": {
+        "count": 2,
+        "denominator": 261559,
+        "percent": 0.0008
+      },
+      "b_to_a": {
+        "count": 1,
+        "denominator": 500,
+        "percent": 0.2
+      }
+    },
+    "DS-TXT-001|DS-TXT-009": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 3,
+      "a_to_b": {
+        "count": 5,
+        "denominator": 261559,
+        "percent": 0.0019
+      },
+      "b_to_a": {
+        "count": 3,
+        "denominator": 450,
+        "percent": 0.6667
+      }
+    },
+    "DS-TXT-001|DS-TXT-013": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 261559,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 520,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-001|DS-TXT-014": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 261559,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 100,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-001|DS-TXT-015": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 261559,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 520,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-002|DS-TXT-007": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 46708,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 970,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-002|DS-TXT-008": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 46708,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 500,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-002|DS-TXT-009": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 46708,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 450,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-002|DS-TXT-013": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 46708,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 520,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-002|DS-TXT-014": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 46708,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 100,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-002|DS-TXT-015": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 46708,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 520,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-016|DS-TXT-007": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 11,
+      "a_to_b": {
+        "count": 11,
+        "denominator": 127,
+        "percent": 8.6614
+      },
+      "b_to_a": {
+        "count": 11,
+        "denominator": 970,
+        "percent": 1.134
+      }
+    },
+    "DS-TXT-016|DS-TXT-008": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 127,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 500,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-016|DS-TXT-009": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 127,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 450,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-016|DS-TXT-013": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 11,
+      "a_to_b": {
+        "count": 11,
+        "denominator": 127,
+        "percent": 8.6614
+      },
+      "b_to_a": {
+        "count": 11,
+        "denominator": 520,
+        "percent": 2.1154
+      }
+    },
+    "DS-TXT-016|DS-TXT-014": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 127,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 100,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-016|DS-TXT-015": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 11,
+      "a_to_b": {
+        "count": 11,
+        "denominator": 127,
+        "percent": 8.6614
+      },
+      "b_to_a": {
+        "count": 11,
+        "denominator": 520,
+        "percent": 2.1154
+      }
+    },
+    "DS-TXT-017|DS-TXT-007": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 939,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 970,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-017|DS-TXT-008": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 939,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 500,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-017|DS-TXT-009": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 939,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 450,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-017|DS-TXT-013": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 939,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 520,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-017|DS-TXT-014": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 939,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 100,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-017|DS-TXT-015": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 939,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 520,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-018|DS-TXT-007": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 662,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 970,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-018|DS-TXT-008": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 662,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 500,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-018|DS-TXT-009": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 662,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 450,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-018|DS-TXT-013": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 662,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 520,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-018|DS-TXT-014": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 662,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 100,
+        "percent": 0.0
+      }
+    },
+    "DS-TXT-018|DS-TXT-015": {
+      "status": "MEASURED",
+      "relationship": "IDENTICAL_N1_BASE_BEHAVIOR_TEXT",
+      "shared_unique_hashes": 0,
+      "a_to_b": {
+        "count": 0,
+        "denominator": 662,
+        "percent": 0.0
+      },
+      "b_to_a": {
+        "count": 0,
+        "denominator": 520,
+        "percent": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "registry_version": "0.2",
+  "wave": "WAVE-2",
+  "status": "FORENSIC_ANALYSIS_ONLY",
+  "entries": [
+    {"dataset_id":"DS-TXT-001","name":"WildJailbreak","classification":"SYNTHETIC_SAFETY_TRAINING_AGGREGATE","experimental_role":"NOT_ASSIGNED"},
+    {"dataset_id":"DS-TXT-002","name":"WildGuardMix","classification":"TRAINING_AND_TEST_MODERATION_AGGREGATE","experimental_role":"NOT_ASSIGNED"},
+    {"dataset_id":"DS-TXT-016","name":"SALAD","classification":"SAFETY_BENCHMARK_LOCAL_SAMPLE_ONLY","experimental_role":"NOT_ASSIGNED"},
+    {"dataset_id":"DS-TXT-017","name":"Do-Not-Answer","classification":"UNSAFE_QUESTION_AND_RESPONSE_EVALUATION_SUITE","experimental_role":"NOT_ASSIGNED"},
+    {"dataset_id":"DS-TXT-018","name":"deepset Prompt Injection","classification":"BINARY_PROMPT_INJECTION_DATASET","experimental_role":"NOT_ASSIGNED"}
+  ],
+  "final_constitution": "NOT_APPROVED"
+}

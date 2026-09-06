@@ -115,3 +115,69 @@ Implementation note: the initial minimal network acquisition completed immediate
 before this update was received. Its 11 small artifacts, hashes, and audit log are
 retained as pre-update evidence. No network acquisition is permitted after this
 update, and the Commander bundle is the preferred local source for continued work.
+
+## Wave 2 Authorization
+
+Authorization received: 2026-09-06  
+Scope: `DS-TXT-001`, `DS-TXT-002`, `DS-TXT-016`, `DS-TXT-017`, `DS-TXT-018`
+
+## DEC-P3-005 - Pilot-01 Acceptance
+
+Status: **APPROVED**
+
+Pilot-01 methodology and its forensic report are accepted for bounded expansion.
+
+## DEC-P3-006 - Pre-Update Evidence Isolation
+
+Status: **APPROVED WITH ISOLATION**
+
+The four pre-update JBB/GCG artifacts remain `PILOT_EVIDENCE_ONLY`, with
+`SOURCE = PRE_UPDATE_PINNED` and `NO_COMMANDER_BUNDLE_EQUIVALENT`. They are not
+promoted into the main corpus. The immutable overlay is recorded in
+`../01_acquisition/manifests/PILOT-01_isolation_overlay.json`.
+
+## DEC-P3-007 - Pilot Semantic Limitation
+
+Status: **ACCEPTED LIMITATION**
+
+Pilot-01 semantic overlap remains `NOT_MEASURED`. Wave 2 does not authorize a
+large ML dependency installation or model download.
+
+## DEC-P3-008 - Working Schema v0.2
+
+Status: **APPROVED WITH CONDITION**
+
+Canonical schema v0.2 is the working Phase-3 schema. Normalized binary, attack
+family, and attack subtype fields remain `UNKNOWN` until a separate taxonomy rule
+is approved.
+
+## DEC-P3-009 - Provisional Roles Only
+
+Status: **PROVISIONAL ONLY**
+
+Role recommendations may support planning but do not establish final dataset roles.
+The dataset constitution remains `NOT APPROVED`.
+
+## DEC-P3-010 - Rights and Privacy Continuation
+
+Status: **APPROVED**
+
+Unresolved rights/privacy does not block forensic analysis, but blocks promotion
+into finalized training, validation, test, pristine-benchmark, or redistributable roles.
+
+## DEC-P3-011 - Wave 2 Forensic Analysis
+
+Status: **APPROVED**
+
+Wave 2 is limited to WildJailbreak, WildGuardMix, SALAD, Do-Not-Answer, and
+deepset Prompt Injection. No Wave 3, multimodal analysis, training, split
+construction, calibration, model selection, threshold selection, or final
+constitution is authorized. The Commander-local bundle remains the only payload
+input; missing data must be reported and not downloaded.
+
+## Active Wave 2 Boundary
+
+Authorized work is source/version resolution, inventory extraction, raw-integrity
+verification, schema v0.2 adaptation, quality and overlap analysis, lineage,
+rights/privacy review, provisional role recommendations, testing, and reporting.
+Wave 2 stops for Commander review when its report is complete.

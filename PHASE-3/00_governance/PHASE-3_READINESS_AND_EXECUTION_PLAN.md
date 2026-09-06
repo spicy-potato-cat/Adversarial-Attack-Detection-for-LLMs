@@ -1,8 +1,13 @@
 # Phase-3 Readiness & Execution Plan
 
-Status: **AWAITING COMMANDER REVIEW**  
-Workspace phase: readiness initialization  
-Dataset acquisition performed: **NO**
+Status: **WAVE 2 FORENSICS COMPLETE - AWAITING COMMANDER REVIEW**
+Workspace phase: Wave 2 final stop gate
+Dataset acquisition performed: **COMMANDER-LOCAL BUNDLE INVENTORIED; NO POST-UPDATE DOWNLOAD**
+
+Execution-state authority is recorded in `COMMANDER_DECISIONS.md`. Pilot-01 and
+Wave 2 results are in `../reports/`. This original readiness
+plan remains the scope baseline; the recorded Commander decisions and report
+supersede its pre-authorization execution wording.
 
 ## 1. Mission Restatement
 
@@ -322,45 +327,34 @@ will be captured for stochastic or approximate procedures.
 
 ## 10. Blockers
 
-No technical blocker prevents a small, metadata-first pilot after review. Controlled
-payload acquisition should not begin until the Commander confirms the readiness
-gate and the local storage/access policy for potentially harmful and PII-bearing
-raw data. Dataset-specific ambiguity or rights uncertainty will be handled through
-per-source quarantine rather than guessed away.
+Pilot-01 completed without a validity-blocking hashing failure. Embedding-based
+semantic overlap remains `NOT_MEASURED` because an approved pinned inference
+environment was unavailable. Dataset-specific rights and PII uncertainty remain
+explicit review items. Wave 2 and all model work remain blocked by the final gate.
 
-Large-scale acquisition remains blocked by this bootstrap's explicit review gate.
+## 11. Decisions Recorded
 
-## 11. Decisions Required
-
-1. **Approve or revise this readiness plan and proposed stable ID registry.** This
-   authorizes implementation of the controlled acquisition pilot, not final roles.
-2. **Confirm preservation controls for pristine candidates.** Recommended default:
-   isolated raw/derived paths, explicit `evaluation_only` status, and prohibition on
-   model selection or threshold tuning; membership remains provisional.
-3. **Approve the raw-data access and retention policy.** Recommended default:
-   least-privilege local storage, no redistribution, source-term compliance, and
-   quarantine for unresolved rights or PII.
-4. **Select the first pilot lineage cluster.** Recommendation: AdvBench plus metadata
-   and source evidence for GCG, AutoDAN, HarmBench, JBB, and XSTest, with payload
-   acquisition limited initially to the smallest legally supportable artifacts.
+1. Readiness plan and stable ID registry: **APPROVED** (`DEC-P3-001`).
+2. Pristine-candidate controls: **APPROVED WITH MODIFICATION** (`DEC-P3-002`).
+3. RAW/FORENSIC/EXPERIMENTAL separation and no-redistribution default:
+   **APPROVED WITH MODIFICATION** (`DEC-P3-003`).
+4. AdvBench/GCG/AutoDAN/HarmBench/JBB/XSTest Pilot-01 cluster:
+   **APPROVED** (`DEC-P3-004`).
+5. Existing Commander-local bundle made authoritative; new payload downloads
+   disabled without separate approval.
 
 These decisions do not approve a dataset constitution, split strategy, or model use.
 
-## 12. Proposed Next Action
+## 12. Current Next Action
 
-After Commander approval, execute one metadata-first acquisition pilot for the
-AdvBench/GCG/AutoDAN/HarmBench/JBB/XSTest lineage cluster:
-
-- resolve authoritative identities, URLs, papers/cards, licenses, and immutable revisions;
-- populate manifest records with `NOT_VERIFIED` for unresolved claims;
-- acquire and hash only the smallest legally supportable artifact needed to test
-  staging, immutability, schema adaptation, and audit logging;
-- produce a pilot acquisition report and stop for review before expanding the wave.
+Review `../reports/PILOT-01_FORENSIC_REPORT.md`, decide whether to authorize a
+pinned semantic-overlap environment, accept or revise the schema and provisional
+role recommendations, and separately decide whether Wave 2 may begin.
 
 ## Commander Review Gate
 
 **COMMANDER DECISION REQUIRED**
 
-Do not begin controlled dataset acquisition until the decisions in Section 11 are
-recorded. Do not begin large-scale acquisition, model development, training,
-threshold tuning, synthetic-data generation, or final dataset-role assignment.
+Pilot-01 has stopped. Do not begin Wave 2, additional payload acquisition, model
+development, training, threshold tuning, synthetic-data generation, or final
+dataset-role assignment without a new Commander decision.

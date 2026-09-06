@@ -2,7 +2,9 @@ import csv
 import hashlib
 import importlib.util
 import json
+import gzip
 import stat
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -13,12 +15,14 @@ ROOT = Path(__file__).resolve().parents[1]
 def load(name, relative):
     spec = importlib.util.spec_from_file_location(name, ROOT / relative)
     module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
     spec.loader.exec_module(module)
     return module
 
 
 acquire = load("pilot01_acquire", "scripts/pilot01_acquire.py")
 forensics = load("pilot01_forensics", "scripts/pilot01_forensics.py")
+wave2 = load("wave2_forensics", "scripts/wave2_forensics.py")
 
 
 class CanonicalizationTests(unittest.TestCase):
@@ -103,6 +107,54 @@ class InfrastructureTests(unittest.TestCase):
         second=[hashlib.sha256(v.encode()).hexdigest() for v in values]
         self.assertEqual(first,second)
         self.assertEqual(first[0],first[1])
+
+    def test_wave2_adversarial_and_base_are_separate(self):
+        row={"vanilla":"base","adversarial":"base with tactic","completion":"response","data_type":"adversarial_harmful"}
+        mapped=wave2.adapt("ART-W2-WJ-TRAIN",row)
+        self.assertEqual(mapped["text"],"base with tactic")
+        self.assertEqual(mapped["base"],"base")
+        self.assertEqual(mapped["adversarial"],"base with tactic")
+
+    def test_wave2_minhash_matches_pilot_implementation(self):
+        text="one two three four five"
+        prime,coefficients=wave2.minhash_coefficients(128,1701)
+        self.assertEqual(wave2.minhash_signature(text,prime,coefficients),forensics.minhash_signature(forensics.shingles(text),128,1701))
+
+    def test_wave2_comparisons_require_a_wave2_dataset(self):
+        pilot_a=1 << wave2.DATASET_INDEX["DS-TXT-007"]
+        pilot_b=1 << wave2.DATASET_INDEX["DS-TXT-008"]
+        wave_a=1 << wave2.DATASET_INDEX["DS-TXT-001"]
+        self.assertFalse(wave2.has_target_pair(pilot_a,pilot_b))
+        self.assertTrue(wave2.has_target_pair(wave_a,pilot_a))
+
+    def test_wave2_outputs_reconcile_all_source_rows(self):
+        quality = json.loads((ROOT / "04_quality" / "WAVE-2_quality.json").read_text(encoding="utf-8"))
+        rejected = json.loads((ROOT / "04_quality" / "WAVE-2_non_analyzable_records.json").read_text(encoding="utf-8"))
+        total = sum(item["counts"]["total_records"] for item in quality["artifacts"])
+        with gzip.open(ROOT / "03_schema" / "WAVE-2_normalized_records.jsonl.gz", "rt", encoding="utf-8") as handle:
+            canonical = sum(1 for _ in handle)
+        self.assertEqual(canonical + len(rejected["records"]), total)
+
+    def test_wave2_schema_and_taxonomy_policy(self):
+        required = {"schema_version", "sample_id", "source", "labels", "generation", "lineage",
+                    "forensics", "derived", "rights", "governance"}
+        count = 0
+        with gzip.open(ROOT / "03_schema" / "WAVE-2_normalized_records.jsonl.gz", "rt", encoding="utf-8") as handle:
+            for line in handle:
+                record = json.loads(line)
+                self.assertTrue(required.issubset(record))
+                self.assertEqual(record["schema_version"], "0.2")
+                self.assertEqual(set(record["labels"].values()), {"UNKNOWN"})
+                count += 1
+        run = json.loads((ROOT / "logs" / "WAVE-2_forensic_run.json").read_text(encoding="utf-8"))
+        self.assertEqual(count, run["wave2_record_count"])
+
+    def test_wave2_selected_raw_hashes_remain_current(self):
+        manifest = json.loads((ROOT / "01_acquisition" / "manifests" / "WAVE-2_manifest.json").read_text(encoding="utf-8"))
+        raw_root = ROOT.parent / "Dataset" / "Raw" / "datasets"
+        for dataset in manifest["datasets"]:
+            for artifact in dataset["record_bearing_files"]:
+                self.assertEqual(wave2.sha256_file(raw_root / artifact["path"]), artifact["sha256"])
 
 
 if __name__ == "__main__":
