@@ -1,0 +1,11 @@
+{
+  "binary_vote": true,
+  "calibrated_probability_is_null": true,
+  "detector_id": "semantic_embedding_lr",
+  "detector_result_status": "success",
+  "detector_version": "dm_a_v1",
+  "deterministic_classifier_output": true,
+  "embedding_dim": 1024,
+  "raw_score": 0.5740596144997496,
+  "status": "PASSED"
+}

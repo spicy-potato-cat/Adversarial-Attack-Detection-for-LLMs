@@ -1,0 +1,24 @@
+{
+  "classifier_type": "logistic_regression",
+  "classifier_version": "dm_a_v1",
+  "embedding_model_id": "WhereIsAI/UAE-Large-V1",
+  "embedding_model_revision": "local-cache-model_safetensors_sha256:8ac0e0e2eb9f5371c528f5269876e33b298790699ddf3b824efeef9ded542e24",
+  "embedding_dim": 1024,
+  "positive_label": 1,
+  "training_manifest_id": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "feature_normalization": "sentence-transformers normalized embeddings",
+  "label_mapping": {
+    "benign": 0,
+    "attack": 1
+  },
+  "software_version": "TECH-SEM-001",
+  "created_at": "2026-09-20T12:50:50.717203+00:00",
+  "solver": "lbfgs",
+  "penalty": "l2",
+  "C": 1.0,
+  "class_weight": "balanced",
+  "max_iter": 1000,
+  "random_seed": 1701,
+  "fit_intercept": true,
+  "default_cutpoint": 0.5
+}

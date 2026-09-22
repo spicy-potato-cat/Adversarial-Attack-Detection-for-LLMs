@@ -41,6 +41,7 @@ htmlcov/
 .venv/
 venv/
 env/
+.local-python/
 
 # ------------------------------------------------------------
 # Node / JavaScript
@@ -83,6 +84,8 @@ temp/
 *.ckpt
 *.safetensors
 *.onnx
+detection_service/.model-cache/
+detection_service/outputs/
 
 # ------------------------------------------------------------
 # Vector / embedding indexes
@@ -94,3 +97,15 @@ temp/
 # Keep docs and project metadata visible to Git.
 # ------------------------------------------------------------
 # No broad ignore rules for markdown, scripts, manifests, or configs.
+
+# ------------------------------------------------------------
+# Ignore paper 
+paper/
+
+reviews/
+
+PHASE-3/
+paper/
+docs/
+experiment_readiness/
+data_governance/

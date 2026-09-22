@@ -1,0 +1,14 @@
+{
+  "batch_size": 16,
+  "device": "cpu",
+  "embedding_dim": 1024,
+  "encoder_model": "WhereIsAI/UAE-Large-V1",
+  "encoder_revision": "local-cache-model_safetensors_sha256:8ac0e0e2eb9f5371c528f5269876e33b298790699ddf3b824efeef9ded542e24",
+  "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "normalize_embeddings": true,
+  "partitions": [
+    "BASE_TRAIN",
+    "VALIDATION"
+  ],
+  "preprocessing_version": "D_M-A-v1-source-raw-text-preserved"
+}
