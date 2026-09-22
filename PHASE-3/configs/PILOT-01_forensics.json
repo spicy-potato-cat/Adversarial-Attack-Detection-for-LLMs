@@ -1,7 +1,0 @@
-{
-  "config_version":"PILOT-01-CONFIG-v0.1",
-  "canonicalization":{"N0":"CANON-N0-v0.1","N1":"CANON-N1-v0.1","N2":"CANON-N2-v0.1"},
-  "near_duplicate":{"tokenizer":"unicode_word_casefold_v0.1","shingles":"word_3gram","candidate_thresholds":[0.7,0.8,0.9],"verification_metric":"jaccard","candidate_generation":"deterministic_minhash_lsh_v0.1","num_perm":128,"bands":32,"rows_per_band":4},
-  "semantic_overlap":{"status":"NOT_MEASURED","reason":"Exact and lexical pipeline must be validated first; no pinned embedding dependency approved for this minimal run."},
-  "random_seed":1701
-}
