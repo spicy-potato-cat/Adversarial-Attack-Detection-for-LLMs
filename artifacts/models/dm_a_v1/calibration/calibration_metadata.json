@@ -1,0 +1,104 @@
+{
+  "detector_id": "semantic_embedding_lr",
+  "detector_version": "dm_a_v1",
+  "calibration_version": "dm_a_v1_sigmoid_v1",
+  "calibration_method": "platt_sigmoid_on_lr_log_odds",
+  "calibration_manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "calibration_membership_sha256": "763a84800607293b5a7b884628b73bb9ece392dd4e7307fb946938b749f50418",
+  "label_mapping": {
+    "benign": 0,
+    "attack": 1
+  },
+  "source_counts": {
+    "Do-Not-Answer": 133,
+    "deepset Prompt Injection": 100
+  },
+  "source_artifact_sha256": {
+    "Dataset/Raw/datasets/GitHub/Do-Not-Answer/datasets/Instruction/do_not_answer_en.csv": "8585dc135d3b8692b2e464151a313f5164e30f06416e03aa5d11e6c3a21d980e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/train-00000-of-00001-9564e8b05b4757ab.parquet": "2e10bc7ab30f542c97e4e83e2a5683000b5057d25ec10908784c631d44124c04",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e"
+  },
+  "policy_sha256": {
+    "experiment_readiness\\LABEL_TAXONOMY_v1.md": "5fbf8c3a95a1e4a245615af8fd784870a8a6998f8fbc1806827c207471d78de9",
+    "data_governance\\DEVELOPMENT_DATA_CONSTITUTION_v1.md": "54bb6d036a00732926a138e04620e5aa6abed6940b45d721267564bbec9b4e43"
+  },
+  "frozen_model_sha256": {
+    "classifier.joblib": "3103c504a4ccf4afece9b97373f2b913d3a1de22dc8151d4a3b582bfcf1c6e97",
+    "classifier_metadata.json": "f07aa02dd3fc5496a07bf28f8edd47b863f56b22048e564e77eff509e9ca7747",
+    "model_config.json": "14e2f1c17d1c515574c145cd88005aacef40855b45cfe649a6fe15b840a054a5"
+  },
+  "frozen_config": {
+    "C": 1.0,
+    "batch_size": 16,
+    "canonical_text_field": "source.raw_text",
+    "class_weight": "balanced",
+    "classifier_type": "logistic_regression",
+    "default_development_cutpoint": 0.5,
+    "detector_id": "semantic_embedding_lr",
+    "detector_version": "dm_a_v1",
+    "device_policy": "cpu",
+    "dtype": "float32",
+    "embedding_dim": 1024,
+    "encoder_local_path": "C:\\Users\\harsh\\.cache\\torch\\sentence_transformers\\WhereIsAI_UAE-Large-V1",
+    "encoder_model": "WhereIsAI/UAE-Large-V1",
+    "encoder_revision": "local-cache-model_safetensors_sha256:8ac0e0e2eb9f5371c528f5269876e33b298790699ddf3b824efeef9ded542e24",
+    "fit_intercept": true,
+    "label_mapping": {
+      "attack": 1,
+      "benign": 0
+    },
+    "max_iter": 1000,
+    "max_sequence_length": 512,
+    "normalize_embeddings": true,
+    "penalty": "l2",
+    "pooling": "cls_token",
+    "preprocessing_version": "D_M-A-v1-source-raw-text-preserved",
+    "random_seed": 1701,
+    "solver": "lbfgs",
+    "tokenizer_id": "WhereIsAI/UAE-Large-V1",
+    "tokenizer_revision": "local-cache-tokenizer_json_sha256:d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "training_manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+    "truncation_policy": "sentence-transformers tokenizer truncation to max_seq_length=512",
+    "whitespace_behavior": "preserve source text; no additional whitespace normalization"
+  },
+  "encoder_files_sha256": {
+    "model.safetensors": "8ac0e0e2eb9f5371c528f5269876e33b298790699ddf3b824efeef9ded542e24",
+    "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+  },
+  "coefficient_sha256": "ba3e9eaba55a2096fdce0d71b48f341684c9bafb47ccff3d4bbdc8bfcdf3b4c2",
+  "created_at": "2026-10-01T10:25:01.035131+00:00",
+  "software_versions": {
+    "numpy": "2.1.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.6.1",
+    "sentence-transformers": "3.4.1",
+    "torch": "2.6.0",
+    "transformers": "4.49.0",
+    "pyarrow": "19.0.1"
+  },
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "git": {
+    "branch": "main",
+    "head": "9a68a4322fa1c010588ae9c0911c7d52286a8043",
+    "status_short": "M detection_service/app/detectors/semantic/detector.py\n?? detection_service/app/detectors/semantic/calibration.py\n?? detection_service/scripts/calibrate_semantic_baseline.py\n?? detection_service/tests/test_semantic_calibration.py"
+  },
+  "embedding_seconds": 60.44006079999963,
+  "device": "cpu",
+  "partitions_fitted": [
+    "CALIBRATION"
+  ],
+  "validation_consumed": false,
+  "base_train_consumed": false,
+  "protected_data_consumed": false,
+  "classifier_retrained": false,
+  "embedding_cache_reused": false,
+  "raw_probability_sha256": "702553c48ecbbd5be4c74fce10cc589755eee78887f6d2bf7d879071c457327f",
+  "method_prespecified": true,
+  "optimizer_iterations": 8,
+  "optimizer_converged": true,
+  "calibration_sample_count": 233,
+  "calibration_positive_count": 41,
+  "calibration_negative_count": 192,
+  "calibrator_sha256": "8769d252cce23df70c2cf2264f7765d0e7a10fc7650cc3ea8489e826cda8ff36"
+}

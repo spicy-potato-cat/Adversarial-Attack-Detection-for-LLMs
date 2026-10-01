@@ -55,6 +55,7 @@ def _default_detectors(settings: Settings) -> list[BaseDetector]:
             SemanticBaselineDetector.from_artifact(
                 settings.semantic.classifier_artifact_dir,
                 device=settings.semantic.device,
+                require_calibration=True,
             )
         )
     return detectors
