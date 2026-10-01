@@ -10,6 +10,7 @@ from detection_service.app.detectors.statistical.perplexity_detector import (
     StatisticalPerplexityDetector,
 )
 from detection_service.app.detectors.semantic.detector import SemanticBaselineDetector
+from detection_service.app.detectors.semantic_finetuned.detector import FineTunedSemanticDetector
 
 
 def create_app(
@@ -58,4 +59,10 @@ def _default_detectors(settings: Settings) -> list[BaseDetector]:
                 require_calibration=True,
             )
         )
+    if settings.enable_finetuned_semantic_detector:
+        if not settings.finetuned_model_dir:
+            raise RuntimeError("FINETUNED_SEMANTIC_MODEL_DIR is required when D_M-B is enabled")
+        detectors.append(FineTunedSemanticDetector.from_artifact(
+            settings.finetuned_model_dir, device=settings.finetuned_device,
+        ))
     return detectors

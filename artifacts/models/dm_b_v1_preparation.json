@@ -1,0 +1,66 @@
+{
+  "snapshot_path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dm_b_v1\\snapshot-fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+  "upstream_files_sha256": {
+    "config.json": "c89c71e1352d0d95f0cc3da0b4d1d22b64c2be0bbdaa36cd9be451d6c781b4fa",
+    "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "model.safetensors": "2b11ca9cf3d2cbb44cc1a93ad96aedc2894231ae6e33e2d2268c3d7b1ff97663",
+    "README.md": "a4a8b2530f6a4db8c76049c25a2104b90782395085aea17ea86b31348de8ca94",
+    "tokenizer.json": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+    "tokenizer_config.json": "994f46754c5bf4014f1aa92d34b1374319c3a6b3f702105cd5b742beaecd18ce",
+    "vocab.json": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655"
+  },
+  "status": "PREPARED_NOT_TRAINED",
+  "upstream_model": "distilbert/distilroberta-base",
+  "revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+  "tokenizer_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+  "license": "apache-2.0",
+  "model_card_url": "https://huggingface.co/distilbert/distilroberta-base/blob/fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b/README.md",
+  "retrieved_at": "2026-10-01T11:08:13.961809+00:00",
+  "parameter_count": 82119938,
+  "architecture": "RobertaForSequenceClassification",
+  "num_hidden_layers": 6,
+  "hidden_size": 768,
+  "max_position_embeddings": 514,
+  "packages": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "torch_runtime": "2.6.0+cpu",
+    "torch": "2.6.0",
+    "transformers": "4.49.0",
+    "numpy": "2.1.3",
+    "scikit-learn": "1.6.1",
+    "pyarrow": "19.0.1",
+    "huggingface-hub": "0.36.2",
+    "safetensors": "0.8.0"
+  },
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "logical_cpus": 16,
+    "ram_bytes": 16869548032,
+    "cuda_available": false,
+    "torch_cuda": null,
+    "available_ram_bytes": 3411030016,
+    "nvidia_smi": "NVIDIA GeForce RTX 3070 Ti Laptop GPU, 8192 MiB"
+  },
+  "git": {
+    "branch": "tech/sem-002",
+    "head": "200174fdea04ae227ad2630331cfaf498a4d9504",
+    "status_short": "M detection_service/.env.example\n M detection_service/app/core/settings.py\n M detection_service/app/main.py\n?? detection_service/app/detectors/semantic_finetuned/\n?? detection_service/scripts/train_semantic_finetuned.py\n?? detection_service/tests/test_semantic_finetuned.py"
+  },
+  "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "base_train_count": 1135,
+  "base_train_class_counts": {
+    "0": 952,
+    "1": 183
+  },
+  "class_weights": [
+    0.5961134453781513,
+    3.101092896174863
+  ],
+  "total_steps": 426,
+  "calibration_used": false,
+  "protected_data_used": false,
+  "partition_membership_sha256": "f0651e2e461171277425cc73b0aecc3093fac95afbb9a81987b08fdf0c8b99e4",
+  "initialization_warning": "Upstream MLM head discarded; binary classifier head initialized from seed 1701.",
+  "warmup_steps": 43,
+  "recipe_sha256": "2b5b41ce90ff931caf6a6fbddcd2beed19ea802cf657125b996dbdf0c96b0484"
+}

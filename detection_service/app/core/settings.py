@@ -11,6 +11,9 @@ class Settings:
     statistical: PerplexityConfig
     semantic: SemanticConfig = field(default_factory=SemanticConfig)
     enable_semantic_detector: bool = False
+    enable_finetuned_semantic_detector: bool = False
+    finetuned_model_dir: str | None = None
+    finetuned_device: str = "cpu"
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -56,4 +59,8 @@ class Settings:
             semantic=semantic,
             enable_semantic_detector=os.getenv("ENABLE_SEMANTIC_DETECTOR", "false").lower()
             in {"1", "true", "yes"},
+            enable_finetuned_semantic_detector=os.getenv("ENABLE_FINETUNED_SEMANTIC_DETECTOR", "false").lower()
+            in {"1", "true", "yes"},
+            finetuned_model_dir=os.getenv("FINETUNED_SEMANTIC_MODEL_DIR"),
+            finetuned_device=os.getenv("FINETUNED_SEMANTIC_DEVICE", "cpu"),
         )
