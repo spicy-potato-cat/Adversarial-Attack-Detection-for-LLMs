@@ -1,6 +1,6 @@
 # TECH-SEM-002 Model and Recipe Freeze v1
 
-Status: RECIPE_FROZEN; AUTHORITATIVE_TRAINING_PENDING. Date: 2026-10-01.
+Status: TRAINED_RAW_MODEL_FROZEN. Date: 2026-10-01.
 Project detector D_M-B; version dm_b_v1; detector_id semantic_finetuned.
 No prior exact model decision was present in the repository. The earlier paper
 notes retain TODO-MODEL and describe a lightweight end-to-end sequence classifier.

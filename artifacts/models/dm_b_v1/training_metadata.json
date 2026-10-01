@@ -1,8 +1,3 @@
-# TECH-SEM-002 Training Report v1
-
-Training: COMPLETE. BASE_TRAIN only.
-
-```json
 {
   "phase": "TECH-SEM-002",
   "status": "TRAINED_RAW_MODEL_FROZEN",
@@ -139,6 +134,3 @@ Training: COMPLETE. BASE_TRAIN only.
     "detection_service\\app\\detectors\\statistical\\__init__.py": "32ec738f8a25da0552facb413a694b038876ec4b35c56d21de5ed25145608a2e"
   }
 }
-```
-
-All model layers updated. Fixed final checkpoint; no validation-driven selection.

@@ -1,0 +1,4 @@
+{
+  "started_at": "2026-10-01T12:37:45.632218+00:00",
+  "checkpoint_policy": "final_epoch_only_no_validation_selection"
+}

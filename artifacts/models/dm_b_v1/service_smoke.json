@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "deterministic": true,
+  "result": {
+    "detector_id": "semantic_finetuned",
+    "detector_version": "dm_b_v1",
+    "status": "success",
+    "raw_score": 0.01629982516169548,
+    "calibrated_probability": null,
+    "binary_vote": false,
+    "features": null,
+    "semantic_features": null,
+    "input_coverage": null,
+    "model": {
+      "model_id": "distilbert/distilroberta-base",
+      "model_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+      "tokenizer_id": "distilbert/distilroberta-base",
+      "device": "cpu"
+    },
+    "latency_ms": 75.49880000078701,
+    "warnings": [],
+    "metadata": {
+      "probability_type": "raw_softmax_class_1_probability",
+      "label_mapping": {
+        "benign": 0,
+        "attack": 1
+      },
+      "cutpoint_type": "DEFAULT_DEVELOPMENT_CUTPOINT",
+      "default_cutpoint": 0.5,
+      "tokenizer_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+      "input_tokens_including_special": 9,
+      "tokens_analyzed_including_special": 9,
+      "max_sequence_length": 256,
+      "truncated": false,
+      "truncation_side": "right",
+      "padding": "longest_in_batch",
+      "latency_basis": "batch_elapsed_ms_divided_by_batch_count"
+    }
+  }
+}

@@ -1,8 +1,3 @@
-# TECH-SEM-002 DEVELOPMENT-ONLY VALIDATION
-
-233 rows; final frozen checkpoint; raw-score cutpoint 0.5.
-
-```json
 {
   "sample_count": 233,
   "positive_count": 39,
@@ -30,8 +25,3 @@
     "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e"
   }
 }
-```
-
-These results are not E1-E10 and are not protected evaluation results.
-The approved development corpus is narrow; no comprehensive attack-taxonomy claim.
-CALIBRATION was not consumed. No retraining or threshold optimization follows.
