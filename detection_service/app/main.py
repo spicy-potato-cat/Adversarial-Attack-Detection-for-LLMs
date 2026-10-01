@@ -63,6 +63,6 @@ def _default_detectors(settings: Settings) -> list[BaseDetector]:
         if not settings.finetuned_model_dir:
             raise RuntimeError("FINETUNED_SEMANTIC_MODEL_DIR is required when D_M-B is enabled")
         detectors.append(FineTunedSemanticDetector.from_artifact(
-            settings.finetuned_model_dir, device=settings.finetuned_device,
+            settings.finetuned_model_dir, device=settings.finetuned_device, require_calibration=True,
         ))
     return detectors

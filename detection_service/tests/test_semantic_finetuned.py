@@ -228,7 +228,7 @@ def test_default_service_wiring_loads_dm_b_without_substitution(tmp_path, monkey
                         lambda path, **kwargs: (calls.append((path, kwargs)) or sentinel))
     settings = Settings("test", PerplexityConfig(), enable_finetuned_semantic_detector=True, finetuned_model_dir="dm_b")
     detectors = _default_detectors(settings)
-    assert detectors[-1] is sentinel and calls == [("dm_b", {"device": "cpu"})]
+    assert detectors[-1] is sentinel and calls == [("dm_b", {"device": "cpu", "require_calibration": True})]
 
 
 def test_manifest_boundary_and_class_weights_base_train_only(tmp_path):

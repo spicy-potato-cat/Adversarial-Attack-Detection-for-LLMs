@@ -1,0 +1,19 @@
+{
+  "method": "platt_sigmoid_on_softmax_log_odds",
+  "calibration_version": "dm_b_v1_cal_v1",
+  "input": "logit(clip(raw_softmax_class_1_probability,1e-12,1-1e-12))",
+  "epsilon": 1e-12,
+  "target_smoothing": "positive=(Npos+1)/(Npos+2); negative=1/(Nneg+2)",
+  "optimizer": "L-BFGS-B",
+  "initial_slope": 1.0,
+  "positive_slope_lower_bound": 1e-08,
+  "initial_intercept": "log((Npos+1)/(Nneg+1))",
+  "maxiter": 1000,
+  "ftol": 1e-12,
+  "gtol": 1e-10,
+  "class_weight": null,
+  "penalty": null,
+  "seed": "none; deterministic optimizer",
+  "binary_vote_basis": "unchanged raw_score >= 0.5",
+  "final_threshold": "NOT_FROZEN"
+}

@@ -1,0 +1,1403 @@
+{
+  "scope": "CALIBRATION_ONLY",
+  "records": [
+    {
+      "record_id": "W2-caff5175b7e62bf1ebd7295a",
+      "label": 0,
+      "raw_score": 0.0001438662875443697,
+      "calibrated_probability": 0.021625154146868306
+    },
+    {
+      "record_id": "W2-d39c98310b1a7542b6d4c4c6",
+      "label": 0,
+      "raw_score": 0.0001284989557461813,
+      "calibrated_probability": 0.020384421861066447
+    },
+    {
+      "record_id": "W2-0a5ec19edc8ce03c44530242",
+      "label": 0,
+      "raw_score": 0.000382218073355034,
+      "calibrated_probability": 0.03591806968778766
+    },
+    {
+      "record_id": "W2-e9b099f7992084b147b257ae",
+      "label": 0,
+      "raw_score": 0.0001224970183102414,
+      "calibrated_probability": 0.019880297830648586
+    },
+    {
+      "record_id": "W2-d71ac504a442cc4e3ab77b4a",
+      "label": 0,
+      "raw_score": 0.0001172232223325409,
+      "calibrated_probability": 0.019427313108194243
+    },
+    {
+      "record_id": "W2-545cb2389c0e02751a489e3b",
+      "label": 0,
+      "raw_score": 0.00012037085980409756,
+      "calibrated_probability": 0.019698839215469114
+    },
+    {
+      "record_id": "W2-79f2c1400b81137f79fe0e1b",
+      "label": 0,
+      "raw_score": 0.00012672506272792816,
+      "calibrated_probability": 0.020236643207028896
+    },
+    {
+      "record_id": "W2-767601ca097e20ca85521bc2",
+      "label": 0,
+      "raw_score": 0.00012198437616461888,
+      "calibrated_probability": 0.019836687172163192
+    },
+    {
+      "record_id": "W2-13221ea399c6cdc7cad2a3d1",
+      "label": 0,
+      "raw_score": 0.00012607252574525774,
+      "calibrated_probability": 0.02018202861655818
+    },
+    {
+      "record_id": "W2-ba1292151ec42f714a1de1fe",
+      "label": 0,
+      "raw_score": 0.00012167929526185617,
+      "calibrated_probability": 0.01981069147081477
+    },
+    {
+      "record_id": "W2-9c39a38d40c777f669101620",
+      "label": 0,
+      "raw_score": 0.00012848988990299404,
+      "calibrated_probability": 0.02038366914445242
+    },
+    {
+      "record_id": "W2-750e420547ab242ce3b98436",
+      "label": 0,
+      "raw_score": 0.0001470379502279684,
+      "calibrated_probability": 0.021873033116766187
+    },
+    {
+      "record_id": "W2-ec04656d8b448f9da4197794",
+      "label": 0,
+      "raw_score": 0.00011870644084410742,
+      "calibrated_probability": 0.019555696922606655
+    },
+    {
+      "record_id": "W2-92c4ae6c6e52bcc78501b419",
+      "label": 0,
+      "raw_score": 0.00012709246948361397,
+      "calibrated_probability": 0.02026733331767521
+    },
+    {
+      "record_id": "W2-34d4db6692cbc1d4342f0ae2",
+      "label": 0,
+      "raw_score": 0.00013253583165351301,
+      "calibrated_probability": 0.020717061506242453
+    },
+    {
+      "record_id": "W2-f014ed3e84d2931fa29d16b7",
+      "label": 0,
+      "raw_score": 0.0001380462053930387,
+      "calibrated_probability": 0.02116324078217321
+    },
+    {
+      "record_id": "W2-96e8ebfc9c237d4efd86767f",
+      "label": 0,
+      "raw_score": 0.0002263948554173112,
+      "calibrated_probability": 0.027390501675384617
+    },
+    {
+      "record_id": "W2-5729faa648e7fff6931f5245",
+      "label": 0,
+      "raw_score": 0.0001263312587980181,
+      "calibrated_probability": 0.02020369991997913
+    },
+    {
+      "record_id": "W2-2c9e69c486e36b74a6717d6d",
+      "label": 0,
+      "raw_score": 0.0001254977541975677,
+      "calibrated_probability": 0.02013380848170504
+    },
+    {
+      "record_id": "W2-67649ca5b73a0a3c9ae898e5",
+      "label": 0,
+      "raw_score": 0.00013419025344774127,
+      "calibrated_probability": 0.020851956655225077
+    },
+    {
+      "record_id": "W2-0cc7a381335edf2e7bb48266",
+      "label": 0,
+      "raw_score": 0.00012208340922370553,
+      "calibrated_probability": 0.01984511889452554
+    },
+    {
+      "record_id": "W2-0d33b6f1fb0ef21b5815d34b",
+      "label": 0,
+      "raw_score": 0.00013290347123984247,
+      "calibrated_probability": 0.02074710807776988
+    },
+    {
+      "record_id": "W2-15e774c103564a5cd3609c5c",
+      "label": 0,
+      "raw_score": 0.00012878011330030859,
+      "calibrated_probability": 0.02040775290698585
+    },
+    {
+      "record_id": "W2-0b9b9e3b8f8f3ee6cb14db1e",
+      "label": 0,
+      "raw_score": 0.00012781510304193944,
+      "calibrated_probability": 0.020327570255567997
+    },
+    {
+      "record_id": "W2-f900f1a74ae915d19e903212",
+      "label": 0,
+      "raw_score": 0.00012522593897301704,
+      "calibrated_probability": 0.020110967232113513
+    },
+    {
+      "record_id": "W2-c1006e8030c3b0a875b66c71",
+      "label": 0,
+      "raw_score": 0.00023801055795047432,
+      "calibrated_probability": 0.028111791433099855
+    },
+    {
+      "record_id": "W2-1098eaf64ed05f67e3d778a4",
+      "label": 0,
+      "raw_score": 0.00013206036237534136,
+      "calibrated_probability": 0.02067814184533616
+    },
+    {
+      "record_id": "W2-d1ef7bb13a8e30d0b45a6e9c",
+      "label": 0,
+      "raw_score": 0.0001221571146743372,
+      "calibrated_probability": 0.019851392051069797
+    },
+    {
+      "record_id": "W2-00d26aa09b78ad824cfab6ba",
+      "label": 0,
+      "raw_score": 0.00014097688836045563,
+      "calibrated_probability": 0.0213970001398955
+    },
+    {
+      "record_id": "W2-991c78b0f97ccc715c1c694f",
+      "label": 0,
+      "raw_score": 0.00013890063564758748,
+      "calibrated_probability": 0.021231640673875885
+    },
+    {
+      "record_id": "W2-f3c0c1e2c7e81dd8e46541ac",
+      "label": 0,
+      "raw_score": 0.00013932578440289944,
+      "calibrated_probability": 0.0212655986546036
+    },
+    {
+      "record_id": "W2-cd3fa25cbef5b8617d383699",
+      "label": 0,
+      "raw_score": 0.0001238060212926939,
+      "calibrated_probability": 0.019991253769764076
+    },
+    {
+      "record_id": "W2-41a6b0d3cc3827fc092e3bcb",
+      "label": 0,
+      "raw_score": 0.0001265659084310755,
+      "calibrated_probability": 0.02022333532215295
+    },
+    {
+      "record_id": "W2-28686e5a70d0020a82265132",
+      "label": 0,
+      "raw_score": 0.00014001793169882149,
+      "calibrated_probability": 0.021320774594657116
+    },
+    {
+      "record_id": "W2-0c52291bb387e8207a2a54aa",
+      "label": 0,
+      "raw_score": 0.0001453435979783535,
+      "calibrated_probability": 0.02174094110433776
+    },
+    {
+      "record_id": "W2-ca4779a437afabfa378ee6da",
+      "label": 0,
+      "raw_score": 0.00014007309800945222,
+      "calibrated_probability": 0.021325166552949724
+    },
+    {
+      "record_id": "W2-a0808084e8918d31ea2a799f",
+      "label": 0,
+      "raw_score": 0.0001252999936696142,
+      "calibrated_probability": 0.02011719260767857
+    },
+    {
+      "record_id": "W2-21a4371b55bf23c9b654b2d7",
+      "label": 0,
+      "raw_score": 0.0001243207516381517,
+      "calibrated_probability": 0.020034727642671266
+    },
+    {
+      "record_id": "W2-07ce1ffc5b6029a233914ef9",
+      "label": 0,
+      "raw_score": 0.00012318507651798427,
+      "calibrated_probability": 0.019938691775166082
+    },
+    {
+      "record_id": "W2-47795cd7aa19812d0983fdc1",
+      "label": 0,
+      "raw_score": 0.00012776294897776097,
+      "calibrated_probability": 0.020323228387952717
+    },
+    {
+      "record_id": "W2-e06b575594b8740dce4600ce",
+      "label": 0,
+      "raw_score": 0.00012589582183863968,
+      "calibrated_probability": 0.020167215564132895
+    },
+    {
+      "record_id": "W2-f93edab9d89ce89efe205841",
+      "label": 0,
+      "raw_score": 0.0001288079802179709,
+      "calibrated_probability": 0.02041006400959879
+    },
+    {
+      "record_id": "W2-77fe0b68b18bab77ffe40e86",
+      "label": 0,
+      "raw_score": 0.00013265328016132116,
+      "calibrated_probability": 0.02072666479127178
+    },
+    {
+      "record_id": "W2-c8ae7816c0b846bd6c0ca8f3",
+      "label": 0,
+      "raw_score": 0.000131980559672229,
+      "calibrated_probability": 0.020671602880821063
+    },
+    {
+      "record_id": "W2-811fcd99da8d76990e5804d5",
+      "label": 0,
+      "raw_score": 0.00013212587509769946,
+      "calibrated_probability": 0.02068350846095654
+    },
+    {
+      "record_id": "W2-c935a70a0692b3dab3617f53",
+      "label": 0,
+      "raw_score": 0.00013248705363366753,
+      "calibrated_probability": 0.020713071906855864
+    },
+    {
+      "record_id": "W2-71f9c520d12267dd6217a7a3",
+      "label": 0,
+      "raw_score": 0.00013533791934605688,
+      "calibrated_probability": 0.020945056780526036
+    },
+    {
+      "record_id": "W2-62d80ac81ef6db5ac987fa8a",
+      "label": 0,
+      "raw_score": 0.00012244949175510556,
+      "calibrated_probability": 0.01987625847037886
+    },
+    {
+      "record_id": "W2-cf8509837cf34a24a08180d7",
+      "label": 0,
+      "raw_score": 0.0001280110009247437,
+      "calibrated_probability": 0.020343871204241422
+    },
+    {
+      "record_id": "W2-afd206520ad2234d54ffd2b2",
+      "label": 0,
+      "raw_score": 0.00013777044659946114,
+      "calibrated_probability": 0.02114112131005845
+    },
+    {
+      "record_id": "W2-43419759398063ab0ad1da30",
+      "label": 0,
+      "raw_score": 0.00011901485413545743,
+      "calibrated_probability": 0.019582294244361604
+    },
+    {
+      "record_id": "W2-1e8ed005bb486175104f2083",
+      "label": 0,
+      "raw_score": 0.0001339586015092209,
+      "calibrated_probability": 0.020833117693629263
+    },
+    {
+      "record_id": "W2-36cc272c99e060e2830a588e",
+      "label": 0,
+      "raw_score": 0.00013035608571954072,
+      "calibrated_probability": 0.02053807329008265
+    },
+    {
+      "record_id": "W2-9a3cfac2b9dff88b817ff8bc",
+      "label": 0,
+      "raw_score": 0.00013327962369658053,
+      "calibrated_probability": 0.020777808462012135
+    },
+    {
+      "record_id": "W2-cd377179850523be1dcfe23d",
+      "label": 0,
+      "raw_score": 0.00012145465007051826,
+      "calibrated_probability": 0.019791529344215925
+    },
+    {
+      "record_id": "W2-53d6b0f3668eb75cd2f563a8",
+      "label": 0,
+      "raw_score": 0.00012425165914464742,
+      "calibrated_probability": 0.020028897224723077
+    },
+    {
+      "record_id": "W2-032e24e2c4f06181d6316581",
+      "label": 0,
+      "raw_score": 0.00012527513899840415,
+      "calibrated_probability": 0.020115103410514392
+    },
+    {
+      "record_id": "W2-8a60c5035b81ae9e599027fc",
+      "label": 0,
+      "raw_score": 0.00012614890874829143,
+      "calibrated_probability": 0.0201884286568803
+    },
+    {
+      "record_id": "W2-10f7968f62eac8930efc1542",
+      "label": 0,
+      "raw_score": 0.0001353565021418035,
+      "calibrated_probability": 0.020946561064870386
+    },
+    {
+      "record_id": "W2-5b31453bfb46c53434dec001",
+      "label": 0,
+      "raw_score": 0.00011790840653702617,
+      "calibrated_probability": 0.019486718607995664
+    },
+    {
+      "record_id": "W2-d0c78631970f2ace1d04526e",
+      "label": 0,
+      "raw_score": 0.0001252705988008529,
+      "calibrated_probability": 0.020114721755500196
+    },
+    {
+      "record_id": "W2-1ae03067d21552641e63c2d3",
+      "label": 0,
+      "raw_score": 0.00013014917203690857,
+      "calibrated_probability": 0.02052100714410612
+    },
+    {
+      "record_id": "W2-ca4dd32ffb874a01828b502e",
+      "label": 0,
+      "raw_score": 0.0001284142053918913,
+      "calibrated_probability": 0.020377384219027614
+    },
+    {
+      "record_id": "W2-02fa174a148fe18c500f8915",
+      "label": 0,
+      "raw_score": 0.00013365187624003738,
+      "calibrated_probability": 0.020808148965471552
+    },
+    {
+      "record_id": "W2-f7f386c6f0fb0144bd8722f7",
+      "label": 0,
+      "raw_score": 0.00012964577763341367,
+      "calibrated_probability": 0.020479432084055775
+    },
+    {
+      "record_id": "W2-109755b90be2139cde135abf",
+      "label": 0,
+      "raw_score": 0.00013600417878478765,
+      "calibrated_probability": 0.02099892791251405
+    },
+    {
+      "record_id": "W2-aa44ff078ef81652d97e7dc0",
+      "label": 0,
+      "raw_score": 0.0001341005990980193,
+      "calibrated_probability": 0.020844667449889945
+    },
+    {
+      "record_id": "W2-677f9b1514b65769ab48d2ee",
+      "label": 0,
+      "raw_score": 0.0001210633636219427,
+      "calibrated_probability": 0.019758111557446122
+    },
+    {
+      "record_id": "W2-42894d8278d39658b33f44d4",
+      "label": 0,
+      "raw_score": 0.00013456851593218744,
+      "calibrated_probability": 0.020882684561551006
+    },
+    {
+      "record_id": "W2-66c0ec4e2ec0bb4af7b37c98",
+      "label": 0,
+      "raw_score": 0.00013940618373453617,
+      "calibrated_probability": 0.021272014712655978
+    },
+    {
+      "record_id": "W2-63b9629191539e149f12ce56",
+      "label": 0,
+      "raw_score": 0.00013820438471157104,
+      "calibrated_probability": 0.021175919103223577
+    },
+    {
+      "record_id": "W2-9f8819f04925a9b84cb1430c",
+      "label": 0,
+      "raw_score": 0.0001346927892882377,
+      "calibrated_probability": 0.02089277062741936
+    },
+    {
+      "record_id": "W2-4626dd5c313dab3f8ace9141",
+      "label": 0,
+      "raw_score": 0.00012044343020534143,
+      "calibrated_probability": 0.01970505838556423
+    },
+    {
+      "record_id": "W2-31c2c19623c021deaeea10ba",
+      "label": 0,
+      "raw_score": 0.00012195030285511166,
+      "calibrated_probability": 0.019833785383725468
+    },
+    {
+      "record_id": "W2-7756771ee7e640965711d252",
+      "label": 0,
+      "raw_score": 0.00012195390445413068,
+      "calibrated_probability": 0.019834092125691885
+    },
+    {
+      "record_id": "W2-9daa12324f694ddcdc3040ae",
+      "label": 0,
+      "raw_score": 0.00012753557530231774,
+      "calibrated_probability": 0.020304289248662285
+    },
+    {
+      "record_id": "W2-107fd108a7ea1952a8277ca7",
+      "label": 0,
+      "raw_score": 0.00011945280857617036,
+      "calibrated_probability": 0.01962000554052511
+    },
+    {
+      "record_id": "W2-b96f94341c4277fbf0419b59",
+      "label": 0,
+      "raw_score": 0.00011958535469602793,
+      "calibrated_probability": 0.01963140552989898
+    },
+    {
+      "record_id": "W2-be0bfd5bddb76496736340cc",
+      "label": 0,
+      "raw_score": 0.0001237407559528947,
+      "calibrated_probability": 0.019985735208278815
+    },
+    {
+      "record_id": "W2-c462f00f991293904dae52c7",
+      "label": 0,
+      "raw_score": 0.00012624601367861032,
+      "calibrated_probability": 0.020196562237640613
+    },
+    {
+      "record_id": "W2-f6a28dde0f3fb3656f4a7b68",
+      "label": 0,
+      "raw_score": 0.0001264392485609278,
+      "calibrated_probability": 0.02021273867200074
+    },
+    {
+      "record_id": "W2-25bac4411ea49b1e90ee9747",
+      "label": 0,
+      "raw_score": 0.0001230125199072063,
+      "calibrated_probability": 0.01992406223639822
+    },
+    {
+      "record_id": "W2-ba76dc7d5d93fbd2f69cd4cf",
+      "label": 0,
+      "raw_score": 0.00013640678662341088,
+      "calibrated_probability": 0.021031418794602595
+    },
+    {
+      "record_id": "W2-ab13742ce72b081e33cb1a8e",
+      "label": 0,
+      "raw_score": 0.00014531727356370538,
+      "calibrated_probability": 0.02173888292636813
+    },
+    {
+      "record_id": "W2-1d4bdf51d7a829517eb505f4",
+      "label": 0,
+      "raw_score": 0.00013012757699470967,
+      "calibrated_probability": 0.020519225232823495
+    },
+    {
+      "record_id": "W2-0afde0c92e071d6fe228699c",
+      "label": 0,
+      "raw_score": 0.00012242882803548127,
+      "calibrated_probability": 0.01987450198871118
+    },
+    {
+      "record_id": "W2-33975e6cc247a9e2603703bc",
+      "label": 0,
+      "raw_score": 0.00012017611879855394,
+      "calibrated_probability": 0.019682141191226438
+    },
+    {
+      "record_id": "W2-01df75647e2b4e9d761bb15e",
+      "label": 0,
+      "raw_score": 0.0001238899858435616,
+      "calibrated_probability": 0.019998351374331112
+    },
+    {
+      "record_id": "W2-fac74991e55202124fd6e7e9",
+      "label": 0,
+      "raw_score": 0.00013838069571647793,
+      "calibrated_probability": 0.02119004236133415
+    },
+    {
+      "record_id": "W2-8f42cc9ab683cd14c977458b",
+      "label": 0,
+      "raw_score": 0.00012775539653375745,
+      "calibrated_probability": 0.02032259956935168
+    },
+    {
+      "record_id": "W2-13b34b2eb50400c85b74153c",
+      "label": 0,
+      "raw_score": 0.00013233718345873058,
+      "calibrated_probability": 0.020700809402399812
+    },
+    {
+      "record_id": "W2-3c9fec6870578fdd964eeaa0",
+      "label": 0,
+      "raw_score": 0.00013459406909532845,
+      "calibrated_probability": 0.020884758835594472
+    },
+    {
+      "record_id": "W2-77c41f21712cb959b805dd21",
+      "label": 0,
+      "raw_score": 0.00013039201439823955,
+      "calibrated_probability": 0.02054103532499022
+    },
+    {
+      "record_id": "W2-df7359416a562e5cab158be1",
+      "label": 0,
+      "raw_score": 0.00012974272249266505,
+      "calibrated_probability": 0.02048744481555272
+    },
+    {
+      "record_id": "W2-8ad9361f13648def4d912ea2",
+      "label": 0,
+      "raw_score": 0.00012891081860288978,
+      "calibrated_probability": 0.020418590654285154
+    },
+    {
+      "record_id": "W2-d45ea38c3049f85da5daf1b9",
+      "label": 0,
+      "raw_score": 0.0001381331094307825,
+      "calibrated_probability": 0.02117020715478174
+    },
+    {
+      "record_id": "W2-4c96387cdde82d70b413e353",
+      "label": 0,
+      "raw_score": 0.000130246247863397,
+      "calibrated_probability": 0.020529015559828653
+    },
+    {
+      "record_id": "W2-196133fdf7c9c6781e12f88a",
+      "label": 0,
+      "raw_score": 0.0004967087297700346,
+      "calibrated_probability": 0.041094943200999184
+    },
+    {
+      "record_id": "W2-8eccee4ec7a5c393c0849668",
+      "label": 0,
+      "raw_score": 0.0001292348897550255,
+      "calibrated_probability": 0.02044543871985458
+    },
+    {
+      "record_id": "W2-1d0c1d42ca4b1aea39beb39c",
+      "label": 0,
+      "raw_score": 0.00014317655586637557,
+      "calibrated_probability": 0.021570896207591728
+    },
+    {
+      "record_id": "W2-12f1da2d649a063bde81583f",
+      "label": 0,
+      "raw_score": 0.00012149148096796125,
+      "calibrated_probability": 0.019794672183697074
+    },
+    {
+      "record_id": "W2-0bb0277806f81a6f62bb3d15",
+      "label": 0,
+      "raw_score": 0.00013711712381336838,
+      "calibrated_probability": 0.02108862983382624
+    },
+    {
+      "record_id": "W2-c18c530684c277bf584f276f",
+      "label": 0,
+      "raw_score": 0.00012136712030041963,
+      "calibrated_probability": 0.01978405842688427
+    },
+    {
+      "record_id": "W2-1eab6715934b702a3abf05f3",
+      "label": 0,
+      "raw_score": 0.00012808351311832666,
+      "calibrated_probability": 0.020349901966558465
+    },
+    {
+      "record_id": "W2-b97619f44e6c773f8cc926d8",
+      "label": 0,
+      "raw_score": 0.00014068763994146138,
+      "calibrated_probability": 0.021374035107866465
+    },
+    {
+      "record_id": "W2-2286a9802da6def28e27ad0e",
+      "label": 0,
+      "raw_score": 0.00012368342140689492,
+      "calibrated_probability": 0.019980886071599167
+    },
+    {
+      "record_id": "W2-61694716deb48878cebec728",
+      "label": 0,
+      "raw_score": 0.00012540948227979243,
+      "calibrated_probability": 0.02012639343689496
+    },
+    {
+      "record_id": "W2-c7acab46791e6694d7b2f816",
+      "label": 0,
+      "raw_score": 0.00014490644389297813,
+      "calibrated_probability": 0.021706738504507585
+    },
+    {
+      "record_id": "W2-6556015c652c65fc975deaad",
+      "label": 0,
+      "raw_score": 0.00013961331569589674,
+      "calibrated_probability": 0.02128853601703825
+    },
+    {
+      "record_id": "W2-c7e32b60da99e6fa8016db99",
+      "label": 0,
+      "raw_score": 0.00013277654943522066,
+      "calibrated_probability": 0.020736739557204176
+    },
+    {
+      "record_id": "W2-e1b326d3d14d616e9c265cdc",
+      "label": 0,
+      "raw_score": 0.00013041800411883742,
+      "calibrated_probability": 0.020543177723522127
+    },
+    {
+      "record_id": "W2-9997b78e8ed3ffcaf8be58ee",
+      "label": 0,
+      "raw_score": 0.00016327245975844562,
+      "calibrated_probability": 0.023102756731919083
+    },
+    {
+      "record_id": "W2-7444e2ad1eb8674333b1b1b9",
+      "label": 0,
+      "raw_score": 0.00013360180309973657,
+      "calibrated_probability": 0.020804070147842295
+    },
+    {
+      "record_id": "W2-a3ff339cfc31686f3335ee78",
+      "label": 0,
+      "raw_score": 0.0001280517753912136,
+      "calibrated_probability": 0.020347262578229622
+    },
+    {
+      "record_id": "W2-46433f2e95a1177678860724",
+      "label": 0,
+      "raw_score": 0.0001176404402940534,
+      "calibrated_probability": 0.019463505968841548
+    },
+    {
+      "record_id": "W2-f1af66f014b0e2bb4227f35c",
+      "label": 0,
+      "raw_score": 0.00012361104018054903,
+      "calibrated_probability": 0.019974762780748452
+    },
+    {
+      "record_id": "W2-8920ec2d680886189107157b",
+      "label": 0,
+      "raw_score": 0.000127349907415919,
+      "calibrated_probability": 0.020288811795206037
+    },
+    {
+      "record_id": "W2-35577505afa48e82447f8a22",
+      "label": 0,
+      "raw_score": 0.00013031209527980536,
+      "calibrated_probability": 0.020534446084781877
+    },
+    {
+      "record_id": "W2-e1b120ff648fe05111a7a841",
+      "label": 0,
+      "raw_score": 0.00012582751514855772,
+      "calibrated_probability": 0.02016148671407097
+    },
+    {
+      "record_id": "W2-a9b3cfb7c03c8bded01cb257",
+      "label": 0,
+      "raw_score": 0.00013002066407352686,
+      "calibrated_probability": 0.02051040120663081
+    },
+    {
+      "record_id": "W2-d1493ad90a92d2fe2cbe522b",
+      "label": 0,
+      "raw_score": 0.00013351113011594862,
+      "calibrated_probability": 0.020796682282470103
+    },
+    {
+      "record_id": "W2-1a31ce44d83b155a72dc8658",
+      "label": 0,
+      "raw_score": 0.00012851330393459648,
+      "calibrated_probability": 0.020385613106054253
+    },
+    {
+      "record_id": "W2-7b3adadc955f0e148db96c57",
+      "label": 0,
+      "raw_score": 0.00013166390999685973,
+      "calibrated_probability": 0.02064563785598561
+    },
+    {
+      "record_id": "W2-86c2548e741468a3aeac6c83",
+      "label": 0,
+      "raw_score": 0.00013764989853370935,
+      "calibrated_probability": 0.021131444985129453
+    },
+    {
+      "record_id": "W2-61f0f54b9ca52f96e8bb565e",
+      "label": 0,
+      "raw_score": 0.0001325038610957563,
+      "calibrated_probability": 0.0207144466856197
+    },
+    {
+      "record_id": "W2-89e73bab61bc30bd086898fe",
+      "label": 0,
+      "raw_score": 0.0001283384335692972,
+      "calibrated_probability": 0.02037109023444138
+    },
+    {
+      "record_id": "W2-2c27ae8a5b4434308b209caf",
+      "label": 0,
+      "raw_score": 0.00013165398559067398,
+      "calibrated_probability": 0.02064482357057095
+    },
+    {
+      "record_id": "W2-c13bb4de1deb53c11c634539",
+      "label": 0,
+      "raw_score": 0.00016534063615836203,
+      "calibrated_probability": 0.023255029254548698
+    },
+    {
+      "record_id": "W2-7abb46bc00d3b6e991d2a412",
+      "label": 0,
+      "raw_score": 0.00013706549361813813,
+      "calibrated_probability": 0.021084476385437003
+    },
+    {
+      "record_id": "W2-d507d9dfabd3f64489d8b28b",
+      "label": 0,
+      "raw_score": 0.00013326082262210548,
+      "calibrated_probability": 0.020776274981483333
+    },
+    {
+      "record_id": "W2-5ef4d9abdf861a8d25f94f68",
+      "label": 0,
+      "raw_score": 0.00022856856230646372,
+      "calibrated_probability": 0.027526849725672726
+    },
+    {
+      "record_id": "W2-1f2c0eaeebd6280369e00662",
+      "label": 0,
+      "raw_score": 0.00014843710232526064,
+      "calibrated_probability": 0.021981551254743464
+    },
+    {
+      "record_id": "W2-3e18c18c7e38b22a956372ff",
+      "label": 0,
+      "raw_score": 0.00015523632464464754,
+      "calibrated_probability": 0.02250191527910458
+    },
+    {
+      "record_id": "W2-9e613ad3c9f593b9b9345557",
+      "label": 0,
+      "raw_score": 0.0002355487085878849,
+      "calibrated_probability": 0.027960401817679732
+    },
+    {
+      "record_id": "W2-d41bb52a2e76a3ca7d00737e",
+      "label": 1,
+      "raw_score": 0.9998140931129456,
+      "calibrated_probability": 0.9959404313940895
+    },
+    {
+      "record_id": "W2-4d655bb108f03c2c6df5fc2c",
+      "label": 0,
+      "raw_score": 0.000126726517919451,
+      "calibrated_probability": 0.020236764847101987
+    },
+    {
+      "record_id": "W2-008b77b4acd9d200d61c6f3c",
+      "label": 0,
+      "raw_score": 0.00013270846102386713,
+      "calibrated_probability": 0.02073117527320525
+    },
+    {
+      "record_id": "W2-6952e14aca60980eff6a2c5d",
+      "label": 0,
+      "raw_score": 0.0003530286194290966,
+      "calibrated_probability": 0.0344765982728296
+    },
+    {
+      "record_id": "W2-00db08cbaf4966484e4fc692",
+      "label": 0,
+      "raw_score": 0.00013283721636980772,
+      "calibrated_probability": 0.020741696174973824
+    },
+    {
+      "record_id": "W2-19b1662623a099497a6a95ed",
+      "label": 1,
+      "raw_score": 0.9997512698173523,
+      "calibrated_probability": 0.9952604336151584
+    },
+    {
+      "record_id": "W2-a3bde5f3660ecae8f449c4b3",
+      "label": 0,
+      "raw_score": 0.0001253446826012805,
+      "calibrated_probability": 0.020120948496044334
+    },
+    {
+      "record_id": "W2-635fe716348bc59d3c01d015",
+      "label": 0,
+      "raw_score": 0.00011924306454602629,
+      "calibrated_probability": 0.019601953351459735
+    },
+    {
+      "record_id": "W2-5a3209b1789ab91018384ef9",
+      "label": 0,
+      "raw_score": 0.0002179721195716411,
+      "calibrated_probability": 0.026855960661805445
+    },
+    {
+      "record_id": "W2-586f0d457b4987962676e3b0",
+      "label": 0,
+      "raw_score": 0.00012580522161442786,
+      "calibrated_probability": 0.02015961663791414
+    },
+    {
+      "record_id": "W2-d51e67e8a4f1e2be3f91d237",
+      "label": 0,
+      "raw_score": 0.00012414446973707527,
+      "calibrated_probability": 0.02001984884650866
+    },
+    {
+      "record_id": "W2-e6192d7951e9799868db471d",
+      "label": 0,
+      "raw_score": 0.0001266437757294625,
+      "calibrated_probability": 0.020229847311413543
+    },
+    {
+      "record_id": "W2-18ddd073b2c9782b0b4ae344",
+      "label": 0,
+      "raw_score": 0.00015097511641215533,
+      "calibrated_probability": 0.022177130340876327
+    },
+    {
+      "record_id": "W2-7dedf8917cf0eb9409b72e4c",
+      "label": 0,
+      "raw_score": 0.0005644175107590854,
+      "calibrated_probability": 0.04387244499194517
+    },
+    {
+      "record_id": "W2-ebe9d6799bdcb60d2daf81b7",
+      "label": 0,
+      "raw_score": 0.0002048683527391404,
+      "calibrated_probability": 0.02600362547787456
+    },
+    {
+      "record_id": "W2-81f699ddc915e03d7d440b61",
+      "label": 0,
+      "raw_score": 0.00012231645814608783,
+      "calibrated_probability": 0.01986494766436255
+    },
+    {
+      "record_id": "W2-8192cbca81b781df0e7f101b",
+      "label": 0,
+      "raw_score": 0.00012531409447547048,
+      "calibrated_probability": 0.02011837778259914
+    },
+    {
+      "record_id": "W2-1bfe2afe24207fbc3af779d4",
+      "label": 0,
+      "raw_score": 0.00013289079652167857,
+      "calibrated_probability": 0.020746072869381006
+    },
+    {
+      "record_id": "W2-d2a654f029c7d31272302883",
+      "label": 0,
+      "raw_score": 0.00012828863691538572,
+      "calibrated_probability": 0.020366952890350593
+    },
+    {
+      "record_id": "W2-978a401eb21307602b79127f",
+      "label": 0,
+      "raw_score": 0.00023103631974663585,
+      "calibrated_probability": 0.02768086694521405
+    },
+    {
+      "record_id": "W2-8ea0f68d8525dc7ae91509c8",
+      "label": 0,
+      "raw_score": 0.00013390650565270334,
+      "calibrated_probability": 0.020828878839360767
+    },
+    {
+      "record_id": "W2-c357536f18a0f2a441eef1fe",
+      "label": 1,
+      "raw_score": 0.9998362064361572,
+      "calibrated_probability": 0.9962050179440822
+    },
+    {
+      "record_id": "W2-288c8d1e3342834e9efc1e71",
+      "label": 0,
+      "raw_score": 0.000173625405295752,
+      "calibrated_probability": 0.023855837035886004
+    },
+    {
+      "record_id": "W2-801c1bfd4368836617d34ce3",
+      "label": 0,
+      "raw_score": 0.00020244480401743203,
+      "calibrated_probability": 0.025843066251144343
+    },
+    {
+      "record_id": "W2-db3f5f388b82864e982124c4",
+      "label": 0,
+      "raw_score": 0.0001465800596633926,
+      "calibrated_probability": 0.021837409590233822
+    },
+    {
+      "record_id": "W2-cb7117c209562832900c1d98",
+      "label": 0,
+      "raw_score": 0.00015288432769011706,
+      "calibrated_probability": 0.022323195930226292
+    },
+    {
+      "record_id": "W2-490e7486e1fa1984a542afe8",
+      "label": 0,
+      "raw_score": 0.0005160265136510134,
+      "calibrated_probability": 0.0419060941671785
+    },
+    {
+      "record_id": "W2-f682ad5dd65fbed7a6ca61ff",
+      "label": 0,
+      "raw_score": 0.00019537510524969548,
+      "calibrated_probability": 0.025369207867819394
+    },
+    {
+      "record_id": "W2-59a92753b3cbd5855e9d50bd",
+      "label": 0,
+      "raw_score": 0.0002166799531551078,
+      "calibrated_probability": 0.02677305712884723
+    },
+    {
+      "record_id": "W2-7445e8b77eaed04ea5cdb3dd",
+      "label": 0,
+      "raw_score": 0.0003274334885645658,
+      "calibrated_probability": 0.033162538560722446
+    },
+    {
+      "record_id": "W2-40a3dabfa00be9c8603f00e9",
+      "label": 1,
+      "raw_score": 0.052214570343494415,
+      "calibrated_probability": 0.34643341262127453
+    },
+    {
+      "record_id": "W2-095cec02b7361d83e81e2fc1",
+      "label": 0,
+      "raw_score": 0.0002646664506755769,
+      "calibrated_probability": 0.029703723937422898
+    },
+    {
+      "record_id": "W2-8257cedbb24446c5c65b2f22",
+      "label": 1,
+      "raw_score": 0.9997616410255432,
+      "calibrated_probability": 0.9953665829087781
+    },
+    {
+      "record_id": "W2-f54f054e063d5d8d432dd8ca",
+      "label": 0,
+      "raw_score": 0.00013627692533191293,
+      "calibrated_probability": 0.02102094396951343
+    },
+    {
+      "record_id": "W2-1fa50c63dbd405114f03854b",
+      "label": 0,
+      "raw_score": 0.0002655144198797643,
+      "calibrated_probability": 0.02975302672598349
+    },
+    {
+      "record_id": "W2-a2f6ba7264d28b0a6d6796ca",
+      "label": 0,
+      "raw_score": 0.0002804937248583883,
+      "calibrated_probability": 0.03061138450857949
+    },
+    {
+      "record_id": "W2-88c33a066a7c9817605c1e82",
+      "label": 0,
+      "raw_score": 0.0002497482346370816,
+      "calibrated_probability": 0.02882314674820702
+    },
+    {
+      "record_id": "W2-d8811cbaadc44244a0e28ca4",
+      "label": 0,
+      "raw_score": 0.0002720897609833628,
+      "calibrated_probability": 0.03013270401318079
+    },
+    {
+      "record_id": "W2-950705cb08ee1071ddf57ad7",
+      "label": 0,
+      "raw_score": 0.0001519624493084848,
+      "calibrated_probability": 0.022252779089437753
+    },
+    {
+      "record_id": "W2-59c1c1c85652cee9c9c4c411",
+      "label": 0,
+      "raw_score": 0.0002805590338539332,
+      "calibrated_probability": 0.03061507626411425
+    },
+    {
+      "record_id": "W2-d3d86b9a8c8b5886c8540187",
+      "label": 0,
+      "raw_score": 0.00014487825683318079,
+      "calibrated_probability": 0.02170453144096299
+    },
+    {
+      "record_id": "W2-69102f7096d6fae1a63e36e7",
+      "label": 1,
+      "raw_score": 0.9997619986534119,
+      "calibrated_probability": 0.9953702815883257
+    },
+    {
+      "record_id": "W2-1e19c5f2cc789b2ec2f7a7d5",
+      "label": 0,
+      "raw_score": 0.00015088387590367347,
+      "calibrated_probability": 0.02217012735588022
+    },
+    {
+      "record_id": "W2-a07f192d9e5ac8f77d18cfea",
+      "label": 0,
+      "raw_score": 0.00013766932534053922,
+      "calibrated_probability": 0.021133004643438837
+    },
+    {
+      "record_id": "W2-8da52e20defabef254b1e6c3",
+      "label": 0,
+      "raw_score": 0.00013815774582326412,
+      "calibrated_probability": 0.021172181659795324
+    },
+    {
+      "record_id": "W2-eb44113e55471c1b51583b7e",
+      "label": 1,
+      "raw_score": 0.9998278617858887,
+      "calibrated_probability": 0.9961033118746928
+    },
+    {
+      "record_id": "W2-e4c4c7907f475c22dc775c8f",
+      "label": 0,
+      "raw_score": 0.004683927167207003,
+      "calibrated_probability": 0.12466520888780727
+    },
+    {
+      "record_id": "W2-1974124c101bee786aef4470",
+      "label": 1,
+      "raw_score": 0.9993758797645569,
+      "calibrated_probability": 0.9922739846450369
+    },
+    {
+      "record_id": "W2-b5643de304185d8c4438d2ba",
+      "label": 0,
+      "raw_score": 0.00015310096205212176,
+      "calibrated_probability": 0.022339713170546834
+    },
+    {
+      "record_id": "W2-d7cbadb11ace001be0290a16",
+      "label": 1,
+      "raw_score": 0.8776153326034546,
+      "calibrated_probability": 0.8771993753056266
+    },
+    {
+      "record_id": "W2-2ebba5deb3556bc016d14939",
+      "label": 0,
+      "raw_score": 0.00016138690989464521,
+      "calibrated_probability": 0.022963104196614046
+    },
+    {
+      "record_id": "W2-2bd11b83b71e686d2124c753",
+      "label": 1,
+      "raw_score": 0.9957273006439209,
+      "calibrated_probability": 0.9786647833469574
+    },
+    {
+      "record_id": "W2-59f34d113c0c35fa009ab534",
+      "label": 1,
+      "raw_score": 0.31965264678001404,
+      "calibrated_probability": 0.6248659656220861
+    },
+    {
+      "record_id": "W2-92716cf59f321c2161620f8a",
+      "label": 1,
+      "raw_score": 0.9893290400505066,
+      "calibrated_probability": 0.965558412757691
+    },
+    {
+      "record_id": "W2-666044adfbb665ac32efed7b",
+      "label": 1,
+      "raw_score": 0.9982481002807617,
+      "calibrated_probability": 0.986658519276726
+    },
+    {
+      "record_id": "W2-51949126c07a9932f2601a9d",
+      "label": 0,
+      "raw_score": 0.00014704874774906784,
+      "calibrated_probability": 0.021873872500347166
+    },
+    {
+      "record_id": "W2-fe0bca431c584ada5de9688f",
+      "label": 1,
+      "raw_score": 0.9996346235275269,
+      "calibrated_probability": 0.9941854708469318
+    },
+    {
+      "record_id": "W2-c505d8b00bfa76b9d456ca27",
+      "label": 1,
+      "raw_score": 0.00047613587230443954,
+      "calibrated_probability": 0.04021323309081273
+    },
+    {
+      "record_id": "W2-9095be1ddb0d35888983ed62",
+      "label": 0,
+      "raw_score": 0.06586690992116928,
+      "calibrated_probability": 0.3768543815095582
+    },
+    {
+      "record_id": "W2-f8f79efc9810830e26dc3ed0",
+      "label": 1,
+      "raw_score": 0.9996918439865112,
+      "calibrated_probability": 0.9946886352298885
+    },
+    {
+      "record_id": "W2-a5acc2c997cc5931bc0d51c6",
+      "label": 1,
+      "raw_score": 0.9483296275138855,
+      "calibrated_probability": 0.9218825014091477
+    },
+    {
+      "record_id": "W2-dd1a53b2e9778ca1678f50a7",
+      "label": 0,
+      "raw_score": 0.00015483716560993344,
+      "calibrated_probability": 0.022471678564320276
+    },
+    {
+      "record_id": "W2-1891c9d367c45587e2efa2a1",
+      "label": 0,
+      "raw_score": 0.0002102614671457559,
+      "calibrated_probability": 0.02635758818310622
+    },
+    {
+      "record_id": "W2-7f239939b04b99707921d6b8",
+      "label": 1,
+      "raw_score": 0.9996693134307861,
+      "calibrated_probability": 0.9944856562912888
+    },
+    {
+      "record_id": "W2-c3753857dd76b6de1d7da08d",
+      "label": 1,
+      "raw_score": 0.9998273849487305,
+      "calibrated_probability": 0.9960975708304483
+    },
+    {
+      "record_id": "W2-38dd36b9720929ff708bc7d2",
+      "label": 0,
+      "raw_score": 0.00015054845425765961,
+      "calibrated_probability": 0.022144364904492182
+    },
+    {
+      "record_id": "W2-c6a252b51ec8f35d9cd10045",
+      "label": 0,
+      "raw_score": 0.00012486166087910533,
+      "calibrated_probability": 0.020080318214737953
+    },
+    {
+      "record_id": "W2-f496a0f81a6c119635069b6f",
+      "label": 0,
+      "raw_score": 0.00012563115160446614,
+      "calibrated_probability": 0.020145009352677178
+    },
+    {
+      "record_id": "W2-bc7ee6e93d9a13e233ad7da9",
+      "label": 0,
+      "raw_score": 0.0006772594642825425,
+      "calibrated_probability": 0.04814567051963208
+    },
+    {
+      "record_id": "W2-1df94d453a93cb8f9116566c",
+      "label": 0,
+      "raw_score": 0.00012538855662569404,
+      "calibrated_probability": 0.020124635260912804
+    },
+    {
+      "record_id": "W2-e9005252a5482ab7da79dfea",
+      "label": 1,
+      "raw_score": 0.9997887015342712,
+      "calibrated_probability": 0.9956542667164907
+    },
+    {
+      "record_id": "W2-758a8fb63eaf225121604acb",
+      "label": 1,
+      "raw_score": 0.999346911907196,
+      "calibrated_probability": 0.9920858262164434
+    },
+    {
+      "record_id": "W2-32a5110d3ff1c13738368d10",
+      "label": 1,
+      "raw_score": 0.9997695088386536,
+      "calibrated_probability": 0.9954485670106942
+    },
+    {
+      "record_id": "W2-f1936eb483350e7f569c7dc7",
+      "label": 1,
+      "raw_score": 0.9996111989021301,
+      "calibrated_probability": 0.993990322153119
+    },
+    {
+      "record_id": "W2-e91743c64fe7be5f33276be5",
+      "label": 0,
+      "raw_score": 0.0001362188340863213,
+      "calibrated_probability": 0.02101625665723366
+    },
+    {
+      "record_id": "W2-b655f7e69e85975904c557db",
+      "label": 1,
+      "raw_score": 0.9998156428337097,
+      "calibrated_probability": 0.9959584744728852
+    },
+    {
+      "record_id": "W2-6f38185313891e8c16d8aa65",
+      "label": 1,
+      "raw_score": 0.9997840523719788,
+      "calibrated_probability": 0.9956036587056084
+    },
+    {
+      "record_id": "W2-2aa3cb47a2722dd326f826f1",
+      "label": 1,
+      "raw_score": 0.9997732043266296,
+      "calibrated_probability": 0.9954875286634629
+    },
+    {
+      "record_id": "W2-af088205c8553ef5d2e64c05",
+      "label": 1,
+      "raw_score": 0.00018079471192322671,
+      "calibrated_probability": 0.02436448311230384
+    },
+    {
+      "record_id": "W2-a4f246c898e1376ae9a9e438",
+      "label": 1,
+      "raw_score": 0.9998273253440857,
+      "calibrated_probability": 0.9960968537239642
+    },
+    {
+      "record_id": "W2-6e9556476f7ca4f608d265bd",
+      "label": 1,
+      "raw_score": 0.9998205304145813,
+      "calibrated_probability": 0.9960158514797839
+    },
+    {
+      "record_id": "W2-98fe838cf84a4fd75514013b",
+      "label": 1,
+      "raw_score": 0.0001817444572225213,
+      "calibrated_probability": 0.024431116308687165
+    },
+    {
+      "record_id": "W2-9725431a7d9d142010795582",
+      "label": 1,
+      "raw_score": 0.9997909665107727,
+      "calibrated_probability": 0.9956791114851015
+    },
+    {
+      "record_id": "W2-abdc8bc42e654fdefd61bdc4",
+      "label": 1,
+      "raw_score": 0.9996678829193115,
+      "calibrated_probability": 0.9944729921886065
+    },
+    {
+      "record_id": "W2-765420faa1e46cea98d8d639",
+      "label": 1,
+      "raw_score": 0.9998151659965515,
+      "calibrated_probability": 0.9959529151921218
+    },
+    {
+      "record_id": "W2-d4b220f3f0e1cf971dd76409",
+      "label": 1,
+      "raw_score": 0.999823272228241,
+      "calibrated_probability": 0.996048360187506
+    },
+    {
+      "record_id": "W2-05861362bab0cead2e230219",
+      "label": 0,
+      "raw_score": 0.00012716361379716545,
+      "calibrated_probability": 0.02027327112491709
+    },
+    {
+      "record_id": "W2-3072a9607ab4cd93345e1893",
+      "label": 1,
+      "raw_score": 0.9991065859794617,
+      "calibrated_probability": 0.9906560654943626
+    },
+    {
+      "record_id": "W2-93fc2bd2c75e0d1b14595273",
+      "label": 0,
+      "raw_score": 0.0003024464240297675,
+      "calibrated_probability": 0.0318290817332711
+    },
+    {
+      "record_id": "W2-72d9e2d029a87a1a1de2b9c1",
+      "label": 0,
+      "raw_score": 0.0001237112592207268,
+      "calibrated_probability": 0.019983240624135774
+    },
+    {
+      "record_id": "W2-cdc9d44993a6eb1aa29962cd",
+      "label": 0,
+      "raw_score": 0.0002819141373038292,
+      "calibrated_probability": 0.030691580540742783
+    },
+    {
+      "record_id": "W2-cd721bcd8e1141fc75b15457",
+      "label": 0,
+      "raw_score": 0.00015963298210408539,
+      "calibrated_probability": 0.022832480553615375
+    },
+    {
+      "record_id": "W2-8a27ee8a3e026aad4bf23f78",
+      "label": 1,
+      "raw_score": 0.42811504006385803,
+      "calibrated_probability": 0.6811576920806034
+    },
+    {
+      "record_id": "W2-c90ca14fb0d91cddbaa08288",
+      "label": 0,
+      "raw_score": 0.000263530615484342,
+      "calibrated_probability": 0.02963756078388739
+    },
+    {
+      "record_id": "W2-6ffce767237f642e853a5afa",
+      "label": 1,
+      "raw_score": 0.9991722106933594,
+      "calibrated_probability": 0.9910261855762149
+    },
+    {
+      "record_id": "W2-c42fce4b045c2b6a5e39f45f",
+      "label": 1,
+      "raw_score": 0.9997977614402771,
+      "calibrated_probability": 0.9957544152813108
+    },
+    {
+      "record_id": "W2-741e0868f269f17c795a1e14",
+      "label": 1,
+      "raw_score": 0.9998325109481812,
+      "calibrated_probability": 0.9961596834864194
+    },
+    {
+      "record_id": "W2-4d1d96108c666291823c9ec7",
+      "label": 1,
+      "raw_score": 0.9998270869255066,
+      "calibrated_probability": 0.9960939864600231
+    },
+    {
+      "record_id": "W2-5f631c64e3c8c1225659ab9c",
+      "label": 1,
+      "raw_score": 0.9995332956314087,
+      "calibrated_probability": 0.9933782668237627
+    }
+  ]
+}

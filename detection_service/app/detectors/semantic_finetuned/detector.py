@@ -6,6 +6,7 @@ from threading import RLock
 from time import perf_counter
 
 import torch
+import numpy as np
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 from detection_service.app.contracts.detection_request import DetectionRequest
@@ -14,6 +15,7 @@ from detection_service.app.detectors.base import BaseDetector
 from detection_service.app.detectors.semantic.calibration import file_sha256
 from detection_service.app.detectors.semantic.detector import SemanticDetectorError
 from detection_service.app.detectors.semantic_finetuned.config import FineTunedConfig
+from detection_service.app.detectors.semantic_finetuned.calibration import FineTunedCalibrator, METHOD, CALIBRATION_VERSION
 
 
 class FineTunedDetectorError(SemanticDetectorError):
@@ -24,7 +26,7 @@ class FineTunedSemanticDetector(BaseDetector):
     detector_id = "semantic_finetuned"
     detector_version = "dm_b_v1"
 
-    def __init__(self, config: FineTunedConfig, tokenizer, model) -> None:
+    def __init__(self, config: FineTunedConfig, tokenizer, model, calibrator: FineTunedCalibrator | None = None) -> None:
         config.validate()
         if config.device == "cuda" and not torch.cuda.is_available():
             raise FineTunedDetectorError("D_M-B requires CUDA; CPU substitution is not permitted")
@@ -33,13 +35,15 @@ class FineTunedSemanticDetector(BaseDetector):
         if model.config.id2label != {0: "BENIGN", 1: "ATTACK"}:
             raise FineTunedDetectorError("D_M-B label orientation is invalid")
         self.config, self.tokenizer = config, tokenizer
+        self.calibrator = calibrator
         self.model = model.to(config.device).eval()
         self.tokenizer.truncation_side = config.truncation_side
         self.tokenizer.padding_side = config.padding_side
         self._lock = RLock()
 
     @classmethod
-    def from_artifact(cls, directory: str | Path, *, device: str | None = None) -> "FineTunedSemanticDetector":
+    def from_artifact(cls, directory: str | Path, *, device: str | None = None,
+                      require_calibration: bool = False) -> "FineTunedSemanticDetector":
         source = Path(directory).resolve()
         try:
             payload = json.loads((source / "model_config.json").read_text(encoding="utf-8"))
@@ -62,7 +66,11 @@ class FineTunedSemanticDetector(BaseDetector):
             model = AutoModelForSequenceClassification.from_pretrained(
                 source / "transformer", local_files_only=True, use_safetensors=True
             )
-            return cls(config, tokenizer, model)
+            calibration_dir = source / "calibration"
+            if require_calibration and not calibration_dir.is_dir():
+                raise ValueError("D_M-B calibration is required but missing")
+            calibrator = FineTunedCalibrator.load(calibration_dir, source) if calibration_dir.exists() else None
+            return cls(config, tokenizer, model, calibrator)
         except Exception as exc:
             if isinstance(exc, FineTunedDetectorError):
                 raise
@@ -91,20 +99,27 @@ class FineTunedSemanticDetector(BaseDetector):
                     if logits.shape != (len(batch), 2) or not torch.isfinite(logits).all():
                         raise ValueError("invalid D_M-B logits")
                     scores = torch.softmax(logits, dim=-1)[:, 1].cpu().tolist()
+                    calibrated = self.calibrator.predict(np.array(scores)) if self.calibrator else [None] * len(scores)
+                    if self.calibrator and (np.shape(calibrated) != (len(scores),) or
+                                            not np.isfinite(calibrated).all() or
+                                            ((calibrated < 0) | (calibrated > 1)).any()):
+                        raise ValueError("invalid D_M-B calibrated probabilities")
             except Exception as exc:
                 raise FineTunedDetectorError("D_M-B inference failed; no fallback is permitted") from exc
             latency = (perf_counter() - started) * 1000 / len(batch)
-            for score, count in zip(scores, token_counts):
+            for score, probability, count in zip(scores, calibrated, token_counts):
                 if not 0 <= score <= 1:
                     raise FineTunedDetectorError("D_M-B probability is outside [0,1]")
                 truncated = count > self.config.max_sequence_length
                 results.append(DetectorResult(
                     detector_id=self.detector_id, detector_version=self.detector_version, status="success",
-                    raw_score=float(score), calibrated_probability=None, binary_vote=score >= 0.5,
+                    raw_score=float(score), calibrated_probability=float(probability) if probability is not None else None,
+                    binary_vote=score >= 0.5,
                     model=ModelMetadata(model_id=self.config.upstream_model, model_revision=self.config.upstream_revision,
                                         tokenizer_id=self.config.upstream_model, device=self.config.device),
                     latency_ms=latency, warnings=["SEMANTIC_INPUT_TRUNCATED"] if truncated else [],
                     metadata={
+                        **({"calibration_method": METHOD, "calibration_version": CALIBRATION_VERSION} if self.calibrator else {}),
                         "probability_type": "raw_softmax_class_1_probability",
                         "label_mapping": {"benign": 0, "attack": 1},
                         "cutpoint_type": "DEFAULT_DEVELOPMENT_CUTPOINT", "default_cutpoint": 0.5,
