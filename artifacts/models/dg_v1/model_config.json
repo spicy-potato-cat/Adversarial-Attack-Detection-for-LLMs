@@ -1,0 +1,15 @@
+{
+  "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+  "revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+  "tokenizer_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+  "detector_id": "guard_external",
+  "detector_version": "dg_v1",
+  "context_tokens": 512,
+  "special_tokens": 2,
+  "chunk_tokens": 510,
+  "overlap_tokens": 64,
+  "batch_size": 8,
+  "positive_class": 1,
+  "aggregation": "max_chunk_malicious_probability",
+  "decision": "OR_of_native_chunk_argmax_class_1"
+}

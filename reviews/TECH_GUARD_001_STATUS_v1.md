@@ -1,29 +1,55 @@
 # TECH-GUARD-001 Standalone Status v1
 
-Date: 2026-10-01. Status: BLOCKED.
+Date: 2026-10-02. Status: PASS.
+Recommendation: READY FOR TECH-INTEGRATION-002. NOT READY FOR E1-E10.
 
-Existing Commander workspace reused; fresh-machine and cloning instructions
-superseded explicitly by latest user instruction. Dedicated branch: tech/guard-001.
-Start commit: 57bcadc. Repository reconnaissance and public metadata qualification
-complete. Prior semantic/statistical work and shared status v6 are untouched.
+Existing workspace reused, branch tech/guard-001, continuation start dd82539.
+Original blocked assessment preserved in Git and qualification history.
+sumitt86 authenticated pinned access now passes; candidate unchanged:
+meta-llama/Llama-Prompt-Guard-2-22M,
+revision 11614a155199674a0a95e6602d6ab0417b790ed0.
+D_G / guard_external / dg_v1.
 
-Preferred D_G candidate is a PROPOSAL: Meta Llama Prompt Guard 2 22M, public
-revision 11614a155199674a0a95e6602d6ab0417b790ed0. Access to pinned config.json
-failed with HTTP 401 / GatedRepoError; no authorized token is configured in the
-process or repository-local HF home. Exact artifact freeze is NOT COMPLETE.
+## Acceptance
 
-Standalone implementation/tests/CPU smoke: NOT RUN under task STOP condition 3.
-No alternative or heuristic fallback used. ProtectAI is ungated but explicitly
-excludes jailbreak detection; choosing it requires approval of narrower scope.
+| Gate | Result |
+|---|---|
+| Authorized access/exact pinned snapshot | PASS |
+| Candidate unchanged/provenance and hashes frozen | PASS |
+| Standalone BaseDetector/DetectorResult | PASS |
+| Documented class-1 softmax/native default decision | PASS |
+| calibrated_probability=None | PASS |
+| Explicit chunks/overlap/special accounting/full tail | PASS |
+| Max aggregation/model reuse | PASS |
+| Explicit failures/no fallback | PASS |
+| Real pinned CPU smoke/determinism | PASS |
+| Guard units | 49 PASS |
+| Existing-detector synthetic regressions | 102 PASS |
+| Combined | 151 PASS, 0 FAIL, 0 SKIP, 9 data-reading tests deselected |
+| D_G training/fine-tuning/project calibration | NO |
+| Project/protected data used | NO |
+| E1-E10/protected evaluation/threshold optimization | NO |
 
-No training, fine-tuning, project calibration, development/protected dataset use,
-ensemble integration or E1-E10 experiment occurred. Central service: DEFERRED.
-No readiness, independence, superiority or scientific performance claim is made.
+No package installation needed. Compatible installed CPU-only Torch.
+D_S/D_M-A/D_M-B implementations/tests/calibrations/artifacts, main/API/shared
+contracts, semantic completion reports and shared status v6 remain unchanged.
+Central default service wiring: DEFERRED to TECH-INTEGRATION-002.
 
-Evidence: artifacts/models/dg_v1/qualification.json and environment.json.
-Reports: TECH_GUARD_001_QUALIFICATION_REPORT_v1.md, MODEL_FREEZE_v1.md,
-IMPLEMENTATION_REPORT_v1.md and TEST_REPORT_v1.md.
+## Evidence And Limits
 
-Required Commander action: provide authorized Meta access locally (never paste
-tokens into chat), authorize offline adapter implementation with real-smoke blocked,
-or approve the narrower ProtectAI alternative. Until that decision, BLOCKED.
+artifacts/models/dg_v1/: model_config.json, freeze_metadata.json,
+integrity_manifest.json, smoke_evidence.json, test_evidence.json.
+Five finalized guard-specific reports accompany this evidence.
+Weights/caches/tokens/raw data/virtual environments are not committed.
+Local implementation/evidence commit only; no push authorized.
+
+Synthetic checks are not scientific performance. External performance is not yet
+benchmarked in this project. Default decisions are not final experimental operating
+points. Max chunk score is not project-calibrated whole-document probability.
+English-oriented training, distribution shifts, adaptive attacks and unknown
+upstream benchmark exposure remain limitations. No successful-compromise,
+disjoint-data, independence, superiority or legal-clearance claim.
+Distribution/attribution obligations require separate review.
+
+Next separately authorized work: minimal settings/startup/error/routing integration
+documented in the implementation report. No experiment starts in this phase.

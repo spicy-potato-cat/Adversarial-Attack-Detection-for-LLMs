@@ -1,0 +1,264 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-10-02T15:25:47.016853+00:00",
+  "scope": "SYNTHETIC ENGINEERING ONLY; NOT PERFORMANCE",
+  "device": "cpu",
+  "threads": 8,
+  "candidate": "meta-llama/Llama-Prompt-Guard-2-22M",
+  "revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+  "cases": {
+    "short": {
+      "result": {
+        "detector_id": "guard_external",
+        "detector_version": "dg_v1",
+        "status": "success",
+        "raw_score": 0.0006046004709787667,
+        "calibrated_probability": null,
+        "binary_vote": false,
+        "features": null,
+        "semantic_features": null,
+        "input_coverage": {
+          "input_tokens": 11,
+          "scoreable_tokens": 11,
+          "tokens_analyzed": 11,
+          "tokens_excluded": 0,
+          "coverage_ratio": 1.0,
+          "truncated": false,
+          "inference_chunks": 1,
+          "model_context_tokens": 512,
+          "window_strategy": "sliding",
+          "window_size": 510,
+          "window_stride": 446
+        },
+        "model": {
+          "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+          "model_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+          "tokenizer_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+          "device": "cpu"
+        },
+        "latency_ms": 130.0679000000855,
+        "warnings": [],
+        "metadata": {
+          "original_token_count": 11,
+          "token_count_basis": "upstream_content_tokens_without_specials",
+          "context_limit": 512,
+          "special_tokens_per_chunk": 2,
+          "chunk_size": 510,
+          "overlap": 64,
+          "stride": 446,
+          "aggregation": "max_chunk_malicious_probability",
+          "decision_rule": "OR_of_native_chunk_argmax_class_1",
+          "decision_scope": "DEFAULT MODEL DECISION; NOT FINAL THRESHOLD",
+          "positive_class": 1,
+          "score_semantics": "temperature_1_softmax_class_1; max_across_chunks",
+          "tokenizer_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+          "truncated": false,
+          "long_input_used": false,
+          "number_of_chunks": 1,
+          "max_risk_chunk_index": 0,
+          "max_risk_chunk_span": [
+            0,
+            11
+          ],
+          "aggregate_score": 0.0006046004709787667,
+          "final_tail_end": 11,
+          "tail_covered": true
+        }
+      },
+      "deterministic_exact_repeat": true,
+      "full_content_token_union_verified": true,
+      "independent_unpadded_chunk_max_and_vote_verified": false
+    },
+    "unicode": {
+      "result": {
+        "detector_id": "guard_external",
+        "detector_version": "dg_v1",
+        "status": "success",
+        "raw_score": 0.0007527353591285646,
+        "calibrated_probability": null,
+        "binary_vote": false,
+        "features": null,
+        "semantic_features": null,
+        "input_coverage": {
+          "input_tokens": 11,
+          "scoreable_tokens": 11,
+          "tokens_analyzed": 11,
+          "tokens_excluded": 0,
+          "coverage_ratio": 1.0,
+          "truncated": false,
+          "inference_chunks": 1,
+          "model_context_tokens": 512,
+          "window_strategy": "sliding",
+          "window_size": 510,
+          "window_stride": 446
+        },
+        "model": {
+          "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+          "model_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+          "tokenizer_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+          "device": "cpu"
+        },
+        "latency_ms": 53.02960000017265,
+        "warnings": [],
+        "metadata": {
+          "original_token_count": 11,
+          "token_count_basis": "upstream_content_tokens_without_specials",
+          "context_limit": 512,
+          "special_tokens_per_chunk": 2,
+          "chunk_size": 510,
+          "overlap": 64,
+          "stride": 446,
+          "aggregation": "max_chunk_malicious_probability",
+          "decision_rule": "OR_of_native_chunk_argmax_class_1",
+          "decision_scope": "DEFAULT MODEL DECISION; NOT FINAL THRESHOLD",
+          "positive_class": 1,
+          "score_semantics": "temperature_1_softmax_class_1; max_across_chunks",
+          "tokenizer_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+          "truncated": false,
+          "long_input_used": false,
+          "number_of_chunks": 1,
+          "max_risk_chunk_index": 0,
+          "max_risk_chunk_span": [
+            0,
+            11
+          ],
+          "aggregate_score": 0.0007527353591285646,
+          "final_tail_end": 11,
+          "tail_covered": true
+        }
+      },
+      "deterministic_exact_repeat": true,
+      "full_content_token_union_verified": true,
+      "independent_unpadded_chunk_max_and_vote_verified": false
+    },
+    "unusual": {
+      "result": {
+        "detector_id": "guard_external",
+        "detector_version": "dg_v1",
+        "status": "success",
+        "raw_score": 0.0035584827419370413,
+        "calibrated_probability": null,
+        "binary_vote": false,
+        "features": null,
+        "semantic_features": null,
+        "input_coverage": {
+          "input_tokens": 10,
+          "scoreable_tokens": 10,
+          "tokens_analyzed": 10,
+          "tokens_excluded": 0,
+          "coverage_ratio": 1.0,
+          "truncated": false,
+          "inference_chunks": 1,
+          "model_context_tokens": 512,
+          "window_strategy": "sliding",
+          "window_size": 510,
+          "window_stride": 446
+        },
+        "model": {
+          "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+          "model_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+          "tokenizer_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+          "device": "cpu"
+        },
+        "latency_ms": 60.47899999975925,
+        "warnings": [],
+        "metadata": {
+          "original_token_count": 10,
+          "token_count_basis": "upstream_content_tokens_without_specials",
+          "context_limit": 512,
+          "special_tokens_per_chunk": 2,
+          "chunk_size": 510,
+          "overlap": 64,
+          "stride": 446,
+          "aggregation": "max_chunk_malicious_probability",
+          "decision_rule": "OR_of_native_chunk_argmax_class_1",
+          "decision_scope": "DEFAULT MODEL DECISION; NOT FINAL THRESHOLD",
+          "positive_class": 1,
+          "score_semantics": "temperature_1_softmax_class_1; max_across_chunks",
+          "tokenizer_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+          "truncated": false,
+          "long_input_used": false,
+          "number_of_chunks": 1,
+          "max_risk_chunk_index": 0,
+          "max_risk_chunk_span": [
+            0,
+            10
+          ],
+          "aggregate_score": 0.0035584827419370413,
+          "final_tail_end": 10,
+          "tail_covered": true
+        }
+      },
+      "deterministic_exact_repeat": true,
+      "full_content_token_union_verified": true,
+      "independent_unpadded_chunk_max_and_vote_verified": false
+    },
+    "long_tail": {
+      "result": {
+        "detector_id": "guard_external",
+        "detector_version": "dg_v1",
+        "status": "success",
+        "raw_score": 0.9987375140190125,
+        "calibrated_probability": null,
+        "binary_vote": true,
+        "features": null,
+        "semantic_features": null,
+        "input_coverage": {
+          "input_tokens": 1294,
+          "scoreable_tokens": 1294,
+          "tokens_analyzed": 1294,
+          "tokens_excluded": 0,
+          "coverage_ratio": 1.0,
+          "truncated": false,
+          "inference_chunks": 3,
+          "model_context_tokens": 512,
+          "window_strategy": "sliding",
+          "window_size": 510,
+          "window_stride": 446
+        },
+        "model": {
+          "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+          "model_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+          "tokenizer_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+          "device": "cpu"
+        },
+        "latency_ms": 769.5775000001959,
+        "warnings": [],
+        "metadata": {
+          "original_token_count": 1294,
+          "token_count_basis": "upstream_content_tokens_without_specials",
+          "context_limit": 512,
+          "special_tokens_per_chunk": 2,
+          "chunk_size": 510,
+          "overlap": 64,
+          "stride": 446,
+          "aggregation": "max_chunk_malicious_probability",
+          "decision_rule": "OR_of_native_chunk_argmax_class_1",
+          "decision_scope": "DEFAULT MODEL DECISION; NOT FINAL THRESHOLD",
+          "positive_class": 1,
+          "score_semantics": "temperature_1_softmax_class_1; max_across_chunks",
+          "tokenizer_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+          "truncated": false,
+          "long_input_used": true,
+          "number_of_chunks": 3,
+          "max_risk_chunk_index": 2,
+          "max_risk_chunk_span": [
+            892,
+            1294
+          ],
+          "aggregate_score": 0.9987375140190125,
+          "final_tail_end": 1294,
+          "tail_covered": true
+        }
+      },
+      "deterministic_exact_repeat": true,
+      "full_content_token_union_verified": true,
+      "independent_unpadded_chunk_max_and_vote_verified": true
+    }
+  },
+  "model_reused": true,
+  "artifact_hashes_unchanged": true,
+  "training_performed": false,
+  "project_data_used": false,
+  "protected_data_used": false
+}

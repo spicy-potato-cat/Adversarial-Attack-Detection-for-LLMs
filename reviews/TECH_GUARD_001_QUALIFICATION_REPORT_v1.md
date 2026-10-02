@@ -1,8 +1,55 @@
 # TECH-GUARD-001 Qualification Report v1
 
-Date: 2026-10-01. Status: UNDER INVESTIGATION; execution BLOCKED by model access.
-Repository: existing Commander workspace; no fresh clone, per latest instruction.
-Branch: tech/guard-001, based on completed calibration commit 57bcadc.
+Date: 2026-10-02. Status: PASS; continuation supersedes the historical blocker below.
+Repository: existing Commander workspace; branch tech/guard-001; continuation starts dd82539.
+
+## Authorized Continuation
+
+Authenticated account sumitt86 successfully fetched the exact pinned config and
+snapshot. The selected candidate is unchanged and Commander-authorized:
+meta-llama/Llama-Prompt-Guard-2-22M at
+`11614a155199674a0a95e6602d6ab0417b790ed0`. No qualification sweep was repeated.
+All nine upstream files were retrieved into the ignored repository-local cache.
+No credentials are stored in committed evidence. Previous qualification.json and
+environment.json remain historical records, not current access/freeze status.
+
+Local verification: DebertaV2ForSequenceClassification, 12 layers, hidden size 384,
+two output logits, 512 positions, 70,830,722 total parameters; 70,682,112 in the
+backbone including embeddings. The 22M marketing name is not the total count.
+All model loading-info lists are empty: no missing or randomly initialized weights.
+The installed CPU Torch 2.6.0 / Transformers 4.49.0 stack works without upgrades.
+
+The pinned config serializes generic LABEL_0/LABEL_1, not semantic names. Meta's
+official helper explicitly scores softmax class 1 as malicious, temperature 1.
+This documentary mapping is separate from the unchanged serialized config.
+The helper evidence is pinned to cookbook commit
+`3c106f3e6ee79d6df51ae706bc7ef2d734ec3ded`, SHA-256
+`29afa64415b07811c22b3c2e27330ee40f9e8edff0a7faf4940b8cfc1c74d424`:
+[Pinned Meta helper](https://github.com/meta-llama/llama-cookbook/blob/3c106f3e6ee79d6df51ae706bc7ef2d734ec3ded/getting-started/responsible_ai/prompt_guard/inference.py).
+The pinned card documents logits.argmax as the default decision, both injection
+and jailbreak coverage, and attempted instruction override rather than harm alone.
+
+Tokenizer: DebertaV2TokenizerFast, CLS=1, SEP=2, PAD=0; two added tokens.
+The unbounded model_max_length sentinel is ignored in favor of the model's 512
+limit. Upstream strip/precompiled/space removal/NFKC preprocessing is retained
+exactly; tokenizer bytes are hash-bound. No project normalization is added.
+The 510-token content budget, 64-token overlap, max score and OR-of-native-votes
+are pre-specified engineering policies, not empirically tuned operating points.
+
+License and AUP bytes are hash-bound to this snapshot. Authorized access is not
+legal clearance; redistribution/service attribution and other license obligations
+must be reviewed before distribution. Nothing in this phase redistributes weights
+or trains a model using Llama outputs. No apparent conflict with this authorized
+local synthetic verification was identified; no legal opinion is asserted.
+
+Standalone tests, real CPU smoke, and synthetic existing-detector regressions pass.
+No project data, protected evaluation, project calibration, or E1-E10 ran.
+See the finalized freeze, implementation, test and status reports for acceptance.
+
+## Historical Qualification (2026-10-01)
+
+The following preserves the original access-blocked assessment for audit history.
+Its proposed/unverified/access-blocked statements are superseded above.
 
 ## Reconnaissance
 
