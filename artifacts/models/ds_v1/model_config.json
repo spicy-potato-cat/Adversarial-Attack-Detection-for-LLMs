@@ -1,0 +1,90 @@
+{
+  "calibration_recipe": {
+    "class_weight": null,
+    "default_vote": "calibrated_probability >= 0.5; DEFAULT DEVELOPMENT CUTPOINT",
+    "final_operating_point": "NOT_FROZEN",
+    "ftol": 1e-12,
+    "gtol": 1e-10,
+    "input": "logit(clip(raw_LR_class_1_probability,1e-12,1-1e-12))",
+    "maxiter": 1000,
+    "method": "platt_sigmoid_on_lr_log_odds",
+    "optimizer": "L-BFGS-B",
+    "penalty": null,
+    "positive_slope_lower_bound": 1e-08,
+    "target_smoothing": "positive=(Npos+1)/(Npos+2); negative=1/(Nneg+2)",
+    "version": "ds_v1_cal_v1"
+  },
+  "calibration_version": "ds_v1_cal_v1",
+  "created_at_utc": "2026-10-02T16:17:22.338801+00:00",
+  "default_binary_vote": "calibrated_probability >= 0.5; DEFAULT DEVELOPMENT CUTPOINT",
+  "detector_id": "statistical_perplexity",
+  "detector_version": "ds_v1",
+  "environment": {
+    "cpu_threads": 8,
+    "cuda_available": false,
+    "os": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "fastapi": "0.115.5",
+      "huggingface-hub": "0.36.2",
+      "joblib": "1.6.0",
+      "numpy": "2.1.3",
+      "pyarrow": "19.0.1",
+      "pydantic": "2.10.2",
+      "pytest": "8.3.4",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.17.1",
+      "tokenizers": "0.21.4",
+      "torch": "2.6.0",
+      "transformers": "4.49.0"
+    },
+    "python": "3.11.9",
+    "torch_runtime": "2.6.0+cpu"
+  },
+  "extractor_config": {
+    "device": "cpu",
+    "max_analysis_tokens": 4096,
+    "model_id": "distilbert/distilgpt2",
+    "model_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+    "provisional_high_surprisal_threshold": 8.0,
+    "tokenizer_id": "distilbert/distilgpt2",
+    "window_size": 128,
+    "window_stride": 64
+  },
+  "feature_extractor_sha256": {
+    "detection_service/app/detectors/statistical/__init__.py": "32ec738f8a25da0552facb413a694b038876ec4b35c56d21de5ed25145608a2e",
+    "detection_service/app/detectors/statistical/config.py": "e5cc8512c3acbdad323ec826176513fd8173c8864c7aa8ae081a7503d46f7f17",
+    "detection_service/app/detectors/statistical/features.py": "b2ccdc4cc64789170a730990570373079645b870f027f6d11da2d78fe71866fa",
+    "detection_service/app/detectors/statistical/perplexity_detector.py": "032ab0652fdc5d4ddd3d6e833d558f29d63d04164e90901dc3eecd05b3dde599",
+    "detection_service/app/detectors/statistical/perplexity_engine.py": "cd978bd44d719dbee29b510f8f6138638a2ff30d8d23a6a379fdf48e5c26b4c1"
+  },
+  "feature_extractor_version": "v0.1",
+  "feature_schema_sha256": "2b042f88e7403985e5f94e34bb1107b377069e591322767a482a33b5e2cbf8b7",
+  "final_operating_point": "NOT_FROZEN",
+  "raw_score": "LR predict_proba class 1; higher = adversarial risk",
+  "reference_lm": {
+    "file_sha256": {
+      "config.json": "4ec5947c1d59fee6212cdf3b0ec1a53eac02092554c5ff0a733488cbd2c64f3a",
+      "generation_config.json": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+      "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "model.safetensors": "e1ff18884359fe8beb795a5f414feb85a6ce3d929ad019c0d958c039d2b94a1b",
+      "tokenizer.json": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+      "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+      "vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+    },
+    "model_id": "distilbert/distilgpt2",
+    "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+    "snapshot_path": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa"
+  },
+  "scorer_recipe": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "fit_intercept": true,
+    "max_iter": 1000,
+    "penalty": "l2",
+    "random_state": 1701,
+    "scorer": "LogisticRegression",
+    "solver": "lbfgs"
+  },
+  "source_git_commit": "e1d604e0224a6e1555b15ed4e32247458cdabf81",
+  "training_manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6"
+}

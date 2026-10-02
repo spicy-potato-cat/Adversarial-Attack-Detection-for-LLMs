@@ -14,6 +14,7 @@ class Settings:
     enable_finetuned_semantic_detector: bool = False
     finetuned_model_dir: str | None = None
     finetuned_device: str = "cpu"
+    statistical_model_dir: str | None = None
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -63,4 +64,5 @@ class Settings:
             in {"1", "true", "yes"},
             finetuned_model_dir=os.getenv("FINETUNED_SEMANTIC_MODEL_DIR"),
             finetuned_device=os.getenv("FINETUNED_SEMANTIC_DEVICE", "cpu"),
+            statistical_model_dir=os.getenv("STATISTICAL_MODEL_DIR"),
         )

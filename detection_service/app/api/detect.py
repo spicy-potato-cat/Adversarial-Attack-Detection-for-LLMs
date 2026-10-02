@@ -4,6 +4,7 @@ from detection_service.app.contracts.detection_request import DetectionRequest
 from detection_service.app.contracts.detector_result import DetectionResponse
 from detection_service.app.detectors.semantic.detector import SemanticDetectorError
 from detection_service.app.detectors.statistical.perplexity_engine import PerplexityEngineError
+from detection_service.app.detectors.statistical_risk import StatisticalScorerError
 
 
 router = APIRouter(prefix="/v1/detect", tags=["detection"])
@@ -19,6 +20,11 @@ def detect_input(payload: DetectionRequest, request: Request) -> DetectionRespon
             raise HTTPException(
                 status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
                 detail={"code": "STATISTICAL_DETECTOR_UNAVAILABLE", "message": str(exc)},
+            ) from None
+        except StatisticalScorerError:
+            raise HTTPException(
+                status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                detail={"code": "STATISTICAL_SCORER_UNAVAILABLE", "message": "Statistical scorer is unavailable"},
             ) from None
         except SemanticDetectorError as exc:
             raise HTTPException(

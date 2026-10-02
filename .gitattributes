@@ -5,3 +5,4 @@
 /artifacts/models/dm_b_v1_test_evidence.json -text
 /artifacts/models/dm_b_v1/** -text
 /artifacts/models/dg_v1/** -text
+/artifacts/models/ds_v1/** -text

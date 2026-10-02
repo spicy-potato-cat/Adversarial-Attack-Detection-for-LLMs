@@ -1,0 +1,21 @@
+{
+  "compatibility_aliases_retained": true,
+  "excluded": "source/label metadata, runtime latency, coverage counters and auxiliary surface anomalies",
+  "extractor_version": "v0.1",
+  "feature_count": 10,
+  "feature_names": [
+    "whole_prompt_nll",
+    "whole_prompt_ppl",
+    "global_perplexity",
+    "mean_window_perplexity",
+    "max_window_perplexity",
+    "std_window_perplexity",
+    "mean_surprisal",
+    "max_surprisal",
+    "surprisal_std",
+    "high_surprisal_ratio"
+  ],
+  "normalization": "identity; no scaling, log transformation, imputation or selection",
+  "ordering_source": "existing export_features.FIELDNAMES[3:13]",
+  "schema_version": "ds_features_v1"
+}
