@@ -1,0 +1,5 @@
+{
+  "decision_frozen": "calibrated_probability >= 0.5; DEFAULT DEVELOPMENT CUTPOINT",
+  "scorer_and_calibrator_frozen": true,
+  "started_at_utc": "2026-10-02T16:26:17.736493+00:00"
+}

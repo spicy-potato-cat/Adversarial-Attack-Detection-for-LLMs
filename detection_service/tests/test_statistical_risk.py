@@ -251,6 +251,12 @@ def test_protected_partition_rejected_before_manifest_access(tmp_path, partition
         selected_rows(tmp_path / "nonexistent", partition)
 
 
+def test_protected_source_metadata_rejected_before_text_loading():
+    from detection_service.scripts.calibrate_semantic_baseline import validate_rows
+    with pytest.raises(RuntimeError, match="protected or non-approved"):
+        validate_rows([{"source_dataset": "XSTest"}])
+
+
 def test_validation_exactly_once_and_postfreeze_gate(tmp_path, monkeypatch):
     from detection_service.scripts import train_statistical_risk as runner
     monkeypatch.setattr(runner, "MODEL", tmp_path)

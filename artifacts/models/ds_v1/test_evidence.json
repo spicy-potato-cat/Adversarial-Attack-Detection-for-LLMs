@@ -1,0 +1,986 @@
+{
+  "exit_code": 0,
+  "passed": 193,
+  "failed": 0,
+  "skipped": 0,
+  "deselected": [
+    "detection_service/tests/test_semantic.py::test_development_manifest_hash_and_partition_boundaries",
+    "detection_service/tests/test_semantic_calibration.py::test_manifest_integrity_count_and_calibration_membership",
+    "detection_service/tests/test_semantic_calibration.py::test_cross_partition_lineage_is_rejected",
+    "detection_service/tests/test_semantic_calibration.py::test_protected_source_and_bad_label_mapping_are_rejected",
+    "detection_service/tests/test_semantic_calibration.py::test_text_loader_rejects_non_calibration_rows_before_file_access",
+    "detection_service/tests/test_semantic_calibration.py::test_text_loader_reads_only_approved_files_and_verifies_selected_text",
+    "detection_service/tests/test_semantic_finetuned.py::test_manifest_boundary_and_class_weights_base_train_only",
+    "detection_service/tests/test_semantic_finetuned_calibration.py::test_calibration_partition_count_and_manifest_integrity",
+    "detection_service/tests/test_semantic_finetuned_calibration.py::test_selected_calibration_texts_only_and_approved_source_access"
+  ],
+  "reports": [
+    {
+      "nodeid": "detection_service/tests/test_api.py::test_api_success_preserves_privacy_and_reuses_startup_model",
+      "outcome": "passed",
+      "duration": 0.021209100000305625
+    },
+    {
+      "nodeid": "detection_service/tests/test_api.py::test_empty_prompt_is_rejected_cleanly",
+      "outcome": "passed",
+      "duration": 0.008615200000349432
+    },
+    {
+      "nodeid": "detection_service/tests/test_api.py::test_inference_failure_does_not_return_raw_stack_trace",
+      "outcome": "passed",
+      "duration": 0.009318300000813906
+    },
+    {
+      "nodeid": "detection_service/tests/test_api.py::test_service_can_route_statistical_and_semantic_detectors_together",
+      "outcome": "passed",
+      "duration": 0.012523300000793824
+    },
+    {
+      "nodeid": "detection_service/tests/test_api.py::test_semantic_detector_failure_is_structured_service_error",
+      "outcome": "passed",
+      "duration": 0.007443200000125216
+    },
+    {
+      "nodeid": "detection_service/tests/test_detector.py::test_normal_sentence_returns_finite_measurements",
+      "outcome": "passed",
+      "duration": 0.005178799999157491
+    },
+    {
+      "nodeid": "detection_service/tests/test_detector.py::test_code_like_text_returns_schema_valid_features",
+      "outcome": "passed",
+      "duration": 0.00431159999970987
+    },
+    {
+      "nodeid": "detection_service/tests/test_detector.py::test_single_token_result_is_explicitly_insufficient_without_ppl",
+      "outcome": "passed",
+      "duration": 0.003056700000342971
+    },
+    {
+      "nodeid": "detection_service/tests/test_engine.py::test_correct_causal_shift_scores_next_token",
+      "outcome": "passed",
+      "duration": 0.001013500000226486
+    },
+    {
+      "nodeid": "detection_service/tests/test_engine.py::test_known_logits_verify_shift_n_minus_one_nll_and_ppl",
+      "outcome": "passed",
+      "duration": 0.0064910999999483465
+    },
+    {
+      "nodeid": "detection_service/tests/test_engine.py::test_unicode_is_passed_to_tokenizer_unchanged",
+      "outcome": "passed",
+      "duration": 0.0010695999999370542
+    },
+    {
+      "nodeid": "detection_service/tests/test_engine.py::test_long_input_uses_chunks_and_reports_configured_truncation",
+      "outcome": "passed",
+      "duration": 0.0010294000003341353
+    },
+    {
+      "nodeid": "detection_service/tests/test_engine.py::test_chunking_scores_tail_token_without_omission",
+      "outcome": "passed",
+      "duration": 0.0013662000001204433
+    },
+    {
+      "nodeid": "detection_service/tests/test_engine.py::test_short_input_does_not_divide_by_zero_or_call_model",
+      "outcome": "passed",
+      "duration": 0.00015669999993406236
+    },
+    {
+      "nodeid": "detection_service/tests/test_engine.py::test_empty_direct_engine_input_is_explicitly_unscored",
+      "outcome": "passed",
+      "duration": 0.00038979999953880906
+    },
+    {
+      "nodeid": "detection_service/tests/test_engine.py::test_deterministic_inference",
+      "outcome": "passed",
+      "duration": 0.0018824999997377745
+    },
+    {
+      "nodeid": "detection_service/tests/test_engine.py::test_unavailable_device_fails_cleanly",
+      "outcome": "passed",
+      "duration": 0.00039170000036392594
+    },
+    {
+      "nodeid": "detection_service/tests/test_export.py::test_offline_export_contains_features_but_not_raw_text",
+      "outcome": "passed",
+      "duration": 0.03030179999950633
+    },
+    {
+      "nodeid": "detection_service/tests/test_features.py::test_feature_math_and_windowing",
+      "outcome": "passed",
+      "duration": 0.0003264999995735707
+    },
+    {
+      "nodeid": "detection_service/tests/test_features.py::test_empty_surprisal_sequence_is_explicit",
+      "outcome": "passed",
+      "duration": 0.00016039999991335208
+    },
+    {
+      "nodeid": "detection_service/tests/test_features.py::test_surface_anomaly_features_preserve_raw_unicode_signals",
+      "outcome": "passed",
+      "duration": 0.00019079999947280157
+    },
+    {
+      "nodeid": "detection_service/tests/test_features.py::test_statistical_features_can_include_surface_anomaly_block",
+      "outcome": "passed",
+      "duration": 0.00038949999998294516
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_frozen_config_roundtrip_and_exact_identity",
+      "outcome": "passed",
+      "duration": 0.000387399999453919
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_policy_changes_rejected[revision-main]",
+      "outcome": "passed",
+      "duration": 0.0003083000001424807
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_policy_changes_rejected[positive_class-0]",
+      "outcome": "passed",
+      "duration": 0.000291599999400205
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_policy_changes_rejected[chunk_tokens-512]",
+      "outcome": "passed",
+      "duration": 0.0002806000002237852
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_policy_changes_rejected[overlap_tokens-0]",
+      "outcome": "passed",
+      "duration": 0.00028159999965282623
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_policy_changes_rejected[batch_size-0]",
+      "outcome": "passed",
+      "duration": 0.00027630000022327295
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_extra_config_field_rejected",
+      "outcome": "passed",
+      "duration": 0.00024249999933090294
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_spans_full_union_no_tail_drop[0-0]",
+      "outcome": "passed",
+      "duration": 0.0001395999997839681
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_spans_full_union_no_tail_drop[1-1]",
+      "outcome": "passed",
+      "duration": 0.0001452999995308346
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_spans_full_union_no_tail_drop[510-1]",
+      "outcome": "passed",
+      "duration": 0.00019720000000233995
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_spans_full_union_no_tail_drop[511-2]",
+      "outcome": "passed",
+      "duration": 0.00020279999989725184
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_spans_full_union_no_tail_drop[956-2]",
+      "outcome": "passed",
+      "duration": 0.0002248999999210355
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_spans_full_union_no_tail_drop[957-3]",
+      "outcome": "passed",
+      "duration": 0.00024140000004990725
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_spans_full_union_no_tail_drop[10000-23]",
+      "outcome": "passed",
+      "duration": 0.0013859000000593369
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_invalid_spans_rejected[args0]",
+      "outcome": "passed",
+      "duration": 0.0003005999997185427
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_invalid_spans_rejected[args1]",
+      "outcome": "passed",
+      "duration": 0.0003254999992350349
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_invalid_spans_rejected[args2]",
+      "outcome": "passed",
+      "duration": 0.00029600000016216654
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_real_tiny_model_result_schema_and_deterministic_reuse[note]",
+      "outcome": "passed",
+      "duration": 0.12723360000018147
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_real_tiny_model_result_schema_and_deterministic_reuse[A synthetic engineering note.]",
+      "outcome": "passed",
+      "duration": 0.00592899999992369
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_real_tiny_model_result_schema_and_deterministic_reuse[caf\\xe9 \\u4f60\\u597d \\U0001f680]",
+      "outcome": "passed",
+      "duration": 0.005398599999352882
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_real_tiny_model_result_schema_and_deterministic_reuse[note\\x00override]",
+      "outcome": "passed",
+      "duration": 0.005151499999556108
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_empty_whitespace_rejected_by_authoritative_request[]",
+      "outcome": "passed",
+      "duration": 0.00020940000013069948
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_empty_whitespace_rejected_by_authoritative_request[ ]",
+      "outcome": "passed",
+      "duration": 0.000182699999641045
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_empty_whitespace_rejected_by_authoritative_request[\\n\\t]",
+      "outcome": "passed",
+      "duration": 0.00029600000016216654
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_empty_whitespace_rejected_by_authoritative_request[\\u2003]",
+      "outcome": "passed",
+      "duration": 0.000264400000560272
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_invalid_text_type_rejected",
+      "outcome": "passed",
+      "duration": 0.0005879000000277301
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_malformed_surrogate_fails_explicitly",
+      "outcome": "passed",
+      "duration": 0.0008743999997022911
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_zero_upstream_tokens_explicitly_unscored",
+      "outcome": "passed",
+      "duration": 0.0007911000002422952
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_direct_ids_special_budget_tail_only_max_aggregation[510]",
+      "outcome": "passed",
+      "duration": 0.0129624999999578
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_direct_ids_special_budget_tail_only_max_aggregation[511]",
+      "outcome": "passed",
+      "duration": 0.0027453000002424233
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_direct_ids_special_budget_tail_only_max_aggregation[10000]",
+      "outcome": "passed",
+      "duration": 0.0179932999999437
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_native_argmax_tie_is_benign_not_ge_half",
+      "outcome": "passed",
+      "duration": 0.001765500000146858
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_score_orientation_class_one",
+      "outcome": "passed",
+      "duration": 0.0016679000000294764
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_invalid_logits_explicit_no_dummy_or_fallback[nan]",
+      "outcome": "passed",
+      "duration": 0.0013443999996525235
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_invalid_logits_explicit_no_dummy_or_fallback[wrong]",
+      "outcome": "passed",
+      "duration": 0.0010027999996964354
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_inference_exception_explicit",
+      "outcome": "passed",
+      "duration": 0.0015423999993799953
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_synthetic_artifact_save_reload_offline_and_reuse",
+      "outcome": "passed",
+      "duration": 0.30092100000001665
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_missing_artifact_explicit_no_fallback",
+      "outcome": "passed",
+      "duration": 0.0018190999999205815
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_tampered_bytes_rejected_before_loading[model_config.json]",
+      "outcome": "passed",
+      "duration": 0.06350139999995008
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_tampered_bytes_rejected_before_loading[freeze_metadata.json]",
+      "outcome": "passed",
+      "duration": 0.05964239999957499
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_tampered_bytes_rejected_before_loading[config.json]",
+      "outcome": "passed",
+      "duration": 0.06427179999991495
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_tampered_bytes_rejected_before_loading[tokenizer.json]",
+      "outcome": "passed",
+      "duration": 0.0797097999993639
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_tampered_bytes_rejected_before_loading[model.safetensors]",
+      "outcome": "passed",
+      "duration": 0.07109779999973398
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_incompatible_or_escaped_freeze_rejected[revision-main]",
+      "outcome": "passed",
+      "duration": 0.0767204000003403
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_incompatible_or_escaped_freeze_rejected[snapshot_path-../outside]",
+      "outcome": "passed",
+      "duration": 0.07779809999919962
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_incompatible_or_escaped_freeze_rejected[parameter_count-1]",
+      "outcome": "passed",
+      "duration": 0.0956754999997429
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_incompatible_or_escaped_freeze_rejected[architecture-OtherModel]",
+      "outcome": "passed",
+      "duration": 0.09040860000004614
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_model_dependency_load_failure_explicit",
+      "outcome": "passed",
+      "duration": 0.07045089999974152
+    },
+    {
+      "nodeid": "detection_service/tests/test_guard.py::test_partial_random_weight_initialization_rejected",
+      "outcome": "passed",
+      "duration": 0.06592509999973117
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic.py::test_semantic_detector_returns_raw_score_without_calibration_or_vote",
+      "outcome": "passed",
+      "duration": 0.0005142999998497544
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic.py::test_semantic_detector_reports_untrained_head_without_guessing_score",
+      "outcome": "passed",
+      "duration": 0.00031990000024961773
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic.py::test_sentence_transformer_encoder_fails_explicitly_without_hashing_fallback",
+      "outcome": "passed",
+      "duration": 0.00029259999973874073
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic.py::test_classifier_save_load_roundtrip_with_metadata",
+      "outcome": "passed",
+      "duration": 0.020899899999676563
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic.py::test_trained_classifier_save_reload_and_feature_dimension_validation",
+      "outcome": "passed",
+      "duration": 0.03033439999944676
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic.py::test_semantic_detector_declares_development_binary_vote_only_when_cutpoint_exists",
+      "outcome": "passed",
+      "duration": 0.00031489999946643366
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic.py::test_training_manifest_rejects_protected_source",
+      "outcome": "passed",
+      "duration": 0.004552700000203913
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic.py::test_shortcut_check_rejects_obvious_metadata_leakage",
+      "outcome": "passed",
+      "duration": 0.0002154000003429246
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic.py::test_semantic_artifact_missing_classifier_fails_explicitly",
+      "outcome": "passed",
+      "duration": 0.0030638999996881466
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_calibrator_serialization_reload_and_determinism",
+      "outcome": "passed",
+      "duration": 0.0716852999994444
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_calibrator_incompatible_model_is_rejected",
+      "outcome": "passed",
+      "duration": 0.05340489999980491
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_calibrator_invalid_metadata_is_rejected[calibration_manifest_sha256-wrong]",
+      "outcome": "passed",
+      "duration": 0.052674300000035146
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_calibrator_invalid_metadata_is_rejected[calibration_sample_count-232]",
+      "outcome": "passed",
+      "duration": 0.05128100000001723
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_calibrator_invalid_metadata_is_rejected[detector_version-other-model]",
+      "outcome": "passed",
+      "duration": 0.050742299999910756
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_calibrator_invalid_metadata_is_rejected[calibration_method-isotonic]",
+      "outcome": "passed",
+      "duration": 0.05089010000028793
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_calibrator_invalid_metadata_is_rejected[label_mapping-value4]",
+      "outcome": "passed",
+      "duration": 0.04980430000068736
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_calibrator_missing_and_corrupted_mapping_fail_explicitly",
+      "outcome": "passed",
+      "duration": 0.06161359999987326
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_artifact_loader_loads_calibration_and_requires_missing_mapping",
+      "outcome": "passed",
+      "duration": 0.05350079999971058
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_detector_and_api_preserve_raw_score_and_development_vote",
+      "outcome": "passed",
+      "duration": 0.030836599999929604
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_invalid_raw_probabilities_are_rejected[values0]",
+      "outcome": "passed",
+      "duration": 0.022799599999416387
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_invalid_raw_probabilities_are_rejected[values1]",
+      "outcome": "passed",
+      "duration": 0.021249800000077812
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_invalid_raw_probabilities_are_rejected[values2]",
+      "outcome": "passed",
+      "duration": 0.02268259999982547
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_invalid_raw_probabilities_are_rejected[values3]",
+      "outcome": "passed",
+      "duration": 0.02361060000021098
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_invalid_raw_probabilities_are_rejected[values4]",
+      "outcome": "passed",
+      "duration": 0.023993300000256568
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_diagnostic_bins_include_endpoints_and_are_fit_only",
+      "outcome": "passed",
+      "duration": 0.005981500000416418
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_calibration_runner_never_calls_classifier_training_or_validation_evaluation",
+      "outcome": "passed",
+      "duration": 0.007121599999663886
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_calibration.py::test_default_service_wiring_requires_authoritative_calibrator",
+      "outcome": "passed",
+      "duration": 0.049541100000169536
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_config_roundtrip_and_environment_parsing",
+      "outcome": "passed",
+      "duration": 0.0005965999998807092
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_invalid_configuration_is_rejected[changes0]",
+      "outcome": "passed",
+      "duration": 0.00020810000023629982
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_invalid_configuration_is_rejected[changes1]",
+      "outcome": "passed",
+      "duration": 0.0002283000003444613
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_invalid_configuration_is_rejected[changes2]",
+      "outcome": "passed",
+      "duration": 0.00019799999972747173
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_invalid_configuration_is_rejected[changes3]",
+      "outcome": "passed",
+      "duration": 0.00020489999951678328
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_invalid_configuration_is_rejected[changes4]",
+      "outcome": "passed",
+      "duration": 0.00019359999987500487
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_invalid_configuration_is_rejected[changes5]",
+      "outcome": "passed",
+      "duration": 0.00023579999924550066
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_invalid_configuration_is_rejected[changes6]",
+      "outcome": "passed",
+      "duration": 0.00023809999947843608
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_result_orientation_bounds_and_uncalibrated_vote",
+      "outcome": "passed",
+      "duration": 0.007574399999612069
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_reversed_model_labels_fail_explicitly",
+      "outcome": "passed",
+      "duration": 0.00030929999957152177
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_empty_whitespace_input_is_rejected[]",
+      "outcome": "passed",
+      "duration": 0.0001708999998299987
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_empty_whitespace_input_is_rejected[ ]",
+      "outcome": "passed",
+      "duration": 0.000147800000377174
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_empty_whitespace_input_is_rejected[\\t\\n]",
+      "outcome": "passed",
+      "duration": 0.00014119999923423165
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_normal_unicode_eval_is_deterministic[A normal engineering agenda.]",
+      "outcome": "passed",
+      "duration": 0.004855099999986123
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_normal_unicode_eval_is_deterministic[caf\\xe9 \\u0928\\u092e\\u0938\\u094d\\u0924\\u0947 \\u200b meeting]",
+      "outcome": "passed",
+      "duration": 0.005101900000227033
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_truncation_boundary_and_long_input_metadata",
+      "outcome": "passed",
+      "duration": 0.006069600000046194
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_batch_inference_preserves_order_and_model_reuse",
+      "outcome": "passed",
+      "duration": 0.009140199999819743
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_artifact_tokenizer_model_save_reload_and_single_load",
+      "outcome": "passed",
+      "duration": 0.0696882000002006
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_missing_or_tampered_artifact_has_no_fallback",
+      "outcome": "passed",
+      "duration": 0.04198929999984102
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_model_load_failure_and_inference_failure_are_explicit",
+      "outcome": "passed",
+      "duration": 0.06156559999999445
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_nonfinite_logits_fail_without_dummy_probability",
+      "outcome": "passed",
+      "duration": 0.00130650000028254
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_service_integration_retains_distinct_detector_identity",
+      "outcome": "passed",
+      "duration": 0.012264599999980419
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_default_service_wiring_loads_dm_b_without_substitution",
+      "outcome": "passed",
+      "duration": 0.00020820000008825446
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_loader_rejects_calibration_before_access",
+      "outcome": "passed",
+      "duration": 0.0002413000001979526
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_transformer_parameters_update_on_synthetic_fixture",
+      "outcome": "passed",
+      "duration": 0.05838370000037685
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned.py::test_authoritative_training_refuses_existing_output",
+      "outcome": "passed",
+      "duration": 0.0005936000006840914
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_calibration_artifact_schema_reload_bounds_monotonic_determinism",
+      "outcome": "passed",
+      "duration": 0.04370519999974931
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_calibrated_detector_preserves_raw_vote_weights_and_api",
+      "outcome": "passed",
+      "duration": 0.08264869999948132
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_missing_calibration_explicit_optional_vs_required",
+      "outcome": "passed",
+      "duration": 0.043923000000177126
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[payload]",
+      "outcome": "passed",
+      "duration": 0.03803830000015296
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[payload_array]",
+      "outcome": "passed",
+      "duration": 0.04057230000034906
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[metadata_array]",
+      "outcome": "passed",
+      "duration": 0.043400999999903433
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[identity]",
+      "outcome": "passed",
+      "duration": 0.0466562999999951
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[method]",
+      "outcome": "passed",
+      "duration": 0.04129509999984293
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[manifest]",
+      "outcome": "passed",
+      "duration": 0.043481599999722675
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[model]",
+      "outcome": "passed",
+      "duration": 0.056434600000102364
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[counts]",
+      "outcome": "passed",
+      "duration": 0.03982449999966775
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[input]",
+      "outcome": "passed",
+      "duration": 0.049972199999501754
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[validation]",
+      "outcome": "passed",
+      "duration": 0.049519400000463065
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[protected]",
+      "outcome": "passed",
+      "duration": 0.04187649999948917
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_calibration_never_substitutes_or_falls_back[missing_metadata]",
+      "outcome": "passed",
+      "duration": 0.04192429999966407
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_model_change_invalidates_calibration",
+      "outcome": "passed",
+      "duration": 0.03323499999987689
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_raw_probabilities_rejected[raw0]",
+      "outcome": "passed",
+      "duration": 0.0002006999993682257
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_raw_probabilities_rejected[raw1]",
+      "outcome": "passed",
+      "duration": 0.00017939999997906853
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_invalid_raw_probabilities_rejected[raw2]",
+      "outcome": "passed",
+      "duration": 0.00021070000002509914
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_manifest_mismatch_stops_before_text_access",
+      "outcome": "passed",
+      "duration": 0.0027907999992748955
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_other_partition_rows_not_validated_or_processed",
+      "outcome": "passed",
+      "duration": 0.003559599999789498
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_non_calibration_features_rejected_before_source_access[BASE_TRAIN]",
+      "outcome": "passed",
+      "duration": 0.0002585000002000015
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_non_calibration_features_rejected_before_source_access[VALIDATION]",
+      "outcome": "passed",
+      "duration": 0.0001695000000836444
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_non_calibration_features_rejected_before_source_access[FROZEN_EXTERNAL]",
+      "outcome": "passed",
+      "duration": 0.00018230000023322646
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_non_calibration_features_rejected_before_source_access[INTERNAL_TEST]",
+      "outcome": "passed",
+      "duration": 0.0001756999999997788
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_authoritative_fit_refuses_existing_artifact",
+      "outcome": "passed",
+      "duration": 0.0008179999995263643
+    },
+    {
+      "nodeid": "detection_service/tests/test_semantic_finetuned_calibration.py::test_calibration_failure_is_explicit_api_error",
+      "outcome": "passed",
+      "duration": 0.02452290000019275
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_feature_schema_stable_export_order_and_hash",
+      "outcome": "passed",
+      "duration": 0.00021410000044852495
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_feature_values_and_compatibility_aliases_not_modified",
+      "outcome": "passed",
+      "duration": 0.008066000000326312
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_invalid_features_stop_without_imputation[None]",
+      "outcome": "passed",
+      "duration": 0.0033266000000367058
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_invalid_features_stop_without_imputation[nan]",
+      "outcome": "passed",
+      "duration": 0.004061999999976251
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_invalid_features_stop_without_imputation[inf]",
+      "outcome": "passed",
+      "duration": 0.005122200000187149
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_scorer_training_reproducibility_convergence_and_orientation",
+      "outcome": "passed",
+      "duration": 0.011212600000362727
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_scorer_fit_base_train_only[CALIBRATION]",
+      "outcome": "passed",
+      "duration": 0.0003053999998883228
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_scorer_fit_base_train_only[VALIDATION]",
+      "outcome": "passed",
+      "duration": 0.00019869999960064888
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_scorer_fit_base_train_only[INTERNAL_TEST]",
+      "outcome": "passed",
+      "duration": 0.000189200000022538
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_scorer_fit_base_train_only[FROZEN_EXTERNAL]",
+      "outcome": "passed",
+      "duration": 0.0001874999998108251
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_scorer_fit_base_train_only[R0]",
+      "outcome": "passed",
+      "duration": 0.00019330000031914096
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_calibrator_fit_calibration_only[BASE_TRAIN]",
+      "outcome": "passed",
+      "duration": 0.00030390000029001385
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_calibrator_fit_calibration_only[VALIDATION]",
+      "outcome": "passed",
+      "duration": 0.0002024000004894333
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_calibrator_fit_calibration_only[INTERNAL_TEST]",
+      "outcome": "passed",
+      "duration": 0.00024819999998726416
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_calibrator_fit_calibration_only[R1]",
+      "outcome": "passed",
+      "duration": 0.0002753999997366918
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_nonfinite_matrix_rejected[nan]",
+      "outcome": "passed",
+      "duration": 0.00028159999965282623
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_nonfinite_matrix_rejected[inf]",
+      "outcome": "passed",
+      "duration": 0.00026049999996757833
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_nonconvergence_is_stop",
+      "outcome": "passed",
+      "duration": 0.0003903999995600316
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_scorer_and_calibrator_save_reload_deterministic",
+      "outcome": "passed",
+      "duration": 0.022565900000699912
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_missing_or_corrupt_scorer_no_fallback[scorer.joblib]",
+      "outcome": "passed",
+      "duration": 0.0073722999995879945
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_missing_or_corrupt_scorer_no_fallback[feature_schema.json]",
+      "outcome": "passed",
+      "duration": 0.004991200000404206
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_missing_or_corrupt_scorer_no_fallback[model_config.json]",
+      "outcome": "passed",
+      "duration": 0.00560710000081599
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_missing_scorer_explicit",
+      "outcome": "passed",
+      "duration": 0.0010963000004267087
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_missing_or_corrupt_calibrator_explicit[calibrator.json]",
+      "outcome": "passed",
+      "duration": 0.0028229000008650473
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_missing_or_corrupt_calibrator_explicit[calibration_metadata.json]",
+      "outcome": "passed",
+      "duration": 0.002513100000214763
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_missing_or_corrupt_calibrator_explicit[integrity_manifest.json]",
+      "outcome": "passed",
+      "duration": 0.003628200000093784
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_calibration_bound_to_exact_scorer",
+      "outcome": "passed",
+      "duration": 0.01252699999986362
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_detector_schema_vote_evidence_reuse_and_no_runtime_fit",
+      "outcome": "passed",
+      "duration": 0.01620180000008986
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_calibrated_not_raw_vote_rule",
+      "outcome": "passed",
+      "duration": 0.004837299999962852
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_single_token_explicitly_insufficient_not_fake_vote",
+      "outcome": "passed",
+      "duration": 0.005057500000475557
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_long_unicode_extractor_and_coverage_preserved[Unicode caf\\xe9 \\u4f60\\u597d]",
+      "outcome": "passed",
+      "duration": 0.010657499999979336
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_long_unicode_extractor_and_coverage_preserved[hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note hello note ]",
+      "outcome": "passed",
+      "duration": 0.014159000000290689
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_scorer_and_calibrator_required",
+      "outcome": "passed",
+      "duration": 0.0002334000000701053
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_api_smoke_and_structured_scoring_failure",
+      "outcome": "passed",
+      "duration": 0.019111000000521017
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_settings_default_factory_requires_scored_artifacts",
+      "outcome": "passed",
+      "duration": 0.0017834999998740386
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_manifest_drift_rejected_before_data_access",
+      "outcome": "passed",
+      "duration": 0.003296599999885075
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_protected_partition_rejected_before_manifest_access[FROZEN_EXTERNAL]",
+      "outcome": "passed",
+      "duration": 0.0002688000004127389
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_protected_partition_rejected_before_manifest_access[INTERNAL_TEST]",
+      "outcome": "passed",
+      "duration": 0.0002154000003429246
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_protected_partition_rejected_before_manifest_access[R2]",
+      "outcome": "passed",
+      "duration": 0.0002134000005753478
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_protected_source_metadata_rejected_before_text_loading",
+      "outcome": "passed",
+      "duration": 0.0002635000000736909
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_validation_exactly_once_and_postfreeze_gate",
+      "outcome": "passed",
+      "duration": 0.001478500000303029
+    },
+    {
+      "nodeid": "detection_service/tests/test_statistical_risk.py::test_no_existing_extractor_source_edit",
+      "outcome": "passed",
+      "duration": 0.007188999999925727
+    }
+  ],
+  "project_data_access_attempts": [],
+  "scope": "Synthetic regression only; Python open audit enforced; native I/O not intercepted"
+}
