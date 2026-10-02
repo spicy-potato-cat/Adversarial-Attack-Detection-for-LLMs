@@ -1,0 +1,77 @@
+{
+  "calibration_used_for_scorer": false,
+  "coefficients": [
+    [
+      -0.008487385019663745,
+      -0.021803155584697323,
+      -0.021803155584697323,
+      -0.193984515248614,
+      0.23666581921164648,
+      0.41118054978520263,
+      -0.008487385019663745,
+      0.7057740270166308,
+      -1.8702543499336501,
+      2.918165220807766
+    ]
+  ],
+  "converged": true,
+  "created_at_utc": "2026-10-02T16:23:33.818543+00:00",
+  "detector_version": "ds_v1",
+  "extraction": {
+    "extraction_seconds": 50.505220799999734,
+    "failures": 0,
+    "feature_count": 10,
+    "feature_schema_sha256": "2b042f88e7403985e5f94e34bb1107b377069e591322767a482a33b5e2cbf8b7",
+    "matrix_sha256": "fdb5a39a9af833562a56dfeedf2aadb81485a5382b6ffee3e3d02f3f6bffc9a6",
+    "nonfinite_values": 0,
+    "partition": "BASE_TRAIN",
+    "row_order_sha256": "f0651e2e461171277425cc73b0aecc3093fac95afbb9a81987b08fdf0c8b99e4",
+    "sample_count": 1135,
+    "source_artifact_sha256": {
+      "Dataset/Raw/datasets/GitHub/Do-Not-Answer/datasets/Instruction/do_not_answer_en.csv": "8585dc135d3b8692b2e464151a313f5164e30f06416e03aa5d11e6c3a21d980e",
+      "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e",
+      "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/train-00000-of-00001-9564e8b05b4757ab.parquet": "2e10bc7ab30f542c97e4e83e2a5683000b5057d25ec10908784c631d44124c04"
+    }
+  },
+  "feature_names": [
+    "whole_prompt_nll",
+    "whole_prompt_ppl",
+    "global_perplexity",
+    "mean_window_perplexity",
+    "max_window_perplexity",
+    "std_window_perplexity",
+    "mean_surprisal",
+    "max_surprisal",
+    "surprisal_std",
+    "high_surprisal_ratio"
+  ],
+  "feature_schema_sha256": "2b042f88e7403985e5f94e34bb1107b377069e591322767a482a33b5e2cbf8b7",
+  "fit_git_commit": "1a7cd67c36758cda4415d22ddc4360764b15cf19",
+  "intercept": [
+    -2.8543400579338614
+  ],
+  "n_iter": [
+    193
+  ],
+  "negative_count": 952,
+  "partitions_fitted": [
+    "BASE_TRAIN"
+  ],
+  "positive_count": 183,
+  "protected_data_used": false,
+  "recipe": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "fit_intercept": true,
+    "max_iter": 1000,
+    "penalty": "l2",
+    "random_state": 1701,
+    "scorer": "LogisticRegression",
+    "solver": "lbfgs"
+  },
+  "sample_count": 1135,
+  "scorer_sha256": "2a68f2cdff57da7c9bc7b94c9bedbb712f4a2597a70efa90892ec78e319ccdd7",
+  "training_code_sha256": "2e92212a07e6c41997737a8696ddf765d8e6d85711d885555f4350d86843c933",
+  "training_seconds": 0.061361899999610614,
+  "validation_used_for_fitting": false
+}
