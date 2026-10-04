@@ -209,7 +209,7 @@ def test_lr_recipe_only_authorized_cap_changed(toy):
     x = np.asarray([e["v1_features"] for e in evidence])
     model = features.fit_lr(x, np.asarray([int(r["label"]) for r in rows]))
     assert all(model.get_params()[k] == v for k, v in features.RECIPE.items() if k not in ("scorer", "max_iter"))
-    assert model.max_iter == features.MAX_ITER == 5000
+    assert model.max_iter == features.MAX_ITER == 20000
     assert features.RECIPE["max_iter"] == 1000
     assert model.tol == 1e-4
 
@@ -223,17 +223,17 @@ def test_all_toy_fits_record_convergence(toy):
     _, _, _, reports, _ = toy
     fits = [r for block in features.BLOCKS for r in reports[block]]
     assert len(fits) == 35
-    assert all(r["max_iter"] == 5000 and r["converged"] and not r["convergence_warnings"]
-               and max(r["n_iter"]) < 5000 and r["fit_seconds"] >= 0 for r in fits)
+    assert all(r["max_iter"] == 20000 and r["converged"] and not r["convergence_warnings"]
+               and max(r["n_iter"]) < 20000 and r["fit_seconds"] >= 0 for r in fits)
 
 
 def test_convergence_warning_records_failure_and_stops_next_fit(monkeypatch):
     import warnings
     class NonconvergingLR:
         def __init__(self, **params):
-            assert params["max_iter"] == 5000
+            assert params["max_iter"] == 20000
         def fit(self, matrix, labels):
-            self.n_iter_ = np.asarray([5000])
+            self.n_iter_ = np.asarray([20000])
             warnings.warn("iteration limit", features.ConvergenceWarning)
             return self
         def predict_proba(self, matrix):
@@ -244,7 +244,7 @@ def test_convergence_warning_records_failure_and_stops_next_fit(monkeypatch):
     with pytest.raises(ValueError, match="STOP"):
         features.evaluate(rows, evidence, convergence=records.append)
     assert len(records) == 1 and records[0]["block"] == "B0" and records[0]["fold"] == 0
-    assert records[0]["converged"] is False and records[0]["n_iter"] == [5000]
+    assert records[0]["converged"] is False and records[0]["n_iter"] == [20000]
     assert records[0]["convergence_warnings"] == ["iteration limit"]
 
 

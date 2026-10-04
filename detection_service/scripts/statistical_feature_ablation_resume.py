@@ -17,10 +17,10 @@ from detection_service.analysis.statistical_oof import require
 from detection_service.quality.development_fixture import ROOT, file_hash, json_bytes, verify
 from detection_service.scripts import statistical_feature_ablation as original
 
-START = "2369c3c2155b5765b2f51a7c63ea231774fc0be0"
+START = "5670f7780f084ce40545fa8c6b8a61100598d6a5"
 FREEZE = "2eed02d6257f0f55bd6e52e499dcc2017e8a728d"
 HISTORY = original.OUT
-OUT = HISTORY / "resume_5000"
+OUT = HISTORY / "resume_20000"
 CACHE_SHA = "02241c0b2de1941783187f398c82ce3e8a7ec0a67655ace10f13ced7c29a70b3"
 CODE = (*original.CODE, "detection_service/scripts/statistical_feature_ablation_resume.py")
 read, write, git, baseline = original.read, original.write, original.git, original.baseline
@@ -57,12 +57,13 @@ def prepare():
     prior = history_checks()
     baseline.check()
     paths = [p for p in HISTORY.iterdir() if p.is_file()]
+    paths += [p for p in (HISTORY / "resume_5000").rglob("*") if p.is_file()]
     paths += [p for p in (ROOT / "reviews").glob("TECH_STAT_004*.md") if p.is_file()]
     OUT.mkdir()
     write(OUT / "preflight_v1.json", {**prior, "resume_start_commit": START, "original_run_code_commit": FREEZE,
         "historical_sha256": {p.relative_to(ROOT).as_posix(): file_hash(p) for p in sorted(paths)},
         "code_sha256": {p: file_hash(ROOT / p) for p in CODE}, "token_cache_sha256": CACHE_SHA,
-        "numerical_correction": {"original_max_iter": 1000, "max_iter": MAX_ITER, "tol": 1e-4,
+        "numerical_correction": {"original_max_iter": 1000, "second_max_iter": 5000, "max_iter": MAX_ITER, "tol": 1e-4,
             "actual_recipe": {**RECIPE, "max_iter": MAX_ITER}, "all_blocks_all_folds": True,
             "feature_schema_recipe": "Historical 1000 retained byte-for-byte; numerical override recorded here.",
             "scientific_parameters_changed": False, "new_model_selection_cycle": False},
@@ -80,8 +81,8 @@ def checked():
     baseline.verify_hashes(ROOT, payload["code_sha256"])
     require(payload["definitions_sha256"] == prior["definitions_sha256"] and payload["token_cache_sha256"] == CACHE_SHA,
             "resume freeze drift")
-    require(payload["numerical_correction"]["actual_recipe"] == {**RECIPE, "max_iter": 5000}
-            and MAX_ITER == 5000, "authorized numerical recipe drift")
+    require(payload["numerical_correction"]["actual_recipe"] == {**RECIPE, "max_iter": 20000}
+            and MAX_ITER == 20000, "authorized numerical recipe drift")
     return payload
 
 
@@ -98,7 +99,7 @@ def reproduce_B0(rows, scores):
 
 
 def convergence_payload(records):
-    return {"original_max_iter": 1000, "max_iter": 5000, "fits": records, "attempted_fits": len(records),
+    return {"original_max_iter": 1000, "second_max_iter": 5000, "max_iter": 20000, "fits": records, "attempted_fits": len(records),
             "all_final_fits_converged": len(records) == 35 and all(r["converged"] for r in records),
             "maximum_observed_n_iter": max((max(r["n_iter"]) for r in records), default=0)}
 
@@ -170,7 +171,7 @@ def check():
     require(convergence == convergence_payload(records) and convergence["all_final_fits_converged"], "nonconverged final fits")
     folds = read(OUT / "block_fold_metrics_v1.json")
     for r in records:
-        require(r["max_iter"] == 5000 and not r["convergence_warnings"] and max(r["n_iter"]) < 5000
+        require(r["max_iter"] == 20000 and not r["convergence_warnings"] and max(r["n_iter"]) < 20000
                 and r["fit_seconds"] >= 0, "convergence evidence drift")
         require(all(folds[r["block"]]["folds"][r["fold"]][k] == v for k, v in r.items() if k != "block"), "fit binding drift")
     rows, _ = baseline.selected_metadata()

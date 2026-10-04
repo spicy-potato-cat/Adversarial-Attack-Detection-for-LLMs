@@ -31,7 +31,7 @@ ADDED = {
                 ("max_mean_nll", "median_mean_nll", "iqr_mean_nll", "top2_mean_nll", "available")),
 }
 BLOCKS = tuple(ADDED)
-MAX_ITER = 5000
+MAX_ITER = 20000
 
 
 def names(block):
@@ -203,7 +203,7 @@ def fit_lr(matrix, labels, convergence=None):
               "convergence_warnings": messages, "fit_seconds": time.perf_counter() - started}
     if convergence:
         convergence(record)
-    require(record["converged"], "LR did not converge at 5000; STOP for Commander")
+    require(record["converged"], "LR did not converge at 20000; STOP for Commander")
     return model
 
 
