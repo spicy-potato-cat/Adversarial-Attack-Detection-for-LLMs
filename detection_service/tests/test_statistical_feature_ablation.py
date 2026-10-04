@@ -204,11 +204,48 @@ def test_exactly_once_per_block_and_fixed_metrics(toy):
     assert products == pipeline.analysis_products(rows, evidence, scores, reports)
 
 
-def test_lr_recipe_is_unchanged(toy):
+def test_lr_recipe_only_authorized_cap_changed(toy):
     rows, evidence, _, _, _ = toy
     x = np.asarray([e["v1_features"] for e in evidence])
     model = features.fit_lr(x, np.asarray([int(r["label"]) for r in rows]))
-    assert all(model.get_params()[k] == v for k, v in features.RECIPE.items() if k != "scorer")
+    assert all(model.get_params()[k] == v for k, v in features.RECIPE.items() if k not in ("scorer", "max_iter"))
+    assert model.max_iter == features.MAX_ITER == 5000
+    assert features.RECIPE["max_iter"] == 1000
+    assert model.tol == 1e-4
+
+
+def test_feature_definitions_byte_hash_unchanged():
+    assert features.hashlib.sha256(features.json_bytes(features.definitions())).hexdigest() == (
+        "a560a14b9a27ebd754d8b150d600e82aee99c46c6c7c5ff7e9f4d38801f9f4c2")
+
+
+def test_all_toy_fits_record_convergence(toy):
+    _, _, _, reports, _ = toy
+    fits = [r for block in features.BLOCKS for r in reports[block]]
+    assert len(fits) == 35
+    assert all(r["max_iter"] == 5000 and r["converged"] and not r["convergence_warnings"]
+               and max(r["n_iter"]) < 5000 and r["fit_seconds"] >= 0 for r in fits)
+
+
+def test_convergence_warning_records_failure_and_stops_next_fit(monkeypatch):
+    import warnings
+    class NonconvergingLR:
+        def __init__(self, **params):
+            assert params["max_iter"] == 5000
+        def fit(self, matrix, labels):
+            self.n_iter_ = np.asarray([5000])
+            warnings.warn("iteration limit", features.ConvergenceWarning)
+            return self
+        def predict_proba(self, matrix):
+            pytest.fail("unconverged model must not predict")
+    monkeypatch.setattr(features, "LogisticRegression", NonconvergingLR)
+    rows, evidence = fixture()
+    records = []
+    with pytest.raises(ValueError, match="STOP"):
+        features.evaluate(rows, evidence, convergence=records.append)
+    assert len(records) == 1 and records[0]["block"] == "B0" and records[0]["fold"] == 0
+    assert records[0]["converged"] is False and records[0]["n_iter"] == [5000]
+    assert records[0]["convergence_warnings"] == ["iteration limit"]
 
 
 def test_lineage_leakage_rejected():

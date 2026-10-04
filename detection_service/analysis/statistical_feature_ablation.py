@@ -2,6 +2,7 @@
 
 import hashlib
 import math
+import time
 import warnings
 
 import numpy as np
@@ -30,6 +31,7 @@ ADDED = {
                 ("max_mean_nll", "median_mean_nll", "iqr_mean_nll", "top2_mean_nll", "available")),
 }
 BLOCKS = tuple(ADDED)
+MAX_ITER = 5000
 
 
 def names(block):
@@ -186,16 +188,26 @@ class References:
         return vector
 
 
-def fit_lr(matrix, labels):
+def fit_lr(matrix, labels, convergence=None):
     require(np.isfinite(matrix).all() and set(labels.tolist()) == {0, 1}, "invalid LR training data")
-    with warnings.catch_warnings():
-        warnings.simplefilter("error", ConvergenceWarning)
-        model = LogisticRegression(**{k: v for k, v in RECIPE.items() if k != "scorer"}).fit(matrix, labels)
-    require(max(model.n_iter_) < RECIPE["max_iter"], "LR did not converge; do not change frozen recipe")
+    # Keep the historical recipe/feature hashes intact; only the authorized cap differs.
+    params = {k: v for k, v in RECIPE.items() if k != "scorer"}
+    model = LogisticRegression(**{**params, "max_iter": MAX_ITER})
+    started = time.perf_counter()
+    with warnings.catch_warnings(record=True) as caught:
+        warnings.simplefilter("always", ConvergenceWarning)
+        model.fit(matrix, labels)
+    messages = [str(w.message) for w in caught if issubclass(w.category, ConvergenceWarning)]
+    record = {"max_iter": MAX_ITER, "n_iter": model.n_iter_.tolist(),
+              "converged": bool(not messages and max(model.n_iter_) < MAX_ITER),
+              "convergence_warnings": messages, "fit_seconds": time.perf_counter() - started}
+    if convergence:
+        convergence(record)
+    require(record["converged"], "LR did not converge at 5000; STOP for Commander")
     return model
 
 
-def evaluate(rows, evidence, progress=None):
+def evaluate(rows, evidence, progress=None, convergence=None):
     check_membership(rows)
     require(len(rows) == len(evidence), "OOF evidence length mismatch")
     labels = np.asarray([int(r["label"]) for r in rows])
@@ -212,14 +224,19 @@ def evaluate(rows, evidence, progress=None):
         full_matrix = np.asarray([refs.transform(item, "B6") for item in evidence])
         for block in BLOCKS:
             matrix = full_matrix[:, :len(names(block))]
-            model = fit_lr(matrix[train], labels[train])
+            fit_record = {}
+            def record_fit(record):
+                fit_record.update(record)
+                if convergence:
+                    convergence({"fold": fold, "block": block, **record})
+            model = fit_lr(matrix[train], labels[train], record_fit)
             predicted = model.predict_proba(matrix[held])[:, 1]
             require(np.isfinite(predicted).all() and np.array_equal(predicted, model.predict_proba(matrix[held])[:, 1]), "unstable/invalid probabilities")
             require(np.isnan(scores[block][held]).all(), "duplicate held-out predictions")
             scores[block][held] = predicted
             reports[block].append({"fold": fold, "train_rows": len(train), "held_out_rows": len(held),
                 "train_membership_sha256": digest_ids(train_rows), "held_out_membership_sha256": digest_ids(held_rows),
-                "reference_sha256": hashlib.sha256(json_bytes(refs.payload)).hexdigest(), "n_iter": model.n_iter_.tolist(),
+                "reference_sha256": hashlib.sha256(json_bytes(refs.payload)).hexdigest(), **fit_record,
                 "identity_leakage": 0, "lineage_leakage": 0, "metrics": metrics(labels[held], predicted)})
             if progress:
                 progress(fold, block)
