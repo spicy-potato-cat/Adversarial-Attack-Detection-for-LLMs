@@ -1,0 +1,67 @@
+{
+  "acceptance_code_sha256": {
+    "detection_service/analysis/semantic_oof_acceptance.py": "dd1c513e2f5fb2bc310a1c0cccff69ffb36ff1f30be6839b5ef5259deae88b20",
+    "detection_service/tests/test_semantic_oof_acceptance.py": "4414240451570b78d64dfa587ade436757f4efe5e14a523c1d97eb4851f36392"
+  },
+  "acceptance_commit_policy": "Post-run evidence commit, not model/run code provenance. Resolve git log -1 --format=%H -- this manifest after commit.",
+  "acceptance_output_sha256": {
+    "dm_b_v1_fold_stability_v1.json": "6326865de9c9e026645f4894e0b128fadcfd1be176dd4ba77a1f0b65334ea02e",
+    "dm_b_v1_persistent_fn_3pct_v1.csv": "29d6bc129bf82ee330715b3e7fbda7947a1c551143cdafbeadb8e580ed07d9c3",
+    "dm_b_v1_rate_intervals_v1.json": "f425751bba64fed1e7abc729e95d45697a30d47aeb78147e56c8d55564ccd93a",
+    "dm_b_v1_raw_fn_v1.csv": "c22583bf59d9c80b124b6383aa8fa1555e7d9581439cedb8aba8eb606c5319ca",
+    "dm_b_v1_residual_failure_analysis_v1.json": "003b49763bf6aeed2afa1790fecbc6c834575167244e2f68018fed21bec4033e"
+  },
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "decision": "FREEZE_DM_B_V1",
+  "fold_sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+  "isolation": {
+    "E1_E10": false,
+    "SEM_004_started": false,
+    "STAT_004_modified": false,
+    "calibration_access": false,
+    "deployment_threshold_frozen": false,
+    "model_inference": false,
+    "model_trained": false,
+    "protected_access": false,
+    "validation_access": false
+  },
+  "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "original_input_sha256": {
+    "completion_v1.json": "603a240cee84f9fa5bc9c6d2f60817ddb1bb96cf84a019468941e13edc334860",
+    "dm_b_v1_error_characterization.json": "12e4bcc58c57fa3b4deef7ed82a2c4903f71c33d903550f58c89436ebd0c52d5",
+    "dm_b_v1_hard_examples.csv": "bdb41ca856544fbce7e92430afa7d02984191515be7c330fe7223e03c8728ee9",
+    "dm_b_v1_oof_run_metadata.json": "fb4e8c2b17bdbfe3b5491324effa39f7d0e3acf917c13041c217643283f845c4",
+    "dm_b_v1_recipe_fold_metrics.json": "2edc6107c9b8bd69822f3ba207dfe765de59fd2ff12dcfd7639db4d40b139e3e",
+    "dm_b_v1_recipe_oof_curves.json": "2dba9dd5de2151107e8aba9b1dd20ac4f6046b694b1fd9ff472b9cd0747cb262",
+    "dm_b_v1_recipe_oof_metrics.json": "9471b40621ecb688184861476d10f2821688c40ee200f756e8695f6b12b61c59",
+    "dm_b_v1_recipe_oof_predictions.csv": "cfafb1d4286a8b61e4054da337cd45a4353a44894899b034670f9413f6b1000c",
+    "dm_b_v1_truncation_analysis.json": "e78973b2f4f099c25140b8e11c81dd3e19b9618998aefe199b87ea7f8116b024",
+    "dm_b_v1_v2_recommendation.json": "1cc58a257729d98c11c4c8f5a405ff25faafcce0fdb4e8471de17cd129ad74bc",
+    "run_started_v1.json": "5dbf13162f43879eddc56becb8a60580b506f9e55ea03b05402be784aadc5b71"
+  },
+  "original_output_hash_checks": 9,
+  "preflight_sha256": "9f0465747c214f01cce3c5927b7ea2f8058d5d97c310ce6b3e2b6f8af9fb6dc7",
+  "report_sha256": {
+    "reviews/TECH_SEM_003_FINAL_ACCEPTANCE_v1.md": "210b36a66d03b97229a044ed232205a01ff84b56300ef395b9f9df4d7f22c2e6",
+    "reviews/TECH_SEM_003_POSTRUN_TEST_REPORT_v1.md": "2e16b1246b394ec69267a183a67e4db743db95c7279fd05d50dfb04fb319fadc",
+    "reviews/TECH_SEM_003_RESIDUAL_FAILURE_ANALYSIS_v1.md": "c5d922bb942120039fc5f2e4dd4256ffb3017541c3f109ee3326a311d709e542"
+  },
+  "run_code_commit": "5096d078b599c43ddd4e32b4fbfcaedcc83e4646",
+  "status": "PASS_TECH_SEM_003_FINAL_ACCEPTANCE",
+  "tests": {
+    "deselected": 1,
+    "deselected_test": "test_run_stops_at_preflight_before_loading_text_or_training",
+    "errors": 0,
+    "failures": 0,
+    "reason": "Pre-run-only assertion requires an absent run marker; superseded after authoritative completion by post-run refusal test.",
+    "skipped": 0,
+    "tests": 120,
+    "xml_path": "artifacts/semantic_v2/oof/acceptance_tests_v1.xml",
+    "xml_sha256": "786d878ca869ba9673e13d2b754ecd439d2d6aa7a1caab4e56e0a14839f8ddd1"
+  }
+}

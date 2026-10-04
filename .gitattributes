@@ -15,3 +15,4 @@
 /detection_service/scripts/semantic_oof_baseline.py -text
 /detection_service/tests/test_semantic_oof.py -text
 /reviews/TECH_SEM_003*.md -text
+/detection_service/tests/test_semantic_oof_acceptance.py -text

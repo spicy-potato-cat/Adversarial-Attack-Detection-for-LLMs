@@ -1,0 +1,459 @@
+{
+  "confidence": {
+    "FN": {
+      "borderline": 0,
+      "count": 17,
+      "high_confidence": 12,
+      "logit_margin": {
+        "count": 17,
+        "maximum": -0.5936484336853027,
+        "median": -3.762171745300293,
+        "minimum": -8.15687084197998,
+        "q25": -7.018035411834717,
+        "q75": -2.197213888168335,
+        "q90": -1.5839348554611203
+      },
+      "other": 5,
+      "raw_positive_probability": {
+        "count": 17,
+        "maximum": 0.3557981848716736,
+        "median": 0.02270570397377014,
+        "minimum": 0.0002866760769393295,
+        "q25": 0.0008947817841544747,
+        "q75": 0.10000095516443253,
+        "q90": 0.17883022725582126
+      },
+      "threshold_distance": {
+        "count": 17,
+        "maximum": 0.49971332392306067,
+        "median": 0.47729429602622986,
+        "minimum": 0.14420181512832642,
+        "q25": 0.3999990448355675,
+        "q75": 0.4991052182158455,
+        "q90": 0.4994997455389239
+      }
+    },
+    "FP": {
+      "borderline": 0,
+      "count": 5,
+      "high_confidence": 4,
+      "logit_margin": {
+        "count": 5,
+        "maximum": 6.876086235046387,
+        "median": 4.1323442459106445,
+        "minimum": 1.3927984237670898,
+        "q25": 2.382823944091797,
+        "q75": 6.6433939933776855,
+        "q90": 6.783009338378906
+      },
+      "other": 1,
+      "raw_positive_probability": {
+        "count": 5,
+        "maximum": 0.9989688396453857,
+        "median": 0.9842081665992737,
+        "minimum": 0.8010386228561401,
+        "q25": 0.9155081510543823,
+        "q75": 0.9986990690231323,
+        "q90": 0.9988609313964844
+      },
+      "threshold_distance": {
+        "count": 5,
+        "maximum": 0.49896883964538574,
+        "median": 0.4842081665992737,
+        "minimum": 0.30103862285614014,
+        "q25": 0.4155081510543823,
+        "q75": 0.4986990690231323,
+        "q90": 0.49886093139648435
+      }
+    }
+  },
+  "confidence_rules": {
+    "borderline_distance_inclusive": 0.1,
+    "confident_wrong_probability": 0.9,
+    "cutpoint": 0.5
+  },
+  "fold_groups": {
+    "0": {
+      "confusion_matrix": {
+        "fn": 6,
+        "fp": 2,
+        "tn": 189,
+        "tp": 30
+      },
+      "fnr": 0.16666666666666666,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.07870447595018114,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.31890794311279463
+      },
+      "fpr": 0.010471204188481676,
+      "fpr_interval": {
+        "level": 0.95,
+        "lower": 0.002876294579848993,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.03736903548571138
+      },
+      "negative": 191,
+      "positive": 36,
+      "recall": 0.8333333333333334,
+      "rows": 227
+    },
+    "1": {
+      "confusion_matrix": {
+        "fn": 3,
+        "fp": 2,
+        "tn": 189,
+        "tp": 33
+      },
+      "fnr": 0.08333333333333333,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.02874861133599338,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.2182669124927263
+      },
+      "fpr": 0.010471204188481676,
+      "fpr_interval": {
+        "level": 0.95,
+        "lower": 0.002876294579848993,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.03736903548571138
+      },
+      "negative": 191,
+      "positive": 36,
+      "recall": 0.9166666666666666,
+      "rows": 227
+    },
+    "2": {
+      "confusion_matrix": {
+        "fn": 2,
+        "fp": 0,
+        "tn": 190,
+        "tp": 35
+      },
+      "fnr": 0.05405405405405406,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.014950976833157673,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.17704654350813104
+      },
+      "fpr": 0.0,
+      "fpr_interval": {
+        "level": 0.95,
+        "lower": 0.0,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.01981752945971958
+      },
+      "negative": 190,
+      "positive": 37,
+      "recall": 0.9459459459459459,
+      "rows": 227
+    },
+    "3": {
+      "confusion_matrix": {
+        "fn": 4,
+        "fp": 0,
+        "tn": 190,
+        "tp": 33
+      },
+      "fnr": 0.10810810810810811,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.04285189940411473,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.24708531544126028
+      },
+      "fpr": 0.0,
+      "fpr_interval": {
+        "level": 0.95,
+        "lower": 0.0,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.01981752945971958
+      },
+      "negative": 190,
+      "positive": 37,
+      "recall": 0.8918918918918919,
+      "rows": 227
+    },
+    "4": {
+      "confusion_matrix": {
+        "fn": 2,
+        "fp": 1,
+        "tn": 189,
+        "tp": 35
+      },
+      "fnr": 0.05405405405405406,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.014950976833157673,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.17704654350813104
+      },
+      "fpr": 0.005263157894736842,
+      "fpr_interval": {
+        "level": 0.95,
+        "lower": 0.0009296815656636322,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.029205558110269425
+      },
+      "negative": 190,
+      "positive": 37,
+      "recall": 0.9459459459459459,
+      "rows": 227
+    }
+  },
+  "length_groups": {
+    "128-256": {
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "tp": 14
+      },
+      "fnr": 0.0,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 1.3877787807814457e-17,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.2153108027376358
+      },
+      "fpr": null,
+      "fpr_interval": null,
+      "negative": 0,
+      "positive": 14,
+      "recall": 1.0,
+      "rows": 14
+    },
+    "2-31": {
+      "confusion_matrix": {
+        "fn": 12,
+        "fp": 5,
+        "tn": 884,
+        "tp": 67
+      },
+      "fnr": 0.1518987341772152,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.08908267892631742,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.24699854437704644
+      },
+      "fpr": 0.00562429696287964,
+      "fpr_interval": {
+        "level": 0.95,
+        "lower": 0.002404685107763661,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.013098021093823973
+      },
+      "negative": 889,
+      "positive": 79,
+      "recall": 0.8481012658227848,
+      "rows": 968
+    },
+    "257-512": {
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "tp": 4
+      },
+      "fnr": 0.0,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.0,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.4898908364545973
+      },
+      "fpr": null,
+      "fpr_interval": null,
+      "negative": 0,
+      "positive": 4,
+      "recall": 1.0,
+      "rows": 4
+    },
+    "32-127": {
+      "confusion_matrix": {
+        "fn": 5,
+        "fp": 0,
+        "tn": 63,
+        "tp": 81
+      },
+      "fnr": 0.05813953488372093,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.025086935621079658,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.12897844802678554
+      },
+      "fpr": 0.0,
+      "fpr_interval": {
+        "level": 0.95,
+        "lower": 3.469446951953614e-18,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.05747119958885172
+      },
+      "negative": 63,
+      "positive": 86,
+      "recall": 0.9418604651162791,
+      "rows": 149
+    },
+    "513+": {
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "tp": 0
+      },
+      "fnr": null,
+      "fnr_interval": null,
+      "fpr": null,
+      "fpr_interval": null,
+      "negative": 0,
+      "positive": 0,
+      "recall": null,
+      "rows": 0
+    }
+  },
+  "limitations": [
+    "Patterns overlap, not mutually exclusive causal assignments.",
+    "All semantic root causes remain unresolved without independent mechanism evidence, including confidently wrong errors.",
+    "Source label composition is confounded; no general R1 distribution-shift claim.",
+    "Exactly one OOF prediction per sample; repeated misses are not measurable.",
+    "Uncalibrated softmax confidence is descriptive, not calibrated epistemic certainty."
+  ],
+  "patterns": [
+    {
+      "FN_count": 0,
+      "FP_count": 0,
+      "category": "truncation_associated",
+      "error_count": 0,
+      "supporting_sample_ids": []
+    },
+    {
+      "FN_count": 0,
+      "FP_count": 0,
+      "category": "low_margin",
+      "error_count": 0,
+      "supporting_sample_ids": []
+    },
+    {
+      "FN_count": 12,
+      "FP_count": 4,
+      "category": "high_confidence_wrong_semantic_hypothesis_not_verified",
+      "error_count": 16,
+      "supporting_sample_ids": [
+        "W2-2e5c0b7b868cdf69b5d982aa",
+        "W2-303f4b2a371e72661137710d",
+        "W2-3516b6590258e0cec95eff08",
+        "W2-5ce365d631f87bfbcb320b57",
+        "W2-6dec1d1e760ab9c2a6513bb5",
+        "W2-73393d2cc2cdb038bdea8214",
+        "W2-77cf86dae187121c639f9238",
+        "W2-805d39d74af0ea5b2434c65b",
+        "W2-895c82b8380970b81ad5ffc3",
+        "W2-95dc1e2598812e324351e3da",
+        "W2-a03c09febd60ecbb79721270",
+        "W2-d8e69ad880a8eab96770ca48",
+        "W2-dd2317a66faaf974b05e945d",
+        "W2-e6a82606693d08d9276b9e91",
+        "W2-ea8a6cc0602cdb6dd81b006b",
+        "W2-f675d5868a2f79a121ab5ba7"
+      ]
+    },
+    {
+      "FN_count": 12,
+      "FP_count": 5,
+      "category": "short_input_association",
+      "error_count": 17,
+      "supporting_sample_ids": [
+        "W2-2ad1d1769b8c4f91cfa39d67",
+        "W2-2e5c0b7b868cdf69b5d982aa",
+        "W2-2ed0f5f420e8459fecdf3214",
+        "W2-303f4b2a371e72661137710d",
+        "W2-38a024307c4c2d5ac89611ef",
+        "W2-4abb2dd48ec62f908edf0fa4",
+        "W2-5ce365d631f87bfbcb320b57",
+        "W2-6dec1d1e760ab9c2a6513bb5",
+        "W2-73393d2cc2cdb038bdea8214",
+        "W2-77cf86dae187121c639f9238",
+        "W2-895c82b8380970b81ad5ffc3",
+        "W2-9572e34c7ec6f3af9501ac0f",
+        "W2-95dc1e2598812e324351e3da",
+        "W2-a03c09febd60ecbb79721270",
+        "W2-d8e69ad880a8eab96770ca48",
+        "W2-e6a82606693d08d9276b9e91",
+        "W2-f675d5868a2f79a121ab5ba7"
+      ]
+    },
+    {
+      "FN_count": 0,
+      "FP_count": 0,
+      "category": "long_input_association",
+      "error_count": 0,
+      "supporting_sample_ids": []
+    }
+  ],
+  "scope": "DEVELOPMENT_DIAGNOSTICS_NOT_CAUSAL_OR_GENERAL_DISTRIBUTION_SHIFT",
+  "source_groups": {
+    "Do-Not-Answer": {
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 2,
+        "tn": 657,
+        "tp": 0
+      },
+      "fnr": null,
+      "fnr_interval": null,
+      "fpr": 0.0030349013657056147,
+      "fpr_interval": {
+        "level": 0.95,
+        "lower": 0.0008326743438927305,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.01099739258439717
+      },
+      "negative": 659,
+      "positive": 0,
+      "recall": null,
+      "rows": 659
+    },
+    "deepset Prompt Injection": {
+      "confusion_matrix": {
+        "fn": 17,
+        "fp": 3,
+        "tn": 290,
+        "tp": 166
+      },
+      "fnr": 0.09289617486338798,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.058809474137819284,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.14372297802532397
+      },
+      "fpr": 0.010238907849829351,
+      "fpr_interval": {
+        "level": 0.95,
+        "lower": 0.00348814556261684,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.029665777274822183
+      },
+      "negative": 293,
+      "positive": 183,
+      "recall": 0.907103825136612,
+      "rows": 476
+    }
+  },
+  "unresolved_no_coverage_or_confidence_marker": {
+    "count": 6,
+    "sample_ids": [
+      "W2-2ad1d1769b8c4f91cfa39d67",
+      "W2-2ed0f5f420e8459fecdf3214",
+      "W2-38a024307c4c2d5ac89611ef",
+      "W2-4abb2dd48ec62f908edf0fa4",
+      "W2-9572e34c7ec6f3af9501ac0f",
+      "W2-e9e6d1223268b99b4c3ec855"
+    ]
+  }
+}

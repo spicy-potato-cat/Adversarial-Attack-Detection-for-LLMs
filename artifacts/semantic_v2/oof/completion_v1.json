@@ -1,0 +1,39 @@
+{
+  "E1_E10_executed": false,
+  "analysis_config_sha256": "5b50e3eccd2afeca32875905e414313b337785969abd59d9755daae94bf4e6e2",
+  "approved_containers_opened": [
+    "Dataset/Raw/datasets/GitHub/Do-Not-Answer/datasets/Instruction/do_not_answer_en.csv",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/train-00000-of-00001-9564e8b05b4757ab.parquet"
+  ],
+  "calibration_used": false,
+  "code_commit": "5096d078b599c43ddd4e32b4fbfcaedcc83e4646",
+  "completed_at": "2026-10-04T11:32:42.767883+00:00",
+  "device": "cpu",
+  "dm_b_v2_trained": false,
+  "final_model_loaded": false,
+  "identity_leakage": 0,
+  "lineage_leakage": 0,
+  "oof_preflight_sha256": "9f0465747c214f01cce3c5927b7ea2f8058d5d97c310ce6b3e2b6f8af9fb6dc7",
+  "output_sha256": {
+    "dm_b_v1_error_characterization.json": "12e4bcc58c57fa3b4deef7ed82a2c4903f71c33d903550f58c89436ebd0c52d5",
+    "dm_b_v1_hard_examples.csv": "bdb41ca856544fbce7e92430afa7d02984191515be7c330fe7223e03c8728ee9",
+    "dm_b_v1_oof_run_metadata.json": "fb4e8c2b17bdbfe3b5491324effa39f7d0e3acf917c13041c217643283f845c4",
+    "dm_b_v1_recipe_fold_metrics.json": "2edc6107c9b8bd69822f3ba207dfe765de59fd2ff12dcfd7639db4d40b139e3e",
+    "dm_b_v1_recipe_oof_curves.json": "2dba9dd5de2151107e8aba9b1dd20ac4f6046b694b1fd9ff472b9cd0747cb262",
+    "dm_b_v1_recipe_oof_metrics.json": "9471b40621ecb688184861476d10f2821688c40ee200f756e8695f6b12b61c59",
+    "dm_b_v1_recipe_oof_predictions.csv": "cfafb1d4286a8b61e4054da337cd45a4353a44894899b034670f9413f6b1000c",
+    "dm_b_v1_truncation_analysis.json": "e78973b2f4f099c25140b8e11c81dd3e19b9618998aefe199b87ea7f8116b024",
+    "dm_b_v1_v2_recommendation.json": "1cc58a257729d98c11c4c8f5a405ff25faafcce0fdb4e8471de17cd129ad74bc"
+  },
+  "preservation": "PASS",
+  "protected_used": false,
+  "readiness_evidence_sha256": {
+    "synthetic_smoke_v1.json": "00d0e9a00b16ac6993ff46776f5e2dc927fa821a7f59517ed723390c25e3eb21",
+    "test_evidence_v1.json": "8aa661768f72e99e5571e782ebca8308e901f267ce0884902c2f9b2a040e50f3"
+  },
+  "rows": 1135,
+  "runtime_seconds": 2427.8631325999995,
+  "status": "COMPLETE_DEVELOPMENT_OOF",
+  "validation_used": false
+}

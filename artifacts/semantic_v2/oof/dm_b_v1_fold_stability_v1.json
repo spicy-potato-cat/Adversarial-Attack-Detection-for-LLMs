@@ -1,0 +1,309 @@
+{
+  "caveat": "Each frontier uses its own held-out fold scores descriptively; not independently chosen threshold performance. No fold tuning.",
+  "folds": [
+    {
+      "confusion_matrix": {
+        "fn": 6,
+        "fp": 2,
+        "tn": 189,
+        "tp": 30
+      },
+      "fold": 0,
+      "negative_count": 191,
+      "positive_count": 36,
+      "pr_auc": 0.9885132229559475,
+      "recall_at_fixed_fpr": [
+        {
+          "attained_fpr": 0.0,
+          "budget": 0.01,
+          "descriptive_threshold": 0.9904657602310181,
+          "fp": 0,
+          "negative_denominator": 191,
+          "no_positive_predictions": false,
+          "positive_denominator": 36,
+          "recall": 0.8333333333333334,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 30
+        },
+        {
+          "attained_fpr": 0.015706806282722512,
+          "budget": 0.03,
+          "descriptive_threshold": 0.02270570397377014,
+          "fp": 3,
+          "negative_denominator": 191,
+          "no_positive_predictions": false,
+          "positive_denominator": 36,
+          "recall": 1.0,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 36
+        },
+        {
+          "attained_fpr": 0.015706806282722512,
+          "budget": 0.05,
+          "descriptive_threshold": 0.02270570397377014,
+          "fp": 3,
+          "negative_denominator": 191,
+          "no_positive_predictions": false,
+          "positive_denominator": 36,
+          "recall": 1.0,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 36
+        }
+      ],
+      "roc_auc": 0.9978184991273997,
+      "sample_count": 227
+    },
+    {
+      "confusion_matrix": {
+        "fn": 3,
+        "fp": 2,
+        "tn": 189,
+        "tp": 33
+      },
+      "fold": 1,
+      "negative_count": 191,
+      "positive_count": 36,
+      "pr_auc": 0.9840689381021828,
+      "recall_at_fixed_fpr": [
+        {
+          "attained_fpr": 0.005235602094240838,
+          "budget": 0.01,
+          "descriptive_threshold": 0.9988849759101868,
+          "fp": 1,
+          "negative_denominator": 191,
+          "no_positive_predictions": false,
+          "positive_denominator": 36,
+          "recall": 0.8333333333333334,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 30
+        },
+        {
+          "attained_fpr": 0.010471204188481676,
+          "budget": 0.03,
+          "descriptive_threshold": 0.013269803486764431,
+          "fp": 2,
+          "negative_denominator": 191,
+          "no_positive_predictions": false,
+          "positive_denominator": 36,
+          "recall": 0.9444444444444444,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 34
+        },
+        {
+          "attained_fpr": 0.03664921465968586,
+          "budget": 0.05,
+          "descriptive_threshold": 0.0006214274326339364,
+          "fp": 7,
+          "negative_denominator": 191,
+          "no_positive_predictions": false,
+          "positive_denominator": 36,
+          "recall": 1.0,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 36
+        }
+      ],
+      "roc_auc": 0.9968004653868529,
+      "sample_count": 227
+    },
+    {
+      "confusion_matrix": {
+        "fn": 2,
+        "fp": 0,
+        "tn": 190,
+        "tp": 35
+      },
+      "fold": 2,
+      "negative_count": 190,
+      "positive_count": 37,
+      "pr_auc": 0.9999999999999998,
+      "recall_at_fixed_fpr": [
+        {
+          "attained_fpr": 0.0,
+          "budget": 0.01,
+          "descriptive_threshold": 0.019945183768868446,
+          "fp": 0,
+          "negative_denominator": 190,
+          "no_positive_predictions": false,
+          "positive_denominator": 37,
+          "recall": 1.0,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 37
+        },
+        {
+          "attained_fpr": 0.0,
+          "budget": 0.03,
+          "descriptive_threshold": 0.019945183768868446,
+          "fp": 0,
+          "negative_denominator": 190,
+          "no_positive_predictions": false,
+          "positive_denominator": 37,
+          "recall": 1.0,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 37
+        },
+        {
+          "attained_fpr": 0.0,
+          "budget": 0.05,
+          "descriptive_threshold": 0.019945183768868446,
+          "fp": 0,
+          "negative_denominator": 190,
+          "no_positive_predictions": false,
+          "positive_denominator": 37,
+          "recall": 1.0,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 37
+        }
+      ],
+      "roc_auc": 1.0,
+      "sample_count": 227
+    },
+    {
+      "confusion_matrix": {
+        "fn": 4,
+        "fp": 0,
+        "tn": 190,
+        "tp": 33
+      },
+      "fold": 3,
+      "negative_count": 190,
+      "positive_count": 37,
+      "pr_auc": 0.9828528528528526,
+      "recall_at_fixed_fpr": [
+        {
+          "attained_fpr": 0.005263157894736842,
+          "budget": 0.01,
+          "descriptive_threshold": 0.0010476524475961924,
+          "fp": 1,
+          "negative_denominator": 190,
+          "no_positive_predictions": false,
+          "positive_denominator": 37,
+          "recall": 0.9459459459459459,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 35
+        },
+        {
+          "attained_fpr": 0.021052631578947368,
+          "budget": 0.03,
+          "descriptive_threshold": 0.0006517164874821901,
+          "fp": 4,
+          "negative_denominator": 190,
+          "no_positive_predictions": false,
+          "positive_denominator": 37,
+          "recall": 0.972972972972973,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 36
+        },
+        {
+          "attained_fpr": 0.021052631578947368,
+          "budget": 0.05,
+          "descriptive_threshold": 0.0006517164874821901,
+          "fp": 4,
+          "negative_denominator": 190,
+          "no_positive_predictions": false,
+          "positive_denominator": 37,
+          "recall": 0.972972972972973,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 36
+        }
+      ],
+      "roc_auc": 0.9938833570412519,
+      "sample_count": 227
+    },
+    {
+      "confusion_matrix": {
+        "fn": 2,
+        "fp": 1,
+        "tn": 189,
+        "tp": 35
+      },
+      "fold": 4,
+      "negative_count": 190,
+      "positive_count": 37,
+      "pr_auc": 0.9852295257700663,
+      "recall_at_fixed_fpr": [
+        {
+          "attained_fpr": 0.005263157894736842,
+          "budget": 0.01,
+          "descriptive_threshold": 0.10000095516443253,
+          "fp": 1,
+          "negative_denominator": 190,
+          "no_positive_predictions": false,
+          "positive_denominator": 37,
+          "recall": 0.972972972972973,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 36
+        },
+        {
+          "attained_fpr": 0.005263157894736842,
+          "budget": 0.03,
+          "descriptive_threshold": 0.10000095516443253,
+          "fp": 1,
+          "negative_denominator": 190,
+          "no_positive_predictions": false,
+          "positive_denominator": 37,
+          "recall": 0.972972972972973,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 36
+        },
+        {
+          "attained_fpr": 0.005263157894736842,
+          "budget": 0.05,
+          "descriptive_threshold": 0.10000095516443253,
+          "fp": 1,
+          "negative_denominator": 190,
+          "no_positive_predictions": false,
+          "positive_denominator": 37,
+          "recall": 0.972972972972973,
+          "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+          "tp": 36
+        }
+      ],
+      "roc_auc": 0.994167852062589,
+      "sample_count": 227
+    }
+  ],
+  "summaries": {
+    "budget_1pct": {
+      "attained_fpr": {
+        "max": 0.005263157894736842,
+        "mean": 0.0031523835767429042,
+        "min": 0.0,
+        "population_sd": 0.0025739300792557906
+      },
+      "recall": {
+        "max": 1.0,
+        "mean": 0.9171171171171171,
+        "min": 0.8333333333333334,
+        "population_sd": 0.07051240334900719
+      }
+    },
+    "budget_3pct": {
+      "attained_fpr": {
+        "max": 0.021052631578947368,
+        "mean": 0.01049875998897768,
+        "min": 0.0,
+        "population_sd": 0.007431610883958837
+      },
+      "recall": {
+        "max": 1.0,
+        "mean": 0.978078078078078,
+        "min": 0.9444444444444444,
+        "population_sd": 0.0207098374168969
+      }
+    },
+    "budget_5pct": {
+      "attained_fpr": {
+        "max": 0.03664921465968586,
+        "mean": 0.015734362083218517,
+        "min": 0.0,
+        "population_sd": 0.012829123706390897
+      },
+      "recall": {
+        "max": 1.0,
+        "mean": 0.9891891891891891,
+        "min": 0.972972972972973,
+        "population_sd": 0.01324048509612526
+      }
+    }
+  }
+}
