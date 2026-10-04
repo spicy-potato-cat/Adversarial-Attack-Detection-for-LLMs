@@ -23,3 +23,7 @@
 /detection_service/scripts/statistical_feature_ablation_resume.py -text
 /detection_service/scripts/statistical_feature_ablation_acceptance.py -text
 /detection_service/tests/test_statistical_feature_ablation_acceptance.py -text
+/artifacts/statistical_v2/scorer_comparison/** -text
+/detection_service/scripts/statistical_scorer_comparison.py -text
+/detection_service/tests/test_statistical_scorer_comparison.py -text
+/reviews/TECH_STAT_005*.md -text
