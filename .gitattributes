@@ -16,3 +16,7 @@
 /detection_service/tests/test_semantic_oof.py -text
 /reviews/TECH_SEM_003*.md -text
 /detection_service/tests/test_semantic_oof_acceptance.py -text
+/artifacts/statistical_v2/feature_ablation/** -text
+/detection_service/scripts/statistical_feature_ablation.py -text
+/detection_service/tests/test_statistical_feature_ablation.py -text
+/reviews/TECH_STAT_004*.md -text

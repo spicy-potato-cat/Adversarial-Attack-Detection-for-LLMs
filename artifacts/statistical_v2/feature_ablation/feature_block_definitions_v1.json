@@ -1,0 +1,1080 @@
+{
+  "B7": "PREDECLARED_SKIPPED",
+  "anomaly": {
+    "exceedance": "strict >, denominator analyzed next-token surprisals",
+    "reference": "Length-bin pooled benign training token surprisals; token-weighted quantiles .90/.95/.99",
+    "runs": "Contiguous >q95 tokens; runs/n, longest/n, mean run length/n, singleton runs/anomalous tokens; no anomalies=>zeros"
+  },
+  "blocks": [
+    {
+      "feature_count": 10,
+      "feature_names": [
+        "whole_prompt_nll",
+        "whole_prompt_ppl",
+        "global_perplexity",
+        "mean_window_perplexity",
+        "max_window_perplexity",
+        "std_window_perplexity",
+        "mean_surprisal",
+        "max_surprisal",
+        "surprisal_std",
+        "high_surprisal_ratio"
+      ],
+      "new_feature_names": [
+        "whole_prompt_nll",
+        "whole_prompt_ppl",
+        "global_perplexity",
+        "mean_window_perplexity",
+        "max_window_perplexity",
+        "std_window_perplexity",
+        "mean_surprisal",
+        "max_surprisal",
+        "surprisal_std",
+        "high_surprisal_ratio"
+      ],
+      "rules": {
+        "B7": "PREDECLARED_SKIPPED",
+        "anomaly": {
+          "exceedance": "strict >, denominator analyzed next-token surprisals",
+          "reference": "Length-bin pooled benign training token surprisals; token-weighted quantiles .90/.95/.99",
+          "runs": "Contiguous >q95 tokens; runs/n, longest/n, mean run length/n, singleton runs/anomalous tokens; no anomalies=>zeros"
+        },
+        "complementarity": "DEFERRED_TO_LATER_COMMON_STACK_ANALYSIS",
+        "cycle": "1_OF_MAXIMUM_2",
+        "deployment_threshold_selection": false,
+        "distribution": {
+          "iqr": "q75-q25",
+          "mad": "median(abs(x-median(x))); unscaled",
+          "quantile_method": "linear",
+          "top_fraction": "ceil(0.10*n), minimum 1",
+          "top_k": "min(5,n)"
+        },
+        "error_banks": "Frozen v1 raw 0.5 FN=60/FP=203; transitions at raw 0.5 and each pooled 3% frontier. Also matched B0 3% error-bank transitions. IDs are diagnostic, never oversampled.",
+        "length_conditioning": {
+          "boundaries": [
+            16,
+            32,
+            64,
+            128
+          ],
+          "core": [
+            "whole_prompt_nll",
+            "max_surprisal",
+            "surprisal_std"
+          ],
+          "input_tokens_include_first_unscored_token": true,
+          "minimum_benign_rows": 20,
+          "percentile": "Empirical right-inclusive CDF among pooled benign training rows",
+          "robust_z": "(x - benign median)/(benign MAD + 1e-6), clipped [-20,20]",
+          "sparse_pool": "Target bin then nearest bin index, ties lower index first; stop at >=20 benign training rows. Log every pooled bin. No silent global fallback."
+        },
+        "normalization": "B0 identity unchanged. No extra scaler, imputation, C tuning or class-weight tuning.",
+        "paired_bootstrap": {
+          "limitations": "Conditional fixed-OOF percentile intervals; no model refits, shared-training uncertainty or multiplicity correction. Frontiers recomputed within resamples; not future threshold guarantees.",
+          "metrics": [
+            "recall_at_3pct",
+            "roc_auc",
+            "pr_auc"
+          ],
+          "repetitions": 1000,
+          "seed": 1701,
+          "unit": "Canonical lineage groups resampled, paired identical indices across blocks"
+        },
+        "phase": "TECH-STAT-004",
+        "regions": "numpy.array_split(sequence,3); earlier regions receive remainders. Empty region: statistics=0 plus available=0; contrasts use these defined values.",
+        "scorer_recipe": {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "fit_intercept": true,
+          "max_iter": 1000,
+          "penalty": "l2",
+          "random_state": 1701,
+          "scorer": "LogisticRegression",
+          "solver": "lbfgs"
+        },
+        "selection": {
+          "auc_and_ap_min_vs_B0": -0.01,
+          "budget_1_and_5_min_vs_B0": -0.02,
+          "fold_recall_3_min_max_drop": 0.03,
+          "fold_recall_3_sd_max_increase": 0.03,
+          "material_gain": 0.03,
+          "near_best_tolerance": 0.02,
+          "primary": "Recall@FPR<=3%",
+          "rule": "Eligible means >=3 recall points over B0 at 3%, preservation guards above. Choose earliest eligible block within 2 points of best eligible 3% recall AND within 2 points of its 1/5% recalls. If none eligible, retain B0. Raw 0.5 confusion never selects a block.",
+          "short_fpr_3_max_increase": 0.02,
+          "short_recall_3_min_change": 0.0
+        },
+        "short_analysis_buckets": [
+          "<16",
+          "16-31",
+          "32-63",
+          "64+"
+        ],
+        "windows": {
+          "coverage": "Full valid windows only; append final anchored window if needed. Unusable scale=>four zero placeholders plus available=0.",
+          "scales": [
+            8,
+            16,
+            32,
+            64
+          ],
+          "statistics": "max/median/IQR/top-min(2,count)-mean of window mean surprisal (log-PPL domain); inherited causal context, NOT independently rescored isolated windows.",
+          "stride": "scale//2"
+        }
+      },
+      "schema_sha256": "bc486d0a9561540f89b7eb8414fe03de392826621cec0ba7af0bef3c1b682bb9",
+      "schema_version": "stat004_B0_v1"
+    },
+    {
+      "feature_count": 16,
+      "feature_names": [
+        "whole_prompt_nll",
+        "whole_prompt_ppl",
+        "global_perplexity",
+        "mean_window_perplexity",
+        "max_window_perplexity",
+        "std_window_perplexity",
+        "mean_surprisal",
+        "max_surprisal",
+        "surprisal_std",
+        "high_surprisal_ratio",
+        "length_robust_z_whole_prompt_nll",
+        "length_percentile_whole_prompt_nll",
+        "length_robust_z_max_surprisal",
+        "length_percentile_max_surprisal",
+        "length_robust_z_surprisal_std",
+        "length_percentile_surprisal_std"
+      ],
+      "new_feature_names": [
+        "length_robust_z_whole_prompt_nll",
+        "length_percentile_whole_prompt_nll",
+        "length_robust_z_max_surprisal",
+        "length_percentile_max_surprisal",
+        "length_robust_z_surprisal_std",
+        "length_percentile_surprisal_std"
+      ],
+      "rules": {
+        "B7": "PREDECLARED_SKIPPED",
+        "anomaly": {
+          "exceedance": "strict >, denominator analyzed next-token surprisals",
+          "reference": "Length-bin pooled benign training token surprisals; token-weighted quantiles .90/.95/.99",
+          "runs": "Contiguous >q95 tokens; runs/n, longest/n, mean run length/n, singleton runs/anomalous tokens; no anomalies=>zeros"
+        },
+        "complementarity": "DEFERRED_TO_LATER_COMMON_STACK_ANALYSIS",
+        "cycle": "1_OF_MAXIMUM_2",
+        "deployment_threshold_selection": false,
+        "distribution": {
+          "iqr": "q75-q25",
+          "mad": "median(abs(x-median(x))); unscaled",
+          "quantile_method": "linear",
+          "top_fraction": "ceil(0.10*n), minimum 1",
+          "top_k": "min(5,n)"
+        },
+        "error_banks": "Frozen v1 raw 0.5 FN=60/FP=203; transitions at raw 0.5 and each pooled 3% frontier. Also matched B0 3% error-bank transitions. IDs are diagnostic, never oversampled.",
+        "length_conditioning": {
+          "boundaries": [
+            16,
+            32,
+            64,
+            128
+          ],
+          "core": [
+            "whole_prompt_nll",
+            "max_surprisal",
+            "surprisal_std"
+          ],
+          "input_tokens_include_first_unscored_token": true,
+          "minimum_benign_rows": 20,
+          "percentile": "Empirical right-inclusive CDF among pooled benign training rows",
+          "robust_z": "(x - benign median)/(benign MAD + 1e-6), clipped [-20,20]",
+          "sparse_pool": "Target bin then nearest bin index, ties lower index first; stop at >=20 benign training rows. Log every pooled bin. No silent global fallback."
+        },
+        "normalization": "B0 identity unchanged. No extra scaler, imputation, C tuning or class-weight tuning.",
+        "paired_bootstrap": {
+          "limitations": "Conditional fixed-OOF percentile intervals; no model refits, shared-training uncertainty or multiplicity correction. Frontiers recomputed within resamples; not future threshold guarantees.",
+          "metrics": [
+            "recall_at_3pct",
+            "roc_auc",
+            "pr_auc"
+          ],
+          "repetitions": 1000,
+          "seed": 1701,
+          "unit": "Canonical lineage groups resampled, paired identical indices across blocks"
+        },
+        "phase": "TECH-STAT-004",
+        "regions": "numpy.array_split(sequence,3); earlier regions receive remainders. Empty region: statistics=0 plus available=0; contrasts use these defined values.",
+        "scorer_recipe": {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "fit_intercept": true,
+          "max_iter": 1000,
+          "penalty": "l2",
+          "random_state": 1701,
+          "scorer": "LogisticRegression",
+          "solver": "lbfgs"
+        },
+        "selection": {
+          "auc_and_ap_min_vs_B0": -0.01,
+          "budget_1_and_5_min_vs_B0": -0.02,
+          "fold_recall_3_min_max_drop": 0.03,
+          "fold_recall_3_sd_max_increase": 0.03,
+          "material_gain": 0.03,
+          "near_best_tolerance": 0.02,
+          "primary": "Recall@FPR<=3%",
+          "rule": "Eligible means >=3 recall points over B0 at 3%, preservation guards above. Choose earliest eligible block within 2 points of best eligible 3% recall AND within 2 points of its 1/5% recalls. If none eligible, retain B0. Raw 0.5 confusion never selects a block.",
+          "short_fpr_3_max_increase": 0.02,
+          "short_recall_3_min_change": 0.0
+        },
+        "short_analysis_buckets": [
+          "<16",
+          "16-31",
+          "32-63",
+          "64+"
+        ],
+        "windows": {
+          "coverage": "Full valid windows only; append final anchored window if needed. Unusable scale=>four zero placeholders plus available=0.",
+          "scales": [
+            8,
+            16,
+            32,
+            64
+          ],
+          "statistics": "max/median/IQR/top-min(2,count)-mean of window mean surprisal (log-PPL domain); inherited causal context, NOT independently rescored isolated windows.",
+          "stride": "scale//2"
+        }
+      },
+      "schema_sha256": "04099bb2ca3f7e8ae676b19d1459c2bab9d1d94b896846e2b46edee2d75b90fc",
+      "schema_version": "stat004_B1_v1"
+    },
+    {
+      "feature_count": 26,
+      "feature_names": [
+        "whole_prompt_nll",
+        "whole_prompt_ppl",
+        "global_perplexity",
+        "mean_window_perplexity",
+        "max_window_perplexity",
+        "std_window_perplexity",
+        "mean_surprisal",
+        "max_surprisal",
+        "surprisal_std",
+        "high_surprisal_ratio",
+        "length_robust_z_whole_prompt_nll",
+        "length_percentile_whole_prompt_nll",
+        "length_robust_z_max_surprisal",
+        "length_percentile_max_surprisal",
+        "length_robust_z_surprisal_std",
+        "length_percentile_surprisal_std",
+        "surprisal_median",
+        "surprisal_mad",
+        "surprisal_iqr",
+        "surprisal_q25",
+        "surprisal_q75",
+        "surprisal_q90",
+        "surprisal_q95",
+        "surprisal_q99",
+        "surprisal_top5_mean",
+        "surprisal_top10pct_mean"
+      ],
+      "new_feature_names": [
+        "surprisal_median",
+        "surprisal_mad",
+        "surprisal_iqr",
+        "surprisal_q25",
+        "surprisal_q75",
+        "surprisal_q90",
+        "surprisal_q95",
+        "surprisal_q99",
+        "surprisal_top5_mean",
+        "surprisal_top10pct_mean"
+      ],
+      "rules": {
+        "B7": "PREDECLARED_SKIPPED",
+        "anomaly": {
+          "exceedance": "strict >, denominator analyzed next-token surprisals",
+          "reference": "Length-bin pooled benign training token surprisals; token-weighted quantiles .90/.95/.99",
+          "runs": "Contiguous >q95 tokens; runs/n, longest/n, mean run length/n, singleton runs/anomalous tokens; no anomalies=>zeros"
+        },
+        "complementarity": "DEFERRED_TO_LATER_COMMON_STACK_ANALYSIS",
+        "cycle": "1_OF_MAXIMUM_2",
+        "deployment_threshold_selection": false,
+        "distribution": {
+          "iqr": "q75-q25",
+          "mad": "median(abs(x-median(x))); unscaled",
+          "quantile_method": "linear",
+          "top_fraction": "ceil(0.10*n), minimum 1",
+          "top_k": "min(5,n)"
+        },
+        "error_banks": "Frozen v1 raw 0.5 FN=60/FP=203; transitions at raw 0.5 and each pooled 3% frontier. Also matched B0 3% error-bank transitions. IDs are diagnostic, never oversampled.",
+        "length_conditioning": {
+          "boundaries": [
+            16,
+            32,
+            64,
+            128
+          ],
+          "core": [
+            "whole_prompt_nll",
+            "max_surprisal",
+            "surprisal_std"
+          ],
+          "input_tokens_include_first_unscored_token": true,
+          "minimum_benign_rows": 20,
+          "percentile": "Empirical right-inclusive CDF among pooled benign training rows",
+          "robust_z": "(x - benign median)/(benign MAD + 1e-6), clipped [-20,20]",
+          "sparse_pool": "Target bin then nearest bin index, ties lower index first; stop at >=20 benign training rows. Log every pooled bin. No silent global fallback."
+        },
+        "normalization": "B0 identity unchanged. No extra scaler, imputation, C tuning or class-weight tuning.",
+        "paired_bootstrap": {
+          "limitations": "Conditional fixed-OOF percentile intervals; no model refits, shared-training uncertainty or multiplicity correction. Frontiers recomputed within resamples; not future threshold guarantees.",
+          "metrics": [
+            "recall_at_3pct",
+            "roc_auc",
+            "pr_auc"
+          ],
+          "repetitions": 1000,
+          "seed": 1701,
+          "unit": "Canonical lineage groups resampled, paired identical indices across blocks"
+        },
+        "phase": "TECH-STAT-004",
+        "regions": "numpy.array_split(sequence,3); earlier regions receive remainders. Empty region: statistics=0 plus available=0; contrasts use these defined values.",
+        "scorer_recipe": {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "fit_intercept": true,
+          "max_iter": 1000,
+          "penalty": "l2",
+          "random_state": 1701,
+          "scorer": "LogisticRegression",
+          "solver": "lbfgs"
+        },
+        "selection": {
+          "auc_and_ap_min_vs_B0": -0.01,
+          "budget_1_and_5_min_vs_B0": -0.02,
+          "fold_recall_3_min_max_drop": 0.03,
+          "fold_recall_3_sd_max_increase": 0.03,
+          "material_gain": 0.03,
+          "near_best_tolerance": 0.02,
+          "primary": "Recall@FPR<=3%",
+          "rule": "Eligible means >=3 recall points over B0 at 3%, preservation guards above. Choose earliest eligible block within 2 points of best eligible 3% recall AND within 2 points of its 1/5% recalls. If none eligible, retain B0. Raw 0.5 confusion never selects a block.",
+          "short_fpr_3_max_increase": 0.02,
+          "short_recall_3_min_change": 0.0
+        },
+        "short_analysis_buckets": [
+          "<16",
+          "16-31",
+          "32-63",
+          "64+"
+        ],
+        "windows": {
+          "coverage": "Full valid windows only; append final anchored window if needed. Unusable scale=>four zero placeholders plus available=0.",
+          "scales": [
+            8,
+            16,
+            32,
+            64
+          ],
+          "statistics": "max/median/IQR/top-min(2,count)-mean of window mean surprisal (log-PPL domain); inherited causal context, NOT independently rescored isolated windows.",
+          "stride": "scale//2"
+        }
+      },
+      "schema_sha256": "93d3892b158c35eccfadc27c879754db69ea5293782492ee5d4ff01a33bff983",
+      "schema_version": "stat004_B2_v1"
+    },
+    {
+      "feature_count": 29,
+      "feature_names": [
+        "whole_prompt_nll",
+        "whole_prompt_ppl",
+        "global_perplexity",
+        "mean_window_perplexity",
+        "max_window_perplexity",
+        "std_window_perplexity",
+        "mean_surprisal",
+        "max_surprisal",
+        "surprisal_std",
+        "high_surprisal_ratio",
+        "length_robust_z_whole_prompt_nll",
+        "length_percentile_whole_prompt_nll",
+        "length_robust_z_max_surprisal",
+        "length_percentile_max_surprisal",
+        "length_robust_z_surprisal_std",
+        "length_percentile_surprisal_std",
+        "surprisal_median",
+        "surprisal_mad",
+        "surprisal_iqr",
+        "surprisal_q25",
+        "surprisal_q75",
+        "surprisal_q90",
+        "surprisal_q95",
+        "surprisal_q99",
+        "surprisal_top5_mean",
+        "surprisal_top10pct_mean",
+        "exceedance_q90_fraction",
+        "exceedance_q95_fraction",
+        "exceedance_q99_fraction"
+      ],
+      "new_feature_names": [
+        "exceedance_q90_fraction",
+        "exceedance_q95_fraction",
+        "exceedance_q99_fraction"
+      ],
+      "rules": {
+        "B7": "PREDECLARED_SKIPPED",
+        "anomaly": {
+          "exceedance": "strict >, denominator analyzed next-token surprisals",
+          "reference": "Length-bin pooled benign training token surprisals; token-weighted quantiles .90/.95/.99",
+          "runs": "Contiguous >q95 tokens; runs/n, longest/n, mean run length/n, singleton runs/anomalous tokens; no anomalies=>zeros"
+        },
+        "complementarity": "DEFERRED_TO_LATER_COMMON_STACK_ANALYSIS",
+        "cycle": "1_OF_MAXIMUM_2",
+        "deployment_threshold_selection": false,
+        "distribution": {
+          "iqr": "q75-q25",
+          "mad": "median(abs(x-median(x))); unscaled",
+          "quantile_method": "linear",
+          "top_fraction": "ceil(0.10*n), minimum 1",
+          "top_k": "min(5,n)"
+        },
+        "error_banks": "Frozen v1 raw 0.5 FN=60/FP=203; transitions at raw 0.5 and each pooled 3% frontier. Also matched B0 3% error-bank transitions. IDs are diagnostic, never oversampled.",
+        "length_conditioning": {
+          "boundaries": [
+            16,
+            32,
+            64,
+            128
+          ],
+          "core": [
+            "whole_prompt_nll",
+            "max_surprisal",
+            "surprisal_std"
+          ],
+          "input_tokens_include_first_unscored_token": true,
+          "minimum_benign_rows": 20,
+          "percentile": "Empirical right-inclusive CDF among pooled benign training rows",
+          "robust_z": "(x - benign median)/(benign MAD + 1e-6), clipped [-20,20]",
+          "sparse_pool": "Target bin then nearest bin index, ties lower index first; stop at >=20 benign training rows. Log every pooled bin. No silent global fallback."
+        },
+        "normalization": "B0 identity unchanged. No extra scaler, imputation, C tuning or class-weight tuning.",
+        "paired_bootstrap": {
+          "limitations": "Conditional fixed-OOF percentile intervals; no model refits, shared-training uncertainty or multiplicity correction. Frontiers recomputed within resamples; not future threshold guarantees.",
+          "metrics": [
+            "recall_at_3pct",
+            "roc_auc",
+            "pr_auc"
+          ],
+          "repetitions": 1000,
+          "seed": 1701,
+          "unit": "Canonical lineage groups resampled, paired identical indices across blocks"
+        },
+        "phase": "TECH-STAT-004",
+        "regions": "numpy.array_split(sequence,3); earlier regions receive remainders. Empty region: statistics=0 plus available=0; contrasts use these defined values.",
+        "scorer_recipe": {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "fit_intercept": true,
+          "max_iter": 1000,
+          "penalty": "l2",
+          "random_state": 1701,
+          "scorer": "LogisticRegression",
+          "solver": "lbfgs"
+        },
+        "selection": {
+          "auc_and_ap_min_vs_B0": -0.01,
+          "budget_1_and_5_min_vs_B0": -0.02,
+          "fold_recall_3_min_max_drop": 0.03,
+          "fold_recall_3_sd_max_increase": 0.03,
+          "material_gain": 0.03,
+          "near_best_tolerance": 0.02,
+          "primary": "Recall@FPR<=3%",
+          "rule": "Eligible means >=3 recall points over B0 at 3%, preservation guards above. Choose earliest eligible block within 2 points of best eligible 3% recall AND within 2 points of its 1/5% recalls. If none eligible, retain B0. Raw 0.5 confusion never selects a block.",
+          "short_fpr_3_max_increase": 0.02,
+          "short_recall_3_min_change": 0.0
+        },
+        "short_analysis_buckets": [
+          "<16",
+          "16-31",
+          "32-63",
+          "64+"
+        ],
+        "windows": {
+          "coverage": "Full valid windows only; append final anchored window if needed. Unusable scale=>four zero placeholders plus available=0.",
+          "scales": [
+            8,
+            16,
+            32,
+            64
+          ],
+          "statistics": "max/median/IQR/top-min(2,count)-mean of window mean surprisal (log-PPL domain); inherited causal context, NOT independently rescored isolated windows.",
+          "stride": "scale//2"
+        }
+      },
+      "schema_sha256": "aaac6a2dd25be2aa05cfe49c89229f09b6e4b4fd9f653784026fbb85e6e9d4e2",
+      "schema_version": "stat004_B3_v1"
+    },
+    {
+      "feature_count": 33,
+      "feature_names": [
+        "whole_prompt_nll",
+        "whole_prompt_ppl",
+        "global_perplexity",
+        "mean_window_perplexity",
+        "max_window_perplexity",
+        "std_window_perplexity",
+        "mean_surprisal",
+        "max_surprisal",
+        "surprisal_std",
+        "high_surprisal_ratio",
+        "length_robust_z_whole_prompt_nll",
+        "length_percentile_whole_prompt_nll",
+        "length_robust_z_max_surprisal",
+        "length_percentile_max_surprisal",
+        "length_robust_z_surprisal_std",
+        "length_percentile_surprisal_std",
+        "surprisal_median",
+        "surprisal_mad",
+        "surprisal_iqr",
+        "surprisal_q25",
+        "surprisal_q75",
+        "surprisal_q90",
+        "surprisal_q95",
+        "surprisal_q99",
+        "surprisal_top5_mean",
+        "surprisal_top10pct_mean",
+        "exceedance_q90_fraction",
+        "exceedance_q95_fraction",
+        "exceedance_q99_fraction",
+        "anomaly_runs_per_token",
+        "anomaly_longest_run_fraction",
+        "anomaly_mean_run_fraction",
+        "isolated_anomaly_fraction"
+      ],
+      "new_feature_names": [
+        "anomaly_runs_per_token",
+        "anomaly_longest_run_fraction",
+        "anomaly_mean_run_fraction",
+        "isolated_anomaly_fraction"
+      ],
+      "rules": {
+        "B7": "PREDECLARED_SKIPPED",
+        "anomaly": {
+          "exceedance": "strict >, denominator analyzed next-token surprisals",
+          "reference": "Length-bin pooled benign training token surprisals; token-weighted quantiles .90/.95/.99",
+          "runs": "Contiguous >q95 tokens; runs/n, longest/n, mean run length/n, singleton runs/anomalous tokens; no anomalies=>zeros"
+        },
+        "complementarity": "DEFERRED_TO_LATER_COMMON_STACK_ANALYSIS",
+        "cycle": "1_OF_MAXIMUM_2",
+        "deployment_threshold_selection": false,
+        "distribution": {
+          "iqr": "q75-q25",
+          "mad": "median(abs(x-median(x))); unscaled",
+          "quantile_method": "linear",
+          "top_fraction": "ceil(0.10*n), minimum 1",
+          "top_k": "min(5,n)"
+        },
+        "error_banks": "Frozen v1 raw 0.5 FN=60/FP=203; transitions at raw 0.5 and each pooled 3% frontier. Also matched B0 3% error-bank transitions. IDs are diagnostic, never oversampled.",
+        "length_conditioning": {
+          "boundaries": [
+            16,
+            32,
+            64,
+            128
+          ],
+          "core": [
+            "whole_prompt_nll",
+            "max_surprisal",
+            "surprisal_std"
+          ],
+          "input_tokens_include_first_unscored_token": true,
+          "minimum_benign_rows": 20,
+          "percentile": "Empirical right-inclusive CDF among pooled benign training rows",
+          "robust_z": "(x - benign median)/(benign MAD + 1e-6), clipped [-20,20]",
+          "sparse_pool": "Target bin then nearest bin index, ties lower index first; stop at >=20 benign training rows. Log every pooled bin. No silent global fallback."
+        },
+        "normalization": "B0 identity unchanged. No extra scaler, imputation, C tuning or class-weight tuning.",
+        "paired_bootstrap": {
+          "limitations": "Conditional fixed-OOF percentile intervals; no model refits, shared-training uncertainty or multiplicity correction. Frontiers recomputed within resamples; not future threshold guarantees.",
+          "metrics": [
+            "recall_at_3pct",
+            "roc_auc",
+            "pr_auc"
+          ],
+          "repetitions": 1000,
+          "seed": 1701,
+          "unit": "Canonical lineage groups resampled, paired identical indices across blocks"
+        },
+        "phase": "TECH-STAT-004",
+        "regions": "numpy.array_split(sequence,3); earlier regions receive remainders. Empty region: statistics=0 plus available=0; contrasts use these defined values.",
+        "scorer_recipe": {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "fit_intercept": true,
+          "max_iter": 1000,
+          "penalty": "l2",
+          "random_state": 1701,
+          "scorer": "LogisticRegression",
+          "solver": "lbfgs"
+        },
+        "selection": {
+          "auc_and_ap_min_vs_B0": -0.01,
+          "budget_1_and_5_min_vs_B0": -0.02,
+          "fold_recall_3_min_max_drop": 0.03,
+          "fold_recall_3_sd_max_increase": 0.03,
+          "material_gain": 0.03,
+          "near_best_tolerance": 0.02,
+          "primary": "Recall@FPR<=3%",
+          "rule": "Eligible means >=3 recall points over B0 at 3%, preservation guards above. Choose earliest eligible block within 2 points of best eligible 3% recall AND within 2 points of its 1/5% recalls. If none eligible, retain B0. Raw 0.5 confusion never selects a block.",
+          "short_fpr_3_max_increase": 0.02,
+          "short_recall_3_min_change": 0.0
+        },
+        "short_analysis_buckets": [
+          "<16",
+          "16-31",
+          "32-63",
+          "64+"
+        ],
+        "windows": {
+          "coverage": "Full valid windows only; append final anchored window if needed. Unusable scale=>four zero placeholders plus available=0.",
+          "scales": [
+            8,
+            16,
+            32,
+            64
+          ],
+          "statistics": "max/median/IQR/top-min(2,count)-mean of window mean surprisal (log-PPL domain); inherited causal context, NOT independently rescored isolated windows.",
+          "stride": "scale//2"
+        }
+      },
+      "schema_sha256": "c9b7a64eb62efd7ad50a79f0f1d0b638bb2b89632672fd82d1cc4e0e568fc36e",
+      "schema_version": "stat004_B4_v1"
+    },
+    {
+      "feature_count": 47,
+      "feature_names": [
+        "whole_prompt_nll",
+        "whole_prompt_ppl",
+        "global_perplexity",
+        "mean_window_perplexity",
+        "max_window_perplexity",
+        "std_window_perplexity",
+        "mean_surprisal",
+        "max_surprisal",
+        "surprisal_std",
+        "high_surprisal_ratio",
+        "length_robust_z_whole_prompt_nll",
+        "length_percentile_whole_prompt_nll",
+        "length_robust_z_max_surprisal",
+        "length_percentile_max_surprisal",
+        "length_robust_z_surprisal_std",
+        "length_percentile_surprisal_std",
+        "surprisal_median",
+        "surprisal_mad",
+        "surprisal_iqr",
+        "surprisal_q25",
+        "surprisal_q75",
+        "surprisal_q90",
+        "surprisal_q95",
+        "surprisal_q99",
+        "surprisal_top5_mean",
+        "surprisal_top10pct_mean",
+        "exceedance_q90_fraction",
+        "exceedance_q95_fraction",
+        "exceedance_q99_fraction",
+        "anomaly_runs_per_token",
+        "anomaly_longest_run_fraction",
+        "anomaly_mean_run_fraction",
+        "isolated_anomaly_fraction",
+        "prefix_mean",
+        "prefix_median",
+        "prefix_anomaly_fraction",
+        "prefix_available",
+        "middle_mean",
+        "middle_median",
+        "middle_anomaly_fraction",
+        "middle_available",
+        "tail_mean",
+        "tail_median",
+        "tail_anomaly_fraction",
+        "tail_available",
+        "tail_minus_prefix_mean",
+        "middle_minus_prefix_mean"
+      ],
+      "new_feature_names": [
+        "prefix_mean",
+        "prefix_median",
+        "prefix_anomaly_fraction",
+        "prefix_available",
+        "middle_mean",
+        "middle_median",
+        "middle_anomaly_fraction",
+        "middle_available",
+        "tail_mean",
+        "tail_median",
+        "tail_anomaly_fraction",
+        "tail_available",
+        "tail_minus_prefix_mean",
+        "middle_minus_prefix_mean"
+      ],
+      "rules": {
+        "B7": "PREDECLARED_SKIPPED",
+        "anomaly": {
+          "exceedance": "strict >, denominator analyzed next-token surprisals",
+          "reference": "Length-bin pooled benign training token surprisals; token-weighted quantiles .90/.95/.99",
+          "runs": "Contiguous >q95 tokens; runs/n, longest/n, mean run length/n, singleton runs/anomalous tokens; no anomalies=>zeros"
+        },
+        "complementarity": "DEFERRED_TO_LATER_COMMON_STACK_ANALYSIS",
+        "cycle": "1_OF_MAXIMUM_2",
+        "deployment_threshold_selection": false,
+        "distribution": {
+          "iqr": "q75-q25",
+          "mad": "median(abs(x-median(x))); unscaled",
+          "quantile_method": "linear",
+          "top_fraction": "ceil(0.10*n), minimum 1",
+          "top_k": "min(5,n)"
+        },
+        "error_banks": "Frozen v1 raw 0.5 FN=60/FP=203; transitions at raw 0.5 and each pooled 3% frontier. Also matched B0 3% error-bank transitions. IDs are diagnostic, never oversampled.",
+        "length_conditioning": {
+          "boundaries": [
+            16,
+            32,
+            64,
+            128
+          ],
+          "core": [
+            "whole_prompt_nll",
+            "max_surprisal",
+            "surprisal_std"
+          ],
+          "input_tokens_include_first_unscored_token": true,
+          "minimum_benign_rows": 20,
+          "percentile": "Empirical right-inclusive CDF among pooled benign training rows",
+          "robust_z": "(x - benign median)/(benign MAD + 1e-6), clipped [-20,20]",
+          "sparse_pool": "Target bin then nearest bin index, ties lower index first; stop at >=20 benign training rows. Log every pooled bin. No silent global fallback."
+        },
+        "normalization": "B0 identity unchanged. No extra scaler, imputation, C tuning or class-weight tuning.",
+        "paired_bootstrap": {
+          "limitations": "Conditional fixed-OOF percentile intervals; no model refits, shared-training uncertainty or multiplicity correction. Frontiers recomputed within resamples; not future threshold guarantees.",
+          "metrics": [
+            "recall_at_3pct",
+            "roc_auc",
+            "pr_auc"
+          ],
+          "repetitions": 1000,
+          "seed": 1701,
+          "unit": "Canonical lineage groups resampled, paired identical indices across blocks"
+        },
+        "phase": "TECH-STAT-004",
+        "regions": "numpy.array_split(sequence,3); earlier regions receive remainders. Empty region: statistics=0 plus available=0; contrasts use these defined values.",
+        "scorer_recipe": {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "fit_intercept": true,
+          "max_iter": 1000,
+          "penalty": "l2",
+          "random_state": 1701,
+          "scorer": "LogisticRegression",
+          "solver": "lbfgs"
+        },
+        "selection": {
+          "auc_and_ap_min_vs_B0": -0.01,
+          "budget_1_and_5_min_vs_B0": -0.02,
+          "fold_recall_3_min_max_drop": 0.03,
+          "fold_recall_3_sd_max_increase": 0.03,
+          "material_gain": 0.03,
+          "near_best_tolerance": 0.02,
+          "primary": "Recall@FPR<=3%",
+          "rule": "Eligible means >=3 recall points over B0 at 3%, preservation guards above. Choose earliest eligible block within 2 points of best eligible 3% recall AND within 2 points of its 1/5% recalls. If none eligible, retain B0. Raw 0.5 confusion never selects a block.",
+          "short_fpr_3_max_increase": 0.02,
+          "short_recall_3_min_change": 0.0
+        },
+        "short_analysis_buckets": [
+          "<16",
+          "16-31",
+          "32-63",
+          "64+"
+        ],
+        "windows": {
+          "coverage": "Full valid windows only; append final anchored window if needed. Unusable scale=>four zero placeholders plus available=0.",
+          "scales": [
+            8,
+            16,
+            32,
+            64
+          ],
+          "statistics": "max/median/IQR/top-min(2,count)-mean of window mean surprisal (log-PPL domain); inherited causal context, NOT independently rescored isolated windows.",
+          "stride": "scale//2"
+        }
+      },
+      "schema_sha256": "dc5b1854282e3d6a72e2068c47da861db5e52fd0c3e50222dd69fcaede2b82ca",
+      "schema_version": "stat004_B5_v1"
+    },
+    {
+      "feature_count": 67,
+      "feature_names": [
+        "whole_prompt_nll",
+        "whole_prompt_ppl",
+        "global_perplexity",
+        "mean_window_perplexity",
+        "max_window_perplexity",
+        "std_window_perplexity",
+        "mean_surprisal",
+        "max_surprisal",
+        "surprisal_std",
+        "high_surprisal_ratio",
+        "length_robust_z_whole_prompt_nll",
+        "length_percentile_whole_prompt_nll",
+        "length_robust_z_max_surprisal",
+        "length_percentile_max_surprisal",
+        "length_robust_z_surprisal_std",
+        "length_percentile_surprisal_std",
+        "surprisal_median",
+        "surprisal_mad",
+        "surprisal_iqr",
+        "surprisal_q25",
+        "surprisal_q75",
+        "surprisal_q90",
+        "surprisal_q95",
+        "surprisal_q99",
+        "surprisal_top5_mean",
+        "surprisal_top10pct_mean",
+        "exceedance_q90_fraction",
+        "exceedance_q95_fraction",
+        "exceedance_q99_fraction",
+        "anomaly_runs_per_token",
+        "anomaly_longest_run_fraction",
+        "anomaly_mean_run_fraction",
+        "isolated_anomaly_fraction",
+        "prefix_mean",
+        "prefix_median",
+        "prefix_anomaly_fraction",
+        "prefix_available",
+        "middle_mean",
+        "middle_median",
+        "middle_anomaly_fraction",
+        "middle_available",
+        "tail_mean",
+        "tail_median",
+        "tail_anomaly_fraction",
+        "tail_available",
+        "tail_minus_prefix_mean",
+        "middle_minus_prefix_mean",
+        "window_8_max_mean_nll",
+        "window_8_median_mean_nll",
+        "window_8_iqr_mean_nll",
+        "window_8_top2_mean_nll",
+        "window_8_available",
+        "window_16_max_mean_nll",
+        "window_16_median_mean_nll",
+        "window_16_iqr_mean_nll",
+        "window_16_top2_mean_nll",
+        "window_16_available",
+        "window_32_max_mean_nll",
+        "window_32_median_mean_nll",
+        "window_32_iqr_mean_nll",
+        "window_32_top2_mean_nll",
+        "window_32_available",
+        "window_64_max_mean_nll",
+        "window_64_median_mean_nll",
+        "window_64_iqr_mean_nll",
+        "window_64_top2_mean_nll",
+        "window_64_available"
+      ],
+      "new_feature_names": [
+        "window_8_max_mean_nll",
+        "window_8_median_mean_nll",
+        "window_8_iqr_mean_nll",
+        "window_8_top2_mean_nll",
+        "window_8_available",
+        "window_16_max_mean_nll",
+        "window_16_median_mean_nll",
+        "window_16_iqr_mean_nll",
+        "window_16_top2_mean_nll",
+        "window_16_available",
+        "window_32_max_mean_nll",
+        "window_32_median_mean_nll",
+        "window_32_iqr_mean_nll",
+        "window_32_top2_mean_nll",
+        "window_32_available",
+        "window_64_max_mean_nll",
+        "window_64_median_mean_nll",
+        "window_64_iqr_mean_nll",
+        "window_64_top2_mean_nll",
+        "window_64_available"
+      ],
+      "rules": {
+        "B7": "PREDECLARED_SKIPPED",
+        "anomaly": {
+          "exceedance": "strict >, denominator analyzed next-token surprisals",
+          "reference": "Length-bin pooled benign training token surprisals; token-weighted quantiles .90/.95/.99",
+          "runs": "Contiguous >q95 tokens; runs/n, longest/n, mean run length/n, singleton runs/anomalous tokens; no anomalies=>zeros"
+        },
+        "complementarity": "DEFERRED_TO_LATER_COMMON_STACK_ANALYSIS",
+        "cycle": "1_OF_MAXIMUM_2",
+        "deployment_threshold_selection": false,
+        "distribution": {
+          "iqr": "q75-q25",
+          "mad": "median(abs(x-median(x))); unscaled",
+          "quantile_method": "linear",
+          "top_fraction": "ceil(0.10*n), minimum 1",
+          "top_k": "min(5,n)"
+        },
+        "error_banks": "Frozen v1 raw 0.5 FN=60/FP=203; transitions at raw 0.5 and each pooled 3% frontier. Also matched B0 3% error-bank transitions. IDs are diagnostic, never oversampled.",
+        "length_conditioning": {
+          "boundaries": [
+            16,
+            32,
+            64,
+            128
+          ],
+          "core": [
+            "whole_prompt_nll",
+            "max_surprisal",
+            "surprisal_std"
+          ],
+          "input_tokens_include_first_unscored_token": true,
+          "minimum_benign_rows": 20,
+          "percentile": "Empirical right-inclusive CDF among pooled benign training rows",
+          "robust_z": "(x - benign median)/(benign MAD + 1e-6), clipped [-20,20]",
+          "sparse_pool": "Target bin then nearest bin index, ties lower index first; stop at >=20 benign training rows. Log every pooled bin. No silent global fallback."
+        },
+        "normalization": "B0 identity unchanged. No extra scaler, imputation, C tuning or class-weight tuning.",
+        "paired_bootstrap": {
+          "limitations": "Conditional fixed-OOF percentile intervals; no model refits, shared-training uncertainty or multiplicity correction. Frontiers recomputed within resamples; not future threshold guarantees.",
+          "metrics": [
+            "recall_at_3pct",
+            "roc_auc",
+            "pr_auc"
+          ],
+          "repetitions": 1000,
+          "seed": 1701,
+          "unit": "Canonical lineage groups resampled, paired identical indices across blocks"
+        },
+        "phase": "TECH-STAT-004",
+        "regions": "numpy.array_split(sequence,3); earlier regions receive remainders. Empty region: statistics=0 plus available=0; contrasts use these defined values.",
+        "scorer_recipe": {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "fit_intercept": true,
+          "max_iter": 1000,
+          "penalty": "l2",
+          "random_state": 1701,
+          "scorer": "LogisticRegression",
+          "solver": "lbfgs"
+        },
+        "selection": {
+          "auc_and_ap_min_vs_B0": -0.01,
+          "budget_1_and_5_min_vs_B0": -0.02,
+          "fold_recall_3_min_max_drop": 0.03,
+          "fold_recall_3_sd_max_increase": 0.03,
+          "material_gain": 0.03,
+          "near_best_tolerance": 0.02,
+          "primary": "Recall@FPR<=3%",
+          "rule": "Eligible means >=3 recall points over B0 at 3%, preservation guards above. Choose earliest eligible block within 2 points of best eligible 3% recall AND within 2 points of its 1/5% recalls. If none eligible, retain B0. Raw 0.5 confusion never selects a block.",
+          "short_fpr_3_max_increase": 0.02,
+          "short_recall_3_min_change": 0.0
+        },
+        "short_analysis_buckets": [
+          "<16",
+          "16-31",
+          "32-63",
+          "64+"
+        ],
+        "windows": {
+          "coverage": "Full valid windows only; append final anchored window if needed. Unusable scale=>four zero placeholders plus available=0.",
+          "scales": [
+            8,
+            16,
+            32,
+            64
+          ],
+          "statistics": "max/median/IQR/top-min(2,count)-mean of window mean surprisal (log-PPL domain); inherited causal context, NOT independently rescored isolated windows.",
+          "stride": "scale//2"
+        }
+      },
+      "schema_sha256": "3eb392c02c0ed72d4505a5b8a7ae513f7f200e4477e7dcd5c47a4a5a90f96c1d",
+      "schema_version": "stat004_B6_v1"
+    }
+  ],
+  "complementarity": "DEFERRED_TO_LATER_COMMON_STACK_ANALYSIS",
+  "cycle": "1_OF_MAXIMUM_2",
+  "deployment_threshold_selection": false,
+  "distribution": {
+    "iqr": "q75-q25",
+    "mad": "median(abs(x-median(x))); unscaled",
+    "quantile_method": "linear",
+    "top_fraction": "ceil(0.10*n), minimum 1",
+    "top_k": "min(5,n)"
+  },
+  "error_banks": "Frozen v1 raw 0.5 FN=60/FP=203; transitions at raw 0.5 and each pooled 3% frontier. Also matched B0 3% error-bank transitions. IDs are diagnostic, never oversampled.",
+  "length_conditioning": {
+    "boundaries": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "core": [
+      "whole_prompt_nll",
+      "max_surprisal",
+      "surprisal_std"
+    ],
+    "input_tokens_include_first_unscored_token": true,
+    "minimum_benign_rows": 20,
+    "percentile": "Empirical right-inclusive CDF among pooled benign training rows",
+    "robust_z": "(x - benign median)/(benign MAD + 1e-6), clipped [-20,20]",
+    "sparse_pool": "Target bin then nearest bin index, ties lower index first; stop at >=20 benign training rows. Log every pooled bin. No silent global fallback."
+  },
+  "normalization": "B0 identity unchanged. No extra scaler, imputation, C tuning or class-weight tuning.",
+  "paired_bootstrap": {
+    "limitations": "Conditional fixed-OOF percentile intervals; no model refits, shared-training uncertainty or multiplicity correction. Frontiers recomputed within resamples; not future threshold guarantees.",
+    "metrics": [
+      "recall_at_3pct",
+      "roc_auc",
+      "pr_auc"
+    ],
+    "repetitions": 1000,
+    "seed": 1701,
+    "unit": "Canonical lineage groups resampled, paired identical indices across blocks"
+  },
+  "phase": "TECH-STAT-004",
+  "regions": "numpy.array_split(sequence,3); earlier regions receive remainders. Empty region: statistics=0 plus available=0; contrasts use these defined values.",
+  "scorer_recipe": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "fit_intercept": true,
+    "max_iter": 1000,
+    "penalty": "l2",
+    "random_state": 1701,
+    "scorer": "LogisticRegression",
+    "solver": "lbfgs"
+  },
+  "selection": {
+    "auc_and_ap_min_vs_B0": -0.01,
+    "budget_1_and_5_min_vs_B0": -0.02,
+    "fold_recall_3_min_max_drop": 0.03,
+    "fold_recall_3_sd_max_increase": 0.03,
+    "material_gain": 0.03,
+    "near_best_tolerance": 0.02,
+    "primary": "Recall@FPR<=3%",
+    "rule": "Eligible means >=3 recall points over B0 at 3%, preservation guards above. Choose earliest eligible block within 2 points of best eligible 3% recall AND within 2 points of its 1/5% recalls. If none eligible, retain B0. Raw 0.5 confusion never selects a block.",
+    "short_fpr_3_max_increase": 0.02,
+    "short_recall_3_min_change": 0.0
+  },
+  "short_analysis_buckets": [
+    "<16",
+    "16-31",
+    "32-63",
+    "64+"
+  ],
+  "windows": {
+    "coverage": "Full valid windows only; append final anchored window if needed. Unusable scale=>four zero placeholders plus available=0.",
+    "scales": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "statistics": "max/median/IQR/top-min(2,count)-mean of window mean surprisal (log-PPL domain); inherited causal context, NOT independently rescored isolated windows.",
+    "stride": "scale//2"
+  }
+}
