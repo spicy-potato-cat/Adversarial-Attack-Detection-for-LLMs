@@ -11,3 +11,7 @@
 /artifacts/statistical_v2/oof/** -text
 /detection_service/analysis/** -text
 /detection_service/scripts/statistical_oof_baseline.py -text
+/artifacts/semantic_v2/oof/** -text
+/detection_service/scripts/semantic_oof_baseline.py -text
+/detection_service/tests/test_semantic_oof.py -text
+/reviews/TECH_SEM_003*.md -text

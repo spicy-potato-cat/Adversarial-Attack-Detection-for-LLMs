@@ -1,0 +1,9 @@
+{
+  "analysis_config_sha256": "5b50e3eccd2afeca32875905e414313b337785969abd59d9755daae94bf4e6e2",
+  "errors": 0,
+  "failures": 0,
+  "skipped": 0,
+  "tests": 94,
+  "xml_path": "artifacts/semantic_v2/oof/preflight/test_results_v1.xml",
+  "xml_sha256": "3282b67ebc72efa8b6939609312a80ff41dcc80bc5483209d7874827460b2621"
+}

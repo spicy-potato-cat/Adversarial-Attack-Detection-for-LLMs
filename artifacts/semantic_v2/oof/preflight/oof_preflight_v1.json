@@ -1,0 +1,219 @@
+{
+  "authoritative_oof_executed": false,
+  "baseline_files_checked": 96,
+  "baseline_mismatches": 0,
+  "code_commit_policy": "HEAD must equal the commit containing this pre-run manifest; resolved after commit to avoid self-reference.",
+  "evidence_sha256": {
+    "analysis_config_v2.json": "5b50e3eccd2afeca32875905e414313b337785969abd59d9755daae94bf4e6e2",
+    "config_anchor_v1.json": "dbd6ac318b2d568165461f2978ae22b904098b0fbd0317033deb49712228bb4b",
+    "fixture_verification_v1.json": "7cb7dcce92f363080f6e5649bfa7d43d7c8ac467bc19d379698d9fd3904a7c4c",
+    "fold_execution_plan.json": "d0beaa0185e6bebea9d2382cc249044edb8ed10a113059a91eec9c64e66c5c5a",
+    "metric_validation_v1.json": "5d92e3e6a5066edcd9f24f4dc3d191fb3527aa1e0ed08d025a3fe64aac130cd4",
+    "output_contract_v1.json": "c1d96ccb47dc333a52489a0415f3bb04d6965222043e9244fa1fc1cc14200606",
+    "synthetic_smoke_v1.json": "00d0e9a00b16ac6993ff46776f5e2dc927fa821a7f59517ed723390c25e3eb21",
+    "test_evidence_v1.json": "8aa661768f72e99e5571e782ebca8308e901f267ce0884902c2f9b2a040e50f3",
+    "test_results_v1.xml": "3282b67ebc72efa8b6939609312a80ff41dcc80bc5483209d7874827460b2621"
+  },
+  "fold_sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+  "future_output_contract": {
+    "completion_marker": "completion_v1.json",
+    "csv_fields_order": [
+      "sample_id",
+      "partition",
+      "fold",
+      "label",
+      "source_name",
+      "source_revision",
+      "lineage_group",
+      "detector_id",
+      "detector_version",
+      "candidate_id",
+      "raw_score",
+      "logit_margin",
+      "calibrated_probability",
+      "binary_prediction",
+      "error_type",
+      "threshold_distance",
+      "confidence_category",
+      "input_tokens",
+      "max_input_tokens",
+      "tokens_analyzed",
+      "tokens_excluded",
+      "truncated",
+      "payload_position_status",
+      "latency_ms"
+    ],
+    "csv_record_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "binary_prediction": {
+          "enum": [
+            0,
+            1
+          ]
+        },
+        "calibrated_probability": {
+          "type": "null"
+        },
+        "candidate_id": {
+          "type": "string"
+        },
+        "confidence_category": {
+          "type": "string"
+        },
+        "detector_id": {
+          "const": "semantic_finetuned"
+        },
+        "detector_version": {
+          "const": "dm_b_v1"
+        },
+        "error_type": {
+          "enum": [
+            "TP",
+            "TN",
+            "FP",
+            "FN"
+          ]
+        },
+        "fold": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "input_tokens": {
+          "type": "integer"
+        },
+        "label": {
+          "enum": [
+            0,
+            1
+          ]
+        },
+        "latency_ms": {
+          "type": "number"
+        },
+        "lineage_group": {
+          "type": "string"
+        },
+        "logit_margin": {
+          "type": "number"
+        },
+        "max_input_tokens": {
+          "const": 256
+        },
+        "partition": {
+          "const": "BASE_TRAIN"
+        },
+        "payload_position_status": {
+          "const": "NOT_AVAILABLE_NOT_INFERRED"
+        },
+        "raw_score": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        "sample_id": {
+          "type": "string"
+        },
+        "source_name": {
+          "type": "string"
+        },
+        "source_revision": {
+          "type": "string"
+        },
+        "threshold_distance": {
+          "type": "number"
+        },
+        "tokens_analyzed": {
+          "type": "integer"
+        },
+        "tokens_excluded": {
+          "type": "integer"
+        },
+        "truncated": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "sample_id",
+        "partition",
+        "fold",
+        "label",
+        "source_name",
+        "source_revision",
+        "lineage_group",
+        "detector_id",
+        "detector_version",
+        "candidate_id",
+        "raw_score",
+        "logit_margin",
+        "calibrated_probability",
+        "binary_prediction",
+        "error_type",
+        "threshold_distance",
+        "confidence_category",
+        "input_tokens",
+        "max_input_tokens",
+        "tokens_analyzed",
+        "tokens_excluded",
+        "truncated",
+        "payload_position_status",
+        "latency_ms"
+      ],
+      "type": "object"
+    },
+    "failure_marker_on_exception_only": "failure_v1.json",
+    "hard_examples": "Same CSV schema; only FN/FP IDs/metadata, sample-ID order, not a new training set",
+    "hash_policy": "Run metadata hashes eight data products; completion hashes those products plus metadata. No circular self-hash.",
+    "original_input_tokens_field": "input_tokens (including special tokens; padding excluded)",
+    "output_root": "artifacts/semantic_v2/oof",
+    "raw_text_included": false,
+    "results_status": "PENDING AUTHORITATIVE OOF EXECUTION",
+    "run_metadata": "dm_b_v1_oof_run_metadata.json",
+    "run_metadata_required_fields": [
+      "code_commit",
+      "manifest_sha256",
+      "fold_sha256",
+      "upstream_revision",
+      "tokenizer_revision",
+      "seed",
+      "device",
+      "python_executable",
+      "packages",
+      "runtime_seconds",
+      "started_at",
+      "completed_at",
+      "per_fold_runtime",
+      "output_sha256",
+      "analysis_config_sha256",
+      "oof_preflight_sha256"
+    ],
+    "started_marker": "run_started_v1.json",
+    "successful_data_outputs": [
+      "dm_b_v1_recipe_oof_predictions.csv",
+      "dm_b_v1_recipe_oof_metrics.json",
+      "dm_b_v1_recipe_fold_metrics.json",
+      "dm_b_v1_recipe_oof_curves.json",
+      "dm_b_v1_truncation_analysis.json",
+      "dm_b_v1_error_characterization.json",
+      "dm_b_v1_hard_examples.csv",
+      "dm_b_v1_v2_recommendation.json"
+    ]
+  },
+  "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "max_length": 256,
+  "performance_results": "PENDING AUTHORITATIVE OOF EXECUTION",
+  "phase": "TECH-SEM-003",
+  "runtime_estimate_minutes": [
+    75,
+    100
+  ],
+  "seed": 1701,
+  "status": "PRE_RUN_VERIFIED_COMMIT_REQUIRED",
+  "upstream_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b"
+}
