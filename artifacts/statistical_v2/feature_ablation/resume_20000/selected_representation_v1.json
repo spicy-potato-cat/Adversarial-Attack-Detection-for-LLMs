@@ -1,0 +1,216 @@
+{
+  "baseline_short_3pct": {
+    "fn": 75,
+    "fp": 14,
+    "fpr": 0.01569506726457399,
+    "negative": 892,
+    "positive": 85,
+    "recall": 0.11764705882352941,
+    "tn": 878,
+    "tp": 10
+  },
+  "best_eligible_3pct_block": "B6",
+  "complementarity": "DEFERRED_TO_LATER_COMMON_STACK_ANALYSIS",
+  "cycle": "1_OF_MAXIMUM_2",
+  "eligibility": {
+    "B1": {
+      "checks": {
+        "ap_sanity": true,
+        "auc_sanity": true,
+        "fold_min_guard": true,
+        "fold_sd_guard": true,
+        "material_3pct_gain": true,
+        "preserve_1pct": true,
+        "preserve_5pct": true,
+        "short_fpr_guard": true,
+        "short_recall_guard": false
+      },
+      "eligible": false,
+      "short_3pct": {
+        "fn": 77,
+        "fp": 7,
+        "fpr": 0.007847533632286996,
+        "negative": 892,
+        "positive": 85,
+        "recall": 0.09411764705882353,
+        "tn": 885,
+        "tp": 8
+      }
+    },
+    "B2": {
+      "checks": {
+        "ap_sanity": true,
+        "auc_sanity": true,
+        "fold_min_guard": true,
+        "fold_sd_guard": true,
+        "material_3pct_gain": true,
+        "preserve_1pct": true,
+        "preserve_5pct": true,
+        "short_fpr_guard": true,
+        "short_recall_guard": true
+      },
+      "eligible": true,
+      "short_3pct": {
+        "fn": 67,
+        "fp": 6,
+        "fpr": 0.006726457399103139,
+        "negative": 892,
+        "positive": 85,
+        "recall": 0.21176470588235294,
+        "tn": 886,
+        "tp": 18
+      }
+    },
+    "B3": {
+      "checks": {
+        "ap_sanity": true,
+        "auc_sanity": true,
+        "fold_min_guard": true,
+        "fold_sd_guard": true,
+        "material_3pct_gain": true,
+        "preserve_1pct": true,
+        "preserve_5pct": true,
+        "short_fpr_guard": true,
+        "short_recall_guard": true
+      },
+      "eligible": true,
+      "short_3pct": {
+        "fn": 67,
+        "fp": 6,
+        "fpr": 0.006726457399103139,
+        "negative": 892,
+        "positive": 85,
+        "recall": 0.21176470588235294,
+        "tn": 886,
+        "tp": 18
+      }
+    },
+    "B4": {
+      "checks": {
+        "ap_sanity": true,
+        "auc_sanity": true,
+        "fold_min_guard": true,
+        "fold_sd_guard": true,
+        "material_3pct_gain": true,
+        "preserve_1pct": true,
+        "preserve_5pct": true,
+        "short_fpr_guard": true,
+        "short_recall_guard": true
+      },
+      "eligible": true,
+      "short_3pct": {
+        "fn": 69,
+        "fp": 5,
+        "fpr": 0.005605381165919282,
+        "negative": 892,
+        "positive": 85,
+        "recall": 0.18823529411764706,
+        "tn": 887,
+        "tp": 16
+      }
+    },
+    "B5": {
+      "checks": {
+        "ap_sanity": true,
+        "auc_sanity": true,
+        "fold_min_guard": true,
+        "fold_sd_guard": true,
+        "material_3pct_gain": true,
+        "preserve_1pct": true,
+        "preserve_5pct": true,
+        "short_fpr_guard": true,
+        "short_recall_guard": true
+      },
+      "eligible": true,
+      "short_3pct": {
+        "fn": 72,
+        "fp": 7,
+        "fpr": 0.007847533632286996,
+        "negative": 892,
+        "positive": 85,
+        "recall": 0.15294117647058825,
+        "tn": 885,
+        "tp": 13
+      }
+    },
+    "B6": {
+      "checks": {
+        "ap_sanity": true,
+        "auc_sanity": true,
+        "fold_min_guard": true,
+        "fold_sd_guard": true,
+        "material_3pct_gain": true,
+        "preserve_1pct": true,
+        "preserve_5pct": true,
+        "short_fpr_guard": true,
+        "short_recall_guard": true
+      },
+      "eligible": true,
+      "short_3pct": {
+        "fn": 61,
+        "fp": 13,
+        "fpr": 0.014573991031390135,
+        "negative": 892,
+        "positive": 85,
+        "recall": 0.2823529411764706,
+        "tn": 879,
+        "tp": 24
+      }
+    }
+  },
+  "feature_count": 26,
+  "feature_names": [
+    "whole_prompt_nll",
+    "whole_prompt_ppl",
+    "global_perplexity",
+    "mean_window_perplexity",
+    "max_window_perplexity",
+    "std_window_perplexity",
+    "mean_surprisal",
+    "max_surprisal",
+    "surprisal_std",
+    "high_surprisal_ratio",
+    "length_robust_z_whole_prompt_nll",
+    "length_percentile_whole_prompt_nll",
+    "length_robust_z_max_surprisal",
+    "length_percentile_max_surprisal",
+    "length_robust_z_surprisal_std",
+    "length_percentile_surprisal_std",
+    "surprisal_median",
+    "surprisal_mad",
+    "surprisal_iqr",
+    "surprisal_q25",
+    "surprisal_q75",
+    "surprisal_q90",
+    "surprisal_q95",
+    "surprisal_q99",
+    "surprisal_top5_mean",
+    "surprisal_top10pct_mean"
+  ],
+  "final_ds_v2_created": false,
+  "policy": {
+    "auc_and_ap_min_vs_B0": -0.01,
+    "budget_1_and_5_min_vs_B0": -0.02,
+    "fold_recall_3_min_max_drop": 0.03,
+    "fold_recall_3_sd_max_increase": 0.03,
+    "material_gain": 0.03,
+    "near_best_tolerance": 0.02,
+    "primary": "Recall@FPR<=3%",
+    "rule": "Eligible means >=3 recall points over B0 at 3%, preservation guards above. Choose earliest eligible block within 2 points of best eligible 3% recall AND within 2 points of its 1/5% recalls. If none eligible, retain B0. Raw 0.5 confusion never selects a block.",
+    "short_fpr_3_max_increase": 0.02,
+    "short_recall_3_min_change": 0.0
+  },
+  "schema_sha256": "93d3892b158c35eccfadc27c879754db69ea5293782492ee5d4ff01a33bff983",
+  "selected_block": "B2",
+  "selected_short_3pct": {
+    "fn": 67,
+    "fp": 6,
+    "fpr": 0.006726457399103139,
+    "negative": 892,
+    "positive": 85,
+    "recall": 0.21176470588235294,
+    "tn": 886,
+    "tp": 18
+  },
+  "selection_scope": "DEVELOPMENT_SELECTION_ON_SAME_OOF_FIXTURE; requires later independent evaluation, not unbiased final performance"
+}

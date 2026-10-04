@@ -1,0 +1,108 @@
+{
+  "B0_reproduced": true,
+  "B0_reproduction": {
+    "confusion_matrix": {
+      "fn": 60,
+      "fp": 203,
+      "tn": 749,
+      "tp": 123
+    },
+    "max_score_absolute_difference": 0.0,
+    "pr_auc": 0.5766836613612865,
+    "roc_auc": 0.8100863296138128,
+    "status": "PASS"
+  },
+  "B7": "PREDECLARED_SKIPPED",
+  "CALIBRATION_used": false,
+  "E1_E10": false,
+  "LR_fits": 35,
+  "VALIDATION_used": false,
+  "accepted_start_commit": "9b63a230943be3f47e812f6495a8f3435fdff642",
+  "artifact_sha256": {
+    "block_fold_metrics_v1.json": "2f3823da52fd0d9874fd89e14d4d7feb791225ea690ed3956d1d381f847df7c5",
+    "block_metrics_v1.json": "73a5225e6bcfdbb889014e732727d96b21bc8a59230955478908ebd677d5f64f",
+    "block_predictions_v1.csv": "32e21d581b433a422e4f438274a01d0719ccbae1c8f4788505e30f05c2414f2e",
+    "error_bank_transition_v1.json": "625e6a357d2495a4f06e992874a8eeab2699c6dfa4d9dcb61469e94a13fcc1d9",
+    "fold_references_v1.json": "38fc670b45fac1f776e3c30986ccf5e6f318276011576ef33bed196e69cac691",
+    "lr_convergence_v1.json": "6c9d80b0e029e34e966389339b8a1f83cfee54c286e075e834da7f8c6cbea7a4",
+    "paired_comparison_v1.json": "64e7aa9d17b0f181ed8cb0ec82be6666841c65963a08d3a60a097f008d3bb71c",
+    "selected_representation_v1.json": "05c0ab4f01cceb2a57e70e9ed0fe68717a0118a8d0a8cedf6bb5d26b5857adf2",
+    "short_prompt_analysis_v1.json": "f26ed7323d76562c0261c4670719acda4a054d3d4a201fab66a3a401b01d42e3"
+  },
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "blocks": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6"
+  ],
+  "canonical_lineage_leakage": 0,
+  "code_commit": "e8533cba2379df67eeca9f5e54c7f1de26c4cd9f",
+  "code_sha256": {
+    "detection_service/analysis/statistical_ablation_results.py": "ffc0eb0ffcf325e371de7dd9ab6bda3a8654b5d3471ac7057e9ad811d7bd97f2",
+    "detection_service/analysis/statistical_feature_ablation.py": "cbde0ee5e4216aa024e6d60facf310e57a22e5d653612db12840365b08819e70",
+    "detection_service/scripts/statistical_feature_ablation.py": "50307b933f1923502ede67c2caeec7fb198877d5ecbcd981bc790b32f9c62886",
+    "detection_service/scripts/statistical_feature_ablation_resume.py": "32d894ca1f9895a0a394951b9eac4655e876850dcc60ba2448378488c3e93a53",
+    "detection_service/tests/test_statistical_feature_ablation.py": "360e1b4b2d87c739501160f9993375062ed2191879e150a84191077d3942cfdb"
+  },
+  "completed_at": "2026-10-04T17:14:35.681507+00:00",
+  "cycle": "1_OF_MAXIMUM_2",
+  "definitions_sha256": "a560a14b9a27ebd754d8b150d600e82aee99c46c6c7c5ff7e9f4d38801f9f4c2",
+  "deployment_threshold_selected": false,
+  "environment": {
+    "packages": {
+      "jsonschema": "4.23.0",
+      "numpy": "2.1.3",
+      "pyarrow": "19.0.1",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.17.1",
+      "tokenizers": "0.21.4",
+      "torch": "2.6.0",
+      "transformers": "4.49.0"
+    },
+    "python": "3.11.9"
+  },
+  "final_ds_v2_created": false,
+  "fold_sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+  "identity_leakage": 0,
+  "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "numerical_correction": {
+    "actual_recipe": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "fit_intercept": true,
+      "max_iter": 20000,
+      "penalty": "l2",
+      "random_state": 1701,
+      "scorer": "LogisticRegression",
+      "solver": "lbfgs"
+    },
+    "all_blocks_all_folds": true,
+    "feature_schema_recipe": "Historical 1000 retained byte-for-byte; numerical override recorded here.",
+    "max_iter": 20000,
+    "new_model_selection_cycle": false,
+    "original_max_iter": 1000,
+    "scientific_parameters_changed": false,
+    "second_max_iter": 5000,
+    "tol": 0.0001
+  },
+  "observed_dataset_opens": [],
+  "original_run_code_commit": "2eed02d6257f0f55bd6e52e499dcc2017e8a728d",
+  "other_detector_outputs_used": false,
+  "protected_used": false,
+  "reference_fits": 5,
+  "resume_start_commit": "5670f7780f084ce40545fa8c6b8a61100598d6a5",
+  "rows_per_block": 1135,
+  "runtime_seconds": 70.61055729999862,
+  "status": "COMPLETE_FEATURE_ABLATION_DEVELOPMENT_ONLY",
+  "token_cache_path": "detection_service/outputs/stat004/token_evidence.npz",
+  "token_cache_sha256": "02241c0b2de1941783187f398c82ce3e8a7ec0a67655ace10f13ced7c29a70b3"
+}

@@ -21,3 +21,5 @@
 /detection_service/tests/test_statistical_feature_ablation.py -text
 /reviews/TECH_STAT_004*.md -text
 /detection_service/scripts/statistical_feature_ablation_resume.py -text
+/detection_service/scripts/statistical_feature_ablation_acceptance.py -text
+/detection_service/tests/test_statistical_feature_ablation_acceptance.py -text

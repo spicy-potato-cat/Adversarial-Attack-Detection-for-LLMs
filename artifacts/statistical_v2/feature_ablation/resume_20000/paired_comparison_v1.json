@@ -1,0 +1,135 @@
+{
+  "differences_vs_B0": {
+    "B1": {
+      "metrics": {
+        "pr_auc": {
+          "lower_95pct": 0.09253206041511074,
+          "observed_difference": 0.13819052947639676,
+          "upper_95pct": 0.18687899997130514
+        },
+        "recall_at_3pct": {
+          "lower_95pct": 0.057126715092816756,
+          "observed_difference": 0.1256830601092896,
+          "upper_95pct": 0.28109825294908164
+        },
+        "roc_auc": {
+          "lower_95pct": 0.045002746503564665,
+          "observed_difference": 0.07561303209808512,
+          "upper_95pct": 0.10700194251853444
+        }
+      },
+      "valid_repetitions": 1000
+    },
+    "B2": {
+      "metrics": {
+        "pr_auc": {
+          "lower_95pct": 0.10733476203937799,
+          "observed_difference": 0.15490291896754127,
+          "upper_95pct": 0.2040326596060196
+        },
+        "recall_at_3pct": {
+          "lower_95pct": 0.12716523488646886,
+          "observed_difference": 0.22404371584699456,
+          "upper_95pct": 0.32051630434782613
+        },
+        "roc_auc": {
+          "lower_95pct": 0.05648385422017892,
+          "observed_difference": 0.08667401386784224,
+          "upper_95pct": 0.11843175575637511
+        }
+      },
+      "valid_repetitions": 1000
+    },
+    "B3": {
+      "metrics": {
+        "pr_auc": {
+          "lower_95pct": 0.10703864469747906,
+          "observed_difference": 0.15481591677487927,
+          "upper_95pct": 0.20351058588395282
+        },
+        "recall_at_3pct": {
+          "lower_95pct": 0.12254901960784315,
+          "observed_difference": 0.22404371584699456,
+          "upper_95pct": 0.31696511139134087
+        },
+        "roc_auc": {
+          "lower_95pct": 0.05632641582556064,
+          "observed_difference": 0.08650181384029021,
+          "upper_95pct": 0.11828832391858538
+        }
+      },
+      "valid_repetitions": 1000
+    },
+    "B4": {
+      "metrics": {
+        "pr_auc": {
+          "lower_95pct": 0.10498585571865664,
+          "observed_difference": 0.15306322461458888,
+          "upper_95pct": 0.2008221313961395
+        },
+        "recall_at_3pct": {
+          "lower_95pct": 0.11484674329501914,
+          "observed_difference": 0.21311475409836067,
+          "upper_95pct": 0.31522386128364394
+        },
+        "roc_auc": {
+          "lower_95pct": 0.056059797355921655,
+          "observed_difference": 0.08594503375120532,
+          "upper_95pct": 0.11782073293059933
+        }
+      },
+      "valid_repetitions": 1000
+    },
+    "B5": {
+      "metrics": {
+        "pr_auc": {
+          "lower_95pct": 0.0939098216370216,
+          "observed_difference": 0.14134164499847368,
+          "upper_95pct": 0.18730749446750697
+        },
+        "recall_at_3pct": {
+          "lower_95pct": 0.07566239650054679,
+          "observed_difference": 0.1693989071038251,
+          "upper_95pct": 0.2601178188038221
+        },
+        "roc_auc": {
+          "lower_95pct": 0.05491461073924598,
+          "observed_difference": 0.08560637369701973,
+          "upper_95pct": 0.11809134117720566
+        }
+      },
+      "valid_repetitions": 1000
+    },
+    "B6": {
+      "metrics": {
+        "pr_auc": {
+          "lower_95pct": 0.09995806424273666,
+          "observed_difference": 0.14985337709903956,
+          "upper_95pct": 0.19933680832215092
+        },
+        "recall_at_3pct": {
+          "lower_95pct": 0.09191647894645642,
+          "observed_difference": 0.23497267759562834,
+          "upper_95pct": 0.32749496692551044
+        },
+        "roc_auc": {
+          "lower_95pct": 0.05597402945277129,
+          "observed_difference": 0.08805161408825823,
+          "upper_95pct": 0.12160795141601018
+        }
+      },
+      "valid_repetitions": 1000
+    }
+  },
+  "policy": {
+    "limitations": "Conditional fixed-OOF percentile intervals; no model refits, shared-training uncertainty or multiplicity correction. Frontiers recomputed within resamples; not future threshold guarantees.",
+    "metrics": [
+      "recall_at_3pct",
+      "roc_auc",
+      "pr_auc"
+    ],
+    "repetitions": 1000,
+    "seed": 1701,
+    "unit": "Canonical lineage groups resampled, paired identical indices across blocks"
+  }
+}
