@@ -1,0 +1,193 @@
+{
+  "ds_v2_created": false,
+  "features_implemented": false,
+  "hypotheses": [
+    {
+      "family": "window_robustness",
+      "proposed_features_NOT_IMPLEMENTED": [
+        "median_window_PPL",
+        "window_variance",
+        "max_median_window_ratio"
+      ],
+      "rank": 1,
+      "rationale": "v1 already has max-window PPL; robust window center/contrast is not represented. Do not claim max-window PPL itself is missing.",
+      "scope": "DEVELOPMENT_HYPOTHESIS_NOT_CAUSAL_OR_PERFORMANCE_EVIDENCE",
+      "supporting_patterns": [
+        {
+          "error_count": 60,
+          "error_type": "FN",
+          "pattern": "weak_window_variation"
+        },
+        {
+          "error_count": 0,
+          "error_type": "FN",
+          "pattern": "aggregate_spike_proxy"
+        },
+        {
+          "error_count": 203,
+          "error_type": "FP",
+          "pattern": "high_window_variation"
+        },
+        {
+          "error_count": 50,
+          "error_type": "FP",
+          "pattern": "aggregate_spike_proxy"
+        }
+      ],
+      "unique_supporting_error_count": 263
+    },
+    {
+      "family": "length_normalization",
+      "proposed_features_NOT_IMPLEMENTED": [
+        "token_count_normalization"
+      ],
+      "rank": 2,
+      "rationale": "Coverage/length are diagnostic metadata, not scorer inputs; error concentration may motivate later length-aware statistical tests.",
+      "scope": "DEVELOPMENT_HYPOTHESIS_NOT_CAUSAL_OR_PERFORMANCE_EVIDENCE",
+      "supporting_patterns": [
+        {
+          "error_count": 51,
+          "error_type": "FN",
+          "pattern": "short_input"
+        },
+        {
+          "error_count": 0,
+          "error_type": "FN",
+          "pattern": "long_input"
+        },
+        {
+          "error_count": 0,
+          "error_type": "FN",
+          "pattern": "truncated_input"
+        },
+        {
+          "error_count": 158,
+          "error_type": "FP",
+          "pattern": "short_input"
+        },
+        {
+          "error_count": 0,
+          "error_type": "FP",
+          "pattern": "long_input"
+        },
+        {
+          "error_count": 0,
+          "error_type": "FP",
+          "pattern": "truncated_input"
+        }
+      ],
+      "unique_supporting_error_count": 209
+    },
+    {
+      "family": "robust_distribution",
+      "proposed_features_NOT_IMPLEMENTED": [
+        "surprisal_quantiles",
+        "median",
+        "MAD",
+        "IQR",
+        "skewness",
+        "kurtosis"
+      ],
+      "rank": 3,
+      "rationale": "Aggregate averages/extrema cannot resolve within-prompt distribution shape. Existing aliases duplicate two signals.",
+      "scope": "DEVELOPMENT_HYPOTHESIS_NOT_CAUSAL_OR_PERFORMANCE_EVIDENCE",
+      "supporting_patterns": [
+        {
+          "error_count": 15,
+          "error_type": "FN",
+          "pattern": "low_PPL"
+        },
+        {
+          "error_count": 15,
+          "error_type": "FN",
+          "pattern": "low_mean_surprisal"
+        },
+        {
+          "error_count": 40,
+          "error_type": "FN",
+          "pattern": "low_max_surprisal"
+        },
+        {
+          "error_count": 66,
+          "error_type": "FP",
+          "pattern": "high_PPL"
+        },
+        {
+          "error_count": 45,
+          "error_type": "FP",
+          "pattern": "high_surprisal_variation"
+        }
+      ],
+      "unique_supporting_error_count": 138
+    },
+    {
+      "family": "multi_threshold_surprisal",
+      "proposed_features_NOT_IMPLEMENTED": [
+        "multiple_high_surprisal_ratios"
+      ],
+      "rank": 4,
+      "rationale": "The existing exceedance ratio uses only threshold 8; alternative shape sensitivity is untested.",
+      "scope": "DEVELOPMENT_HYPOTHESIS_NOT_CAUSAL_OR_PERFORMANCE_EVIDENCE",
+      "supporting_patterns": [
+        {
+          "error_count": 40,
+          "error_type": "FN",
+          "pattern": "low_max_surprisal"
+        },
+        {
+          "error_count": 0,
+          "error_type": "FN",
+          "pattern": "no_threshold_8_exceedance"
+        },
+        {
+          "error_count": 52,
+          "error_type": "FP",
+          "pattern": "high_max_surprisal"
+        }
+      ],
+      "unique_supporting_error_count": 92
+    },
+    {
+      "family": "anomaly_runs",
+      "proposed_features_NOT_IMPLEMENTED": [
+        "longest_anomaly_run",
+        "anomaly_run_count"
+      ],
+      "rank": 5,
+      "rationale": "Aggregate maxima cannot distinguish sustained anomalous runs from isolated events; proxy evidence is indirect.",
+      "scope": "DEVELOPMENT_HYPOTHESIS_NOT_CAUSAL_OR_PERFORMANCE_EVIDENCE",
+      "supporting_patterns": [
+        {
+          "error_count": 0,
+          "error_type": "FN",
+          "pattern": "aggregate_spike_proxy"
+        },
+        {
+          "error_count": 52,
+          "error_type": "FP",
+          "pattern": "high_max_surprisal"
+        },
+        {
+          "error_count": 50,
+          "error_type": "FP",
+          "pattern": "aggregate_spike_proxy"
+        }
+      ],
+      "unique_supporting_error_count": 80
+    },
+    {
+      "family": "regional_position",
+      "proposed_features_NOT_IMPLEMENTED": [
+        "prefix_middle_tail_comparisons",
+        "tail_minus_prefix",
+        "anomaly_position"
+      ],
+      "rank": 6,
+      "rationale": "Information gap only: position/tail effects were not measured, so there is no direct supporting error count.",
+      "scope": "DEVELOPMENT_HYPOTHESIS_NOT_CAUSAL_OR_PERFORMANCE_EVIDENCE",
+      "supporting_patterns": [],
+      "unique_supporting_error_count": 0
+    }
+  ],
+  "ranking_rule": "Descending unique observed error IDs matching preregistered existing-statistic patterns; listed family order breaks ties. Overlapping counts are not independent evidence."
+}

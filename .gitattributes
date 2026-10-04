@@ -8,3 +8,6 @@
 /artifacts/models/ds_v1/** -text
 /artifacts/quality/quality_001/** -text
 /detection_service/quality/** -text
+/artifacts/statistical_v2/oof/** -text
+/detection_service/analysis/** -text
+/detection_service/scripts/statistical_oof_baseline.py -text

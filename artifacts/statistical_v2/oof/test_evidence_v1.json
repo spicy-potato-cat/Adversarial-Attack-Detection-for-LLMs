@@ -1,0 +1,10 @@
+{
+  "counts": {
+    "error": 0,
+    "failed": 0,
+    "passed": 37,
+    "skipped": 0
+  },
+  "prohibited_open_attempts": [],
+  "status": "PASS"
+}
