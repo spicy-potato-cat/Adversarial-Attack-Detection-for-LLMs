@@ -6,3 +6,5 @@
 /artifacts/models/dm_b_v1/** -text
 /artifacts/models/dg_v1/** -text
 /artifacts/models/ds_v1/** -text
+/artifacts/quality/quality_001/** -text
+/detection_service/quality/** -text

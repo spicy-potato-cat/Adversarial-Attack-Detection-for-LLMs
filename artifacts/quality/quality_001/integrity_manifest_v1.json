@@ -1,0 +1,16 @@
+{
+  "fixture_version": "quality_001_development_folds_v1",
+  "sha256": {
+    "artifacts/quality/quality_001/development_folds_v1.csv": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+    "artifacts/quality/quality_001/error_analysis_schema_v1.json": "e3b0c6516a29d40e9788c8df9b367931fb327bd7039738cd8e53398df61e153d",
+    "artifacts/quality/quality_001/fold_statistics_v1.json": "2ae3c7e5e6866e0d08667b2746fc405a741b019320a8ff6a6df44fcf987587ea",
+    "artifacts/quality/quality_001/oof_result_schema_v1.json": "b9cf6f772d8c7bf658fcdb7b29a7ec51f15113d61bbb404ffb823ab18f09af57",
+    "artifacts/quality/quality_001/quality_fixture_schema_v1.json": "569e78547a1c2d60e0d46bda0c29f45488b97faa4e89b7b580743dd1cbc3cbc3",
+    "artifacts/quality/quality_001/quality_fixture_v1.json": "7b010b4e536cf04fd510c7a7a16a80fa9429c798c3d155e01ddfe56b45657c0c",
+    "data_governance/DATA_LINEAGE_POLICY_v1.md": "32ebd1c851a0085f4754971ae4e84206d488d1ef604d0021b4ef629f6b692e26",
+    "data_governance/DATA_PARTITION_POLICY_v1.md": "4fe0ca6cf5b3cb729f6205a862984d5545a0309ffdeea2d32d1312fe6da48b51",
+    "data_governance/manifests/development_partition_manifest_v1.csv": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+    "detection_service/quality/development_fixture.py": "33516e3b5e01fb8afa5ee3a76ccb79e9151e7cc53598e075fece6b23fbf17a8b",
+    "detection_service/quality/policy.py": "42be8cc34b181a09d0cfe4eea6db43f8dc6c6c3bb1ed04a8c5ff91df93114df1"
+  }
+}
