@@ -1,0 +1,11 @@
+{
+  "phase": "TECH-STAT-006",
+  "status": "RESOLVED",
+  "initial_preparation": "Historical exact-96-file checker rejected three new ds_v2 modules. All original 96 hashes matched. A scoped adapter allows exactly the three new modules without modifying the historical checker or snapshot.",
+  "restricted_test_attempts": "Two commands were interrupted after stalling in the existing TestClient test. Diagnostic traceback showed Windows asyncio socketpair/accept before detector execution. No completed test XML from those attempts is claimed.",
+  "resolution": "The same 163-test suite passed with local loopback permissions: zero failures/errors/skips. No application code was changed to fix the socket-pair stall.",
+  "authoritative_final_fit_started": false,
+  "authoritative_calibration_started": false,
+  "package_installation": false,
+  "model_recipe_changed": false
+}
