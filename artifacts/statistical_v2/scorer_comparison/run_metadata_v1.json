@@ -1,0 +1,65 @@
+{
+  "B2_schema_sha256": "93d3892b158c35eccfadc27c879754db69ea5293782492ee5d4ff01a33bff983",
+  "E1_E10": false,
+  "S0_reproduction": {
+    "max_score_absolute_difference": 0.0,
+    "status": "PASS"
+  },
+  "artifact_sha256": {
+    "error_transition_v1.json": "f0ca5a4280dd814de56ff7f94e94ec6c87d63d09094c87c7633cc8f3184e9292",
+    "fold_references_v1.json": "3c98be44b7817fe3237f28044d532050f663113aef55a95a10086a6ad2e28f8e",
+    "paired_comparison_v1.json": "438137d0c89976df03daa551bc9ffad5c99d1eb34dc589fb65431e64d32e4b8a",
+    "scorer_fold_metrics_v1.json": "1a0e59510a7f52a47a6d8150b8d12f3d752060a376c1d4ba2062753a01088c6b",
+    "scorer_metrics_v1.json": "8a13878fc981c4189620173d2070da3004267074ae5edc1d90d37527a105ba0b",
+    "scorer_predictions_v1.csv": "1dd23a39bb87f3f95b090a93bb7797ae6a1d84e4ddf24a55d63b9eb2609e9fed",
+    "selected_scorer_v1.json": "3937180d40181f4ce421f86bba94b1c26f9b56409cd379ab1acf8c6a1dd54676",
+    "subgroup_analysis_v1.json": "2e36837bea8c50a37b9894e526b21f5d03752b97ddd9f2021e1187cb7081b955"
+  },
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "calibration_used": false,
+  "code_commit": "f123a46c320075a52ef0af3d09e2de734e4895f9",
+  "code_sha256": {
+    "detection_service/analysis/statistical_scorer_comparison.py": "288f2517f918d48ceaa07bb9f1b345cde031e2d2db1ee6d0d10b10a7fe93e0b2",
+    "detection_service/analysis/statistical_scorer_results.py": "01be7e74881cd7d747c7fa68b14a856fc904d6d9cc5880eb931b51ceed8a8b00",
+    "detection_service/scripts/statistical_scorer_comparison.py": "f1d2628504e78820852c9dd022610ae19bff5cef1e9c9ce128db6650713978ae",
+    "detection_service/tests/test_statistical_scorer_comparison.py": "2af2c2daa54de2d8591a7d0bfbd9961680617857071f1a89c5afd9b39b1a9a8d"
+  },
+  "completed_at": "2026-10-04T17:55:47.169494+00:00",
+  "cycle": "1_OF_MAXIMUM_2",
+  "definitions_sha256": "d74f16b2b6a747631992e3d900a932015c731019a9c889842420f42b3ba519f1",
+  "environment": {
+    "packages": {
+      "jsonschema": "4.23.0",
+      "numpy": "2.1.3",
+      "pyarrow": "19.0.1",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.17.1",
+      "tokenizers": "0.21.4",
+      "torch": "2.6.0",
+      "transformers": "4.49.0"
+    },
+    "python": "3.11.9"
+  },
+  "final_ds_v2_trained": false,
+  "fold_sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+  "identity_leakage": 0,
+  "lineage_leakage": 0,
+  "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "observed_dataset_opens": [],
+  "other_detector_outputs_used": false,
+  "protected_used": false,
+  "reference_fits": 5,
+  "rows_per_scorer": 1135,
+  "runtime_seconds": 19.83189190000121,
+  "scaler_fits": 5,
+  "scorer_fits": 15,
+  "start_commit": "b09beb5340a4d6c21e165f4cb1b596cfc3657216",
+  "status": "COMPLETE_DEVELOPMENT_SCORER_COMPARISON",
+  "token_cache_sha256": "02241c0b2de1941783187f398c82ce3e8a7ec0a67655ace10f13ced7c29a70b3",
+  "validation_used": false
+}
