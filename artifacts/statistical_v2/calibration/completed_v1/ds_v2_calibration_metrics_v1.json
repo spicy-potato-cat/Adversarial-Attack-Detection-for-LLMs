@@ -1,0 +1,188 @@
+{
+  "calibrated": {
+    "bins": [
+      {
+        "count": 156,
+        "lower": 0.0,
+        "mean_probability": 0.02442031475040816,
+        "positive_fraction": 0.019230769230769232,
+        "upper": 0.1
+      },
+      {
+        "count": 23,
+        "lower": 0.1,
+        "mean_probability": 0.14682819384189766,
+        "positive_fraction": 0.043478260869565216,
+        "upper": 0.2
+      },
+      {
+        "count": 5,
+        "lower": 0.2,
+        "mean_probability": 0.26063248964737634,
+        "positive_fraction": 0.2,
+        "upper": 0.3
+      },
+      {
+        "count": 10,
+        "lower": 0.3,
+        "mean_probability": 0.3647637133856283,
+        "positive_fraction": 0.6,
+        "upper": 0.4
+      },
+      {
+        "count": 6,
+        "lower": 0.4,
+        "mean_probability": 0.44607200495815075,
+        "positive_fraction": 0.6666666666666666,
+        "upper": 0.5
+      },
+      {
+        "count": 5,
+        "lower": 0.5,
+        "mean_probability": 0.5595734942043267,
+        "positive_fraction": 0.4,
+        "upper": 0.6
+      },
+      {
+        "count": 5,
+        "lower": 0.6,
+        "mean_probability": 0.6755987119680701,
+        "positive_fraction": 0.6,
+        "upper": 0.7
+      },
+      {
+        "count": 5,
+        "lower": 0.7,
+        "mean_probability": 0.7506245076172361,
+        "positive_fraction": 0.8,
+        "upper": 0.8
+      },
+      {
+        "count": 9,
+        "lower": 0.8,
+        "mean_probability": 0.8575779190240956,
+        "positive_fraction": 0.8888888888888888,
+        "upper": 0.9
+      },
+      {
+        "count": 9,
+        "lower": 0.9,
+        "mean_probability": 0.9527964839017419,
+        "positive_fraction": 1.0,
+        "upper": 1.0
+      }
+    ],
+    "brier_score": 0.059504681552583,
+    "log_loss": 0.208086588754964,
+    "probability_summary": {
+      "max": 0.9999999162134489,
+      "mean": 0.1761210401997858,
+      "min": 8.990357005723154e-14,
+      "quantiles": [
+        0.0019147380820050957,
+        0.03737577508369882,
+        0.6962109515865126
+      ],
+      "std": 0.2766047607023596
+    }
+  },
+  "ranking_sanity": {
+    "calibrated": {
+      "pr_auc": 0.8428186736354086,
+      "roc_auc": 0.9439786585365854
+    },
+    "raw": {
+      "pr_auc": 0.8428186736354086,
+      "roc_auc": 0.9439786585365854
+    }
+  },
+  "raw": {
+    "bins": [
+      {
+        "count": 77,
+        "lower": 0.0,
+        "mean_probability": 0.04431509064877179,
+        "positive_fraction": 0.012987012987012988,
+        "upper": 0.1
+      },
+      {
+        "count": 46,
+        "lower": 0.1,
+        "mean_probability": 0.1510555173485269,
+        "positive_fraction": 0.0,
+        "upper": 0.2
+      },
+      {
+        "count": 26,
+        "lower": 0.2,
+        "mean_probability": 0.24503663841811926,
+        "positive_fraction": 0.038461538461538464,
+        "upper": 0.3
+      },
+      {
+        "count": 14,
+        "lower": 0.3,
+        "mean_probability": 0.3497654930125756,
+        "positive_fraction": 0.14285714285714285,
+        "upper": 0.4
+      },
+      {
+        "count": 14,
+        "lower": 0.4,
+        "mean_probability": 0.44588983566618123,
+        "positive_fraction": 0.0,
+        "upper": 0.5
+      },
+      {
+        "count": 7,
+        "lower": 0.5,
+        "mean_probability": 0.5559784909426826,
+        "positive_fraction": 0.14285714285714285,
+        "upper": 0.6
+      },
+      {
+        "count": 10,
+        "lower": 0.6,
+        "mean_probability": 0.6689815447581413,
+        "positive_fraction": 0.6,
+        "upper": 0.7
+      },
+      {
+        "count": 9,
+        "lower": 0.7,
+        "mean_probability": 0.7456245309554721,
+        "positive_fraction": 0.5555555555555556,
+        "upper": 0.8
+      },
+      {
+        "count": 12,
+        "lower": 0.8,
+        "mean_probability": 0.8578600280273184,
+        "positive_fraction": 0.6666666666666666,
+        "upper": 0.9
+      },
+      {
+        "count": 18,
+        "lower": 0.9,
+        "mean_probability": 0.952843114165459,
+        "positive_fraction": 0.9444444444444444,
+        "upper": 1.0
+      }
+    ],
+    "brier_score": 0.08817214759280138,
+    "log_loss": 0.3014315232850654,
+    "probability_summary": {
+      "max": 0.9999993883476175,
+      "mean": 0.3116254293238064,
+      "min": 9.319881707234363e-11,
+      "quantiles": [
+        0.019889660420682596,
+        0.18705545074660895,
+        0.8608798539499956
+      ],
+      "std": 0.30482180207379617
+    }
+  },
+  "sample_count": 233,
+  "scope": "CALIBRATION-FIT DIAGNOSTICS ONLY"
+}
