@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "phase": "TECH-STACK-001",
+  "source_commit": "8c8e53d985d931eaa30672d866aab47d01c28bd7",
+  "canonical_manifest_sha256": "dce1392430198894247ca318d6c2627f024ef403742d2a0779bb7b7606847110",
+  "verified_artifact_sha256": {
+    "artifacts/stack/research_stack_candidate_v2.json": "4bd076dfc07717555034732b55a9a65c0bc531bb17beab58659b088254247dae",
+    "artifacts/stack/research_stack_candidate_v2.sha256": "e086f0d887126812ede62bf4b3e7dab12c9f7d463263bb7946257c341050f99b",
+    "artifacts/stack/stack_integrity_v1.json": "5e182b7912dda3bba41cc18616ee5fd63ca3b1e15426b001530a9b880097de66",
+    "artifacts/stack/test_results_v1.xml": "cd886584317d959a29b223d0b21dc8e7916eadd6063fb601174a94b17fcb5ace",
+    "artifacts/stack/verification_evidence_v1.json": "f5e9233bf390515a8cc3d65a92d4c689776e7d25c7d86308d562f07bd37c6209",
+    "reviews/TECH_STACK_001_FREEZE_v1.md": "edba435cefb40f00f0bd586f6c4cd95427eb06e725ab9d3c5b065014d45860b3",
+    "reviews/TECH_STACK_001_TEST_REPORT_v1.md": "0129791ab4a0aa93fb03b7a734d8be0ae5f5c74e08a9a1260d0e5e88d89bff07"
+  },
+  "implementation_sha256": {
+    "detection_service/stack_manifest.py": "167dbaa165dd1e34e3858a33856b3d6acb2409bf3be642e5792ccec6f3a6448b",
+    "detection_service/scripts/freeze_research_stack.py": "238da05d2b6ebc3001910782e961dd8dfe3d53356d264fb23a68818582f402cb",
+    "detection_service/tests/test_stack_manifest.py": "6f1c59d383df5a067d2665ac54f2d16e2e6df80ba275b4b9ad0f4c6bfb3479df"
+  },
+  "integrity": {
+    "status": "PASS",
+    "canonical_sha256": "dce1392430198894247ca318d6c2627f024ef403742d2a0779bb7b7606847110",
+    "artifact_hash_checks": 129,
+    "original_baseline_hash_checks": 96,
+    "primary_detectors": 3,
+    "datasets_accessed": false,
+    "prompts_scored": false,
+    "models_deserialized": false
+  },
+  "tests": {
+    "passed": 41,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "decision_state": {
+    "D_S_cycle_2": "DEFERRED",
+    "ensemble_policy": "NOT_FROZEN",
+    "final_thresholds": "NOT_FROZEN",
+    "routing": "NOT_IMPLEMENTED",
+    "verifier": "NOT_SELECTED"
+  },
+  "recommendation": "READY_FOR_DEVELOPMENT_COMMON_MODE_RESULTS_INGESTION"
+}
