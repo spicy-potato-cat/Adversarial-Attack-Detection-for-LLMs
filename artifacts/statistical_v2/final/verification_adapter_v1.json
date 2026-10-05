@@ -1,0 +1,12 @@
+{
+  "calibrated": false,
+  "frozen_training_code_commit": "0fcc476be03d2cb3e3ed20924034c8c34b04f396",
+  "initial_smoke_failure": "The contract rejected empty text before inference. No smoke acceptance file was emitted.",
+  "replacement": "Valid one-token synthetic string x, preserving insufficient-input coverage.",
+  "scope": "Synthetic fixture correction only; no model/scorer/reference/calibrator changes or fits.",
+  "smoke_sha256": "4a23696c29012be31042f54a60c18fa315b696c51c16ca2883051ecc0991c9df",
+  "status": "PASS",
+  "verification_code_sha256": {
+    "detection_service/scripts/verify_statistical_v2.py": "fc845a2ae4415fbab7afffcb63c9a986554069e2c9cb82d1f1f5f99ec10cd4cd"
+  }
+}

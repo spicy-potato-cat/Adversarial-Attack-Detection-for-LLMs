@@ -1,0 +1,66 @@
+{
+  "E1_E10": false,
+  "calibration_used": false,
+  "code_commit": "0fcc476be03d2cb3e3ed20924034c8c34b04f396",
+  "code_sha256": {
+    "detection_service/app/detectors/statistical_v2/__init__.py": "7ac35c423a5a0e1450481ec4215b6cf6ed9b64b104e2b9358b2843a68f4d474d",
+    "detection_service/app/detectors/statistical_v2/detector.py": "4912273d2caad3ff4f4094b9684310dc85199421fde7823b7de66d55607558fd",
+    "detection_service/app/detectors/statistical_v2/model.py": "bd456d513cdb109d05a3e81ddfadf77cd8c8fea40a6c5dd9d9265ef1557cf646",
+    "detection_service/scripts/freeze_statistical_v2.py": "0838099909192ac2afe0b8d26466e636d1bd9cf820016d55e811bc3b39145898",
+    "detection_service/tests/test_statistical_v2.py": "9638a36da41eabeb3042a5b92801664ef237d4ee8314a496b84005ae57dff892"
+  },
+  "converged": true,
+  "convergence_warnings": [],
+  "environment": {
+    "packages": {
+      "jsonschema": "4.23.0",
+      "numpy": "2.1.3",
+      "pyarrow": "19.0.1",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.17.1",
+      "tokenizers": "0.21.4",
+      "torch": "2.6.0",
+      "transformers": "4.49.0"
+    },
+    "python": "3.11.9"
+  },
+  "features": 26,
+  "final_fit_count": 1,
+  "fit_seconds": 2.322690099999818,
+  "matrix_sha256": "684de61e6ce71bc83216179319e8c6cd0d23dd306f00abaf7e973b0e7b49458c",
+  "max_iter": 20000,
+  "n_iter": [
+    5492
+  ],
+  "negative": 952,
+  "numeric_cache_sha256": "02241c0b2de1941783187f398c82ce3e8a7ec0a67655ace10f13ced7c29a70b3",
+  "partition": "BASE_TRAIN",
+  "phase": "TECH-STAT-006",
+  "positive": 183,
+  "protected_used": false,
+  "raw_dataset_opens": [],
+  "recipe": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": null,
+    "max_iter": 20000,
+    "multi_class": "deprecated",
+    "n_jobs": null,
+    "penalty": "l2",
+    "random_state": 1701,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "reference_fit_partition": "BASE_TRAIN",
+  "rows": 1135,
+  "runtime_seconds": 3.497199500000079,
+  "schema_sha256": "93d3892b158c35eccfadc27c879754db69ea5293782492ee5d4ff01a33bff983",
+  "status": "PASS",
+  "training_membership_sha256": "06414e2efb0479109651335ba40a40763f7144ea0d23c29a2a4a23c851f99329",
+  "validation_used": false
+}
