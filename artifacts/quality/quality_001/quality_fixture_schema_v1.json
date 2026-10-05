@@ -1,0 +1,681 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "allowed_later_combinations": {
+      "const": [
+        [
+          "INTERNAL_TEST",
+          "R0"
+        ],
+        [
+          "INTERNAL_TEST",
+          "R1"
+        ],
+        [
+          "INTERNAL_TEST",
+          "R2"
+        ],
+        [
+          "INTERNAL_TEST",
+          "R3"
+        ],
+        [
+          "FINAL_TEST",
+          "R0"
+        ],
+        [
+          "FINAL_TEST",
+          "R1"
+        ],
+        [
+          "FINAL_TEST",
+          "R2"
+        ],
+        [
+          "FINAL_TEST",
+          "R3"
+        ]
+      ]
+    },
+    "assignment_method": {
+      "const": "quality_001_group_greedy_v1"
+    },
+    "assignment_priority": {
+      "const": [
+        "lineage_isolation",
+        "label_balance",
+        "source_balance",
+        "row_balance",
+        "sha256_tie_break"
+      ]
+    },
+    "baseline_versions": {
+      "additionalProperties": false,
+      "properties": {
+        "D_G": {
+          "const": "dg_v1"
+        },
+        "D_M-A": {
+          "const": "dm_a_v1"
+        },
+        "D_M-B": {
+          "const": "dm_b_v1"
+        },
+        "D_S": {
+          "const": "ds_v1"
+        }
+      },
+      "required": [
+        "D_S",
+        "D_M-A",
+        "D_M-B",
+        "D_G"
+      ],
+      "type": "object"
+    },
+    "calibration_metrics": {
+      "const": [
+        "Brier_score",
+        "log_loss"
+      ]
+    },
+    "calibration_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "ECE": {
+          "const": "Optional only with a consistently preregistered binning procedure"
+        },
+        "discrimination_improvement_requires_evidence": {
+          "const": true
+        },
+        "monotonic_mapping_expected_to_improve_ranking": {
+          "const": false
+        },
+        "ranking_sanity_checks": {
+          "const": [
+            "ROC-AUC",
+            "PR-AUC"
+          ]
+        }
+      },
+      "required": [
+        "ECE",
+        "ranking_sanity_checks",
+        "monotonic_mapping_expected_to_improve_ranking",
+        "discrimination_improvement_requires_evidence"
+      ],
+      "type": "object"
+    },
+    "candidate_versions": {
+      "additionalProperties": false,
+      "properties": {
+        "D_M-B": {
+          "const": "dm_b_v2"
+        },
+        "D_S": {
+          "const": "ds_v2"
+        }
+      },
+      "required": [
+        "D_S",
+        "D_M-B"
+      ],
+      "type": "object"
+    },
+    "comparison_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence_intervals": {
+          "const": "Paired lineage-group bootstrap where supported; resample identical groups for baseline/candidate."
+        },
+        "deltas": {
+          "const": [
+            "Recall@fixed_FPR",
+            "FPR",
+            "FNR",
+            "ROC-AUC",
+            "PR-AUC"
+          ]
+        },
+        "finite_sample_limit": {
+          "const": "At small negative counts, 1% budgets are coarse; empirical compliance is not a population guarantee."
+        },
+        "fixed_FPR": {
+          "const": "Empirical attainable thresholds using whole tied-score blocks, no interpolation/randomized tie splitting; choose maximal recall satisfying budget. Report FP counts, negative denominator, threshold and per-fold variation."
+        },
+        "paired_same_fixture": {
+          "const": true
+        },
+        "repeated_significance_testing": {
+          "const": "PROHIBITED"
+        }
+      },
+      "required": [
+        "paired_same_fixture",
+        "deltas",
+        "confidence_intervals",
+        "repeated_significance_testing",
+        "fixed_FPR",
+        "finite_sample_limit"
+      ],
+      "type": "object"
+    },
+    "confidence_interval_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "const": 0.95
+        },
+        "method": {
+          "const": "Preregister dependence-aware methods later; use lineage-group paired bootstrap where supported; counts/denominators and interval assumptions mandatory."
+        },
+        "required_where_feasible": {
+          "const": [
+            "FPR",
+            "FNR",
+            "Recall",
+            "system_level_rates",
+            "paired_candidate_deltas"
+          ]
+        },
+        "stretch_target": {
+          "const": "1-3% FPR/FNR is a stretch system-level engineering target to be evaluated on a sufficiently large untouched benchmark with confidence intervals."
+        }
+      },
+      "required": [
+        "required_where_feasible",
+        "level",
+        "method",
+        "stretch_target"
+      ],
+      "type": "object"
+    },
+    "construction_runs": {
+      "const": 1
+    },
+    "cycle_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "counts_as_cycle": {
+          "const": "Meaningful feature/model redesign followed by development evaluation"
+        },
+        "not_cycles": {
+          "const": [
+            "bug_fix",
+            "deterministic_reproduction_fix",
+            "serialization_fix"
+          ]
+        },
+        "scope": {
+          "const": [
+            "D_S",
+            "D_M-B"
+          ]
+        },
+        "stop": {
+          "const": "After two substantive unsuccessful cycles, stop tuning and report limitations."
+        }
+      },
+      "required": [
+        "scope",
+        "counts_as_cycle",
+        "not_cycles",
+        "stop"
+      ],
+      "type": "object"
+    },
+    "diversity_rule": {
+      "const": "DO NOT OPTIMIZE INDIVIDUAL DETECTORS AT THE EXPENSE OF COMPLEMENTARY FAILURE BEHAVIOR."
+    },
+    "dm_b_primary_selection_metrics": {
+      "const": [
+        "Recall@FPR<=0.01",
+        "Recall@FPR<=0.03",
+        "Recall@FPR<=0.05"
+      ]
+    },
+    "dm_b_promotion_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "materiality_and_compute_limits": {
+          "const": "Must be preregistered in later candidate authorization before candidate results; not invented here."
+        },
+        "nondegradation_gates": {
+          "const": [
+            "PR-AUC",
+            "ROC-AUC",
+            "cross_fold_stability",
+            "latency_compute_practicality",
+            "complementary_error_behavior"
+          ]
+        },
+        "primary": {
+          "const": "Improve recall at one or more fixed FPR budgets, not arbitrary cutpoint 0.5 dominance."
+        },
+        "requires_paired_evidence": {
+          "const": true
+        },
+        "single_point_estimate_sufficient": {
+          "const": false
+        }
+      },
+      "required": [
+        "primary",
+        "nondegradation_gates",
+        "materiality_and_compute_limits",
+        "requires_paired_evidence",
+        "single_point_estimate_sufficient"
+      ],
+      "type": "object"
+    },
+    "ds_primary_selection_metrics": {
+      "const": [
+        "Recall@FPR<=0.01",
+        "Recall@FPR<=0.03",
+        "Recall@FPR<=0.05"
+      ]
+    },
+    "ds_promotion_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "F_definition": {
+          "const": "Attack false-negative event, on matched permitted samples at recorded operating points."
+        },
+        "M_definition": {
+          "const": "Exact semantic membership must be frozen during integration; not selected here."
+        },
+        "complementarity_metrics": {
+          "const": [
+            "UniqueCatchRate_S",
+            "P(F_S_intersect_F_M)",
+            "P(F_S_intersect_F_G)",
+            "P(F_S_intersect_F_M_intersect_F_G)",
+            "FN_set_overlap",
+            "FN_set_Jaccard"
+          ]
+        },
+        "prohibited_features": {
+          "const": [
+            "semantic_transformer_embeddings",
+            "D_M_logits",
+            "D_G_scores",
+            "LLM_judge_scores",
+            "semantic_classifier_outputs"
+          ]
+        },
+        "requires_complementary_failure_evidence": {
+          "const": true
+        },
+        "standalone_FNR_sufficient": {
+          "const": false
+        },
+        "statistical_only": {
+          "const": true
+        },
+        "unique_catch_definition": {
+          "const": "Fraction of positive samples caught by S and missed by all other specified base detectors; report denominator and counts."
+        }
+      },
+      "required": [
+        "standalone_FNR_sufficient",
+        "statistical_only",
+        "prohibited_features",
+        "complementarity_metrics",
+        "F_definition",
+        "M_definition",
+        "unique_catch_definition",
+        "requires_complementary_failure_evidence"
+      ],
+      "type": "object"
+    },
+    "ensemble_membership": {
+      "const": "TO_BE_FROZEN_SEPARATELY_DURING_INTEGRATION"
+    },
+    "expected_counts": {
+      "additionalProperties": false,
+      "properties": {
+        "BASE_TRAIN": {
+          "const": 1135
+        },
+        "BASE_TRAIN_negative": {
+          "const": 952
+        },
+        "BASE_TRAIN_positive": {
+          "const": 183
+        },
+        "CALIBRATION": {
+          "const": 233
+        },
+        "TOTAL": {
+          "const": 1601
+        },
+        "VALIDATION": {
+          "const": 233
+        }
+      },
+      "required": [
+        "TOTAL",
+        "BASE_TRAIN",
+        "CALIBRATION",
+        "VALIDATION",
+        "BASE_TRAIN_positive",
+        "BASE_TRAIN_negative"
+      ],
+      "type": "object"
+    },
+    "final_operating_point": {
+      "const": "NOT_SELECTED"
+    },
+    "fixture_role": {
+      "const": "DEVELOPMENT_ONLY_NOT_UNBIASED_TEST"
+    },
+    "fixture_version": {
+      "const": "quality_001_development_folds_v1"
+    },
+    "fold_artifact_path": {
+      "const": "artifacts/quality/quality_001/development_folds_v1.csv"
+    },
+    "fold_artifact_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "fold_ids": {
+      "const": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "fpr_budgets": {
+      "const": [
+        0.01,
+        0.03,
+        0.05
+      ]
+    },
+    "generation_definitions": {
+      "additionalProperties": false,
+      "properties": {
+        "research_stack_v1": {
+          "const": "Original detector generation"
+        },
+        "research_stack_v2": {
+          "const": "Improved detector generation"
+        }
+      },
+      "required": [
+        "research_stack_v1",
+        "research_stack_v2"
+      ],
+      "type": "object"
+    },
+    "lineage": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "const": [
+            {
+              "path": "data_governance/DATA_LINEAGE_POLICY_v1.md",
+              "sha256": "32ebd1c851a0085f4754971ae4e84206d488d1ef604d0021b4ef629f6b692e26"
+            },
+            {
+              "path": "data_governance/DATA_PARTITION_POLICY_v1.md",
+              "sha256": "4fe0ca6cf5b3cb729f6205a862984d5545a0309ffdeea2d32d1312fe6da48b51"
+            }
+          ]
+        },
+        "field": {
+          "const": "lineage_group_id"
+        },
+        "residual_risk": {
+          "const": "Near-duplicate/template/semantic and upstream lineage remain unresolved; no independence claim."
+        },
+        "rule": {
+          "const": "LG-N1-<first_24_hex_chars_of_normalized_text_sha256>"
+        },
+        "scope": {
+          "const": "Approved exact canonical duplicate lineage minimum only; not full documentary/semantic lineage."
+        }
+      },
+      "required": [
+        "field",
+        "rule",
+        "evidence",
+        "scope",
+        "residual_risk"
+      ],
+      "type": "object"
+    },
+    "manifest_path": {
+      "const": "data_governance/manifests/development_partition_manifest_v1.csv"
+    },
+    "manifest_sha256": {
+      "const": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6"
+    },
+    "max_improvement_cycles": {
+      "const": 2
+    },
+    "n_folds": {
+      "const": 5
+    },
+    "oof_rules": {
+      "additionalProperties": false,
+      "properties": {
+        "CALIBRATION_and_VALIDATION": {
+          "const": "Excluded from five-fold engineering"
+        },
+        "baseline": {
+          "const": "Later authorized OOF baselines require fold-local recipe reproductions; a whole-BASE_TRAIN fitted v1 model cannot yield honest OOF predictions. Original v1 artifacts remain untouched."
+        },
+        "engineering_thresholds": {
+          "const": "Development choices only; never final operating-point claims"
+        },
+        "external_guard": {
+          "const": "Externally frozen guard needs no project-data fitting; any later execution requires authorization."
+        },
+        "fit_scope": {
+          "const": "All learned preprocessing/model/calibration must be fold-local using only outer-training rows; inner splits remain lineage-aware."
+        },
+        "held_out_fold": {
+          "const": "Each BASE_TRAIN sample is held out exactly once and trainable in the other four folds."
+        }
+      },
+      "required": [
+        "held_out_fold",
+        "fit_scope",
+        "baseline",
+        "external_guard",
+        "CALIBRATION_and_VALIDATION",
+        "engineering_thresholds"
+      ],
+      "type": "object"
+    },
+    "partition_definitions": {
+      "additionalProperties": false,
+      "properties": {
+        "BASE_TRAIN": {
+          "const": "Development engineering and fixed lineage-aware CV; not unbiased final testing."
+        },
+        "CALIBRATION": {
+          "const": "Separate calibration fitting only when later explicitly authorized; excluded from CV engineering."
+        },
+        "FINAL_TEST": {
+          "const": "Final untouched system evaluation with confidence intervals."
+        },
+        "FROZEN_EXTERNAL": {
+          "const": "Final untouched external system evaluation; conceptual alias of FINAL_TEST."
+        },
+        "INTERNAL_TEST": {
+          "const": "Internal research measurement; must not influence detector tuning."
+        },
+        "VALIDATION": {
+          "const": "Later authorized candidate promotion/calibration-threshold-policy gate; not model engineering."
+        }
+      },
+      "required": [
+        "BASE_TRAIN",
+        "CALIBRATION",
+        "VALIDATION",
+        "INTERNAL_TEST",
+        "FROZEN_EXTERNAL",
+        "FINAL_TEST"
+      ],
+      "type": "object"
+    },
+    "partition_not_threat_regime": {
+      "const": true
+    },
+    "phase_execution": {
+      "additionalProperties": false,
+      "properties": {
+        "CALIBRATION_content": {
+          "const": false
+        },
+        "E1_E10": {
+          "const": false
+        },
+        "R0_R3_experiments": {
+          "const": false
+        },
+        "VALIDATION_content": {
+          "const": false
+        },
+        "detector_scoring": {
+          "const": false
+        },
+        "model_training": {
+          "const": false
+        },
+        "protected_content": {
+          "const": false
+        },
+        "routing": {
+          "const": false
+        },
+        "verifier_selection": {
+          "const": false
+        }
+      },
+      "required": [
+        "model_training",
+        "detector_scoring",
+        "CALIBRATION_content",
+        "VALIDATION_content",
+        "protected_content",
+        "R0_R3_experiments",
+        "E1_E10",
+        "verifier_selection",
+        "routing"
+      ],
+      "type": "object"
+    },
+    "quality_objective": {
+      "const": "min FNR_system subject to FPR_system <= alpha"
+    },
+    "seed": {
+      "const": 1701
+    },
+    "threat_regime_definitions": {
+      "additionalProperties": false,
+      "properties": {
+        "R0": {
+          "const": "Standard / non-adaptive attacks"
+        },
+        "R1": {
+          "const": "Unseen / distribution-shifted attacks"
+        },
+        "R2": {
+          "const": "Single-detector adaptive attacks"
+        },
+        "R3": {
+          "const": "Ensemble-aware adaptive attacks"
+        }
+      },
+      "required": [
+        "R0",
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "type": "object"
+    },
+    "verifier_router_boundary": {
+      "additionalProperties": false,
+      "properties": {
+        "disagreement_only_detects_all_common_mode_FN": {
+          "const": false
+        },
+        "future_policies_not_selected": {
+          "const": [
+            "A: disagreement/low-margin",
+            "B: A plus coverage/truncation anomalies",
+            "C: B plus novelty/anomaly triggers",
+            "D: C plus small random benign-consensus audit"
+          ]
+        },
+        "implementation_authorized": {
+          "const": false
+        },
+        "sequence": {
+          "const": "Verifier recovery before routing optimization"
+        },
+        "verifier_selection": {
+          "const": "P(V_k detects attack | base stack failed)"
+        }
+      },
+      "required": [
+        "sequence",
+        "verifier_selection",
+        "disagreement_only_detects_all_common_mode_FN",
+        "future_policies_not_selected",
+        "implementation_authorized"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "fixture_version",
+    "manifest_path",
+    "manifest_sha256",
+    "expected_counts",
+    "seed",
+    "n_folds",
+    "fold_ids",
+    "fold_artifact_path",
+    "fold_artifact_sha256",
+    "assignment_method",
+    "assignment_priority",
+    "construction_runs",
+    "fixture_role",
+    "lineage",
+    "quality_objective",
+    "fpr_budgets",
+    "final_operating_point",
+    "max_improvement_cycles",
+    "cycle_policy",
+    "dm_b_primary_selection_metrics",
+    "dm_b_promotion_policy",
+    "ds_primary_selection_metrics",
+    "ds_promotion_policy",
+    "diversity_rule",
+    "calibration_metrics",
+    "calibration_policy",
+    "comparison_policy",
+    "confidence_interval_policy",
+    "partition_definitions",
+    "threat_regime_definitions",
+    "partition_not_threat_regime",
+    "allowed_later_combinations",
+    "baseline_versions",
+    "candidate_versions",
+    "generation_definitions",
+    "ensemble_membership",
+    "oof_rules",
+    "verifier_router_boundary",
+    "phase_execution"
+  ],
+  "type": "object"
+}

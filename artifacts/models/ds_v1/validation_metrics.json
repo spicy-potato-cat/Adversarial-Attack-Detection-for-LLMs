@@ -1,0 +1,44 @@
+{
+  "accuracy": 0.8884120171673819,
+  "confusion_matrix": {
+    "fn": 21,
+    "fp": 5,
+    "tn": 189,
+    "tp": 18
+  },
+  "default_development_cutpoint": 0.5,
+  "evaluation_count": 1,
+  "extraction": {
+    "extraction_seconds": 10.768122500000572,
+    "failures": 0,
+    "feature_count": 10,
+    "feature_schema_sha256": "2b042f88e7403985e5f94e34bb1107b377069e591322767a482a33b5e2cbf8b7",
+    "matrix_sha256": "981752c0ba6f67ba6a9ce34afa73986279fa482e5a1c6b1d95d144eab904153d",
+    "nonfinite_values": 0,
+    "partition": "VALIDATION",
+    "row_order_sha256": "56bf76cca25fbbb107927653abbe2d530b9eb5fe7bc615b26be226ea746d4764",
+    "sample_count": 233,
+    "source_artifact_sha256": {
+      "Dataset/Raw/datasets/GitHub/Do-Not-Answer/datasets/Instruction/do_not_answer_en.csv": "8585dc135d3b8692b2e464151a313f5164e30f06416e03aa5d11e6c3a21d980e",
+      "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e",
+      "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/train-00000-of-00001-9564e8b05b4757ab.parquet": "2e10bc7ab30f542c97e4e83e2a5683000b5057d25ec10908784c631d44124c04"
+    }
+  },
+  "f1": 0.5806451612903226,
+  "final_operating_point": "NOT_FROZEN",
+  "fnr": 0.5384615384615384,
+  "fpr": 0.02577319587628866,
+  "negative_count": 194,
+  "positive_count": 39,
+  "pr_auc": 0.6454767386243145,
+  "precision": 0.782608695652174,
+  "protected_data_used": false,
+  "recalibrated": false,
+  "recall_tpr": 0.46153846153846156,
+  "roc_auc": 0.8243457573354481,
+  "sample_count": 233,
+  "scope": "DEVELOPMENT-ONLY VALIDATION; NOT E1-E10",
+  "score_basis": "calibrated_probability",
+  "scorer_retrained": false,
+  "specificity_tnr": 0.9742268041237113
+}

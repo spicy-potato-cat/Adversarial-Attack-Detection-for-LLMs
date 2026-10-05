@@ -1,0 +1,61 @@
+{
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "classifier_refits": 0,
+  "cycle": "1_OF_MAXIMUM_2",
+  "identity_leakage": 0,
+  "independent_reconstruction": {
+    "exact_error_bank_checks": 12,
+    "independent_frontier_confusion_checks": 54,
+    "prediction_metadata_checks": 3405,
+    "status": "PASS"
+  },
+  "lineage_leakage": 0,
+  "model_run_code_commit": "f123a46c320075a52ef0af3d09e2de734e4895f9",
+  "output_hash_checks": 8,
+  "phase": "TECH-STAT-005",
+  "preserved_evidence_hash_checks": 101,
+  "prior_STAT003_output_hash_checks": 9,
+  "prior_STAT004_output_hash_checks": 9,
+  "recommendation": "RECOMMEND_D_S_CYCLE_2",
+  "report_sha256": {
+    "reviews/TECH_STAT_005_SCORER_COMPARISON_v1.md": "91aea3784045d4b8a619e17b75a1976af2e07df15279ecf2cfe0288eb4984d79",
+    "reviews/TECH_STAT_005_SUBGROUP_ANALYSIS_v1.md": "101c96fa475e8b454d98ddc491beaf9dd2d72b9b6923a028766906bbfc881978",
+    "reviews/TECH_STAT_005_TEST_REPORT_v1.md": "bbdfb941aec197cad435d2510df760e60e736d75e4f53cf79383ed9f47030ddd"
+  },
+  "scope": "Post-run verification only; five references/scalers reconstructed, zero classifier refits. No final model, cycle 2 or calibration.",
+  "selected_scorer": "S0",
+  "status": "PASS",
+  "tests": {
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "177",
+    "time": "13.037"
+  },
+  "verification_code_sha256": {
+    "detection_service/scripts/statistical_scorer_acceptance.py": "ae38efdbaa5ec97c78fc7683717f0a5fabea54e039c427ba6fd5f65ca3a6e8bf",
+    "detection_service/tests/test_statistical_scorer_acceptance.py": "1fb1aedde5eeb6192dd8a2018507d2037fb252fdcd782762dfbbf07c3255e9c3"
+  },
+  "verified_sha256": {
+    "acceptance_tests_v1.xml": "0ce7fe072063d7b797a5d343238c521945dffe77296247dfdfef874eaefd88a4",
+    "error_transition_v1.json": "f0ca5a4280dd814de56ff7f94e94ec6c87d63d09094c87c7633cc8f3184e9292",
+    "fold_references_v1.json": "3c98be44b7817fe3237f28044d532050f663113aef55a95a10086a6ad2e28f8e",
+    "paired_comparison_v1.json": "438137d0c89976df03daa551bc9ffad5c99d1eb34dc589fb65431e64d32e4b8a",
+    "postrun_tests_v1.xml": "6bb6a7526905d2b5c8a66be983f9cb97d4d1189343c521e5cede570e42043142",
+    "preflight_v1.json": "26824b329bca7084eb5db42448e958d611b3b8789340f0965e6ee31c71831151",
+    "prerun_tests_v1.xml": "437cf5505f3ee055e61bc9d606ed1d538d714715141da6154a4a432867988028",
+    "run_metadata_v1.json": "e497e45b633f705c473b7d305fd2ce1867746170d0fcb554eb27f7276c9e87c5",
+    "run_started_v1.json": "e3c336edb4c296d8d91c54de5aeb2cf78a78275a899255d013f214a8c34fc055",
+    "scorer_definitions_v1.json": "d74f16b2b6a747631992e3d900a932015c731019a9c889842420f42b3ba519f1",
+    "scorer_fold_metrics_v1.json": "1a0e59510a7f52a47a6d8150b8d12f3d752060a376c1d4ba2062753a01088c6b",
+    "scorer_metrics_v1.json": "8a13878fc981c4189620173d2070da3004267074ae5edc1d90d37527a105ba0b",
+    "scorer_predictions_v1.csv": "1dd23a39bb87f3f95b090a93bb7797ae6a1d84e4ddf24a55d63b9eb2609e9fed",
+    "selected_scorer_v1.json": "3937180d40181f4ce421f86bba94b1c26f9b56409cd379ab1acf8c6a1dd54676",
+    "subgroup_analysis_v1.json": "2e36837bea8c50a37b9894e526b21f5d03752b97ddd9f2021e1187cb7081b955"
+  }
+}

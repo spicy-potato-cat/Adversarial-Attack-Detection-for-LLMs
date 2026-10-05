@@ -1,0 +1,95 @@
+{
+  "project_model": "D_G",
+  "project_version": "dg_v1",
+  "provider": "Meta",
+  "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+  "revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+  "tokenizer_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+  "snapshot_path": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0",
+  "file_sha256": {
+    "config.json": "1dc4742d04507072cafffb7235dc5dba5af9ba126f7a9830b95ed7ec00fd9104",
+    "LICENSE": "73755cee886613ae3135140882289e0a4955d5f0e90f8b1c1ffc962aa9082917",
+    "model.safetensors": "5120e30bcd536ce285345d9ec104bea6bd6e8f94365b99a340c764f417ea5fa1",
+    "MODEL_CARD.md": "7aacb25a94cab70530bca3545feda87bf7a935eaca92998222365b090acfd97c",
+    "README.md": "5d2a3e0c46397609a784a5034dc823da408aa8b5a414828609f32dc18ee16933",
+    "special_tokens_map.json": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+    "tokenizer.json": "6eb983352e73f1697b883a8c3f6b66bdfa336ab3d29dd3687f8316d0ff2789c1",
+    "tokenizer_config.json": "557b3d33d3f41b81ad769244e506549e98a1857d41dd58160aacd4d98d710b5a",
+    "USE_POLICY.md": "5ae40fe842b87b5773c47cfd25992a496cc09b17cbb246968762f06352d89270"
+  },
+  "architecture": "DebertaV2ForSequenceClassification",
+  "parameter_count": 70830722,
+  "backbone_including_embeddings_parameter_count": 70682112,
+  "context_tokens": 512,
+  "serialized_id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "documented_class_meaning": {
+    "0": "benign",
+    "1": "malicious_instruction_override_attempt"
+  },
+  "score_orientation": "Higher class-1 softmax means higher upstream malicious risk",
+  "label_evidence": "https://raw.githubusercontent.com/meta-llama/llama-cookbook/3c106f3e6ee79d6df51ae706bc7ef2d734ec3ded/getting-started/responsible_ai/prompt_guard/inference.py",
+  "label_evidence_commit": "3c106f3e6ee79d6df51ae706bc7ef2d734ec3ded",
+  "label_evidence_sha256": "29afa64415b07811c22b3c2e27330ee40f9e8edff0a7faf4940b8cfc1c74d424",
+  "label_evidence_note": "Provider helper get_jailbreak_score returns softmax class 1 at temperature 1; serialized config labels are generic",
+  "license": "Llama 4 Community License Agreement; Acceptable Use Policy applies",
+  "license_note": "Authorized gated access; no legal clearance or redistribution authorization asserted",
+  "retrieval_and_freeze_date_utc": "2026-10-02T15:11:57.245472+00:00",
+  "source_repository_git_commit": "dd825397ce58819ba3c3069ca0607cd040ea15d7",
+  "authenticated_access": {
+    "status": "PASS",
+    "user": "sumitt86"
+  },
+  "dependencies": {
+    "torch": "2.6.0",
+    "transformers": "4.49.0",
+    "huggingface-hub": "0.36.2",
+    "tokenizers": "0.21.4",
+    "safetensors": "0.8.0",
+    "numpy": "2.1.3",
+    "pytest": "8.3.4"
+  },
+  "hardware": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "logical_cpus": 16,
+    "torch_cuda_available": false,
+    "torch_runtime": "2.6.0+cpu",
+    "execution_device": "cpu",
+    "dtype": "float32"
+  },
+  "tokenizer": {
+    "type": "DebertaV2TokenizerFast",
+    "specials": {
+      "cls": 1,
+      "sep": 2,
+      "pad": 0
+    },
+    "model_max_length_note": "Unbounded sentinel ignored; model context 512 is authoritative",
+    "normalization": "Unmodified upstream Strip/precompiled/space removal/NFKC normalizer; preserved by tokenizer.json hash"
+  },
+  "training_performed": false,
+  "fine_tuning_performed": false,
+  "project_data_used": false,
+  "protected_data_used": false,
+  "project_calibration": null,
+  "default_decision": "OR_of_native_chunk_argmax_class_1",
+  "long_input_policy": {
+    "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+    "revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+    "tokenizer_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+    "detector_id": "guard_external",
+    "detector_version": "dg_v1",
+    "context_tokens": 512,
+    "special_tokens": 2,
+    "chunk_tokens": 510,
+    "overlap_tokens": 64,
+    "batch_size": 8,
+    "positive_class": 1,
+    "aggregation": "max_chunk_malicious_probability",
+    "decision": "OR_of_native_chunk_argmax_class_1"
+  },
+  "upstream_training_overlap": "UNKNOWN"
+}

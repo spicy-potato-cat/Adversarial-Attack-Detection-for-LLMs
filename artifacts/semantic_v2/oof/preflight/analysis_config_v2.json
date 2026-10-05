@@ -1,0 +1,425 @@
+{
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "calibration_used": false,
+  "calibrator_loaded": false,
+  "code_provenance": "Run requires clean HEAD containing the committed pre-run package; code_commit is captured at execution, never guessed before commit.",
+  "code_sha256": {
+    "detection_service/analysis/semantic_oof.py": "670dd87a0c6631aba0a9ddb16fba76b8c5b0556140a9783500a63b60fd41fd69",
+    "detection_service/analysis/semantic_oof_preflight.py": "458c8afec173b1e31b217edce4ae011186fefdb0e2efbe6ae8c9189bd10aadd0",
+    "detection_service/analysis/statistical_oof.py": "017def1c2499b3913909047f25c230b9a54cc90b1e2d3a5cf2c967422b677b65",
+    "detection_service/scripts/semantic_oof_baseline.py": "9258c2f5bde5cc6d1127fa2d3dabe77715032c1934af5b5b60c9eaaee5ce5bdf",
+    "detection_service/scripts/statistical_oof_baseline.py": "0a47976fdeddd28a3a09143d13cfa0b6e704e059f589168f6dc336d8c43aa948",
+    "detection_service/scripts/train_semantic_finetuned.py": "415bc1e8238ae51625b3ffced89ff28d8bfa35d53d88590a37c460f244278f1d",
+    "detection_service/tests/test_semantic_oof.py": "fbbebacf1ec48283f9f146c722c075c648a81ca374c301d3e3d13ab56c443e62",
+    "detection_service/tests/test_statistical_oof.py": "eff2322f9a14b705bc2dba1a69c940e97c8f56064e559895c6dccf6569d8040f"
+  },
+  "confidence_rules": {
+    "borderline_distance_inclusive": 0.1,
+    "confident_wrong_probability": 0.9
+  },
+  "configuration_version": 2,
+  "dm_b_v2_trained": false,
+  "environment": {
+    "packages": {
+      "huggingface-hub": "0.36.2",
+      "jsonschema": "4.23.0",
+      "numpy": "2.1.3",
+      "pyarrow": "19.0.1",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "safetensors": "0.8.0",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.17.1",
+      "tokenizers": "0.21.4",
+      "torch": "2.6.0",
+      "torch_runtime": "2.6.0+cpu",
+      "transformers": "4.49.0"
+    },
+    "python_executable": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\.local-python\\python.exe"
+  },
+  "estimate_limitations": "Linear optimizer-step scaling (~73min), plus loading/prediction; actual batch lengths, RAM pressure and CPU load vary.",
+  "estimated_training_seconds": 4368.799609436619,
+  "expected_rows": 1135,
+  "final_model_loaded": false,
+  "fixed_fpr_budgets": [
+    0.01,
+    0.03,
+    0.05
+  ],
+  "fixed_fpr_role": "DESCRIPTIVE_ONLY_NOT_DEPLOYED_THRESHOLD",
+  "fold_execution_plan": "fold_execution_plan.json",
+  "fold_sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+  "fold_training_steps": [
+    342,
+    342,
+    342,
+    342,
+    342
+  ],
+  "hardware": {
+    "available_ram_bytes": 4578844672,
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cuda_available": false,
+    "logical_cpus": 16,
+    "nvidia_smi": "NVIDIA GeForce RTX 3070 Ti Laptop GPU, 8192 MiB",
+    "ram_bytes": 16869548032,
+    "torch_cuda": null
+  },
+  "historical_evidence_sha256": {
+    "analysis_config_v1.json": "6cef1e880469155d0a99c976358c51d35d434eaafb1d7b055e61ba0494f07208",
+    "preflight_v1.json": "1b6e01b83b280a33fdf1fb5cad01e68aabe1d02b39cab2f93f0c091bc1caf057",
+    "synthetic_smoke_v1.json": "2f91e6c1bd9703f98bdf5b96420f97a32a60c67e54fcaf17d91e79e013d21e0c",
+    "test_evidence_v1.json": "283864a513f435d9bf470c292a469ae3eeaed16181902f962b3dfb3c68c85158",
+    "test_results_v1.xml": "cd5bad81959f41dbe86cd7154d1f6167b89e027c801354de797fd71986c1efbc"
+  },
+  "length_buckets": [
+    [
+      "2-31",
+      2,
+      32
+    ],
+    [
+      "32-127",
+      32,
+      128
+    ],
+    [
+      "128-256",
+      128,
+      257
+    ],
+    [
+      "257-512",
+      257,
+      513
+    ],
+    [
+      "513+",
+      513,
+      null
+    ]
+  ],
+  "long_run_delegated_to_commander": true,
+  "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "optional_512_forward": "SKIPPED_TO_AVOID_SCOPE_EXPANSION",
+  "output_contract": {
+    "completion_marker": "completion_v1.json",
+    "csv_fields_order": [
+      "sample_id",
+      "partition",
+      "fold",
+      "label",
+      "source_name",
+      "source_revision",
+      "lineage_group",
+      "detector_id",
+      "detector_version",
+      "candidate_id",
+      "raw_score",
+      "logit_margin",
+      "calibrated_probability",
+      "binary_prediction",
+      "error_type",
+      "threshold_distance",
+      "confidence_category",
+      "input_tokens",
+      "max_input_tokens",
+      "tokens_analyzed",
+      "tokens_excluded",
+      "truncated",
+      "payload_position_status",
+      "latency_ms"
+    ],
+    "csv_record_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "binary_prediction": {
+          "enum": [
+            0,
+            1
+          ]
+        },
+        "calibrated_probability": {
+          "type": "null"
+        },
+        "candidate_id": {
+          "type": "string"
+        },
+        "confidence_category": {
+          "type": "string"
+        },
+        "detector_id": {
+          "const": "semantic_finetuned"
+        },
+        "detector_version": {
+          "const": "dm_b_v1"
+        },
+        "error_type": {
+          "enum": [
+            "TP",
+            "TN",
+            "FP",
+            "FN"
+          ]
+        },
+        "fold": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "input_tokens": {
+          "type": "integer"
+        },
+        "label": {
+          "enum": [
+            0,
+            1
+          ]
+        },
+        "latency_ms": {
+          "type": "number"
+        },
+        "lineage_group": {
+          "type": "string"
+        },
+        "logit_margin": {
+          "type": "number"
+        },
+        "max_input_tokens": {
+          "const": 256
+        },
+        "partition": {
+          "const": "BASE_TRAIN"
+        },
+        "payload_position_status": {
+          "const": "NOT_AVAILABLE_NOT_INFERRED"
+        },
+        "raw_score": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        "sample_id": {
+          "type": "string"
+        },
+        "source_name": {
+          "type": "string"
+        },
+        "source_revision": {
+          "type": "string"
+        },
+        "threshold_distance": {
+          "type": "number"
+        },
+        "tokens_analyzed": {
+          "type": "integer"
+        },
+        "tokens_excluded": {
+          "type": "integer"
+        },
+        "truncated": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "sample_id",
+        "partition",
+        "fold",
+        "label",
+        "source_name",
+        "source_revision",
+        "lineage_group",
+        "detector_id",
+        "detector_version",
+        "candidate_id",
+        "raw_score",
+        "logit_margin",
+        "calibrated_probability",
+        "binary_prediction",
+        "error_type",
+        "threshold_distance",
+        "confidence_category",
+        "input_tokens",
+        "max_input_tokens",
+        "tokens_analyzed",
+        "tokens_excluded",
+        "truncated",
+        "payload_position_status",
+        "latency_ms"
+      ],
+      "type": "object"
+    },
+    "failure_marker_on_exception_only": "failure_v1.json",
+    "hard_examples": "Same CSV schema; only FN/FP IDs/metadata, sample-ID order, not a new training set",
+    "hash_policy": "Run metadata hashes eight data products; completion hashes those products plus metadata. No circular self-hash.",
+    "original_input_tokens_field": "input_tokens (including special tokens; padding excluded)",
+    "output_root": "artifacts/semantic_v2/oof",
+    "raw_text_included": false,
+    "results_status": "PENDING AUTHORITATIVE OOF EXECUTION",
+    "run_metadata": "dm_b_v1_oof_run_metadata.json",
+    "run_metadata_required_fields": [
+      "code_commit",
+      "manifest_sha256",
+      "fold_sha256",
+      "upstream_revision",
+      "tokenizer_revision",
+      "seed",
+      "device",
+      "python_executable",
+      "packages",
+      "runtime_seconds",
+      "started_at",
+      "completed_at",
+      "per_fold_runtime",
+      "output_sha256",
+      "analysis_config_sha256",
+      "oof_preflight_sha256"
+    ],
+    "started_marker": "run_started_v1.json",
+    "successful_data_outputs": [
+      "dm_b_v1_recipe_oof_predictions.csv",
+      "dm_b_v1_recipe_oof_metrics.json",
+      "dm_b_v1_recipe_fold_metrics.json",
+      "dm_b_v1_recipe_oof_curves.json",
+      "dm_b_v1_truncation_analysis.json",
+      "dm_b_v1_error_characterization.json",
+      "dm_b_v1_hard_examples.csv",
+      "dm_b_v1_v2_recommendation.json"
+    ]
+  },
+  "packages": {
+    "huggingface-hub": "0.36.2",
+    "numpy": "2.1.3",
+    "pyarrow": "19.0.1",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "safetensors": "0.8.0",
+    "scikit-learn": "1.6.1",
+    "torch": "2.6.0",
+    "torch_runtime": "2.6.0+cpu",
+    "transformers": "4.49.0"
+  },
+  "phase": "TECH-SEM-003",
+  "planned_command": [
+    "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\.local-python\\python.exe",
+    "-m",
+    "detection_service.scripts.semantic_oof_baseline",
+    "--mode",
+    "run"
+  ],
+  "preparation_sha256": "86299c3a650810413eef557f56232f667f645620dfe2110b942058ec9651102c",
+  "preserved_file_sha256": {
+    "artifacts/models/dm_b_v1/README.md": "910c585a159f8d1ec2a1e6753928b05602e39a5ebc3c6a927d926ecd0ddafdb1",
+    "artifacts/models/dm_b_v1/calibration/README.md": "4b00b77c96b9f774c4fdd8b5b95630b725f5076e8415b263ee2d7474a4363d9d",
+    "artifacts/models/dm_b_v1/calibration/calibration_config.json": "b6962568aa244fd228536891d195341d916740a4f53efefeba545a1c05847f5d",
+    "artifacts/models/dm_b_v1/calibration/calibration_fit_diagnostics.json": "cb193f9a4e15d2fdd824dd7fffd2d977fd510a249061ce7d834fa4f728ea9ddd",
+    "artifacts/models/dm_b_v1/calibration/calibration_metadata.json": "b4a286fc5089dda5ff5c547cf309e31f929d2cb54b03578fab8d5779f60a4b5a",
+    "artifacts/models/dm_b_v1/calibration/calibration_scores.json": "3e364c0f48773a462b480b0580728760edb959a686247f5290c0deed47596208",
+    "artifacts/models/dm_b_v1/calibration/calibrator.json": "7af044ff8e0e29020450bffa93f92c973da4cc4a4888067d88938eefbb2566b9",
+    "artifacts/models/dm_b_v1/calibration/service_smoke.json": "23c64f9420fec3e87615151263b2b9b48150fcf83311e618ce4036b9aadff492",
+    "artifacts/models/dm_b_v1/calibration/test_evidence.json": "46946f3bcb92b2e3a6c600f3a6f9ed04fd7f11176ee4b2e617a46f15c1810824",
+    "artifacts/models/dm_b_v1/calibration/test_results.xml": "30b0c5c703be90ddd3f9cb502ecaa37c578191505f099ff6edb244a3208f8d0c",
+    "artifacts/models/dm_b_v1/calibration/verification.json": "6a10362b1956bdbcf76e0d6bd6d6c1b610397d334f3f2a7c0dc55b00c7cb06e1",
+    "artifacts/models/dm_b_v1/integrity_manifest.json": "8cca036d1ea11250f337fedbd551ffd7865b838af1ae86dcaaf64ac7a29d09aa",
+    "artifacts/models/dm_b_v1/model_config.json": "c0dd94ebf78d1918a74e70964ed3e0d0873685c04c51d2835710ee237d36fa10",
+    "artifacts/models/dm_b_v1/post_training_tests.xml": "32f1516c605b639f780611d448a2e3a0b08bef1f50c283ceeddb5374ba5febc4",
+    "artifacts/models/dm_b_v1/post_training_verification.json": "ede0fcb1a8d29d8557e5940cdeaa356da9e5b067ce71f26c0edbefe05503bb81",
+    "artifacts/models/dm_b_v1/run_state.json": "9523e3feb12bbe43ec4e982455109bfb2f2794630a09bd5752644bac32a4d1f3",
+    "artifacts/models/dm_b_v1/service_smoke.json": "224cbd2aa0f330bed7498eb5fb3199203382be36170988c0698f6dd5dc0bf900",
+    "artifacts/models/dm_b_v1/training_metadata.json": "fe5c8b7050cbc6cd0605c169b7f713bcb44b55497ba7fb941dc741f8a8a8d6cd",
+    "artifacts/models/dm_b_v1/transformer/config.json": "3d747d91542e014f5db4d7577924298fa71d4396e8eb9e429ed1ea95ddbf41c8",
+    "artifacts/models/dm_b_v1/transformer/merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "artifacts/models/dm_b_v1/transformer/model.safetensors": "0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844",
+    "artifacts/models/dm_b_v1/transformer/special_tokens_map.json": "8574792bfefae68f2ce2eae93a4145d95b1232c59e71094bcdcb49dbcb549c97",
+    "artifacts/models/dm_b_v1/transformer/tokenizer.json": "fa6e9e4de220a47ece0c8f9c1865f4e353419331bf8ba21ea9d34230a702ffcb",
+    "artifacts/models/dm_b_v1/transformer/tokenizer_config.json": "253e231e9ae9fd6e64762375b14c8f7f266c711b75d2b74a17170e6f3defe729",
+    "artifacts/models/dm_b_v1/transformer/vocab.json": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e",
+    "artifacts/models/dm_b_v1/validation_metrics.json": "636a4fd135ffbe9e2404b5d5584ced036fb18f8367febf2762f967f794f2457d",
+    "artifacts/models/dm_b_v1/validation_started.json": "f840cf506681aedd82b5702d4b2d80d020175e2e6aa490127794cfa1b46ab634",
+    "artifacts/models/dm_b_v1_preparation.json": "86299c3a650810413eef557f56232f667f645620dfe2110b942058ec9651102c",
+    "artifacts/statistical_v2/oof/analysis_config_v1.json": "e96355e54f9c6a78a395907c0a19ac21ffa8cc31d486b25bb1ca7f2d30bfece0",
+    "artifacts/statistical_v2/oof/completion_v1.json": "a1598906792b5ae4db3321d703fb9724729e678477384924814143be37acd015",
+    "artifacts/statistical_v2/oof/ds_v1_diagnostic_caveats_v1.json": "cba3b93638051bff16142cf34b821d8924adac79b9abfed5e23e3d7741258436",
+    "artifacts/statistical_v2/oof/ds_v1_error_characterization.json": "3e93a10b7ed4ef999c06e9cbfd1da816ee416c63a9e520f22e6a83819b18acf5",
+    "artifacts/statistical_v2/oof/ds_v1_feature_gap_hypotheses.json": "c525d63ce4149206523d79ffc3a3f7c30af2e680e8e656ee5c001ea2c3af01cb",
+    "artifacts/statistical_v2/oof/ds_v1_recipe_fold_metrics.json": "2d65f3132e2a900a0e7b430a17854ff8091e6c140e5f71a17b4b99b8ec65f672",
+    "artifacts/statistical_v2/oof/ds_v1_recipe_oof_curves.json": "042d2a70d646f8871eaac27f3c18e16be847719cda7216491a756ac13561f66c",
+    "artifacts/statistical_v2/oof/ds_v1_recipe_oof_metrics.json": "4cdb8a379b08c9f37062be1ec42439cdd467e8580f076873f71d6f9b34da17ec",
+    "artifacts/statistical_v2/oof/ds_v1_recipe_oof_predictions.csv": "9b90f505e5c0f21b26ad0b507db1df3291f0fbea83ce52ff53aabf2ef5856215",
+    "artifacts/statistical_v2/oof/preflight_v1.json": "cee51cb18019fceedafbfc6ea523edd022ee10a47c50bb708f81c0c43124fe23",
+    "artifacts/statistical_v2/oof/run_started_v1.json": "bd680495717e240664b54d85d25b5b6629b84c96cb88cef66dcdaf616d842ca3",
+    "artifacts/statistical_v2/oof/synthetic_smoke_v1.json": "49b393580dbce38fb1cfdb586e4565d48304c0582982ab3f6df81f4ea2b858c5",
+    "artifacts/statistical_v2/oof/test_evidence_v1.json": "2e6cdfa28cbefafd4f6a367a524224978f5e2eb1b2e3153e4e8b3921f53b8a5e",
+    "detection_service/configs/dm_b_v1_training.json": "2b5b41ce90ff931caf6a6fbddcd2beed19ea802cf657125b996dbdf0c96b0484",
+    "reviews/TECH_SEM_002_CALIBRATION_REPORT_v1.md": "eef387d4cda2ba2143371eab7ca6b0d853b1275b4c00b350ed911a92e3e89884",
+    "reviews/TECH_SEM_002_CALIBRATION_TEST_REPORT_v1.md": "566710f0799cb75b19e6d5fbf322f341fed36ed6b8b2689329c038bbdb9620cb",
+    "reviews/TECH_SEM_002_MODEL_FREEZE_v1.md": "60a8167c3e991abb681f9fc835362e1e9d4f5c53cb35a0b02ee455168a3c53c7",
+    "reviews/TECH_SEM_002_TEST_REPORT_v1.md": "0871f1230e5b776866a7d467c16ae8c95061e321496120c90e99b050fa4633e9",
+    "reviews/TECH_SEM_002_TRAINING_REPORT_v1.md": "853b838f762a5bb1e64584af667d2a2d878cbdaa8b2142c327475b903f94f330",
+    "reviews/TECH_SEM_002_VALIDATION_REPORT_v1.md": "3a93ca71ffab75fc84a92681c7fa28a0ca2ddad1e0eedbc7a6639aad6da0b4fd"
+  },
+  "prior_training_seconds": 1088.3676219999998,
+  "protected_used": false,
+  "quality_fixture_sha256": "7b010b4e536cf04fd510c7a7a16a80fa9429c798c3d155e01ddfe56b45657c0c",
+  "recipe": {
+    "batch_size": 8,
+    "checkpoint_policy": "final_epoch_only_no_validation_selection",
+    "class_weight_policy": "BASE_TRAIN_N/(2*N_class)",
+    "cpu_threads": 8,
+    "default_cutpoint": 0.5,
+    "detector_id": "semantic_finetuned",
+    "detector_version": "dm_b_v1",
+    "device": "cpu",
+    "epochs": 3,
+    "gradient_accumulation": 1,
+    "gradient_clip": 1.0,
+    "learning_rate": 2e-05,
+    "loss": "weighted_cross_entropy",
+    "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+    "max_sequence_length": 256,
+    "model_context_length": 512,
+    "optimizer": "AdamW",
+    "padding": "longest_in_batch",
+    "padding_side": "right",
+    "precision": "float32",
+    "scheduler": "linear",
+    "seed": 1701,
+    "text_field": "source.raw_text",
+    "tokenizer_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+    "truncation_side": "right",
+    "upstream_model": "distilbert/distilroberta-base",
+    "upstream_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01
+  },
+  "recipe_sha256": "2b5b41ce90ff931caf6a6fbddcd2beed19ea802cf657125b996dbdf0c96b0484",
+  "runtime_estimate_minutes_range": [
+    75,
+    100
+  ],
+  "scope": "DEVELOPMENT_OOF_NOT_E1_E10",
+  "source_artifact_sha256": {
+    "Dataset/Raw/datasets/GitHub/Do-Not-Answer/datasets/Instruction/do_not_answer_en.csv": "8585dc135d3b8692b2e464151a313f5164e30f06416e03aa5d11e6c3a21d980e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/train-00000-of-00001-9564e8b05b4757ab.parquet": "2e10bc7ab30f542c97e4e83e2a5683000b5057d25ec10908784c631d44124c04"
+  },
+  "source_selection": "Only BASE_TRAIN scalar locators selected; approved CSV/Parquet containers physically include other partitions.",
+  "start_commit": "6e88dfe7e283434b9313e1078423ae74a21ffffd",
+  "supersedes": "../analysis_config_v1.json",
+  "threshold_rule": {
+    "fitted": false,
+    "held_out_influence": false,
+    "rationale": "Data-independent existing raw development cutpoint fixed before scoring; no calibration.",
+    "raw_cutpoint": 0.5
+  },
+  "upstream_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+  "validation_used": false
+}

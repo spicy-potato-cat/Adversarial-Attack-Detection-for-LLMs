@@ -1,0 +1,150 @@
+{
+  "E1_E10_executed": false,
+  "analysis_id": "TECH-STAT-003",
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "bootstrap_repetitions": 2000,
+  "calibration_used": false,
+  "code_provenance": "Git HEAD identifies the repository base; exact new pipeline bytes are bound independently by code_sha256.",
+  "code_sha256": {
+    "detection_service/analysis/statistical_oof.py": "017def1c2499b3913909047f25c230b9a54cc90b1e2d3a5cf2c967422b677b65",
+    "detection_service/scripts/statistical_oof_baseline.py": "0a47976fdeddd28a3a09143d13cfa0b6e704e059f589168f6dc336d8c43aa948"
+  },
+  "comparison_rule": {
+    "explanation": "Fixed before execution; no threshold data consumed. Only fold-training data fits the LR mapping. Not the calibrated deployed v1 vote.",
+    "held_out_influence": false,
+    "raw_probability_cutpoint": 0.5,
+    "threshold_fitted": false
+  },
+  "diagnostic_quantiles": [
+    0.25,
+    0.5,
+    0.75,
+    0.9
+  ],
+  "ds_v2_created": false,
+  "environment": {
+    "packages": {
+      "jsonschema": "4.23.0",
+      "numpy": "2.1.3",
+      "pyarrow": "19.0.1",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.17.1",
+      "tokenizers": "0.21.4",
+      "torch": "2.6.0",
+      "transformers": "4.49.0"
+    },
+    "python": "3.11.9"
+  },
+  "expected_rows": 1135,
+  "extractor_config": {
+    "device": "cpu",
+    "max_analysis_tokens": 4096,
+    "model_id": "distilbert/distilgpt2",
+    "model_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+    "provisional_high_surprisal_threshold": 8.0,
+    "tokenizer_id": "distilbert/distilgpt2",
+    "window_size": 128,
+    "window_stride": 64
+  },
+  "feature_extraction": "Fresh unchanged frozen LM features, cached once because no project-label-dependent fitting or normalization exists",
+  "feature_extractor_sha256": {
+    "detection_service/app/detectors/statistical/__init__.py": "32ec738f8a25da0552facb413a694b038876ec4b35c56d21de5ed25145608a2e",
+    "detection_service/app/detectors/statistical/config.py": "e5cc8512c3acbdad323ec826176513fd8173c8864c7aa8ae081a7503d46f7f17",
+    "detection_service/app/detectors/statistical/features.py": "b2ccdc4cc64789170a730990570373079645b870f027f6d11da2d78fe71866fa",
+    "detection_service/app/detectors/statistical/perplexity_detector.py": "032ab0652fdc5d4ddd3d6e833d558f29d63d04164e90901dc3eecd05b3dde599",
+    "detection_service/app/detectors/statistical/perplexity_engine.py": "cd978bd44d719dbee29b510f8f6138638a2ff30d8d23a6a379fdf48e5c26b4c1"
+  },
+  "feature_names": [
+    "whole_prompt_nll",
+    "whole_prompt_ppl",
+    "global_perplexity",
+    "mean_window_perplexity",
+    "max_window_perplexity",
+    "std_window_perplexity",
+    "mean_surprisal",
+    "max_surprisal",
+    "surprisal_std",
+    "high_surprisal_ratio"
+  ],
+  "feature_schema_sha256": "2b042f88e7403985e5f94e34bb1107b377069e591322767a482a33b5e2cbf8b7",
+  "final_calibrator_loaded": false,
+  "final_scorer_loaded": false,
+  "fixed_fpr_budgets": [
+    0.01,
+    0.03,
+    0.05
+  ],
+  "fixed_fpr_role": "Descriptive attainable ROC points only; no optimized OOF deployment threshold",
+  "fold_sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+  "length_buckets": [
+    {
+      "exclusive_max": 32,
+      "inclusive_min": 2,
+      "name": "2-31"
+    },
+    {
+      "exclusive_max": 128,
+      "inclusive_min": 32,
+      "name": "32-127"
+    },
+    {
+      "exclusive_max": 512,
+      "inclusive_min": 128,
+      "name": "128-511"
+    },
+    {
+      "exclusive_max": 4096,
+      "inclusive_min": 512,
+      "name": "512-4095"
+    },
+    {
+      "exclusive_max": null,
+      "inclusive_min": 4096,
+      "name": "4096+"
+    }
+  ],
+  "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "n_folds": 5,
+  "new_features": false,
+  "protected_used": false,
+  "quality_fixture_sha256": "7b010b4e536cf04fd510c7a7a16a80fa9429c798c3d155e01ddfe56b45657c0c",
+  "reference_lm": {
+    "file_sha256": {
+      "config.json": "4ec5947c1d59fee6212cdf3b0ec1a53eac02092554c5ff0a733488cbd2c64f3a",
+      "generation_config.json": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+      "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "model.safetensors": "e1ff18884359fe8beb795a5f414feb85a6ce3d929ad019c0d958c039d2b94a1b",
+      "tokenizer.json": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+      "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+      "vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+    },
+    "model_id": "distilbert/distilgpt2",
+    "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+    "snapshot_path": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa"
+  },
+  "scorer_recipe": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "fit_intercept": true,
+    "max_iter": 1000,
+    "penalty": "l2",
+    "random_state": 1701,
+    "scorer": "LogisticRegression",
+    "solver": "lbfgs"
+  },
+  "seed": 1701,
+  "source_artifact_sha256": {
+    "Dataset/Raw/datasets/GitHub/Do-Not-Answer/datasets/Instruction/do_not_answer_en.csv": "8585dc135d3b8692b2e464151a313f5164e30f06416e03aa5d11e6c3a21d980e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/train-00000-of-00001-9564e8b05b4757ab.parquet": "2e10bc7ab30f542c97e4e83e2a5683000b5057d25ec10908784c631d44124c04"
+  },
+  "source_scalar_selection": "BASE_TRAIN only, through approved original-container loader. Containers also hold other partitions; no unselected row is supplied to extractor/fits/diagnostics.",
+  "start_commit": "e649f4d7ff51a24b3c9fa8ab0ce35b50e88af345",
+  "type": "DEVELOPMENT_BASELINE_AND_ERROR_ANALYSIS_ONLY",
+  "validation_used": false
+}

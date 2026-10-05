@@ -1,0 +1,136 @@
+{
+  "phase": "TECH-SEM-002",
+  "status": "TRAINED_RAW_MODEL_FROZEN",
+  "command": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\.local-python\\python.exe -m detection_service.scripts.train_semantic_finetuned --mode train",
+  "started_at": "2026-10-01T12:19:31.532769+00:00",
+  "ended_at": "2026-10-01T12:37:40.683683+00:00",
+  "runtime_seconds": 1088.3676219999998,
+  "recipe": {
+    "upstream_model": "distilbert/distilroberta-base",
+    "upstream_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+    "tokenizer_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+    "detector_id": "semantic_finetuned",
+    "detector_version": "dm_b_v1",
+    "max_sequence_length": 256,
+    "model_context_length": 512,
+    "seed": 1701,
+    "epochs": 3,
+    "batch_size": 8,
+    "gradient_accumulation": 1,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "optimizer": "AdamW",
+    "scheduler": "linear",
+    "loss": "weighted_cross_entropy",
+    "class_weight_policy": "BASE_TRAIN_N/(2*N_class)",
+    "checkpoint_policy": "final_epoch_only_no_validation_selection",
+    "precision": "float32",
+    "device": "cpu",
+    "cpu_threads": 8,
+    "default_cutpoint": 0.5,
+    "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+    "text_field": "source.raw_text",
+    "truncation_side": "right",
+    "padding_side": "right",
+    "padding": "longest_in_batch"
+  },
+  "recipe_sha256": "2b5b41ce90ff931caf6a6fbddcd2beed19ea802cf657125b996dbdf0c96b0484",
+  "git": {
+    "branch": "tech/sem-002",
+    "head": "f2f53893b1aca29ccf5605e9e748e827eb26b90b",
+    "status_short": "?? artifacts/models/dm_b_v1/"
+  },
+  "packages": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "torch_runtime": "2.6.0+cpu",
+    "torch": "2.6.0",
+    "transformers": "4.49.0",
+    "numpy": "2.1.3",
+    "scikit-learn": "1.6.1",
+    "pyarrow": "19.0.1",
+    "huggingface-hub": "0.36.2",
+    "safetensors": "0.8.0"
+  },
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "logical_cpus": 16,
+    "ram_bytes": 16869548032,
+    "cuda_available": false,
+    "torch_cuda": null,
+    "available_ram_bytes": 2191646720,
+    "nvidia_smi": "NVIDIA GeForce RTX 3070 Ti Laptop GPU, 8192 MiB"
+  },
+  "base_train_count": 1135,
+  "class_counts": {
+    "0": 952,
+    "1": 183
+  },
+  "class_weights": [
+    0.5961134453781513,
+    3.101092896174863
+  ],
+  "source_artifact_sha256": {
+    "Dataset/Raw/datasets/GitHub/Do-Not-Answer/datasets/Instruction/do_not_answer_en.csv": "8585dc135d3b8692b2e464151a313f5164e30f06416e03aa5d11e6c3a21d980e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/train-00000-of-00001-9564e8b05b4757ab.parquet": "2e10bc7ab30f542c97e4e83e2a5683000b5057d25ec10908784c631d44124c04",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e"
+  },
+  "preparation_sha256": "86299c3a650810413eef557f56232f667f645620dfe2110b942058ec9651102c",
+  "initial_backbone_sha256": "af373777589ab14cc5d6dc735ea156af61baec7f0078ecfb89c017ac16f6d49d",
+  "final_backbone_sha256": "40f56eaa4f5c168b69b61f4f31ab97b71721348c9b3bee79470a0b73ebb1b78b",
+  "transformer_parameters_updated": true,
+  "loss_history": [
+    {
+      "epoch": 1,
+      "batches": 142,
+      "weighted_mean_loss": 0.46279607500243797,
+      "learning_rate_after_epoch": 1.4830287206266321e-05
+    },
+    {
+      "epoch": 2,
+      "batches": 142,
+      "weighted_mean_loss": 0.09993795380151765,
+      "learning_rate_after_epoch": 7.415143603133161e-06
+    },
+    {
+      "epoch": 3,
+      "batches": 142,
+      "weighted_mean_loss": 0.026361007823144957,
+      "learning_rate_after_epoch": 0.0
+    }
+  ],
+  "calibration_used": false,
+  "protected_data_used": false,
+  "validation_used_for_training": false,
+  "initialization_warning": "Upstream MLM head discarded; binary classifier head initialized from seed 1701.",
+  "preserved_artifacts_sha256": {
+    "artifacts\\models\\dm_a_v1\\classifier.joblib": "3103c504a4ccf4afece9b97373f2b913d3a1de22dc8151d4a3b582bfcf1c6e97",
+    "artifacts\\models\\dm_a_v1\\classifier_metadata.json": "f07aa02dd3fc5496a07bf28f8edd47b863f56b22048e564e77eff509e9ca7747",
+    "artifacts\\models\\dm_a_v1\\model_config.json": "14e2f1c17d1c515574c145cd88005aacef40855b45cfe649a6fe15b840a054a5",
+    "artifacts\\models\\dm_a_v1\\README.md": "edc4ece69f2518f6aa9e7978c02936f0dc2021ea3bc0f394075a7f3306eb8a38",
+    "artifacts\\models\\dm_a_v1\\service_smoke.json": "6b3dbcbb5e381fb1fd318947a574e91f11b9afd64e00abc5fc24c7ff4541e963",
+    "artifacts\\models\\dm_a_v1\\training_metadata.json": "6505033f361e40224c2ab99197442265e4f8b850e999ee43d3c52fd11d3fa806",
+    "artifacts\\models\\dm_a_v1\\validation_metrics.json": "e630d4483f8c5271e3ee46c65d1f5b04b640e962e2ac273c1e0231fe0de9c307",
+    "artifacts\\models\\dm_a_v1\\calibration\\calibration_config.json": "6ee3ec2371aa4887e69b1adc327c0abba6d7f8c38f0ae4dcedbfbd3c846243ca",
+    "artifacts\\models\\dm_a_v1\\calibration\\calibration_fit_diagnostics.json": "9d5edc5093e96e7046370986ebc6d6472952f3162fb7a44ce7207e070dcb19bc",
+    "artifacts\\models\\dm_a_v1\\calibration\\calibration_metadata.json": "8d24e38ad4a7be4a333ea92a8623c6908815da9e7b1af1c6bd678f0d2fb1d2fa",
+    "artifacts\\models\\dm_a_v1\\calibration\\calibrator.json": "8769d252cce23df70c2cf2264f7765d0e7a10fc7650cc3ea8489e826cda8ff36",
+    "artifacts\\models\\dm_a_v1\\calibration\\service_smoke.json": "963ce3769dbaac69ffab718835a1ec1e6dc900fff6b3ac1c86fe237eb16d4703",
+    "artifacts\\models\\dm_a_v1\\calibration\\test_results.xml": "b66502bbf50bb99c9bd7d58739d018dff26572d39787ab9da64e3902865171b6",
+    "artifacts\\models\\dm_a_v1\\embeddings\\base_train_embeddings.npy": "741db4117a0a722ee8f8eef8bddedf31646a96ef1ee48a3eb846fd367829298e",
+    "artifacts\\models\\dm_a_v1\\embeddings\\embedding_metadata.json": "d0925dcc92cedb7de48f239fc87a8ed6ffa3ce214f4eddfb9fcc412740a89901",
+    "artifacts\\models\\dm_a_v1\\embeddings\\validation_embeddings.npy": "3a5ce877f43da915ac1a02fcc667f01203219d9b7291cc46a8335bbeb6d64334",
+    "detection_service\\app\\detectors\\semantic\\calibration.py": "06e7d3679ecfcb8f585e8b7741c261340bbecff838a30aadf52ceef1436c1f7b",
+    "detection_service\\app\\detectors\\semantic\\classifier.py": "8db3103ae3b182fb94f4494bfcf9669210dd4bd81e5df680136401db9202e8cb",
+    "detection_service\\app\\detectors\\semantic\\config.py": "2a3fdd8151e21056b614b276f2d07aac7b39141f11c6e1af9e8f08087c4ff509",
+    "detection_service\\app\\detectors\\semantic\\detector.py": "495bbaf7426be1628e5a19bf975417d1632825201ba81f929a1f1d0320d36868",
+    "detection_service\\app\\detectors\\semantic\\embeddings.py": "8aec0ad9d7a6e8430293a36442f6e59fd019c2bef36307b6c8bed80eadb90352",
+    "detection_service\\app\\detectors\\semantic\\__init__.py": "08d2f2abd25b0fe212e50a2efd1550a1ab12f24349385343b3bdf1f7ace5bc69",
+    "detection_service\\app\\detectors\\statistical\\config.py": "e5cc8512c3acbdad323ec826176513fd8173c8864c7aa8ae081a7503d46f7f17",
+    "detection_service\\app\\detectors\\statistical\\features.py": "b2ccdc4cc64789170a730990570373079645b870f027f6d11da2d78fe71866fa",
+    "detection_service\\app\\detectors\\statistical\\perplexity_detector.py": "032ab0652fdc5d4ddd3d6e833d558f29d63d04164e90901dc3eecd05b3dde599",
+    "detection_service\\app\\detectors\\statistical\\perplexity_engine.py": "cd978bd44d719dbee29b510f8f6138638a2ff30d8d23a6a379fdf48e5c26b4c1",
+    "detection_service\\app\\detectors\\statistical\\__init__.py": "32ec738f8a25da0552facb413a694b038876ec4b35c56d21de5ed25145608a2e"
+  }
+}

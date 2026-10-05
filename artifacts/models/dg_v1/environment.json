@@ -1,0 +1,19 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "os": "Windows-10-10.0.26200-SP0",
+  "logical_cpus": 16,
+  "torch_cuda_available": false,
+  "torch_cuda_version": null,
+  "versions": {
+    "torch": "2.6.0",
+    "transformers": "4.49.0",
+    "huggingface-hub": "0.36.2",
+    "tokenizers": "0.21.4",
+    "safetensors": "0.8.0",
+    "numpy": "2.1.3",
+    "pytest": "8.3.4"
+  },
+  "project_data_accessed": false,
+  "weights_downloaded": false,
+  "training_performed": false
+}

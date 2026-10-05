@@ -1,0 +1,15 @@
+{
+  "class_weight": null,
+  "default_vote": "calibrated_probability >= 0.5; DEFAULT DEVELOPMENT CUTPOINT",
+  "final_operating_point": "NOT_FROZEN",
+  "ftol": 1e-12,
+  "gtol": 1e-10,
+  "input": "logit(clip(raw_LR_class_1_probability,1e-12,1-1e-12))",
+  "maxiter": 1000,
+  "method": "platt_sigmoid_on_lr_log_odds",
+  "optimizer": "L-BFGS-B",
+  "penalty": null,
+  "positive_slope_lower_bound": 1e-08,
+  "target_smoothing": "positive=(Npos+1)/(Npos+2); negative=1/(Nneg+2)",
+  "version": "ds_v1_cal_v1"
+}

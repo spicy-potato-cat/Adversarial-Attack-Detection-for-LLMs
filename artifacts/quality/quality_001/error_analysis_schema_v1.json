@@ -1,0 +1,315 @@
+{
+  "$comment": "Unknown diagnostics remain null/absent. Payload position/attack family require permitted evidence, not analyst-inferred labels. No prompt/response text.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "else": {
+        "properties": {
+          "error_type": {
+            "enum": [
+              "TP",
+              "FN"
+            ]
+          }
+        }
+      },
+      "if": {
+        "properties": {
+          "label": {
+            "const": 0
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error_type": {
+            "enum": [
+              "TN",
+              "FP"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "candidate_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "detector_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "detector_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "error_type": {
+      "enum": [
+        "TP",
+        "TN",
+        "FP",
+        "FN"
+      ]
+    },
+    "fold": {
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "type": "integer"
+    },
+    "label": {
+      "enum": [
+        0,
+        1
+      ],
+      "type": "integer"
+    },
+    "lineage_group": {
+      "pattern": "^LG-N1-[0-9a-f]{24}$",
+      "type": "string"
+    },
+    "metadata": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "feature_schema_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "operating_point_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "partition": {
+          "const": "BASE_TRAIN"
+        },
+        "raw_score_semantics": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_revision": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "threat_regime": {
+          "enum": [
+            null,
+            "R0",
+            "R1",
+            "R2",
+            "R3"
+          ]
+        }
+      },
+      "required": [
+        "partition"
+      ],
+      "type": "object"
+    },
+    "sample_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "semantic": {
+      "additionalProperties": false,
+      "properties": {
+        "attack_family": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attack_payload_position_token": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "input_tokens": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "margin": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "payload_position_evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tokens_analyzed": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "truncated": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "source_name": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "statistical": {
+      "additionalProperties": false,
+      "properties": {
+        "anomaly_position_token": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "feature_family_tags": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "high_surprisal_ratio": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "max_surprisal": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "max_window_ppl": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "mean_surprisal": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "mean_window_ppl": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "prompt_length_tokens": {
+          "minimum": 0,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "std_window_ppl": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "surprisal_quantiles": {
+          "additionalProperties": false,
+          "properties": {
+            "q25": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "q50": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "q75": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "q90": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "q95": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "q99": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "type": "object"
+        },
+        "whole_prompt_ppl": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  },
+  "required": [
+    "sample_id",
+    "fold",
+    "label",
+    "source_name",
+    "lineage_group",
+    "detector_id",
+    "detector_version",
+    "candidate_id",
+    "error_type",
+    "metadata"
+  ],
+  "title": "Development error-analysis record v1",
+  "type": "object"
+}

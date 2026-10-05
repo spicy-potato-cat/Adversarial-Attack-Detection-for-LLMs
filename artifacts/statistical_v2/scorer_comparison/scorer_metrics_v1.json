@@ -1,0 +1,161 @@
+{
+  "S0": {
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.7315865803288277,
+    "pr_auc_definition": "average_precision",
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.009453781512605041,
+        "budget": 0.01,
+        "descriptive_threshold": 0.9334402237345568,
+        "fn": 123,
+        "fp": 9,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.32786885245901637,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tn": 943,
+        "tp": 60
+      },
+      {
+        "attained_fpr": 0.029411764705882353,
+        "budget": 0.03,
+        "descriptive_threshold": 0.8501334532357456,
+        "fn": 83,
+        "fp": 28,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.546448087431694,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tn": 924,
+        "tp": 100
+      },
+      {
+        "attained_fpr": 0.04831932773109244,
+        "budget": 0.05,
+        "descriptive_threshold": 0.784023369186312,
+        "fn": 68,
+        "fp": 46,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.6284153005464481,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tn": 906,
+        "tp": 115
+      }
+    ],
+    "roc_auc": 0.896760343481655,
+    "sample_count": 1135,
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE"
+  },
+  "S1": {
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.6639120609415529,
+    "pr_auc_definition": "average_precision",
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.009453781512605041,
+        "budget": 0.01,
+        "descriptive_threshold": 1.3106708277869918,
+        "fn": 134,
+        "fp": 9,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.2677595628415301,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tn": 943,
+        "tp": 49
+      },
+      {
+        "attained_fpr": 0.028361344537815126,
+        "budget": 0.03,
+        "descriptive_threshold": 1.0194997918034696,
+        "fn": 97,
+        "fp": 27,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.46994535519125685,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tn": 925,
+        "tp": 86
+      },
+      {
+        "attained_fpr": 0.045168067226890755,
+        "budget": 0.05,
+        "descriptive_threshold": 0.8156886763208945,
+        "fn": 71,
+        "fp": 43,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.6120218579234973,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tn": 909,
+        "tp": 112
+      }
+    ],
+    "roc_auc": 0.882502181200349,
+    "sample_count": 1135,
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE"
+  },
+  "S2": {
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.7240828131601307,
+    "pr_auc_definition": "average_precision",
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.009453781512605041,
+        "budget": 0.01,
+        "descriptive_threshold": 0.9577477839667413,
+        "fn": 114,
+        "fp": 9,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.3770491803278688,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tn": 943,
+        "tp": 69
+      },
+      {
+        "attained_fpr": 0.028361344537815126,
+        "budget": 0.03,
+        "descriptive_threshold": 0.6771558068638912,
+        "fn": 77,
+        "fp": 27,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.5792349726775956,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tn": 925,
+        "tp": 106
+      },
+      {
+        "attained_fpr": 0.046218487394957986,
+        "budget": 0.05,
+        "descriptive_threshold": 0.4471827263758257,
+        "fn": 68,
+        "fp": 44,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.6284153005464481,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tn": 908,
+        "tp": 115
+      }
+    ],
+    "roc_auc": 0.8677905588464895,
+    "sample_count": 1135,
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE"
+  }
+}

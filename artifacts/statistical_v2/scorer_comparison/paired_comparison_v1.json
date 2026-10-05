@@ -1,0 +1,50 @@
+{
+  "differences_vs_S0": {
+    "S1": {
+      "metrics": {
+        "pr_auc": {
+          "lower_95pct": -0.10492462808552253,
+          "observed_difference": -0.06767451938727487,
+          "upper_95pct": -0.03187487885045028
+        },
+        "recall_at_3pct": {
+          "lower_95pct": -0.1966833626641397,
+          "observed_difference": -0.07650273224043719,
+          "upper_95pct": 0.022244701348747547
+        },
+        "roc_auc": {
+          "lower_95pct": -0.025130367152513596,
+          "observed_difference": -0.014258162281306053,
+          "upper_95pct": -0.003620655659010694
+        }
+      },
+      "valid_repetitions": 1000
+    },
+    "S2": {
+      "metrics": {
+        "pr_auc": {
+          "lower_95pct": -0.040741495780354575,
+          "observed_difference": -0.007503767168697051,
+          "upper_95pct": 0.02715635704110686
+        },
+        "recall_at_3pct": {
+          "lower_95pct": -0.052147370218579264,
+          "observed_difference": 0.032786885245901565,
+          "upper_95pct": 0.13018394648829437
+        },
+        "roc_auc": {
+          "lower_95pct": -0.049644025053801874,
+          "observed_difference": -0.02896978463516553,
+          "upper_95pct": -0.007163138128999254
+        }
+      },
+      "valid_repetitions": 1000
+    }
+  },
+  "policy": {
+    "limitations": "Conditional fixed-OOF percentile intervals, no classifier refits/shared-training/multiplicity/selection adjustment; frontiers recomputed per resample.",
+    "repetitions": 1000,
+    "seed": 1701,
+    "unit": "Canonical lineage groups; paired identical sample indices"
+  }
+}

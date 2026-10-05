@@ -1,0 +1,108 @@
+{
+  "budget_1pct": {
+    "attained_fpr": 0.007352941176470588,
+    "budget": 0.01,
+    "descriptive_threshold": 0.013269803486764431,
+    "fn": 6,
+    "fnr": 0.03278688524590164,
+    "fnr_95pct": {
+      "level": 0.95,
+      "lower": 0.01511147471989768,
+      "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+      "upper": 0.0696740911854546
+    },
+    "fp": 7,
+    "fpr": 0.007352941176470588,
+    "fpr_95pct": {
+      "level": 0.95,
+      "lower": 0.0035662509353278455,
+      "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+      "upper": 0.015099458378753074
+    },
+    "negative_denominator": 952,
+    "no_positive_predictions": false,
+    "positive_denominator": 183,
+    "recall": 0.9672131147540983,
+    "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+    "tn": 945,
+    "tp": 177
+  },
+  "budget_3pct": {
+    "attained_fpr": 0.023109243697478993,
+    "budget": 0.03,
+    "descriptive_threshold": 0.0008947817841544747,
+    "fn": 4,
+    "fnr": 0.02185792349726776,
+    "fnr_95pct": {
+      "level": 0.95,
+      "lower": 0.008532172862779297,
+      "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+      "upper": 0.05484486826842917
+    },
+    "fp": 22,
+    "fpr": 0.023109243697478993,
+    "fpr_95pct": {
+      "level": 0.95,
+      "lower": 0.015309792016924884,
+      "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+      "upper": 0.03474187542143915
+    },
+    "negative_denominator": 952,
+    "no_positive_predictions": false,
+    "positive_denominator": 183,
+    "recall": 0.9781420765027322,
+    "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+    "tn": 930,
+    "tp": 179
+  },
+  "budget_5pct": {
+    "attained_fpr": 0.03571428571428571,
+    "budget": 0.05,
+    "descriptive_threshold": 0.0006214274326339364,
+    "fn": 2,
+    "fnr": 0.01092896174863388,
+    "fnr_95pct": {
+      "level": 0.95,
+      "lower": 0.003002250027948822,
+      "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+      "upper": 0.038966266329115845
+    },
+    "fp": 34,
+    "fpr": 0.03571428571428571,
+    "fpr_95pct": {
+      "level": 0.95,
+      "lower": 0.02566851313976056,
+      "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+      "upper": 0.04949192079802998
+    },
+    "negative_denominator": 952,
+    "no_positive_predictions": false,
+    "positive_denominator": 183,
+    "recall": 0.9890710382513661,
+    "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+    "tn": 918,
+    "tp": 181
+  },
+  "caveat": "The pooled threshold was chosen descriptively using the same pooled OOF predictions being summarized. It demonstrates ranking/operating capacity, not an unbiased estimate of a future independently selected threshold. Final threshold selection remains deferred to the authorized calibration/validation operating-point phase. No descriptive threshold is frozen for deployment.",
+  "interval_caveat": "Descriptive Wilson 95% binomial intervals. OOF predictions share training data; observations are not perfectly independent in the modeling sense. Not final population guarantees, and not proof that true error is below 3%.",
+  "raw_0_5": {
+    "fn": 17,
+    "fnr": 0.09289617486338798,
+    "fnr_95pct": {
+      "level": 0.95,
+      "lower": 0.058809474137819284,
+      "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+      "upper": 0.14372297802532397
+    },
+    "fp": 5,
+    "fpr": 0.005252100840336135,
+    "fpr_95pct": {
+      "level": 0.95,
+      "lower": 0.0022454077765948002,
+      "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+      "upper": 0.012235507120915036
+    },
+    "negative_denominator": 952,
+    "positive_denominator": 183
+  }
+}

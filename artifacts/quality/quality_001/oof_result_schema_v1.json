@@ -1,0 +1,240 @@
+{
+  "$comment": "Schema only. Successful scored records; failures require a separate explicit failure log, never invented predictions. Validate sample membership against fixture separately. No raw text.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "binary_prediction": {
+            "const": 1
+          },
+          "label": {
+            "const": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error_type": {
+            "const": "TP"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "binary_prediction": {
+            "const": 0
+          },
+          "label": {
+            "const": 0
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error_type": {
+            "const": "TN"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "binary_prediction": {
+            "const": 1
+          },
+          "label": {
+            "const": 0
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error_type": {
+            "const": "FP"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "binary_prediction": {
+            "const": 0
+          },
+          "label": {
+            "const": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error_type": {
+            "const": "FN"
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "binary_prediction": {
+      "enum": [
+        0,
+        1
+      ],
+      "type": "integer"
+    },
+    "calibrated_probability": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "candidate_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "detector_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "detector_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "error_type": {
+      "enum": [
+        "TP",
+        "TN",
+        "FP",
+        "FN"
+      ]
+    },
+    "fold": {
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "type": "integer"
+    },
+    "input_tokens": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "label": {
+      "enum": [
+        0,
+        1
+      ],
+      "type": "integer"
+    },
+    "latency_ms": {
+      "minimum": 0,
+      "type": "number"
+    },
+    "lineage_group": {
+      "pattern": "^LG-N1-[0-9a-f]{24}$",
+      "type": "string"
+    },
+    "metadata": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "feature_schema_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "operating_point_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "partition": {
+          "const": "BASE_TRAIN"
+        },
+        "raw_score_semantics": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_revision": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "threat_regime": {
+          "enum": [
+            null,
+            "R0",
+            "R1",
+            "R2",
+            "R3"
+          ]
+        }
+      },
+      "required": [
+        "partition"
+      ],
+      "type": "object"
+    },
+    "raw_score": {
+      "type": "number"
+    },
+    "sample_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "source_name": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "tokens_analyzed": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "truncated": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "sample_id",
+    "fold",
+    "label",
+    "source_name",
+    "lineage_group",
+    "detector_id",
+    "detector_version",
+    "candidate_id",
+    "raw_score",
+    "calibrated_probability",
+    "binary_prediction",
+    "input_tokens",
+    "tokens_analyzed",
+    "truncated",
+    "latency_ms",
+    "error_type",
+    "metadata"
+  ],
+  "title": "Development OOF record v1",
+  "type": "object"
+}

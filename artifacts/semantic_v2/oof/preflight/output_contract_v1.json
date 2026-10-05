@@ -1,0 +1,190 @@
+{
+  "completion_marker": "completion_v1.json",
+  "csv_fields_order": [
+    "sample_id",
+    "partition",
+    "fold",
+    "label",
+    "source_name",
+    "source_revision",
+    "lineage_group",
+    "detector_id",
+    "detector_version",
+    "candidate_id",
+    "raw_score",
+    "logit_margin",
+    "calibrated_probability",
+    "binary_prediction",
+    "error_type",
+    "threshold_distance",
+    "confidence_category",
+    "input_tokens",
+    "max_input_tokens",
+    "tokens_analyzed",
+    "tokens_excluded",
+    "truncated",
+    "payload_position_status",
+    "latency_ms"
+  ],
+  "csv_record_schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "properties": {
+      "binary_prediction": {
+        "enum": [
+          0,
+          1
+        ]
+      },
+      "calibrated_probability": {
+        "type": "null"
+      },
+      "candidate_id": {
+        "type": "string"
+      },
+      "confidence_category": {
+        "type": "string"
+      },
+      "detector_id": {
+        "const": "semantic_finetuned"
+      },
+      "detector_version": {
+        "const": "dm_b_v1"
+      },
+      "error_type": {
+        "enum": [
+          "TP",
+          "TN",
+          "FP",
+          "FN"
+        ]
+      },
+      "fold": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "input_tokens": {
+        "type": "integer"
+      },
+      "label": {
+        "enum": [
+          0,
+          1
+        ]
+      },
+      "latency_ms": {
+        "type": "number"
+      },
+      "lineage_group": {
+        "type": "string"
+      },
+      "logit_margin": {
+        "type": "number"
+      },
+      "max_input_tokens": {
+        "const": 256
+      },
+      "partition": {
+        "const": "BASE_TRAIN"
+      },
+      "payload_position_status": {
+        "const": "NOT_AVAILABLE_NOT_INFERRED"
+      },
+      "raw_score": {
+        "maximum": 1,
+        "minimum": 0,
+        "type": "number"
+      },
+      "sample_id": {
+        "type": "string"
+      },
+      "source_name": {
+        "type": "string"
+      },
+      "source_revision": {
+        "type": "string"
+      },
+      "threshold_distance": {
+        "type": "number"
+      },
+      "tokens_analyzed": {
+        "type": "integer"
+      },
+      "tokens_excluded": {
+        "type": "integer"
+      },
+      "truncated": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "sample_id",
+      "partition",
+      "fold",
+      "label",
+      "source_name",
+      "source_revision",
+      "lineage_group",
+      "detector_id",
+      "detector_version",
+      "candidate_id",
+      "raw_score",
+      "logit_margin",
+      "calibrated_probability",
+      "binary_prediction",
+      "error_type",
+      "threshold_distance",
+      "confidence_category",
+      "input_tokens",
+      "max_input_tokens",
+      "tokens_analyzed",
+      "tokens_excluded",
+      "truncated",
+      "payload_position_status",
+      "latency_ms"
+    ],
+    "type": "object"
+  },
+  "failure_marker_on_exception_only": "failure_v1.json",
+  "hard_examples": "Same CSV schema; only FN/FP IDs/metadata, sample-ID order, not a new training set",
+  "hash_policy": "Run metadata hashes eight data products; completion hashes those products plus metadata. No circular self-hash.",
+  "original_input_tokens_field": "input_tokens (including special tokens; padding excluded)",
+  "output_root": "artifacts/semantic_v2/oof",
+  "raw_text_included": false,
+  "results_status": "PENDING AUTHORITATIVE OOF EXECUTION",
+  "run_metadata": "dm_b_v1_oof_run_metadata.json",
+  "run_metadata_required_fields": [
+    "code_commit",
+    "manifest_sha256",
+    "fold_sha256",
+    "upstream_revision",
+    "tokenizer_revision",
+    "seed",
+    "device",
+    "python_executable",
+    "packages",
+    "runtime_seconds",
+    "started_at",
+    "completed_at",
+    "per_fold_runtime",
+    "output_sha256",
+    "analysis_config_sha256",
+    "oof_preflight_sha256"
+  ],
+  "started_marker": "run_started_v1.json",
+  "successful_data_outputs": [
+    "dm_b_v1_recipe_oof_predictions.csv",
+    "dm_b_v1_recipe_oof_metrics.json",
+    "dm_b_v1_recipe_fold_metrics.json",
+    "dm_b_v1_recipe_oof_curves.json",
+    "dm_b_v1_truncation_analysis.json",
+    "dm_b_v1_error_characterization.json",
+    "dm_b_v1_hard_examples.csv",
+    "dm_b_v1_v2_recommendation.json"
+  ]
+}

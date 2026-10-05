@@ -1,0 +1,165 @@
+{
+  "actionable_cluster": false,
+  "aggregate": {
+    "accuracy": 0.9806167400881057,
+    "comparison_rule": "raw_softmax_class_1_probability >= 0.5; DATA_INDEPENDENT_DEVELOPMENT_ONLY",
+    "confusion_matrix": {
+      "fn": 17,
+      "fp": 5,
+      "tn": 947,
+      "tp": 166
+    },
+    "f1": 0.9378531073446328,
+    "fnr": 0.09289617486338798,
+    "fpr": 0.005252100840336135,
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.9877044339233643,
+    "pr_auc_definition": "average_precision",
+    "precision": 0.9707602339181286,
+    "recall": 0.907103825136612,
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.007352941176470588,
+        "budget": 0.01,
+        "descriptive_threshold": 0.013269803486764431,
+        "fp": 7,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.9672131147540983,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 177
+      },
+      {
+        "attained_fpr": 0.023109243697478993,
+        "budget": 0.03,
+        "descriptive_threshold": 0.0008947817841544747,
+        "fp": 22,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.9781420765027322,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 179
+      },
+      {
+        "attained_fpr": 0.03571428571428571,
+        "budget": 0.05,
+        "descriptive_threshold": 0.0006214274326339364,
+        "fp": 34,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.9890710382513661,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 181
+      }
+    ],
+    "roc_auc": 0.9963493594158974,
+    "sample_count": 1135,
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE",
+    "specificity": 0.9947478991596639
+  },
+  "all_positive_metadata_distribution": {
+    "attack_family": {
+      "direct_prompt_injection": 183
+    },
+    "attack_mechanism": {
+      "prompt_injection": 183
+    },
+    "label_confidence": {
+      "MEDIUM": 183
+    },
+    "provenance_status": {
+      "PARTIAL": 183
+    },
+    "source_dataset": {
+      "deepset Prompt Injection": 183
+    }
+  },
+  "coherence_classification": "PARTIAL_CLUSTER",
+  "coherence_reason": "Shared source, broad direct_prompt_injection family/mechanism, partial provenance and medium label confidence also describe all 183 positives; they do not isolate a residual-specific blind spot. Four distinct lineage groups, three folds, three short inputs and one 43-token input. Fine subtype and generator unavailable. A specific actionable intervention cannot be justified from this metadata; mechanisms cannot be declared heterogeneous.",
+  "decision": "FREEZE_DM_B_V1",
+  "decision_reason": "Strong descriptive frontier, no truncation-associated misses and no residual-specific actionable mechanism. Fold-1 weakness at 3% and folds 0/1 at 1% are retained, not tuned. Accept v1 for next stack phase; do not chase four residuals, hard-mine, retrain or create dm_b_v2.",
+  "interpretation": "D_M-B demonstrates the capacity to operate within the 1-3% FPR/FNR region at a descriptive development-OOF operating point.",
+  "isolation": {
+    "E1_E10": false,
+    "SEM_004_started": false,
+    "STAT_004_modified": false,
+    "calibration_access": false,
+    "deployment_threshold_frozen": false,
+    "model_inference": false,
+    "model_trained": false,
+    "protected_access": false,
+    "validation_access": false
+  },
+  "persistent_borderline": 0,
+  "persistent_distinct_lineage_groups": 4,
+  "persistent_fn_count": 4,
+  "persistent_folds": {
+    "1": 1,
+    "3": 2,
+    "4": 1
+  },
+  "persistent_high_confidence": 4,
+  "persistent_ids": [
+    "W2-2e5c0b7b868cdf69b5d982aa",
+    "W2-5ce365d631f87bfbcb320b57",
+    "W2-77cf86dae187121c639f9238",
+    "W2-dd2317a66faaf974b05e945d"
+  ],
+  "persistent_shorter_than_32_tokens": 3,
+  "raw_fn_count": 17,
+  "raw_fn_ids": [
+    "W2-2ad1d1769b8c4f91cfa39d67",
+    "W2-2e5c0b7b868cdf69b5d982aa",
+    "W2-2ed0f5f420e8459fecdf3214",
+    "W2-303f4b2a371e72661137710d",
+    "W2-3516b6590258e0cec95eff08",
+    "W2-4abb2dd48ec62f908edf0fa4",
+    "W2-5ce365d631f87bfbcb320b57",
+    "W2-6dec1d1e760ab9c2a6513bb5",
+    "W2-77cf86dae187121c639f9238",
+    "W2-805d39d74af0ea5b2434c65b",
+    "W2-895c82b8380970b81ad5ffc3",
+    "W2-9572e34c7ec6f3af9501ac0f",
+    "W2-d8e69ad880a8eab96770ca48",
+    "W2-dd2317a66faaf974b05e945d",
+    "W2-e9e6d1223268b99b4c3ec855",
+    "W2-ea8a6cc0602cdb6dd81b006b",
+    "W2-f675d5868a2f79a121ab5ba7"
+  ],
+  "raw_high_confidence_fn": 12,
+  "recovered_ids": [
+    "W2-2ad1d1769b8c4f91cfa39d67",
+    "W2-2ed0f5f420e8459fecdf3214",
+    "W2-303f4b2a371e72661137710d",
+    "W2-3516b6590258e0cec95eff08",
+    "W2-4abb2dd48ec62f908edf0fa4",
+    "W2-6dec1d1e760ab9c2a6513bb5",
+    "W2-805d39d74af0ea5b2434c65b",
+    "W2-895c82b8380970b81ad5ffc3",
+    "W2-9572e34c7ec6f3af9501ac0f",
+    "W2-d8e69ad880a8eab96770ca48",
+    "W2-e9e6d1223268b99b4c3ec855",
+    "W2-ea8a6cc0602cdb6dd81b006b",
+    "W2-f675d5868a2f79a121ab5ba7"
+  ],
+  "scope": "BASE_TRAIN_METADATA_ONLY_NO_RAW_TEXT_NO_MODEL_EXECUTION",
+  "threshold_caveat": "The pooled threshold was chosen descriptively using the same pooled OOF predictions being summarized. It demonstrates ranking/operating capacity, not an unbiased estimate of a future independently selected threshold. Final threshold selection remains deferred to the authorized calibration/validation operating-point phase. No descriptive threshold is frozen for deployment.",
+  "truncation": {
+    "B1_256_to_512": "NOT_SUPPORTED_AS_NEXT_MODEL_IMPROVEMENT_EXPERIMENT",
+    "conclusion": "NO OBSERVED ASSOCIATION BETWEEN CURRENT OOF MISSES AND EXCLUDED TOKENS IN THIS FIXTURE",
+    "fn": 0,
+    "fnr_95pct": {
+      "level": 0.95,
+      "lower": 0.0,
+      "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+      "upper": 0.4898908364545973
+    },
+    "limitation": "Only four truncated positives and no truncated negatives; truncation may cause future errors.",
+    "positive_truncated": 4,
+    "tp": 4
+  }
+}

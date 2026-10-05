@@ -1,0 +1,116 @@
+{
+  "FNR_denominator": "Positive-class rows within each coverage group; joint FN incidence is separately named.",
+  "counts_include_special_tokens": true,
+  "groups": {
+    "not_truncated": {
+      "confusion_matrix": {
+        "fn": 17,
+        "fp": 5,
+        "tn": 947,
+        "tp": 162
+      },
+      "fnr": 0.09497206703910614,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.060142800099076195,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.14682042949210666
+      },
+      "fpr": 0.005252100840336135,
+      "fpr_interval": {
+        "level": 0.95,
+        "lower": 0.0022454077765948002,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.012235507120915036
+      },
+      "input_tokens": {
+        "count": 1131,
+        "maximum": 254.0,
+        "median": 15.0,
+        "minimum": 5.0,
+        "q25": 11.0,
+        "q75": 20.0,
+        "q90": 42.0
+      },
+      "joint_FN_incidence_among_all_group_rows": 0.015030946065428824,
+      "negative": 952,
+      "positive": 179,
+      "positive_score_distribution": {
+        "count": 179,
+        "maximum": 0.9997517466545105,
+        "median": 0.9994741082191467,
+        "minimum": 0.0002866760769393295,
+        "q25": 0.998985767364502,
+        "q75": 0.9996209144592285,
+        "q90": 0.9996953248977661
+      },
+      "recall": 0.9050279329608939,
+      "rows": 1131,
+      "tokens_excluded": {
+        "count": 1131,
+        "maximum": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "q25": 0.0,
+        "q75": 0.0,
+        "q90": 0.0
+      }
+    },
+    "truncated": {
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "tp": 4
+      },
+      "fnr": 0.0,
+      "fnr_interval": {
+        "level": 0.95,
+        "lower": 0.0,
+        "method": "Wilson descriptive binomial; ignores shared-training/lineage dependence; not a population guarantee",
+        "upper": 0.4898908364545973
+      },
+      "fpr": null,
+      "fpr_interval": null,
+      "input_tokens": {
+        "count": 4,
+        "maximum": 435.0,
+        "median": 307.0,
+        "minimum": 292.0,
+        "q25": 301.0,
+        "q75": 341.25,
+        "q90": 397.5
+      },
+      "joint_FN_incidence_among_all_group_rows": 0.0,
+      "negative": 0,
+      "positive": 4,
+      "positive_score_distribution": {
+        "count": 4,
+        "maximum": 0.9996756315231323,
+        "median": 0.9991840720176697,
+        "minimum": 0.9870647192001343,
+        "q25": 0.9958425611257553,
+        "q75": 0.9996186345815659,
+        "q90": 0.9996528327465057
+      },
+      "recall": 1.0,
+      "rows": 4,
+      "tokens_excluded": {
+        "count": 4,
+        "maximum": 179.0,
+        "median": 51.0,
+        "minimum": 36.0,
+        "q25": 45.0,
+        "q75": 85.25,
+        "q90": 141.50000000000003
+      }
+    }
+  },
+  "interpretation": "Associations only. No counterfactual intervention; truncation does not prove causality.",
+  "max_input_tokens": 256,
+  "padding_excluded": true,
+  "payload_position_status": "NOT_AVAILABLE_NOT_INFERRED",
+  "positive_samples": 183,
+  "positive_truncated": 4,
+  "positive_truncated_fraction": 0.02185792349726776
+}

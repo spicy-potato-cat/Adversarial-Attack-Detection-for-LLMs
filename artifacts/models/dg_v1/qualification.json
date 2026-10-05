@@ -1,0 +1,70 @@
+{
+  "retrieved_at": "2026-10-01T14:47:56.153413+00:00",
+  "token_available": false,
+  "models": [
+    {
+      "model": "meta-llama/Llama-Prompt-Guard-2-22M",
+      "revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+      "gated": "manual",
+      "files": [
+        ".gitattributes",
+        "LICENSE",
+        "MODEL_CARD.md",
+        "README.md",
+        "USE_POLICY.md",
+        "checklist.chk",
+        "config.json",
+        "model.safetensors",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "config_access": "BLOCKED",
+      "error_type": "GatedRepoError",
+      "http_status": 401
+    },
+    {
+      "model": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+      "gated": "manual",
+      "files": [
+        ".gitattributes",
+        "LICENSE",
+        "README.md",
+        "USE_POLICY.md",
+        "checklist.chk",
+        "config.json",
+        "model.safetensors",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ]
+    },
+    {
+      "model": "protectai/deberta-v3-base-prompt-injection-v2",
+      "revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+      "gated": false,
+      "files": [
+        ".gitattributes",
+        "LICENSE",
+        "README.md",
+        "added_tokens.json",
+        "config.json",
+        "deberta-v3-base-prompt-injection-v2_emissions.csv",
+        "model.safetensors",
+        "onnx/added_tokens.json",
+        "onnx/config.json",
+        "onnx/model.onnx",
+        "onnx/special_tokens_map.json",
+        "onnx/spm.model",
+        "onnx/tokenizer.json",
+        "onnx/tokenizer_config.json",
+        "special_tokens_map.json",
+        "spm.model",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "training_args.bin"
+      ]
+    }
+  ]
+}

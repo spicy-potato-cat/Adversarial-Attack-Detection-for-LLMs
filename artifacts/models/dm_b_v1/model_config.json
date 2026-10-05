@@ -1,0 +1,39 @@
+{
+  "recipe": {
+    "upstream_model": "distilbert/distilroberta-base",
+    "upstream_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+    "tokenizer_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+    "detector_id": "semantic_finetuned",
+    "detector_version": "dm_b_v1",
+    "max_sequence_length": 256,
+    "model_context_length": 512,
+    "seed": 1701,
+    "epochs": 3,
+    "batch_size": 8,
+    "gradient_accumulation": 1,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "optimizer": "AdamW",
+    "scheduler": "linear",
+    "loss": "weighted_cross_entropy",
+    "class_weight_policy": "BASE_TRAIN_N/(2*N_class)",
+    "checkpoint_policy": "final_epoch_only_no_validation_selection",
+    "precision": "float32",
+    "device": "cpu",
+    "cpu_threads": 8,
+    "default_cutpoint": 0.5,
+    "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+    "text_field": "source.raw_text",
+    "truncation_side": "right",
+    "padding_side": "right",
+    "padding": "longest_in_batch"
+  },
+  "training_status": "COMPLETE",
+  "label_mapping": {
+    "benign": 0,
+    "attack": 1
+  },
+  "calibrated_probability": null
+}

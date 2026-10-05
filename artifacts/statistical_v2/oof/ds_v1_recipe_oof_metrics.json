@@ -1,0 +1,84 @@
+{
+  "accuracy": 0.7682819383259912,
+  "comparison_rule": "raw_LR_class_1_probability >= 0.5; DEVELOPMENT_ONLY_UNCALIBRATED",
+  "confidence_intervals": {
+    "intervals": {
+      "fnr": {
+        "lower": 0.2588745821468367,
+        "upper": 0.39779294784646085
+      },
+      "fpr": {
+        "lower": 0.18835636673176107,
+        "upper": 0.23957355160094967
+      },
+      "recall": {
+        "lower": 0.6022070521535391,
+        "upper": 0.7411254178531632
+      }
+    },
+    "level": 0.95,
+    "limitations": "Does not capture model-refit uncertainty or all dependence from overlapping training folds; lineage is canonical minimum only.",
+    "method": "lineage-group percentile bootstrap on fixed OOF predictions",
+    "repetitions": 2000,
+    "scope": "CONDITIONAL_DEVELOPMENT_DIAGNOSTICS; no model refits, threshold selection or final population guarantee",
+    "seed": 1701,
+    "valid_repetitions": 2000
+  },
+  "confusion_matrix": {
+    "fn": 60,
+    "fp": 203,
+    "tn": 749,
+    "tp": 123
+  },
+  "f1": 0.48330058939096265,
+  "fnr": 0.32786885245901637,
+  "fpr": 0.21323529411764705,
+  "negative_count": 952,
+  "positive_count": 183,
+  "pr_auc": 0.5766836613612865,
+  "pr_auc_definition": "average_precision",
+  "precision": 0.3773006134969325,
+  "recall": 0.6721311475409836,
+  "recall_at_fixed_fpr": [
+    {
+      "attained_fpr": 0.007352941176470588,
+      "budget": 0.01,
+      "descriptive_threshold": 0.8624549945377074,
+      "fp": 7,
+      "negative_denominator": 952,
+      "no_positive_predictions": false,
+      "positive_denominator": 183,
+      "recall": 0.2459016393442623,
+      "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+      "tp": 45
+    },
+    {
+      "attained_fpr": 0.029411764705882353,
+      "budget": 0.03,
+      "descriptive_threshold": 0.7912072309030108,
+      "fp": 28,
+      "negative_denominator": 952,
+      "no_positive_predictions": false,
+      "positive_denominator": 183,
+      "recall": 0.3224043715846995,
+      "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+      "tp": 59
+    },
+    {
+      "attained_fpr": 0.04936974789915966,
+      "budget": 0.05,
+      "descriptive_threshold": 0.7266390993416252,
+      "fp": 47,
+      "negative_denominator": 952,
+      "no_positive_predictions": false,
+      "positive_denominator": 183,
+      "recall": 0.453551912568306,
+      "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+      "tp": 83
+    }
+  ],
+  "roc_auc": 0.8100863296138128,
+  "sample_count": 1135,
+  "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE",
+  "specificity": 0.7867647058823529
+}

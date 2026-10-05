@@ -1,0 +1,9 @@
+{
+  "B1": "NOT_SUPPORTED_BY_TRUNCATED_FN_EVIDENCE",
+  "B2": "DEFER_UNTIL_B1_EVIDENCE_OR_COMMANDER_REVIEW; hard IDs are diagnostic-only, not new training data",
+  "B3": "DEFER; stronger encoder is not justified solely by confidently wrong probabilities",
+  "high_confidence_FN": 12,
+  "optional_512_forward": "SKIPPED_TO_KEEP_FROZEN_BASELINE_SCOPE",
+  "reason": "0 OOF false negatives have excluded tokens. Association does not establish that 512 tokens would correct them.",
+  "trained_or_promoted_v2": false
+}

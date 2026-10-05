@@ -1,0 +1,74 @@
+{
+  "model_scorer_calibrator_reused": true,
+  "repeat_deterministic": true,
+  "result": {
+    "binary_vote": false,
+    "calibrated_probability": 0.0722277338654644,
+    "detector_id": "statistical_perplexity",
+    "detector_version": "ds_v1",
+    "features": {
+      "global_perplexity": 813.2345402455909,
+      "high_surprisal_ratio": 0.25,
+      "max_surprisal": 12.136207580566406,
+      "max_window_perplexity": 813.2345402455909,
+      "mean_surprisal": 6.7010195553302765,
+      "mean_window_perplexity": 813.2345402455909,
+      "std_window_perplexity": 0.0,
+      "surface_anomaly": {
+        "character_entropy": 0.48460664134991344,
+        "longest_token_ratio": 0.2391304347826087,
+        "non_ascii_ratio": 0.0,
+        "punctuation_ratio": 0.021739130434782608,
+        "single_character_token_ratio": 0.0,
+        "zero_width_count": 0
+      },
+      "surprisal_std": 3.4136173942279,
+      "whole_prompt_nll": 6.7010195553302765,
+      "whole_prompt_ppl": 813.2345402455909,
+      "window_count": 1
+    },
+    "input_coverage": {
+      "coverage_ratio": 1.0,
+      "inference_chunks": 1,
+      "input_tokens": 9,
+      "model_context_tokens": 1024,
+      "scoreable_tokens": 8,
+      "tokens_analyzed": 8,
+      "tokens_excluded": 0,
+      "truncated": false,
+      "window_size": 128,
+      "window_strategy": "sliding",
+      "window_stride": 64
+    },
+    "latency_ms": 137.95829999980924,
+    "metadata": {
+      "binary_vote_basis": "calibrated_probability",
+      "calibration_method": "platt_sigmoid_on_lr_log_odds",
+      "calibration_version": "ds_v1_cal_v1",
+      "character_length": 46,
+      "cutpoint_type": "DEFAULT_DEVELOPMENT_CUTPOINT",
+      "default_cutpoint": 0.5,
+      "feature_extractor_version": "v0.1",
+      "feature_schema_sha256": "2b042f88e7403985e5f94e34bb1107b377069e591322767a482a33b5e2cbf8b7",
+      "final_operating_point": "NOT_FROZEN",
+      "probability_type": "raw_LR_class_1_probability",
+      "runtime": {
+        "model_dtype": "torch.float32",
+        "torch_version": "2.6.0",
+        "transformers_version": "4.49.0"
+      }
+    },
+    "model": {
+      "device": "cpu",
+      "model_id": "distilbert/distilgpt2",
+      "model_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+      "tokenizer_id": "distilbert/distilgpt2"
+    },
+    "raw_score": 0.3079528264877775,
+    "semantic_features": null,
+    "status": "success",
+    "warnings": []
+  },
+  "scope": "SYNTHETIC ENGINEERING ONLY",
+  "status": "PASS"
+}

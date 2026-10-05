@@ -1,0 +1,443 @@
+{
+  "B0": {
+    "accuracy": 0.7682819383259912,
+    "comparison_rule": "raw_LR_class_1_probability >= 0.5; DEVELOPMENT_ONLY_UNCALIBRATED",
+    "confusion_matrix": {
+      "fn": 60,
+      "fp": 203,
+      "tn": 749,
+      "tp": 123
+    },
+    "f1": 0.48330058939096265,
+    "feature_count": 10,
+    "fnr": 0.32786885245901637,
+    "fpr": 0.21323529411764705,
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.5766836613612865,
+    "pr_auc_definition": "average_precision",
+    "precision": 0.3773006134969325,
+    "recall": 0.6721311475409836,
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.007352941176470588,
+        "budget": 0.01,
+        "descriptive_threshold": 0.8624549945377074,
+        "fp": 7,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.2459016393442623,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 45
+      },
+      {
+        "attained_fpr": 0.029411764705882353,
+        "budget": 0.03,
+        "descriptive_threshold": 0.7912072309030108,
+        "fp": 28,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.3224043715846995,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 59
+      },
+      {
+        "attained_fpr": 0.04936974789915966,
+        "budget": 0.05,
+        "descriptive_threshold": 0.7266390993416252,
+        "fp": 47,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.453551912568306,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 83
+      }
+    ],
+    "roc_auc": 0.8100863296138128,
+    "sample_count": 1135,
+    "schema_sha256": "bc486d0a9561540f89b7eb8414fe03de392826621cec0ba7af0bef3c1b682bb9",
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE",
+    "specificity": 0.7867647058823529
+  },
+  "B1": {
+    "accuracy": 0.8317180616740089,
+    "comparison_rule": "raw_LR_class_1_probability >= 0.5; DEVELOPMENT_ONLY_UNCALIBRATED",
+    "confusion_matrix": {
+      "fn": 38,
+      "fp": 153,
+      "tn": 799,
+      "tp": 145
+    },
+    "f1": 0.6029106029106029,
+    "feature_count": 16,
+    "fnr": 0.20765027322404372,
+    "fpr": 0.16071428571428573,
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.7148741908376832,
+    "pr_auc_definition": "average_precision",
+    "precision": 0.4865771812080537,
+    "recall": 0.7923497267759563,
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.009453781512605041,
+        "budget": 0.01,
+        "descriptive_threshold": 0.8968573157908132,
+        "fp": 9,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.366120218579235,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 67
+      },
+      {
+        "attained_fpr": 0.023109243697478993,
+        "budget": 0.03,
+        "descriptive_threshold": 0.8711061918550445,
+        "fp": 22,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.44808743169398907,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 82
+      },
+      {
+        "attained_fpr": 0.04831932773109244,
+        "budget": 0.05,
+        "descriptive_threshold": 0.791257213415187,
+        "fp": 46,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.5901639344262295,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 108
+      }
+    ],
+    "roc_auc": 0.8856993617118979,
+    "sample_count": 1135,
+    "schema_sha256": "04099bb2ca3f7e8ae676b19d1459c2bab9d1d94b896846e2b46edee2d75b90fc",
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE",
+    "specificity": 0.8392857142857143
+  },
+  "B2": {
+    "accuracy": 0.8537444933920705,
+    "comparison_rule": "raw_LR_class_1_probability >= 0.5; DEVELOPMENT_ONLY_UNCALIBRATED",
+    "confusion_matrix": {
+      "fn": 35,
+      "fp": 131,
+      "tn": 821,
+      "tp": 148
+    },
+    "f1": 0.6406926406926406,
+    "feature_count": 26,
+    "fnr": 0.1912568306010929,
+    "fpr": 0.13760504201680673,
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.7315865803288277,
+    "pr_auc_definition": "average_precision",
+    "precision": 0.5304659498207885,
+    "recall": 0.8087431693989071,
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.009453781512605041,
+        "budget": 0.01,
+        "descriptive_threshold": 0.9334402237345568,
+        "fp": 9,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.32786885245901637,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 60
+      },
+      {
+        "attained_fpr": 0.029411764705882353,
+        "budget": 0.03,
+        "descriptive_threshold": 0.8501334532357456,
+        "fp": 28,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.546448087431694,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 100
+      },
+      {
+        "attained_fpr": 0.04831932773109244,
+        "budget": 0.05,
+        "descriptive_threshold": 0.784023369186312,
+        "fp": 46,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.6284153005464481,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 115
+      }
+    ],
+    "roc_auc": 0.896760343481655,
+    "sample_count": 1135,
+    "schema_sha256": "93d3892b158c35eccfadc27c879754db69ea5293782492ee5d4ff01a33bff983",
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE",
+    "specificity": 0.8623949579831933
+  },
+  "B3": {
+    "accuracy": 0.8546255506607929,
+    "comparison_rule": "raw_LR_class_1_probability >= 0.5; DEVELOPMENT_ONLY_UNCALIBRATED",
+    "confusion_matrix": {
+      "fn": 35,
+      "fp": 130,
+      "tn": 822,
+      "tp": 148
+    },
+    "f1": 0.6420824295010846,
+    "feature_count": 29,
+    "fnr": 0.1912568306010929,
+    "fpr": 0.13655462184873948,
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.7314995781361657,
+    "pr_auc_definition": "average_precision",
+    "precision": 0.5323741007194245,
+    "recall": 0.8087431693989071,
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.009453781512605041,
+        "budget": 0.01,
+        "descriptive_threshold": 0.9340000761215043,
+        "fp": 9,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.32786885245901637,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 60
+      },
+      {
+        "attained_fpr": 0.029411764705882353,
+        "budget": 0.03,
+        "descriptive_threshold": 0.8479150137490621,
+        "fp": 28,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.546448087431694,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 100
+      },
+      {
+        "attained_fpr": 0.04726890756302521,
+        "budget": 0.05,
+        "descriptive_threshold": 0.7854833705189883,
+        "fp": 45,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.6284153005464481,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 115
+      }
+    ],
+    "roc_auc": 0.896588143454103,
+    "sample_count": 1135,
+    "schema_sha256": "aaac6a2dd25be2aa05cfe49c89229f09b6e4b4fd9f653784026fbb85e6e9d4e2",
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE",
+    "specificity": 0.8634453781512605
+  },
+  "B4": {
+    "accuracy": 0.8493392070484581,
+    "comparison_rule": "raw_LR_class_1_probability >= 0.5; DEVELOPMENT_ONLY_UNCALIBRATED",
+    "confusion_matrix": {
+      "fn": 35,
+      "fp": 136,
+      "tn": 816,
+      "tp": 148
+    },
+    "f1": 0.6338329764453962,
+    "feature_count": 33,
+    "fnr": 0.1912568306010929,
+    "fpr": 0.14285714285714285,
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.7297468859758753,
+    "pr_auc_definition": "average_precision",
+    "precision": 0.5211267605633803,
+    "recall": 0.8087431693989071,
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.009453781512605041,
+        "budget": 0.01,
+        "descriptive_threshold": 0.93007677599337,
+        "fp": 9,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.33879781420765026,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 62
+      },
+      {
+        "attained_fpr": 0.0273109243697479,
+        "budget": 0.03,
+        "descriptive_threshold": 0.8605760229603485,
+        "fp": 26,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.5355191256830601,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 98
+      },
+      {
+        "attained_fpr": 0.04936974789915966,
+        "budget": 0.05,
+        "descriptive_threshold": 0.7809076180395448,
+        "fp": 47,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.6284153005464481,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 115
+      }
+    ],
+    "roc_auc": 0.8960313633650181,
+    "sample_count": 1135,
+    "schema_sha256": "c9b7a64eb62efd7ad50a79f0f1d0b638bb2b89632672fd82d1cc4e0e568fc36e",
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE",
+    "specificity": 0.8571428571428571
+  },
+  "B5": {
+    "accuracy": 0.8431718061674008,
+    "comparison_rule": "raw_LR_class_1_probability >= 0.5; DEVELOPMENT_ONLY_UNCALIBRATED",
+    "confusion_matrix": {
+      "fn": 39,
+      "fp": 139,
+      "tn": 813,
+      "tp": 144
+    },
+    "f1": 0.6180257510729613,
+    "feature_count": 47,
+    "fnr": 0.21311475409836064,
+    "fpr": 0.14600840336134455,
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.7180253063597601,
+    "pr_auc_definition": "average_precision",
+    "precision": 0.508833922261484,
+    "recall": 0.7868852459016393,
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.009453781512605041,
+        "budget": 0.01,
+        "descriptive_threshold": 0.9429987219487995,
+        "fp": 9,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.31693989071038253,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 58
+      },
+      {
+        "attained_fpr": 0.029411764705882353,
+        "budget": 0.03,
+        "descriptive_threshold": 0.8624295030862458,
+        "fp": 28,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.4918032786885246,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 90
+      },
+      {
+        "attained_fpr": 0.04936974789915966,
+        "budget": 0.05,
+        "descriptive_threshold": 0.7866996117650791,
+        "fp": 47,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.6010928961748634,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 110
+      }
+    ],
+    "roc_auc": 0.8956927033108325,
+    "sample_count": 1135,
+    "schema_sha256": "dc5b1854282e3d6a72e2068c47da861db5e52fd0c3e50222dd69fcaede2b82ca",
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE",
+    "specificity": 0.8539915966386554
+  },
+  "B6": {
+    "accuracy": 0.8634361233480177,
+    "comparison_rule": "raw_LR_class_1_probability >= 0.5; DEVELOPMENT_ONLY_UNCALIBRATED",
+    "confusion_matrix": {
+      "fn": 35,
+      "fp": 120,
+      "tn": 832,
+      "tp": 148
+    },
+    "f1": 0.656319290465632,
+    "feature_count": 67,
+    "fnr": 0.1912568306010929,
+    "fpr": 0.12605042016806722,
+    "negative_count": 952,
+    "positive_count": 183,
+    "pr_auc": 0.726537038460326,
+    "pr_auc_definition": "average_precision",
+    "precision": 0.5522388059701493,
+    "recall": 0.8087431693989071,
+    "recall_at_fixed_fpr": [
+      {
+        "attained_fpr": 0.009453781512605041,
+        "budget": 0.01,
+        "descriptive_threshold": 0.955619439941001,
+        "fp": 9,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.3005464480874317,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 55
+      },
+      {
+        "attained_fpr": 0.029411764705882353,
+        "budget": 0.03,
+        "descriptive_threshold": 0.8625922737380484,
+        "fp": 28,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.5573770491803278,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 102
+      },
+      {
+        "attained_fpr": 0.046218487394957986,
+        "budget": 0.05,
+        "descriptive_threshold": 0.8227998243217987,
+        "fp": 44,
+        "negative_denominator": 952,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.6120218579234973,
+        "threshold_role": "DESCRIPTIVE_ROC_POINT_NOT_SELECTED_OR_DEPLOYED_POLICY",
+        "tp": 112
+      }
+    ],
+    "roc_auc": 0.898137943702071,
+    "sample_count": 1135,
+    "schema_sha256": "3eb392c02c0ed72d4505a5b8a7ae513f7f200e4477e7dcd5c47a4a5a90f96c1d",
+    "scope": "DEVELOPMENT_OOF_NOT_FINAL_PERFORMANCE",
+    "specificity": 0.8739495798319328
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "B2_schema_sha256": "93d3892b158c35eccfadc27c879754db69ea5293782492ee5d4ff01a33bff983",
+  "best_eligible_scorer": "S0",
+  "candidate_recipe": {
+    "family": "LogisticRegression",
+    "params": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 20000,
+      "multi_class": "deprecated",
+      "n_jobs": null,
+      "penalty": "l2",
+      "random_state": 1701,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "scaling": null,
+    "score": "uncalibrated predict_proba class1; ranking only"
+  },
+  "candidate_recipe_ready": true,
+  "complementarity": "DEFERRED",
+  "cycle": "1_OF_MAXIMUM_2",
+  "eligibility": {
+    "S1": {
+      "checks": {
+        "ap": false,
+        "auc": false,
+        "combined_short": false,
+        "fold_min": false,
+        "fold_sd": true,
+        "long_benign": true,
+        "material_3pct_gain": false,
+        "paired_support": false,
+        "preserve_1pct": false,
+        "preserve_5pct": true,
+        "under16": true
+      },
+      "eligible": false
+    },
+    "S2": {
+      "checks": {
+        "ap": true,
+        "auc": false,
+        "combined_short": true,
+        "fold_min": true,
+        "fold_sd": true,
+        "long_benign": true,
+        "material_3pct_gain": true,
+        "paired_support": false,
+        "preserve_1pct": true,
+        "preserve_5pct": true,
+        "under16": true
+      },
+      "eligible": false
+    }
+  },
+  "final_ds_v2_trained": false,
+  "policy": {
+    "auc_ap_min_change": -0.01,
+    "budget_1_5_min_change": -0.02,
+    "combined_short_recall_min_change": -0.02,
+    "fold_3_min_max_drop": 0.03,
+    "fold_3_sd_max_increase": 0.03,
+    "long_benign_fp_max_increase": 1,
+    "material_gain": 0.02,
+    "near_best_tolerance": 0.02,
+    "positive_paired_3pct_lower_bound_required": true,
+    "rule": "Non-LR eligibility: >=2pp pooled R3 gain, positive conditional paired 95% lower bound, R1/R5/AUC/AP/fold/subgroup guards. Pick earliest eligible within2pp of best eligible at all1/3/5 budgets; none=>S0. No runtime-based rejection for modest differences.",
+    "simplicity_order": [
+      "S0",
+      "S1",
+      "S2"
+    ],
+    "subgroups": "Frozen diagnostic guardrails, not additional optimization data; long-benign count guard uses17 rows and is not a population guarantee.",
+    "under16_recall_min_change": 0.0
+  },
+  "scope": "SAME_DEVELOPMENT_OOF_SELECTION_NOT_UNBIASED_FINAL_EVALUATION",
+  "selected_scorer": "S0"
+}

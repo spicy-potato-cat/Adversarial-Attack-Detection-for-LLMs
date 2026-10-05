@@ -1,0 +1,133 @@
+{
+  "baseline": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "fixture": {
+    "fold_sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+    "hash_checks": 11,
+    "integrity_sha256": "312fd7edf21f075f5d158a6317c634282d7b0652b8b500ceec9dd4da4a0cfc26",
+    "manifest_counts": {
+      "BASE_TRAIN": 1135,
+      "CALIBRATION": 233,
+      "TOTAL": 1601,
+      "VALIDATION": 233
+    },
+    "statistics": {
+      "fixture_version": "quality_001_development_folds_v1",
+      "folds": [
+        {
+          "lineage_groups": 227,
+          "negative": 191,
+          "outer_fold": 0,
+          "outer_training_rows": 908,
+          "positive": 36,
+          "rows": 227,
+          "sources": {
+            "Do-Not-Answer": {
+              "negative": 132,
+              "positive": 0,
+              "rows": 132
+            },
+            "deepset Prompt Injection": {
+              "negative": 59,
+              "positive": 36,
+              "rows": 95
+            }
+          }
+        },
+        {
+          "lineage_groups": 226,
+          "negative": 191,
+          "outer_fold": 1,
+          "outer_training_rows": 908,
+          "positive": 36,
+          "rows": 227,
+          "sources": {
+            "Do-Not-Answer": {
+              "negative": 132,
+              "positive": 0,
+              "rows": 132
+            },
+            "deepset Prompt Injection": {
+              "negative": 59,
+              "positive": 36,
+              "rows": 95
+            }
+          }
+        },
+        {
+          "lineage_groups": 227,
+          "negative": 190,
+          "outer_fold": 2,
+          "outer_training_rows": 908,
+          "positive": 37,
+          "rows": 227,
+          "sources": {
+            "Do-Not-Answer": {
+              "negative": 132,
+              "positive": 0,
+              "rows": 132
+            },
+            "deepset Prompt Injection": {
+              "negative": 58,
+              "positive": 37,
+              "rows": 95
+            }
+          }
+        },
+        {
+          "lineage_groups": 227,
+          "negative": 190,
+          "outer_fold": 3,
+          "outer_training_rows": 908,
+          "positive": 37,
+          "rows": 227,
+          "sources": {
+            "Do-Not-Answer": {
+              "negative": 131,
+              "positive": 0,
+              "rows": 131
+            },
+            "deepset Prompt Injection": {
+              "negative": 59,
+              "positive": 37,
+              "rows": 96
+            }
+          }
+        },
+        {
+          "lineage_groups": 227,
+          "negative": 190,
+          "outer_fold": 4,
+          "outer_training_rows": 908,
+          "positive": 37,
+          "rows": 227,
+          "sources": {
+            "Do-Not-Answer": {
+              "negative": 132,
+              "positive": 0,
+              "rows": 132
+            },
+            "deepset Prompt Injection": {
+              "negative": 58,
+              "positive": 37,
+              "rows": 95
+            }
+          }
+        }
+      ],
+      "held_out_assignments_per_sample": 1,
+      "lineage_groups": 1134,
+      "lineage_leakage": 0,
+      "role": "DEVELOPMENT_ONLY",
+      "rows": 1135,
+      "training_fold_memberships_per_sample": 4
+    },
+    "status": "PASS"
+  },
+  "mismatches": 0,
+  "original_baseline_files_checked": 96
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_SYNTHETIC_ONLY",
+  "device": "cpu",
+  "batch_size": 8,
+  "tokens_per_example": 256,
+  "synthetic_loss": 0.7193474769592285,
+  "gradient_norm": 2.417553424835205,
+  "transformer_parameters_updated": true,
+  "step_seconds": 12.481250799999543,
+  "estimated_max_length_training_minutes": 88.61688067999675,
+  "estimate_scope": "one worst-length synthetic step; estimate, not measured authoritative runtime",
+  "deterministic_inference": true,
+  "project_data_used": false,
+  "authoritative_model_trained": false,
+  "recipe_sha256": "2b5b41ce90ff931caf6a6fbddcd2beed19ea802cf657125b996dbdf0c96b0484"
+}

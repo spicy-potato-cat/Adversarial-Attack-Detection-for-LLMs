@@ -16,6 +16,10 @@ from detection_service.app.detectors.semantic.classifier import (
     SemanticClassifierError,
 )
 from detection_service.app.detectors.semantic.config import SemanticConfig
+from detection_service.app.detectors.semantic.calibration import (
+    SemanticCalibrationError,
+    SigmoidCalibrator,
+)
 from detection_service.app.detectors.semantic.embeddings import (
     EmbeddingEncoder,
     SemanticEncoderError,
@@ -36,11 +40,13 @@ class SemanticBaselineDetector(BaseDetector):
         config: SemanticConfig,
         encoder: EmbeddingEncoder | None = None,
         classifier: LogisticRegressionSemanticClassifier | None = None,
+        calibrator: SigmoidCalibrator | None = None,
     ) -> None:
         config.validate()
         self.config = config
         self.encoder = encoder or SentenceTransformerEncoder(config)
         self.classifier = classifier
+        self.calibrator = calibrator
         self.detector_version = (
             classifier.metadata.classifier_version if classifier is not None else config.classifier_version
         )
@@ -51,6 +57,7 @@ class SemanticBaselineDetector(BaseDetector):
         artifact_dir: str | Path,
         *,
         device: str | None = None,
+        require_calibration: bool = False,
     ) -> "SemanticBaselineDetector":
         source = Path(artifact_dir)
         config_path = source / "model_config.json"
@@ -77,7 +84,14 @@ class SemanticBaselineDetector(BaseDetector):
             raise SemanticDetectorError(f"semantic classifier artifact is invalid: {exc}") from exc
         except (KeyError, TypeError, ValueError) as exc:
             raise SemanticDetectorError("semantic model artifact configuration is invalid") from exc
-        return cls(semantic_config, classifier=classifier)
+        calibration_dir = source / "calibration"
+        calibrator = None
+        if require_calibration or calibration_dir.exists():
+            try:
+                calibrator = SigmoidCalibrator.load(calibration_dir, source)
+            except SemanticCalibrationError as exc:
+                raise SemanticDetectorError(str(exc)) from exc
+        return cls(semantic_config, classifier=classifier, calibrator=calibrator)
 
     def detect(self, request: DetectionRequest) -> DetectorResult:
         started = perf_counter()
@@ -98,7 +112,10 @@ class SemanticBaselineDetector(BaseDetector):
         try:
             embedding = self.encoder.encode([request.content.text])
             raw_score = float(self.classifier.predict_raw(embedding)[0])
-        except (SemanticEncoderError, SemanticClassifierError) as exc:
+            calibrated_probability = (
+                float(self.calibrator.predict([raw_score])[0]) if self.calibrator is not None else None
+            )
+        except (SemanticEncoderError, SemanticClassifierError, SemanticCalibrationError) as exc:
             raise SemanticDetectorError(str(exc)) from exc
 
         return DetectorResult(
@@ -106,6 +123,7 @@ class SemanticBaselineDetector(BaseDetector):
             detector_version=self.detector_version,
             status="success",
             raw_score=raw_score,
+            calibrated_probability=calibrated_probability,
             binary_vote=(
                 raw_score >= self.classifier.metadata.default_cutpoint
                 if self.classifier.metadata.default_cutpoint is not None
@@ -136,6 +154,19 @@ class SemanticBaselineDetector(BaseDetector):
                     else None
                 ),
                 "default_cutpoint": self.classifier.metadata.default_cutpoint,
+                "binary_vote_basis": "raw_score",
+                "calibration_version": (
+                    self.calibrator.metadata["calibration_version"] if self.calibrator else None
+                ),
+                "calibration_method": (
+                    self.calibrator.metadata["calibration_method"] if self.calibrator else None
+                ),
+                "calibration_manifest_sha256": (
+                    self.calibrator.metadata["calibration_manifest_sha256"] if self.calibrator else None
+                ),
+                "calibrated_probability_type": (
+                    "frozen_sigmoid_mapping" if self.calibrator else None
+                ),
             },
         )
 

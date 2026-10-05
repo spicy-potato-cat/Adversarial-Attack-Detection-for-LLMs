@@ -1,0 +1,30 @@
+{
+  "analysis_config_sha256": "6cef1e880469155d0a99c976358c51d35d434eaafb1d7b055e61ba0494f07208",
+  "calibration_used": false,
+  "coverage": [
+    {
+      "input_tokens": 6,
+      "tokens_analyzed": 6,
+      "tokens_excluded": 0,
+      "truncated": false
+    },
+    {
+      "input_tokens": 1504,
+      "tokens_analyzed": 256,
+      "tokens_excluded": 1248,
+      "truncated": true
+    }
+  ],
+  "deterministic_inference": true,
+  "device": "cpu",
+  "epochs": 3,
+  "optimizer_steps": 3,
+  "parameters_updated": true,
+  "project_data_used": false,
+  "project_payloads_opened": [],
+  "protected_used": false,
+  "runtime_seconds": 5.892881800000396,
+  "status": "PASS_SYNTHETIC_ONLY",
+  "training_batch_size": 8,
+  "validation_used": false
+}

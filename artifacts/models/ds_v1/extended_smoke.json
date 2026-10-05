@@ -1,0 +1,218 @@
+{
+  "cases": {
+    "long": {
+      "binary_vote": true,
+      "calibrated_probability": 0.9971823471286265,
+      "detector_id": "statistical_perplexity",
+      "detector_version": "ds_v1",
+      "features": {
+        "global_perplexity": 1.0091932022682466,
+        "high_surprisal_ratio": 0.0004884004884004884,
+        "max_surprisal": 12.971814155578613,
+        "max_window_perplexity": 1.3283419066323592,
+        "mean_surprisal": 0.00915120199934414,
+        "mean_window_perplexity": 1.005495965071526,
+        "std_window_perplexity": 0.041001529330322244,
+        "surface_anomaly": {
+          "character_entropy": 0.3152050795429148,
+          "longest_token_ratio": 0.00019047619047619048,
+          "non_ascii_ratio": 0.0,
+          "punctuation_ratio": 0.0,
+          "single_character_token_ratio": 0.0,
+          "zero_width_count": 0
+        },
+        "surprisal_std": 0.30208879480388223,
+        "whole_prompt_nll": 0.00915120199934414,
+        "whole_prompt_ppl": 1.0091932022682466,
+        "window_count": 63
+      },
+      "input_coverage": {
+        "coverage_ratio": 0.9097978227060654,
+        "inference_chunks": 5,
+        "input_tokens": 4502,
+        "model_context_tokens": 1024,
+        "scoreable_tokens": 4501,
+        "tokens_analyzed": 4095,
+        "tokens_excluded": 406,
+        "truncated": true,
+        "window_size": 128,
+        "window_strategy": "sliding",
+        "window_stride": 64
+      },
+      "latency_ms": 4461.0186999998405,
+      "metadata": {
+        "binary_vote_basis": "calibrated_probability",
+        "calibration_method": "platt_sigmoid_on_lr_log_odds",
+        "calibration_version": "ds_v1_cal_v1",
+        "character_length": 31500,
+        "cutpoint_type": "DEFAULT_DEVELOPMENT_CUTPOINT",
+        "default_cutpoint": 0.5,
+        "feature_extractor_version": "v0.1",
+        "feature_schema_sha256": "2b042f88e7403985e5f94e34bb1107b377069e591322767a482a33b5e2cbf8b7",
+        "final_operating_point": "NOT_FROZEN",
+        "probability_type": "raw_LR_class_1_probability",
+        "runtime": {
+          "model_dtype": "torch.float32",
+          "torch_version": "2.6.0",
+          "transformers_version": "4.49.0"
+        }
+      },
+      "model": {
+        "device": "cpu",
+        "model_id": "distilbert/distilgpt2",
+        "model_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+        "tokenizer_id": "distilbert/distilgpt2"
+      },
+      "raw_score": 0.9970684577578696,
+      "semantic_features": null,
+      "status": "success",
+      "warnings": [
+        "INPUT_TRUNCATED_TO_CONFIGURED_MAX_ANALYSIS_TOKENS"
+      ]
+    },
+    "short": {
+      "binary_vote": false,
+      "calibrated_probability": 0.049724333930622526,
+      "detector_id": "statistical_perplexity",
+      "detector_version": "ds_v1",
+      "features": {
+        "global_perplexity": 1492.7705582336137,
+        "high_surprisal_ratio": 0.3333333333333333,
+        "max_surprisal": 12.136209487915039,
+        "max_window_perplexity": 1492.7705582336137,
+        "mean_surprisal": 7.3083891073862715,
+        "mean_window_perplexity": 1492.7705582336137,
+        "std_window_perplexity": 0.0,
+        "surface_anomaly": {
+          "character_entropy": 0.4543018216888188,
+          "longest_token_ratio": 0.3333333333333333,
+          "non_ascii_ratio": 0.0,
+          "punctuation_ratio": 0.030303030303030304,
+          "single_character_token_ratio": 0.0,
+          "zero_width_count": 0
+        },
+        "surprisal_std": 3.369495811712166,
+        "whole_prompt_nll": 7.3083891073862715,
+        "whole_prompt_ppl": 1492.7705582336137,
+        "window_count": 1
+      },
+      "input_coverage": {
+        "coverage_ratio": 1.0,
+        "inference_chunks": 1,
+        "input_tokens": 7,
+        "model_context_tokens": 1024,
+        "scoreable_tokens": 6,
+        "tokens_analyzed": 6,
+        "tokens_excluded": 0,
+        "truncated": false,
+        "window_size": 128,
+        "window_strategy": "sliding",
+        "window_stride": 64
+      },
+      "latency_ms": 301.68500000036147,
+      "metadata": {
+        "binary_vote_basis": "calibrated_probability",
+        "calibration_method": "platt_sigmoid_on_lr_log_odds",
+        "calibration_version": "ds_v1_cal_v1",
+        "character_length": 33,
+        "cutpoint_type": "DEFAULT_DEVELOPMENT_CUTPOINT",
+        "default_cutpoint": 0.5,
+        "feature_extractor_version": "v0.1",
+        "feature_schema_sha256": "2b042f88e7403985e5f94e34bb1107b377069e591322767a482a33b5e2cbf8b7",
+        "final_operating_point": "NOT_FROZEN",
+        "probability_type": "raw_LR_class_1_probability",
+        "runtime": {
+          "model_dtype": "torch.float32",
+          "torch_version": "2.6.0",
+          "transformers_version": "4.49.0"
+        }
+      },
+      "model": {
+        "device": "cpu",
+        "model_id": "distilbert/distilgpt2",
+        "model_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+        "tokenizer_id": "distilbert/distilgpt2"
+      },
+      "raw_score": 0.24547508913817634,
+      "semantic_features": null,
+      "status": "success",
+      "warnings": []
+    },
+    "unicode": {
+      "binary_vote": false,
+      "calibrated_probability": 0.15905457756969762,
+      "detector_id": "statistical_perplexity",
+      "detector_version": "ds_v1",
+      "features": {
+        "global_perplexity": 1202.2340992163784,
+        "high_surprisal_ratio": 0.3076923076923077,
+        "max_surprisal": 18.12289810180664,
+        "max_window_perplexity": 1202.2340992163784,
+        "mean_surprisal": 7.091936854215769,
+        "mean_window_perplexity": 1202.2340992163784,
+        "std_window_perplexity": 0.0,
+        "surface_anomaly": {
+          "character_entropy": 0.5361677493314689,
+          "longest_token_ratio": 0.2894736842105263,
+          "non_ascii_ratio": 0.10526315789473684,
+          "punctuation_ratio": 0.05263157894736842,
+          "single_character_token_ratio": 0.2857142857142857,
+          "zero_width_count": 0
+        },
+        "surprisal_std": 5.192727779519256,
+        "whole_prompt_nll": 7.091936854215769,
+        "whole_prompt_ppl": 1202.2340992163784,
+        "window_count": 1
+      },
+      "input_coverage": {
+        "coverage_ratio": 1.0,
+        "inference_chunks": 1,
+        "input_tokens": 14,
+        "model_context_tokens": 1024,
+        "scoreable_tokens": 13,
+        "tokens_analyzed": 13,
+        "tokens_excluded": 0,
+        "truncated": false,
+        "window_size": 128,
+        "window_strategy": "sliding",
+        "window_stride": 64
+      },
+      "latency_ms": 175.67330000019865,
+      "metadata": {
+        "binary_vote_basis": "calibrated_probability",
+        "calibration_method": "platt_sigmoid_on_lr_log_odds",
+        "calibration_version": "ds_v1_cal_v1",
+        "character_length": 38,
+        "cutpoint_type": "DEFAULT_DEVELOPMENT_CUTPOINT",
+        "default_cutpoint": 0.5,
+        "feature_extractor_version": "v0.1",
+        "feature_schema_sha256": "2b042f88e7403985e5f94e34bb1107b377069e591322767a482a33b5e2cbf8b7",
+        "final_operating_point": "NOT_FROZEN",
+        "probability_type": "raw_LR_class_1_probability",
+        "runtime": {
+          "model_dtype": "torch.float32",
+          "torch_version": "2.6.0",
+          "transformers_version": "4.49.0"
+        }
+      },
+      "model": {
+        "device": "cpu",
+        "model_id": "distilbert/distilgpt2",
+        "model_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+        "tokenizer_id": "distilbert/distilgpt2"
+      },
+      "raw_score": 0.4725393571582166,
+      "semantic_features": null,
+      "status": "success",
+      "warnings": []
+    }
+  },
+  "default_factory": "PASS",
+  "model_reuse": true,
+  "project_text_used": false,
+  "protected_data_used": false,
+  "repeat_deterministic": true,
+  "scope": "REAL CPU SYNTHETIC ENGINEERING ONLY",
+  "status": "PASS",
+  "whitespace_rejection_http_status": 422
+}

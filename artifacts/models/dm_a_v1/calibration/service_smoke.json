@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "http_status": 200,
+  "detector_result": {
+    "detector_id": "semantic_embedding_lr",
+    "detector_version": "dm_a_v1",
+    "status": "success",
+    "raw_score": 0.35952208369973776,
+    "calibrated_probability": 0.09938668294115482,
+    "binary_vote": false,
+    "features": null,
+    "semantic_features": {
+      "embedding_dim": 1024,
+      "embedding_model_id": "WhereIsAI/UAE-Large-V1",
+      "embedding_model_revision": "local-cache-model_safetensors_sha256:8ac0e0e2eb9f5371c528f5269876e33b298790699ddf3b824efeef9ded542e24",
+      "normalized_embeddings": true,
+      "classifier_type": "logistic_regression",
+      "classifier_version": "dm_a_v1"
+    },
+    "input_coverage": null,
+    "model": {
+      "model_id": "WhereIsAI/UAE-Large-V1",
+      "model_revision": "local-cache-model_safetensors_sha256:8ac0e0e2eb9f5371c528f5269876e33b298790699ddf3b824efeef9ded542e24",
+      "tokenizer_id": "WhereIsAI/UAE-Large-V1",
+      "device": "cpu"
+    },
+    "latency_ms": 143.64579999983107,
+    "warnings": [],
+    "metadata": {
+      "pooling": "cls_token",
+      "max_length": 512,
+      "batch_size": 16,
+      "training_manifest_id": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+      "feature_normalization": "sentence-transformers normalized embeddings",
+      "label_mapping": {
+        "benign": 0,
+        "attack": 1
+      },
+      "probability_type": "raw_logistic_regression_probability",
+      "cutpoint_type": "DEFAULT_DEVELOPMENT_CUTPOINT",
+      "default_cutpoint": 0.5,
+      "binary_vote_basis": "raw_score",
+      "calibration_version": "dm_a_v1_sigmoid_v1",
+      "calibration_method": "platt_sigmoid_on_lr_log_odds",
+      "calibration_manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+      "calibrated_probability_type": "frozen_sigmoid_mapping"
+    }
+  },
+  "repeat_deterministic": true
+}

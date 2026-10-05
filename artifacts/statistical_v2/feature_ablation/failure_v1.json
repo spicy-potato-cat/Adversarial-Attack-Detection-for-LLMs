@@ -1,0 +1,6 @@
+{
+  "elapsed_seconds": 60.5666306000021,
+  "exception_type": "ConvergenceWarning",
+  "message": "lbfgs failed to converge (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.\n\nIncrease the number of iterations (max_iter) or scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression",
+  "status": "STOP_FOR_REVIEW"
+}

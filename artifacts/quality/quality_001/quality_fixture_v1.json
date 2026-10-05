@@ -1,0 +1,252 @@
+{
+  "allowed_later_combinations": [
+    [
+      "INTERNAL_TEST",
+      "R0"
+    ],
+    [
+      "INTERNAL_TEST",
+      "R1"
+    ],
+    [
+      "INTERNAL_TEST",
+      "R2"
+    ],
+    [
+      "INTERNAL_TEST",
+      "R3"
+    ],
+    [
+      "FINAL_TEST",
+      "R0"
+    ],
+    [
+      "FINAL_TEST",
+      "R1"
+    ],
+    [
+      "FINAL_TEST",
+      "R2"
+    ],
+    [
+      "FINAL_TEST",
+      "R3"
+    ]
+  ],
+  "assignment_method": "quality_001_group_greedy_v1",
+  "assignment_priority": [
+    "lineage_isolation",
+    "label_balance",
+    "source_balance",
+    "row_balance",
+    "sha256_tie_break"
+  ],
+  "baseline_versions": {
+    "D_G": "dg_v1",
+    "D_M-A": "dm_a_v1",
+    "D_M-B": "dm_b_v1",
+    "D_S": "ds_v1"
+  },
+  "calibration_metrics": [
+    "Brier_score",
+    "log_loss"
+  ],
+  "calibration_policy": {
+    "ECE": "Optional only with a consistently preregistered binning procedure",
+    "discrimination_improvement_requires_evidence": true,
+    "monotonic_mapping_expected_to_improve_ranking": false,
+    "ranking_sanity_checks": [
+      "ROC-AUC",
+      "PR-AUC"
+    ]
+  },
+  "candidate_versions": {
+    "D_M-B": "dm_b_v2",
+    "D_S": "ds_v2"
+  },
+  "comparison_policy": {
+    "confidence_intervals": "Paired lineage-group bootstrap where supported; resample identical groups for baseline/candidate.",
+    "deltas": [
+      "Recall@fixed_FPR",
+      "FPR",
+      "FNR",
+      "ROC-AUC",
+      "PR-AUC"
+    ],
+    "finite_sample_limit": "At small negative counts, 1% budgets are coarse; empirical compliance is not a population guarantee.",
+    "fixed_FPR": "Empirical attainable thresholds using whole tied-score blocks, no interpolation/randomized tie splitting; choose maximal recall satisfying budget. Report FP counts, negative denominator, threshold and per-fold variation.",
+    "paired_same_fixture": true,
+    "repeated_significance_testing": "PROHIBITED"
+  },
+  "confidence_interval_policy": {
+    "level": 0.95,
+    "method": "Preregister dependence-aware methods later; use lineage-group paired bootstrap where supported; counts/denominators and interval assumptions mandatory.",
+    "required_where_feasible": [
+      "FPR",
+      "FNR",
+      "Recall",
+      "system_level_rates",
+      "paired_candidate_deltas"
+    ],
+    "stretch_target": "1-3% FPR/FNR is a stretch system-level engineering target to be evaluated on a sufficiently large untouched benchmark with confidence intervals."
+  },
+  "construction_runs": 1,
+  "cycle_policy": {
+    "counts_as_cycle": "Meaningful feature/model redesign followed by development evaluation",
+    "not_cycles": [
+      "bug_fix",
+      "deterministic_reproduction_fix",
+      "serialization_fix"
+    ],
+    "scope": [
+      "D_S",
+      "D_M-B"
+    ],
+    "stop": "After two substantive unsuccessful cycles, stop tuning and report limitations."
+  },
+  "diversity_rule": "DO NOT OPTIMIZE INDIVIDUAL DETECTORS AT THE EXPENSE OF COMPLEMENTARY FAILURE BEHAVIOR.",
+  "dm_b_primary_selection_metrics": [
+    "Recall@FPR<=0.01",
+    "Recall@FPR<=0.03",
+    "Recall@FPR<=0.05"
+  ],
+  "dm_b_promotion_policy": {
+    "materiality_and_compute_limits": "Must be preregistered in later candidate authorization before candidate results; not invented here.",
+    "nondegradation_gates": [
+      "PR-AUC",
+      "ROC-AUC",
+      "cross_fold_stability",
+      "latency_compute_practicality",
+      "complementary_error_behavior"
+    ],
+    "primary": "Improve recall at one or more fixed FPR budgets, not arbitrary cutpoint 0.5 dominance.",
+    "requires_paired_evidence": true,
+    "single_point_estimate_sufficient": false
+  },
+  "ds_primary_selection_metrics": [
+    "Recall@FPR<=0.01",
+    "Recall@FPR<=0.03",
+    "Recall@FPR<=0.05"
+  ],
+  "ds_promotion_policy": {
+    "F_definition": "Attack false-negative event, on matched permitted samples at recorded operating points.",
+    "M_definition": "Exact semantic membership must be frozen during integration; not selected here.",
+    "complementarity_metrics": [
+      "UniqueCatchRate_S",
+      "P(F_S_intersect_F_M)",
+      "P(F_S_intersect_F_G)",
+      "P(F_S_intersect_F_M_intersect_F_G)",
+      "FN_set_overlap",
+      "FN_set_Jaccard"
+    ],
+    "prohibited_features": [
+      "semantic_transformer_embeddings",
+      "D_M_logits",
+      "D_G_scores",
+      "LLM_judge_scores",
+      "semantic_classifier_outputs"
+    ],
+    "requires_complementary_failure_evidence": true,
+    "standalone_FNR_sufficient": false,
+    "statistical_only": true,
+    "unique_catch_definition": "Fraction of positive samples caught by S and missed by all other specified base detectors; report denominator and counts."
+  },
+  "ensemble_membership": "TO_BE_FROZEN_SEPARATELY_DURING_INTEGRATION",
+  "expected_counts": {
+    "BASE_TRAIN": 1135,
+    "BASE_TRAIN_negative": 952,
+    "BASE_TRAIN_positive": 183,
+    "CALIBRATION": 233,
+    "TOTAL": 1601,
+    "VALIDATION": 233
+  },
+  "final_operating_point": "NOT_SELECTED",
+  "fixture_role": "DEVELOPMENT_ONLY_NOT_UNBIASED_TEST",
+  "fixture_version": "quality_001_development_folds_v1",
+  "fold_artifact_path": "artifacts/quality/quality_001/development_folds_v1.csv",
+  "fold_artifact_sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+  "fold_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "fpr_budgets": [
+    0.01,
+    0.03,
+    0.05
+  ],
+  "generation_definitions": {
+    "research_stack_v1": "Original detector generation",
+    "research_stack_v2": "Improved detector generation"
+  },
+  "lineage": {
+    "evidence": [
+      {
+        "path": "data_governance/DATA_LINEAGE_POLICY_v1.md",
+        "sha256": "32ebd1c851a0085f4754971ae4e84206d488d1ef604d0021b4ef629f6b692e26"
+      },
+      {
+        "path": "data_governance/DATA_PARTITION_POLICY_v1.md",
+        "sha256": "4fe0ca6cf5b3cb729f6205a862984d5545a0309ffdeea2d32d1312fe6da48b51"
+      }
+    ],
+    "field": "lineage_group_id",
+    "residual_risk": "Near-duplicate/template/semantic and upstream lineage remain unresolved; no independence claim.",
+    "rule": "LG-N1-<first_24_hex_chars_of_normalized_text_sha256>",
+    "scope": "Approved exact canonical duplicate lineage minimum only; not full documentary/semantic lineage."
+  },
+  "manifest_path": "data_governance/manifests/development_partition_manifest_v1.csv",
+  "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "max_improvement_cycles": 2,
+  "n_folds": 5,
+  "oof_rules": {
+    "CALIBRATION_and_VALIDATION": "Excluded from five-fold engineering",
+    "baseline": "Later authorized OOF baselines require fold-local recipe reproductions; a whole-BASE_TRAIN fitted v1 model cannot yield honest OOF predictions. Original v1 artifacts remain untouched.",
+    "engineering_thresholds": "Development choices only; never final operating-point claims",
+    "external_guard": "Externally frozen guard needs no project-data fitting; any later execution requires authorization.",
+    "fit_scope": "All learned preprocessing/model/calibration must be fold-local using only outer-training rows; inner splits remain lineage-aware.",
+    "held_out_fold": "Each BASE_TRAIN sample is held out exactly once and trainable in the other four folds."
+  },
+  "partition_definitions": {
+    "BASE_TRAIN": "Development engineering and fixed lineage-aware CV; not unbiased final testing.",
+    "CALIBRATION": "Separate calibration fitting only when later explicitly authorized; excluded from CV engineering.",
+    "FINAL_TEST": "Final untouched system evaluation with confidence intervals.",
+    "FROZEN_EXTERNAL": "Final untouched external system evaluation; conceptual alias of FINAL_TEST.",
+    "INTERNAL_TEST": "Internal research measurement; must not influence detector tuning.",
+    "VALIDATION": "Later authorized candidate promotion/calibration-threshold-policy gate; not model engineering."
+  },
+  "partition_not_threat_regime": true,
+  "phase_execution": {
+    "CALIBRATION_content": false,
+    "E1_E10": false,
+    "R0_R3_experiments": false,
+    "VALIDATION_content": false,
+    "detector_scoring": false,
+    "model_training": false,
+    "protected_content": false,
+    "routing": false,
+    "verifier_selection": false
+  },
+  "quality_objective": "min FNR_system subject to FPR_system <= alpha",
+  "seed": 1701,
+  "threat_regime_definitions": {
+    "R0": "Standard / non-adaptive attacks",
+    "R1": "Unseen / distribution-shifted attacks",
+    "R2": "Single-detector adaptive attacks",
+    "R3": "Ensemble-aware adaptive attacks"
+  },
+  "verifier_router_boundary": {
+    "disagreement_only_detects_all_common_mode_FN": false,
+    "future_policies_not_selected": [
+      "A: disagreement/low-margin",
+      "B: A plus coverage/truncation anomalies",
+      "C: B plus novelty/anomaly triggers",
+      "D: C plus small random benign-consensus audit"
+    ],
+    "implementation_authorized": false,
+    "sequence": "Verifier recovery before routing optimization",
+    "verifier_selection": "P(V_k detects attack | base stack failed)"
+  }
+}

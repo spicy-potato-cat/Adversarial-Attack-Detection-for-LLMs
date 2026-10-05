@@ -1,0 +1,211 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-10-02T15:38:03.178868+00:00",
+  "project_data_accessed": false,
+  "records": [
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_a_v1\\classifier.joblib",
+      "expected": "3103c504a4ccf4afece9b97373f2b913d3a1de22dc8151d4a3b582bfcf1c6e97",
+      "actual": "3103c504a4ccf4afece9b97373f2b913d3a1de22dc8151d4a3b582bfcf1c6e97",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_a_v1\\classifier_metadata.json",
+      "expected": "f07aa02dd3fc5496a07bf28f8edd47b863f56b22048e564e77eff509e9ca7747",
+      "actual": "f07aa02dd3fc5496a07bf28f8edd47b863f56b22048e564e77eff509e9ca7747",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_a_v1\\model_config.json",
+      "expected": "14e2f1c17d1c515574c145cd88005aacef40855b45cfe649a6fe15b840a054a5",
+      "actual": "14e2f1c17d1c515574c145cd88005aacef40855b45cfe649a6fe15b840a054a5",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_a_v1\\calibration\\calibrator.json",
+      "expected": "8769d252cce23df70c2cf2264f7765d0e7a10fc7650cc3ea8489e826cda8ff36",
+      "actual": "8769d252cce23df70c2cf2264f7765d0e7a10fc7650cc3ea8489e826cda8ff36",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\.cache\\torch\\sentence_transformers\\WhereIsAI_UAE-Large-V1\\model.safetensors",
+      "expected": "8ac0e0e2eb9f5371c528f5269876e33b298790699ddf3b824efeef9ded542e24",
+      "actual": "8ac0e0e2eb9f5371c528f5269876e33b298790699ddf3b824efeef9ded542e24",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\.cache\\torch\\sentence_transformers\\WhereIsAI_UAE-Large-V1\\tokenizer.json",
+      "expected": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "actual": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\transformer\\config.json",
+      "expected": "3d747d91542e014f5db4d7577924298fa71d4396e8eb9e429ed1ea95ddbf41c8",
+      "actual": "3d747d91542e014f5db4d7577924298fa71d4396e8eb9e429ed1ea95ddbf41c8",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\transformer\\merges.txt",
+      "expected": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "actual": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\transformer\\model.safetensors",
+      "expected": "0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844",
+      "actual": "0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\transformer\\special_tokens_map.json",
+      "expected": "8574792bfefae68f2ce2eae93a4145d95b1232c59e71094bcdcb49dbcb549c97",
+      "actual": "8574792bfefae68f2ce2eae93a4145d95b1232c59e71094bcdcb49dbcb549c97",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\transformer\\tokenizer.json",
+      "expected": "fa6e9e4de220a47ece0c8f9c1865f4e353419331bf8ba21ea9d34230a702ffcb",
+      "actual": "fa6e9e4de220a47ece0c8f9c1865f4e353419331bf8ba21ea9d34230a702ffcb",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\transformer\\tokenizer_config.json",
+      "expected": "253e231e9ae9fd6e64762375b14c8f7f266c711b75d2b74a17170e6f3defe729",
+      "actual": "253e231e9ae9fd6e64762375b14c8f7f266c711b75d2b74a17170e6f3defe729",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\transformer\\vocab.json",
+      "expected": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e",
+      "actual": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\model_config.json",
+      "expected": "c0dd94ebf78d1918a74e70964ed3e0d0873685c04c51d2835710ee237d36fa10",
+      "actual": "c0dd94ebf78d1918a74e70964ed3e0d0873685c04c51d2835710ee237d36fa10",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\integrity_manifest.json",
+      "expected": "8cca036d1ea11250f337fedbd551ffd7865b838af1ae86dcaaf64ac7a29d09aa",
+      "actual": "8cca036d1ea11250f337fedbd551ffd7865b838af1ae86dcaaf64ac7a29d09aa",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\calibration\\calibrator.json",
+      "expected": "7af044ff8e0e29020450bffa93f92c973da4cc4a4888067d88938eefbb2566b9",
+      "actual": "7af044ff8e0e29020450bffa93f92c973da4cc4a4888067d88938eefbb2566b9",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_a_v1\\calibration\\calibration_config.json",
+      "expected": "6ee3ec2371aa4887e69b1adc327c0abba6d7f8c38f0ae4dcedbfbd3c846243ca",
+      "actual": "6ee3ec2371aa4887e69b1adc327c0abba6d7f8c38f0ae4dcedbfbd3c846243ca",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_a_v1\\calibration\\calibration_metadata.json",
+      "expected": "8d24e38ad4a7be4a333ea92a8623c6908815da9e7b1af1c6bd678f0d2fb1d2fa",
+      "actual": "8d24e38ad4a7be4a333ea92a8623c6908815da9e7b1af1c6bd678f0d2fb1d2fa",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\app\\detectors\\statistical\\config.py",
+      "expected": "e5cc8512c3acbdad323ec826176513fd8173c8864c7aa8ae081a7503d46f7f17",
+      "actual": "e5cc8512c3acbdad323ec826176513fd8173c8864c7aa8ae081a7503d46f7f17",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\app\\detectors\\statistical\\features.py",
+      "expected": "b2ccdc4cc64789170a730990570373079645b870f027f6d11da2d78fe71866fa",
+      "actual": "b2ccdc4cc64789170a730990570373079645b870f027f6d11da2d78fe71866fa",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\app\\detectors\\statistical\\perplexity_detector.py",
+      "expected": "032ab0652fdc5d4ddd3d6e833d558f29d63d04164e90901dc3eecd05b3dde599",
+      "actual": "032ab0652fdc5d4ddd3d6e833d558f29d63d04164e90901dc3eecd05b3dde599",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\app\\detectors\\statistical\\perplexity_engine.py",
+      "expected": "cd978bd44d719dbee29b510f8f6138638a2ff30d8d23a6a379fdf48e5c26b4c1",
+      "actual": "cd978bd44d719dbee29b510f8f6138638a2ff30d8d23a6a379fdf48e5c26b4c1",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\app\\detectors\\statistical\\__init__.py",
+      "expected": "32ec738f8a25da0552facb413a694b038876ec4b35c56d21de5ed25145608a2e",
+      "actual": "32ec738f8a25da0552facb413a694b038876ec4b35c56d21de5ed25145608a2e",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dg_v1\\model_config.json",
+      "expected": "b425a32c46b959eaa50aea06088f074145c8b51bb1c6213db36e7dfccfebaffb",
+      "actual": "b425a32c46b959eaa50aea06088f074145c8b51bb1c6213db36e7dfccfebaffb",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dg_v1\\freeze_metadata.json",
+      "expected": "25145fd1efff9817ab22fafaa67f8a049bc245c237a53c20ef3897fecc263552",
+      "actual": "25145fd1efff9817ab22fafaa67f8a049bc245c237a53c20ef3897fecc263552",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\config.json",
+      "expected": "1dc4742d04507072cafffb7235dc5dba5af9ba126f7a9830b95ed7ec00fd9104",
+      "actual": "1dc4742d04507072cafffb7235dc5dba5af9ba126f7a9830b95ed7ec00fd9104",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\LICENSE",
+      "expected": "73755cee886613ae3135140882289e0a4955d5f0e90f8b1c1ffc962aa9082917",
+      "actual": "73755cee886613ae3135140882289e0a4955d5f0e90f8b1c1ffc962aa9082917",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\model.safetensors",
+      "expected": "5120e30bcd536ce285345d9ec104bea6bd6e8f94365b99a340c764f417ea5fa1",
+      "actual": "5120e30bcd536ce285345d9ec104bea6bd6e8f94365b99a340c764f417ea5fa1",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\MODEL_CARD.md",
+      "expected": "7aacb25a94cab70530bca3545feda87bf7a935eaca92998222365b090acfd97c",
+      "actual": "7aacb25a94cab70530bca3545feda87bf7a935eaca92998222365b090acfd97c",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\README.md",
+      "expected": "5d2a3e0c46397609a784a5034dc823da408aa8b5a414828609f32dc18ee16933",
+      "actual": "5d2a3e0c46397609a784a5034dc823da408aa8b5a414828609f32dc18ee16933",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\special_tokens_map.json",
+      "expected": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+      "actual": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\tokenizer.json",
+      "expected": "6eb983352e73f1697b883a8c3f6b66bdfa336ab3d29dd3687f8316d0ff2789c1",
+      "actual": "6eb983352e73f1697b883a8c3f6b66bdfa336ab3d29dd3687f8316d0ff2789c1",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\tokenizer_config.json",
+      "expected": "557b3d33d3f41b81ad769244e506549e98a1857d41dd58160aacd4d98d710b5a",
+      "actual": "557b3d33d3f41b81ad769244e506549e98a1857d41dd58160aacd4d98d710b5a",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\USE_POLICY.md",
+      "expected": "5ae40fe842b87b5773c47cfd25992a496cc09b17cbb246968762f06352d89270",
+      "actual": "5ae40fe842b87b5773c47cfd25992a496cc09b17cbb246968762f06352d89270",
+      "verified": true
+    }
+  ]
+}
