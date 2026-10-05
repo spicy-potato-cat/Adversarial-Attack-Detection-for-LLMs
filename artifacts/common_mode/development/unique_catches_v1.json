@@ -1,0 +1,183 @@
+{
+  "results": [
+    {
+      "budget": 0.01,
+      "metrics": [
+        {
+          "detector": "D_S_B2_LR",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_M-B_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_G_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_S_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_M-B_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_G_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        }
+      ]
+    },
+    {
+      "budget": 0.03,
+      "metrics": [
+        {
+          "detector": "D_S_B2_LR",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_M-B_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_G_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_S_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_M-B_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_G_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        }
+      ]
+    },
+    {
+      "budget": 0.05,
+      "metrics": [
+        {
+          "detector": "D_S_B2_LR",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_M-B_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_G_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_S_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_M-B_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        },
+        {
+          "detector": "D_G_v1",
+          "other_members_miss_count": null,
+          "recovery_given_others_miss": null,
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR",
+          "unique_catch_count": null,
+          "unique_catch_rate": null
+        }
+      ]
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION",
+  "status": "PARTIAL_D_G_UNMEASURED"
+}

@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "budget": 0.01,
+      "metrics": [
+        {
+          "all_detector_fn_count": null,
+          "all_detector_jfn": null,
+          "members": [
+            "D_S_B2_LR",
+            "D_M-B_v1",
+            "D_G_v1"
+          ],
+          "missing": [
+            "D_G_v1"
+          ],
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR"
+        },
+        {
+          "all_detector_fn_count": null,
+          "all_detector_jfn": null,
+          "members": [
+            "D_S_v1",
+            "D_M-B_v1",
+            "D_G_v1"
+          ],
+          "missing": [
+            "D_G_v1"
+          ],
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR"
+        }
+      ]
+    },
+    {
+      "budget": 0.03,
+      "metrics": [
+        {
+          "all_detector_fn_count": null,
+          "all_detector_jfn": null,
+          "members": [
+            "D_S_B2_LR",
+            "D_M-B_v1",
+            "D_G_v1"
+          ],
+          "missing": [
+            "D_G_v1"
+          ],
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR"
+        },
+        {
+          "all_detector_fn_count": null,
+          "all_detector_jfn": null,
+          "members": [
+            "D_S_v1",
+            "D_M-B_v1",
+            "D_G_v1"
+          ],
+          "missing": [
+            "D_G_v1"
+          ],
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR"
+        }
+      ]
+    },
+    {
+      "budget": 0.05,
+      "metrics": [
+        {
+          "all_detector_fn_count": null,
+          "all_detector_jfn": null,
+          "members": [
+            "D_S_B2_LR",
+            "D_M-B_v1",
+            "D_G_v1"
+          ],
+          "missing": [
+            "D_G_v1"
+          ],
+          "stack": "DEVELOPMENT_STACK_CANDIDATE",
+          "status": "UNMEASURED_MISSING_DETECTOR"
+        },
+        {
+          "all_detector_fn_count": null,
+          "all_detector_jfn": null,
+          "members": [
+            "D_S_v1",
+            "D_M-B_v1",
+            "D_G_v1"
+          ],
+          "missing": [
+            "D_G_v1"
+          ],
+          "stack": "DEVELOPMENT_STACK_V1",
+          "status": "UNMEASURED_MISSING_DETECTOR"
+        }
+      ]
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION",
+  "status": "PARTIAL_D_G_UNMEASURED"
+}

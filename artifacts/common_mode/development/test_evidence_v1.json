@@ -1,0 +1,20 @@
+{
+  "common_mode": {
+    "errors": 0,
+    "failures": 0,
+    "path": "C:\\Users\\Asus\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\common_mode\\development\\common_mode_tests.xml",
+    "sha256": "cb7c77c2fb7973b3a9720c78b440946afcbe60fbf11d915a8aa247559f142ed5",
+    "skipped": 0,
+    "status": "PASS",
+    "tests": 45
+  },
+  "existing_lightweight": {
+    "errors": 0,
+    "failures": 0,
+    "path": "C:\\Users\\Asus\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\common_mode\\development\\common_prerun_tests.xml",
+    "sha256": "d3699d3c4f7071146535da2b262d0fab69de046da47f6df6eb0761d382f697c1",
+    "skipped": 0,
+    "status": "PASS",
+    "tests": 4
+  }
+}
