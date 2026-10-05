@@ -184,3 +184,38 @@ def test_analyze_order_grouped_and_no_model_imports():
 def test_invalid_indicators(misses):
     with pytest.raises(ValueError):
         failure_metrics(misses)
+
+
+def test_committed_adapter_population_and_frontier_reconstruction():
+    from detection_service.scripts.common_mode_development import ROOT, INPUTS, canonical, read_csv, read_json
+    fixture = {r["sample_id"]: r for r in read_csv(ROOT / "artifacts/quality/quality_001/development_folds_v1.csv")}
+    data = {k: canonical(read_csv(ROOT / name), k, fixture) for k, name in INPUTS.items()}
+    ordered = align(data)
+    assert len(ordered["D_S_v1"]) == 1135
+    expected_files = {"D_S_v1": "artifacts/statistical_v2/oof/ds_v1_recipe_oof_metrics.json",
+                      "D_S_B2_LR": "artifacts/statistical_v2/scorer_comparison/scorer_metrics_v1.json",
+                      "D_M-B_v1": "artifacts/semantic_v2/oof/dm_b_v1_recipe_oof_metrics.json"}
+    for key, name in expected_files.items():
+        reference = read_json(ROOT / name)
+        if key == "D_S_B2_LR":
+            reference = reference["S0"]
+        actual = fixed_fpr([r["truth_label"] for r in ordered[key]], [r["score"] for r in ordered[key]])
+        assert [(p["tp"], p["fp"]) for p in actual] == [(p["tp"], p["fp"]) for p in reference["recall_at_fixed_fpr"]]
+
+
+@pytest.mark.parametrize("field,value", [("label", "1"), ("lineage_group", "bad"), ("fold", "5"), ("score_kind", "unknown")])
+def test_selected_candidate_adapter_refuses_drift(field, value):
+    from detection_service.scripts.common_mode_development import ROOT, INPUTS, canonical, read_csv
+    fixture = {r["sample_id"]: r for r in read_csv(ROOT / "artifacts/quality/quality_001/development_folds_v1.csv")}
+    rows = read_csv(ROOT / INPUTS["D_S_B2_LR"])
+    rows[0][field] = value
+    with pytest.raises(ValueError):
+        canonical(rows, "D_S_B2_LR", fixture)
+
+
+def test_authoritative_integrity_refusal(tmp_path):
+    from detection_service.scripts.common_mode_development import checked_hash
+    path = tmp_path / "evidence.csv"
+    path.write_bytes(b"changed")
+    with pytest.raises(ValueError, match="hash mismatch"):
+        checked_hash(path, "0" * 64)

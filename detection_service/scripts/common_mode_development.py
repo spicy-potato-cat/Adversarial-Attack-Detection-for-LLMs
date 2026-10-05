@@ -11,6 +11,7 @@ import json
 import os
 from pathlib import Path
 import platform
+import shutil
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
@@ -210,8 +211,11 @@ def run(root=ROOT, repetitions=1000):
         detectors["D_G_v1"] = canonical(read_csv(guard_file), "D_G_v1", fixture)
     result = analyze(detectors, STACKS, COMPARISON, repetitions=repetitions)
     # Check reconstructed operating points against the frozen reported results.
-    for key, name in {"D_S_v1": "artifacts/statistical_v2/oof/ds_v1_recipe_oof_metrics.json", "D_M-B_v1": "artifacts/semantic_v2/oof/dm_b_v1_recipe_oof_metrics.json"}.items():
+    for key, name in {"D_S_v1": "artifacts/statistical_v2/oof/ds_v1_recipe_oof_metrics.json", "D_M-B_v1": "artifacts/semantic_v2/oof/dm_b_v1_recipe_oof_metrics.json",
+                      "D_S_B2_LR": "artifacts/statistical_v2/scorer_comparison/scorer_metrics_v1.json"}.items():
         reference = read_json(root / name)
+        if key == "D_S_B2_LR":
+            reference = reference["S0"]
         for index, budget in enumerate(result["budgets"]):
             actual = next(r for r in budget["individual"] if r["detector"] == key)
             expected = reference["recall_at_fixed_fpr"][index]
@@ -229,6 +233,17 @@ def run(root=ROOT, repetitions=1000):
                  "attack_family": "UNAVAILABLE_IN_CONSUMED_PREDICTION_AND_FOLD_METADATA; not inferred",
                  "input_sha256": hashes}
     write_json(out / "detector_alignment_v1.json", alignment)
+    statuses = []
+    for b in result["budgets"]:
+        for point in b["individual"]:
+            key = point["detector"]
+            for r in align(detectors)[key]:
+                caught = point["threshold"] is not None and r["score"] >= point["threshold"]
+                statuses.append({"budget": b["budget"], "detector": key, "sample_id": r["sample_id"],
+                                 "truth_label": r["truth_label"], "source": r["source"], "lineage_group": r["lineage_group"],
+                                 "fold": r["fold"], "raw_score": r["score"], "detected": int(caught),
+                                 "attack_missed": int(not caught) if r["truth_label"] else None})
+    csv_output(out / "operating_point_status_v1.csv", statuses)
     for filename, category in (("individual_metrics", "individual"), ("pairwise_failure_metrics", "pairwise"),
                                ("stack_failure_metrics", "stacks"), ("unique_catches", "unique"),
                                ("ds_improvement_effect", "effect"), ("grouped_metrics", "grouped"), ("bootstrap_intervals", "bootstrap")):
@@ -243,8 +258,12 @@ def run(root=ROOT, repetitions=1000):
             environment["packages"][package] = version(package)
         except PackageNotFoundError:
             environment["packages"][package] = "NOT_INSTALLED_IN_ANALYSIS_ENVIRONMENT"
-    tests = {"existing_lightweight": test_receipt(root / "tmp/common_prerun_tests.xml"),
-             "common_mode": test_receipt(root / "tmp/common_mode_tests.xml")}
+    environment["all_installed_packages"] = subprocess.check_output([sys.executable, "-m", "pip", "freeze"], text=True).splitlines()
+    for name in ("common_prerun_tests.xml", "common_mode_tests.xml"):
+        if (root / "tmp" / name).is_file():
+            shutil.copyfile(root / "tmp" / name, out / name)
+    tests = {"existing_lightweight": test_receipt(out / "common_prerun_tests.xml"),
+             "common_mode": test_receipt(out / "common_mode_tests.xml")}
     write_json(out / "test_evidence_v1.json", tests)
     if "D_G_v1" not in detectors:
         guard_dir = root / GUARD_OUTPUT
@@ -264,13 +283,18 @@ def run(root=ROOT, repetitions=1000):
         tables.append("\nTABLE C — primary stack.\n\n" + markdown_table(b["stacks"], ["stack", "all_detector_jfn", "all_detector_fn_count"]))
         tables.append("\nTABLE D — unique catches.\n\n" + markdown_table(b["unique"], ["stack", "detector", "unique_catch_count", "unique_catch_rate", "recovery_given_others_miss"]))
         tables.append("\nTABLE E — candidate minus v1.\n\n" + markdown_table(b["effect"], ["metric", "other", "baseline", "candidate", "delta"]))
-    uncertainty = ("\n## Uncertainty\n\n1,000 paired canonical attack-lineage percentile bootstrap replicates, seed 1701; same attacks in each detector/candidate comparison. Fixed pooled points are held unchanged. Conditional development uncertainty excludes model refitting, threshold selection, development selection and dependence from overlapping training folds. The canonical lineage minimum does not resolve full upstream semantic dependence. Small-count deltas must not be treated as robust population gains. Exact intervals are in bootstrap_intervals_v1.json.\n\n"
+    interval_table = []
+    for b in result["budgets"]:
+        interval = b["bootstrap"]["intervals"]["delta/jfn/D_M-B_v1"]
+        interval_table.append({"budget": b["budget"], **interval})
+    interpretation = ("\n## Measured interpretation\n\nB2+LR reduces D_S/D_M-B shared misses from 6 to 5 at <=1% and from 4 to 3 at <=3%; both share 2 misses at <=5%. Each reduction is one attack (0.5464 percentage points). The paired conditional intervals include zero. At <=3% and <=5%, FN Jaccard increases despite fewer/unchanged shared misses because the D_S FN union shrinks. At <=5%, EJF increases because D_S marginal FNR decreases while both semantic misses remain shared. These distinctions prevent equating better standalone discrimination with less dependence. Full primary-stack reduction and statistical exclusive catches remain unmeasured without D_G.\n")
+    uncertainty = (f"\n## Uncertainty\n\n{repetitions} paired canonical attack-lineage percentile bootstrap replicates, seed 1701; same attacks in each detector/candidate comparison. Fixed pooled points are held unchanged. Conditional development uncertainty excludes model refitting, threshold selection, development selection and dependence from overlapping training folds. The canonical lineage minimum does not resolve full upstream semantic dependence. Small-count deltas must not be treated as robust population gains. Exact intervals are in bootstrap_intervals_v1.json.\n\n" + markdown_table(interval_table, ["budget", "estimate", "lower", "upper"]) + "\n"
                    "## Isolation\n\nDetector training, CALIBRATION payloads, VALIDATION payloads, protected payloads, E1-E10, R2/R3 generation and verifier/router work: **NO**. No fusion or ensemble decision policy implemented. Existing detector source and evidence unchanged.\n")
-    (reviews / "TECH_COMMON_001_DEVELOPMENT_COMMON_MODE_v1.md").write_text(intro + "\n".join(tables) + uncertainty, encoding="utf-8", newline="\n")
+    (reviews / "TECH_COMMON_001_DEVELOPMENT_COMMON_MODE_v1.md").write_text(intro + "\n".join(tables) + interpretation + uncertainty, encoding="utf-8", newline="\n")
     effects = "# TECH-COMMON-001 D_S Improvement Effect\n\nDEVELOPMENT COMMON-MODE CHARACTERIZATION. Candidate-minus-baseline deltas.\n\n"
     for b in result["budgets"]:
         effects += f'## {b["budget"]:.0%} FPR budget\n\n' + markdown_table(b["effect"], ["metric", "other", "baseline", "candidate", "delta"]) + "\n"
-    effects += "Improved standalone D_S discrimination does not by itself establish preserved statistical complementarity. Measured D_S/D_M-B joint failures and overlap are descriptive evidence only. D_S/D_G JFN/EJF/Jaccard, all-detector JFN and D_S exclusive catches cannot be concluded without D_G. No causal or final-performance claim is supported. NOT READY FOR FULL REPORT RESULTS INTEGRATION; partial two-detector development tables may be used only with this limitation.\n"
+    effects += interpretation + "\nImproved standalone D_S discrimination does not by itself establish preserved statistical complementarity. Measured D_S/D_M-B joint failures and overlap are descriptive evidence only. D_S/D_G JFN/EJF/Jaccard, all-detector JFN and D_S exclusive catches cannot be concluded without D_G. No causal or final-performance claim is supported. NOT READY FOR FULL REPORT RESULTS INTEGRATION; partial two-detector development tables may be used only with this limitation.\n"
     (reviews / "TECH_COMMON_001_D_S_IMPROVEMENT_EFFECT_v1.md").write_text(effects, encoding="utf-8", newline="\n")
     (reviews / "TECH_COMMON_001_TEST_REPORT_v1.md").write_text("# TECH-COMMON-001 Test Report\n\n" + json.dumps(tests, indent=2) + "\n\nSynthetic analytic truth tables cover all requested metrics, alignment refusals, deterministic fixed-FPR ties and 1/3/5% budgets, lineage leakage, paired deltas, bootstrap repeatability and model-free imports. Full ML/protected test suites were not run. Frozen frontier counts reconstruct for both original OOF detectors. Every available input-inventory hash checked before analysis. Missing QUALITY-001 metadata is explicitly recorded, not counted as passing.\n", encoding="utf-8", newline="\n")
     if "D_G_v1" not in detectors:

@@ -37,7 +37,7 @@ Unknown metadata is None, never an invented source/family/fold annotation.
         require(all(isinstance(i, str) and i for i in ids), "invalid sample identity")
         require(len(ids) == len(set(ids)), "duplicate sample identity")
         identity = {(r.get("detector_id"), r.get("detector_version")) for r in rows}
-        require(len(identity) == 1 and all(identity.pop()), "mixed/unknown detector identity")
+        require(len(identity) == 1 and all(isinstance(v, str) and v for v in next(iter(identity))), "mixed/unknown detector identity")
         identity = (rows[0]["detector_id"], rows[0]["detector_version"])
         require(identity not in identities, "duplicate detector identity")
         identities.add(identity)

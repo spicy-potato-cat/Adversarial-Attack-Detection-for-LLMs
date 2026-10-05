@@ -29,3 +29,10 @@
 /reviews/TECH_STAT_005*.md -text
 /detection_service/scripts/statistical_scorer_acceptance.py -text
 /detection_service/tests/test_statistical_scorer_acceptance.py -text
+
+/artifacts/common_mode/** -text
+/artifacts/guard_v1/development/** -text
+/reviews/TECH_COMMON_001*.md -text
+/reviews/TECH_GUARD_002*.md -text
+/detection_service/scripts/common_mode_development.py -text
+/detection_service/tests/test_common_mode.py -text
