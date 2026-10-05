@@ -38,3 +38,5 @@
 /reviews/TECH_STAT_007*.md -text
 /detection_service/scripts/verify_statistical_v2.py -text
 /detection_service/tests/test_statistical_v2_verification.py -text
+/detection_service/scripts/calibrate_statistical_v2.py -text
+/detection_service/tests/test_statistical_v2_calibration.py -text
