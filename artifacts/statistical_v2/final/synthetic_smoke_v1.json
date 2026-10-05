@@ -1,0 +1,34 @@
+{
+  "calibrated": false,
+  "classifier_refits": 0,
+  "ds_v1_compatibility": "PASS",
+  "real_local_LM": true,
+  "reference_refits": 0,
+  "repeat_and_reload_identical": true,
+  "results": [
+    {
+      "calibrated_probability": null,
+      "feature_count": 26,
+      "raw_score": 0.1498065090799355,
+      "status": "success",
+      "synthetic_id": 0
+    },
+    {
+      "calibrated_probability": null,
+      "feature_count": 26,
+      "raw_score": 0.31378245919738507,
+      "status": "success",
+      "synthetic_id": 1
+    },
+    {
+      "calibrated_probability": null,
+      "feature_count": 26,
+      "raw_score": null,
+      "status": "insufficient_input",
+      "synthetic_id": 2
+    }
+  ],
+  "schema_features": 26,
+  "scope": "SYNTHETIC_STRINGS_ONLY_NO_PROJECT_EVALUATION",
+  "status": "PASS"
+}

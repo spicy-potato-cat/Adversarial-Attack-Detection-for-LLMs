@@ -29,3 +29,14 @@
 /reviews/TECH_STAT_005*.md -text
 /detection_service/scripts/statistical_scorer_acceptance.py -text
 /detection_service/tests/test_statistical_scorer_acceptance.py -text
+/detection_service/app/detectors/statistical_v2/** -text
+/detection_service/scripts/freeze_statistical_v2.py -text
+/detection_service/tests/test_statistical_v2.py -text
+/artifacts/statistical_v2/final/** -text
+/artifacts/statistical_v2/calibration/** -text
+/reviews/TECH_STAT_006*.md -text
+/reviews/TECH_STAT_007*.md -text
+/detection_service/scripts/verify_statistical_v2.py -text
+/detection_service/tests/test_statistical_v2_verification.py -text
+/detection_service/scripts/calibrate_statistical_v2.py -text
+/detection_service/tests/test_statistical_v2_calibration.py -text

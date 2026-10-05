@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "phase": "TECH-STAT-007",
+  "model_run_code_commit": "0fcc476be03d2cb3e3ed20924034c8c34b04f396",
+  "model_acceptance_commit": "30d3781f23651bc4317ce621ac916896bf47dc66",
+  "calibration_run_code_commit": "4ca18288c2cda32c9c9d29dbd6b040e55a7d9e44",
+  "verified_sha256": {
+    "calibration_predictions_v1.csv": "35fedee4cafd2b60adcfcc4eb586784cca03e26472940059dc924cc0f49eadfa",
+    "calibration_started_v1.json": "2e3d9aa30d1d4104b38ab233f1897deeb50759b69dd613e28a456d1518b884ee",
+    "ds_v2_calibration_integrity_v1.json": "05729c90b0485444a6268151b488eb5cb8f13bc696731475f0a856bd1fb764f9",
+    "ds_v2_calibration_manifest_v1.json": "6ad2a6d42a81f4b51f2390bc14a126dfe9236b3c04b01e4eabbc0c3479d54d94",
+    "ds_v2_calibration_metrics_v1.json": "72fd28a8f89a08b8fe2921fb3b73152a69dce727e0ea1a05ca07ab18f4de15ab",
+    "ds_v2_cal_v1.json": "964cea57d98673d2026fb2f0e9d5884aec61a653e726847e0fb6ccbf36e95f23",
+    "postrun_tests_v1.xml": "589432b07e33d9ff271b11b6fb388bd8407fbce0ce6f22b2edc550d230c159e8",
+    "synthetic_smoke_v1.json": "0090fa158831b979214724c856abf23e50e8729502d15309f87053de9e12f7b2"
+  },
+  "model_binding": {
+    "ds_v2_feature_reference.json": "fd26774585223913d12b8c20556a8fc1a50fa5dea7a3a75068a7bb30efce76ec",
+    "ds_v2_integrity_v1.json": "3465236b57a89b8b1c4f148e45dec192d2b295e6baefc0226402160d6f2740a9",
+    "ds_v2_model.json": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157",
+    "ds_v2_model_manifest_v1.json": "8b62666f713c47c6f35fceb3a153a6da80de6081654d0b552bd882e8750c4aa1",
+    "ds_v2_training_metadata_v1.json": "5dcbf8c45180612b2a20d9879c7ccb1d80bfd6d6055d4e7a80f85420d98d1839"
+  },
+  "unchanged_STAT006_committed_files": 12,
+  "ranking_reconstruction": {
+    "raw": {
+      "roc_auc": 0.9439786585365854,
+      "pr_auc": 0.8428186736354086
+    },
+    "calibrated": {
+      "roc_auc": 0.9439786585365854,
+      "pr_auc": 0.8428186736354086
+    }
+  },
+  "preserved_prior_files": 126,
+  "baseline": {
+    "status": "PASS",
+    "original_hash_checks": 96,
+    "original_tracked_diff": "EMPTY",
+    "authorized_additions": [
+      "detection_service/app/detectors/statistical_v2/__init__.py",
+      "detection_service/app/detectors/statistical_v2/model.py",
+      "detection_service/app/detectors/statistical_v2/detector.py"
+    ],
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "scope": "Original snapshot unchanged; only three new ds_v2 application modules allowed. Historical exact-membership checker remains unmodified."
+  },
+  "verification_code_sha256": {
+    "detection_service/scripts/calibrate_statistical_v2.py": "198b0bb39884b531dc30ba193947384a6fe0300c414b74860b1236037bebdae8",
+    "detection_service/tests/test_statistical_v2_calibration.py": "247fb2458e2393f622be9ba7609da6dc2ae364d52f4631b2933dc3346ac7ad6b"
+  },
+  "report_sha256": {
+    "reviews/TECH_STAT_007_CALIBRATION_REPORT_v1.md": "8462221db8e2b65612feb288c84d8ee6932982543487d5c0f36fb74de3db0fe7",
+    "reviews/TECH_STAT_007_TEST_REPORT_v1.md": "7f5da8fb029878fabad2edb4bd9785f47edfcded2cfbd7b1d87c42ac57e9d6a1"
+  },
+  "tests": {
+    "postrun": 170,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "calibration_fits": 1,
+  "classifier_refits": 0,
+  "reference_refits": 0,
+  "cycle_2": "DEFERRED",
+  "final_operating_point": "NOT_FROZEN"
+}
