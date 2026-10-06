@@ -8,6 +8,17 @@ import sys
 
 import pytest
 
+
+def test_current_machine_completion_paths_are_additive():
+    from detection_service.scripts import common_mode_completion, common_mode_development, guard_development
+
+    assert guard_development.GUARD_OUTPUT == common_mode_development.GUARD_OUTPUT
+    assert guard_development.GUARD_OUTPUT == "artifacts/guard_v1/development/completion_v3"
+    output, reports = common_mode_completion.release_paths(3)
+    assert output == "artifacts/common_mode/development/completion_v3"
+    assert all(name.endswith("_v3.md") for name in reports)
+    assert common_mode_completion.COMPLETION_START == "3ef06414836a51b3409e7be9251da7753299da3a"
+
 from detection_service.analysis.common_mode import align, analyze, bootstrap, failure_metrics, paired_effect, DIRECTION
 from detection_service.analysis.development_characterization import characterization, subgroup_diagnostics
 from detection_service.scripts.common_mode_development import ROOT, REVISION

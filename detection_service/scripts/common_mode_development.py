@@ -34,7 +34,7 @@ INPUTS = {
     "D_M-B_v1": "artifacts/semantic_v2/oof/dm_b_v1_recipe_oof_predictions.csv",
 }
 OUTPUT = "artifacts/common_mode/development"
-GUARD_OUTPUT = "artifacts/guard_v1/development"
+GUARD_OUTPUT = "artifacts/guard_v1/development/completion_v3"
 
 
 def digest(path):

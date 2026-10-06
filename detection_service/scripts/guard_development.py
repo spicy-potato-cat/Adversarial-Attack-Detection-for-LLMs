@@ -67,7 +67,8 @@ def hf_status():
 
 def preflight(root=ROOT, auth=None):
     """Verify exact inputs before any prompt scalar or detector is accessed."""
-    require(subprocess.check_output(["git", "branch", "--show-current"], cwd=root, text=True).strip() == "tech/common-001", "wrong Track-2 branch")
+    require(subprocess.check_output(["git", "branch", "--show-current"], cwd=root, text=True).strip()
+            in {"tech/common-001", "tech/common-003-dg-completion"}, "wrong Track-2 branch")
     freeze_dir = "artifacts/models/dg_v1"
     integrity = read_json(root / freeze_dir / "integrity_manifest.json")
     check_hashes(root, freeze_dir, integrity)

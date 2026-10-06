@@ -1,0 +1,65 @@
+{
+  "data_status": "VERIFIED",
+  "environment": {
+    "cpu_count": 16,
+    "cuda_runtime_visibility": "NOT_PROBED_WITHOUT_MODEL_RUNTIME",
+    "device": "cpu",
+    "nvidia_smi_visible": true,
+    "packages": {
+      "numpy": "2.1.3",
+      "pyarrow": "19.0.1",
+      "scikit-learn": "1.6.1",
+      "tokenizers": "0.21.4",
+      "torch": "2.6.0",
+      "transformers": "4.49.0"
+    },
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9"
+  },
+  "fold_sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+  "hf_access": {
+    "cli": "C:\\Users\\harsh\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\hf.EXE",
+    "command": "hf auth login",
+    "status": "ACCESS_CHECK_UNAVAILABLE"
+  },
+  "hf_cache_checked": "C:\\Users\\harsh\\.cache\\huggingface\\hub\\models--meta-llama--Llama-Prompt-Guard-2-22M\\snapshots\\11614a155199674a0a95e6602d6ab0417b790ed0",
+  "hf_cache_present": false,
+  "live_rows_scored": 0,
+  "manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "missing_inputs": [],
+  "missing_snapshot_files": [],
+  "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+  "model_status": "VERIFIED",
+  "no_raw_prompt_text_saved": true,
+  "package_mismatches": {},
+  "python_3_11": true,
+  "revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+  "scope": "DEVELOPMENT_ONLY",
+  "snapshot_path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0",
+  "status": "READY",
+  "unblock": [
+    "Restore exact authoritative manifest and three approved source files; verify listed hashes. No supported exact bootstrap was found.",
+    "hf auth login; hf auth whoami. Obtain access at https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-22M if needed.",
+    "hf download meta-llama/Llama-Prompt-Guard-2-22M --revision 11614a155199674a0a95e6602d6ab0417b790ed0 --local-dir \"C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\"",
+    "Install detection_service/requirements.txt and pyarrow==19.0.1 tokenizers==0.21.4 in Python 3.11; keep frozen versions.",
+    "python -m detection_service.scripts.guard_development --check",
+    "python -m detection_service.scripts.guard_development --run",
+    "python -m detection_service.scripts.common_mode_completion"
+  ],
+  "verified_sha256": {
+    "Dataset/Raw/datasets/GitHub/Do-Not-Answer/datasets/Instruction/do_not_answer_en.csv": "8585dc135d3b8692b2e464151a313f5164e30f06416e03aa5d11e6c3a21d980e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/train-00000-of-00001-9564e8b05b4757ab.parquet": "2e10bc7ab30f542c97e4e83e2a5683000b5057d25ec10908784c631d44124c04",
+    "artifacts/quality/quality_001/development_folds_v1.csv": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+    "data_governance/manifests/development_partition_manifest_v1.csv": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+    "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/LICENSE": "73755cee886613ae3135140882289e0a4955d5f0e90f8b1c1ffc962aa9082917",
+    "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/MODEL_CARD.md": "7aacb25a94cab70530bca3545feda87bf7a935eaca92998222365b090acfd97c",
+    "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/README.md": "5d2a3e0c46397609a784a5034dc823da408aa8b5a414828609f32dc18ee16933",
+    "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/USE_POLICY.md": "5ae40fe842b87b5773c47cfd25992a496cc09b17cbb246968762f06352d89270",
+    "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/config.json": "1dc4742d04507072cafffb7235dc5dba5af9ba126f7a9830b95ed7ec00fd9104",
+    "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/model.safetensors": "5120e30bcd536ce285345d9ec104bea6bd6e8f94365b99a340c764f417ea5fa1",
+    "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/special_tokens_map.json": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+    "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/tokenizer.json": "6eb983352e73f1697b883a8c3f6b66bdfa336ab3d29dd3687f8316d0ff2789c1",
+    "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/tokenizer_config.json": "557b3d33d3f41b81ad769244e506549e98a1857d41dd58160aacd4d98d710b5a"
+  }
+}

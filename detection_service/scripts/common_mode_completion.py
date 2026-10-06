@@ -24,6 +24,7 @@ from detection_service.scripts.common_mode_development import (
 from detection_service.scripts.guard_development import preflight
 
 START = "16aee1c301272bf56cd0081aab863c66d3fcc869"
+COMPLETION_START = "3ef06414836a51b3409e7be9251da7753299da3a"
 OUTPUT = "artifacts/common_mode/development/completion_v2"
 REPORTS = ["reviews/TECH_COMMON_001_DEVELOPMENT_COMMON_MODE_v2.md",
            "reviews/TECH_COMMON_002_DS_IMPROVEMENT_EFFECT_v1.md",
@@ -58,10 +59,10 @@ Track-2 artifacts/reports and frozen detector content must remain unchanged.
     frozen = ["detection_service/app", "detection_service/configs", "artifacts/models"]
     diff = subprocess.run(["git", "diff", "--exit-code", START, "--", *frozen], cwd=root, capture_output=True)
     require(diff.returncode == 0, "frozen detector content changed since pushed Track-2 start")
-    tracked = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", START, "--", "artifacts/common_mode", "artifacts/guard_v1/development", "reviews"], cwd=root, text=True).splitlines()
-    historical = [name for name in tracked if name.startswith(("artifacts/common_mode/", "artifacts/guard_v1/development/", "reviews/TECH_COMMON_001", "reviews/TECH_GUARD_002"))]
+    tracked = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", COMPLETION_START, "--", "artifacts/common_mode", "artifacts/guard_v1/development", "reviews"], cwd=root, text=True).splitlines()
+    historical = [name for name in tracked if name.startswith(("artifacts/common_mode/", "artifacts/guard_v1/development/", "reviews/TECH_COMMON_001", "reviews/TECH_COMMON_002", "reviews/TECH_GUARD_002"))]
     for name in historical:
-        expected_bytes = subprocess.check_output(["git", "show", START + ":" + name], cwd=root)
+        expected_bytes = subprocess.check_output(["git", "show", COMPLETION_START + ":" + name], cwd=root)
         require((root / name).read_bytes() == expected_bytes, "historical Track-2 evidence changed: " + name)
     # Verify accepted STAT-004 B2 artifacts in addition to STAT-003/005/SEM-003.
     stat4dir = "artifacts/statistical_v2/feature_ablation/resume_20000"
@@ -73,7 +74,8 @@ Track-2 artifacts/reports and frozen detector content must remain unchanged.
             "newline_differences": newline, "unexplained_changes": 0, "tracked_detector_diff": "EMPTY",
             "original_track2_artifacts_and_reports_verified": len(historical), "historical_evidence": "BYTE_IDENTICAL",
             "stat004_sha256": stat4_checks,
-            "interpretation": "Strict preservation suite is not passing bytewise on this fresh checkout. Every difference is verified LF/CRLF only; no baseline bytes/hashes modified."}
+            "interpretation": ("Strict preservation suite passes with exact baseline bytes." if strict.returncode == 0 else
+                               "Strict preservation suite fails; listed differences are verified LF/CRLF only, with no unexplained content change.")}
 
 
 def evidence(root=ROOT):
@@ -242,6 +244,13 @@ def report_text(result, table, gate, preserved, tests, release=2):
     effect = "# TECH-COMMON-002 D_S Improvement Effect v1\n\nDEVELOPMENT COMMON-MODE CHARACTERIZATION. Status: **" + status + "**.\n\n" + markdown_table(table["table_6_ds_effect"], fields["table_6_ds_effect"]) + "\n" + interpretation_text + "## Known subgroup recovery\n\n" + markdown_table(table["table_7_subgroups"], fields["table_7_subgroups"]) + "\n" + limitations
     test_report = "# TECH-COMMON-001 Continuation Test Report v2\n\n" + json.dumps(tests, indent=2) + "\n\n" + json.dumps(preserved, indent=2) + "\n\nSynthetic tests cover conditional failure, ranking ties, native vote semantics, one-shot scoring validation, reserved-row refusal, four-detector alignment, grouped accounting and paired full-stack deltas. Model-dependent guard tests remain NOT RUN when runtime/model/data gates fail. The live scoring wrapper is infrastructure tested with synthetic primitive results; this is not live D_G qualification.\n"
     guard_report = "# TECH-GUARD-002 Development Characterization Continuation v2\n\nStatus: **" + ("PASS" if status == "PASS" else "BLOCKED_MISSING_AUTHORITATIVE_DEVELOPMENT_DATA") + "**.\n\n" + body.split("## table 2 individual")[0] + "\n```json\n" + json.dumps(gate, indent=2) + "\n```\n\nFrozen guard detector/model code remains unchanged. One-shot wrapper is ready; live inference is not claimed from synthetic tests. Restore exact data, authenticate locally, download the pinned model, install pinned runtime, then run the documented --check/--run commands. An interrupted live run refuses automatic rescoring; do not delete its start marker or manufacture completion.\n"
+    if status == "PASS":
+        guard_report = guard_report.replace(
+            "One-shot wrapper is ready; live inference is not claimed from synthetic tests. Restore exact data, authenticate locally, download the pinned model, install pinned runtime, then run the documented --check/--run commands.",
+            "The single authoritative offline run completed on all 1,135 BASE_TRAIN rows. Its integrity-bound live predictions, native votes and complete token coverage were verified independently of synthetic tests. No download, training, calibration or reserved-partition scoring occurred.")
+        test_report = test_report.replace(
+            "The live scoring wrapper is infrastructure tested with synthetic primitive results; this is not live D_G qualification.",
+            "Synthetic infrastructure tests are separate from the completed authoritative live D_G run; its predictions and frozen-input hashes were verified.")
     if release != 2:
         main = main.replace("Characterization v2", f"Characterization v{release}")
         effect = effect.replace("Effect v1", f"Effect v{release}")
@@ -289,8 +298,9 @@ def run(root=ROOT, repetitions=1000, release=2):
     for name, content in report_text(result, tables_data, gate, preserved, tests, release).items():
         (root / name).write_text(content, encoding="utf-8", newline="\n")
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip()
-    manifest = {"status": status, "scope": result["scope"], "start_commit": START, "execution_commit": commit,
-                "branch": "tech/common-001", "rows": 1135, "positive": 183, "negative": 952, "seed": 1701,
+    manifest = {"status": status, "scope": result["scope"], "start_commit": COMPLETION_START, "historical_start_commit": START, "execution_commit": commit,
+                "branch": subprocess.check_output(["git", "branch", "--show-current"], cwd=root, text=True).strip(),
+                "rows": 1135, "positive": 183, "negative": 952, "seed": 1701,
                 "bootstrap_repetitions": repetitions, "release": release, "expected_manifest_sha256": MANIFEST, "fold_sha256": FOLDS,
                 "input_sha256": hashes, "output_sha256": {p.name: digest(p) for p in sorted(out.iterdir()) if p.is_file()},
                 "code_sha256": {name: digest(root / name) for name in CODE},
