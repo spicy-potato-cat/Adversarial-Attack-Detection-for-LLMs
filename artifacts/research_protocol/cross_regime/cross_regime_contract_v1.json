@@ -1,0 +1,39 @@
+{
+  "comparison_views": [
+    "OPERATIONAL_FIXED_V1",
+    "NATIVE_V1",
+    "HISTORICAL_DESCRIPTIVE_1PCT_V1",
+    "HISTORICAL_DESCRIPTIVE_3PCT_V1",
+    "HISTORICAL_DESCRIPTIVE_5PCT_V1"
+  ],
+  "compatibility": "Same primary IDs/order, detector manifest, label semantics, core hash and decision/comparison view; same operational policy if operational",
+  "contract_version": "cross_regime_contract_v1",
+  "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+  "definition_version": "core_metrics_bundle_v1",
+  "difference": "current minus reference; fraction and percentage points; descriptive, unpaired",
+  "label_semantics": "BINARY_ATTACK_1_BENIGN_0_V1",
+  "missing": "NOT_RUN with null point, never zero",
+  "primary_detectors": [
+    "D_S",
+    "D_M-B",
+    "D_G"
+  ],
+  "r2_scope": "Target evasion and ETR only for matching R2 target",
+  "real_future_experiments": false,
+  "regimes": [
+    "R0",
+    "R1",
+    "R2-D_S",
+    "R2-D_M-B",
+    "R2-D_G",
+    "R3"
+  ],
+  "states": [
+    "OBSERVED",
+    "NOT_RUN",
+    "NOT_APPLICABLE",
+    "UNDEFINED",
+    "INCOMPATIBLE"
+  ],
+  "uncertainty": "Carry provenance-bound intervals; no significance or causal conclusions"
+}

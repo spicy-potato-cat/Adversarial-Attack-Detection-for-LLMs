@@ -1,0 +1,288 @@
+{
+  "lineage": {
+    "alignment_sha": "71811c6290c93e1794a349fbb610040c0072341cd713abb0864cd71d6e058d06",
+    "bootstrap_domain_lineage_count": 4,
+    "bootstrap_domain_row_count": 8,
+    "config": {
+      "confidence_level": 0.95,
+      "domain": "ATTACK_ONLY",
+      "method": "PERCENTILE_BOOTSTRAP_V1",
+      "quantile_method": "linear",
+      "replicates": 1000,
+      "seed": 1701,
+      "target_detector": null,
+      "unit": "LINEAGE_CLUSTERED"
+    },
+    "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+    "decision_view": "EXPLICIT",
+    "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+    "experiment_id": "EXP-R0-377660719319359fead9b99093906b7d5a8ed88ee2cac0046a3a78e12a2d861e",
+    "intervals": [
+      {
+        "ci_lower": 0.0,
+        "ci_upper": 0.375,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.125,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": -0.1890624999999999,
+        "ci_upper": 0.1875,
+        "metric_id": "pair/ds_v2/dm_b_v1/ejf",
+        "point_estimate": 0.0,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": 0.0,
+        "ci_upper": 1.0,
+        "metric_id": "pair/ds_v2/dm_b_v1/fn_jaccard",
+        "point_estimate": 0.3333333333333333,
+        "replicates_invalid": 4,
+        "replicates_requested": 1000,
+        "replicates_valid": 996,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": 0.0,
+        "ci_upper": 0.75,
+        "metric_id": "pair/ds_v2/dm_b_v1/jfn",
+        "point_estimate": 0.25,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": null,
+        "ci_upper": null,
+        "metric_id": "recovery/ds_v2/conditional_recovery",
+        "point_estimate": 0.5,
+        "replicates_invalid": 66,
+        "replicates_requested": 1000,
+        "replicates_valid": 934,
+        "status": "UNSTABLE_DENOMINATOR"
+      },
+      {
+        "ci_lower": 0.0,
+        "ci_upper": 0.375,
+        "metric_id": "recovery/ds_v2/unique_catch_rate",
+        "point_estimate": 0.125,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      }
+    ],
+    "lineage_count": 4,
+    "numpy_version": "2.1.3",
+    "operating_policy_sha": null,
+    "paired_reference_alignment_sha": null,
+    "plan_sha": "df6375f11177279006e8c0a4639ee287aae99180a47d1fd493fe388509cf3232",
+    "population_signature": "fe5efa79402fdfb43e73b851b1ff69dd960f986f693215e88959aa5686168328",
+    "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+    "regime_manifest_sha": "1e27a0b3ac05e4f4a13fe478ea92c67928b15ac74477385bc329793a86261745",
+    "result_version": "uncertainty_result_v1",
+    "rng_state_after_sha": "56a8fe60b8ff692a8bc74466dcf88975bab6aa05188d9322c6e320ecb96d2556",
+    "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+    "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+    "unknown_lineage_rows": 2
+  },
+  "paired_delta": {
+    "alignment_sha": "cef70b59d7ca77b4295161bb78bd0b83e7bca8802802ca141d1787b31e30f8ee",
+    "bootstrap_domain_lineage_count": 8,
+    "bootstrap_domain_row_count": 8,
+    "config": {
+      "confidence_level": 0.95,
+      "domain": "ATTACK_ONLY",
+      "method": "PERCENTILE_BOOTSTRAP_V1",
+      "quantile_method": "linear",
+      "replicates": 1000,
+      "seed": 1701,
+      "target_detector": null,
+      "unit": "SAMPLE_PAIRED"
+    },
+    "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+    "decision_view": "EXPLICIT",
+    "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+    "experiment_id": "EXP-R0-5f0e077639922ff27c961d364e68bc27c1bcb1b04606cb59434ae55b15cd3d83",
+    "intervals": [
+      {
+        "ci_lower": -0.375,
+        "ci_upper": 0.0,
+        "metric_id": "all_three/jfn",
+        "point_estimate": -0.125,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      }
+    ],
+    "lineage_count": 8,
+    "numpy_version": "2.1.3",
+    "operating_policy_sha": null,
+    "paired_reference_alignment_sha": "76061ac473d8aead92b4f916820d0b9853b380e27888739e39fe24d2abb14987",
+    "plan_sha": "1180959191b49e11ef8c1c367f44c0be88bebac181b3d0a87ade5924e47cbacb",
+    "population_signature": "a62b79e095277351b0b87de76c6513f3b7444d614e3e07101055dbd9212008a5",
+    "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+    "regime_manifest_sha": "595d7b78a575e6742e67f42ff7a118e725f39c0199320381d9d2db2a552f3eee",
+    "result_version": "uncertainty_result_v1",
+    "rng_state_after_sha": "51c0042bdad67720574a31cc25f0d3fba54d1c025dded78c457ff292129d260f",
+    "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+    "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+    "unknown_lineage_rows": 2
+  },
+  "r2": {
+    "alignment_sha": "15ddcc79fb90459efb7042a66763e414aca83ca88c4464e728eaf0700bf4c5c9",
+    "bootstrap_domain_lineage_count": 5,
+    "bootstrap_domain_row_count": 100,
+    "config": {
+      "confidence_level": 0.95,
+      "domain": "VALID_TARGET_ATTEMPTS",
+      "method": "PERCENTILE_BOOTSTRAP_V1",
+      "quantile_method": "linear",
+      "replicates": 1000,
+      "seed": 1701,
+      "target_detector": "D_S",
+      "unit": "LINEAGE_CLUSTERED"
+    },
+    "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+    "decision_view": "EXPLICIT",
+    "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+    "experiment_id": "EXP-R2-9158555c3604ad251889568dfbb1f9f2d7ae708c3ba3e7894f984bde687a9a62",
+    "intervals": [
+      {
+        "ci_lower": 0.4,
+        "ci_upper": 0.4,
+        "metric_id": "target/ds_v2/evasion",
+        "point_estimate": 0.4,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": 0.25,
+        "ci_upper": 0.25,
+        "metric_id": "transfer/ds_v2/dm_b_v1/etr",
+        "point_estimate": 0.25,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      }
+    ],
+    "lineage_count": 15,
+    "numpy_version": "2.1.3",
+    "operating_policy_sha": null,
+    "paired_reference_alignment_sha": null,
+    "plan_sha": "6a6b07256e7a5f44a8da8c2c1c14472fba2ca1c023402702ba6e9fbada28b202",
+    "population_signature": "35fdd81b6cc40806cb1ded87f8dc0ead0d7ba072c9da9ec0251f86dc46ae728f",
+    "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+    "regime_manifest_sha": "b64d0b85442f228285dae7b418d8684cc30816b2ffee8b8c56fc9167ada1e986",
+    "result_version": "uncertainty_result_v1",
+    "rng_state_after_sha": "11d03e9fcd9240534d69a0f82d2a5fb583883551936c1989fa5897280a7e69af",
+    "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+    "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+    "unknown_lineage_rows": 0
+  },
+  "sample": {
+    "alignment_sha": "76061ac473d8aead92b4f916820d0b9853b380e27888739e39fe24d2abb14987",
+    "bootstrap_domain_lineage_count": 8,
+    "bootstrap_domain_row_count": 8,
+    "config": {
+      "confidence_level": 0.95,
+      "domain": "ATTACK_ONLY",
+      "method": "PERCENTILE_BOOTSTRAP_V1",
+      "quantile_method": "linear",
+      "replicates": 1000,
+      "seed": 1701,
+      "target_detector": null,
+      "unit": "SAMPLE_PAIRED"
+    },
+    "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+    "decision_view": "EXPLICIT",
+    "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+    "experiment_id": "EXP-R0-5f0e077639922ff27c961d364e68bc27c1bcb1b04606cb59434ae55b15cd3d83",
+    "intervals": [
+      {
+        "ci_lower": 0.0,
+        "ci_upper": 0.375,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.125,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": -0.15625,
+        "ci_upper": 0.15625,
+        "metric_id": "pair/ds_v2/dm_b_v1/ejf",
+        "point_estimate": 0.0,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": 0.0,
+        "ci_upper": 0.75,
+        "metric_id": "pair/ds_v2/dm_b_v1/fn_jaccard",
+        "point_estimate": 0.3333333333333333,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": 0.0,
+        "ci_upper": 0.625,
+        "metric_id": "pair/ds_v2/dm_b_v1/jfn",
+        "point_estimate": 0.25,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": null,
+        "ci_upper": null,
+        "metric_id": "recovery/ds_v2/conditional_recovery",
+        "point_estimate": 0.5,
+        "replicates_invalid": 109,
+        "replicates_requested": 1000,
+        "replicates_valid": 891,
+        "status": "UNSTABLE_DENOMINATOR"
+      },
+      {
+        "ci_lower": 0.0,
+        "ci_upper": 0.375,
+        "metric_id": "recovery/ds_v2/unique_catch_rate",
+        "point_estimate": 0.125,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      }
+    ],
+    "lineage_count": 8,
+    "numpy_version": "2.1.3",
+    "operating_policy_sha": null,
+    "paired_reference_alignment_sha": null,
+    "plan_sha": "1180959191b49e11ef8c1c367f44c0be88bebac181b3d0a87ade5924e47cbacb",
+    "population_signature": "a62b79e095277351b0b87de76c6513f3b7444d614e3e07101055dbd9212008a5",
+    "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+    "regime_manifest_sha": "595d7b78a575e6742e67f42ff7a118e725f39c0199320381d9d2db2a552f3eee",
+    "result_version": "uncertainty_result_v1",
+    "rng_state_after_sha": "51c0042bdad67720574a31cc25f0d3fba54d1c025dded78c457ff292129d260f",
+    "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+    "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+    "unknown_lineage_rows": 2
+  }
+}

@@ -60,3 +60,10 @@
 /detection_service/tests/test_core_metrics.py -text
 /reviews/EXP_PROTOCOL_001_CORE_METRICS_v1.md -text
 /reviews/EXP_PROTOCOL_001_PHASE6_10_TEST_REPORT_v1.md -text
+/detection_service/tests/test_uncertainty.py -text
+/detection_service/tests/test_cross_regime.py -text
+/detection_service/tests/test_r0_reproduction.py -text
+/reviews/EXP_PROTOCOL_001_UNCERTAINTY_v1.md -text
+/reviews/EXP_PROTOCOL_001_CROSS_REGIME_v1.md -text
+/reviews/EXP_PROTOCOL_001_R0_REPRODUCTION_v1.md -text
+/reviews/EXP_PROTOCOL_001_PHASE11_13_TEST_REPORT_v1.md -text

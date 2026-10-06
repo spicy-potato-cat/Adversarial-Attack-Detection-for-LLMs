@@ -1,0 +1,18 @@
+{
+  "artifact_version": "phase11_12_artifact_hashes_v1",
+  "sha256": {
+    "artifacts/research_protocol/cross_regime/cross_regime_contract_v1.json": "0669afb3766494978095a2db78027e6390035ef5d52b779d22261a8e942931d4",
+    "artifacts/research_protocol/cross_regime/synthetic_cross_regime_expected_v1.json": "8e95fe82cc87fb4c6dae51f024bffb04f8ae22c232f6c99e20eb417f58404403",
+    "artifacts/research_protocol/cross_regime/synthetic_regime_bundles_v1.json": "6b9b122d86b470e9097fd91f6bfcf08e13fbfad9a5f8bd4013b733b74251392c",
+    "artifacts/research_protocol/uncertainty/synthetic_bootstrap_expected_v1.json": "39b2775aa2b94ed6ddfc75cbc085e9910ec3b319241dfc8c846c2b852657f9b2",
+    "artifacts/research_protocol/uncertainty/synthetic_lineage_bootstrap_fixture_v1.json": "cbe562f60628a3d56ca52b03abb65e7983c68c701b8645176619adb6e0ba3690",
+    "artifacts/research_protocol/uncertainty/synthetic_sample_bootstrap_fixture_v1.json": "ea270b8ab774f83baffe9044cf7da23917ae9347eb4060a103aa330719055e4f",
+    "artifacts/research_protocol/uncertainty/uncertainty_contract_v1.json": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+    "detection_service/research_protocol/cross_regime.py": "2fe90134fcc4a0e0c7e88a0281167fe4f920875b343d87c69389e776d205f101",
+    "detection_service/research_protocol/metric_catalog.py": "555226d318ed90b5c7a1c0c51844acc0272bea7a88890a0cc5b1084a57364b26",
+    "detection_service/research_protocol/uncertainty.py": "abec17cb7f963de721401aef141358e32e103a00ee5417379e68c2dfba8c5a1a",
+    "detection_service/research_protocol/uncertainty_contract.py": "b4d0f21a58be70c455be87c28c4446c3116acb86671379d522dfe8b246b03818",
+    "detection_service/tests/test_cross_regime.py": "5080e1d546649c3f4e1066f9707bb6377e9d61b65e931987d9d0442138f1dc80",
+    "detection_service/tests/test_uncertainty.py": "c23e09b7ff14bb5ac32f45c479b0c07d27d4f80d2a048f9e423ad72a0d281b2b"
+  }
+}

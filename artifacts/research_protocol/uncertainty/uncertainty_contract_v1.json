@@ -1,0 +1,36 @@
+{
+  "cluster_order": "Sorted lineage IDs; all domain-selected descendants together; strata attack then benign",
+  "confidence_level": 0.95,
+  "contract_version": "uncertainty_contract_v1",
+  "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+  "domains": [
+    "ATTACK_ONLY",
+    "BENIGN_ONLY",
+    "STRATIFIED_LABEL",
+    "VALID_TARGET_ATTEMPTS"
+  ],
+  "generated_descendants": "R2/R3 shared lineage requires LINEAGE_CLUSTERED",
+  "inference": false,
+  "method": "PERCENTILE_BOOTSTRAP_V1",
+  "minimum_valid_fraction": 0.95,
+  "mixed_label_cluster": "Reject stratification that splits a lineage",
+  "numpy_version": "2.1.3",
+  "paired_delta": "B minus A on identical resampling indices",
+  "percentiles": [
+    0.025,
+    0.975
+  ],
+  "point_estimate": "Observed frozen core metric, never bootstrap mean",
+  "quantile_method": "linear",
+  "replicates": 1000,
+  "resampling_storage": "Indices only; never duplicate canonical sample IDs",
+  "rng": "numpy.Generator/PCG64",
+  "seed": 1701,
+  "significance_tests": false,
+  "stream_policy": "Default resets PCG64(seed); explicit shared PCG64 allowed only with recorded pre/post state hashes",
+  "undefined_policy": "Exclude undefined replicates; null CI if observed undefined or support below 95%",
+  "units": [
+    "SAMPLE_PAIRED",
+    "LINEAGE_CLUSTERED"
+  ]
+}
