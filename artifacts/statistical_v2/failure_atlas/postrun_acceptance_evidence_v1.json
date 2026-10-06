@@ -1,0 +1,17 @@
+{
+  "DATA_C2_started": false,
+  "code_sha256": {
+    "detection_service/analysis/statistical_failure_atlas.py": "51d2b880b66b1253486ff93d37e5df4ddb7b133cda9ec9230e1e655f7e3ee9bc",
+    "detection_service/scripts/statistical_failure_atlas.py": "756cc83da86b627b274e59c1a387e3f36aaeccf887db2c43508066ab8f758a99",
+    "detection_service/scripts/statistical_failure_atlas_controls.py": "48d148649e45503cf55f4d99a34d63facfd78b227415ab89914d33d56e4a2cd1",
+    "detection_service/tests/test_statistical_failure_atlas.py": "7519bdbfcabf9c8d04f6eec149eebcc05dfeb7d0fe6c871b83e873a33b041212",
+    "detection_service/tests/test_statistical_failure_atlas_acceptance.py": "6f23c9594a01911ea02b3bc0d95c548df4c876a1d9bc643a94eedb4dba5ad211"
+  },
+  "model_or_reference_fits": 0,
+  "new_model_inference": 0,
+  "phase": "TECH-STAT-008",
+  "scope": "Exploratory controls, config relocation and preservation-before-audit verification; original diagnostic run metadata and initial products unchanged.",
+  "stage": "POST_RUN_VERIFICATION_REPAIR",
+  "test_receipt_sha256": "d3fdb7f5c01505bc09589699a65cd0f8c7b7342faff7468c14e8ba070dbeb1ef",
+  "threshold_selection": false
+}

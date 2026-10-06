@@ -1,0 +1,14 @@
+{
+  "DATA_C2_started": false,
+  "code_sha256": {
+    "detection_service/scripts/statistical_failure_atlas_controls.py": "48d148649e45503cf55f4d99a34d63facfd78b227415ab89914d33d56e4a2cd1",
+    "detection_service/tests/test_statistical_failure_atlas_acceptance.py": "eb2c232029fd5a685b19f7cd3a199e32c3e1e4ce99530878761c7d24fc09b433"
+  },
+  "model_or_reference_fits": 0,
+  "new_model_inference": 0,
+  "phase": "TECH-STAT-008",
+  "scope": "Exploratory cross-label source/length controls and acceptance checks; initial protocol, run metadata and frozen input evidence are unchanged.",
+  "stage": "POST_INITIAL_DIAGNOSTICS",
+  "test_receipt_sha256": "9e1734129bf41338292adc6b529c4699d39211cd7c35d515645b1747f9f6b159",
+  "threshold_selection": false
+}

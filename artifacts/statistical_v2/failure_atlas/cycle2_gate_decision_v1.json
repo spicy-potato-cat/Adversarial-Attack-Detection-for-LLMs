@@ -1,0 +1,12 @@
+{
+  "DATA_C2_started": false,
+  "cycle2_consumed": false,
+  "data_requirements_only": true,
+  "eligible_hypotheses": [
+    "H-C2-01"
+  ],
+  "lineage_constraints": "New independent sources/base behaviours; no overlap with current fixture, four diagnostic residuals, calibration/validation or protected data; retain transformation/family/source groups",
+  "rationale": "Limited independent-data testing requirements only for evidence-backed statistical hypotheses; Commander approval still required.",
+  "recommendation": "AUTHORIZE_DATA_C2_001_WITH_LIMITED_HYPOTHESES",
+  "required_DMB_residual_denominator": "30-50+ independent attacks; prospectively report total screened and residual denominator without selection-driven headline metrics"
+}

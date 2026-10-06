@@ -1,0 +1,49 @@
+{
+  "comparisons": "Descriptive medians/IQR/ranges and matched-case deltas only; no n=4 inferential tests",
+  "controls": {
+    "k": 3,
+    "low_DMB_margin": "Among metadata-matched DMB true positives, smallest nonnegative absolute log-odds distance; not new model inference",
+    "order": "absolute token-length difference, character-length difference, sample_id",
+    "relaxed": "Only if strict empty: same source/family, nearest other length region, explicitly separated from strict evidence",
+    "reuse": "Controls may recur across cases; unique controls reported, not treated as independent replicated rows",
+    "strict": "same source, existing family and frozen length region; exclude same canonical lineage"
+  },
+  "governance": {
+    "DATA_C2_started": false,
+    "E1_E10": false,
+    "R1_R2_R3": false,
+    "calibration": false,
+    "cycle2_consumed": false,
+    "model_fit": false,
+    "new_detector_feature": false,
+    "protected": false,
+    "reference_fit": false,
+    "scorer_change": false,
+    "threshold_selection": false,
+    "validation": false
+  },
+  "hypotheses": "Exactly four falsifiable general statistical hypotheses; evidence may be weak; no residual-specific rule",
+  "length_regions": [
+    "<16",
+    "16-31",
+    "32-63",
+    "64-127",
+    "128+"
+  ],
+  "margin": {
+    "confidence_warning": "Near/far are odds-distance descriptions, NOT calibrated confidence",
+    "log_odds": "logit(score)-logit(point), probabilities clipped only for this diagnostic to [1e-12,1-1e-12]",
+    "near_boundary": "absolute log-odds margin <= ln(2), inclusively",
+    "raw": "score minus frozen detector-specific 3% point"
+  },
+  "mode": "DIAGNOSTIC_ONLY",
+  "operating_points": "Copied from accepted COMMON-003; never reselected or tuned",
+  "phase": "TECH-STAT-008",
+  "phenotypes": "All DS FNs stratified by pre-existing STAT-004 length bins; no cluster-count search or latent-phenotype claim",
+  "position_and_window": "Existing B3-B6 transforms, inherited causal context; no new LM calls; no detector-feature changes",
+  "primary_budget": 0.03,
+  "quantiles": "numpy linear interpolation; population SD; unscaled MAD; top5=min(5,n); top10%=ceil(.1*n)",
+  "references": "Reuse held-out fold's accepted S0 training-fold benign references; no References.fit",
+  "shape": "Upper-tail density uses stored benign length-bin q95, not a new fitted cutoff; max/median null at median=0",
+  "structure": "Unicode codepoint ratios; punctuation=Unicode category P; entropy=codepoint Shannon bits; word repetition=casefolded regex word counts; fragmentation=reference-token count/characters"
+}

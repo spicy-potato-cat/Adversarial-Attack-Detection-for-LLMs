@@ -1,0 +1,14 @@
+{
+  "changes": [
+    "Move unchanged analysis-only hypothesis JSON outside baseline detector configs",
+    "Verify baseline artifact hashes before installing analysis model-weight access guard",
+    "Bind current verification code separately from original run code"
+  ],
+  "initial_acceptance_manifest_sha256": "acbb2a32f739e5ca64e467f590f207f62cef808c6efe0e30c477cd1621f358b8",
+  "initial_strict_preservation_failure": "One new analysis JSON appeared in the legacy configs inventory; all 96 baseline bytes matched. The inherited helper misclassified the inventory expansion as newline drift. The config was relocated; final strict verifier passes.",
+  "initial_verification_failure": "Original verification reached preservation after installing the no-weight-read audit hook; preservation correctly requires hash-only reads of baseline serialized classifiers. No model was loaded.",
+  "original_analysis_recomputed_with_new_models": false,
+  "original_run_metadata_sha256": "71a1530ada37e47231316bb45b7b282144965737c1b29423ab53da6bf0984034",
+  "original_runner_snapshot_sha256": "c90b5e4ab40bb221a03820fd3e3bfe3b4eb5907f0a88f4f27964dea8f71ee9b0",
+  "phase": "TECH-STAT-008"
+}

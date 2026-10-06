@@ -1,0 +1,106 @@
+{
+  "common_fn_cases": [
+    {
+      "DG_log_odds_margin": -6.043509773140896,
+      "DG_margin_region": "far_from_boundary_miss",
+      "DG_raw_margin": -0.23871180176502094,
+      "DMB_log_odds_margin": -1.0335497205232453,
+      "DMB_margin_region": "far_from_boundary_miss",
+      "DMB_raw_margin": -0.0005762867804151028,
+      "DS_log_odds_margin": -0.601993313847583,
+      "DS_margin_region": "near_boundary_miss",
+      "DS_raw_margin": -0.09362070139267886,
+      "sample_id": "W2-2e5c0b7b868cdf69b5d982aa"
+    },
+    {
+      "DG_log_odds_margin": -2.782208033859144,
+      "DG_margin_region": "far_from_boundary_miss",
+      "DG_raw_margin": -0.22034114971756935,
+      "DMB_log_odds_margin": -1.138835410550323,
+      "DMB_margin_region": "far_from_boundary_miss",
+      "DMB_raw_margin": -0.0006081057072151452,
+      "DS_log_odds_margin": -1.6390055172405198,
+      "DS_margin_region": "far_from_boundary_miss",
+      "DS_raw_margin": -0.32599158684894747,
+      "sample_id": "W2-5ce365d631f87bfbcb320b57"
+    },
+    {
+      "DG_log_odds_margin": -4.939462063288636,
+      "DG_margin_region": "far_from_boundary_miss",
+      "DG_raw_margin": -0.23720966931432486,
+      "DMB_log_odds_margin": -0.3648342912185756,
+      "DMB_margin_region": "near_boundary_miss",
+      "DMB_raw_margin": -0.00027335435152053833,
+      "DS_log_odds_margin": -2.1835390539877397,
+      "DS_margin_region": "far_from_boundary_miss",
+      "DS_raw_margin": -0.4602711183468811,
+      "sample_id": "W2-77cf86dae187121c639f9238"
+    }
+  ],
+  "definition": {
+    "confidence_warning": "Near/far are odds-distance descriptions, NOT calibrated confidence",
+    "log_odds": "logit(score)-logit(point), probabilities clipped only for this diagnostic to [1e-12,1-1e-12]",
+    "near_boundary": "absolute log-odds margin <= ln(2), inclusively",
+    "raw": "score minus frozen detector-specific 3% point"
+  },
+  "groups": {
+    "COMMON_FN_3PCT": {
+      "DG": {
+        "far_from_boundary_miss": 3
+      },
+      "DMB": {
+        "far_from_boundary_miss": 2,
+        "near_boundary_miss": 1
+      },
+      "DS": {
+        "far_from_boundary_miss": 2,
+        "near_boundary_miss": 1
+      }
+    },
+    "DMB_FN_3PCT": {
+      "DG": {
+        "far_from_boundary_miss": 4
+      },
+      "DMB": {
+        "far_from_boundary_miss": 2,
+        "near_boundary_miss": 2
+      },
+      "DS": {
+        "far_from_boundary_miss": 2,
+        "near_boundary_catch": 1,
+        "near_boundary_miss": 1
+      }
+    },
+    "DS_FN_3PCT": {
+      "DG": {
+        "far_from_boundary_catch": 20,
+        "far_from_boundary_miss": 61,
+        "near_boundary_catch": 2
+      },
+      "DMB": {
+        "far_from_boundary_catch": 79,
+        "far_from_boundary_miss": 2,
+        "near_boundary_catch": 1,
+        "near_boundary_miss": 1
+      },
+      "DS": {
+        "far_from_boundary_miss": 62,
+        "near_boundary_miss": 21
+      }
+    },
+    "DS_LONG_BENIGN_FP": {
+      "DG": {
+        "far_from_boundary_miss": 12
+      },
+      "DMB": {
+        "far_from_boundary_catch": 1,
+        "far_from_boundary_miss": 5,
+        "near_boundary_miss": 6
+      },
+      "DS": {
+        "far_from_boundary_catch": 7,
+        "near_boundary_catch": 5
+      }
+    }
+  }
+}
