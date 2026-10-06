@@ -1,0 +1,873 @@
+{
+  "accepted_cycle1_commit": "dc6dd3041643fb70ad5b128d32c246f8763a8044",
+  "accepted_publication": "artifacts/common_mode/development/completion_v3/publication/full_stack_manifest_v1.json",
+  "accepted_publication_sha": "6e22aa94b541dd7a0f273fcca32555698c2ac2e6ad0bbcd281f1b7ce718ef73d",
+  "attack_count": 183,
+  "benign_count": 952,
+  "decision_provenance": "Accepted stored pooled descriptive thresholds; inclusive >=; no Phase-5 thresholds",
+  "detector_mapping": {
+    "D_G_v1": "dg_v1",
+    "D_M-B_v1": "dm_b_v1",
+    "D_S_B2_LR": "ds_v2"
+  },
+  "fold_proof": [
+    {
+      "fold": 0,
+      "held_out_membership_sha256": "b9f22212687a14a14e2e7263bbe3638a4fdb3c77ac00106867cb25edcd8271b2",
+      "heldout_count": 227,
+      "train_count": 908,
+      "train_membership_sha256": "408a598ddc66d10339a95ad516eb9b7d70a3a84dfd5f94f38d6969830ae4e188"
+    },
+    {
+      "fold": 1,
+      "held_out_membership_sha256": "082b994aae41103d2be5fe54818ce1101a032df0e10ff5ad60d3be6b7adb8a4d",
+      "heldout_count": 227,
+      "train_count": 908,
+      "train_membership_sha256": "a90057acf292d02f4e16003a80cf4309591e901ea382eac036192ad7494d2977"
+    },
+    {
+      "fold": 2,
+      "held_out_membership_sha256": "07da7f653df099db2cd81ea413e6b1df3515e386f924c83c3cb1ccfee8388eb5",
+      "heldout_count": 227,
+      "train_count": 908,
+      "train_membership_sha256": "1aae684808fb6bcb1548b000d918f04295227e556aab4c5762c30d394b0f69a2"
+    },
+    {
+      "fold": 3,
+      "held_out_membership_sha256": "0acf65b15593321d904061fd61d326a816f172ad54dfe705c7d58463604e864a",
+      "heldout_count": 227,
+      "train_count": 908,
+      "train_membership_sha256": "ee516eb293b682c69f293bc6bbfded395167ee45261a811d4bcd23e80ec68e6f"
+    },
+    {
+      "fold": 4,
+      "held_out_membership_sha256": "6cd482e38c58ae59df4e61c3d2b92cce073025795e728538b1888e81f92f1328",
+      "heldout_count": 227,
+      "train_count": 908,
+      "train_membership_sha256": "b54bc5b7ec0969281ce1af97cf902f5fd93d773cf4e91144e03f44aed299ada9"
+    },
+    {
+      "fold": 0,
+      "held_out_membership_sha256": "b9f22212687a14a14e2e7263bbe3638a4fdb3c77ac00106867cb25edcd8271b2",
+      "heldout_count": 227,
+      "train_count": 908,
+      "train_membership_sha256": "408a598ddc66d10339a95ad516eb9b7d70a3a84dfd5f94f38d6969830ae4e188"
+    },
+    {
+      "fold": 1,
+      "held_out_membership_sha256": "082b994aae41103d2be5fe54818ce1101a032df0e10ff5ad60d3be6b7adb8a4d",
+      "heldout_count": 227,
+      "train_count": 908,
+      "train_membership_sha256": "a90057acf292d02f4e16003a80cf4309591e901ea382eac036192ad7494d2977"
+    },
+    {
+      "fold": 2,
+      "held_out_membership_sha256": "07da7f653df099db2cd81ea413e6b1df3515e386f924c83c3cb1ccfee8388eb5",
+      "heldout_count": 227,
+      "train_count": 908,
+      "train_membership_sha256": "1aae684808fb6bcb1548b000d918f04295227e556aab4c5762c30d394b0f69a2"
+    },
+    {
+      "fold": 3,
+      "held_out_membership_sha256": "0acf65b15593321d904061fd61d326a816f172ad54dfe705c7d58463604e864a",
+      "heldout_count": 227,
+      "train_count": 908,
+      "train_membership_sha256": "ee516eb293b682c69f293bc6bbfded395167ee45261a811d4bcd23e80ec68e6f"
+    },
+    {
+      "fold": 4,
+      "held_out_membership_sha256": "6cd482e38c58ae59df4e61c3d2b92cce073025795e728538b1888e81f92f1328",
+      "heldout_count": 227,
+      "train_count": 908,
+      "train_membership_sha256": "b54bc5b7ec0969281ce1af97cf902f5fd93d773cf4e91144e03f44aed299ada9"
+    }
+  ],
+  "fold_sha": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+  "frozen_regime_manifest_file_sha": "4a7b694d72aa94f48cd31c81b107aef9b65fc31efdcaf11cfb88e7e4942cd45c",
+  "frozen_regime_manifest_hash": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+  "historical_adapter": "Strict metadata-only historical score import into AlignedEvaluation; NOT a final-model PredictionRecord or a live DetectorAdapter result",
+  "historical_models": {
+    "dg_v1": {
+      "evidence_kind": "FROZEN_DIRECT_DEVELOPMENT",
+      "native_vote": "OR_CHUNK_ARGMAX_CLASS1",
+      "revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+      "run_code_commit": "3a053f3224e56d9e7b483b72303e822af12e5741",
+      "score_semantics": "MAX_CHUNK_MALICIOUS_CLASS_SOFTMAX",
+      "source_path": "artifacts/guard_v1/development/completion_v3/dg_v1_base_train_predictions.csv",
+      "source_sha": "2589d5c8f9da40be4104c2964966f7b1790b2370255bd87515e63760f2a624ef"
+    },
+    "dm_b_v1": {
+      "evidence_kind": "OOF",
+      "not_final_model_inference": true,
+      "run_code_commit": "5096d078b599c43ddd4e32b4fbfcaedcc83e4646",
+      "score_semantics": "UNCALIBRATED_CLASS1_SOFTMAX_256_TOKEN_PREFIX",
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_recipe_oof_predictions.csv",
+      "source_sha": "cfafb1d4286a8b61e4054da337cd45a4353a44894899b034670f9413f6b1000c"
+    },
+    "ds_v2": {
+      "evidence_kind": "OOF",
+      "not_final_model_inference": true,
+      "recipe": "B2+S0 LogisticRegression",
+      "run_code_commit": "f123a46c320075a52ef0af3d09e2de734e4895f9",
+      "score_semantics": "UNCALIBRATED_CLASS1_PROBABILITY",
+      "source_path": "artifacts/statistical_v2/scorer_comparison/scorer_predictions_v1.csv",
+      "source_sha": "1dd23a39bb87f3f95b090a93bb7797ae6a1d84e4ddf24a55d63b9eb2609e9fed"
+    }
+  },
+  "historical_rng": "python.random.Random/MT19937; seed reset per budget; sorted lineage keys and randrange",
+  "import_version": "r0_reproduction_import_manifest_v1",
+  "manifest_sha": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "native_fields": "Source records preserved byte-identically; historical decisions are separate explicit decisions, not overwritten native predictions",
+  "new_inference": false,
+  "population_count": 1135,
+  "pre_R0_machinery_commit": "9982b9bd2c5f8da7fc63a1b7977c1cccf91cfb70",
+  "primary_order": [
+    "D_S",
+    "D_M-B",
+    "D_G"
+  ],
+  "production_rng": "numpy.Generator/PCG64",
+  "protected_data": false,
+  "rng_difference_resolved": "Explicit separately identified legacy draw replay; production contract and defaults unchanged",
+  "score_direction": "higher_is_more_adversarial",
+  "sources": [
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "31fda883f999d57b577909224a53dcee4070b4797cd45ef4d5d4f1bfebeaa275",
+      "size_bytes": 2253,
+      "source_path": "artifacts/common_mode/development/completion_v3/all_detector_failure_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "273602ac7db679d63a7a0b2df3b4b434d0a557ef82a8f2194d06bb22b4db3012",
+      "size_bytes": 20404,
+      "source_path": "artifacts/common_mode/development/completion_v3/bootstrap_intervals_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "0ffe50e564985ac8da034d6fcb74766c74b4674aa11e34734b994c300286f610",
+      "size_bytes": 13027,
+      "source_path": "artifacts/common_mode/development/completion_v3/common_mode_manifest_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "b2b8a314eeffcce7520af7e4e42801821679695e677e250571f1579a5167b0a5",
+      "size_bytes": 9057,
+      "source_path": "artifacts/common_mode/development/completion_v3/conditional_recovery_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "721aaf44813b0b44ae504e7cfd1931202ecbf45d8f619c885513553aa9ddf590",
+      "size_bytes": 8148,
+      "source_path": "artifacts/common_mode/development/completion_v3/detector_alignment_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "c453e39a411b2e5aa6a421fd996061ed449d77bbbffe0340c5c3a3783a471bc6",
+      "size_bytes": 6357,
+      "source_path": "artifacts/common_mode/development/completion_v3/detector_operating_points_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "9dbb2855f0b9802d76b3edb762d9cf257fb530581a6ca92ae6e688444d84914a",
+      "size_bytes": 7465,
+      "source_path": "artifacts/common_mode/development/completion_v3/ds_improvement_effect_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "396ac3c80c383d3166e9dec70c7d19f308e3455ca52c8065f8c02525a9c7bc00",
+      "size_bytes": 307385,
+      "source_path": "artifacts/common_mode/development/completion_v3/full_analysis_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "e6b8ef058f49c380c6e8d57a98b52ec118795073f34ec83db66963497b527587",
+      "size_bytes": 236664,
+      "source_path": "artifacts/common_mode/development/completion_v3/grouped_failure_metrics_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "319a729be28275912efc8dbdee55e07972091740a2d918ca0b043527780f35a4",
+      "size_bytes": 4858,
+      "source_path": "artifacts/common_mode/development/completion_v3/guard_availability_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "c453e39a411b2e5aa6a421fd996061ed449d77bbbffe0340c5c3a3783a471bc6",
+      "size_bytes": 6357,
+      "source_path": "artifacts/common_mode/development/completion_v3/individual_metrics_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "792e6bb3b145a4445570eb9308e374a6326b9ca57be4e6c0984abaa13c6725c5",
+      "size_bytes": 11198,
+      "source_path": "artifacts/common_mode/development/completion_v3/pairwise_failure_metrics_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "8ad35e7a7b18e46622e582bc4e8ecdef7aab1a4e1ad9e83087ecc1bc734b29fa",
+      "size_bytes": 1965,
+      "source_path": "artifacts/common_mode/development/completion_v3/preservation_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "3d48225805cd789200a618b6547ff6bd781cfcb2bbf8c09efd662165436352f5",
+      "size_bytes": 9727,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/frozen_stack_preservation_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "6e22aa94b541dd7a0f273fcca32555698c2ac2e6ad0bbcd281f1b7ce718ef73d",
+      "size_bytes": 4692,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/full_stack_manifest_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "092ab2f3946bb07f8260cc99b9f793a815981cc2555e4be2895b101239974fb3",
+      "size_bytes": 567,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_1_guard.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "54284787040ea9442739389afb90689a66093da502a9a4e9ec64a0f1b1af1cb5",
+      "size_bytes": 2167,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_1_guard.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "01ee834dbe714fec42273fd65fdbefa7e55c6216052b2bf6513b8ae7e5b76deb",
+      "size_bytes": 2551,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_2_individual.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "fa023582778f25f7a6d28111034379d7df6cc4a89e38bd4dc432b3f272588e76",
+      "size_bytes": 6253,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_2_individual.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "e1a20551059b8727e228d1da9ef3177f23a47fdf6a43a82f587fbe1b4390f5f7",
+      "size_bytes": 4171,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_3_pairwise.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "8979ecbf0b83aa9c717f7ed0e1679ada093194bcfd757fdeb3b7053cdeb95445",
+      "size_bytes": 11430,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_3_pairwise.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "5d56a1529b466fd0879c0f4a1c0f40f561f29b5fbff8b3d88ca72fe13d1c150d",
+      "size_bytes": 698,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_4_all_detector.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "e3c16f0e31f7ccadca04ce597b9d8332748453bf9ffdb7a2dae873059f729f35",
+      "size_bytes": 1891,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_4_all_detector.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "b6aa9ab9d8e7cbdbd01a73b0a97ce8773edb578f014130b41df36413b1341c58",
+      "size_bytes": 2860,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_5_unique.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "0f29ccc08a5e4516f269aaee8ff87784c1eca17c3f9f7203689b27d266b6e494",
+      "size_bytes": 8383,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_5_unique.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "d89569244aa9656752e8ee0fe298df84c05926266682c95e2b631f45b6b0190e",
+      "size_bytes": 2695,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_6_ds_effect.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "e61855a9df32df4b7d16624d9b6021f6f6913d5b8ee58f14f7ef05abe9b35f77",
+      "size_bytes": 7043,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_6_ds_effect.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "da8599720d5dbf608da04a252b41af02bcbcbf22413f2490d5004c0978094cda",
+      "size_bytes": 157,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_7_under_16_attacks.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "df4e1e0f5f5aec709153eda1a5773bb005ba82c8512955678feb782e93dc25a4",
+      "size_bytes": 677,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_7_under_16_attacks.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "7aae03eb695cc3a0389f47a03669b0e963dd17c3336ff123532a3ff2e38d98d1",
+      "size_bytes": 199,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_8_long_benign.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "fc0c06d7391e925a31bf120c777b88b218c83e2fea1498301fa35ca7f1933233",
+      "size_bytes": 861,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/table_8_long_benign.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "4abac36eb5edd4f7a5ae0006b09ac4480ff483d45d3fa4a9eb68ed34f0369c0b",
+      "size_bytes": 4519,
+      "source_path": "artifacts/common_mode/development/completion_v3/publication/uncertainty_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "eb75834843cfa91025206432669a8aefb43d1ffeeb27ed1a2d33f460a39667c4",
+      "size_bytes": 1461,
+      "source_path": "artifacts/common_mode/development/completion_v3/subgroup_patterns_v1.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "1f562f99337c128a5c73127137a3486a5488412bbc76531c459f8f45f55bf575",
+      "size_bytes": 14698,
+      "source_path": "artifacts/common_mode/development/completion_v3/subgroup_recovery_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "5037d3c59fe2762fd877d246d47068027cd9952f6fc017399211e91aa74fcc81",
+      "size_bytes": 567,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_1_guard.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "aa0bd969e691114e7be53e9be9320c88d48844c9fd6a9e623d089aae4dc44ba4",
+      "size_bytes": 2187,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_1_guard.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "eb8db7530857e9c5e008c527431777f9c55133f8558673f47da6a6cc9fd06744",
+      "size_bytes": 2086,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_2_individual.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "ca4cd37451c06b86f857f84511877bb96fdddab100ab6d5ee558a5db0b15a90a",
+      "size_bytes": 5403,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_2_individual.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "fe540fb124f46f3ff975b3a20fb8ba3142ecf47825b260753ded22056b076f34",
+      "size_bytes": 4171,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_3_pairwise.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "ace1ef90402f0db5f419fb325a9abc5f724e21ca1c4a229ef0dcaf7ac619e88d",
+      "size_bytes": 11450,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_3_pairwise.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "4525293ade3b07c6ca834a63d526e04a48a47c7c7409a171a55e96790aaf2094",
+      "size_bytes": 698,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_4_all_detector.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "21da48b5301a1279c9eef46d71297b8d808a53b27804fbe3815a653451ce9b0f",
+      "size_bytes": 1911,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_4_all_detector.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "f7f857917fab597f7bada6c472ccbfdeb2625b82b72cba945e8d8fa1b60bdcf3",
+      "size_bytes": 2860,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_5_unique.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "4718f4b344d6d4654e9ef6235d75f1f959c27bfe575b04949dda5258ccf1be97",
+      "size_bytes": 8403,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_5_unique.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "d44d3772f6f03728a5f834a94181523fffabb704f80d820d96de087ba9838ed2",
+      "size_bytes": 2695,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_6_ds_effect.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "aff512ac9369dd11fbeded4c66e526f22c93f7bf33646e0cbf1bdab171d0e6d8",
+      "size_bytes": 7063,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_6_ds_effect.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "a4810fe6cec92c55790781e653c8a77e46c7509b0e497b571b20493f10566d98",
+      "size_bytes": 448,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_7_subgroups.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "7028cc879c274aba9631ce25fbe4bb3d9048331d3d47517c189cb1b76193b824",
+      "size_bytes": 1773,
+      "source_path": "artifacts/common_mode/development/completion_v3/table_7_subgroups.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "9943a112d1090f686f9b2d4c2a6a800a3e5d1d9939f494b705fddcea634755c0",
+      "size_bytes": 708,
+      "source_path": "artifacts/common_mode/development/completion_v3/test_evidence_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "9601d1a22c46ddd5a84b249d66e7ae68c2d50517c8eb0b6fdbb94dd267653110",
+      "size_bytes": 10808,
+      "source_path": "artifacts/common_mode/development/completion_v3/track2_completion_tests.xml"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "ea0accacf3a55f851b79a680925353f2c551d15818835dae39f4cf90037728b8",
+      "size_bytes": 15467,
+      "source_path": "artifacts/common_mode/development/completion_v3/track2_continuation_prerun.xml"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "b2b8a314eeffcce7520af7e4e42801821679695e677e250571f1579a5167b0a5",
+      "size_bytes": 9057,
+      "source_path": "artifacts/common_mode/development/completion_v3/unique_catches_v1.json"
+    },
+    {
+      "logical_role": "D_G_v1",
+      "sha256": "2589d5c8f9da40be4104c2964966f7b1790b2370255bd87515e63760f2a624ef",
+      "size_bytes": 199692,
+      "source_path": "artifacts/guard_v1/development/completion_v3/dg_v1_base_train_predictions.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "9edbd0d64c0ccb95483ef1445d409b036ea352692aa4f60ec7df20950b1cd225",
+      "size_bytes": 1820,
+      "source_path": "artifacts/guard_v1/development/completion_v3/dg_v1_development_metrics.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "145434cf9b987cee8d41298f406d436cb8a6ea76c075a9c7a595cbc2321d4743",
+      "size_bytes": 9721,
+      "source_path": "artifacts/guard_v1/development/completion_v3/dg_v1_fold_metrics.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "814aff20fc03339f816c650f487936435e11caab85a79ae8432303793cf7a87d",
+      "size_bytes": 3794,
+      "source_path": "artifacts/guard_v1/development/completion_v3/dg_v1_run_metadata.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "26fc1530193d96dd2da14a4426aa501542c812925db8106cb4d2909f4e7c1011",
+      "size_bytes": 185,
+      "source_path": "artifacts/guard_v1/development/completion_v3/dg_v1_run_started.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "8a9785ba74bb8ca531e6c1bf312b3be1f0f36ecda9b6534926a05e972877062c",
+      "size_bytes": 2521,
+      "source_path": "artifacts/guard_v1/development/completion_v3/dg_v1_source_metrics.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "25145fd1efff9817ab22fafaa67f8a049bc245c237a53c20ef3897fecc263552",
+      "size_bytes": 4138,
+      "source_path": "artifacts/models/dg_v1/freeze_metadata.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "b6cf4ce0199278daf0fa3b9ad6d1a12a0f086785690ab068d7996c5687e205a4",
+      "size_bytes": 188,
+      "source_path": "artifacts/models/dg_v1/integrity_manifest.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "b425a32c46b959eaa50aea06088f074145c8b51bb1c6213db36e7dfccfebaffb",
+      "size_bytes": 488,
+      "source_path": "artifacts/models/dg_v1/model_config.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+      "size_bytes": 105179,
+      "source_path": "artifacts/quality/quality_001/development_folds_v1.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "e3b0c6516a29d40e9788c8df9b367931fb327bd7039738cd8e53398df61e153d",
+      "size_bytes": 6154,
+      "source_path": "artifacts/quality/quality_001/error_analysis_schema_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "2ae3c7e5e6866e0d08667b2746fc405a741b019320a8ff6a6df44fcf987587ea",
+      "size_bytes": 2373,
+      "source_path": "artifacts/quality/quality_001/fold_statistics_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "312fd7edf21f075f5d158a6317c634282d7b0652b8b500ceec9dd4da4a0cfc26",
+      "size_bytes": 1478,
+      "source_path": "artifacts/quality/quality_001/integrity_manifest_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "b9cf6f772d8c7bf658fcdb7b29a7ec51f15113d61bbb404ffb823ab18f09af57",
+      "size_bytes": 4353,
+      "source_path": "artifacts/quality/quality_001/oof_result_schema_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "569e78547a1c2d60e0d46bda0c29f45488b97faa4e89b7b580743dd1cbc3cbc3",
+      "size_bytes": 18112,
+      "source_path": "artifacts/quality/quality_001/quality_fixture_schema_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "7b010b4e536cf04fd510c7a7a16a80fa9429c798c3d155e01ddfe56b45657c0c",
+      "size_bytes": 8940,
+      "source_path": "artifacts/quality/quality_001/quality_fixture_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "4a7b694d72aa94f48cd31c81b107aef9b65fc31efdcaf11cfb88e7e4942cd45c",
+      "size_bytes": 1471760,
+      "source_path": "artifacts/research_protocol/r0/r0_regime_manifest_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "7634d43ad48267caa4b10654b0be5f2bde214948f363b8c33edf9ed797c6b6fd",
+      "size_bytes": 4042,
+      "source_path": "artifacts/semantic_v2/oof/acceptance_manifest_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "603a240cee84f9fa5bc9c6d2f60817ddb1bb96cf84a019468941e13edc334860",
+      "size_bytes": 2252,
+      "source_path": "artifacts/semantic_v2/oof/completion_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "12e4bcc58c57fa3b4deef7ed82a2c4903f71c33d903550f58c89436ebd0c52d5",
+      "size_bytes": 13362,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_error_characterization.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "6326865de9c9e026645f4894e0b128fadcfd1be176dd4ba77a1f0b65334ea02e",
+      "size_bytes": 9287,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_fold_stability_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "bdb41ca856544fbce7e92430afa7d02984191515be7c330fe7223e03c8728ee9",
+      "size_bytes": 8002,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_hard_examples.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "fb4e8c2b17bdbfe3b5491324effa39f7d0e3acf917c13041c217643283f845c4",
+      "size_bytes": 3542,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_oof_run_metadata.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "29d6bc129bf82ee330715b3e7fbda7947a1c551143cdafbeadb8e580ed07d9c3",
+      "size_bytes": 2177,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_persistent_fn_3pct_v1.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "f425751bba64fed1e7abc729e95d45697a30d47aeb78147e56c8d55564ccd93a",
+      "size_bytes": 4146,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_rate_intervals_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "c22583bf59d9c80b124b6383aa8fa1555e7d9581439cedb8aba8eb606c5319ca",
+      "size_bytes": 7894,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_raw_fn_v1.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "2edc6107c9b8bd69822f3ba207dfe765de59fd2ff12dcfd7639db4d40b139e3e",
+      "size_bytes": 26072,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_recipe_fold_metrics.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "2dba9dd5de2151107e8aba9b1dd20ac4f6046b694b1fd9ff472b9cd0747cb262",
+      "size_bytes": 158410,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_recipe_oof_curves.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "9471b40621ecb688184861476d10f2821688c40ee200f756e8695f6b12b61c59",
+      "size_bytes": 1851,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_recipe_oof_metrics.json"
+    },
+    {
+      "logical_role": "D_M-B_v1",
+      "sha256": "cfafb1d4286a8b61e4054da337cd45a4353a44894899b034670f9413f6b1000c",
+      "size_bytes": 385185,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_recipe_oof_predictions.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "003b49763bf6aeed2afa1790fecbc6c834575167244e2f68018fed21bec4033e",
+      "size_bytes": 6290,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_residual_failure_analysis_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "e78973b2f4f099c25140b8e11c81dd3e19b9618998aefe199b87ea7f8116b024",
+      "size_bytes": 3323,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_truncation_analysis.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "1cc58a257729d98c11c4c8f5a405ff25faafcce0fdb4e8471de17cd129ad74bc",
+      "size_bytes": 511,
+      "source_path": "artifacts/semantic_v2/oof/dm_b_v1_v2_recommendation.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "5dbf13162f43879eddc56becb8a60580b506f9e55ea03b05402be784aadc5b71",
+      "size_bytes": 325,
+      "source_path": "artifacts/semantic_v2/oof/run_started_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "e96355e54f9c6a78a395907c0a19ac21ffa8cc31d486b25bb1ca7f2d30bfece0",
+      "size_bytes": 6102,
+      "source_path": "artifacts/statistical_v2/oof/analysis_config_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "a1598906792b5ae4db3321d703fb9724729e678477384924814143be37acd015",
+      "size_bytes": 3996,
+      "source_path": "artifacts/statistical_v2/oof/completion_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "3e93a10b7ed4ef999c06e9cbfd1da816ee416c63a9e520f22e6a83819b18acf5",
+      "size_bytes": 57421,
+      "source_path": "artifacts/statistical_v2/oof/ds_v1_error_characterization.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "c525d63ce4149206523d79ffc3a3f7c30af2e680e8e656ee5c001ea2c3af01cb",
+      "size_bytes": 5742,
+      "source_path": "artifacts/statistical_v2/oof/ds_v1_feature_gap_hypotheses.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "2d65f3132e2a900a0e7b430a17854ff8091e6c140e5f71a17b4b99b8ec65f672",
+      "size_bytes": 19514,
+      "source_path": "artifacts/statistical_v2/oof/ds_v1_recipe_fold_metrics.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "042d2a70d646f8871eaac27f3c18e16be847719cda7216491a756ac13561f66c",
+      "size_bytes": 176069,
+      "source_path": "artifacts/statistical_v2/oof/ds_v1_recipe_oof_curves.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "4cdb8a379b08c9f37062be1ec42439cdd467e8580f076873f71d6f9b34da17ec",
+      "size_bytes": 2626,
+      "source_path": "artifacts/statistical_v2/oof/ds_v1_recipe_oof_metrics.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "9b90f505e5c0f21b26ad0b507db1df3291f0fbea83ce52ff53aabf2ef5856215",
+      "size_bytes": 484366,
+      "source_path": "artifacts/statistical_v2/oof/ds_v1_recipe_oof_predictions.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "cee51cb18019fceedafbfc6ea523edd022ee10a47c50bb708f81c0c43124fe23",
+      "size_bytes": 3497,
+      "source_path": "artifacts/statistical_v2/oof/preflight_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "bd680495717e240664b54d85d25b5b6629b84c96cb88cef66dcdaf616d842ca3",
+      "size_bytes": 98,
+      "source_path": "artifacts/statistical_v2/oof/run_started_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "f0ca5a4280dd814de56ff7f94e94ec6c87d63d09094c87c7633cc8f3184e9292",
+      "size_bytes": 9062,
+      "source_path": "artifacts/statistical_v2/scorer_comparison/error_transition_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "3c98be44b7817fe3237f28044d532050f663113aef55a95a10086a6ad2e28f8e",
+      "size_bytes": 753401,
+      "source_path": "artifacts/statistical_v2/scorer_comparison/fold_references_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "438137d0c89976df03daa551bc9ffad5c99d1eb34dc589fb65431e64d32e4b8a",
+      "size_bytes": 1592,
+      "source_path": "artifacts/statistical_v2/scorer_comparison/paired_comparison_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "e497e45b633f705c473b7d305fd2ce1867746170d0fcb554eb27f7276c9e87c5",
+      "size_bytes": 3080,
+      "source_path": "artifacts/statistical_v2/scorer_comparison/run_metadata_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "1a0e59510a7f52a47a6d8150b8d12f3d752060a376c1d4ba2062753a01088c6b",
+      "size_bytes": 61476,
+      "source_path": "artifacts/statistical_v2/scorer_comparison/scorer_fold_metrics_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "8a13878fc981c4189620173d2070da3004267074ae5edc1d90d37527a105ba0b",
+      "size_bytes": 4940,
+      "source_path": "artifacts/statistical_v2/scorer_comparison/scorer_metrics_v1.json"
+    },
+    {
+      "logical_role": "D_S_B2_LR",
+      "sha256": "1dd23a39bb87f3f95b090a93bb7797ae6a1d84e4ddf24a55d63b9eb2609e9fed",
+      "size_bytes": 658005,
+      "source_path": "artifacts/statistical_v2/scorer_comparison/scorer_predictions_v1.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "3937180d40181f4ce421f86bba94b1c26f9b56409cd379ab1acf8c6a1dd54676",
+      "size_bytes": 2577,
+      "source_path": "artifacts/statistical_v2/scorer_comparison/selected_scorer_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "2e36837bea8c50a37b9894e526b21f5d03752b97ddd9f2021e1187cb7081b955",
+      "size_bytes": 20563,
+      "source_path": "artifacts/statistical_v2/scorer_comparison/subgroup_analysis_v1.json"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "32ebd1c851a0085f4754971ae4e84206d488d1ef604d0021b4ef629f6b692e26",
+      "size_bytes": 2759,
+      "source_path": "data_governance/DATA_LINEAGE_POLICY_v1.md"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "4fe0ca6cf5b3cb729f6205a862984d5545a0309ffdeea2d32d1312fe6da48b51",
+      "size_bytes": 2214,
+      "source_path": "data_governance/DATA_PARTITION_POLICY_v1.md"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+      "size_bytes": 727439,
+      "source_path": "data_governance/manifests/development_partition_manifest_v1.csv"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "9330a1725b292acf9287c1861c0b548702358f4e40d522504baebee2bb4b3b41",
+      "size_bytes": 17084,
+      "source_path": "detection_service/analysis/common_mode.py"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "553214441789f00c88374e69b4ad2fd9fa6d94d2c8e560d06718a7df38e7b8b7",
+      "size_bytes": 6052,
+      "source_path": "detection_service/analysis/development_characterization.py"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "33516e3b5e01fb8afa5ee3a76ccb79e9151e7cc53598e075fece6b23fbf17a8b",
+      "size_bytes": 12932,
+      "source_path": "detection_service/quality/development_fixture.py"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "42be8cc34b181a09d0cfe4eea6db43f8dc6c6c3bb1ed04a8c5ff91df93114df1",
+      "size_bytes": 14274,
+      "source_path": "detection_service/quality/policy.py"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "77e6b379edaab3c6723357b35dd2b565012ed36aeed90ce7abbe49a35d20b4aa",
+      "size_bytes": 30126,
+      "source_path": "detection_service/scripts/common_mode_completion.py"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "f247310d97257e85754e485ef4e0437385ef0d9ee02ed3fbbd5a07b2cc479758",
+      "size_bytes": 27035,
+      "source_path": "detection_service/scripts/common_mode_development.py"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "d4792d3f502294904a1eeb5f06d36a52f7e63da06c373aafb2f377d7be4e9200",
+      "size_bytes": 20394,
+      "source_path": "detection_service/scripts/guard_development.py"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "f19ff1863a8cdb5cd3ffca49c002b2f6e7045273c9a7af06c1294f3cee9b8f4c",
+      "size_bytes": 12347,
+      "source_path": "detection_service/tests/test_track2_completion.py"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "62f63f8ca46811a16741f529e4fa0fe0354a82854608ac3c7837078b35715395",
+      "size_bytes": 23111,
+      "source_path": "reviews/TECH_COMMON_001_DEVELOPMENT_COMMON_MODE_v3.md"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "2be06c587a719148c6eb2719155ac478bf6418df1e6d91b1ad61214ceedd6073",
+      "size_bytes": 3152,
+      "source_path": "reviews/TECH_COMMON_001_TEST_REPORT_v3.md"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "c902d98844b93ae00364e681180449e2bd514e5d118c8a65e30198d4cc8a3aab",
+      "size_bytes": 3051,
+      "source_path": "reviews/TECH_COMMON_002_DS_IMPROVEMENT_EFFECT_v2.md"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "8b128276d227d824d4f1e5ccc1689d5ab9d775735e576afefd90648c9b71e21c",
+      "size_bytes": 14017,
+      "source_path": "reviews/TECH_COMMON_002_DS_IMPROVEMENT_EFFECT_v3.md"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "b7b120fe26334b31121562844e64d1aedf11ae2501eadf531be7f8dd42911543",
+      "size_bytes": 29766,
+      "source_path": "reviews/TECH_COMMON_003_FULL_STACK_COMPLETION_v1.md"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "baa29143c1ae1404abbeaf79effb1bfd9a8f5b88bbc9431efe0c78315f184527",
+      "size_bytes": 3221,
+      "source_path": "reviews/TECH_COMMON_003_TEST_REPORT_v1.md"
+    },
+    {
+      "logical_role": "ACCEPTED_PROVENANCE_OR_REFERENCE",
+      "sha256": "68781949725f7287192dc4a189dcaf8d37978a03483a9c96dfed89366562be3c",
+      "size_bytes": 6156,
+      "source_path": "reviews/TECH_GUARD_002_DEVELOPMENT_CHARACTERIZATION_v3.md"
+    }
+  ]
+}

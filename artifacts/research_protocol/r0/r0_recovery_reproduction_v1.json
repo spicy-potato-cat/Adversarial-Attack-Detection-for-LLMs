@@ -1,0 +1,326 @@
+{
+  "1PCT": {
+    "alignment_sha": "bc4ea1c7679f3e316f39a1ee283be4f61c9aadfe7bbc3d6a8bd6fbfeef1be1a7",
+    "attack_count": 183,
+    "benign_count": 952,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 3405,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 3405,
+      "received_predictions": 3405,
+      "status": "COMPLETE"
+    },
+    "detectors": [
+      {
+        "both_others_miss_count": 6,
+        "conditional_recovery": {
+          "denominator": 6,
+          "numerator": 1,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.16666666666666666
+        },
+        "detector_id": "ds_v2",
+        "unique_catch_count": 1,
+        "unique_catch_pattern": "011",
+        "unique_catch_rate": {
+          "denominator": 183,
+          "numerator": 1,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.00546448087431694
+        }
+      },
+      {
+        "both_others_miss_count": 96,
+        "conditional_recovery": {
+          "denominator": 96,
+          "numerator": 91,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9479166666666666
+        },
+        "detector_id": "dm_b_v1",
+        "unique_catch_count": 91,
+        "unique_catch_pattern": "101",
+        "unique_catch_rate": {
+          "denominator": 183,
+          "numerator": 91,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.4972677595628415
+        }
+      },
+      {
+        "both_others_miss_count": 5,
+        "conditional_recovery": {
+          "denominator": 5,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "detector_id": "dg_v1",
+        "unique_catch_count": 0,
+        "unique_catch_pattern": "110",
+        "unique_catch_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        }
+      }
+    ],
+    "metric_status": "COMPLETE",
+    "population_count": 1135,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "ACCEPTED_METADATA",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "explicit_decisions_sha": "ce7fdab4a4acd96f29155c527be453f6ec9caf0946aa083b5fedfc702732d2b8",
+      "explicit_provenance_id": "HISTORICAL_DESCRIPTIVE_1PCT_V1::6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "BASE_TRAIN",
+      "prediction_batch_sha": "7835daa5cc4361d79945de4346d61c14ae5671effbd38a9a1d178ba483882c26",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "threat_regime": "R0_NON_ADAPTIVE"
+    },
+    "result_version": "recovery_metrics_v1"
+  },
+  "3PCT": {
+    "alignment_sha": "6eda322d9bf5542c4875f697a03ace50272ceeecf081a1aff65aa8b9f685ba63",
+    "attack_count": 183,
+    "benign_count": 952,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 3405,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 3405,
+      "received_predictions": 3405,
+      "status": "COMPLETE"
+    },
+    "detectors": [
+      {
+        "both_others_miss_count": 4,
+        "conditional_recovery": {
+          "denominator": 4,
+          "numerator": 1,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.25
+        },
+        "detector_id": "ds_v2",
+        "unique_catch_count": 1,
+        "unique_catch_pattern": "011",
+        "unique_catch_rate": {
+          "denominator": 183,
+          "numerator": 1,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.00546448087431694
+        }
+      },
+      {
+        "both_others_miss_count": 61,
+        "conditional_recovery": {
+          "denominator": 61,
+          "numerator": 58,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9508196721311475
+        },
+        "detector_id": "dm_b_v1",
+        "unique_catch_count": 58,
+        "unique_catch_pattern": "101",
+        "unique_catch_rate": {
+          "denominator": 183,
+          "numerator": 58,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.31693989071038253
+        }
+      },
+      {
+        "both_others_miss_count": 3,
+        "conditional_recovery": {
+          "denominator": 3,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "detector_id": "dg_v1",
+        "unique_catch_count": 0,
+        "unique_catch_pattern": "110",
+        "unique_catch_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        }
+      }
+    ],
+    "metric_status": "COMPLETE",
+    "population_count": 1135,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "ACCEPTED_METADATA",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "explicit_decisions_sha": "8c04d7865795e7a0afd71d34370f10a59c772b42e439da2180140378bf2be4fe",
+      "explicit_provenance_id": "HISTORICAL_DESCRIPTIVE_3PCT_V1::6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "BASE_TRAIN",
+      "prediction_batch_sha": "a3c3bd48907e6e01a563601d3360efabf891b57f5e1fc4eb6279125b7f0ac199",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "threat_regime": "R0_NON_ADAPTIVE"
+    },
+    "result_version": "recovery_metrics_v1"
+  },
+  "5PCT": {
+    "alignment_sha": "d8829f9e6847e07273a8f8e3d8c81b02f5ee31767a4695fcba19cae42df280a0",
+    "attack_count": 183,
+    "benign_count": 952,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 3405,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 3405,
+      "received_predictions": 3405,
+      "status": "COMPLETE"
+    },
+    "detectors": [
+      {
+        "both_others_miss_count": 2,
+        "conditional_recovery": {
+          "denominator": 2,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "detector_id": "ds_v2",
+        "unique_catch_count": 0,
+        "unique_catch_pattern": "011",
+        "unique_catch_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        }
+      },
+      {
+        "both_others_miss_count": 47,
+        "conditional_recovery": {
+          "denominator": 47,
+          "numerator": 45,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9574468085106383
+        },
+        "detector_id": "dm_b_v1",
+        "unique_catch_count": 45,
+        "unique_catch_pattern": "101",
+        "unique_catch_rate": {
+          "denominator": 183,
+          "numerator": 45,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.2459016393442623
+        }
+      },
+      {
+        "both_others_miss_count": 2,
+        "conditional_recovery": {
+          "denominator": 2,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "detector_id": "dg_v1",
+        "unique_catch_count": 0,
+        "unique_catch_pattern": "110",
+        "unique_catch_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        }
+      }
+    ],
+    "metric_status": "COMPLETE",
+    "population_count": 1135,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "ACCEPTED_METADATA",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "explicit_decisions_sha": "26949a93189dee06e2e8789e33e9b6d16f417b61809f064cf1cfad72fe421aeb",
+      "explicit_provenance_id": "HISTORICAL_DESCRIPTIVE_5PCT_V1::6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "BASE_TRAIN",
+      "prediction_batch_sha": "720f15f36daea5ede52fff413494bf6c3fbd17d1254144d6f3f89bfca4ab30a9",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "threat_regime": "R0_NON_ADAPTIVE"
+    },
+    "result_version": "recovery_metrics_v1"
+  }
+}

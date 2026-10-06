@@ -1,0 +1,283 @@
+{
+  "historical_replay": {
+    "1PCT": {
+      "alignment_sha": "bc4ea1c7679f3e316f39a1ee283be4f61c9aadfe7bbc3d6a8bd6fbfeef1be1a7",
+      "compliance": "HISTORICAL_RNG_REPLAY_NOT_PRODUCTION_PCG64",
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "ATTACK_ONLY",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": null,
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "decision_view": "EXPLICIT",
+      "estimator_reference_uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "historical_reproduction_status": "PASS",
+      "intervals": [
+        {
+          "ci_lower": 0.00546448087431694,
+          "ci_upper": 0.04918032786885246,
+          "metric_id": "all_three/jfn",
+          "point_estimate": 0.0273224043715847,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.01092896174863388,
+          "ci_upper": 0.060109289617486336,
+          "metric_id": "pair/dm_b_v1/dg_v1/jfn",
+          "point_estimate": 0.03278688524590164,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.453551912568306,
+          "ci_upper": 0.6010928961748634,
+          "metric_id": "pair/ds_v2/dg_v1/jfn",
+          "point_estimate": 0.5245901639344263,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        }
+      ],
+      "method_difference": "Accepted Python Random.randrange stream differs from predeclared PCG64; linear percentile estimator and core metric formulas agree",
+      "plan": {
+        "domain": "ATTACK_ONLY",
+        "domain_rows": 183,
+        "draw_indices_sha": "11918d961d1e2c694b3589696c0e780f33153bce6330aac1b9270782810ff657",
+        "lineage_units": 183,
+        "plan_sha": "376114e69cc3697b42329a71b61bd985a22ec163376a6ae5b7c74e01fed6f76b",
+        "plan_version": "historical_random_lineage_plan_v1",
+        "population_signature": "2031fa90c98d02c7ab22b2c009be2bc1d1fec71ff071c1f3f7c4fa0edd3992bd",
+        "python_version": "3.11.9",
+        "replicates": 1000,
+        "rng": "python.random.Random/MT19937",
+        "rng_state_after_sha": "a12226907af4a30c8ac2e9fd82edbe68823ec3f5f20b2389117705b3ef8224dd",
+        "rng_state_before_sha": "dad83840f09aab9e86de401bc7e317c7dd44e398bc9a17889b3f877d17e77386",
+        "seed": 1701,
+        "stream_policy": "Reset Random(seed) for each budget; sorted lineage keys; randrange once per selected cluster",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "production_contract_modified": false,
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "result_version": "historical_uncertainty_replay_v1"
+    },
+    "3PCT": {
+      "alignment_sha": "6eda322d9bf5542c4875f697a03ace50272ceeecf081a1aff65aa8b9f685ba63",
+      "compliance": "HISTORICAL_RNG_REPLAY_NOT_PRODUCTION_PCG64",
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "ATTACK_ONLY",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": null,
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "decision_view": "EXPLICIT",
+      "estimator_reference_uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "historical_reproduction_status": "PASS",
+      "intervals": [
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.03825136612021858,
+          "metric_id": "all_three/jfn",
+          "point_estimate": 0.01639344262295082,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.00546448087431694,
+          "ci_upper": 0.04371584699453552,
+          "metric_id": "pair/dm_b_v1/dg_v1/jfn",
+          "point_estimate": 0.02185792349726776,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.2677595628415301,
+          "ci_upper": 0.40437158469945356,
+          "metric_id": "pair/ds_v2/dg_v1/jfn",
+          "point_estimate": 0.3333333333333333,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        }
+      ],
+      "method_difference": "Accepted Python Random.randrange stream differs from predeclared PCG64; linear percentile estimator and core metric formulas agree",
+      "plan": {
+        "domain": "ATTACK_ONLY",
+        "domain_rows": 183,
+        "draw_indices_sha": "11918d961d1e2c694b3589696c0e780f33153bce6330aac1b9270782810ff657",
+        "lineage_units": 183,
+        "plan_sha": "376114e69cc3697b42329a71b61bd985a22ec163376a6ae5b7c74e01fed6f76b",
+        "plan_version": "historical_random_lineage_plan_v1",
+        "population_signature": "2031fa90c98d02c7ab22b2c009be2bc1d1fec71ff071c1f3f7c4fa0edd3992bd",
+        "python_version": "3.11.9",
+        "replicates": 1000,
+        "rng": "python.random.Random/MT19937",
+        "rng_state_after_sha": "a12226907af4a30c8ac2e9fd82edbe68823ec3f5f20b2389117705b3ef8224dd",
+        "rng_state_before_sha": "dad83840f09aab9e86de401bc7e317c7dd44e398bc9a17889b3f877d17e77386",
+        "seed": 1701,
+        "stream_policy": "Reset Random(seed) for each budget; sorted lineage keys; randrange once per selected cluster",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "production_contract_modified": false,
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "result_version": "historical_uncertainty_replay_v1"
+    },
+    "5PCT": {
+      "alignment_sha": "d8829f9e6847e07273a8f8e3d8c81b02f5ee31767a4695fcba19cae42df280a0",
+      "compliance": "HISTORICAL_RNG_REPLAY_NOT_PRODUCTION_PCG64",
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "ATTACK_ONLY",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": null,
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "decision_view": "EXPLICIT",
+      "estimator_reference_uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "historical_reproduction_status": "PASS",
+      "intervals": [
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0273224043715847,
+          "metric_id": "all_three/jfn",
+          "point_estimate": 0.01092896174863388,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0273224043715847,
+          "metric_id": "pair/dm_b_v1/dg_v1/jfn",
+          "point_estimate": 0.01092896174863388,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.19658469945355192,
+          "ci_upper": 0.3224043715846995,
+          "metric_id": "pair/ds_v2/dg_v1/jfn",
+          "point_estimate": 0.2568306010928962,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        }
+      ],
+      "method_difference": "Accepted Python Random.randrange stream differs from predeclared PCG64; linear percentile estimator and core metric formulas agree",
+      "plan": {
+        "domain": "ATTACK_ONLY",
+        "domain_rows": 183,
+        "draw_indices_sha": "11918d961d1e2c694b3589696c0e780f33153bce6330aac1b9270782810ff657",
+        "lineage_units": 183,
+        "plan_sha": "376114e69cc3697b42329a71b61bd985a22ec163376a6ae5b7c74e01fed6f76b",
+        "plan_version": "historical_random_lineage_plan_v1",
+        "population_signature": "2031fa90c98d02c7ab22b2c009be2bc1d1fec71ff071c1f3f7c4fa0edd3992bd",
+        "python_version": "3.11.9",
+        "replicates": 1000,
+        "rng": "python.random.Random/MT19937",
+        "rng_state_after_sha": "a12226907af4a30c8ac2e9fd82edbe68823ec3f5f20b2389117705b3ef8224dd",
+        "rng_state_before_sha": "dad83840f09aab9e86de401bc7e317c7dd44e398bc9a17889b3f877d17e77386",
+        "seed": 1701,
+        "stream_policy": "Reset Random(seed) for each budget; sorted lineage keys; randrange once per selected cluster",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "production_contract_modified": false,
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "result_version": "historical_uncertainty_replay_v1"
+    }
+  },
+  "phase11_production_PCG64": {
+    "alignment_sha": "6eda322d9bf5542c4875f697a03ace50272ceeecf081a1aff65aa8b9f685ba63",
+    "bootstrap_domain_lineage_count": 183,
+    "bootstrap_domain_row_count": 183,
+    "config": {
+      "confidence_level": 0.95,
+      "domain": "ATTACK_ONLY",
+      "method": "PERCENTILE_BOOTSTRAP_V1",
+      "quantile_method": "linear",
+      "replicates": 1000,
+      "seed": 1701,
+      "target_detector": null,
+      "unit": "LINEAGE_CLUSTERED"
+    },
+    "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+    "decision_view": "EXPLICIT",
+    "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+    "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+    "intervals": [
+      {
+        "ci_lower": 0.0,
+        "ci_upper": 0.03825136612021858,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.01639344262295082,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": 0.005327868852459024,
+        "ci_upper": 0.04918032786885246,
+        "metric_id": "pair/dm_b_v1/dg_v1/jfn",
+        "point_estimate": 0.02185792349726776,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      {
+        "ci_lower": 0.2677595628415301,
+        "ci_upper": 0.3989071038251366,
+        "metric_id": "pair/ds_v2/dg_v1/jfn",
+        "point_estimate": 0.3333333333333333,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      }
+    ],
+    "lineage_count": 1134,
+    "numpy_version": "2.1.3",
+    "operating_policy_sha": null,
+    "paired_reference_alignment_sha": null,
+    "plan_sha": "79f126c0494e334d9d2fb7d43aa12c4c5fe8f6240d6dd2f4c8e6b77b65b3a852",
+    "population_signature": "2031fa90c98d02c7ab22b2c009be2bc1d1fec71ff071c1f3f7c4fa0edd3992bd",
+    "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+    "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+    "result_version": "uncertainty_result_v1",
+    "rng_state_after_sha": "e36bce444f0ce9cdf2bb7eaf18bab9f0ecf2c4a8b7e86e91611c8d53921a7b80",
+    "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+    "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+    "unknown_lineage_rows": 0
+  },
+  "production_contract_unchanged": true,
+  "rng_method_difference_resolved": true
+}

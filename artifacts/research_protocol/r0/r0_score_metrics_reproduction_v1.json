@@ -1,0 +1,23 @@
+{
+  "dg_v1": {
+    "average_precision": 0.5006519683988974,
+    "historical_field": "pr_auc",
+    "pr_metric_definition": "AVERAGE_PRECISION_WHOLE_TIED_BLOCKS",
+    "roc_auc": 0.814953850392616,
+    "score_source_sha": "2589d5c8f9da40be4104c2964966f7b1790b2370255bd87515e63760f2a624ef"
+  },
+  "dm_b_v1": {
+    "average_precision": 0.9877044339233646,
+    "historical_field": "pr_auc",
+    "pr_metric_definition": "AVERAGE_PRECISION_WHOLE_TIED_BLOCKS",
+    "roc_auc": 0.9963493594158975,
+    "score_source_sha": "cfafb1d4286a8b61e4054da337cd45a4353a44894899b034670f9413f6b1000c"
+  },
+  "ds_v2": {
+    "average_precision": 0.7315865803288281,
+    "historical_field": "pr_auc",
+    "pr_metric_definition": "AVERAGE_PRECISION_WHOLE_TIED_BLOCKS",
+    "roc_auc": 0.896760343481655,
+    "score_source_sha": "1dd23a39bb87f3f95b090a93bb7797ae6a1d84e4ddf24a55d63b9eb2609e9fed"
+  }
+}

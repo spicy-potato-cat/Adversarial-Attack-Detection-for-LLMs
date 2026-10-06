@@ -1,0 +1,1970 @@
+{
+  "columns": [
+    "R0",
+    "R1",
+    "R2-D_S",
+    "R2-D_M-B",
+    "R2-D_G",
+    "R3"
+  ],
+  "matrix_version": "cross_regime_matrix_v1",
+  "metrics": {
+    "all_three/jfn": {
+      "R0": {
+        "point_estimate": 0.01639344262295082,
+        "status": "OBSERVED",
+        "uncertainty": {
+          "ci_lower": 0.0,
+          "ci_upper": 0.03825136612021858,
+          "metric_id": "all_three/jfn",
+          "point_estimate": 0.01639344262295082,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        }
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dg_v1/accuracy": {
+      "R0": {
+        "point_estimate": 0.8607929515418502,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dg_v1/f1": {
+      "R0": {
+        "point_estimate": 0.34710743801652894,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dg_v1/fnr": {
+      "R0": {
+        "point_estimate": 0.7704918032786885,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dg_v1/fpr": {
+      "R0": {
+        "point_estimate": 0.017857142857142856,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dg_v1/npv": {
+      "R0": {
+        "point_estimate": 0.8689591078066915,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dg_v1/precision": {
+      "R0": {
+        "point_estimate": 0.711864406779661,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dg_v1/recall": {
+      "R0": {
+        "point_estimate": 0.22950819672131148,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dg_v1/specificity": {
+      "R0": {
+        "point_estimate": 0.9821428571428571,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dm_b_v1/accuracy": {
+      "R0": {
+        "point_estimate": 0.9770925110132158,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dm_b_v1/f1": {
+      "R0": {
+        "point_estimate": 0.9322916666666666,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dm_b_v1/fnr": {
+      "R0": {
+        "point_estimate": 0.02185792349726776,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dm_b_v1/fpr": {
+      "R0": {
+        "point_estimate": 0.023109243697478993,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dm_b_v1/npv": {
+      "R0": {
+        "point_estimate": 0.9957173447537473,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dm_b_v1/precision": {
+      "R0": {
+        "point_estimate": 0.8905472636815921,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dm_b_v1/recall": {
+      "R0": {
+        "point_estimate": 0.9781420765027322,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/dm_b_v1/specificity": {
+      "R0": {
+        "point_estimate": 0.976890756302521,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/ds_v2/accuracy": {
+      "R0": {
+        "point_estimate": 0.9022026431718062,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/ds_v2/f1": {
+      "R0": {
+        "point_estimate": 0.6430868167202572,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/ds_v2/fnr": {
+      "R0": {
+        "point_estimate": 0.453551912568306,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/ds_v2/fpr": {
+      "R0": {
+        "point_estimate": 0.029411764705882353,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/ds_v2/npv": {
+      "R0": {
+        "point_estimate": 0.9175769612711023,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/ds_v2/precision": {
+      "R0": {
+        "point_estimate": 0.78125,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/ds_v2/recall": {
+      "R0": {
+        "point_estimate": 0.546448087431694,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "individual/ds_v2/specificity": {
+      "R0": {
+        "point_estimate": 0.9705882352941176,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/dm_b_v1/dg_v1/ejf": {
+      "R0": {
+        "point_estimate": 0.005016572605930306,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/dm_b_v1/dg_v1/fn_jaccard": {
+      "R0": {
+        "point_estimate": 0.028368794326241134,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/dm_b_v1/dg_v1/independence_reference": {
+      "R0": {
+        "point_estimate": 0.016841350891337453,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/dm_b_v1/dg_v1/jfn": {
+      "R0": {
+        "point_estimate": 0.02185792349726776,
+        "status": "OBSERVED",
+        "uncertainty": {
+          "ci_lower": 0.005327868852459024,
+          "ci_upper": 0.04918032786885246,
+          "metric_id": "pair/dm_b_v1/dg_v1/jfn",
+          "point_estimate": 0.02185792349726776,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        }
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/ds_v2/dg_v1/ejf": {
+      "R0": {
+        "point_estimate": -0.01612469766191882,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/ds_v2/dg_v1/fn_jaccard": {
+      "R0": {
+        "point_estimate": 0.37423312883435583,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/ds_v2/dg_v1/independence_reference": {
+      "R0": {
+        "point_estimate": 0.34945803099525213,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/ds_v2/dg_v1/jfn": {
+      "R0": {
+        "point_estimate": 0.3333333333333333,
+        "status": "OBSERVED",
+        "uncertainty": {
+          "ci_lower": 0.2677595628415301,
+          "ci_upper": 0.3989071038251366,
+          "metric_id": "pair/ds_v2/dg_v1/jfn",
+          "point_estimate": 0.3333333333333333,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        }
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/ds_v2/dm_b_v1/ejf": {
+      "R0": {
+        "point_estimate": 0.006479739615993312,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/ds_v2/dm_b_v1/fn_jaccard": {
+      "R0": {
+        "point_estimate": 0.03571428571428571,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/ds_v2/dm_b_v1/independence_reference": {
+      "R0": {
+        "point_estimate": 0.009913703006957509,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pair/ds_v2/dm_b_v1/jfn": {
+      "R0": {
+        "point_estimate": 0.01639344262295082,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pattern/000": {
+      "R0": {
+        "point_estimate": 0.1092896174863388,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pattern/001": {
+      "R0": {
+        "point_estimate": 0.43169398907103823,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pattern/010": {
+      "R0": {
+        "point_estimate": 0.0,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pattern/011": {
+      "R0": {
+        "point_estimate": 0.00546448087431694,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pattern/100": {
+      "R0": {
+        "point_estimate": 0.12021857923497267,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pattern/101": {
+      "R0": {
+        "point_estimate": 0.31693989071038253,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pattern/110": {
+      "R0": {
+        "point_estimate": 0.0,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "pattern/111": {
+      "R0": {
+        "point_estimate": 0.01639344262295082,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "recovery/dg_v1/conditional_recovery": {
+      "R0": {
+        "point_estimate": 0.0,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "recovery/dg_v1/unique_catch_rate": {
+      "R0": {
+        "point_estimate": 0.0,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "recovery/dm_b_v1/conditional_recovery": {
+      "R0": {
+        "point_estimate": 0.9508196721311475,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "recovery/dm_b_v1/unique_catch_rate": {
+      "R0": {
+        "point_estimate": 0.31693989071038253,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "recovery/ds_v2/conditional_recovery": {
+      "R0": {
+        "point_estimate": 0.25,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "recovery/ds_v2/unique_catch_rate": {
+      "R0": {
+        "point_estimate": 0.00546448087431694,
+        "status": "OBSERVED",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      }
+    },
+    "target/dg_v1/evasion": {
+      "R0": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      }
+    },
+    "target/dm_b_v1/evasion": {
+      "R0": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      }
+    },
+    "target/ds_v2/evasion": {
+      "R0": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      }
+    },
+    "transfer/dg_v1/dm_b_v1/etr": {
+      "R0": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      }
+    },
+    "transfer/dg_v1/ds_v2/etr": {
+      "R0": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      }
+    },
+    "transfer/dm_b_v1/dg_v1/etr": {
+      "R0": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      }
+    },
+    "transfer/dm_b_v1/ds_v2/etr": {
+      "R0": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      }
+    },
+    "transfer/ds_v2/dg_v1/etr": {
+      "R0": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      }
+    },
+    "transfer/ds_v2/dm_b_v1/etr": {
+      "R0": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R1": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_G": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_M-B": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      },
+      "R2-D_S": {
+        "point_estimate": null,
+        "status": "NOT_RUN",
+        "uncertainty": null
+      },
+      "R3": {
+        "point_estimate": null,
+        "status": "NOT_APPLICABLE",
+        "uncertainty": null
+      }
+    }
+  },
+  "paired": false,
+  "reference_slot": "R0",
+  "regime_status": {
+    "R0": "OBSERVED",
+    "R1": "NOT_RUN",
+    "R2-D_G": "NOT_RUN",
+    "R2-D_M-B": "NOT_RUN",
+    "R2-D_S": "NOT_RUN",
+    "R3": "NOT_RUN"
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "1PCT": {
+    "alignment_sha": "bc4ea1c7679f3e316f39a1ee283be4f61c9aadfe7bbc3d6a8bd6fbfeef1be1a7",
+    "attack_count": 183,
+    "benign_count": 952,
+    "bit_order": "S/M/G",
+    "bit_semantics": "0=CATCH;1=MISS",
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 3405,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 3405,
+      "received_predictions": 3405,
+      "status": "COMPLETE"
+    },
+    "metric_status": "COMPLETE",
+    "patterns": [
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 7,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.03825136612021858
+        },
+        "count": 7,
+        "meaning": "All three catch",
+        "pattern_id": "000"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 52,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.28415300546448086
+        },
+        "count": 52,
+        "meaning": "Only D_G misses",
+        "pattern_id": "001"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "count": 0,
+        "meaning": "Only D_M-B misses",
+        "pattern_id": "010"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 1,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.00546448087431694
+        },
+        "count": 1,
+        "meaning": "D_M-B and D_G miss; D_S catches",
+        "pattern_id": "011"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 27,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.14754098360655737
+        },
+        "count": 27,
+        "meaning": "Only D_S misses",
+        "pattern_id": "100"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 91,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.4972677595628415
+        },
+        "count": 91,
+        "meaning": "D_S and D_G miss; D_M-B catches",
+        "pattern_id": "101"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "count": 0,
+        "meaning": "D_S and D_M-B miss; D_G catches",
+        "pattern_id": "110"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 5,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0273224043715847
+        },
+        "count": 5,
+        "meaning": "All three miss",
+        "pattern_id": "111"
+      }
+    ],
+    "population_count": 1135,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "ACCEPTED_METADATA",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "explicit_decisions_sha": "ce7fdab4a4acd96f29155c527be453f6ec9caf0946aa083b5fedfc702732d2b8",
+      "explicit_provenance_id": "HISTORICAL_DESCRIPTIVE_1PCT_V1::6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "BASE_TRAIN",
+      "prediction_batch_sha": "7835daa5cc4361d79945de4346d61c14ae5671effbd38a9a1d178ba483882c26",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "threat_regime": "R0_NON_ADAPTIVE"
+    },
+    "result_version": "failure_patterns_v1"
+  },
+  "3PCT": {
+    "alignment_sha": "6eda322d9bf5542c4875f697a03ace50272ceeecf081a1aff65aa8b9f685ba63",
+    "attack_count": 183,
+    "benign_count": 952,
+    "bit_order": "S/M/G",
+    "bit_semantics": "0=CATCH;1=MISS",
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 3405,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 3405,
+      "received_predictions": 3405,
+      "status": "COMPLETE"
+    },
+    "metric_status": "COMPLETE",
+    "patterns": [
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 20,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.1092896174863388
+        },
+        "count": 20,
+        "meaning": "All three catch",
+        "pattern_id": "000"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 79,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.43169398907103823
+        },
+        "count": 79,
+        "meaning": "Only D_G misses",
+        "pattern_id": "001"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "count": 0,
+        "meaning": "Only D_M-B misses",
+        "pattern_id": "010"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 1,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.00546448087431694
+        },
+        "count": 1,
+        "meaning": "D_M-B and D_G miss; D_S catches",
+        "pattern_id": "011"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 22,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.12021857923497267
+        },
+        "count": 22,
+        "meaning": "Only D_S misses",
+        "pattern_id": "100"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 58,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.31693989071038253
+        },
+        "count": 58,
+        "meaning": "D_S and D_G miss; D_M-B catches",
+        "pattern_id": "101"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "count": 0,
+        "meaning": "D_S and D_M-B miss; D_G catches",
+        "pattern_id": "110"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 3,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.01639344262295082
+        },
+        "count": 3,
+        "meaning": "All three miss",
+        "pattern_id": "111"
+      }
+    ],
+    "population_count": 1135,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "ACCEPTED_METADATA",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "explicit_decisions_sha": "8c04d7865795e7a0afd71d34370f10a59c772b42e439da2180140378bf2be4fe",
+      "explicit_provenance_id": "HISTORICAL_DESCRIPTIVE_3PCT_V1::6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "BASE_TRAIN",
+      "prediction_batch_sha": "a3c3bd48907e6e01a563601d3360efabf891b57f5e1fc4eb6279125b7f0ac199",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "threat_regime": "R0_NON_ADAPTIVE"
+    },
+    "result_version": "failure_patterns_v1"
+  },
+  "5PCT": {
+    "alignment_sha": "d8829f9e6847e07273a8f8e3d8c81b02f5ee31767a4695fcba19cae42df280a0",
+    "attack_count": 183,
+    "benign_count": 952,
+    "bit_order": "S/M/G",
+    "bit_semantics": "0=CATCH;1=MISS",
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 3405,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 3405,
+      "received_predictions": 3405,
+      "status": "COMPLETE"
+    },
+    "metric_status": "COMPLETE",
+    "patterns": [
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 28,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.15300546448087432
+        },
+        "count": 28,
+        "meaning": "All three catch",
+        "pattern_id": "000"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 87,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.47540983606557374
+        },
+        "count": 87,
+        "meaning": "Only D_G misses",
+        "pattern_id": "001"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "count": 0,
+        "meaning": "Only D_M-B misses",
+        "pattern_id": "010"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "count": 0,
+        "meaning": "D_M-B and D_G miss; D_S catches",
+        "pattern_id": "011"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 21,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.11475409836065574
+        },
+        "count": 21,
+        "meaning": "Only D_S misses",
+        "pattern_id": "100"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 45,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.2459016393442623
+        },
+        "count": 45,
+        "meaning": "D_S and D_G miss; D_M-B catches",
+        "pattern_id": "101"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "count": 0,
+        "meaning": "D_S and D_M-B miss; D_G catches",
+        "pattern_id": "110"
+      },
+      {
+        "attack_rate": {
+          "denominator": 183,
+          "numerator": 2,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.01092896174863388
+        },
+        "count": 2,
+        "meaning": "All three miss",
+        "pattern_id": "111"
+      }
+    ],
+    "population_count": 1135,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "ACCEPTED_METADATA",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "explicit_decisions_sha": "26949a93189dee06e2e8789e33e9b6d16f417b61809f064cf1cfad72fe421aeb",
+      "explicit_provenance_id": "HISTORICAL_DESCRIPTIVE_5PCT_V1::6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "BASE_TRAIN",
+      "prediction_batch_sha": "720f15f36daea5ede52fff413494bf6c3fbd17d1254144d6f3f89bfca4ab30a9",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "threat_regime": "R0_NON_ADAPTIVE"
+    },
+    "result_version": "failure_patterns_v1"
+  }
+}

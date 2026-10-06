@@ -1,0 +1,839 @@
+{
+  "1PCT": {
+    "alignment_sha": "bc4ea1c7679f3e316f39a1ee283be4f61c9aadfe7bbc3d6a8bd6fbfeef1be1a7",
+    "attack_count": 183,
+    "benign_count": 952,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 3405,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 3405,
+      "received_predictions": 3405,
+      "status": "COMPLETE"
+    },
+    "detectors": [
+      {
+        "accuracy": {
+          "denominator": 1135,
+          "numerator": 1003,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8837004405286344
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 1135,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 1135,
+          "received_predictions": 1135,
+          "status": "COMPLETE"
+        },
+        "detector_id": "ds_v2",
+        "f1": {
+          "denominator": 252,
+          "numerator": 120,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.47619047619047616
+        },
+        "fn": 123,
+        "fnr": {
+          "denominator": 183,
+          "numerator": 123,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.6721311475409836
+        },
+        "fp": 9,
+        "fpr": {
+          "denominator": 952,
+          "numerator": 9,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.009453781512605041
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 1066,
+          "numerator": 943,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8846153846153846
+        },
+        "population_count": 1135,
+        "precision": {
+          "denominator": 69,
+          "numerator": 60,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8695652173913043
+        },
+        "recall": {
+          "denominator": 183,
+          "numerator": 60,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.32786885245901637
+        },
+        "specificity": {
+          "denominator": 952,
+          "numerator": 943,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.990546218487395
+        },
+        "tn": 943,
+        "tp": 60
+      },
+      {
+        "accuracy": {
+          "denominator": 1135,
+          "numerator": 1122,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9885462555066079
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 1135,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 1135,
+          "received_predictions": 1135,
+          "status": "COMPLETE"
+        },
+        "detector_id": "dm_b_v1",
+        "f1": {
+          "denominator": 367,
+          "numerator": 354,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9645776566757494
+        },
+        "fn": 6,
+        "fnr": {
+          "denominator": 183,
+          "numerator": 6,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.03278688524590164
+        },
+        "fp": 7,
+        "fpr": {
+          "denominator": 952,
+          "numerator": 7,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.007352941176470588
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 951,
+          "numerator": 945,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9936908517350158
+        },
+        "population_count": 1135,
+        "precision": {
+          "denominator": 184,
+          "numerator": 177,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9619565217391305
+        },
+        "recall": {
+          "denominator": 183,
+          "numerator": 177,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9672131147540983
+        },
+        "specificity": {
+          "denominator": 952,
+          "numerator": 945,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9926470588235294
+        },
+        "tn": 945,
+        "tp": 177
+      },
+      {
+        "accuracy": {
+          "denominator": 1135,
+          "numerator": 980,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8634361233480177
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 1135,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 1135,
+          "received_predictions": 1135,
+          "status": "COMPLETE"
+        },
+        "detector_id": "dg_v1",
+        "f1": {
+          "denominator": 223,
+          "numerator": 68,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.30493273542600896
+        },
+        "fn": 149,
+        "fnr": {
+          "denominator": 183,
+          "numerator": 149,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8142076502732241
+        },
+        "fp": 6,
+        "fpr": {
+          "denominator": 952,
+          "numerator": 6,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0063025210084033615
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 1095,
+          "numerator": 946,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8639269406392694
+        },
+        "population_count": 1135,
+        "precision": {
+          "denominator": 40,
+          "numerator": 34,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.85
+        },
+        "recall": {
+          "denominator": 183,
+          "numerator": 34,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.18579234972677597
+        },
+        "specificity": {
+          "denominator": 952,
+          "numerator": 946,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9936974789915967
+        },
+        "tn": 946,
+        "tp": 34
+      }
+    ],
+    "metric_status": "COMPLETE",
+    "population_count": 1135,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "ACCEPTED_METADATA",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "explicit_decisions_sha": "ce7fdab4a4acd96f29155c527be453f6ec9caf0946aa083b5fedfc702732d2b8",
+      "explicit_provenance_id": "HISTORICAL_DESCRIPTIVE_1PCT_V1::6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "BASE_TRAIN",
+      "prediction_batch_sha": "7835daa5cc4361d79945de4346d61c14ae5671effbd38a9a1d178ba483882c26",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "threat_regime": "R0_NON_ADAPTIVE"
+    },
+    "result_version": "individual_metrics_v1"
+  },
+  "3PCT": {
+    "alignment_sha": "6eda322d9bf5542c4875f697a03ace50272ceeecf081a1aff65aa8b9f685ba63",
+    "attack_count": 183,
+    "benign_count": 952,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 3405,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 3405,
+      "received_predictions": 3405,
+      "status": "COMPLETE"
+    },
+    "detectors": [
+      {
+        "accuracy": {
+          "denominator": 1135,
+          "numerator": 1024,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9022026431718062
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 1135,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 1135,
+          "received_predictions": 1135,
+          "status": "COMPLETE"
+        },
+        "detector_id": "ds_v2",
+        "f1": {
+          "denominator": 311,
+          "numerator": 200,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.6430868167202572
+        },
+        "fn": 83,
+        "fnr": {
+          "denominator": 183,
+          "numerator": 83,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.453551912568306
+        },
+        "fp": 28,
+        "fpr": {
+          "denominator": 952,
+          "numerator": 28,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.029411764705882353
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 1007,
+          "numerator": 924,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9175769612711023
+        },
+        "population_count": 1135,
+        "precision": {
+          "denominator": 128,
+          "numerator": 100,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.78125
+        },
+        "recall": {
+          "denominator": 183,
+          "numerator": 100,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.546448087431694
+        },
+        "specificity": {
+          "denominator": 952,
+          "numerator": 924,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9705882352941176
+        },
+        "tn": 924,
+        "tp": 100
+      },
+      {
+        "accuracy": {
+          "denominator": 1135,
+          "numerator": 1109,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9770925110132158
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 1135,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 1135,
+          "received_predictions": 1135,
+          "status": "COMPLETE"
+        },
+        "detector_id": "dm_b_v1",
+        "f1": {
+          "denominator": 384,
+          "numerator": 358,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9322916666666666
+        },
+        "fn": 4,
+        "fnr": {
+          "denominator": 183,
+          "numerator": 4,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.02185792349726776
+        },
+        "fp": 22,
+        "fpr": {
+          "denominator": 952,
+          "numerator": 22,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.023109243697478993
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 934,
+          "numerator": 930,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9957173447537473
+        },
+        "population_count": 1135,
+        "precision": {
+          "denominator": 201,
+          "numerator": 179,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8905472636815921
+        },
+        "recall": {
+          "denominator": 183,
+          "numerator": 179,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9781420765027322
+        },
+        "specificity": {
+          "denominator": 952,
+          "numerator": 930,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.976890756302521
+        },
+        "tn": 930,
+        "tp": 179
+      },
+      {
+        "accuracy": {
+          "denominator": 1135,
+          "numerator": 977,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8607929515418502
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 1135,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 1135,
+          "received_predictions": 1135,
+          "status": "COMPLETE"
+        },
+        "detector_id": "dg_v1",
+        "f1": {
+          "denominator": 242,
+          "numerator": 84,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.34710743801652894
+        },
+        "fn": 141,
+        "fnr": {
+          "denominator": 183,
+          "numerator": 141,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.7704918032786885
+        },
+        "fp": 17,
+        "fpr": {
+          "denominator": 952,
+          "numerator": 17,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.017857142857142856
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 1076,
+          "numerator": 935,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8689591078066915
+        },
+        "population_count": 1135,
+        "precision": {
+          "denominator": 59,
+          "numerator": 42,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.711864406779661
+        },
+        "recall": {
+          "denominator": 183,
+          "numerator": 42,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.22950819672131148
+        },
+        "specificity": {
+          "denominator": 952,
+          "numerator": 935,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9821428571428571
+        },
+        "tn": 935,
+        "tp": 42
+      }
+    ],
+    "metric_status": "COMPLETE",
+    "population_count": 1135,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "ACCEPTED_METADATA",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "explicit_decisions_sha": "8c04d7865795e7a0afd71d34370f10a59c772b42e439da2180140378bf2be4fe",
+      "explicit_provenance_id": "HISTORICAL_DESCRIPTIVE_3PCT_V1::6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "BASE_TRAIN",
+      "prediction_batch_sha": "a3c3bd48907e6e01a563601d3360efabf891b57f5e1fc4eb6279125b7f0ac199",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "threat_regime": "R0_NON_ADAPTIVE"
+    },
+    "result_version": "individual_metrics_v1"
+  },
+  "5PCT": {
+    "alignment_sha": "d8829f9e6847e07273a8f8e3d8c81b02f5ee31767a4695fcba19cae42df280a0",
+    "attack_count": 183,
+    "benign_count": 952,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 3405,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 3405,
+      "received_predictions": 3405,
+      "status": "COMPLETE"
+    },
+    "detectors": [
+      {
+        "accuracy": {
+          "denominator": 1135,
+          "numerator": 1021,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8995594713656387
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 1135,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 1135,
+          "received_predictions": 1135,
+          "status": "COMPLETE"
+        },
+        "detector_id": "ds_v2",
+        "f1": {
+          "denominator": 344,
+          "numerator": 230,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.6686046511627907
+        },
+        "fn": 68,
+        "fnr": {
+          "denominator": 183,
+          "numerator": 68,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.37158469945355194
+        },
+        "fp": 46,
+        "fpr": {
+          "denominator": 952,
+          "numerator": 46,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.04831932773109244
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 974,
+          "numerator": 906,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9301848049281314
+        },
+        "population_count": 1135,
+        "precision": {
+          "denominator": 161,
+          "numerator": 115,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.7142857142857143
+        },
+        "recall": {
+          "denominator": 183,
+          "numerator": 115,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.6284153005464481
+        },
+        "specificity": {
+          "denominator": 952,
+          "numerator": 906,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9516806722689075
+        },
+        "tn": 906,
+        "tp": 115
+      },
+      {
+        "accuracy": {
+          "denominator": 1135,
+          "numerator": 1099,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9682819383259912
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 1135,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 1135,
+          "received_predictions": 1135,
+          "status": "COMPLETE"
+        },
+        "detector_id": "dm_b_v1",
+        "f1": {
+          "denominator": 398,
+          "numerator": 362,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9095477386934674
+        },
+        "fn": 2,
+        "fnr": {
+          "denominator": 183,
+          "numerator": 2,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.01092896174863388
+        },
+        "fp": 34,
+        "fpr": {
+          "denominator": 952,
+          "numerator": 34,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.03571428571428571
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 920,
+          "numerator": 918,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9978260869565218
+        },
+        "population_count": 1135,
+        "precision": {
+          "denominator": 215,
+          "numerator": 181,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8418604651162791
+        },
+        "recall": {
+          "denominator": 183,
+          "numerator": 181,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9890710382513661
+        },
+        "specificity": {
+          "denominator": 952,
+          "numerator": 918,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9642857142857143
+        },
+        "tn": 918,
+        "tp": 181
+      },
+      {
+        "accuracy": {
+          "denominator": 1135,
+          "numerator": 957,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8431718061674008
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 1135,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 1135,
+          "received_predictions": 1135,
+          "status": "COMPLETE"
+        },
+        "detector_id": "dg_v1",
+        "f1": {
+          "denominator": 276,
+          "numerator": 98,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.35507246376811596
+        },
+        "fn": 134,
+        "fnr": {
+          "denominator": 183,
+          "numerator": 134,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.73224043715847
+        },
+        "fp": 44,
+        "fpr": {
+          "denominator": 952,
+          "numerator": 44,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.046218487394957986
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 1042,
+          "numerator": 908,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8714011516314779
+        },
+        "population_count": 1135,
+        "precision": {
+          "denominator": 93,
+          "numerator": 49,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.5268817204301075
+        },
+        "recall": {
+          "denominator": 183,
+          "numerator": 49,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.2677595628415301
+        },
+        "specificity": {
+          "denominator": 952,
+          "numerator": 908,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9537815126050421
+        },
+        "tn": 908,
+        "tp": 49
+      }
+    ],
+    "metric_status": "COMPLETE",
+    "population_count": 1135,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "ACCEPTED_METADATA",
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "explicit_decisions_sha": "26949a93189dee06e2e8789e33e9b6d16f417b61809f064cf1cfad72fe421aeb",
+      "explicit_provenance_id": "HISTORICAL_DESCRIPTIVE_5PCT_V1::6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "BASE_TRAIN",
+      "prediction_batch_sha": "720f15f36daea5ede52fff413494bf6c3fbd17d1254144d6f3f89bfca4ab30a9",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "398039e4cfecc8d78e3d2f6998fc4e6a1b2e23ab06329a932618d72e7209a0d0",
+      "threat_regime": "R0_NON_ADAPTIVE"
+    },
+    "result_version": "individual_metrics_v1"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "Cycle2": "DEFERRED",
+  "OOF_final_model_substitution": false,
+  "Phase14": "NOT_STARTED",
+  "alignment_shas": {
+    "1PCT": "bc4ea1c7679f3e316f39a1ee283be4f61c9aadfe7bbc3d6a8bd6fbfeef1be1a7",
+    "3PCT": "6eda322d9bf5542c4875f697a03ace50272ceeecf081a1aff65aa8b9f685ba63",
+    "5PCT": "d8829f9e6847e07273a8f8e3d8c81b02f5ee31767a4695fcba19cae42df280a0"
+  },
+  "attack_count": 183,
+  "benign_count": 952,
+  "decision_artifact_sha": "5a9238e4a32bcf48fa186ffcd0b8306396bf932bde599b9ba7347e698c872aaf",
+  "decision_rows": 10215,
+  "derived_metric_tolerance": 1e-12,
+  "descriptive_frontier_reproduced": true,
+  "fold_membership_hash_checks": 20,
+  "future_regimes": {
+    "R0": "OBSERVED",
+    "R1": "NOT_RUN",
+    "R2-D_G": "NOT_RUN",
+    "R2-D_M-B": "NOT_RUN",
+    "R2-D_S": "NOT_RUN",
+    "R3": "NOT_RUN"
+  },
+  "historical_ci_tolerance": 1e-12,
+  "historical_rng": "PYTHON_RANDOM_MT19937",
+  "historical_uncertainty": "PASS_EXPLICIT_LEGACY_RNG_REPLAY",
+  "import_manifest_sha": "6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+  "integer_counts": "EXACT_AT_ALL_THREE_BUDGETS",
+  "method_difference": "EXPLICIT_AND_RESOLVED_NOT_IDENTICAL_RNG",
+  "new_model_inference": false,
+  "operational_thresholds_used": false,
+  "population_count": 1135,
+  "pre_R0_machinery_commit": "9982b9bd2c5f8da7fc63a1b7977c1cccf91cfb70",
+  "production_rng": "NUMPY_PCG64_UNCHANGED",
+  "ranking_tolerance": 1e-12,
+  "report_version": "r0_reproduction_report_v1",
+  "source_hash_checks": 123,
+  "status": "PASS"
+}
