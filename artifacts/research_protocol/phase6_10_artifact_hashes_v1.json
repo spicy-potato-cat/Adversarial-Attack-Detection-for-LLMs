@@ -1,0 +1,16 @@
+{
+  "artifact_version": "phase6_10_artifact_hashes_v1",
+  "sha256": {
+    "artifacts/research_protocol/core_metrics/core_metrics_contract_v1.json": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+    "artifacts/research_protocol/core_metrics/synthetic_metrics_expected_v1.json": "185dd316509ef1071f35c9a096e284cc2fe0c1ec1f66592de0287bfbbffd167d",
+    "artifacts/research_protocol/core_metrics/synthetic_metrics_fixture_v1.json": "a87d3d55fd22f67291707e56b1bf2b9c799d8d4069cd12e475c018f88eff6968",
+    "artifacts/research_protocol/core_metrics/synthetic_r2_parent_metadata_v1.json": "b4f25188aba032389591302bbc486ecc4030bad5f1d14983ed37e9bdad739be0",
+    "artifacts/research_protocol/core_metrics/synthetic_r2_transfer_expected_v1.json": "918f3e9d061e5f40bac2469c6e3259d6fb5dde3c7b5ae27e7591ba6c895c2d18",
+    "artifacts/research_protocol/core_metrics/synthetic_r2_transfer_fixture_v1.json": "4f8cec60ce71cfb324cca9bbd894eb95f861fa69c6d15aca655a1de26d9c4867",
+    "detection_service/research_protocol/alignment.py": "d6fba066d02dafb734dcaa49e0cba57b1a1b7ab4813cc2f8b52dcd721719bef4",
+    "detection_service/research_protocol/core_metrics.py": "cd62c85923bec28710817c91fc356a0e35a4a4ca09b79d3a659dae80b5135231",
+    "detection_service/research_protocol/core_metrics_contract.py": "926af767b9c45a2607d86c325775822fe160deee9c0116595de7d25dde88e687",
+    "detection_service/research_protocol/metric_types.py": "c41f00a6d1b40ca5bffc5e72ff4ae17499b6d96260ec785f6bfb83436850c7fc",
+    "detection_service/tests/test_core_metrics.py": "b45da0678900f40314f7780b3df1520bed00674093e3d7a6b7595bcfd352f06b"
+  }
+}

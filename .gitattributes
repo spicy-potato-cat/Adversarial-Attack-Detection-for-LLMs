@@ -57,3 +57,6 @@
 /detection_service/tests/test_operating_policy.py -text
 /reviews/EXP_PROTOCOL_001_OPERATING_POINT_FREEZE_v1.md -text
 /reviews/EXP_PROTOCOL_001_PHASE5_TEST_REPORT_v1.md -text
+/detection_service/tests/test_core_metrics.py -text
+/reviews/EXP_PROTOCOL_001_CORE_METRICS_v1.md -text
+/reviews/EXP_PROTOCOL_001_PHASE6_10_TEST_REPORT_v1.md -text

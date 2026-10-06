@@ -1,0 +1,910 @@
+{
+  "common_mode": {
+    "alignment_sha": "15ddcc79fb90459efb7042a66763e414aca83ca88c4464e728eaf0700bf4c5c9",
+    "all_three_fn_count": 36,
+    "all_three_jfn": {
+      "denominator": 306,
+      "numerator": 36,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.11764705882352941
+    },
+    "attack_count": 306,
+    "benign_count": 3,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 927,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 927,
+      "received_predictions": 927,
+      "status": "COMPLETE"
+    },
+    "metric_status": "COMPLETE",
+    "pairs": [
+      {
+        "ejf": {
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.06407791874919902
+        },
+        "fn_jaccard": {
+          "denominator": 106,
+          "numerator": 36,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.33962264150943394
+        },
+        "independence_reference": {
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.05356914007433039
+        },
+        "intersection_count": 36,
+        "jfn": {
+          "denominator": 306,
+          "numerator": 36,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.11764705882352941
+        },
+        "left_detector": "ds_v2",
+        "left_fnr": {
+          "denominator": 306,
+          "numerator": 66,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.21568627450980393
+        },
+        "right_detector": "dm_b_v1",
+        "right_fnr": {
+          "denominator": 306,
+          "numerator": 76,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.24836601307189543
+        },
+        "shared_fn_count": 36,
+        "union_count": 106
+      },
+      {
+        "ejf": {
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.08970908624887863
+        },
+        "fn_jaccard": {
+          "denominator": 106,
+          "numerator": 46,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.4339622641509434
+        },
+        "independence_reference": {
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.06061771113674228
+        },
+        "intersection_count": 46,
+        "jfn": {
+          "denominator": 306,
+          "numerator": 46,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.1503267973856209
+        },
+        "left_detector": "ds_v2",
+        "left_fnr": {
+          "denominator": 306,
+          "numerator": 66,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.21568627450980393
+        },
+        "right_detector": "dg_v1",
+        "right_fnr": {
+          "denominator": 306,
+          "numerator": 86,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.28104575163398693
+        },
+        "shared_fn_count": 46,
+        "union_count": 106
+      },
+      {
+        "ejf": {
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.11320432312358493
+        },
+        "fn_jaccard": {
+          "denominator": 106,
+          "numerator": 56,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.5283018867924528
+        },
+        "independence_reference": {
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.06980221282412748
+        },
+        "intersection_count": 56,
+        "jfn": {
+          "denominator": 306,
+          "numerator": 56,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.1830065359477124
+        },
+        "left_detector": "dm_b_v1",
+        "left_fnr": {
+          "denominator": 306,
+          "numerator": 76,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.24836601307189543
+        },
+        "right_detector": "dg_v1",
+        "right_fnr": {
+          "denominator": 306,
+          "numerator": 86,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.28104575163398693
+        },
+        "shared_fn_count": 56,
+        "union_count": 106
+      }
+    ],
+    "population_count": 309,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "SYNTHETIC_FIXTURE",
+      "experiment_id": "EXP-R2-9158555c3604ad251889568dfbb1f9f2d7ae708c3ba3e7894f984bde687a9a62",
+      "explicit_decisions_sha": "ecf9d2140f7233317e6bbc017ffb1d6724005e19f0dc8d9dd52fcf3084b30fdc",
+      "explicit_provenance_id": "TEST_FIXTURE_HAND_DECLARED_V1",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "INTERNAL_TEST",
+      "prediction_batch_sha": "fbcfe57ea095022c6cbd36a00a07b6587a3cdfb94c84da4edce23176c4e903d1",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "b64d0b85442f228285dae7b418d8684cc30816b2ffee8b8c56fc9167ada1e986",
+      "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+    },
+    "result_version": "common_mode_metrics_v1"
+  },
+  "evasion_transfer": {
+    "alignment_sha": "15ddcc79fb90459efb7042a66763e414aca83ca88c4464e728eaf0700bf4c5c9",
+    "attack_count": 306,
+    "benign_count": 3,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 927,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 927,
+      "received_predictions": 927,
+      "status": "COMPLETE"
+    },
+    "metric_status": "COMPLETE",
+    "population_count": 309,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "SYNTHETIC_FIXTURE",
+      "experiment_id": "EXP-R2-9158555c3604ad251889568dfbb1f9f2d7ae708c3ba3e7894f984bde687a9a62",
+      "explicit_decisions_sha": "ecf9d2140f7233317e6bbc017ffb1d6724005e19f0dc8d9dd52fcf3084b30fdc",
+      "explicit_provenance_id": "TEST_FIXTURE_HAND_DECLARED_V1",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "INTERNAL_TEST",
+      "prediction_batch_sha": "fbcfe57ea095022c6cbd36a00a07b6587a3cdfb94c84da4edce23176c4e903d1",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "b64d0b85442f228285dae7b418d8684cc30816b2ffee8b8c56fc9167ada1e986",
+      "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+    },
+    "result_version": "evasion_transfer_metrics_v1",
+    "targets": [
+      {
+        "target_detector": "ds_v2",
+        "target_evasion_count": 40,
+        "target_evasion_lineage_count": 5,
+        "target_evasion_rate": {
+          "denominator": 100,
+          "numerator": 40,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.4
+        },
+        "transfers": [
+          {
+            "etr": {
+              "denominator": 40,
+              "numerator": 10,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.25
+            },
+            "joint_evasion_count": 10,
+            "target_detector": "ds_v2",
+            "target_evasion_count": 40,
+            "transfer_detector": "dm_b_v1",
+            "valid_attempt_count": 100
+          },
+          {
+            "etr": {
+              "denominator": 40,
+              "numerator": 20,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.5
+            },
+            "joint_evasion_count": 20,
+            "target_detector": "ds_v2",
+            "target_evasion_count": 40,
+            "transfer_detector": "dg_v1",
+            "valid_attempt_count": 100
+          }
+        ],
+        "unique_lineage_count": 5,
+        "valid_attempt_count": 100,
+        "valid_attempt_lineage_count": 5
+      },
+      {
+        "target_detector": "dm_b_v1",
+        "target_evasion_count": 40,
+        "target_evasion_lineage_count": 5,
+        "target_evasion_rate": {
+          "denominator": 100,
+          "numerator": 40,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.4
+        },
+        "transfers": [
+          {
+            "etr": {
+              "denominator": 40,
+              "numerator": 10,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.25
+            },
+            "joint_evasion_count": 10,
+            "target_detector": "dm_b_v1",
+            "target_evasion_count": 40,
+            "transfer_detector": "ds_v2",
+            "valid_attempt_count": 100
+          },
+          {
+            "etr": {
+              "denominator": 40,
+              "numerator": 20,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.5
+            },
+            "joint_evasion_count": 20,
+            "target_detector": "dm_b_v1",
+            "target_evasion_count": 40,
+            "transfer_detector": "dg_v1",
+            "valid_attempt_count": 100
+          }
+        ],
+        "unique_lineage_count": 5,
+        "valid_attempt_count": 100,
+        "valid_attempt_lineage_count": 5
+      },
+      {
+        "target_detector": "dg_v1",
+        "target_evasion_count": 40,
+        "target_evasion_lineage_count": 5,
+        "target_evasion_rate": {
+          "denominator": 100,
+          "numerator": 40,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.4
+        },
+        "transfers": [
+          {
+            "etr": {
+              "denominator": 40,
+              "numerator": 10,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.25
+            },
+            "joint_evasion_count": 10,
+            "target_detector": "dg_v1",
+            "target_evasion_count": 40,
+            "transfer_detector": "ds_v2",
+            "valid_attempt_count": 100
+          },
+          {
+            "etr": {
+              "denominator": 40,
+              "numerator": 20,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.5
+            },
+            "joint_evasion_count": 20,
+            "target_detector": "dg_v1",
+            "target_evasion_count": 40,
+            "transfer_detector": "dm_b_v1",
+            "valid_attempt_count": 100
+          }
+        ],
+        "unique_lineage_count": 5,
+        "valid_attempt_count": 100,
+        "valid_attempt_lineage_count": 5
+      }
+    ]
+  },
+  "failure_patterns": {
+    "alignment_sha": "15ddcc79fb90459efb7042a66763e414aca83ca88c4464e728eaf0700bf4c5c9",
+    "attack_count": 306,
+    "benign_count": 3,
+    "bit_order": "S/M/G",
+    "bit_semantics": "0=CATCH;1=MISS",
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 927,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 927,
+      "received_predictions": 927,
+      "status": "COMPLETE"
+    },
+    "metric_status": "COMPLETE",
+    "patterns": [
+      {
+        "attack_rate": {
+          "denominator": 306,
+          "numerator": 180,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.5882352941176471
+        },
+        "count": 180,
+        "meaning": "All three catch",
+        "pattern_id": "000"
+      },
+      {
+        "attack_rate": {
+          "denominator": 306,
+          "numerator": 20,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.06535947712418301
+        },
+        "count": 20,
+        "meaning": "Only D_G misses",
+        "pattern_id": "001"
+      },
+      {
+        "attack_rate": {
+          "denominator": 306,
+          "numerator": 20,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.06535947712418301
+        },
+        "count": 20,
+        "meaning": "Only D_M-B misses",
+        "pattern_id": "010"
+      },
+      {
+        "attack_rate": {
+          "denominator": 306,
+          "numerator": 20,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.06535947712418301
+        },
+        "count": 20,
+        "meaning": "D_M-B and D_G miss; D_S catches",
+        "pattern_id": "011"
+      },
+      {
+        "attack_rate": {
+          "denominator": 306,
+          "numerator": 20,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.06535947712418301
+        },
+        "count": 20,
+        "meaning": "Only D_S misses",
+        "pattern_id": "100"
+      },
+      {
+        "attack_rate": {
+          "denominator": 306,
+          "numerator": 10,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.032679738562091505
+        },
+        "count": 10,
+        "meaning": "D_S and D_G miss; D_M-B catches",
+        "pattern_id": "101"
+      },
+      {
+        "attack_rate": {
+          "denominator": 306,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "count": 0,
+        "meaning": "D_S and D_M-B miss; D_G catches",
+        "pattern_id": "110"
+      },
+      {
+        "attack_rate": {
+          "denominator": 306,
+          "numerator": 36,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.11764705882352941
+        },
+        "count": 36,
+        "meaning": "All three miss",
+        "pattern_id": "111"
+      }
+    ],
+    "population_count": 309,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "SYNTHETIC_FIXTURE",
+      "experiment_id": "EXP-R2-9158555c3604ad251889568dfbb1f9f2d7ae708c3ba3e7894f984bde687a9a62",
+      "explicit_decisions_sha": "ecf9d2140f7233317e6bbc017ffb1d6724005e19f0dc8d9dd52fcf3084b30fdc",
+      "explicit_provenance_id": "TEST_FIXTURE_HAND_DECLARED_V1",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "INTERNAL_TEST",
+      "prediction_batch_sha": "fbcfe57ea095022c6cbd36a00a07b6587a3cdfb94c84da4edce23176c4e903d1",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "b64d0b85442f228285dae7b418d8684cc30816b2ffee8b8c56fc9167ada1e986",
+      "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+    },
+    "result_version": "failure_patterns_v1"
+  },
+  "individual": {
+    "alignment_sha": "15ddcc79fb90459efb7042a66763e414aca83ca88c4464e728eaf0700bf4c5c9",
+    "attack_count": 306,
+    "benign_count": 3,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 927,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 927,
+      "received_predictions": 927,
+      "status": "COMPLETE"
+    },
+    "detectors": [
+      {
+        "accuracy": {
+          "denominator": 309,
+          "numerator": 243,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.7864077669902912
+        },
+        "attack_count": 306,
+        "benign_count": 3,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 309,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 309,
+          "received_predictions": 309,
+          "status": "COMPLETE"
+        },
+        "detector_id": "ds_v2",
+        "f1": {
+          "denominator": 546,
+          "numerator": 480,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8791208791208791
+        },
+        "fn": 66,
+        "fnr": {
+          "denominator": 306,
+          "numerator": 66,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.21568627450980393
+        },
+        "fp": 0,
+        "fpr": {
+          "denominator": 3,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 69,
+          "numerator": 3,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.043478260869565216
+        },
+        "population_count": 309,
+        "precision": {
+          "denominator": 240,
+          "numerator": 240,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 1.0
+        },
+        "recall": {
+          "denominator": 306,
+          "numerator": 240,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.7843137254901961
+        },
+        "specificity": {
+          "denominator": 3,
+          "numerator": 3,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 1.0
+        },
+        "tn": 3,
+        "tp": 240
+      },
+      {
+        "accuracy": {
+          "denominator": 309,
+          "numerator": 233,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.7540453074433657
+        },
+        "attack_count": 306,
+        "benign_count": 3,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 309,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 309,
+          "received_predictions": 309,
+          "status": "COMPLETE"
+        },
+        "detector_id": "dm_b_v1",
+        "f1": {
+          "denominator": 536,
+          "numerator": 460,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8582089552238806
+        },
+        "fn": 76,
+        "fnr": {
+          "denominator": 306,
+          "numerator": 76,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.24836601307189543
+        },
+        "fp": 0,
+        "fpr": {
+          "denominator": 3,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 79,
+          "numerator": 3,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0379746835443038
+        },
+        "population_count": 309,
+        "precision": {
+          "denominator": 230,
+          "numerator": 230,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 1.0
+        },
+        "recall": {
+          "denominator": 306,
+          "numerator": 230,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.7516339869281046
+        },
+        "specificity": {
+          "denominator": 3,
+          "numerator": 3,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 1.0
+        },
+        "tn": 3,
+        "tp": 230
+      },
+      {
+        "accuracy": {
+          "denominator": 309,
+          "numerator": 223,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.7216828478964401
+        },
+        "attack_count": 306,
+        "benign_count": 3,
+        "coverage": {
+          "coverage_rate": 1.0,
+          "expected_predictions": 309,
+          "missing_decisions": 0,
+          "missing_predictions": 0,
+          "non_ok_predictions": 0,
+          "ok_predictions": 309,
+          "received_predictions": 309,
+          "status": "COMPLETE"
+        },
+        "detector_id": "dg_v1",
+        "f1": {
+          "denominator": 526,
+          "numerator": 440,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.8365019011406845
+        },
+        "fn": 86,
+        "fnr": {
+          "denominator": 306,
+          "numerator": 86,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.28104575163398693
+        },
+        "fp": 0,
+        "fpr": {
+          "denominator": 3,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "metric_status": "COMPLETE",
+        "npv": {
+          "denominator": 89,
+          "numerator": 3,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.033707865168539325
+        },
+        "population_count": 309,
+        "precision": {
+          "denominator": 220,
+          "numerator": 220,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 1.0
+        },
+        "recall": {
+          "denominator": 306,
+          "numerator": 220,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.7189542483660131
+        },
+        "specificity": {
+          "denominator": 3,
+          "numerator": 3,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 1.0
+        },
+        "tn": 3,
+        "tp": 220
+      }
+    ],
+    "metric_status": "COMPLETE",
+    "population_count": 309,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "SYNTHETIC_FIXTURE",
+      "experiment_id": "EXP-R2-9158555c3604ad251889568dfbb1f9f2d7ae708c3ba3e7894f984bde687a9a62",
+      "explicit_decisions_sha": "ecf9d2140f7233317e6bbc017ffb1d6724005e19f0dc8d9dd52fcf3084b30fdc",
+      "explicit_provenance_id": "TEST_FIXTURE_HAND_DECLARED_V1",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "INTERNAL_TEST",
+      "prediction_batch_sha": "fbcfe57ea095022c6cbd36a00a07b6587a3cdfb94c84da4edce23176c4e903d1",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "b64d0b85442f228285dae7b418d8684cc30816b2ffee8b8c56fc9167ada1e986",
+      "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+    },
+    "result_version": "individual_metrics_v1"
+  },
+  "recovery": {
+    "alignment_sha": "15ddcc79fb90459efb7042a66763e414aca83ca88c4464e728eaf0700bf4c5c9",
+    "attack_count": 306,
+    "benign_count": 3,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 927,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 927,
+      "received_predictions": 927,
+      "status": "COMPLETE"
+    },
+    "detectors": [
+      {
+        "both_others_miss_count": 56,
+        "conditional_recovery": {
+          "denominator": 56,
+          "numerator": 20,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.35714285714285715
+        },
+        "detector_id": "ds_v2",
+        "unique_catch_count": 20,
+        "unique_catch_pattern": "011",
+        "unique_catch_rate": {
+          "denominator": 306,
+          "numerator": 20,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.06535947712418301
+        }
+      },
+      {
+        "both_others_miss_count": 46,
+        "conditional_recovery": {
+          "denominator": 46,
+          "numerator": 10,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.21739130434782608
+        },
+        "detector_id": "dm_b_v1",
+        "unique_catch_count": 10,
+        "unique_catch_pattern": "101",
+        "unique_catch_rate": {
+          "denominator": 306,
+          "numerator": 10,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.032679738562091505
+        }
+      },
+      {
+        "both_others_miss_count": 36,
+        "conditional_recovery": {
+          "denominator": 36,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "detector_id": "dg_v1",
+        "unique_catch_count": 0,
+        "unique_catch_pattern": "110",
+        "unique_catch_rate": {
+          "denominator": 306,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        }
+      }
+    ],
+    "metric_status": "COMPLETE",
+    "population_count": 309,
+    "provenance": {
+      "decision_view": "EXPLICIT",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "SYNTHETIC_FIXTURE",
+      "experiment_id": "EXP-R2-9158555c3604ad251889568dfbb1f9f2d7ae708c3ba3e7894f984bde687a9a62",
+      "explicit_decisions_sha": "ecf9d2140f7233317e6bbc017ffb1d6724005e19f0dc8d9dd52fcf3084b30fdc",
+      "explicit_provenance_id": "TEST_FIXTURE_HAND_DECLARED_V1",
+      "operating_policy_sha": null,
+      "operational_prediction_schema_sha": null,
+      "operational_threshold_ids": null,
+      "operational_thresholds": null,
+      "partition": "INTERNAL_TEST",
+      "prediction_batch_sha": "fbcfe57ea095022c6cbd36a00a07b6587a3cdfb94c84da4edce23176c4e903d1",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "b64d0b85442f228285dae7b418d8684cc30816b2ffee8b8c56fc9167ada1e986",
+      "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+    },
+    "result_version": "recovery_metrics_v1"
+  },
+  "result_version": "core_metrics_bundle_v1"
+}

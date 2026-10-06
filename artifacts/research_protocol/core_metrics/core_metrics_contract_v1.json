@@ -1,0 +1,63 @@
+{
+  "code_sha256": {
+    "detection_service/research_protocol/alignment.py": "d6fba066d02dafb734dcaa49e0cba57b1a1b7ab4813cc2f8b52dcd721719bef4",
+    "detection_service/research_protocol/core_metrics.py": "cd62c85923bec28710817c91fc356a0e35a4a4ca09b79d3a659dae80b5135231",
+    "detection_service/research_protocol/core_metrics_contract.py": "926af767b9c45a2607d86c325775822fe160deee9c0116595de7d25dde88e687",
+    "detection_service/research_protocol/metric_types.py": "c41f00a6d1b40ca5bffc5e72ff4ae17499b6d96260ec785f6bfb83436850c7fc",
+    "detection_service/tests/test_core_metrics.py": "b45da0678900f40314f7780b3df1520bed00674093e3d7a6b7595bcfd352f06b"
+  },
+  "comparator": "D_M-A_COMPARATOR_ONLY_EXCLUDED",
+  "contract_version": "core_metrics_contract_v1",
+  "decision_views": [
+    "OPERATIONAL",
+    "NATIVE",
+    "EXPLICIT"
+  ],
+  "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+  "ejf": "JFN_ij - independence_reference; sign is not a causal conclusion",
+  "etr": "joint evasion count / successful target evasion count",
+  "exclusions": [
+    "inference",
+    "training",
+    "threshold fitting",
+    "frontiers",
+    "AUC",
+    "bootstrap",
+    "confidence intervals",
+    "cross-regime comparison",
+    "real R0 reproduction",
+    "R1/R2/R3 experiments",
+    "Cycle-2"
+  ],
+  "failure_denominator": "N_attack",
+  "failure_indicator": "truth_label == 1 AND decision == 0",
+  "fn_jaccard": "intersection / union; null on empty union (versioned policy supersedes historical empty-union zero convention)",
+  "independence_reference": "FNR_i * FNR_j; descriptive, not causal independence",
+  "jfn": "SharedFN_ij / N_attack",
+  "lineage": "Row-level attempts retained, with lineage IDs and distinct-lineage counts; no independent-row uncertainty assumption",
+  "official_evaluation": "STRICT_COMPLETE; non-OK/missing requested decisions block all official metrics",
+  "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+  "pattern_bits": "S/M/G; 0=CATCH,1=MISS",
+  "pattern_order": "000,001,010,011,100,101,110,111",
+  "prediction_regime_binding": "Explicit batch experiment/manifest/partition/threat binding; canonical records have no regime fields",
+  "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+  "primary_detectors": [
+    "D_S",
+    "D_M-B",
+    "D_G"
+  ],
+  "r3_transfer": "REJECTED_NOT_R2",
+  "recovery": "UniqueCatch_i / (UniqueCatch_i + count_111)",
+  "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+  "scope": "PHASES_6_TO_10_SYNTHETIC_CORRECTNESS_ONLY",
+  "serialization": "UTF-8 ASCII-escaped sorted JSON, finite numbers, deterministic arrays, final LF; compact API results, fixed indent-2 protocol artifacts",
+  "target_evasion": "valid_attack_attempt AND truth_label==1 AND target decision==0; attack_success not substituted",
+  "three_way_jfn": "count_111 / N_attack; shared failure, not an ensemble FNR",
+  "unique_catch_rate": "UniqueCatch_i / N_attack",
+  "unique_catches": {
+    "D_G": "110",
+    "D_M-B": "101",
+    "D_S": "011"
+  },
+  "zero_denominator": "null, status UNDEFINED, explicit zero denominator/reason; never fabricated zero"
+}
