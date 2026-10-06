@@ -127,7 +127,10 @@ created or exposed. Missing stacks carry null metrics and explicit status.
         pairwise.append({"left": left, "right": right, "attack_denominator": n, "fnr_i": fnr[left],
                          "fnr_j": fnr[right], "jfn_count": intersection, "jfn": jfn,
                          "independence_reference": ind, "ejf": jfn - ind,
-                         "fn_union_count": union, "fn_jaccard": intersection / union if union else 0.0})
+                         "fn_union_count": union, "fn_jaccard": intersection / union if union else 0.0,
+                         "left_fn_count": sum(misses[left]), "right_fn_count": sum(misses[right]),
+                         "p_failure_left_given_right": intersection / sum(misses[right]) if sum(misses[right]) else None,
+                         "p_failure_right_given_left": intersection / sum(misses[left]) if sum(misses[left]) else None})
     stack_reports, unique = [], []
     for name, members in sorted((stacks or {}).items()):
         require(len(members) >= 2 and len(members) == len(set(members)), "invalid stack membership")
@@ -138,7 +141,8 @@ created or exposed. Missing stacks carry null metrics and explicit status.
             for key in members:
                 unique.append({"stack": name, "detector": key, "status": "UNMEASURED_MISSING_DETECTOR",
                                "unique_catch_count": None, "unique_catch_rate": None,
-                               "other_members_miss_count": None, "recovery_given_others_miss": None})
+                               "other_members_miss_count": None, "recovery_given_others_miss": None,
+                               "small_conditional_denominator": None})
             continue
         count = sum(all(misses[k][i] for k in members) for i in range(n))
         stack_reports.append({"stack": name, "members": members, "status": "MEASURED",
@@ -150,13 +154,17 @@ created or exposed. Missing stacks carry null metrics and explicit status.
             unique.append({"stack": name, "detector": key, "status": "MEASURED", "attack_denominator": n,
                            "unique_catch_count": caught, "unique_catch_rate": caught / n,
                            "other_members_miss_count": denominator,
-                           "recovery_given_others_miss": caught / denominator if denominator else None})
+                           "recovery_given_others_miss": caught / denominator if denominator else None,
+                           "small_conditional_denominator": denominator < 10,
+                           "small_count_note": "Descriptive caution if denominator <10; not an inferential cutoff"})
     return {"fnr": fnr, "pairwise": pairwise, "stacks": stack_reports, "unique": unique}
 
 
 def paired_effect(result, baseline, candidate, others, stack_names=None):
     """Return candidate-minus-baseline deltas on identical attacks."""
-    rows = []
+    old_fnr, new_fnr = result["fnr"].get(baseline), result["fnr"].get(candidate)
+    rows = [{"metric": "fnr", "other": "D_S", "baseline": old_fnr, "candidate": new_fnr,
+             "delta": new_fnr - old_fnr if old_fnr is not None and new_fnr is not None else None}]
     for other in others:
         def find(key):
             return next((p for p in result["pairwise"] if {p["left"], p["right"]} == {key, other}), None)
@@ -241,7 +249,8 @@ def analyze(detectors, stacks=None, comparison=None, budgets=BUDGETS, repetition
         grouped = []
         for field in ("source", "attack_family", "fold"):
             metadata = [next((records[i].get(field) for records in aligned.values() if records[i].get(field) is not None), None) for i in range(len(rows))]
-            for value in sorted({v for v in metadata if v is not None}, key=str):
+            metadata = [v if v is not None else "UNKNOWN" for v in metadata]
+            for value in sorted(set(metadata), key=str):
                 chosen = [i for i in positive_indices if metadata[i] == value]
                 all_chosen = [i for i in range(len(rows)) if metadata[i] == value]
                 group_individual = []

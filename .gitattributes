@@ -36,3 +36,8 @@
 /reviews/TECH_GUARD_002*.md -text
 /detection_service/scripts/common_mode_development.py -text
 /detection_service/tests/test_common_mode.py -text
+
+/detection_service/scripts/guard_development.py -text
+/detection_service/scripts/common_mode_completion.py -text
+/detection_service/tests/test_track2_completion.py -text
+/reviews/TECH_COMMON_002*.md -text
