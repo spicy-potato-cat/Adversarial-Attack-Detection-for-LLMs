@@ -44,3 +44,9 @@
 /detection_service/scripts/common_mode_final_acceptance.py -text
 /detection_service/tests/test_common_mode_final_acceptance.py -text
 /reviews/TECH_COMMON_003*.md -text
+
+# Phase-2 protocol bytes are deterministic across checkouts.
+/artifacts/research_protocol/** -text
+/detection_service/research_protocol/** -text
+/detection_service/tests/test_detector_semantics.py -text
+/reviews/EXP_PROTOCOL_001_DETECTOR_SEMANTICS_v1.md -text
