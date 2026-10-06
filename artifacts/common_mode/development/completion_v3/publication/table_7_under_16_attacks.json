@@ -1,0 +1,35 @@
+{
+  "rows": [
+    {
+      "D_G_v1": 6,
+      "D_M-B_v1": 25,
+      "D_S_B2_LR": 0,
+      "D_S_v1": 0,
+      "all_three_miss": 1,
+      "attacks": 26,
+      "budget": 0.01,
+      "either_stronger_catches": 25
+    },
+    {
+      "D_G_v1": 7,
+      "D_M-B_v1": 26,
+      "D_S_B2_LR": 0,
+      "D_S_v1": 1,
+      "all_three_miss": 0,
+      "attacks": 26,
+      "budget": 0.03,
+      "either_stronger_catches": 26
+    },
+    {
+      "D_G_v1": 7,
+      "D_M-B_v1": 26,
+      "D_S_B2_LR": 0,
+      "D_S_v1": 2,
+      "all_three_miss": 0,
+      "attacks": 26,
+      "budget": 0.05,
+      "either_stronger_catches": 26
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION"
+}

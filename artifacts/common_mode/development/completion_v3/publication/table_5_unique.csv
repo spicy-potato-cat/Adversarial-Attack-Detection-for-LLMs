@@ -1,0 +1,19 @@
+attack_denominator,budget,detector,other_members_miss_count,recovery_given_others_miss,small_conditional_denominator,small_count_note,stack,status,unique_catch_count,unique_catch_rate
+183,0.01,D_S_B2_LR,6,0.16666666666666666,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_CANDIDATE,MEASURED,1,0.00546448087431694
+183,0.01,D_M-B_v1,96,0.9479166666666666,False,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_CANDIDATE,MEASURED,91,0.4972677595628415
+183,0.01,D_G_v1,5,0.0,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_CANDIDATE,MEASURED,0,0.0
+183,0.01,D_S_v1,6,0.0,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_V1,MEASURED,0,0.0
+183,0.01,D_M-B_v1,111,0.9459459459459459,False,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_V1,MEASURED,105,0.5737704918032787
+183,0.01,D_G_v1,6,0.0,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_V1,MEASURED,0,0.0
+183,0.03,D_S_B2_LR,4,0.25,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_CANDIDATE,MEASURED,1,0.00546448087431694
+183,0.03,D_M-B_v1,61,0.9508196721311475,False,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_CANDIDATE,MEASURED,58,0.31693989071038253
+183,0.03,D_G_v1,3,0.0,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_CANDIDATE,MEASURED,0,0.0
+183,0.03,D_S_v1,4,0.0,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_V1,MEASURED,0,0.0
+183,0.03,D_M-B_v1,92,0.9565217391304348,False,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_V1,MEASURED,88,0.4808743169398907
+183,0.03,D_G_v1,4,0.0,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_V1,MEASURED,0,0.0
+183,0.05,D_S_B2_LR,2,0.0,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_CANDIDATE,MEASURED,0,0.0
+183,0.05,D_M-B_v1,47,0.9574468085106383,False,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_CANDIDATE,MEASURED,45,0.2459016393442623
+183,0.05,D_G_v1,2,0.0,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_CANDIDATE,MEASURED,0,0.0
+183,0.05,D_S_v1,2,0.0,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_V1,MEASURED,0,0.0
+183,0.05,D_M-B_v1,68,0.9705882352941176,False,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_V1,MEASURED,66,0.36065573770491804
+183,0.05,D_G_v1,2,0.0,True,Descriptive caution if denominator <10; not an inferential cutoff,DEVELOPMENT_STACK_V1,MEASURED,0,0.0

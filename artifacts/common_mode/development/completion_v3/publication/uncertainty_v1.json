@@ -1,0 +1,169 @@
+{
+  "note": "Tiny event counts imply fragile intervals. Absolute conditional-recovery intervals are not implemented by the frozen engine; paired recovery-delta intervals are reported without inventing a new estimator.",
+  "replicates": 1000,
+  "rows": [
+    {
+      "budget": 0.01,
+      "denominator": 183,
+      "estimate": 0.03278688524590164,
+      "event_count": 6,
+      "lower": 0.01092896174863388,
+      "metric": "jfn/D_G_v1/D_M-B_v1",
+      "upper": 0.060109289617486336
+    },
+    {
+      "budget": 0.01,
+      "denominator": 183,
+      "estimate": 0.5245901639344263,
+      "event_count": 96,
+      "lower": 0.453551912568306,
+      "metric": "jfn/D_G_v1/D_S_B2_LR",
+      "upper": 0.6010928961748634
+    },
+    {
+      "budget": 0.01,
+      "denominator": 183,
+      "estimate": 0.0273224043715847,
+      "event_count": 5,
+      "lower": 0.00546448087431694,
+      "metric": "all_detector_jfn/DEVELOPMENT_STACK_CANDIDATE",
+      "upper": 0.04918032786885246
+    },
+    {
+      "budget": 0.01,
+      "denominator": 183,
+      "estimate": 0.03278688524590164,
+      "event_count": 6,
+      "lower": 0.01092896174863388,
+      "metric": "all_detector_jfn/DEVELOPMENT_STACK_V1",
+      "upper": 0.060109289617486336
+    },
+    {
+      "budget": 0.01,
+      "denominator": null,
+      "estimate": -0.0054644808743169425,
+      "event_count": null,
+      "lower": -0.01639344262295082,
+      "metric": "delta/all_detector_jfn/primary_stack",
+      "upper": 0.0
+    },
+    {
+      "budget": 0.01,
+      "denominator": null,
+      "estimate": 0.16666666666666666,
+      "event_count": null,
+      "lower": 0.0,
+      "metric": "delta/recovery_given_others_miss/primary_stack",
+      "upper": 0.5
+    },
+    {
+      "budget": 0.03,
+      "denominator": 183,
+      "estimate": 0.02185792349726776,
+      "event_count": 4,
+      "lower": 0.00546448087431694,
+      "metric": "jfn/D_G_v1/D_M-B_v1",
+      "upper": 0.04371584699453552
+    },
+    {
+      "budget": 0.03,
+      "denominator": 183,
+      "estimate": 0.3333333333333333,
+      "event_count": 61,
+      "lower": 0.2677595628415301,
+      "metric": "jfn/D_G_v1/D_S_B2_LR",
+      "upper": 0.40437158469945356
+    },
+    {
+      "budget": 0.03,
+      "denominator": 183,
+      "estimate": 0.01639344262295082,
+      "event_count": 3,
+      "lower": 0.0,
+      "metric": "all_detector_jfn/DEVELOPMENT_STACK_CANDIDATE",
+      "upper": 0.03825136612021858
+    },
+    {
+      "budget": 0.03,
+      "denominator": 183,
+      "estimate": 0.02185792349726776,
+      "event_count": 4,
+      "lower": 0.00546448087431694,
+      "metric": "all_detector_jfn/DEVELOPMENT_STACK_V1",
+      "upper": 0.04371584699453552
+    },
+    {
+      "budget": 0.03,
+      "denominator": null,
+      "estimate": -0.005464480874316939,
+      "event_count": null,
+      "lower": -0.01639344262295082,
+      "metric": "delta/all_detector_jfn/primary_stack",
+      "upper": 0.0
+    },
+    {
+      "budget": 0.03,
+      "denominator": null,
+      "estimate": 0.25,
+      "event_count": null,
+      "lower": 0.0,
+      "metric": "delta/recovery_given_others_miss/primary_stack",
+      "upper": 0.9208333333333296
+    },
+    {
+      "budget": 0.05,
+      "denominator": 183,
+      "estimate": 0.01092896174863388,
+      "event_count": 2,
+      "lower": 0.0,
+      "metric": "jfn/D_G_v1/D_M-B_v1",
+      "upper": 0.0273224043715847
+    },
+    {
+      "budget": 0.05,
+      "denominator": 183,
+      "estimate": 0.2568306010928962,
+      "event_count": 47,
+      "lower": 0.19658469945355192,
+      "metric": "jfn/D_G_v1/D_S_B2_LR",
+      "upper": 0.3224043715846995
+    },
+    {
+      "budget": 0.05,
+      "denominator": 183,
+      "estimate": 0.01092896174863388,
+      "event_count": 2,
+      "lower": 0.0,
+      "metric": "all_detector_jfn/DEVELOPMENT_STACK_CANDIDATE",
+      "upper": 0.0273224043715847
+    },
+    {
+      "budget": 0.05,
+      "denominator": 183,
+      "estimate": 0.01092896174863388,
+      "event_count": 2,
+      "lower": 0.0,
+      "metric": "all_detector_jfn/DEVELOPMENT_STACK_V1",
+      "upper": 0.0273224043715847
+    },
+    {
+      "budget": 0.05,
+      "denominator": null,
+      "estimate": 0.0,
+      "event_count": null,
+      "lower": 0.0,
+      "metric": "delta/all_detector_jfn/primary_stack",
+      "upper": 0.0
+    },
+    {
+      "budget": 0.05,
+      "denominator": null,
+      "estimate": 0.0,
+      "event_count": null,
+      "lower": 0.0,
+      "metric": "delta/recovery_given_others_miss/primary_stack",
+      "upper": 0.0
+    }
+  ],
+  "seed": 1701
+}

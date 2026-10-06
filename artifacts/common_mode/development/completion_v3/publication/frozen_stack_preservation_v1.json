@@ -1,0 +1,199 @@
+{
+  "files": {
+    "artifacts/stack/acceptance_evidence_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "fdb24b4186e054043d1696d753e2dc71904caad266e9f068c11a867c76980817"
+    },
+    "artifacts/stack/research_stack_candidate_v2.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "4bd076dfc07717555034732b55a9a65c0bc531bb17beab58659b088254247dae"
+    },
+    "artifacts/stack/research_stack_candidate_v2.sha256": {
+      "git_blob_byte_identical": true,
+      "sha256": "e086f0d887126812ede62bf4b3e7dab12c9f7d463263bb7946257c341050f99b"
+    },
+    "artifacts/stack/stack_integrity_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "5e182b7912dda3bba41cc18616ee5fd63ca3b1e15426b001530a9b880097de66"
+    },
+    "artifacts/stack/test_results_v1.xml": {
+      "git_blob_byte_identical": true,
+      "sha256": "cd886584317d959a29b223d0b21dc8e7916eadd6063fb601174a94b17fcb5ace"
+    },
+    "artifacts/stack/verification_evidence_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "f5e9233bf390515a8cc3d65a92d4c689776e7d25c7d86308d562f07bd37c6209"
+    },
+    "artifacts/statistical_v2/calibration/calibration_failure_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "96708138fbc6d360adb8e8093123dc0d664258fe5d7cc9ace53fe0dc4c4c66c8"
+    },
+    "artifacts/statistical_v2/calibration/calibration_started_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "dfbf678a063005fc72623204801d5e4eb0582be506fe219e8f54637d1ec4d9d4"
+    },
+    "artifacts/statistical_v2/calibration/completed_v1/acceptance_evidence_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "bc3df9b202df6ea090880cfa193f1cb0302d28a397b3d5cf8bb1785a8ed21d49"
+    },
+    "artifacts/statistical_v2/calibration/completed_v1/calibration_predictions_v1.csv": {
+      "git_blob_byte_identical": true,
+      "sha256": "35fedee4cafd2b60adcfcc4eb586784cca03e26472940059dc924cc0f49eadfa"
+    },
+    "artifacts/statistical_v2/calibration/completed_v1/calibration_started_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "2e3d9aa30d1d4104b38ab233f1897deeb50759b69dd613e28a456d1518b884ee"
+    },
+    "artifacts/statistical_v2/calibration/completed_v1/ds_v2_cal_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "964cea57d98673d2026fb2f0e9d5884aec61a653e726847e0fb6ccbf36e95f23"
+    },
+    "artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_integrity_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "05729c90b0485444a6268151b488eb5cb8f13bc696731475f0a856bd1fb764f9"
+    },
+    "artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_manifest_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "6ad2a6d42a81f4b51f2390bc14a126dfe9236b3c04b01e4eabbc0c3479d54d94"
+    },
+    "artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_metrics_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "72fd28a8f89a08b8fe2921fb3b73152a69dce727e0ea1a05ca07ab18f4de15ab"
+    },
+    "artifacts/statistical_v2/calibration/completed_v1/postrun_tests_v1.xml": {
+      "git_blob_byte_identical": true,
+      "sha256": "589432b07e33d9ff271b11b6fb388bd8407fbce0ce6f22b2edc550d230c159e8"
+    },
+    "artifacts/statistical_v2/calibration/completed_v1/synthetic_smoke_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "0090fa158831b979214724c856abf23e50e8729502d15309f87053de9e12f7b2"
+    },
+    "artifacts/statistical_v2/calibration_prerun/tests_v1.xml": {
+      "git_blob_byte_identical": true,
+      "sha256": "57d47569665ff5c61a45a1ba0603b1f2886b26e742c0ac34114d37337a37f9d4"
+    },
+    "artifacts/statistical_v2/final/ds_v2_feature_reference.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "fd26774585223913d12b8c20556a8fc1a50fa5dea7a3a75068a7bb30efce76ec"
+    },
+    "artifacts/statistical_v2/final/ds_v2_integrity_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "3465236b57a89b8b1c4f148e45dec192d2b295e6baefc0226402160d6f2740a9"
+    },
+    "artifacts/statistical_v2/final/ds_v2_model.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157"
+    },
+    "artifacts/statistical_v2/final/ds_v2_model_manifest_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "8b62666f713c47c6f35fceb3a153a6da80de6081654d0b552bd882e8750c4aa1"
+    },
+    "artifacts/statistical_v2/final/ds_v2_training_metadata_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "5dcbf8c45180612b2a20d9879c7ccb1d80bfd6d6055d4e7a80f85420d98d1839"
+    },
+    "artifacts/statistical_v2/final/postrun_tests_v1.xml": {
+      "git_blob_byte_identical": true,
+      "sha256": "634a28509b5bddbda7a5990da46f41b8ebc789bd76f96377f4ae49c901e516ed"
+    },
+    "artifacts/statistical_v2/final/preflight_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "cf44d157cd4bd5332dc74b716076a05ab84e9f3c22c3fa76aa5a368674282c4b"
+    },
+    "artifacts/statistical_v2/final/prerun_environment_note_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "c2a8069b4c184fe8c062bbeca4e932b67b461fffbf91f0d08e13a28593eab697"
+    },
+    "artifacts/statistical_v2/final/prerun_tests_v1.xml": {
+      "git_blob_byte_identical": true,
+      "sha256": "7de392f130501a0db00bd898953cd12119808898fcceb188327c3aaab6677752"
+    },
+    "artifacts/statistical_v2/final/synthetic_smoke_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "4a23696c29012be31042f54a60c18fa315b696c51c16ca2883051ecc0991c9df"
+    },
+    "artifacts/statistical_v2/final/training_started_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "a636cfbc89f4727092d6a7959054058a43dab0ea9f1c7d25915a70ffdb0c76d5"
+    },
+    "artifacts/statistical_v2/final/verification_adapter_v1.json": {
+      "git_blob_byte_identical": true,
+      "sha256": "2c593ddf9541673ae53fc46e8944fac0908615c833b00888dda5b2a5fe1e8ace"
+    },
+    "detection_service/app/detectors/statistical_v2/__init__.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "7ac35c423a5a0e1450481ec4215b6cf6ed9b64b104e2b9358b2843a68f4d474d"
+    },
+    "detection_service/app/detectors/statistical_v2/detector.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "4912273d2caad3ff4f4094b9684310dc85199421fde7823b7de66d55607558fd"
+    },
+    "detection_service/app/detectors/statistical_v2/model.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "bd456d513cdb109d05a3e81ddfadf77cd8c8fea40a6c5dd9d9265ef1557cf646"
+    },
+    "detection_service/scripts/calibrate_statistical_v2.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "198b0bb39884b531dc30ba193947384a6fe0300c414b74860b1236037bebdae8"
+    },
+    "detection_service/scripts/freeze_research_stack.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "238da05d2b6ebc3001910782e961dd8dfe3d53356d264fb23a68818582f402cb"
+    },
+    "detection_service/scripts/freeze_statistical_v2.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "0838099909192ac2afe0b8d26466e636d1bd9cf820016d55e811bc3b39145898"
+    },
+    "detection_service/scripts/verify_statistical_v2.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "fc845a2ae4415fbab7afffcb63c9a986554069e2c9cb82d1f1f5f99ec10cd4cd"
+    },
+    "detection_service/stack_manifest.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "167dbaa165dd1e34e3858a33856b3d6acb2409bf3be642e5792ccec6f3a6448b"
+    },
+    "detection_service/tests/test_stack_manifest.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "6f1c59d383df5a067d2665ac54f2d16e2e6df80ba275b4b9ad0f4c6bfb3479df"
+    },
+    "detection_service/tests/test_statistical_v2.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "9638a36da41eabeb3042a5b92801664ef237d4ee8314a496b84005ae57dff892"
+    },
+    "detection_service/tests/test_statistical_v2_calibration.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "247fb2458e2393f622be9ba7609da6dc2ae364d52f4631b2933dc3346ac7ad6b"
+    },
+    "detection_service/tests/test_statistical_v2_verification.py": {
+      "git_blob_byte_identical": true,
+      "sha256": "f3d440753d08982c56098e42099cfec8e4d0c911a1d429830f3e022624d5464f"
+    },
+    "reviews/TECH_STACK_001_FREEZE_v1.md": {
+      "git_blob_byte_identical": true,
+      "sha256": "edba435cefb40f00f0bd586f6c4cd95427eb06e725ab9d3c5b065014d45860b3"
+    },
+    "reviews/TECH_STACK_001_TEST_REPORT_v1.md": {
+      "git_blob_byte_identical": true,
+      "sha256": "0129791ab4a0aa93fb03b7a734d8be0ae5f5c74e08a9a1260d0e5e88d89bff07"
+    },
+    "reviews/TECH_STAT_006_MODEL_FREEZE_v1.md": {
+      "git_blob_byte_identical": true,
+      "sha256": "8b78bf4b73ff6d665dc8e00c43e7c268b1616249aa33cae900f0bc4c1368f974"
+    },
+    "reviews/TECH_STAT_006_TEST_REPORT_v1.md": {
+      "git_blob_byte_identical": true,
+      "sha256": "2ec8e46d4eb21b9fbdca7e59f76edf3f855063ceebef2327d83aad0389f9e842"
+    },
+    "reviews/TECH_STAT_007_CALIBRATION_REPORT_v1.md": {
+      "git_blob_byte_identical": true,
+      "sha256": "8462221db8e2b65612feb288c84d8ee6932982543487d5c0f36fb74de3db0fe7"
+    },
+    "reviews/TECH_STAT_007_TEST_REPORT_v1.md": {
+      "git_blob_byte_identical": true,
+      "sha256": "7f5da8fb029878fabad2edb4bd9785f47edfcded2cfbd7b1d87c42ac57e9d6a1"
+    }
+  },
+  "local_ignored_backup": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack",
+  "note": "Common branch predates final ds_v2/STACK-001. No auto-merge; frozen files preserved locally and in accepted Git history. Final ds_v2 never scored for this study.",
+  "source_commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073"
+}

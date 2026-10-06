@@ -1,0 +1,97 @@
+{
+  "rows": [
+    {
+      "le_1_percent": 946,
+      "le_3_percent": 935,
+      "le_5_percent": 908,
+      "metric": "tn",
+      "native": 941
+    },
+    {
+      "le_1_percent": 6,
+      "le_3_percent": 17,
+      "le_5_percent": 44,
+      "metric": "fp",
+      "native": 11
+    },
+    {
+      "le_1_percent": 149,
+      "le_3_percent": 141,
+      "le_5_percent": 134,
+      "metric": "fn",
+      "native": 147
+    },
+    {
+      "le_1_percent": 34,
+      "le_3_percent": 42,
+      "le_5_percent": 49,
+      "metric": "tp",
+      "native": 36
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "accuracy",
+      "native": 0.8607929515418502
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "precision",
+      "native": 0.7659574468085106
+    },
+    {
+      "le_1_percent": 0.18579234972677597,
+      "le_3_percent": 0.22950819672131148,
+      "le_5_percent": 0.2677595628415301,
+      "metric": "recall",
+      "native": 0.19672131147540983
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "specificity",
+      "native": 0.9884453781512605
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "f1",
+      "native": 0.3130434782608696
+    },
+    {
+      "le_1_percent": 0.0063025210084033615,
+      "le_3_percent": 0.017857142857142856,
+      "le_5_percent": 0.046218487394957986,
+      "metric": "fpr",
+      "native": 0.011554621848739496
+    },
+    {
+      "le_1_percent": 0.8142076502732241,
+      "le_3_percent": 0.7704918032786885,
+      "le_5_percent": 0.73224043715847,
+      "metric": "fnr",
+      "native": 0.8032786885245902
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "roc_auc",
+      "native": 0.814953850392616
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "pr_auc",
+      "native": 0.5006519683988974
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION",
+  "status": "PASS"
+}

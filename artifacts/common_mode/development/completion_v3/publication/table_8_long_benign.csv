@@ -1,0 +1,4 @@
+budget,benign,D_G_v1,D_M-B_v1,D_S_B2_LR,D_S_v1,all_three_fp,ds_only_fp,ds_dm_overlap,ds_dg_overlap,dm_dg_overlap
+0.01,17,0,0,6,3,0,6,0,0,0
+0.03,17,0,3,12,7,0,11,1,0,0
+0.05,17,0,4,15,9,0,12,3,0,0

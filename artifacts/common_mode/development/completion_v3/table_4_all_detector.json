@@ -1,0 +1,84 @@
+{
+  "rows": [
+    {
+      "all_detector_fn_count": 5,
+      "all_detector_jfn": 0.0273224043715847,
+      "attack_denominator": 183,
+      "budget": 0.01,
+      "members": [
+        "D_S_B2_LR",
+        "D_M-B_v1",
+        "D_G_v1"
+      ],
+      "stack": "DEVELOPMENT_STACK_CANDIDATE",
+      "status": "MEASURED"
+    },
+    {
+      "all_detector_fn_count": 6,
+      "all_detector_jfn": 0.03278688524590164,
+      "attack_denominator": 183,
+      "budget": 0.01,
+      "members": [
+        "D_S_v1",
+        "D_M-B_v1",
+        "D_G_v1"
+      ],
+      "stack": "DEVELOPMENT_STACK_V1",
+      "status": "MEASURED"
+    },
+    {
+      "all_detector_fn_count": 3,
+      "all_detector_jfn": 0.01639344262295082,
+      "attack_denominator": 183,
+      "budget": 0.03,
+      "members": [
+        "D_S_B2_LR",
+        "D_M-B_v1",
+        "D_G_v1"
+      ],
+      "stack": "DEVELOPMENT_STACK_CANDIDATE",
+      "status": "MEASURED"
+    },
+    {
+      "all_detector_fn_count": 4,
+      "all_detector_jfn": 0.02185792349726776,
+      "attack_denominator": 183,
+      "budget": 0.03,
+      "members": [
+        "D_S_v1",
+        "D_M-B_v1",
+        "D_G_v1"
+      ],
+      "stack": "DEVELOPMENT_STACK_V1",
+      "status": "MEASURED"
+    },
+    {
+      "all_detector_fn_count": 2,
+      "all_detector_jfn": 0.01092896174863388,
+      "attack_denominator": 183,
+      "budget": 0.05,
+      "members": [
+        "D_S_B2_LR",
+        "D_M-B_v1",
+        "D_G_v1"
+      ],
+      "stack": "DEVELOPMENT_STACK_CANDIDATE",
+      "status": "MEASURED"
+    },
+    {
+      "all_detector_fn_count": 2,
+      "all_detector_jfn": 0.01092896174863388,
+      "attack_denominator": 183,
+      "budget": 0.05,
+      "members": [
+        "D_S_v1",
+        "D_M-B_v1",
+        "D_G_v1"
+      ],
+      "stack": "DEVELOPMENT_STACK_V1",
+      "status": "MEASURED"
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION",
+  "status": "PASS"
+}

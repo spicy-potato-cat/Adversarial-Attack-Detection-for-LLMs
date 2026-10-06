@@ -1,0 +1,78 @@
+{
+  "authoritative_oof_sha256": {
+    "artifacts/semantic_v2/oof/dm_b_v1_recipe_oof_predictions.csv": "cfafb1d4286a8b61e4054da337cd45a4353a44894899b034670f9413f6b1000c",
+    "artifacts/statistical_v2/oof/ds_v1_recipe_oof_predictions.csv": "9b90f505e5c0f21b26ad0b507db1df3291f0fbea83ce52ff53aabf2ef5856215",
+    "artifacts/statistical_v2/scorer_comparison/scorer_predictions_v1.csv": "1dd23a39bb87f3f95b090a93bb7797ae6a1d84e4ddf24a55d63b9eb2609e9fed"
+  },
+  "classifications": {
+    "0.01": [
+      "REDUCED_SHARED_FAILURE",
+      "PRESERVED_COMPLEMENTARITY"
+    ],
+    "0.03": [
+      "REDUCED_SHARED_FAILURE",
+      "PRESERVED_COMPLEMENTARITY"
+    ],
+    "0.05": [
+      "NO_CLEAR_CHANGE"
+    ]
+  },
+  "common_analysis_execution_commit": "3a053f3224e56d9e7b483b72303e822af12e5741",
+  "core_manifest_sha256": "0ffe50e564985ac8da034d6fcb74766c74b4674aa11e34734b994c300286f610",
+  "dg_run_code_commit": "3a053f3224e56d9e7b483b72303e822af12e5741",
+  "finding": "At the descriptive 3% FPR budget, D_S B2+LR catches 1/4 attacks missed by both D_M-B and D_G, and all-three shared misses change from 4 to 3 out of 183 attacks.",
+  "fixture_manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "fold_sha256": "19dc0153cc257cc2331782d6dd61b7bb9fb8cb0ed88d3e782b69d5ba05c4bb8d",
+  "guard_integrity_sha256": "6135d096b00df7389b11a4753ef5187d5c28ca84a38e96a0b6b602c17bd918ea",
+  "output_sha256": {
+    "frozen_stack_preservation_v1.json": "3d48225805cd789200a618b6547ff6bd781cfcb2bbf8c09efd662165436352f5",
+    "table_1_guard.csv": "092ab2f3946bb07f8260cc99b9f793a815981cc2555e4be2895b101239974fb3",
+    "table_1_guard.json": "54284787040ea9442739389afb90689a66093da502a9a4e9ec64a0f1b1af1cb5",
+    "table_2_individual.csv": "01ee834dbe714fec42273fd65fdbefa7e55c6216052b2bf6513b8ae7e5b76deb",
+    "table_2_individual.json": "fa023582778f25f7a6d28111034379d7df6cc4a89e38bd4dc432b3f272588e76",
+    "table_3_pairwise.csv": "e1a20551059b8727e228d1da9ef3177f23a47fdf6a43a82f587fbe1b4390f5f7",
+    "table_3_pairwise.json": "8979ecbf0b83aa9c717f7ed0e1679ada093194bcfd757fdeb3b7053cdeb95445",
+    "table_4_all_detector.csv": "5d56a1529b466fd0879c0f4a1c0f40f561f29b5fbff8b3d88ca72fe13d1c150d",
+    "table_4_all_detector.json": "e3c16f0e31f7ccadca04ce597b9d8332748453bf9ffdb7a2dae873059f729f35",
+    "table_5_unique.csv": "b6aa9ab9d8e7cbdbd01a73b0a97ce8773edb578f014130b41df36413b1341c58",
+    "table_5_unique.json": "0f29ccc08a5e4516f269aaee8ff87784c1eca17c3f9f7203689b27d266b6e494",
+    "table_6_ds_effect.csv": "d89569244aa9656752e8ee0fe298df84c05926266682c95e2b631f45b6b0190e",
+    "table_6_ds_effect.json": "e61855a9df32df4b7d16624d9b6021f6f6913d5b8ee58f14f7ef05abe9b35f77",
+    "table_7_under_16_attacks.csv": "da8599720d5dbf608da04a252b41af02bcbcbf22413f2490d5004c0978094cda",
+    "table_7_under_16_attacks.json": "df4e1e0f5f5aec709153eda1a5773bb005ba82c8512955678feb782e93dc25a4",
+    "table_8_long_benign.csv": "7aae03eb695cc3a0389f47a03669b0e963dd17c3336ff123532a3ff2e38d98d1",
+    "table_8_long_benign.json": "fc0c06d7391e925a31bf120c777b88b218c83e2fea1498301fa35ca7f1933233",
+    "uncertainty_v1.json": "4abac36eb5edd4f7a5ae0006b09ac4480ff483d45d3fa4a9eb68ed34f0369c0b"
+  },
+  "publisher_sha256": "cca3f25898abf71f31a7c5922f31d40b51c95fafe6d940451487c84144c47a0d",
+  "report_sha256": {
+    "reviews/TECH_COMMON_002_DS_IMPROVEMENT_EFFECT_v2.md": "c902d98844b93ae00364e681180449e2bd514e5d118c8a65e30198d4cc8a3aab",
+    "reviews/TECH_COMMON_003_FULL_STACK_COMPLETION_v1.md": "b7b120fe26334b31121562844e64d1aedf11ae2501eadf531be7f8dd42911543",
+    "reviews/TECH_COMMON_003_TEST_REPORT_v1.md": "baa29143c1ae1404abbeaf79effb1bfd9a8f5b88bbc9431efe0c78315f184527"
+  },
+  "start_commit": "3ef06414836a51b3409e7be9251da7753299da3a",
+  "status": "PASS",
+  "test_receipts": {
+    "postrun_guard_fixture": {
+      "errors": 0,
+      "failures": 0,
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\tmp\\track2_postrun_guard.xml",
+      "sha256": "f1c89febf61f2a4e539ea3f3890c10159aa06dc3a28c74cced8e6d515de46b52",
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 115
+    },
+    "postrun_model_free": {
+      "errors": 0,
+      "failures": 0,
+      "path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\tmp\\track2_postrun_common.xml",
+      "sha256": "b0eab9d79faad24dfb3ffd3fb5ce6f3ede78cce27b7a5013663860fd7c5e57f3",
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 84
+    }
+  },
+  "transfer_manifest_sha256": "252506fc1512a826c555ec56018b084bd2491ab1b9c82f18798dde55562eb402",
+  "transfer_zip_sha256": "348a70c168bd5feb60d337b7b12eabcd8d0e29b991abc13745a535383496d7d7",
+  "verdict": "READY_FOR_REPORT_RESULTS_INTEGRATION"
+}

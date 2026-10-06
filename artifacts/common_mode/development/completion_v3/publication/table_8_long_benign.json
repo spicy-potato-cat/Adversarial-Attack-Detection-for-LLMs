@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "D_G_v1": 0,
+      "D_M-B_v1": 0,
+      "D_S_B2_LR": 6,
+      "D_S_v1": 3,
+      "all_three_fp": 0,
+      "benign": 17,
+      "budget": 0.01,
+      "dm_dg_overlap": 0,
+      "ds_dg_overlap": 0,
+      "ds_dm_overlap": 0,
+      "ds_only_fp": 6
+    },
+    {
+      "D_G_v1": 0,
+      "D_M-B_v1": 3,
+      "D_S_B2_LR": 12,
+      "D_S_v1": 7,
+      "all_three_fp": 0,
+      "benign": 17,
+      "budget": 0.03,
+      "dm_dg_overlap": 0,
+      "ds_dg_overlap": 0,
+      "ds_dm_overlap": 1,
+      "ds_only_fp": 11
+    },
+    {
+      "D_G_v1": 0,
+      "D_M-B_v1": 4,
+      "D_S_B2_LR": 15,
+      "D_S_v1": 9,
+      "all_three_fp": 0,
+      "benign": 17,
+      "budget": 0.05,
+      "dm_dg_overlap": 0,
+      "ds_dg_overlap": 0,
+      "ds_dm_overlap": 3,
+      "ds_only_fp": 12
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION"
+}

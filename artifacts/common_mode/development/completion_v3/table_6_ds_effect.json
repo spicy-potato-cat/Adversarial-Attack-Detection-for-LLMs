@@ -1,0 +1,294 @@
+{
+  "rows": [
+    {
+      "baseline": 0.7540983606557377,
+      "budget": 0.01,
+      "candidate": 0.6721311475409836,
+      "delta": -0.08196721311475408,
+      "metric": "fnr",
+      "other": "D_S"
+    },
+    {
+      "baseline": 0.03278688524590164,
+      "budget": 0.01,
+      "candidate": 0.0273224043715847,
+      "delta": -0.0054644808743169425,
+      "metric": "jfn",
+      "other": "D_M-B_v1"
+    },
+    {
+      "baseline": 0.008062348830959423,
+      "budget": 0.01,
+      "candidate": 0.005285317566962284,
+      "delta": -0.0027770312639971394,
+      "metric": "ejf",
+      "other": "D_M-B_v1"
+    },
+    {
+      "baseline": 0.043478260869565216,
+      "budget": 0.01,
+      "candidate": 0.04032258064516129,
+      "delta": -0.003155680224403927,
+      "metric": "fn_jaccard",
+      "other": "D_M-B_v1"
+    },
+    {
+      "baseline": 0.6065573770491803,
+      "budget": 0.01,
+      "candidate": 0.5245901639344263,
+      "delta": -0.08196721311475408,
+      "metric": "jfn",
+      "other": "D_G_v1"
+    },
+    {
+      "baseline": -0.007435277255218087,
+      "budget": 0.01,
+      "candidate": -0.02266415838036362,
+      "delta": -0.015228881125145532,
+      "metric": "ejf",
+      "other": "D_G_v1"
+    },
+    {
+      "baseline": 0.6306818181818182,
+      "budget": 0.01,
+      "candidate": 0.5454545454545454,
+      "delta": -0.08522727272727282,
+      "metric": "fn_jaccard",
+      "other": "D_G_v1"
+    },
+    {
+      "baseline": 0.03278688524590164,
+      "budget": 0.01,
+      "candidate": 0.0273224043715847,
+      "delta": -0.0054644808743169425,
+      "metric": "all_detector_jfn",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 6,
+      "budget": 0.01,
+      "candidate": 5,
+      "delta": -1,
+      "metric": "all_detector_fn_count",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0,
+      "budget": 0.01,
+      "candidate": 1,
+      "delta": 1,
+      "metric": "unique_catch_count",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0.0,
+      "budget": 0.01,
+      "candidate": 0.00546448087431694,
+      "delta": 0.00546448087431694,
+      "metric": "unique_catch_rate",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0.0,
+      "budget": 0.01,
+      "candidate": 0.16666666666666666,
+      "delta": 0.16666666666666666,
+      "metric": "recovery_given_others_miss",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0.6775956284153005,
+      "budget": 0.03,
+      "candidate": 0.453551912568306,
+      "delta": -0.2240437158469945,
+      "metric": "fnr",
+      "other": "D_S"
+    },
+    {
+      "baseline": 0.02185792349726776,
+      "budget": 0.03,
+      "candidate": 0.01639344262295082,
+      "delta": -0.005464480874316939,
+      "metric": "jfn",
+      "other": "D_M-B_v1"
+    },
+    {
+      "baseline": 0.007047090089283049,
+      "budget": 0.03,
+      "candidate": 0.006479739615993312,
+      "delta": -0.0005673504732897367,
+      "metric": "ejf",
+      "other": "D_M-B_v1"
+    },
+    {
+      "baseline": 0.03225806451612903,
+      "budget": 0.03,
+      "candidate": 0.03571428571428571,
+      "delta": 0.003456221198156681,
+      "metric": "fn_jaccard",
+      "other": "D_M-B_v1"
+    },
+    {
+      "baseline": 0.5027322404371585,
+      "budget": 0.03,
+      "candidate": 0.3333333333333333,
+      "delta": -0.16939890710382516,
+      "metric": "jfn",
+      "other": "D_G_v1"
+    },
+    {
+      "baseline": -0.019349637194302605,
+      "budget": 0.03,
+      "candidate": -0.01612469766191882,
+      "delta": 0.003224939532383786,
+      "metric": "ejf",
+      "other": "D_G_v1"
+    },
+    {
+      "baseline": 0.5317919075144508,
+      "budget": 0.03,
+      "candidate": 0.37423312883435583,
+      "delta": -0.157558778680095,
+      "metric": "fn_jaccard",
+      "other": "D_G_v1"
+    },
+    {
+      "baseline": 0.02185792349726776,
+      "budget": 0.03,
+      "candidate": 0.01639344262295082,
+      "delta": -0.005464480874316939,
+      "metric": "all_detector_jfn",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 4,
+      "budget": 0.03,
+      "candidate": 3,
+      "delta": -1,
+      "metric": "all_detector_fn_count",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0,
+      "budget": 0.03,
+      "candidate": 1,
+      "delta": 1,
+      "metric": "unique_catch_count",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0.0,
+      "budget": 0.03,
+      "candidate": 0.00546448087431694,
+      "delta": 0.00546448087431694,
+      "metric": "unique_catch_rate",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0.0,
+      "budget": 0.03,
+      "candidate": 0.25,
+      "delta": 0.25,
+      "metric": "recovery_given_others_miss",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0.546448087431694,
+      "budget": 0.05,
+      "candidate": 0.37158469945355194,
+      "delta": -0.1748633879781421,
+      "metric": "fnr",
+      "other": "D_S"
+    },
+    {
+      "baseline": 0.01092896174863388,
+      "budget": 0.05,
+      "candidate": 0.01092896174863388,
+      "delta": 0.0,
+      "metric": "jfn",
+      "other": "D_M-B_v1"
+    },
+    {
+      "baseline": 0.0049568515034787534,
+      "budget": 0.05,
+      "candidate": 0.006867926781928394,
+      "delta": 0.0019110752784496409,
+      "metric": "ejf",
+      "other": "D_M-B_v1"
+    },
+    {
+      "baseline": 0.02,
+      "budget": 0.05,
+      "candidate": 0.029411764705882353,
+      "delta": 0.009411764705882352,
+      "metric": "fn_jaccard",
+      "other": "D_M-B_v1"
+    },
+    {
+      "baseline": 0.37158469945355194,
+      "budget": 0.05,
+      "candidate": 0.2568306010928962,
+      "delta": -0.11475409836065575,
+      "metric": "jfn",
+      "other": "D_G_v1"
+    },
+    {
+      "baseline": -0.02854668697184154,
+      "budget": 0.05,
+      "candidate": -0.015258741676371368,
+      "delta": 0.013287945295470172,
+      "metric": "ejf",
+      "other": "D_G_v1"
+    },
+    {
+      "baseline": 0.40963855421686746,
+      "budget": 0.05,
+      "candidate": 0.3032258064516129,
+      "delta": -0.10641274776525456,
+      "metric": "fn_jaccard",
+      "other": "D_G_v1"
+    },
+    {
+      "baseline": 0.01092896174863388,
+      "budget": 0.05,
+      "candidate": 0.01092896174863388,
+      "delta": 0.0,
+      "metric": "all_detector_jfn",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 2,
+      "budget": 0.05,
+      "candidate": 2,
+      "delta": 0,
+      "metric": "all_detector_fn_count",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0,
+      "budget": 0.05,
+      "candidate": 0,
+      "delta": 0,
+      "metric": "unique_catch_count",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0.0,
+      "budget": 0.05,
+      "candidate": 0.0,
+      "delta": 0.0,
+      "metric": "unique_catch_rate",
+      "other": "primary_stack"
+    },
+    {
+      "baseline": 0.0,
+      "budget": 0.05,
+      "candidate": 0.0,
+      "delta": 0.0,
+      "metric": "recovery_given_others_miss",
+      "other": "primary_stack"
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION",
+  "status": "PASS"
+}

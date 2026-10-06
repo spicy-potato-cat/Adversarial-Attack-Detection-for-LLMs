@@ -1,0 +1,591 @@
+{
+  "results": [
+    {
+      "budget": 0.01,
+      "metrics": {
+        "attack_lineage_groups": 183,
+        "attack_rows": 183,
+        "intervals": {
+          "all_detector_jfn/DEVELOPMENT_STACK_CANDIDATE": {
+            "estimate": 0.0273224043715847,
+            "lower": 0.00546448087431694,
+            "upper": 0.04918032786885246
+          },
+          "all_detector_jfn/DEVELOPMENT_STACK_V1": {
+            "estimate": 0.03278688524590164,
+            "lower": 0.01092896174863388,
+            "upper": 0.060109289617486336
+          },
+          "delta/all_detector_fn_count/primary_stack": {
+            "estimate": -1,
+            "lower": -3.0,
+            "upper": 0.0
+          },
+          "delta/all_detector_jfn/primary_stack": {
+            "estimate": -0.0054644808743169425,
+            "lower": -0.01639344262295082,
+            "upper": 0.0
+          },
+          "delta/ejf/D_G_v1": {
+            "estimate": -0.015228881125145532,
+            "lower": -0.0366687569052524,
+            "upper": 0.003077129803816177
+          },
+          "delta/ejf/D_M-B_v1": {
+            "estimate": -0.0027770312639971394,
+            "lower": -0.014514467437068886,
+            "upper": 0.004479082683866348
+          },
+          "delta/fn_jaccard/D_G_v1": {
+            "estimate": -0.08522727272727282,
+            "lower": -0.14978101213044556,
+            "upper": -0.017548309763657507
+          },
+          "delta/fn_jaccard/D_M-B_v1": {
+            "estimate": -0.003155680224403927,
+            "lower": -0.021329690163591444,
+            "upper": 0.009081545080796897
+          },
+          "delta/fnr/D_S": {
+            "estimate": -0.08196721311475408,
+            "lower": -0.14207650273224048,
+            "upper": -0.010928961748633888
+          },
+          "delta/jfn/D_G_v1": {
+            "estimate": -0.08196721311475408,
+            "lower": -0.14207650273224037,
+            "upper": -0.016393442622950838
+          },
+          "delta/jfn/D_M-B_v1": {
+            "estimate": -0.0054644808743169425,
+            "lower": -0.01639344262295082,
+            "upper": 0.0
+          },
+          "delta/recovery_given_others_miss/primary_stack": {
+            "estimate": 0.16666666666666666,
+            "lower": 0.0,
+            "upper": 0.5
+          },
+          "delta/unique_catch_count/primary_stack": {
+            "estimate": 1,
+            "lower": 0.0,
+            "upper": 3.0
+          },
+          "delta/unique_catch_rate/primary_stack": {
+            "estimate": 0.00546448087431694,
+            "lower": 0.0,
+            "upper": 0.01639344262295082
+          },
+          "ejf/D_G_v1/D_M-B_v1": {
+            "estimate": 0.006091552450058227,
+            "lower": 0.0014303204037146534,
+            "upper": 0.010749798441279226
+          },
+          "ejf/D_G_v1/D_S_B2_LR": {
+            "estimate": -0.02266415838036362,
+            "lower": -0.04554107318821103,
+            "upper": 0.0015878348114306197
+          },
+          "ejf/D_G_v1/D_S_v1": {
+            "estimate": -0.007435277255218087,
+            "lower": -0.029479082683866457,
+            "upper": 0.017083221356266238
+          },
+          "ejf/D_M-B_v1/D_S_B2_LR": {
+            "estimate": 0.005285317566962284,
+            "lower": -0.00594374272149064,
+            "upper": 0.015323688375287406
+          },
+          "ejf/D_M-B_v1/D_S_v1": {
+            "estimate": 0.008062348830959423,
+            "lower": 0.00226790886559766,
+            "upper": 0.015109438920242461
+          },
+          "ejf/D_S_B2_LR/D_S_v1": {
+            "estimate": 0.0997043805428649,
+            "lower": 0.07020663501448245,
+            "upper": 0.13201424348293475
+          },
+          "fn_jaccard/D_G_v1/D_M-B_v1": {
+            "estimate": 0.040268456375838924,
+            "lower": 0.012574709949607408,
+            "upper": 0.0718954248366013
+          },
+          "fn_jaccard/D_G_v1/D_S_B2_LR": {
+            "estimate": 0.5454545454545454,
+            "lower": 0.4770048115477145,
+            "upper": 0.6207091369569453
+          },
+          "fn_jaccard/D_G_v1/D_S_v1": {
+            "estimate": 0.6306818181818182,
+            "lower": 0.56,
+            "upper": 0.6988775945874934
+          },
+          "fn_jaccard/D_M-B_v1/D_S_B2_LR": {
+            "estimate": 0.04032258064516129,
+            "lower": 0.008062903225806451,
+            "upper": 0.075
+          },
+          "fn_jaccard/D_M-B_v1/D_S_v1": {
+            "estimate": 0.043478260869565216,
+            "lower": 0.013790741615493624,
+            "upper": 0.07913669064748201
+          },
+          "fn_jaccard/D_S_B2_LR/D_S_v1": {
+            "estimate": 0.74,
+            "lower": 0.673199472096531,
+            "upper": 0.8082601775033764
+          },
+          "fnr/D_G_v1": {
+            "estimate": 0.8142076502732241,
+            "lower": 0.7540983606557377,
+            "upper": 0.8743169398907104
+          },
+          "fnr/D_M-B_v1": {
+            "estimate": 0.03278688524590164,
+            "lower": 0.01092896174863388,
+            "upper": 0.060109289617486336
+          },
+          "fnr/D_S_B2_LR": {
+            "estimate": 0.6721311475409836,
+            "lower": 0.6065573770491803,
+            "upper": 0.7431693989071039
+          },
+          "fnr/D_S_v1": {
+            "estimate": 0.7540983606557377,
+            "lower": 0.6883879781420765,
+            "upper": 0.8142076502732241
+          },
+          "jfn/D_G_v1/D_M-B_v1": {
+            "estimate": 0.03278688524590164,
+            "lower": 0.01092896174863388,
+            "upper": 0.060109289617486336
+          },
+          "jfn/D_G_v1/D_S_B2_LR": {
+            "estimate": 0.5245901639344263,
+            "lower": 0.453551912568306,
+            "upper": 0.6010928961748634
+          },
+          "jfn/D_G_v1/D_S_v1": {
+            "estimate": 0.6065573770491803,
+            "lower": 0.5355191256830601,
+            "upper": 0.6721311475409836
+          },
+          "jfn/D_M-B_v1/D_S_B2_LR": {
+            "estimate": 0.0273224043715847,
+            "lower": 0.00546448087431694,
+            "upper": 0.04918032786885246
+          },
+          "jfn/D_M-B_v1/D_S_v1": {
+            "estimate": 0.03278688524590164,
+            "lower": 0.01092896174863388,
+            "upper": 0.060109289617486336
+          },
+          "jfn/D_S_B2_LR/D_S_v1": {
+            "estimate": 0.6065573770491803,
+            "lower": 0.5355191256830601,
+            "upper": 0.6775956284153005
+          }
+        },
+        "level": 0.95,
+        "limitations": "No threshold reselection, model refits, training-fold dependence, selection uncertainty or full semantic lineage uncertainty.",
+        "method": "paired canonical attack-lineage percentile bootstrap at fixed pooled thresholds",
+        "repetitions": 1000,
+        "scope": "DEVELOPMENT_UNCERTAINTY_CONDITIONAL_ON_FIXED_SCORES_AND_OPERATING_POINTS",
+        "seed": 1701
+      }
+    },
+    {
+      "budget": 0.03,
+      "metrics": {
+        "attack_lineage_groups": 183,
+        "attack_rows": 183,
+        "intervals": {
+          "all_detector_jfn/DEVELOPMENT_STACK_CANDIDATE": {
+            "estimate": 0.01639344262295082,
+            "lower": 0.0,
+            "upper": 0.03825136612021858
+          },
+          "all_detector_jfn/DEVELOPMENT_STACK_V1": {
+            "estimate": 0.02185792349726776,
+            "lower": 0.00546448087431694,
+            "upper": 0.04371584699453552
+          },
+          "delta/all_detector_fn_count/primary_stack": {
+            "estimate": -1,
+            "lower": -3.0,
+            "upper": 0.0
+          },
+          "delta/all_detector_jfn/primary_stack": {
+            "estimate": -0.005464480874316939,
+            "lower": -0.01639344262295082,
+            "upper": 0.0
+          },
+          "delta/ejf/D_G_v1": {
+            "estimate": 0.003224939532383786,
+            "lower": -0.022126668458299692,
+            "upper": 0.02875795037176382
+          },
+          "delta/ejf/D_M-B_v1": {
+            "estimate": -0.0005673504732897367,
+            "lower": -0.011765057182955597,
+            "upper": 0.0071702648630893725
+          },
+          "delta/fn_jaccard/D_G_v1": {
+            "estimate": -0.157558778680095,
+            "lower": -0.22697762833358265,
+            "upper": -0.08952335286287545
+          },
+          "delta/fn_jaccard/D_M-B_v1": {
+            "estimate": 0.003456221198156681,
+            "lower": -0.021285439159585997,
+            "upper": 0.023991369171163693
+          },
+          "delta/fnr/D_S": {
+            "estimate": -0.2240437158469945,
+            "lower": -0.29508196721311475,
+            "upper": -0.15300546448087426
+          },
+          "delta/jfn/D_G_v1": {
+            "estimate": -0.16939890710382516,
+            "lower": -0.2295081967213115,
+            "upper": -0.10382513661202186
+          },
+          "delta/jfn/D_M-B_v1": {
+            "estimate": -0.005464480874316939,
+            "lower": -0.01639344262295082,
+            "upper": 0.0
+          },
+          "delta/recovery_given_others_miss/primary_stack": {
+            "estimate": 0.25,
+            "lower": 0.0,
+            "upper": 0.9208333333333296
+          },
+          "delta/unique_catch_count/primary_stack": {
+            "estimate": 1,
+            "lower": 0.0,
+            "upper": 3.0
+          },
+          "delta/unique_catch_rate/primary_stack": {
+            "estimate": 0.00546448087431694,
+            "lower": 0.0,
+            "upper": 0.01639344262295082
+          },
+          "ejf/D_G_v1/D_M-B_v1": {
+            "estimate": 0.005016572605930306,
+            "lower": 0.0010443727791215023,
+            "upper": 0.01003314521186061
+          },
+          "ejf/D_G_v1/D_S_B2_LR": {
+            "estimate": -0.01612469766191882,
+            "lower": -0.04685493744214518,
+            "upper": 0.012009167189226308
+          },
+          "ejf/D_G_v1/D_S_v1": {
+            "estimate": -0.019349637194302605,
+            "lower": -0.043720326077219325,
+            "upper": 0.008391561408223688
+          },
+          "ejf/D_M-B_v1/D_S_B2_LR": {
+            "estimate": 0.006479739615993312,
+            "lower": -0.004359640478963242,
+            "upper": 0.018185822210278
+          },
+          "ejf/D_M-B_v1/D_S_v1": {
+            "estimate": 0.007047090089283049,
+            "lower": 0.0014922810475081368,
+            "upper": 0.014631670100630052
+          },
+          "ejf/D_S_B2_LR/D_S_v1": {
+            "estimate": 0.11890471498103855,
+            "lower": 0.09073725700976441,
+            "upper": 0.1450371763862761
+          },
+          "fn_jaccard/D_G_v1/D_M-B_v1": {
+            "estimate": 0.028368794326241134,
+            "lower": 0.0067556230727371675,
+            "upper": 0.05673758865248227
+          },
+          "fn_jaccard/D_G_v1/D_S_B2_LR": {
+            "estimate": 0.37423312883435583,
+            "lower": 0.3006126103762545,
+            "upper": 0.4472167051856132
+          },
+          "fn_jaccard/D_G_v1/D_S_v1": {
+            "estimate": 0.5317919075144508,
+            "lower": 0.46105658002177463,
+            "upper": 0.6055595238095237
+          },
+          "fn_jaccard/D_M-B_v1/D_S_B2_LR": {
+            "estimate": 0.03571428571428571,
+            "lower": 0.0,
+            "upper": 0.08139534883720931
+          },
+          "fn_jaccard/D_M-B_v1/D_S_v1": {
+            "estimate": 0.03225806451612903,
+            "lower": 0.007517394231848277,
+            "upper": 0.06612947658402203
+          },
+          "fn_jaccard/D_S_B2_LR/D_S_v1": {
+            "estimate": 0.6046511627906976,
+            "lower": 0.5185117599351176,
+            "upper": 0.6889015151515151
+          },
+          "fnr/D_G_v1": {
+            "estimate": 0.7704918032786885,
+            "lower": 0.7103825136612022,
+            "upper": 0.8360655737704918
+          },
+          "fnr/D_M-B_v1": {
+            "estimate": 0.02185792349726776,
+            "lower": 0.00546448087431694,
+            "upper": 0.04371584699453552
+          },
+          "fnr/D_S_B2_LR": {
+            "estimate": 0.453551912568306,
+            "lower": 0.3825136612021858,
+            "upper": 0.5300546448087432
+          },
+          "fnr/D_S_v1": {
+            "estimate": 0.6775956284153005,
+            "lower": 0.6065573770491803,
+            "upper": 0.7431693989071039
+          },
+          "jfn/D_G_v1/D_M-B_v1": {
+            "estimate": 0.02185792349726776,
+            "lower": 0.00546448087431694,
+            "upper": 0.04371584699453552
+          },
+          "jfn/D_G_v1/D_S_B2_LR": {
+            "estimate": 0.3333333333333333,
+            "lower": 0.2677595628415301,
+            "upper": 0.40437158469945356
+          },
+          "jfn/D_G_v1/D_S_v1": {
+            "estimate": 0.5027322404371585,
+            "lower": 0.43169398907103823,
+            "upper": 0.5737704918032787
+          },
+          "jfn/D_M-B_v1/D_S_B2_LR": {
+            "estimate": 0.01639344262295082,
+            "lower": 0.0,
+            "upper": 0.03825136612021858
+          },
+          "jfn/D_M-B_v1/D_S_v1": {
+            "estimate": 0.02185792349726776,
+            "lower": 0.00546448087431694,
+            "upper": 0.04371584699453552
+          },
+          "jfn/D_S_B2_LR/D_S_v1": {
+            "estimate": 0.4262295081967213,
+            "lower": 0.3551912568306011,
+            "upper": 0.4972677595628415
+          }
+        },
+        "level": 0.95,
+        "limitations": "No threshold reselection, model refits, training-fold dependence, selection uncertainty or full semantic lineage uncertainty.",
+        "method": "paired canonical attack-lineage percentile bootstrap at fixed pooled thresholds",
+        "repetitions": 1000,
+        "scope": "DEVELOPMENT_UNCERTAINTY_CONDITIONAL_ON_FIXED_SCORES_AND_OPERATING_POINTS",
+        "seed": 1701
+      }
+    },
+    {
+      "budget": 0.05,
+      "metrics": {
+        "attack_lineage_groups": 183,
+        "attack_rows": 183,
+        "intervals": {
+          "all_detector_jfn/DEVELOPMENT_STACK_CANDIDATE": {
+            "estimate": 0.01092896174863388,
+            "lower": 0.0,
+            "upper": 0.0273224043715847
+          },
+          "all_detector_jfn/DEVELOPMENT_STACK_V1": {
+            "estimate": 0.01092896174863388,
+            "lower": 0.0,
+            "upper": 0.0273224043715847
+          },
+          "delta/all_detector_fn_count/primary_stack": {
+            "estimate": 0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "delta/all_detector_jfn/primary_stack": {
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "delta/ejf/D_G_v1": {
+            "estimate": 0.013287945295470172,
+            "lower": -0.01875391919734835,
+            "upper": 0.04550971960942396
+          },
+          "delta/ejf/D_M-B_v1": {
+            "estimate": 0.0019110752784496409,
+            "lower": 0.0,
+            "upper": 0.005077786735943147
+          },
+          "delta/fn_jaccard/D_G_v1": {
+            "estimate": -0.10641274776525456,
+            "lower": -0.18642450672205227,
+            "upper": -0.030023782954946843
+          },
+          "delta/fn_jaccard/D_M-B_v1": {
+            "estimate": 0.009411764705882352,
+            "lower": 0.0,
+            "upper": 0.027011249619945273
+          },
+          "delta/fnr/D_S": {
+            "estimate": -0.1748633879781421,
+            "lower": -0.2459016393442623,
+            "upper": -0.10382513661202186
+          },
+          "delta/jfn/D_G_v1": {
+            "estimate": -0.11475409836065575,
+            "lower": -0.18032786885245902,
+            "upper": -0.04918032786885246
+          },
+          "delta/jfn/D_M-B_v1": {
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "delta/recovery_given_others_miss/primary_stack": {
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "delta/unique_catch_count/primary_stack": {
+            "estimate": 0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "delta/unique_catch_rate/primary_stack": {
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "ejf/D_G_v1/D_M-B_v1": {
+            "estimate": 0.002926334020126011,
+            "lower": 0.0,
+            "upper": 0.00731658156409567
+          },
+          "ejf/D_G_v1/D_S_B2_LR": {
+            "estimate": -0.015258741676371368,
+            "lower": -0.04625847293141031,
+            "upper": 0.014604795604526785
+          },
+          "ejf/D_G_v1/D_S_v1": {
+            "estimate": -0.02854668697184154,
+            "lower": -0.05688808265400584,
+            "upper": 0.004190181850756946
+          },
+          "ejf/D_M-B_v1/D_S_B2_LR": {
+            "estimate": 0.006867926781928394,
+            "lower": 0.0,
+            "upper": 0.01746842246707874
+          },
+          "ejf/D_M-B_v1/D_S_v1": {
+            "estimate": 0.0049568515034787534,
+            "lower": 0.0,
+            "upper": 0.012541431514825762
+          },
+          "ejf/D_S_B2_LR/D_S_v1": {
+            "estimate": 0.11388814237510822,
+            "lower": 0.08195601540804444,
+            "upper": 0.14360237689987757
+          },
+          "fn_jaccard/D_G_v1/D_M-B_v1": {
+            "estimate": 0.014925373134328358,
+            "lower": 0.0,
+            "upper": 0.03787878787878788
+          },
+          "fn_jaccard/D_G_v1/D_S_B2_LR": {
+            "estimate": 0.3032258064516129,
+            "lower": 0.22972972972972974,
+            "upper": 0.38159361381159906
+          },
+          "fn_jaccard/D_G_v1/D_S_v1": {
+            "estimate": 0.40963855421686746,
+            "lower": 0.3333333333333333,
+            "upper": 0.4876580849141825
+          },
+          "fn_jaccard/D_M-B_v1/D_S_B2_LR": {
+            "estimate": 0.029411764705882353,
+            "lower": 0.0,
+            "upper": 0.07578671328671326
+          },
+          "fn_jaccard/D_M-B_v1/D_S_v1": {
+            "estimate": 0.02,
+            "lower": 0.0,
+            "upper": 0.050505050505050504
+          },
+          "fn_jaccard/D_S_B2_LR/D_S_v1": {
+            "estimate": 0.5272727272727272,
+            "lower": 0.43332474226804124,
+            "upper": 0.6213592233009708
+          },
+          "fnr/D_G_v1": {
+            "estimate": 0.73224043715847,
+            "lower": 0.6721311475409836,
+            "upper": 0.797950819672131
+          },
+          "fnr/D_M-B_v1": {
+            "estimate": 0.01092896174863388,
+            "lower": 0.0,
+            "upper": 0.0273224043715847
+          },
+          "fnr/D_S_B2_LR": {
+            "estimate": 0.37158469945355194,
+            "lower": 0.3058743169398907,
+            "upper": 0.4426229508196721
+          },
+          "fnr/D_S_v1": {
+            "estimate": 0.546448087431694,
+            "lower": 0.46994535519125685,
+            "upper": 0.6174863387978142
+          },
+          "jfn/D_G_v1/D_M-B_v1": {
+            "estimate": 0.01092896174863388,
+            "lower": 0.0,
+            "upper": 0.0273224043715847
+          },
+          "jfn/D_G_v1/D_S_B2_LR": {
+            "estimate": 0.2568306010928962,
+            "lower": 0.19658469945355192,
+            "upper": 0.3224043715846995
+          },
+          "jfn/D_G_v1/D_S_v1": {
+            "estimate": 0.37158469945355194,
+            "lower": 0.3005464480874317,
+            "upper": 0.4426229508196721
+          },
+          "jfn/D_M-B_v1/D_S_B2_LR": {
+            "estimate": 0.01092896174863388,
+            "lower": 0.0,
+            "upper": 0.0273224043715847
+          },
+          "jfn/D_M-B_v1/D_S_v1": {
+            "estimate": 0.01092896174863388,
+            "lower": 0.0,
+            "upper": 0.0273224043715847
+          },
+          "jfn/D_S_B2_LR/D_S_v1": {
+            "estimate": 0.31693989071038253,
+            "lower": 0.2459016393442623,
+            "upper": 0.3825136612021858
+          }
+        },
+        "level": 0.95,
+        "limitations": "No threshold reselection, model refits, training-fold dependence, selection uncertainty or full semantic lineage uncertainty.",
+        "method": "paired canonical attack-lineage percentile bootstrap at fixed pooled thresholds",
+        "repetitions": 1000,
+        "scope": "DEVELOPMENT_UNCERTAINTY_CONDITIONAL_ON_FIXED_SCORES_AND_OPERATING_POINTS",
+        "seed": 1701
+      }
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION",
+  "status": "PASS"
+}
