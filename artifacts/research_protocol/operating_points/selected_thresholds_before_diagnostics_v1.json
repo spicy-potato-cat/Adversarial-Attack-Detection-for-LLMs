@@ -1,0 +1,39 @@
+{
+  "algorithm_id": "benign_empirical_fpr_budget_v1",
+  "artifact_version": "selected_thresholds_before_diagnostics_v1",
+  "created_at": "2026-10-06T20:00:38Z",
+  "points": {
+    "D_G": {
+      "algorithm_id": "benign_empirical_fpr_budget_v1",
+      "attained_fp": 5,
+      "attained_fpr": 0.026041666666666668,
+      "benign_count": 192,
+      "boundary_score": 0.21291141211986542,
+      "boundary_ties": 1,
+      "max_allowed_fp": 5,
+      "threshold": 0.21291141211986545
+    },
+    "D_M-B": {
+      "algorithm_id": "benign_empirical_fpr_budget_v1",
+      "attained_fp": 5,
+      "attained_fpr": 0.026041666666666668,
+      "benign_count": 192,
+      "boundary_score": 0.0004967087297700346,
+      "boundary_ties": 1,
+      "max_allowed_fp": 5,
+      "threshold": 0.0004967087297700347
+    },
+    "D_S": {
+      "algorithm_id": "benign_empirical_fpr_budget_v1",
+      "attained_fp": 5,
+      "attained_fpr": 0.026041666666666668,
+      "benign_count": 192,
+      "boundary_score": 0.5585373573968286,
+      "boundary_ties": 1,
+      "max_allowed_fp": 5,
+      "threshold": 0.5585373573968287
+    }
+  },
+  "predeclared_commit": "9c63092d51d194930c276e215b8bbd98085cfde5",
+  "selection_manifest_sha": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6"
+}

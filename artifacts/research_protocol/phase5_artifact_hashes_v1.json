@@ -1,0 +1,17 @@
+{
+  "artifact_version": "phase5_artifact_hashes_v1",
+  "sha256": {
+    "artifacts/research_protocol/operating_point_manifest_v1.json": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+    "artifacts/research_protocol/operating_points/calibration_operating_scores_v1.csv": "146920d8de22e369cf3c4d1e5ae1a74ff8779a01f20b2b035d8be4b99585a4d8",
+    "artifacts/research_protocol/operating_points/dg_calibration_predictions_v1.json": "5b694424e3de301d3aa9f578bef192de08989c459c6d3b5c5ce858d0e8f4100b",
+    "artifacts/research_protocol/operating_points/dg_calibration_run_v1.json": "4961a53fc5fd3adefd4e8be09b89a1cb920b79cbfb0cf4729b1e6fc3451944a6",
+    "artifacts/research_protocol/operating_points/predeclared_policy_v1.json": "992eac53d0b9bd84ce8bb28cd94f8c20d79f768072c625b87f004d4d69f6cfca",
+    "artifacts/research_protocol/operating_points/selected_thresholds_before_diagnostics_v1.json": "216bf438c4608eb4b39a40ac547b427f4bb1646650b394c5e1b33aa6b7e43324",
+    "artifacts/research_protocol/operating_points/threshold_freeze_evidence_v1.json": "393616d807b12d10354485c0c1c1bd3d04c5a0e6d5f7508c5e471d2741b537db",
+    "artifacts/research_protocol/schemas/prediction_operational_schema_v1.json": "3803cbf2f2c5c568894d894ccc51b64b86ff4f4ed2c5fa6a1e06b9d80512d173",
+    "detection_service/research_protocol/freeze_operating_points.py": "3e524da0acbee4957a0b5d14c52b3eb1a1969672a8563b66832f061de74bc441",
+    "detection_service/research_protocol/operating_policy.py": "5c521850da7c9776223ceb402eb2cf51a91d796705d446582672e86b4cf4f3e6",
+    "detection_service/research_protocol/threshold_selection.py": "ed4e5256f02dfe19d22f9a750936d40581087790ccf88a9d4a5738a6782dd2db",
+    "detection_service/tests/test_operating_policy.py": "3712122b51cbd52a02a803c236ba6d18135921a394d1fbfa7a8ddeb84f7a9b9d"
+  }
+}

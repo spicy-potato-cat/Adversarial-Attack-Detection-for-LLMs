@@ -1,0 +1,605 @@
+{
+  "$defs": {
+    "PredictionMetadata": {
+      "additionalProperties": false,
+      "properties": {
+        "binding_mode": {
+          "enum": [
+            "LIVE",
+            "FROZEN_EVIDENCE",
+            "CONTRACT_ONLY"
+          ],
+          "title": "Binding Mode",
+          "type": "string"
+        },
+        "diagnostic_class": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Diagnostic Class"
+        },
+        "evidence_kind": {
+          "enum": [
+            "LIVE_FROZEN_MODEL",
+            "ACCEPTED_FROZEN_OUTPUT",
+            "SYNTHETIC_FIXTURE"
+          ],
+          "title": "Evidence Kind",
+          "type": "string"
+        },
+        "latency_basis": {
+          "enum": [
+            "LIVE_WALL_CLOCK",
+            "ACCEPTED_DETECTOR_REPORTED",
+            "UNMEASURED"
+          ],
+          "title": "Latency Basis",
+          "type": "string"
+        },
+        "phase2_manifest_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Phase2 Manifest Sha256",
+          "type": "string"
+        },
+        "reference_model_revision": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{40}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Reference Model Revision"
+        },
+        "runtime_detector_id": {
+          "title": "Runtime Detector Id",
+          "type": "string"
+        },
+        "runtime_detector_version": {
+          "title": "Runtime Detector Version",
+          "type": "string"
+        },
+        "source_locator": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Locator"
+        },
+        "source_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Path"
+        },
+        "source_sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Sha256"
+        },
+        "special_tokens_excluded": {
+          "minimum": 0,
+          "title": "Special Tokens Excluded",
+          "type": "integer"
+        },
+        "token_count_basis": {
+          "enum": [
+            "NEXT_TOKEN_TARGETS_EXCLUDING_FIRST",
+            "CONTENT_EXCLUDING_SPECIALS",
+            "UNIQUE_CONTENT"
+          ],
+          "title": "Token Count Basis",
+          "type": "string"
+        },
+        "unlabeled_inference": {
+          "title": "Unlabeled Inference",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "binding_mode",
+        "evidence_kind",
+        "phase2_manifest_sha256",
+        "runtime_detector_id",
+        "runtime_detector_version",
+        "reference_model_revision",
+        "token_count_basis",
+        "special_tokens_excluded",
+        "latency_basis",
+        "unlabeled_inference"
+      ],
+      "title": "PredictionMetadata",
+      "type": "object"
+    }
+  },
+  "$id": "urn:research-protocol:prediction-operational:v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "not": {
+              "const": "OK"
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "operational_binary_prediction": {
+            "type": "null"
+          },
+          "operational_threshold": {
+            "type": "null"
+          },
+          "operational_threshold_id": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "detector_id": {
+            "const": "ds_v2"
+          },
+          "status": {
+            "const": "OK"
+          }
+        }
+      },
+      "then": {
+        "allOf": [
+          {
+            "else": {
+              "properties": {
+                "operational_binary_prediction": {
+                  "const": 0
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "calibrated_score": {
+                  "minimum": 0.5585373573968287,
+                  "type": "number"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "operational_binary_prediction": {
+                  "const": 1
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "operational_threshold": {
+            "const": 0.5585373573968287
+          },
+          "operational_threshold_id": {
+            "const": "ds_v2_op3_cal_v1"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "detector_id": {
+            "const": "dm_b_v1"
+          },
+          "status": {
+            "const": "OK"
+          }
+        }
+      },
+      "then": {
+        "allOf": [
+          {
+            "else": {
+              "properties": {
+                "operational_binary_prediction": {
+                  "const": 0
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "raw_score": {
+                  "minimum": 0.0004967087297700347,
+                  "type": "number"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "operational_binary_prediction": {
+                  "const": 1
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "operational_threshold": {
+            "const": 0.0004967087297700347
+          },
+          "operational_threshold_id": {
+            "const": "dm_b_v1_op3_raw_v1"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "detector_id": {
+            "const": "dg_v1"
+          },
+          "status": {
+            "const": "OK"
+          }
+        }
+      },
+      "then": {
+        "allOf": [
+          {
+            "else": {
+              "properties": {
+                "operational_binary_prediction": {
+                  "const": 0
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "raw_score": {
+                  "minimum": 0.21291141211986545,
+                  "type": "number"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "operational_binary_prediction": {
+                  "const": 1
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "operational_threshold": {
+            "const": 0.21291141211986545
+          },
+          "operational_threshold_id": {
+            "const": "dg_v1_op3_raw_v1"
+          }
+        }
+      }
+    }
+  ],
+  "description": "Policy-bound structural projection; full validation additionally requires a verified operating policy context.",
+  "properties": {
+    "calibrated_score": {
+      "anyOf": [
+        {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Calibrated Score"
+    },
+    "calibrator_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Calibrator Id"
+    },
+    "detector_id": {
+      "enum": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "minLength": 1,
+      "title": "Detector Id",
+      "type": "string"
+    },
+    "detector_role": {
+      "enum": [
+        "PRIMARY_STATISTICAL",
+        "PRIMARY_SEMANTIC",
+        "PRIMARY_EXTERNAL_GUARD"
+      ],
+      "title": "Detector Role",
+      "type": "string"
+    },
+    "error_code": {
+      "anyOf": [
+        {
+          "pattern": "^[A-Z][A-Z0-9_]*$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Error Code"
+    },
+    "input_tokens": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Input Tokens"
+    },
+    "latency_ms": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Latency Ms"
+    },
+    "metadata": {
+      "$ref": "#/$defs/PredictionMetadata"
+    },
+    "metadata_version": {
+      "const": "prediction_metadata_v1",
+      "default": "prediction_metadata_v1",
+      "title": "Metadata Version",
+      "type": "string"
+    },
+    "model_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Model Hash",
+      "type": "string"
+    },
+    "model_revision": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{40}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Model Revision"
+    },
+    "native_binary_prediction": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Native Binary Prediction"
+    },
+    "native_decision_rule_id": {
+      "minLength": 1,
+      "title": "Native Decision Rule Id",
+      "type": "string"
+    },
+    "operating_policy_manifest_sha": {
+      "const": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Operating Policy Manifest Sha",
+      "type": "string"
+    },
+    "operational_binary_prediction": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Operational Binary Prediction"
+    },
+    "operational_threshold": {
+      "anyOf": [
+        {
+          "maximum": 1.0000000000000002,
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Operational Threshold"
+    },
+    "operational_threshold_id": {
+      "anyOf": [
+        {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Operational Threshold Id"
+    },
+    "raw_score": {
+      "anyOf": [
+        {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Raw Score"
+    },
+    "raw_score_name": {
+      "const": "raw_score",
+      "title": "Raw Score Name",
+      "type": "string"
+    },
+    "sample_id": {
+      "maxLength": 200,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Sample Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "prediction_operational_v1",
+      "default": "prediction_operational_v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "score_direction": {
+      "const": "HIGHER_IS_MORE_ADVERSARIAL",
+      "title": "Score Direction",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "OK",
+        "INVALID_INPUT",
+        "ARTIFACT_MISMATCH",
+        "TOKENIZATION_ERROR",
+        "INFERENCE_ERROR",
+        "CALIBRATION_ERROR",
+        "OUTPUT_VALIDATION_ERROR",
+        "UNAVAILABLE",
+        "INSUFFICIENT_INPUT"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "tokens_analyzed": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Tokens Analyzed"
+    },
+    "truncated": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Truncated"
+    },
+    "truth_label": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Truth Label"
+    }
+  },
+  "required": [
+    "schema_version",
+    "sample_id",
+    "truth_label",
+    "detector_id",
+    "detector_role",
+    "model_revision",
+    "model_hash",
+    "raw_score",
+    "raw_score_name",
+    "score_direction",
+    "calibrated_score",
+    "calibrator_id",
+    "native_binary_prediction",
+    "native_decision_rule_id",
+    "operational_threshold",
+    "operational_threshold_id",
+    "operational_binary_prediction",
+    "status",
+    "error_code",
+    "latency_ms",
+    "input_tokens",
+    "tokens_analyzed",
+    "truncated",
+    "metadata_version",
+    "metadata",
+    "operating_policy_manifest_sha"
+  ],
+  "title": "OperationalPredictionRecord",
+  "type": "object"
+}

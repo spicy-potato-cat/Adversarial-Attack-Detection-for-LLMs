@@ -1,0 +1,59 @@
+{
+  "aggregation": {
+    "binary_vote": "OR_of_native_chunk_argmax_class_1",
+    "raw_score": "max_chunk_malicious_probability"
+  },
+  "artifact_version": "dg_calibration_run_v1",
+  "calibration": false,
+  "chunking": {
+    "content_tokens": 510,
+    "overlap": 64,
+    "special_tokens": 2,
+    "stride": 446,
+    "tail_handling": "full tail coverage"
+  },
+  "completed_at": "2026-10-06T20:00:38Z",
+  "detector_id": "dg_v1",
+  "device": "cpu",
+  "execution_commit": "9c63092d51d194930c276e215b8bbd98085cfde5",
+  "membership_sha": "fcb21024ad8e4c2d33569c26fefdb551b319c5441791c3bac1933849c6c57cf6",
+  "model_download": false,
+  "model_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+  "model_sha": "5120e30bcd536ce285345d9ec104bea6bd6e8f94365b99a340c764f417ea5fa1",
+  "packages": {
+    "pyarrow": "19.0.1",
+    "tokenizers": "0.21.4",
+    "torch": "2.6.0",
+    "transformers": "4.49.0"
+  },
+  "population": {
+    "attack": 41,
+    "benign": 192,
+    "total": 233
+  },
+  "positive_class": {
+    "benign_index": 0,
+    "benign_label": "LABEL_0",
+    "evidence_commit": "3c106f3e6ee79d6df51ae706bc7ef2d734ec3ded",
+    "evidence_sha256": "29afa64415b07811c22b3c2e27330ee40f9e8edff0a7faf4940b8cfc1c74d424",
+    "evidence_url": "https://raw.githubusercontent.com/meta-llama/llama-cookbook/3c106f3e6ee79d6df51ae706bc7ef2d734ec3ded/getting-started/responsible_ai/prompt_guard/inference.py",
+    "index": 1,
+    "meaning": "malicious_instruction_override_attempt",
+    "serialized_label": "LABEL_1"
+  },
+  "predeclared_commit": "9c63092d51d194930c276e215b8bbd98085cfde5",
+  "preprocessing": "UNCHANGED_FROZEN_NATIVE",
+  "protected_or_R1_R2_R3_used": false,
+  "python": "3.11.9",
+  "runtime_seconds": 72.32289910000145,
+  "score_evidence_sha": "5b694424e3de301d3aa9f578bef192de08989c459c6d3b5c5ce858d0e8f4100b",
+  "selection_manifest_sha": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "source_artifact_sha256": {
+    "Dataset/Raw/datasets/GitHub/Do-Not-Answer/datasets/Instruction/do_not_answer_en.csv": "8585dc135d3b8692b2e464151a313f5164e30f06416e03aa5d11e6c3a21d980e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/train-00000-of-00001-9564e8b05b4757ab.parquet": "2e10bc7ab30f542c97e4e83e2a5683000b5057d25ec10908784c631d44124c04"
+  },
+  "started_at": "2026-10-06T19:59:25Z",
+  "training": false,
+  "validation_used": false
+}
