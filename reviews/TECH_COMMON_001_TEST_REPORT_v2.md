@@ -1,0 +1,349 @@
+# TECH-COMMON-001 Continuation Test Report v2
+
+{
+  "existing_prerun": {
+    "status": "PASS",
+    "tests": 49,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "path": "C:\\Users\\Asus\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\common_mode\\development\\completion_v2\\track2_continuation_prerun.xml",
+    "sha256": "7f2765273e38f6eca5aee930d6e762db68ece08d41fa6c9588cb12eb92d5f6aa"
+  },
+  "expanded": {
+    "status": "PASS",
+    "tests": 82,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "path": "C:\\Users\\Asus\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\common_mode\\development\\completion_v2\\track2_completion_tests.xml",
+    "sha256": "8806527e3fcfec961e8d4fdc68a193515f22cf5d2e859ec8eb4ec0f664ceec03"
+  }
+}
+
+{
+  "strict_original_suite": {
+    "returncode": 1,
+    "status": "FAIL_PREEXISTING_LINE_ENDING_DRIFT",
+    "command": "python -m detection_service.scripts.verify_quality_preservation --mode check"
+  },
+  "baseline_files": 96,
+  "exact_byte_matches": 59,
+  "newline_only_matches": 37,
+  "newline_differences": [
+    {
+      "path": "artifacts/models/dg_v1/environment.json",
+      "expected_sha256": "e23929244cd567f6d1c236fe050a7b894bbfe12a7ae4c51f47d7aa2bbe739e2d",
+      "actual_sha256": "9269b0b2ec53a92edec118937c5f07ceb6ed2a2ebdb9184c85da8ab79d453706",
+      "matching_line_ending": [
+        "CRLF"
+      ]
+    },
+    {
+      "path": "artifacts/models/dg_v1/qualification.json",
+      "expected_sha256": "a8e6163dadd334324c9ca147ed650451e438ceddee4b907f28648f0539e2a4d6",
+      "actual_sha256": "83b990f25dba882f14c5d3aba283797dd91fed85942190d36616e8b4304a72f6",
+      "matching_line_ending": [
+        "CRLF"
+      ]
+    },
+    {
+      "path": "detection_service/app/__init__.py",
+      "expected_sha256": "d85d765bcbe5b99ebc7bf88f5739dfd584d7ebd60c8a4ab2fe6e39dfda35743c",
+      "actual_sha256": "0518a7a8cddf7d93c1511930658ce71a53311a41fa374092ccb0b11a23a4c63d",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/api/__init__.py",
+      "expected_sha256": "02ccb8edbbf9d8b828678cdacb48cd7f8bfabbeb2a1524945c13e4b0670de88f",
+      "actual_sha256": "f6ab5b294d896a5890a52082541df8b9795bf43f2661f903ddcc17ee32e7bf62",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/api/detect.py",
+      "expected_sha256": "ef277169c3324bb726d3f89b092fa75e5d918c5d06f076ea7068971e42548b0a",
+      "actual_sha256": "32b1a22754b3957d893d6a0ce105539570ad5208dffe339219d0595f6c216102",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/contracts/__init__.py",
+      "expected_sha256": "1f6815e24cf9d72c3943979e2bef46cb2d94bee6be0b05291854884be7cf0aa3",
+      "actual_sha256": "d2c894832c75b9cb34df34f12c43401af301b886d864074eab9723e6fed04794",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/contracts/detection_request.py",
+      "expected_sha256": "2ce4557b999d020f1cf12e680e2f7dba060d2781b81d6e219f9fab333a5f650b",
+      "actual_sha256": "807ac049d6074191614cb29711059abd7ba8e543b31d0fcb00b52bfe22a1044b",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/contracts/detector_result.py",
+      "expected_sha256": "1fa6e3edf788a0660c9ec15d1a68875d8281fe841083eadc3cdd91caf5911004",
+      "actual_sha256": "70f1f90045a30e11668e3dd1bce16feacab92beb16cb68dbb41134188bfed37b",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/core/__init__.py",
+      "expected_sha256": "6f5b3fc7ad823c3d746c898760a4d95d8f4773df41b108a32ecb7fd8a613c24c",
+      "actual_sha256": "1a2dd7118cc8753d0b06c50b0de6da5330f071150de0b45a6987e35f3edbfc75",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/core/settings.py",
+      "expected_sha256": "2ac8549fd5dfd37ec5cce16aef27d0e9fe4b747b9e95bf32a249e4fda8726a7f",
+      "actual_sha256": "0f4597cc582d295efb79613a685fd4fba7deb6af00912daad0365dc950721f0d",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/__init__.py",
+      "expected_sha256": "36ff6ace2f48d6f44c06d2ac02759ce4562c358b27841518fedd0c774a99d213",
+      "actual_sha256": "c2a3a0a8ea50c2441bf29d11825c81e03f034e5fab84452109a39546cbe769a8",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/base.py",
+      "expected_sha256": "e0b6d7e9f0bfdffd8fa90f49d6ca82b46a7ef31a7acd01605b685ff7c2f307de",
+      "actual_sha256": "ca861bf71282487c5816a07ca76162960fe1bc4e023871e0e010cb35c9a270e3",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/guard/__init__.py",
+      "expected_sha256": "85d87a5317f2c148a67d66d56d8d5d65329af5d73572a57e443335c303378941",
+      "actual_sha256": "3f98520abf13cc1336ce4f511fdb023c35061b635acf9b0264d9883c2f8f0eb7",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/guard/config.py",
+      "expected_sha256": "ac39082b44400db70c8e13a2ae51a4d9632fd5bc458bfcceff708b2d3784cc53",
+      "actual_sha256": "4491429fbd940617a9549871ff200d1953a4016bcce4c75148a5d332c0944d4c",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/guard/detector.py",
+      "expected_sha256": "cad7fa7ac3a43dc935eb30d964c8cef41a49f07618b97bfef73740d408c6982a",
+      "actual_sha256": "f1d052e27e92e6b00266d6461dd14d44b4926880013a447454bd60544ab36f5a",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/guard/model.py",
+      "expected_sha256": "bb6c06f0ea2de880c95a8a4e034b1a6eec2dffc39077a220d8076d5f9991ccd9",
+      "actual_sha256": "85daaf9881b65d77b34fcb0d4615abf11a10c88ea89e018685eb594f6fbac6e5",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic/__init__.py",
+      "expected_sha256": "08d2f2abd25b0fe212e50a2efd1550a1ab12f24349385343b3bdf1f7ace5bc69",
+      "actual_sha256": "0c51475917c203d2dd901864b0d2166a9539a1671eea4058c0291f9d77ee9301",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic/calibration.py",
+      "expected_sha256": "06e7d3679ecfcb8f585e8b7741c261340bbecff838a30aadf52ceef1436c1f7b",
+      "actual_sha256": "5d099270bdbd810b2b6d5585a92adc8127f3178d7fbac2cfc56e8ff88a27a948",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic/classifier.py",
+      "expected_sha256": "8db3103ae3b182fb94f4494bfcf9669210dd4bd81e5df680136401db9202e8cb",
+      "actual_sha256": "5f88e8742576b1751f15712c2439763a1bd01d7ebfb4dbaecbaa913a4430317f",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic/config.py",
+      "expected_sha256": "2a3fdd8151e21056b614b276f2d07aac7b39141f11c6e1af9e8f08087c4ff509",
+      "actual_sha256": "1dce0ce9132889fdb2339fb133bf6487c15f89fdfc6afccd353a18a1dd9c82f3",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic/detector.py",
+      "expected_sha256": "495bbaf7426be1628e5a19bf975417d1632825201ba81f929a1f1d0320d36868",
+      "actual_sha256": "7b9544c055f094328566008b71441ce95453de85810553ada5a8cc12cb7c74e4",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic/embeddings.py",
+      "expected_sha256": "8aec0ad9d7a6e8430293a36442f6e59fd019c2bef36307b6c8bed80eadb90352",
+      "actual_sha256": "e36d9559b46035597c0b28543fef563487af1a06aeb5d835884658f4b77590fe",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic_finetuned/__init__.py",
+      "expected_sha256": "535d07903412868b3607e0e2cde0cbbda08ca656f39c7526ebc6be80c5ce3287",
+      "actual_sha256": "698b7794915a8a3f0300cbdc15d420b102f4f8fca19eca761efe38c5aa222357",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic_finetuned/calibration.py",
+      "expected_sha256": "821c1b748dba36bfbfa9f991c4034fa6f9abd8784695c94d34175c3e1d2dbe7e",
+      "actual_sha256": "a931196acc0f5a5e4c9fa483075d7a6f67a7434655e30b9d5365fd8665187c4b",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic_finetuned/config.py",
+      "expected_sha256": "5880f5e98e7ca935f8b421877f0242450f7cbd04397605335f0d27b9bc5ec4e0",
+      "actual_sha256": "30410646a9ff917806b666607d22a585c1bf6e09b083d5d4712b0275ccb50ba1",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic_finetuned/data.py",
+      "expected_sha256": "4f4d74fb471754ab4bcb359e2d81521e61725701338f4f1e82e69d7ee2c46145",
+      "actual_sha256": "4e37fe1419796756eb3553c17cc3a45b4f456c47b47ebb0151565f2597bad8f4",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/semantic_finetuned/detector.py",
+      "expected_sha256": "0c13a0da3a762cd0bfe374ea67d8a37b9c9b49851adaebd6d116e05f1b98666c",
+      "actual_sha256": "31569a6baa481a5f8be39a15f4ef4c0ee0d107a1f3c09dea58f469900a9f08f2",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/statistical/__init__.py",
+      "expected_sha256": "32ec738f8a25da0552facb413a694b038876ec4b35c56d21de5ed25145608a2e",
+      "actual_sha256": "0db252975ca0dcf599cfa2d91015012598e502845f3108fb07507825aa88b42b",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/statistical/config.py",
+      "expected_sha256": "e5cc8512c3acbdad323ec826176513fd8173c8864c7aa8ae081a7503d46f7f17",
+      "actual_sha256": "7f2c0366c02f13259ce22fc578c934d5e2486442d23f8873bc010d8837f7cf4c",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/statistical/features.py",
+      "expected_sha256": "b2ccdc4cc64789170a730990570373079645b870f027f6d11da2d78fe71866fa",
+      "actual_sha256": "c5a1ce76d2d4e964aed89f19404443d5b412a447c8b2812f696bd14111401f06",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/statistical/perplexity_detector.py",
+      "expected_sha256": "032ab0652fdc5d4ddd3d6e833d558f29d63d04164e90901dc3eecd05b3dde599",
+      "actual_sha256": "cc8858a6baba6f93f0c7e30c62122c38e578a9f4f235ffd4feb3b4beb1018d77",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/statistical/perplexity_engine.py",
+      "expected_sha256": "cd978bd44d719dbee29b510f8f6138638a2ff30d8d23a6a379fdf48e5c26b4c1",
+      "actual_sha256": "3848cbb4002dc54feb6393e6850667280d002387d57fc15e31d78b5e5ce9834b",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/statistical_risk/__init__.py",
+      "expected_sha256": "a6853e1f79ddc4bb24d1316db9bde103c84820f1cc47241030b250397e68cd8b",
+      "actual_sha256": "9fad047e51ee1533cb69e7824ea09d0e19d6067a84c0888ed9887427525bc7e3",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/statistical_risk/detector.py",
+      "expected_sha256": "e41d4b65f2bd20cbb4461fe49f2c673ad6e8b11f25a9fcac0bc69ef27b794ce4",
+      "actual_sha256": "3593e8efe2d77eaee0be95159e95464554115d55131c5bbac309db936555793c",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/statistical_risk/schema.py",
+      "expected_sha256": "994e5660a8eaa69749f31f8afc6fecfc2d22adfa3e17fcb190c08ed22898955a",
+      "actual_sha256": "3ad077ef43541729b25492b3b99792a776fde9d1090e4a1d0fdb4573f5caf90f",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/detectors/statistical_risk/scorer.py",
+      "expected_sha256": "a410637562e201b8d64ca8670e5c034f827f416bc7b6655da94de97817a17c12",
+      "actual_sha256": "65c59321b3c8d3f8f5d6f35750a1959a1456a8f08840da6555df1d7d87fe15be",
+      "matching_line_ending": [
+        "LF"
+      ]
+    },
+    {
+      "path": "detection_service/app/main.py",
+      "expected_sha256": "5cb01f1b7b41c33a739e4658cdedb33f85b7c3761c1cc533701ea0f7fa78677e",
+      "actual_sha256": "8640d197df0b29913621c8adb7c8c59515bc457800651bcf370972e309f24121",
+      "matching_line_ending": [
+        "LF"
+      ]
+    }
+  ],
+  "unexplained_changes": 0,
+  "tracked_detector_diff": "EMPTY",
+  "original_track2_artifacts_and_reports_verified": 24,
+  "historical_evidence": "BYTE_IDENTICAL",
+  "stat004_sha256": {
+    "artifacts/statistical_v2/feature_ablation/resume_20000/block_fold_metrics_v1.json": "2f3823da52fd0d9874fd89e14d4d7feb791225ea690ed3956d1d381f847df7c5",
+    "artifacts/statistical_v2/feature_ablation/resume_20000/block_metrics_v1.json": "73a5225e6bcfdbb889014e732727d96b21bc8a59230955478908ebd677d5f64f",
+    "artifacts/statistical_v2/feature_ablation/resume_20000/block_predictions_v1.csv": "32e21d581b433a422e4f438274a01d0719ccbae1c8f4788505e30f05c2414f2e",
+    "artifacts/statistical_v2/feature_ablation/resume_20000/error_bank_transition_v1.json": "625e6a357d2495a4f06e992874a8eeab2699c6dfa4d9dcb61469e94a13fcc1d9",
+    "artifacts/statistical_v2/feature_ablation/resume_20000/fold_references_v1.json": "38fc670b45fac1f776e3c30986ccf5e6f318276011576ef33bed196e69cac691",
+    "artifacts/statistical_v2/feature_ablation/resume_20000/lr_convergence_v1.json": "6c9d80b0e029e34e966389339b8a1f83cfee54c286e075e834da7f8c6cbea7a4",
+    "artifacts/statistical_v2/feature_ablation/resume_20000/paired_comparison_v1.json": "64e7aa9d17b0f181ed8cb0ec82be6666841c65963a08d3a60a097f008d3bb71c",
+    "artifacts/statistical_v2/feature_ablation/resume_20000/selected_representation_v1.json": "05c0ab4f01cceb2a57e70e9ed0fe68717a0118a8d0a8cedf6bb5d26b5857adf2",
+    "artifacts/statistical_v2/feature_ablation/resume_20000/short_prompt_analysis_v1.json": "f26ed7323d76562c0261c4670719acda4a054d3d4a201fab66a3a401b01d42e3"
+  },
+  "interpretation": "Strict preservation suite is not passing bytewise on this fresh checkout. Every difference is verified LF/CRLF only; no baseline bytes/hashes modified."
+}
+
+Synthetic tests cover conditional failure, ranking ties, native vote semantics, one-shot scoring validation, reserved-row refusal, four-detector alignment, grouped accounting and paired full-stack deltas. Model-dependent guard tests remain NOT RUN when runtime/model/data gates fail. The live scoring wrapper is infrastructure tested with synthetic primitive results; this is not live D_G qualification.

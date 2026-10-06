@@ -1,0 +1,97 @@
+{
+  "rows": [
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "tn",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "fp",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "fn",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "tp",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "accuracy",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "precision",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "recall",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "specificity",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "f1",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "fpr",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "fnr",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "roc_auc",
+      "native": null
+    },
+    {
+      "le_1_percent": null,
+      "le_3_percent": null,
+      "le_5_percent": null,
+      "metric": "pr_auc",
+      "native": null
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION",
+  "status": "PARTIAL"
+}

@@ -1,0 +1,20 @@
+{
+  "existing_prerun": {
+    "errors": 0,
+    "failures": 0,
+    "path": "C:\\Users\\Asus\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\common_mode\\development\\completion_v2\\track2_continuation_prerun.xml",
+    "sha256": "7f2765273e38f6eca5aee930d6e762db68ece08d41fa6c9588cb12eb92d5f6aa",
+    "skipped": 0,
+    "status": "PASS",
+    "tests": 49
+  },
+  "expanded": {
+    "errors": 0,
+    "failures": 0,
+    "path": "C:\\Users\\Asus\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\common_mode\\development\\completion_v2\\track2_completion_tests.xml",
+    "sha256": "8806527e3fcfec961e8d4fdc68a193515f22cf5d2e859ec8eb4ec0f664ceec03",
+    "skipped": 0,
+    "status": "PASS",
+    "tests": 82
+  }
+}

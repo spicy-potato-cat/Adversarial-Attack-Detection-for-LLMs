@@ -1,0 +1,174 @@
+{
+  "results": [
+    {
+      "budget": 0.01,
+      "metrics": [
+        {
+          "attack_denominator": 183,
+          "ejf": 0.005285317566962284,
+          "fn_jaccard": 0.04032258064516129,
+          "fn_union_count": 124,
+          "fnr_i": 0.03278688524590164,
+          "fnr_j": 0.6721311475409836,
+          "independence_reference": 0.022037086804622415,
+          "jfn": 0.0273224043715847,
+          "jfn_count": 5,
+          "left": "D_M-B_v1",
+          "left_fn_count": 6,
+          "p_failure_left_given_right": 0.04065040650406504,
+          "p_failure_right_given_left": 0.8333333333333334,
+          "right": "D_S_B2_LR",
+          "right_fn_count": 123
+        },
+        {
+          "attack_denominator": 183,
+          "ejf": 0.008062348830959423,
+          "fn_jaccard": 0.043478260869565216,
+          "fn_union_count": 138,
+          "fnr_i": 0.03278688524590164,
+          "fnr_j": 0.7540983606557377,
+          "independence_reference": 0.024724536414942218,
+          "jfn": 0.03278688524590164,
+          "jfn_count": 6,
+          "left": "D_M-B_v1",
+          "left_fn_count": 6,
+          "p_failure_left_given_right": 0.043478260869565216,
+          "p_failure_right_given_left": 1.0,
+          "right": "D_S_v1",
+          "right_fn_count": 138
+        },
+        {
+          "attack_denominator": 183,
+          "ejf": 0.0997043805428649,
+          "fn_jaccard": 0.74,
+          "fn_union_count": 150,
+          "fnr_i": 0.6721311475409836,
+          "fnr_j": 0.7540983606557377,
+          "independence_reference": 0.5068529965063154,
+          "jfn": 0.6065573770491803,
+          "jfn_count": 111,
+          "left": "D_S_B2_LR",
+          "left_fn_count": 123,
+          "p_failure_left_given_right": 0.8043478260869565,
+          "p_failure_right_given_left": 0.9024390243902439,
+          "right": "D_S_v1",
+          "right_fn_count": 138
+        }
+      ]
+    },
+    {
+      "budget": 0.03,
+      "metrics": [
+        {
+          "attack_denominator": 183,
+          "ejf": 0.006479739615993312,
+          "fn_jaccard": 0.03571428571428571,
+          "fn_union_count": 84,
+          "fnr_i": 0.02185792349726776,
+          "fnr_j": 0.453551912568306,
+          "independence_reference": 0.009913703006957509,
+          "jfn": 0.01639344262295082,
+          "jfn_count": 3,
+          "left": "D_M-B_v1",
+          "left_fn_count": 4,
+          "p_failure_left_given_right": 0.03614457831325301,
+          "p_failure_right_given_left": 0.75,
+          "right": "D_S_B2_LR",
+          "right_fn_count": 83
+        },
+        {
+          "attack_denominator": 183,
+          "ejf": 0.007047090089283049,
+          "fn_jaccard": 0.03225806451612903,
+          "fn_union_count": 124,
+          "fnr_i": 0.02185792349726776,
+          "fnr_j": 0.6775956284153005,
+          "independence_reference": 0.014810833407984711,
+          "jfn": 0.02185792349726776,
+          "jfn_count": 4,
+          "left": "D_M-B_v1",
+          "left_fn_count": 4,
+          "p_failure_left_given_right": 0.03225806451612903,
+          "p_failure_right_given_left": 1.0,
+          "right": "D_S_v1",
+          "right_fn_count": 124
+        },
+        {
+          "attack_denominator": 183,
+          "ejf": 0.11890471498103855,
+          "fn_jaccard": 0.6046511627906976,
+          "fn_union_count": 129,
+          "fnr_i": 0.453551912568306,
+          "fnr_j": 0.6775956284153005,
+          "independence_reference": 0.30732479321568273,
+          "jfn": 0.4262295081967213,
+          "jfn_count": 78,
+          "left": "D_S_B2_LR",
+          "left_fn_count": 83,
+          "p_failure_left_given_right": 0.6290322580645161,
+          "p_failure_right_given_left": 0.9397590361445783,
+          "right": "D_S_v1",
+          "right_fn_count": 124
+        }
+      ]
+    },
+    {
+      "budget": 0.05,
+      "metrics": [
+        {
+          "attack_denominator": 183,
+          "ejf": 0.006867926781928394,
+          "fn_jaccard": 0.029411764705882353,
+          "fn_union_count": 68,
+          "fnr_i": 0.01092896174863388,
+          "fnr_j": 0.37158469945355194,
+          "independence_reference": 0.0040610349667054855,
+          "jfn": 0.01092896174863388,
+          "jfn_count": 2,
+          "left": "D_M-B_v1",
+          "left_fn_count": 2,
+          "p_failure_left_given_right": 0.029411764705882353,
+          "p_failure_right_given_left": 1.0,
+          "right": "D_S_B2_LR",
+          "right_fn_count": 68
+        },
+        {
+          "attack_denominator": 183,
+          "ejf": 0.0049568515034787534,
+          "fn_jaccard": 0.02,
+          "fn_union_count": 100,
+          "fnr_i": 0.01092896174863388,
+          "fnr_j": 0.546448087431694,
+          "independence_reference": 0.005972110245155126,
+          "jfn": 0.01092896174863388,
+          "jfn_count": 2,
+          "left": "D_M-B_v1",
+          "left_fn_count": 2,
+          "p_failure_left_given_right": 0.02,
+          "p_failure_right_given_left": 1.0,
+          "right": "D_S_v1",
+          "right_fn_count": 100
+        },
+        {
+          "attack_denominator": 183,
+          "ejf": 0.11388814237510822,
+          "fn_jaccard": 0.5272727272727272,
+          "fn_union_count": 110,
+          "fnr_i": 0.37158469945355194,
+          "fnr_j": 0.546448087431694,
+          "independence_reference": 0.2030517483352743,
+          "jfn": 0.31693989071038253,
+          "jfn_count": 58,
+          "left": "D_S_B2_LR",
+          "left_fn_count": 68,
+          "p_failure_left_given_right": 0.58,
+          "p_failure_right_given_left": 0.8529411764705882,
+          "right": "D_S_v1",
+          "right_fn_count": 100
+        }
+      ]
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION",
+  "status": "PARTIAL"
+}

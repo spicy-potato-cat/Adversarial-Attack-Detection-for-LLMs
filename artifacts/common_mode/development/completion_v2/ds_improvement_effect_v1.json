@@ -1,0 +1,273 @@
+{
+  "results": [
+    {
+      "budget": 0.01,
+      "metrics": [
+        {
+          "baseline": 0.7540983606557377,
+          "candidate": 0.6721311475409836,
+          "delta": -0.08196721311475408,
+          "metric": "fnr",
+          "other": "D_S"
+        },
+        {
+          "baseline": 0.03278688524590164,
+          "candidate": 0.0273224043715847,
+          "delta": -0.0054644808743169425,
+          "metric": "jfn",
+          "other": "D_M-B_v1"
+        },
+        {
+          "baseline": 0.008062348830959423,
+          "candidate": 0.005285317566962284,
+          "delta": -0.0027770312639971394,
+          "metric": "ejf",
+          "other": "D_M-B_v1"
+        },
+        {
+          "baseline": 0.043478260869565216,
+          "candidate": 0.04032258064516129,
+          "delta": -0.003155680224403927,
+          "metric": "fn_jaccard",
+          "other": "D_M-B_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "jfn",
+          "other": "D_G_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "ejf",
+          "other": "D_G_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "fn_jaccard",
+          "other": "D_G_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "all_detector_jfn",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "all_detector_fn_count",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "unique_catch_count",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "unique_catch_rate",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "recovery_given_others_miss",
+          "other": "primary_stack"
+        }
+      ]
+    },
+    {
+      "budget": 0.03,
+      "metrics": [
+        {
+          "baseline": 0.6775956284153005,
+          "candidate": 0.453551912568306,
+          "delta": -0.2240437158469945,
+          "metric": "fnr",
+          "other": "D_S"
+        },
+        {
+          "baseline": 0.02185792349726776,
+          "candidate": 0.01639344262295082,
+          "delta": -0.005464480874316939,
+          "metric": "jfn",
+          "other": "D_M-B_v1"
+        },
+        {
+          "baseline": 0.007047090089283049,
+          "candidate": 0.006479739615993312,
+          "delta": -0.0005673504732897367,
+          "metric": "ejf",
+          "other": "D_M-B_v1"
+        },
+        {
+          "baseline": 0.03225806451612903,
+          "candidate": 0.03571428571428571,
+          "delta": 0.003456221198156681,
+          "metric": "fn_jaccard",
+          "other": "D_M-B_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "jfn",
+          "other": "D_G_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "ejf",
+          "other": "D_G_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "fn_jaccard",
+          "other": "D_G_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "all_detector_jfn",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "all_detector_fn_count",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "unique_catch_count",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "unique_catch_rate",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "recovery_given_others_miss",
+          "other": "primary_stack"
+        }
+      ]
+    },
+    {
+      "budget": 0.05,
+      "metrics": [
+        {
+          "baseline": 0.546448087431694,
+          "candidate": 0.37158469945355194,
+          "delta": -0.1748633879781421,
+          "metric": "fnr",
+          "other": "D_S"
+        },
+        {
+          "baseline": 0.01092896174863388,
+          "candidate": 0.01092896174863388,
+          "delta": 0.0,
+          "metric": "jfn",
+          "other": "D_M-B_v1"
+        },
+        {
+          "baseline": 0.0049568515034787534,
+          "candidate": 0.006867926781928394,
+          "delta": 0.0019110752784496409,
+          "metric": "ejf",
+          "other": "D_M-B_v1"
+        },
+        {
+          "baseline": 0.02,
+          "candidate": 0.029411764705882353,
+          "delta": 0.009411764705882352,
+          "metric": "fn_jaccard",
+          "other": "D_M-B_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "jfn",
+          "other": "D_G_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "ejf",
+          "other": "D_G_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "fn_jaccard",
+          "other": "D_G_v1"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "all_detector_jfn",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "all_detector_fn_count",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "unique_catch_count",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "unique_catch_rate",
+          "other": "primary_stack"
+        },
+        {
+          "baseline": null,
+          "candidate": null,
+          "delta": null,
+          "metric": "recovery_given_others_miss",
+          "other": "primary_stack"
+        }
+      ]
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION",
+  "status": "PARTIAL"
+}

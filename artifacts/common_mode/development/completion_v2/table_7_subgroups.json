@@ -1,0 +1,78 @@
+{
+  "rows": [
+    {
+      "D_G": null,
+      "D_M-B": 25,
+      "D_S_candidate": 0,
+      "D_S_v1": 0,
+      "all_three_miss": null,
+      "budget": 0.01,
+      "count": 26,
+      "count_meaning": "attack_catches",
+      "either_stronger_catches": null,
+      "subgroup": "under_16_attacks"
+    },
+    {
+      "D_G": null,
+      "D_M-B": 0,
+      "D_S_candidate": 6,
+      "D_S_v1": 3,
+      "all_three_miss": null,
+      "budget": 0.01,
+      "count": 17,
+      "count_meaning": "benign_false_positives",
+      "either_stronger_catches": null,
+      "subgroup": "64_plus_benign"
+    },
+    {
+      "D_G": null,
+      "D_M-B": 26,
+      "D_S_candidate": 0,
+      "D_S_v1": 1,
+      "all_three_miss": 0,
+      "budget": 0.03,
+      "count": 26,
+      "count_meaning": "attack_catches",
+      "either_stronger_catches": 26,
+      "subgroup": "under_16_attacks"
+    },
+    {
+      "D_G": null,
+      "D_M-B": 3,
+      "D_S_candidate": 12,
+      "D_S_v1": 7,
+      "all_three_miss": null,
+      "budget": 0.03,
+      "count": 17,
+      "count_meaning": "benign_false_positives",
+      "either_stronger_catches": null,
+      "subgroup": "64_plus_benign"
+    },
+    {
+      "D_G": null,
+      "D_M-B": 26,
+      "D_S_candidate": 0,
+      "D_S_v1": 2,
+      "all_three_miss": 0,
+      "budget": 0.05,
+      "count": 26,
+      "count_meaning": "attack_catches",
+      "either_stronger_catches": 26,
+      "subgroup": "under_16_attacks"
+    },
+    {
+      "D_G": null,
+      "D_M-B": 4,
+      "D_S_candidate": 15,
+      "D_S_v1": 9,
+      "all_three_miss": null,
+      "budget": 0.05,
+      "count": 17,
+      "count_meaning": "benign_false_positives",
+      "either_stronger_catches": null,
+      "subgroup": "64_plus_benign"
+    }
+  ],
+  "scope": "DEVELOPMENT COMMON-MODE CHARACTERIZATION",
+  "status": "PARTIAL"
+}
