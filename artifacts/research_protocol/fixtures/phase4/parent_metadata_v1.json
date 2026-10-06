@@ -1,0 +1,15 @@
+{
+  "artifact_version": "synthetic_parent_metadata_v1",
+  "evidence_kind": "SYNTHETIC_FIXTURE",
+  "parents": [
+    {
+      "dataset_id": "fixture-dataset-v1",
+      "dataset_revision": "synthetic-source-v1",
+      "lineage_id": "fixture-lineage-001",
+      "provenance_status": "SYNTHETIC_FIXTURE",
+      "sample_id": "fixture-parent-001",
+      "source": "SYNTHETIC_METADATA_ONLY",
+      "source_native_id": "P1"
+    }
+  ]
+}

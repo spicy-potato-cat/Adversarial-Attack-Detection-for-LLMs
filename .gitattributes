@@ -52,3 +52,5 @@
 /reviews/EXP_PROTOCOL_001_DETECTOR_SEMANTICS_v1.md -text
 /detection_service/tests/test_prediction_adapters.py -text
 /reviews/EXP_PROTOCOL_001_PREDICTION_CONTRACT_v1.md -text
+/detection_service/tests/test_regime_contract.py -text
+/reviews/EXP_PROTOCOL_001_REGIME_CONTRACT_v1.md -text

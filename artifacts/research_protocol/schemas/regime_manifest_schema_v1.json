@@ -1,0 +1,1405 @@
+{
+  "$defs": {
+    "DatasetSource": {
+      "additionalProperties": false,
+      "properties": {
+        "dataset_id": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Dataset Id",
+          "type": "string"
+        },
+        "dataset_revision": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Dataset Revision",
+          "type": "string"
+        },
+        "source": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Source",
+          "type": "string"
+        },
+        "source_revision": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Source Revision",
+          "type": "string"
+        }
+      },
+      "required": [
+        "dataset_id",
+        "dataset_revision",
+        "source",
+        "source_revision"
+      ],
+      "title": "DatasetSource",
+      "type": "object"
+    },
+    "EvidenceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Path",
+          "type": "string"
+        },
+        "role": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Role",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "role",
+        "path",
+        "sha256"
+      ],
+      "title": "EvidenceReference",
+      "type": "object"
+    },
+    "ParentReference": {
+      "additionalProperties": false,
+      "properties": {
+        "dataset_id": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Dataset Id",
+          "type": "string"
+        },
+        "dataset_revision": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Dataset Revision",
+          "type": "string"
+        },
+        "evidence_locator": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Evidence Locator",
+          "type": "string"
+        },
+        "evidence_role": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Evidence Role",
+          "type": "string"
+        },
+        "lineage_id": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Lineage Id",
+          "type": "string"
+        },
+        "provenance_status": {
+          "enum": [
+            "COMPLETE",
+            "PARTIAL",
+            "UNKNOWN",
+            "NOT_VERIFIED",
+            "SYNTHETIC_FIXTURE"
+          ],
+          "title": "Provenance Status",
+          "type": "string"
+        },
+        "sample_id": {
+          "maxLength": 200,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Sample Id",
+          "type": "string"
+        },
+        "source": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Source",
+          "type": "string"
+        },
+        "source_native_id": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Source Native Id"
+        }
+      },
+      "required": [
+        "sample_id",
+        "lineage_id",
+        "dataset_id",
+        "dataset_revision",
+        "source",
+        "source_native_id",
+        "provenance_status",
+        "evidence_role",
+        "evidence_locator"
+      ],
+      "title": "ParentReference",
+      "type": "object"
+    },
+    "RegimeSample": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "threat_regime": {
+                "const": "R0_NON_ADAPTIVE"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "target_detector": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "threat_regime": {
+                "const": "R1_SHIFTED_UNSEEN"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "target_detector": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "threat_regime": {
+                "const": "R2_SINGLE_DETECTOR_TARGETED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_method": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "attack_method_revision": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "attack_success_definition": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "generation_evaluation_status": {
+                "enum": [
+                  "PENDING",
+                  "COMPLETED"
+                ]
+              },
+              "lineage_id": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "target_detector": {
+                "enum": [
+                  "D_S",
+                  "D_M-B",
+                  "D_G"
+                ]
+              },
+              "valid_attack_attempt": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "threat_regime": {
+                "const": "R3_ENSEMBLE_TARGETED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_method": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "attack_method_revision": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "attack_success_definition": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "generation_evaluation_status": {
+                "enum": [
+                  "PENDING",
+                  "COMPLETED"
+                ]
+              },
+              "lineage_id": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "target_detector": {
+                "const": "ALL"
+              },
+              "valid_attack_attempt": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "truth_label": {
+                "const": 0
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "is_adversarial": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "truth_label": {
+                "const": 1
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "is_adversarial": {
+                "const": true
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generated_sample": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "generator_type": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "lineage_id": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "lineage_provenance_status": {
+                "const": "DERIVED_FROM_PARENT"
+              },
+              "parent_sample_id": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attack_success": {
+                "type": "boolean"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_success_definition": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attack_success": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "valid_attack_attempt": {
+                "const": true
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generator_type": {
+                "const": "MODEL"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "generator_model": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "generator_revision": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "generator_system": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generation_evaluation_status": {
+                "const": "COMPLETED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_success": {
+                "type": "boolean"
+              },
+              "valid_attack_attempt": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generation_evaluation_status": {
+                "const": "PENDING"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_success": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generation_evaluation_status": {
+                "const": "NOT_APPLICABLE"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_success": {
+                "type": "null"
+              },
+              "attack_success_definition": {
+                "type": "null"
+              },
+              "valid_attack_attempt": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generator_type": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "generator_model": {
+                "type": "null"
+              },
+              "generator_revision": {
+                "type": "null"
+              },
+              "generator_system": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generator_type": {
+                "enum": [
+                  "RULE_BASED",
+                  "HUMAN",
+                  "DATASET_SOURCE",
+                  "OTHER"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "generator_model": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generator_type": {
+                "enum": [
+                  "RULE_BASED",
+                  "OTHER"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "generator_revision": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "generator_system": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "else": {
+            "properties": {
+              "lineage_id": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "lineage_provenance_status": {
+                "const": "UNKNOWN"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "lineage_id": {
+                "type": "null"
+              },
+              "parent_sample_id": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "parent_sample_id": {
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "lineage_id": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "lineage_provenance_status": {
+                "const": "DERIVED_FROM_PARENT"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "lineage_provenance_status": {
+                "const": "DERIVED_FROM_PARENT"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "parent_sample_id": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "lineage_provenance_status": {
+                "const": "SINGLETON_FALLBACK"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "lineage_justification": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "parent_sample_id": {
+                "type": "null"
+              },
+              "threat_regime": {
+                "enum": [
+                  "R0_NON_ADAPTIVE",
+                  "R1_SHIFTED_UNSEEN"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attack_family_provenance": {
+                "const": "UNKNOWN"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_family": {
+                "const": "UNKNOWN"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attack_family_provenance": {
+                "const": "NOT_APPLICABLE"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_family": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attack_family_provenance": {
+                "enum": [
+                  "SOURCE_PROVIDED",
+                  "PROTOCOL_DECLARED",
+                  "ACCEPTED_METADATA"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_family": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attack_method": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_method_revision": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attack_method": {
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_method_revision": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attack_method_revision": {
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attack_method": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generator_system": {
+                "type": "null"
+              },
+              "generator_type": {
+                "not": {
+                  "const": "MODEL"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "generator_revision": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generator_system": {
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "generator_revision": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "generator_revision": {
+                "type": "string"
+              },
+              "generator_type": {
+                "not": {
+                  "const": "MODEL"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "generator_system": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "attack_family": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Attack Family"
+        },
+        "attack_family_provenance": {
+          "enum": [
+            "SOURCE_PROVIDED",
+            "PROTOCOL_DECLARED",
+            "ACCEPTED_METADATA",
+            "UNKNOWN",
+            "NOT_APPLICABLE"
+          ],
+          "title": "Attack Family Provenance",
+          "type": "string"
+        },
+        "attack_method": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Attack Method"
+        },
+        "attack_method_revision": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Attack Method Revision"
+        },
+        "attack_success": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Attack Success"
+        },
+        "attack_success_definition": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Z][A-Z0-9_]*_V[1-9][0-9]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Attack Success Definition"
+        },
+        "created_at": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+          "title": "Created At",
+          "type": "string"
+        },
+        "dataset_id": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Dataset Id",
+          "type": "string"
+        },
+        "dataset_revision": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Dataset Revision",
+          "type": "string"
+        },
+        "generated_sample": {
+          "title": "Generated Sample",
+          "type": "boolean"
+        },
+        "generation_evaluation_status": {
+          "enum": [
+            "NOT_APPLICABLE",
+            "PENDING",
+            "COMPLETED"
+          ],
+          "title": "Generation Evaluation Status",
+          "type": "string"
+        },
+        "generator_model": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Generator Model"
+        },
+        "generator_revision": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Generator Revision"
+        },
+        "generator_system": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Generator System"
+        },
+        "generator_type": {
+          "anyOf": [
+            {
+              "enum": [
+                "MODEL",
+                "RULE_BASED",
+                "HUMAN",
+                "DATASET_SOURCE",
+                "OTHER"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Generator Type"
+        },
+        "is_adversarial": {
+          "title": "Is Adversarial",
+          "type": "boolean"
+        },
+        "lineage_id": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Lineage Id"
+        },
+        "lineage_justification": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Lineage Justification"
+        },
+        "lineage_provenance_status": {
+          "enum": [
+            "SOURCE_PROVIDED",
+            "DERIVED_FROM_PARENT",
+            "CANONICAL_DUPLICATE_GROUP",
+            "SINGLETON_FALLBACK",
+            "UNKNOWN"
+          ],
+          "title": "Lineage Provenance Status",
+          "type": "string"
+        },
+        "outer_fold": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Outer Fold"
+        },
+        "parent_sample_id": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Sample Id"
+        },
+        "partition": {
+          "enum": [
+            "BASE_TRAIN",
+            "CALIBRATION",
+            "VALIDATION",
+            "META_TRAIN",
+            "INTERNAL_TEST",
+            "FROZEN_EXTERNAL",
+            "FINAL_TEST",
+            "ATTACK_GENERATION",
+            "QUARANTINE"
+          ],
+          "title": "Partition",
+          "type": "string"
+        },
+        "provenance_status": {
+          "enum": [
+            "COMPLETE",
+            "PARTIAL",
+            "UNKNOWN",
+            "NOT_VERIFIED",
+            "SYNTHETIC_FIXTURE"
+          ],
+          "title": "Provenance Status",
+          "type": "string"
+        },
+        "record_version": {
+          "const": "regime_sample_v1",
+          "default": "regime_sample_v1",
+          "title": "Record Version",
+          "type": "string"
+        },
+        "sample_id": {
+          "maxLength": 200,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Sample Id",
+          "type": "string"
+        },
+        "source": {
+          "maxLength": 500,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Source",
+          "type": "string"
+        },
+        "source_native_id": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Source Native Id"
+        },
+        "target_detector": {
+          "anyOf": [
+            {
+              "enum": [
+                "D_S",
+                "D_M-B",
+                "D_G",
+                "ALL"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Target Detector"
+        },
+        "threat_regime": {
+          "enum": [
+            "R0_NON_ADAPTIVE",
+            "R1_SHIFTED_UNSEEN",
+            "R2_SINGLE_DETECTOR_TARGETED",
+            "R3_ENSEMBLE_TARGETED"
+          ],
+          "title": "Threat Regime",
+          "type": "string"
+        },
+        "truth_label": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Truth Label",
+          "type": "integer"
+        },
+        "valid_attack_attempt": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Valid Attack Attempt"
+        }
+      },
+      "required": [
+        "record_version",
+        "sample_id",
+        "dataset_id",
+        "dataset_revision",
+        "partition",
+        "threat_regime",
+        "source",
+        "source_native_id",
+        "truth_label",
+        "is_adversarial",
+        "attack_family",
+        "attack_family_provenance",
+        "target_detector",
+        "attack_method",
+        "attack_method_revision",
+        "generator_type",
+        "generator_model",
+        "generator_system",
+        "generator_revision",
+        "generated_sample",
+        "generation_evaluation_status",
+        "parent_sample_id",
+        "lineage_id",
+        "lineage_provenance_status",
+        "lineage_justification",
+        "attack_success_definition",
+        "attack_success",
+        "valid_attack_attempt",
+        "created_at",
+        "provenance_status",
+        "outer_fold"
+      ],
+      "title": "RegimeSample",
+      "type": "object"
+    }
+  },
+  "$id": "urn:research-protocol:regime-manifest:v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "attack_count": {
+      "minimum": 0,
+      "title": "Attack Count",
+      "type": "integer"
+    },
+    "benign_count": {
+      "minimum": 0,
+      "title": "Benign Count",
+      "type": "integer"
+    },
+    "created_at": {
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+      "title": "Created At",
+      "type": "string"
+    },
+    "dataset_id": {
+      "maxLength": 500,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "dataset_revision": {
+      "maxLength": 500,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Dataset Revision",
+      "type": "string"
+    },
+    "dataset_source": {
+      "maxLength": 500,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Dataset Source",
+      "type": "string"
+    },
+    "dataset_source_revision": {
+      "maxLength": 500,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Dataset Source Revision",
+      "type": "string"
+    },
+    "dataset_sources": {
+      "items": {
+        "$ref": "#/$defs/DatasetSource"
+      },
+      "title": "Dataset Sources",
+      "type": "array"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/EvidenceReference"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "evidence_kind": {
+      "enum": [
+        "ACCEPTED_METADATA",
+        "SYNTHETIC_FIXTURE"
+      ],
+      "title": "Evidence Kind",
+      "type": "string"
+    },
+    "experiment_id": {
+      "maxLength": 500,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Experiment Id",
+      "type": "string"
+    },
+    "external_parents": {
+      "items": {
+        "$ref": "#/$defs/ParentReference"
+      },
+      "title": "External Parents",
+      "type": "array"
+    },
+    "manifest_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Manifest Hash",
+      "type": "string"
+    },
+    "manifest_version": {
+      "const": "regime_manifest_v1",
+      "default": "regime_manifest_v1",
+      "title": "Manifest Version",
+      "type": "string"
+    },
+    "notes": {
+      "items": {
+        "maxLength": 500,
+        "minLength": 1,
+        "pattern": "\\S",
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    },
+    "partition": {
+      "enum": [
+        "BASE_TRAIN",
+        "CALIBRATION",
+        "VALIDATION",
+        "META_TRAIN",
+        "INTERNAL_TEST",
+        "FROZEN_EXTERNAL",
+        "FINAL_TEST",
+        "ATTACK_GENERATION",
+        "QUARANTINE"
+      ],
+      "title": "Partition",
+      "type": "string"
+    },
+    "prediction_schema_sha": {
+      "const": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Prediction Schema Sha",
+      "type": "string"
+    },
+    "prediction_schema_version": {
+      "const": "prediction_v1",
+      "title": "Prediction Schema Version",
+      "type": "string"
+    },
+    "primary_detector_manifest_sha": {
+      "const": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Primary Detector Manifest Sha",
+      "type": "string"
+    },
+    "primary_detector_set_id": {
+      "const": "research_stack_candidate_v2",
+      "maxLength": 500,
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Primary Detector Set Id",
+      "type": "string"
+    },
+    "protocol_version": {
+      "const": "EXP-PROTOCOL-001_PHASE-4_v1",
+      "default": "EXP-PROTOCOL-001_PHASE-4_v1",
+      "title": "Protocol Version",
+      "type": "string"
+    },
+    "sample_count": {
+      "minimum": 0,
+      "title": "Sample Count",
+      "type": "integer"
+    },
+    "samples": {
+      "items": {
+        "$ref": "#/$defs/RegimeSample"
+      },
+      "title": "Samples",
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "DRAFT",
+        "FROZEN",
+        "COMPLETED",
+        "INVALID",
+        "ARCHIVED"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "threat_regime": {
+      "enum": [
+        "R0_NON_ADAPTIVE",
+        "R1_SHIFTED_UNSEEN",
+        "R2_SINGLE_DETECTOR_TARGETED",
+        "R3_ENSEMBLE_TARGETED"
+      ],
+      "title": "Threat Regime",
+      "type": "string"
+    }
+  },
+  "required": [
+    "manifest_version",
+    "protocol_version",
+    "experiment_id",
+    "dataset_id",
+    "dataset_revision",
+    "partition",
+    "threat_regime",
+    "dataset_source",
+    "dataset_source_revision",
+    "dataset_sources",
+    "created_at",
+    "manifest_hash",
+    "sample_count",
+    "attack_count",
+    "benign_count",
+    "primary_detector_set_id",
+    "primary_detector_manifest_sha",
+    "prediction_schema_version",
+    "prediction_schema_sha",
+    "status",
+    "evidence_kind",
+    "notes",
+    "evidence",
+    "external_parents",
+    "samples"
+  ],
+  "title": "RegimeManifest",
+  "type": "object"
+}

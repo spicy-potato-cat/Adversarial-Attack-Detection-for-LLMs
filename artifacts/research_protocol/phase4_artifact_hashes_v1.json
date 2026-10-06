@@ -1,0 +1,19 @@
+{
+  "artifact_version": "phase4_artifact_hashes_v1",
+  "sha256": {
+    "artifacts/research_protocol/fixtures/phase4/parent_metadata_v1.json": "80593fedaa39c813b05bfc561bd0ee70156b1e6d7dac8acc60c4a5282649f98f",
+    "artifacts/research_protocol/fixtures/phase4/r0_manifest_v1.json": "b3f4b2130ef006d157353ebdc27366b3549adeb9e3cc1bb3e95801f5b7e12127",
+    "artifacts/research_protocol/fixtures/phase4/r1_manifest_v1.json": "7977d640674731d7d6966d8ab334d99dd54d3aaa6b66673b29afe3bb23909041",
+    "artifacts/research_protocol/fixtures/phase4/r2_dg_manifest_v1.json": "40d3ed9545cdfd071acbd2b7e887da498ad525c83b8b241fee16dc24cd33f106",
+    "artifacts/research_protocol/fixtures/phase4/r2_dmb_manifest_v1.json": "dd3a0e6d693d02dc41573794ed22ab866c5187176547fb3e81f5aa349b90a4cd",
+    "artifacts/research_protocol/fixtures/phase4/r2_ds_manifest_v1.json": "6b044cc8724eaf75a4466097473aa4c10077f327832290812315c754a18e46cc",
+    "artifacts/research_protocol/fixtures/phase4/r3_manifest_v1.json": "34d4bc2bb5eb3870a300c0663ff95c8fb49e1f815884f18d8a9306abe5b59793",
+    "artifacts/research_protocol/r0/r0_regime_manifest_v1.json": "4a7b694d72aa94f48cd31c81b107aef9b65fc31efdcaf11cfb88e7e4942cd45c",
+    "artifacts/research_protocol/regime_contract_manifest_v1.json": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+    "artifacts/research_protocol/schemas/regime_manifest_schema_v1.json": "96b3139f49f81bb1b8af284f70754b8bd64e8d060edb443ea88f14fe851acdbc",
+    "artifacts/research_protocol/schemas/regime_sample_schema_v1.json": "368b767eefe3346d5b75499ad3bb6c87682fc2736759e0aae859d6ec9ababd69",
+    "detection_service/research_protocol/regime.py": "b0ec549f07c03f07633bbbe2e1cdc70152bbf50ffd122dc2eba6133c38ea564c",
+    "detection_service/research_protocol/regime_contract.py": "d2ad79a358a26ff49902c0851dfe030aa7a1d8a23ac7e71c4456cbf94b68166f",
+    "detection_service/tests/test_regime_contract.py": "9aee91df1292945cf640bb4d1ad54b05ce76396d94b0d2bd0e68a8a2dda30806"
+  }
+}

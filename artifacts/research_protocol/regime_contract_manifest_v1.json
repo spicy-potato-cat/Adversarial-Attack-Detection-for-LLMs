@@ -1,0 +1,62 @@
+{
+  "adapter_manifest_sha256": "43bdae201bc7faf23ea8a2ecadda69e28eeb4d775d0f12a6c005a894d958b9b3",
+  "contract_version": "regime_contract_v1",
+  "detector_manifest_sha256": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+  "experiment_identity": "EXP-Rn-<full SHA256>; all manifest content except experiment_id/manifest_hash/created_at/status/notes and sample created_at; includes membership, lineage, method revisions and bound protocol/stack",
+  "frozen_mutation": "Immutable nested models/tuples; frozen manifest assignment and model_copy(update=...) rejected; a changed identity requires a newly validated revision",
+  "hashing": "manifest_hash is SHA-256 of canonical manifest excluding only manifest_hash; file SHA is separately recorded",
+  "join": "sample_id + primary detector_id; unique pairs; compatible truth labels; full coverage by default; non-OK predictions remain failures",
+  "lineage": "Immediate parent; stable shared lineage; acyclic parent graph; external parents require metadata and a hash-bound evidence role; N1 groups are not semantic independence claims",
+  "manifest_version": "regime_manifest_v1",
+  "ordering": "samples sorted by sample_id; dataset sources by (dataset_id,dataset_revision); evidence by role; external parents by sample_id",
+  "partitions": [
+    "BASE_TRAIN",
+    "CALIBRATION",
+    "VALIDATION",
+    "META_TRAIN",
+    "INTERNAL_TEST",
+    "FROZEN_EXTERNAL",
+    "FINAL_TEST",
+    "ATTACK_GENERATION",
+    "QUARANTINE"
+  ],
+  "prediction_schema_sha256": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+  "primary_target_aliases": [
+    "D_S",
+    "D_M-B",
+    "D_G"
+  ],
+  "real_r0_path": "artifacts/research_protocol/r0/r0_regime_manifest_v1.json",
+  "sample_version": "regime_sample_v1",
+  "schema_paths": {
+    "manifest": "artifacts/research_protocol/schemas/regime_manifest_schema_v1.json",
+    "sample": "artifacts/research_protocol/schemas/regime_sample_schema_v1.json"
+  },
+  "scope": {
+    "Cycle_2": false,
+    "Phase_5": false,
+    "R1_R2_R3_execution": false,
+    "dataset_acquisition": false,
+    "metadata_only": true,
+    "metrics": false,
+    "model_execution": false,
+    "operational_thresholds": false
+  },
+  "serialization": "UTF-8 sorted keys, compact separators, ensure_ascii=true, allow_nan=false, explicit nulls; no newline for canonical hash; stored JSON is indented with one LF",
+  "success": "Versioned definition reference only; fixture definition does not authorize real attack evaluation; completed outcomes require valid_attempt and success booleans",
+  "synthetic_fixture_paths": [
+    "artifacts/research_protocol/fixtures/phase4/r0_manifest_v1.json",
+    "artifacts/research_protocol/fixtures/phase4/r1_manifest_v1.json",
+    "artifacts/research_protocol/fixtures/phase4/r2_ds_manifest_v1.json",
+    "artifacts/research_protocol/fixtures/phase4/r2_dmb_manifest_v1.json",
+    "artifacts/research_protocol/fixtures/phase4/r2_dg_manifest_v1.json",
+    "artifacts/research_protocol/fixtures/phase4/r3_manifest_v1.json"
+  ],
+  "threat_regimes": [
+    "R0_NON_ADAPTIVE",
+    "R1_SHIFTED_UNSEEN",
+    "R2_SINGLE_DETECTOR_TARGETED",
+    "R3_ENSEMBLE_TARGETED"
+  ],
+  "validation": "Use FrozenRegimeContracts.validate_manifest for cryptographic input binding; Python additionally checks graph, counts, timestamps, self-hash and experiment identity beyond JSON Schema"
+}
