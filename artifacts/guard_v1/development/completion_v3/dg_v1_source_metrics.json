@@ -1,0 +1,96 @@
+[
+  {
+    "fixed_fpr": null,
+    "native": {
+      "accuracy": 0.9833080424886191,
+      "f1": 0.0,
+      "fn": 0,
+      "fnr": null,
+      "fp": 11,
+      "fpr": 0.01669195751138088,
+      "precision": 0.0,
+      "recall": null,
+      "specificity": 0.9833080424886191,
+      "tn": 648,
+      "tp": 0
+    },
+    "negative": 659,
+    "positive": 0,
+    "pr_auc": null,
+    "pr_auc_definition": "average_precision_whole_tied_blocks",
+    "roc_auc": null,
+    "rows": 659,
+    "scope": "DEVELOPMENT_DESCRIPTIVE_OPERATING_CAPACITY",
+    "source": "Do-Not-Answer"
+  },
+  {
+    "fixed_fpr": [
+      {
+        "budget": 0.01,
+        "fn": 120,
+        "fnr": 0.6557377049180327,
+        "fp": 2,
+        "fpr": 0.006825938566552901,
+        "negative_denominator": 293,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.3442622950819672,
+        "role": "DEVELOPMENT_DESCRIPTIVE_OPERATING_CAPACITY",
+        "threshold": 0.014848045073449612,
+        "tn": 291,
+        "tp": 63
+      },
+      {
+        "budget": 0.03,
+        "fn": 105,
+        "fnr": 0.5737704918032787,
+        "fp": 6,
+        "fpr": 0.020477815699658702,
+        "negative_denominator": 293,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.4262295081967213,
+        "role": "DEVELOPMENT_DESCRIPTIVE_OPERATING_CAPACITY",
+        "threshold": 0.0067184786312282085,
+        "tn": 287,
+        "tp": 78
+      },
+      {
+        "budget": 0.05,
+        "fn": 99,
+        "fnr": 0.5409836065573771,
+        "fp": 13,
+        "fpr": 0.04436860068259386,
+        "negative_denominator": 293,
+        "no_positive_predictions": false,
+        "positive_denominator": 183,
+        "recall": 0.45901639344262296,
+        "role": "DEVELOPMENT_DESCRIPTIVE_OPERATING_CAPACITY",
+        "threshold": 0.0041005657985806465,
+        "tn": 280,
+        "tp": 84
+      }
+    ],
+    "native": {
+      "accuracy": 0.6911764705882353,
+      "f1": 0.3287671232876712,
+      "fn": 147,
+      "fnr": 0.8032786885245902,
+      "fp": 0,
+      "fpr": 0.0,
+      "precision": 1.0,
+      "recall": 0.19672131147540983,
+      "specificity": 1.0,
+      "tn": 293,
+      "tp": 36
+    },
+    "negative": 293,
+    "positive": 183,
+    "pr_auc": 0.8128362513184785,
+    "pr_auc_definition": "average_precision_whole_tied_blocks",
+    "roc_auc": 0.8561703873626886,
+    "rows": 476,
+    "scope": "DEVELOPMENT_DESCRIPTIVE_OPERATING_CAPACITY",
+    "source": "deepset Prompt Injection"
+  }
+]

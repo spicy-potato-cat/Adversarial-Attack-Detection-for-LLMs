@@ -1,0 +1,69 @@
+{
+  "fixed_fpr": [
+    {
+      "budget": 0.01,
+      "fn": 149,
+      "fnr": 0.8142076502732241,
+      "fp": 6,
+      "fpr": 0.0063025210084033615,
+      "negative_denominator": 952,
+      "no_positive_predictions": false,
+      "positive_denominator": 183,
+      "recall": 0.18579234972677597,
+      "role": "DEVELOPMENT_DESCRIPTIVE_OPERATING_CAPACITY",
+      "threshold": 0.7775133848190308,
+      "tn": 946,
+      "tp": 34
+    },
+    {
+      "budget": 0.03,
+      "fn": 141,
+      "fnr": 0.7704918032786885,
+      "fp": 17,
+      "fpr": 0.017857142857142856,
+      "negative_denominator": 952,
+      "no_positive_predictions": false,
+      "positive_denominator": 183,
+      "recall": 0.22950819672131148,
+      "role": "DEVELOPMENT_DESCRIPTIVE_OPERATING_CAPACITY",
+      "threshold": 0.23945845663547516,
+      "tn": 935,
+      "tp": 42
+    },
+    {
+      "budget": 0.05,
+      "fn": 134,
+      "fnr": 0.73224043715847,
+      "fp": 44,
+      "fpr": 0.046218487394957986,
+      "negative_denominator": 952,
+      "no_positive_predictions": false,
+      "positive_denominator": 183,
+      "recall": 0.2677595628415301,
+      "role": "DEVELOPMENT_DESCRIPTIVE_OPERATING_CAPACITY",
+      "threshold": 0.050292547792196274,
+      "tn": 908,
+      "tp": 49
+    }
+  ],
+  "native": {
+    "accuracy": 0.8607929515418502,
+    "f1": 0.3130434782608696,
+    "fn": 147,
+    "fnr": 0.8032786885245902,
+    "fp": 11,
+    "fpr": 0.011554621848739496,
+    "precision": 0.7659574468085106,
+    "recall": 0.19672131147540983,
+    "specificity": 0.9884453781512605,
+    "tn": 941,
+    "tp": 36
+  },
+  "negative": 952,
+  "positive": 183,
+  "pr_auc": 0.5006519683988974,
+  "pr_auc_definition": "average_precision_whole_tied_blocks",
+  "roc_auc": 0.814953850392616,
+  "rows": 1135,
+  "scope": "DEVELOPMENT_DESCRIPTIVE_OPERATING_CAPACITY"
+}

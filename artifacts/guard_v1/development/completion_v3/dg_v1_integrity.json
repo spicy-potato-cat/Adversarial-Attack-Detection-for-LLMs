@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "dg_v1_base_train_predictions.csv": "2589d5c8f9da40be4104c2964966f7b1790b2370255bd87515e63760f2a624ef",
+    "dg_v1_development_metrics.json": "9edbd0d64c0ccb95483ef1445d409b036ea352692aa4f60ec7df20950b1cd225",
+    "dg_v1_fold_metrics.json": "145434cf9b987cee8d41298f406d436cb8a6ea76c075a9c7a595cbc2321d4743",
+    "dg_v1_run_metadata.json": "814aff20fc03339f816c650f487936435e11caab85a79ae8432303793cf7a87d",
+    "dg_v1_run_started.json": "26fc1530193d96dd2da14a4426aa501542c812925db8106cb4d2909f4e7c1011",
+    "dg_v1_source_metrics.json": "8a9785ba74bb8ca531e6c1bf312b3be1f0f36ecda9b6534926a05e972877062c"
+  }
+}
