@@ -1,0 +1,60 @@
+{
+  "K": "floor(3*n_benign/100); n=192 => K=5",
+  "accepted_sources": {
+    "dm_metadata": {
+      "path": "artifacts/models/dm_b_v1/calibration/calibration_metadata.json",
+      "sha256": "b4a286fc5089dda5ff5c547cf309e31f929d2cb54b03578fab8d5779f60a4b5a"
+    },
+    "dm_scores": {
+      "path": "artifacts/models/dm_b_v1/calibration/calibration_scores.json",
+      "sha256": "3e364c0f48773a462b480b0580728760edb959a686247f5290c0deed47596208"
+    },
+    "ds_metadata": {
+      "path": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_manifest_v1.json",
+      "sha256": "6ad2a6d42a81f4b51f2390bc14a126dfe9236b3c04b01e4eabbc0c3479d54d94"
+    },
+    "ds_scores": {
+      "path": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/calibration/completed_v1/calibration_predictions_v1.csv",
+      "sha256": "35fedee4cafd2b60adcfcc4eb586784cca03e26472940059dc924cc0f49eadfa"
+    }
+  },
+  "algorithm_id": "benign_empirical_fpr_budget_v1",
+  "alpha_rational": "3/100",
+  "artifact_version": "operating_policy_predeclaration_v1",
+  "code_sha256": {
+    "detection_service/research_protocol/freeze_operating_points.py": "3e524da0acbee4957a0b5d14c52b3eb1a1969672a8563b66832f061de74bc441",
+    "detection_service/research_protocol/operating_policy.py": "5c521850da7c9776223ceb402eb2cf51a91d796705d446582672e86b4cf4f3e6",
+    "detection_service/research_protocol/threshold_selection.py": "ed4e5256f02dfe19d22f9a750936d40581087790ccf88a9d4a5738a6782dd2db",
+    "detection_service/tests/test_operating_policy.py": "3712122b51cbd52a02a803c236ba6d18135921a394d1fbfa7a8ddeb84f7a9b9d"
+  },
+  "comparison": ">=",
+  "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+  "dg_inventory": "Only BASE_TRAIN historical predictions found; authorized one-time 233-row CALIBRATION inference required, no download",
+  "edge_policy": "Reject empty/missing/non-finite/duplicate/wrong-partition evidence; bounded probability scores; nextafter(1,+inf) is permitted; never drop rows",
+  "no_retraining_recalibration_or_ds_reconstruction": true,
+  "no_validation_or_future_regime_selection": true,
+  "operational_activation": "Explicit verified policy, prediction_operational_v1 projection; prediction_v1 null lock unchanged",
+  "policy_id": "operating_policy_v1",
+  "population": {
+    "attack": 41,
+    "benign": 192,
+    "total": 233
+  },
+  "positive_label_policy": "Positive scores cannot select thresholds; diagnostics only after immutable thresholds are persisted",
+  "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+  "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+  "selection_manifest_sha": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "selection_partition": "CALIBRATION",
+  "target_fpr": 0.03,
+  "threshold_ids": {
+    "D_G": "dg_v1_op3_raw_v1",
+    "D_M-B": "dm_b_v1_op3_raw_v1",
+    "D_S": "ds_v2_op3_cal_v1"
+  },
+  "threshold_input_fields": {
+    "D_G": "raw_score",
+    "D_M-B": "raw_score",
+    "D_S": "calibrated_score"
+  },
+  "tie_policy": "binary64_nextafter_boundary_toward_positive_infinity"
+}
