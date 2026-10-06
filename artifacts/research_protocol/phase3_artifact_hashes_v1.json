@@ -1,0 +1,12 @@
+{
+  "artifact_version": "phase3_artifact_hashes_v1",
+  "phase2_manifest_sha256": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+  "sha256": {
+    "artifacts/research_protocol/adapter_contract_manifest_v1.json": "43bdae201bc7faf23ea8a2ecadda69e28eeb4d775d0f12a6c005a894d958b9b3",
+    "artifacts/research_protocol/schemas/prediction_schema_v1.json": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+    "detection_service/research_protocol/adapters.py": "ffef3f67cd0b9a052efa0eb95983f24bdee52bac0d41c3cc513b0a0a538a3609",
+    "detection_service/research_protocol/prediction.py": "64eca2216669f990c3b180df4bc5176140629ae5f8e8983a83543eb7c978d649",
+    "detection_service/research_protocol/prediction_contract.py": "4fee5982e2f84e8184bca7ad9930be7d36ee8bdd5ca9d8ec3f756f9f087123a3",
+    "detection_service/tests/test_prediction_adapters.py": "3655c4d1e0934b1effe891c91c4c27e7999e4ac9c6ae174dc5440b535d33d7c2"
+  }
+}

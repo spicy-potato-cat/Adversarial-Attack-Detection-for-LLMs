@@ -1,0 +1,101 @@
+{
+  "adapters": [
+    {
+      "adapter_class": "DetectorAdapter",
+      "detector_id": "ds_v2",
+      "detector_role": "PRIMARY_STATISTICAL",
+      "existing_output_binding": "FROZEN_EVIDENCE",
+      "fixture_binding": "CONTRACT_ONLY",
+      "live_binding": "UNAVAILABLE_ACCEPTED_ARCHIVE_NOT_IMPORTABLE",
+      "module": "detection_service/research_protocol/adapters.py",
+      "native_decision_rule_id": "ds_v2_default_vote_v1",
+      "operational_threshold_status": "NOT_FROZEN",
+      "phase2_identity_reference": "/detectors/0",
+      "score_direction": "HIGHER_IS_MORE_ADVERSARIAL",
+      "stack_label": "D_S",
+      "threshold_input_score_type": "calibrated_probability"
+    },
+    {
+      "adapter_class": "DetectorAdapter",
+      "detector_id": "dm_b_v1",
+      "detector_role": "PRIMARY_SEMANTIC",
+      "existing_output_binding": "FROZEN_EVIDENCE",
+      "fixture_binding": "CONTRACT_ONLY",
+      "live_binding": "LAZY_FROZEN_LOADER_NOT_EXECUTED",
+      "module": "detection_service/research_protocol/adapters.py",
+      "native_decision_rule_id": "dm_b_v1_default_vote_v1",
+      "operational_threshold_status": "NOT_FROZEN",
+      "phase2_identity_reference": "/detectors/1",
+      "score_direction": "HIGHER_IS_MORE_ADVERSARIAL",
+      "stack_label": "D_M-B",
+      "threshold_input_score_type": "raw_score"
+    },
+    {
+      "adapter_class": "DetectorAdapter",
+      "detector_id": "dg_v1",
+      "detector_role": "PRIMARY_EXTERNAL_GUARD",
+      "existing_output_binding": "FROZEN_EVIDENCE",
+      "fixture_binding": "CONTRACT_ONLY",
+      "live_binding": "LAZY_FROZEN_LOADER_NOT_EXECUTED",
+      "module": "detection_service/research_protocol/adapters.py",
+      "native_decision_rule_id": "dg_v1_native_or_argmax_v1",
+      "operational_threshold_status": "NOT_FROZEN",
+      "phase2_identity_reference": "/detectors/2",
+      "score_direction": "HIGHER_IS_MORE_ADVERSARIAL",
+      "stack_label": "D_G",
+      "threshold_input_score_type": "native_chunk_argmax"
+    }
+  ],
+  "comparator_policy": "NO_PRIMARY_ADAPTER",
+  "contract_version": "adapter_contract_v1",
+  "error_policy": "Null scores and native/operational decisions for every non-OK result; allowlisted diagnostic class, never exception text",
+  "existing_evidence_policy": "Hash-bound Phase-2 full-model JSON native outputs only; explicit JSON Pointer; no relabeling fold-local OOF with final-model hashes",
+  "latency": {
+    "fixture": "null; never fabricate zero",
+    "frozen": "accepted detector-reported measurement if present; otherwise null",
+    "live": "wall-clock detect call, excluding lazy initialization; adaptation overhead excluded"
+  },
+  "metadata_version": "prediction_metadata_v1",
+  "operational_fields": {
+    "operational_binary_prediction": null,
+    "operational_threshold": null,
+    "operational_threshold_id": null
+  },
+  "phase2_manifest_path": "artifacts/research_protocol/detector_set_manifest_v1.json",
+  "phase2_manifest_sha256": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+  "prediction_schema_path": "artifacts/research_protocol/schemas/prediction_schema_v1.json",
+  "prediction_schema_sha256": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+  "primary_detector_order": [
+    "D_S",
+    "D_M-B",
+    "D_G"
+  ],
+  "schema_version": "prediction_v1",
+  "scope": {
+    "Cycle_2": false,
+    "Phase_4": false,
+    "R0_rescoring": false,
+    "R1_R2_R3": false,
+    "dataset_scoring": false,
+    "detector_execution": false,
+    "threshold_selection": false
+  },
+  "serialization": "UTF-8 sorted compact JSON; ensure_ascii=true; allow_nan=false; no trailing newline",
+  "statuses": [
+    "OK",
+    "INVALID_INPUT",
+    "ARTIFACT_MISMATCH",
+    "TOKENIZATION_ERROR",
+    "INFERENCE_ERROR",
+    "CALIBRATION_ERROR",
+    "OUTPUT_VALIDATION_ERROR",
+    "UNAVAILABLE",
+    "INSUFFICIENT_INPUT"
+  ],
+  "token_accounting": {
+    "D_G": "unique content tokens; never sum overlapping chunks",
+    "D_M-B": "input/analyzed: native special-inclusive counts minus static frozen tokenizer boundary-token count; no padding",
+    "D_S": "input: content tokens before cap; analyzed: unique next-token targets, excluding first; cap inherited from Phase 2",
+    "truncated": "True only when frozen preprocessing discards content"
+  }
+}
