@@ -1,0 +1,31 @@
+{
+  "status": "PASS_FOR_BLOCKER_AND_PRESERVATION_NOT_R1_EXPERIMENT",
+  "tests": 201,
+  "passed": 201,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "runtime_seconds": 90.55,
+  "new_blocker_tests": 9,
+  "existing_gate_a_regression_tests": 192,
+  "receipt_path": "tmp/r1_source_gate_regression.xml",
+  "receipt_sha256": "543768313464fc1423a438c65e8b25c007a3bf870e4b918cec95a2aaaeb417c4",
+  "qualification_blocker_sha256": "2f972d4f7f78c7adfcd6b17d37a9c23c0da0c6531fbe718670c3d1a36b66fc7d",
+  "test_modules": [
+    "detection_service/tests/test_r1_source_gate.py",
+    "detection_service/tests/test_ds_runtime_equivalence.py",
+    "detection_service/tests/test_detector_semantics.py",
+    "detection_service/tests/test_prediction_adapters.py",
+    "detection_service/tests/test_operating_policy.py"
+  ],
+  "network_guard": "detection_service.research_protocol.release_validation",
+  "baseline_preservation_checks": 96,
+  "baseline_preservation_status": "PASS",
+  "tracked_baseline_diff": "EMPTY",
+  "release_hash_and_reconstruction_checks": 118,
+  "release_preservation_status": "PASS",
+  "committed_gate_a_factory": "PASS_WITHOUT_NEW_INFERENCE",
+  "gate_a_authoritative_inference_repeated": false,
+  "r1_experiment_acceptance": "NOT_RUN_GATE_B_BLOCKED",
+  "r1_experiment_executed": false
+}

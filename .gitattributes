@@ -79,3 +79,5 @@
 /reviews/EXP_PROTOCOL_001_FINAL_ACCEPTANCE_v1.md -text
 /detection_service/tests/test_ds_runtime_equivalence.py -text
 /reviews/R1_DS_RUNTIME_EQUIVALENCE_v1.md -text
+/detection_service/tests/test_r1_source_gate.py -text
+/reviews/R1_SHIFTED_UNSEEN_RESULTS_v1.md -text
