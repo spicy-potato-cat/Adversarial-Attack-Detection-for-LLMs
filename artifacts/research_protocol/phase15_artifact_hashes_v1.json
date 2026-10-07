@@ -1,0 +1,10 @@
+{
+  "artifact_version": "phase15_artifact_hashes_v1",
+  "phase14_commit": "2941f1412d15f16bfc1564d1d584a76c0b909df3",
+  "sha256": {
+    "artifacts/research_protocol/protocol_lock_manifest_v1.json": "d0e1f38898b4f82c93daaa6425f4ddb3592fe080fe50db6ef36f2be9dbed2353",
+    "detection_service/research_protocol/protocol_lock.py": "a67dfc606279cda0638e727b83c2241a1aeb0a58a69b85608bcdf39f38808fd5",
+    "detection_service/tests/test_protocol_lock.py": "3a9d4dc95f3b1c46a56cd318399e72d9151edbe53bf59c8c03fbc3192934aa8e",
+    "reviews/EXP_PROTOCOL_001_PROTOCOL_LOCK_v1.md": "3851efad09cfaa84b204506df86df0ebf4bb9bed8eac96d7fb543bde93255ca5"
+  }
+}
