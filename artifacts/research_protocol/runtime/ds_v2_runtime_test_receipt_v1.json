@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "tests": 192,
+  "passed": 192,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "receipt_path": "tmp/r1_gate_a_regression.xml",
+  "receipt_sha256": "9e5c92c43584bc2669e9cc0c6cecf36db59a2c2386b87c342544811d070ef548",
+  "test_modules": [
+    "detection_service/tests/test_ds_runtime_equivalence.py",
+    "detection_service/tests/test_detector_semantics.py",
+    "detection_service/tests/test_prediction_adapters.py",
+    "detection_service/tests/test_operating_policy.py"
+  ],
+  "network_guard": "detection_service.research_protocol.release_validation",
+  "pre_existing_protocol_files_modified": false,
+  "baseline_preservation_checks": 96,
+  "final_release_preservation_checks": 118,
+  "R1_data_work_started": false
+}

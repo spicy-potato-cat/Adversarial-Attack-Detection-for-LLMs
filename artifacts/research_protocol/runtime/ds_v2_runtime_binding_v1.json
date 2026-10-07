@@ -1,0 +1,37 @@
+{
+  "binding_code_sha256": "64c648fbf4758bacc6416d34b98538cff5ae6ef52d2c359ac62271ce413c9ca5",
+  "calibrator_sha256": "964cea57d98673d2026fb2f0e9d5884aec61a653e726847e0fb6ccbf36e95f23",
+  "code_sha256": {
+    "detection_service/research_protocol/ds_equivalence.py": "0089fdc04fb3d60a84dab06eb879128f957c17b24b982329f14e384d06c1b80e",
+    "detection_service/research_protocol/ds_runtime.py": "64c648fbf4758bacc6416d34b98538cff5ae6ef52d2c359ac62271ce413c9ca5",
+    "detection_service/tests/test_ds_runtime_equivalence.py": "feca790687c49b0a990b09f26f2b68bd2199e6ca9a32a75227ca5e4490aaeeee"
+  },
+  "decision_mismatch_count": 0,
+  "equivalence_evidence_sha256": "2302ce04d41d872e81386347da382403af39205d9d2e9ec2d7102cccbd9d72e6",
+  "equivalence_population": 243,
+  "feature_reference_sha256": "fd26774585223913d12b8c20556a8fc1a50fa5dea7a3a75068a7bb30efce76ec",
+  "feature_schema_sha256": "93d3892b158c35eccfadc27c879754db69ea5293782492ee5d4ff01a33bff983",
+  "implementation_provenance": {
+    "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+    "method": "Exact accepted archive package loaded under private namespace; unchanged canonical adapter subclass loader hook",
+    "path": "detection_service/outputs/common003-preserved-stack/detection_service/app/detectors/statistical_v2/detector.py",
+    "sha256": "4912273d2caad3ff4f4094b9684310dc85199421fde7823b7de66d55607558fd"
+  },
+  "max_calibrated_score_difference": 1.902644708451362e-14,
+  "max_raw_score_difference": 3.4861002973229915e-14,
+  "model_sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157",
+  "preprocessing": {
+    "context_tokens": 1024,
+    "device": "cpu",
+    "feature_stride": 64,
+    "feature_window": 128,
+    "lm_overlap": 64,
+    "lm_stride": 960,
+    "max_analysis_tokens": 4096
+  },
+  "protocol_lock_unchanged": true,
+  "reference_lm_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+  "status": "PASS",
+  "threshold": 0.5585373573968287,
+  "threshold_id": "ds_v2_op3_cal_v1"
+}
