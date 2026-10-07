@@ -70,6 +70,7 @@
 /detection_service/tests/test_r0_operational.py -text
 /detection_service/tests/test_protocol_lock.py -text
 /detection_service/tests/test_protocol_release.py -text
+/detection_service/tests/test_protocol_release_audit.py -text
 /reviews/EXP_PROTOCOL_001_R0_OPERATIONAL_BASELINE_v1.md -text
 /reviews/EXP_PROTOCOL_001_PROTOCOL_LOCK_v1.md -text
 /reviews/EXP_PROTOCOL_001_FROZEN_SPECIFICATION_v1.md -text

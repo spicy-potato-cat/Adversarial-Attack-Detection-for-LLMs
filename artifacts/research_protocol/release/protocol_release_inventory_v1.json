@@ -1,0 +1,991 @@
+{
+  "content_kind": "REFERENCES_AND_METADATA_ONLY",
+  "inventory_version": "protocol_release_inventory_v1",
+  "manifest_hash": "3ee3ab455753a17102ecf3822449951eb8412f3708a32f26ca2a7e18754f34d9",
+  "model_weights_included": false,
+  "raw_prompts_included": false,
+  "records": [
+    {
+      "artifact_path": "artifacts/research_protocol/adapter_contract_manifest_v1.json",
+      "artifact_version": "adapter_contract_manifest_v1",
+      "logical_role": "support/artifacts/research_protocol/adapter_contract_manifest_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "43bdae201bc7faf23ea8a2ecadda69e28eeb4d775d0f12a6c005a894d958b9b3",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/core_metrics/core_metrics_contract_v1.json",
+      "artifact_version": "core_metrics_contract_v1",
+      "logical_role": "core_metrics",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/core_metrics/synthetic_metrics_expected_v1.json",
+      "artifact_version": "synthetic_metrics_expected_v1",
+      "logical_role": "support/artifacts/research_protocol/core_metrics/synthetic_metrics_expected_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "185dd316509ef1071f35c9a096e284cc2fe0c1ec1f66592de0287bfbbffd167d",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/core_metrics/synthetic_metrics_fixture_v1.json",
+      "artifact_version": "synthetic_metrics_fixture_v1",
+      "logical_role": "support/artifacts/research_protocol/core_metrics/synthetic_metrics_fixture_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "a87d3d55fd22f67291707e56b1bf2b9c799d8d4069cd12e475c018f88eff6968",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/core_metrics/synthetic_r2_parent_metadata_v1.json",
+      "artifact_version": "synthetic_r2_parent_metadata_v1",
+      "logical_role": "support/artifacts/research_protocol/core_metrics/synthetic_r2_parent_metadata_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "b4f25188aba032389591302bbc486ecc4030bad5f1d14983ed37e9bdad739be0",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/core_metrics/synthetic_r2_transfer_expected_v1.json",
+      "artifact_version": "synthetic_r2_transfer_expected_v1",
+      "logical_role": "support/artifacts/research_protocol/core_metrics/synthetic_r2_transfer_expected_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "918f3e9d061e5f40bac2469c6e3259d6fb5dde3c7b5ae27e7591ba6c895c2d18",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/core_metrics/synthetic_r2_transfer_fixture_v1.json",
+      "artifact_version": "synthetic_r2_transfer_fixture_v1",
+      "logical_role": "support/artifacts/research_protocol/core_metrics/synthetic_r2_transfer_fixture_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "4f8cec60ce71cfb324cca9bbd894eb95f861fa69c6d15aca655a1de26d9c4867",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/cross_regime/cross_regime_contract_v1.json",
+      "artifact_version": "cross_regime_contract_v1",
+      "logical_role": "cross_regime_contract",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "0669afb3766494978095a2db78027e6390035ef5d52b779d22261a8e942931d4",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/cross_regime/synthetic_cross_regime_expected_v1.json",
+      "artifact_version": "synthetic_cross_regime_expected_v1",
+      "logical_role": "support/artifacts/research_protocol/cross_regime/synthetic_cross_regime_expected_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "8e95fe82cc87fb4c6dae51f024bffb04f8ae22c232f6c99e20eb417f58404403",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/cross_regime/synthetic_regime_bundles_v1.json",
+      "artifact_version": "synthetic_regime_bundles_v1",
+      "logical_role": "support/artifacts/research_protocol/cross_regime/synthetic_regime_bundles_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "6b9b122d86b470e9097fd91f6bfcf08e13fbfad9a5f8bd4013b733b74251392c",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/detector_set_manifest_v1.json",
+      "artifact_version": "detector_set_manifest_v1",
+      "logical_role": "detector_contract",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/detector_set_manifest_v1.sha256",
+      "artifact_version": "detector_set_manifest_v1",
+      "logical_role": "support/artifacts/research_protocol/detector_set_manifest_v1.sha256",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "4a4e626ce9fce945196cdecc8243e66e65076946795a18fe34c838742ce92425",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/fixtures/phase4/parent_metadata_v1.json",
+      "artifact_version": "parent_metadata_v1",
+      "logical_role": "support/artifacts/research_protocol/fixtures/phase4/parent_metadata_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "80593fedaa39c813b05bfc561bd0ee70156b1e6d7dac8acc60c4a5282649f98f",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/fixtures/phase4/r0_manifest_v1.json",
+      "artifact_version": "r0_manifest_v1",
+      "logical_role": "support/artifacts/research_protocol/fixtures/phase4/r0_manifest_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "b3f4b2130ef006d157353ebdc27366b3549adeb9e3cc1bb3e95801f5b7e12127",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/fixtures/phase4/r1_manifest_v1.json",
+      "artifact_version": "r1_manifest_v1",
+      "logical_role": "support/artifacts/research_protocol/fixtures/phase4/r1_manifest_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "7977d640674731d7d6966d8ab334d99dd54d3aaa6b66673b29afe3bb23909041",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/fixtures/phase4/r2_dg_manifest_v1.json",
+      "artifact_version": "r2_dg_manifest_v1",
+      "logical_role": "support/artifacts/research_protocol/fixtures/phase4/r2_dg_manifest_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "40d3ed9545cdfd071acbd2b7e887da498ad525c83b8b241fee16dc24cd33f106",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/fixtures/phase4/r2_dmb_manifest_v1.json",
+      "artifact_version": "r2_dmb_manifest_v1",
+      "logical_role": "support/artifacts/research_protocol/fixtures/phase4/r2_dmb_manifest_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "dd3a0e6d693d02dc41573794ed22ab866c5187176547fb3e81f5aa349b90a4cd",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/fixtures/phase4/r2_ds_manifest_v1.json",
+      "artifact_version": "r2_ds_manifest_v1",
+      "logical_role": "support/artifacts/research_protocol/fixtures/phase4/r2_ds_manifest_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "6b044cc8724eaf75a4466097473aa4c10077f327832290812315c754a18e46cc",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/fixtures/phase4/r3_manifest_v1.json",
+      "artifact_version": "r3_manifest_v1",
+      "logical_role": "support/artifacts/research_protocol/fixtures/phase4/r3_manifest_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "34d4bc2bb5eb3870a300c0663ff95c8fb49e1f815884f18d8a9306abe5b59793",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/operating_point_manifest_v1.json",
+      "artifact_version": "operating_point_manifest_v1",
+      "logical_role": "operating_policy",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/operating_points/calibration_operating_scores_v1.csv",
+      "artifact_version": "calibration_operating_scores_v1",
+      "logical_role": "support/artifacts/research_protocol/operating_points/calibration_operating_scores_v1.csv",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "146920d8de22e369cf3c4d1e5ae1a74ff8779a01f20b2b035d8be4b99585a4d8",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/operating_points/dg_calibration_predictions_v1.json",
+      "artifact_version": "dg_calibration_predictions_v1",
+      "logical_role": "support/artifacts/research_protocol/operating_points/dg_calibration_predictions_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "5b694424e3de301d3aa9f578bef192de08989c459c6d3b5c5ce858d0e8f4100b",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/operating_points/dg_calibration_run_v1.json",
+      "artifact_version": "dg_calibration_run_v1",
+      "logical_role": "support/artifacts/research_protocol/operating_points/dg_calibration_run_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "4961a53fc5fd3adefd4e8be09b89a1cb920b79cbfb0cf4729b1e6fc3451944a6",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/operating_points/predeclaration_tests_v1.xml",
+      "artifact_version": "predeclaration_tests_v1",
+      "logical_role": "support/artifacts/research_protocol/operating_points/predeclaration_tests_v1.xml",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "5b842095438eef8c8360c153b216eb7bde09d2c87a2334b442dca767375b8455",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/operating_points/predeclared_policy_v1.json",
+      "artifact_version": "predeclared_policy_v1",
+      "logical_role": "support/artifacts/research_protocol/operating_points/predeclared_policy_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "992eac53d0b9bd84ce8bb28cd94f8c20d79f768072c625b87f004d4d69f6cfca",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/operating_points/selected_thresholds_before_diagnostics_v1.json",
+      "artifact_version": "selected_thresholds_before_diagnostics_v1",
+      "logical_role": "support/artifacts/research_protocol/operating_points/selected_thresholds_before_diagnostics_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "216bf438c4608eb4b39a40ac547b427f4bb1646650b394c5e1b33aa6b7e43324",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/operating_points/threshold_freeze_evidence_v1.json",
+      "artifact_version": "threshold_freeze_evidence_v1",
+      "logical_role": "support/artifacts/research_protocol/operating_points/threshold_freeze_evidence_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "393616d807b12d10354485c0c1c1bd3d04c5a0e6d5f7508c5e471d2741b537db",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase11_12_artifact_hashes_v1.json",
+      "artifact_version": "phase11_12_artifact_hashes_v1",
+      "logical_role": "support/artifacts/research_protocol/phase11_12_artifact_hashes_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "325181d69e94b7fd963e44a4a1e21b20e48c64a145933bb78c0b1aad45bdaaa4",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase11_13_artifact_hashes_v1.json",
+      "artifact_version": "phase11_13_artifact_hashes_v1",
+      "logical_role": "support/artifacts/research_protocol/phase11_13_artifact_hashes_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "cdb240ed1d85e40dee4950bfa608babd14c59115a1e4cc7ad0856a15ff211711",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase14_artifact_hashes_v1.json",
+      "artifact_version": "phase14_artifact_hashes_v1",
+      "logical_role": "support/artifacts/research_protocol/phase14_artifact_hashes_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "57792c8d4dabd9bd38c35d7ca813dca8b58683233f5fc366ccd8c7fcf336abc1",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase15_artifact_hashes_v1.json",
+      "artifact_version": "phase15_artifact_hashes_v1",
+      "logical_role": "support/artifacts/research_protocol/phase15_artifact_hashes_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "832d78be3f713af810783cf9f8fbb67854b780b111f9040813e876cbbd9cd2b7",
+      "source_phase": "15"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase2_tests_v1.xml",
+      "artifact_version": "phase2_tests_v1",
+      "logical_role": "support/artifacts/research_protocol/phase2_tests_v1.xml",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "8f326417a4223c0290a2efdbfed3daed11479c2e854f8eeeecbb51d56dd23745",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase3_artifact_hashes_v1.json",
+      "artifact_version": "phase3_artifact_hashes_v1",
+      "logical_role": "support/artifacts/research_protocol/phase3_artifact_hashes_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "b4576d12c4b0c37cd7f9e3fb424ef2b3d2456c27142f1c0ae314627d4ec735ae",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase3_tests_v1.xml",
+      "artifact_version": "phase3_tests_v1",
+      "logical_role": "support/artifacts/research_protocol/phase3_tests_v1.xml",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "fdeca1099e6f3cdc0bee103ff174be1fa3b38afaa800f3e3f04c4e8c1deb8163",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase4_artifact_hashes_v1.json",
+      "artifact_version": "phase4_artifact_hashes_v1",
+      "logical_role": "support/artifacts/research_protocol/phase4_artifact_hashes_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "3e7495c8daf62ce018d3072a255bd550d54319af4131a36b1db6a465c9b2e679",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase4_tests_v1.xml",
+      "artifact_version": "phase4_tests_v1",
+      "logical_role": "support/artifacts/research_protocol/phase4_tests_v1.xml",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "2afd5ad025d24044a4c1f6cb3d84f9e956db053873b9de3539fb503c97a55e1e",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase5_artifact_hashes_v1.json",
+      "artifact_version": "phase5_artifact_hashes_v1",
+      "logical_role": "support/artifacts/research_protocol/phase5_artifact_hashes_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "8df9c08a4f3fd59969fd74070adf064cb8e83cffa9529cd4bf78072ffe24e6b5",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase5_tests_v1.xml",
+      "artifact_version": "phase5_tests_v1",
+      "logical_role": "support/artifacts/research_protocol/phase5_tests_v1.xml",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "8b07d38a05c9851b0328faf4668b6f461c3c3c7be989f7b113f4a785140a2ebb",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase6_10_artifact_hashes_v1.json",
+      "artifact_version": "phase6_10_artifact_hashes_v1",
+      "logical_role": "support/artifacts/research_protocol/phase6_10_artifact_hashes_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "4e3d1cfb1f56bde27e4dc95fa31981de6297ee08e5392a7273c5a655a7c7b4ce",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/phase6_10_tests_v1.xml",
+      "artifact_version": "phase6_10_tests_v1",
+      "logical_role": "support/artifacts/research_protocol/phase6_10_tests_v1.xml",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "3645355ef88d7268a37337ec765f520bcac93bf6a91b7c14f6c0f96cfd313f92",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/protocol_lock_manifest_v1.json",
+      "artifact_version": "protocol_lock_manifest_v1",
+      "logical_role": "protocol_lock",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "d0e1f38898b4f82c93daaa6425f4ddb3592fe080fe50db6ef36f2be9dbed2353",
+      "source_phase": "15"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_common_mode_reproduction_v1.json",
+      "artifact_version": "r0_common_mode_reproduction_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_common_mode_reproduction_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "6e94f67f45c165dd655dee8e0db3396c32e6ae640cf69fcf011747c948177a1e",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_cross_regime_bundle_v1.json",
+      "artifact_version": "r0_cross_regime_bundle_v1",
+      "logical_role": "historical_R0_baseline",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "8ded2ad10924676dac02cc6cc867c81d13fa2cf5772f41fea24db475461eab75",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_cross_regime_matrix_v1.json",
+      "artifact_version": "r0_cross_regime_matrix_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_cross_regime_matrix_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "70c5d43fbc6ad18b34e67b3aad424170a8bc6b2bbbe3d1d1c3e8b8f136c775f6",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_descriptive_frontier_v1.json",
+      "artifact_version": "r0_descriptive_frontier_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_descriptive_frontier_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "b7dfac22a7e05ce23ef874ae6878f0ec2273097eb51e748f6f3fea7beb85ac4c",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_failure_patterns_reproduction_v1.json",
+      "artifact_version": "r0_failure_patterns_reproduction_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_failure_patterns_reproduction_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "2b83a448ead047a592754866e7e6207ed180914a8b42903fca37e08a69eaf732",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_historical_descriptive_decisions_v1.csv",
+      "artifact_version": "r0_historical_descriptive_decisions_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_historical_descriptive_decisions_v1.csv",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "5a9238e4a32bcf48fa186ffcd0b8306396bf932bde599b9ba7347e698c872aaf",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_individual_reproduction_v1.json",
+      "artifact_version": "r0_individual_reproduction_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_individual_reproduction_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "af3162cdd8f5d57f32f89f5ecf33d457b4fab11d84eaff5a6919d3881fdae127",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_operational_cross_regime_matrix_v1.json",
+      "artifact_version": "r0_operational_cross_regime_matrix_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_operational_cross_regime_matrix_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "8bdb34bdc502e9fd06c39b48791d1751b4a93846b6ad4d11e076fd851dc9ecc1",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_operational_metrics_v1.json",
+      "artifact_version": "r0_operational_metrics_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_operational_metrics_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "a0899a5aba12e1fb473865ae67f650ebd637b744328f7342db6f9e49af619302",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_operational_predictions_v1.csv",
+      "artifact_version": "r0_operational_predictions_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_operational_predictions_v1.csv",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "2a40aba6e57fb62c6f843cb834488c2536911aac7c2d3eb0448c77c4f93c5a30",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_operational_result_bundle_v1.json",
+      "artifact_version": "r0_operational_result_bundle_v1",
+      "logical_role": "operational_R0_baseline",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "b63b25ed4b2eafc3f6e6dd09b8cce96f4acfebff599728650260f8e786e68133",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_operational_uncertainty_v1.json",
+      "artifact_version": "r0_operational_uncertainty_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_operational_uncertainty_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "5ece35c05fe3b0acf0022d75b059bcee8e15c4b5b6a04373d9387f185a2feb56",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_recovery_reproduction_v1.json",
+      "artifact_version": "r0_recovery_reproduction_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_recovery_reproduction_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "b99562dc04866fbeaddc9dcf3f0dad3ef0feda1c34da1fa008ed12e5cb809df9",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_regime_manifest_v1.json",
+      "artifact_version": "r0_regime_manifest_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_regime_manifest_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "4a7b694d72aa94f48cd31c81b107aef9b65fc31efdcaf11cfb88e7e4942cd45c",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_reproduction_import_manifest_v1.json",
+      "artifact_version": "r0_reproduction_import_manifest_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_reproduction_import_manifest_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "6efb88a756bc12558f2e7bdbba72854f8fb37aca6bfd73a30b20509d9b93983b",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_reproduction_report_v1.json",
+      "artifact_version": "r0_reproduction_report_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_reproduction_report_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "718a9b498f7701924327fede874622456c51691af11b3d7caaa1f4e7642e4792",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_score_metrics_reproduction_v1.json",
+      "artifact_version": "r0_score_metrics_reproduction_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_score_metrics_reproduction_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "3dc999069a85c7c0cd5c8e7a3cc94073b4948430670f0ea494f02a0213211ca6",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/r0/r0_uncertainty_reproduction_v1.json",
+      "artifact_version": "r0_uncertainty_reproduction_v1",
+      "logical_role": "support/artifacts/research_protocol/r0/r0_uncertainty_reproduction_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "ea20a48ddc1b06452b61ac2ed20f7b7969469c15c558370c4f294d82ad907239",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/regime_contract_manifest_v1.json",
+      "artifact_version": "regime_contract_manifest_v1",
+      "logical_role": "regime_contract",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/release/experiment_execution_template_v1.json",
+      "artifact_version": "experiment_execution_template_v1",
+      "logical_role": "execution_template",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "e51a2587852815fdd2954453b3f4f18b58f9f0495262e31cbfac85eae0aaeaae",
+      "source_phase": "17/18"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/schemas/prediction_operational_schema_v1.json",
+      "artifact_version": "prediction_operational_schema_v1",
+      "logical_role": "support/artifacts/research_protocol/schemas/prediction_operational_schema_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "3803cbf2f2c5c568894d894ccc51b64b86ff4f4ed2c5fa6a1e06b9d80512d173",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/schemas/prediction_schema_v1.json",
+      "artifact_version": "prediction_schema_v1",
+      "logical_role": "prediction_contract",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/schemas/regime_manifest_schema_v1.json",
+      "artifact_version": "regime_manifest_schema_v1",
+      "logical_role": "support/artifacts/research_protocol/schemas/regime_manifest_schema_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "96b3139f49f81bb1b8af284f70754b8bd64e8d060edb443ea88f14fe851acdbc",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/schemas/regime_sample_schema_v1.json",
+      "artifact_version": "regime_sample_schema_v1",
+      "logical_role": "support/artifacts/research_protocol/schemas/regime_sample_schema_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "368b767eefe3346d5b75499ad3bb6c87682fc2736759e0aae859d6ec9ababd69",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/uncertainty/synthetic_bootstrap_expected_v1.json",
+      "artifact_version": "synthetic_bootstrap_expected_v1",
+      "logical_role": "support/artifacts/research_protocol/uncertainty/synthetic_bootstrap_expected_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "39b2775aa2b94ed6ddfc75cbc085e9910ec3b319241dfc8c846c2b852657f9b2",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/uncertainty/synthetic_lineage_bootstrap_fixture_v1.json",
+      "artifact_version": "synthetic_lineage_bootstrap_fixture_v1",
+      "logical_role": "support/artifacts/research_protocol/uncertainty/synthetic_lineage_bootstrap_fixture_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "cbe562f60628a3d56ca52b03abb65e7983c68c701b8645176619adb6e0ba3690",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/uncertainty/synthetic_sample_bootstrap_fixture_v1.json",
+      "artifact_version": "synthetic_sample_bootstrap_fixture_v1",
+      "logical_role": "support/artifacts/research_protocol/uncertainty/synthetic_sample_bootstrap_fixture_v1.json",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "ea270b8ab774f83baffe9044cf7da23917ae9347eb4060a103aa330719055e4f",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "artifacts/research_protocol/uncertainty/uncertainty_contract_v1.json",
+      "artifact_version": "uncertainty_contract_v1",
+      "logical_role": "uncertainty_contract",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/adapters.py",
+      "artifact_version": "adapters",
+      "logical_role": "support/detection_service/research_protocol/adapters.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "ffef3f67cd0b9a052efa0eb95983f24bdee52bac0d41c3cc513b0a0a538a3609",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/alignment.py",
+      "artifact_version": "alignment",
+      "logical_role": "support/detection_service/research_protocol/alignment.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "d6fba066d02dafb734dcaa49e0cba57b1a1b7ab4813cc2f8b52dcd721719bef4",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/core_metrics.py",
+      "artifact_version": "core_metrics",
+      "logical_role": "support/detection_service/research_protocol/core_metrics.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "cd62c85923bec28710817c91fc356a0e35a4a4ca09b79d3a659dae80b5135231",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/core_metrics_contract.py",
+      "artifact_version": "core_metrics_contract",
+      "logical_role": "support/detection_service/research_protocol/core_metrics_contract.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "926af767b9c45a2607d86c325775822fe160deee9c0116595de7d25dde88e687",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/cross_regime.py",
+      "artifact_version": "cross_regime",
+      "logical_role": "support/detection_service/research_protocol/cross_regime.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "2fe90134fcc4a0e0c7e88a0281167fe4f920875b343d87c69389e776d205f101",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/detector_semantics.py",
+      "artifact_version": "detector_semantics",
+      "logical_role": "support/detection_service/research_protocol/detector_semantics.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "bae95988b52093744f28be2e2e62d46f158f381c54dfa10c15443d4a35766b99",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/freeze_operating_points.py",
+      "artifact_version": "freeze_operating_points",
+      "logical_role": "support/detection_service/research_protocol/freeze_operating_points.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "3e524da0acbee4957a0b5d14c52b3eb1a1969672a8563b66832f061de74bc441",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/historical_uncertainty.py",
+      "artifact_version": "historical_uncertainty",
+      "logical_role": "support/detection_service/research_protocol/historical_uncertainty.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "c1358adb53a5eda00cf606372cea5cc598b8bac9ea1ad2aa9184560d54082d67",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/metric_catalog.py",
+      "artifact_version": "metric_catalog",
+      "logical_role": "support/detection_service/research_protocol/metric_catalog.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "555226d318ed90b5c7a1c0c51844acc0272bea7a88890a0cc5b1084a57364b26",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/metric_types.py",
+      "artifact_version": "metric_types",
+      "logical_role": "support/detection_service/research_protocol/metric_types.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "c41f00a6d1b40ca5bffc5e72ff4ae17499b6d96260ec785f6bfb83436850c7fc",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/operating_policy.py",
+      "artifact_version": "operating_policy",
+      "logical_role": "support/detection_service/research_protocol/operating_policy.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "5c521850da7c9776223ceb402eb2cf51a91d796705d446582672e86b4cf4f3e6",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/prediction.py",
+      "artifact_version": "prediction",
+      "logical_role": "support/detection_service/research_protocol/prediction.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "64eca2216669f990c3b180df4bc5176140629ae5f8e8983a83543eb7c978d649",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/prediction_contract.py",
+      "artifact_version": "prediction_contract",
+      "logical_role": "support/detection_service/research_protocol/prediction_contract.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "4fee5982e2f84e8184bca7ad9930be7d36ee8bdd5ca9d8ec3f756f9f087123a3",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/protocol_lock.py",
+      "artifact_version": "protocol_lock",
+      "logical_role": "support/detection_service/research_protocol/protocol_lock.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "a67dfc606279cda0638e727b83c2241a1aeb0a58a69b85608bcdf39f38808fd5",
+      "source_phase": "15"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/r0_operational.py",
+      "artifact_version": "r0_operational",
+      "logical_role": "support/detection_service/research_protocol/r0_operational.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "ec80cb0dfc6d70057433e8c032d0027426ae0932e46856e435511909d21d5761",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/r0_reproduction.py",
+      "artifact_version": "r0_reproduction",
+      "logical_role": "support/detection_service/research_protocol/r0_reproduction.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "b0aca3928b52a3d93ba1b2c90e66f47de46ccc4e07dffbd080f0dd07a1afedc4",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/regime.py",
+      "artifact_version": "regime",
+      "logical_role": "support/detection_service/research_protocol/regime.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "b0ec549f07c03f07633bbbe2e1cdc70152bbf50ffd122dc2eba6133c38ea564c",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/regime_contract.py",
+      "artifact_version": "regime_contract",
+      "logical_role": "support/detection_service/research_protocol/regime_contract.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "d2ad79a358a26ff49902c0851dfe030aa7a1d8a23ac7e71c4456cbf94b68166f",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/release_packaging.py",
+      "artifact_version": "release_packaging",
+      "logical_role": "support/detection_service/research_protocol/release_packaging.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "42d7bae6175d08b1821f8585453c4da773e30f4b49bc22d7ca26e3e9479dcc5f",
+      "source_phase": "17/18"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/threshold_selection.py",
+      "artifact_version": "threshold_selection",
+      "logical_role": "support/detection_service/research_protocol/threshold_selection.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "ed4e5256f02dfe19d22f9a750936d40581087790ccf88a9d4a5738a6782dd2db",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/uncertainty.py",
+      "artifact_version": "uncertainty",
+      "logical_role": "support/detection_service/research_protocol/uncertainty.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "abec17cb7f963de721401aef141358e32e103a00ee5417379e68c2dfba8c5a1a",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/research_protocol/uncertainty_contract.py",
+      "artifact_version": "uncertainty_contract",
+      "logical_role": "support/detection_service/research_protocol/uncertainty_contract.py",
+      "required_for_execution": true,
+      "required_for_reproducibility": true,
+      "sha256": "b4d0f21a58be70c455be87c28c4446c3116acb86671379d522dfe8b246b03818",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/tests/test_core_metrics.py",
+      "artifact_version": "test_core_metrics",
+      "logical_role": "support/detection_service/tests/test_core_metrics.py",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "b45da0678900f40314f7780b3df1520bed00674093e3d7a6b7595bcfd352f06b",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/tests/test_cross_regime.py",
+      "artifact_version": "test_cross_regime",
+      "logical_role": "support/detection_service/tests/test_cross_regime.py",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "5080e1d546649c3f4e1066f9707bb6377e9d61b65e931987d9d0442138f1dc80",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/tests/test_operating_policy.py",
+      "artifact_version": "test_operating_policy",
+      "logical_role": "support/detection_service/tests/test_operating_policy.py",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "3712122b51cbd52a02a803c236ba6d18135921a394d1fbfa7a8ddeb84f7a9b9d",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/tests/test_prediction_adapters.py",
+      "artifact_version": "test_prediction_adapters",
+      "logical_role": "support/detection_service/tests/test_prediction_adapters.py",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "3655c4d1e0934b1effe891c91c4c27e7999e4ac9c6ae174dc5440b535d33d7c2",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/tests/test_protocol_lock.py",
+      "artifact_version": "test_protocol_lock",
+      "logical_role": "support/detection_service/tests/test_protocol_lock.py",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "3a9d4dc95f3b1c46a56cd318399e72d9151edbe53bf59c8c03fbc3192934aa8e",
+      "source_phase": "15"
+    },
+    {
+      "artifact_path": "detection_service/tests/test_protocol_release.py",
+      "artifact_version": "test_protocol_release",
+      "logical_role": "support/detection_service/tests/test_protocol_release.py",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "d3a45be46b416be8e482ed43732698c626e6d6373c0243bed645cfe41eefb14d",
+      "source_phase": "17/18"
+    },
+    {
+      "artifact_path": "detection_service/tests/test_r0_operational.py",
+      "artifact_version": "test_r0_operational",
+      "logical_role": "support/detection_service/tests/test_r0_operational.py",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "57a9082f1f385835212346852512c343148a7b5963a834078e313631ec4286b0",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/tests/test_r0_reproduction.py",
+      "artifact_version": "test_r0_reproduction",
+      "logical_role": "support/detection_service/tests/test_r0_reproduction.py",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "94adad3c1f270bf153c2e5b7c94cff1da33efc46e328303af3ddd545579635cc",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/tests/test_regime_contract.py",
+      "artifact_version": "test_regime_contract",
+      "logical_role": "support/detection_service/tests/test_regime_contract.py",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "9aee91df1292945cf640bb4d1ad54b05ce76396d94b0d2bd0e68a8a2dda30806",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "detection_service/tests/test_uncertainty.py",
+      "artifact_version": "test_uncertainty",
+      "logical_role": "support/detection_service/tests/test_uncertainty.py",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "c23e09b7ff14bb5ac32f45c479b0c07d27d4f80d2a048f9e423ad72a0d281b2b",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "reviews/EXP_PROTOCOL_001_CROSS_REGIME_v1.md",
+      "artifact_version": "EXP_PROTOCOL_001_CROSS_REGIME_v1",
+      "logical_role": "support/reviews/EXP_PROTOCOL_001_CROSS_REGIME_v1.md",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "e9e3704034ce58bd78887b74392593b2d04df2e10dc967fe782b2846131182e8",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "reviews/EXP_PROTOCOL_001_FROZEN_SPECIFICATION_v1.md",
+      "artifact_version": "EXP_PROTOCOL_001_FROZEN_SPECIFICATION_v1",
+      "logical_role": "support/reviews/EXP_PROTOCOL_001_FROZEN_SPECIFICATION_v1.md",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "0a8be4df09629395df4d4d3543a47aa7c57df42d17df8ad7067a742663f2c44b",
+      "source_phase": "17/18"
+    },
+    {
+      "artifact_path": "reviews/EXP_PROTOCOL_001_PHASE11_13_TEST_REPORT_v1.md",
+      "artifact_version": "EXP_PROTOCOL_001_PHASE11_13_TEST_REPORT_v1",
+      "logical_role": "support/reviews/EXP_PROTOCOL_001_PHASE11_13_TEST_REPORT_v1.md",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "f81600edf876a4c99c3a012b1201e89be436d0e0b62fda59c80a64332e6ca09d",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "reviews/EXP_PROTOCOL_001_PROTOCOL_LOCK_v1.md",
+      "artifact_version": "EXP_PROTOCOL_001_PROTOCOL_LOCK_v1",
+      "logical_role": "support/reviews/EXP_PROTOCOL_001_PROTOCOL_LOCK_v1.md",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "3851efad09cfaa84b204506df86df0ebf4bb9bed8eac96d7fb543bde93255ca5",
+      "source_phase": "15"
+    },
+    {
+      "artifact_path": "reviews/EXP_PROTOCOL_001_R0_OPERATIONAL_BASELINE_v1.md",
+      "artifact_version": "EXP_PROTOCOL_001_R0_OPERATIONAL_BASELINE_v1",
+      "logical_role": "support/reviews/EXP_PROTOCOL_001_R0_OPERATIONAL_BASELINE_v1.md",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "831b9ce83da128ad312315a87f36bb0ef8ab36e117e234a2b2ab03be75cd482f",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "reviews/EXP_PROTOCOL_001_R0_REPRODUCTION_v1.md",
+      "artifact_version": "EXP_PROTOCOL_001_R0_REPRODUCTION_v1",
+      "logical_role": "support/reviews/EXP_PROTOCOL_001_R0_REPRODUCTION_v1.md",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "7d1a5285cdcdbfea982dbe0cfa4a86cb7e9ec343e4e5f033bc9958c994bf9c7b",
+      "source_phase": "0-14"
+    },
+    {
+      "artifact_path": "reviews/EXP_PROTOCOL_001_RESEARCH_EXECUTION_RUNBOOK_v1.md",
+      "artifact_version": "EXP_PROTOCOL_001_RESEARCH_EXECUTION_RUNBOOK_v1",
+      "logical_role": "support/reviews/EXP_PROTOCOL_001_RESEARCH_EXECUTION_RUNBOOK_v1.md",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "3372dd50f3c6203347fb6a60502ffc2bfe41b00877ea3e4618993ce8235d09e2",
+      "source_phase": "17/18"
+    },
+    {
+      "artifact_path": "reviews/EXP_PROTOCOL_001_UNCERTAINTY_v1.md",
+      "artifact_version": "EXP_PROTOCOL_001_UNCERTAINTY_v1",
+      "logical_role": "support/reviews/EXP_PROTOCOL_001_UNCERTAINTY_v1.md",
+      "required_for_execution": false,
+      "required_for_reproducibility": true,
+      "sha256": "0a8b4162d0627471aa40d12f8ea5e00b69332bb2097c77299bb0544a1ab5a4a9",
+      "source_phase": "0-14"
+    }
+  ],
+  "release_id": "exp_protocol_001_v1"
+}

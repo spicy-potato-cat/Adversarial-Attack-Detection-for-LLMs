@@ -1,0 +1,848 @@
+{
+  "action": "EVALUATE_ONLY",
+  "comparison_view_id": "OPERATIONAL_FIXED_V1",
+  "contains_results": false,
+  "decision_view": "OPERATIONAL",
+  "is_executable": false,
+  "notes": "Schema/template only. No manifest instance, sample IDs, predictions, or completed experiment.",
+  "operational_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+  "regimes": [
+    {
+      "bootstrap_unit": "DECLARE_FROM_LINEAGE",
+      "target_detector": null,
+      "threat_regime": "R1_SHIFTED_UNSEEN"
+    },
+    {
+      "bootstrap_unit": "LINEAGE_CLUSTERED",
+      "target_detector_options": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+    },
+    {
+      "bootstrap_unit": "LINEAGE_CLUSTERED",
+      "target_detector": "ALL",
+      "threat_regime": "R3_ENSEMBLE_TARGETED"
+    }
+  ],
+  "release_id": "exp_protocol_001_v1",
+  "request_schema": {
+    "$defs": {
+      "DatasetSource": {
+        "additionalProperties": false,
+        "properties": {
+          "dataset_id": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Dataset Id",
+            "type": "string"
+          },
+          "dataset_revision": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Dataset Revision",
+            "type": "string"
+          },
+          "source": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Source",
+            "type": "string"
+          },
+          "source_revision": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Source Revision",
+            "type": "string"
+          }
+        },
+        "required": [
+          "dataset_id",
+          "dataset_revision",
+          "source",
+          "source_revision"
+        ],
+        "title": "DatasetSource",
+        "type": "object"
+      },
+      "EvidenceReference": {
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Path",
+            "type": "string"
+          },
+          "role": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Role",
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Sha256",
+            "type": "string"
+          }
+        },
+        "required": [
+          "role",
+          "path",
+          "sha256"
+        ],
+        "title": "EvidenceReference",
+        "type": "object"
+      },
+      "ParentReference": {
+        "additionalProperties": false,
+        "properties": {
+          "dataset_id": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Dataset Id",
+            "type": "string"
+          },
+          "dataset_revision": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Dataset Revision",
+            "type": "string"
+          },
+          "evidence_locator": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Evidence Locator",
+            "type": "string"
+          },
+          "evidence_role": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Evidence Role",
+            "type": "string"
+          },
+          "lineage_id": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Lineage Id",
+            "type": "string"
+          },
+          "provenance_status": {
+            "enum": [
+              "COMPLETE",
+              "PARTIAL",
+              "UNKNOWN",
+              "NOT_VERIFIED",
+              "SYNTHETIC_FIXTURE"
+            ],
+            "title": "Provenance Status",
+            "type": "string"
+          },
+          "sample_id": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Sample Id",
+            "type": "string"
+          },
+          "source": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Source",
+            "type": "string"
+          },
+          "source_native_id": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Native Id"
+          }
+        },
+        "required": [
+          "sample_id",
+          "lineage_id",
+          "dataset_id",
+          "dataset_revision",
+          "source",
+          "source_native_id",
+          "provenance_status",
+          "evidence_role",
+          "evidence_locator"
+        ],
+        "title": "ParentReference",
+        "type": "object"
+      },
+      "RegimeManifest": {
+        "additionalProperties": false,
+        "properties": {
+          "attack_count": {
+            "minimum": 0,
+            "title": "Attack Count",
+            "type": "integer"
+          },
+          "benign_count": {
+            "minimum": 0,
+            "title": "Benign Count",
+            "type": "integer"
+          },
+          "created_at": {
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+            "title": "Created At",
+            "type": "string"
+          },
+          "dataset_id": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Dataset Id",
+            "type": "string"
+          },
+          "dataset_revision": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Dataset Revision",
+            "type": "string"
+          },
+          "dataset_source": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Dataset Source",
+            "type": "string"
+          },
+          "dataset_source_revision": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Dataset Source Revision",
+            "type": "string"
+          },
+          "dataset_sources": {
+            "items": {
+              "$ref": "#/$defs/DatasetSource"
+            },
+            "title": "Dataset Sources",
+            "type": "array"
+          },
+          "evidence": {
+            "items": {
+              "$ref": "#/$defs/EvidenceReference"
+            },
+            "title": "Evidence",
+            "type": "array"
+          },
+          "evidence_kind": {
+            "enum": [
+              "ACCEPTED_METADATA",
+              "SYNTHETIC_FIXTURE"
+            ],
+            "title": "Evidence Kind",
+            "type": "string"
+          },
+          "experiment_id": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Experiment Id",
+            "type": "string"
+          },
+          "external_parents": {
+            "items": {
+              "$ref": "#/$defs/ParentReference"
+            },
+            "title": "External Parents",
+            "type": "array"
+          },
+          "manifest_hash": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Manifest Hash",
+            "type": "string"
+          },
+          "manifest_version": {
+            "const": "regime_manifest_v1",
+            "default": "regime_manifest_v1",
+            "title": "Manifest Version",
+            "type": "string"
+          },
+          "notes": {
+            "items": {
+              "maxLength": 500,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "title": "Notes",
+            "type": "array"
+          },
+          "partition": {
+            "enum": [
+              "BASE_TRAIN",
+              "CALIBRATION",
+              "VALIDATION",
+              "META_TRAIN",
+              "INTERNAL_TEST",
+              "FROZEN_EXTERNAL",
+              "FINAL_TEST",
+              "ATTACK_GENERATION",
+              "QUARANTINE"
+            ],
+            "title": "Partition",
+            "type": "string"
+          },
+          "prediction_schema_sha": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Prediction Schema Sha",
+            "type": "string"
+          },
+          "prediction_schema_version": {
+            "const": "prediction_v1",
+            "title": "Prediction Schema Version",
+            "type": "string"
+          },
+          "primary_detector_manifest_sha": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Primary Detector Manifest Sha",
+            "type": "string"
+          },
+          "primary_detector_set_id": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Primary Detector Set Id",
+            "type": "string"
+          },
+          "protocol_version": {
+            "const": "EXP-PROTOCOL-001_PHASE-4_v1",
+            "default": "EXP-PROTOCOL-001_PHASE-4_v1",
+            "title": "Protocol Version",
+            "type": "string"
+          },
+          "sample_count": {
+            "minimum": 0,
+            "title": "Sample Count",
+            "type": "integer"
+          },
+          "samples": {
+            "items": {
+              "$ref": "#/$defs/RegimeSample"
+            },
+            "title": "Samples",
+            "type": "array"
+          },
+          "status": {
+            "enum": [
+              "DRAFT",
+              "FROZEN",
+              "COMPLETED",
+              "INVALID",
+              "ARCHIVED"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "threat_regime": {
+            "enum": [
+              "R0_NON_ADAPTIVE",
+              "R1_SHIFTED_UNSEEN",
+              "R2_SINGLE_DETECTOR_TARGETED",
+              "R3_ENSEMBLE_TARGETED"
+            ],
+            "title": "Threat Regime",
+            "type": "string"
+          }
+        },
+        "required": [
+          "experiment_id",
+          "dataset_id",
+          "dataset_revision",
+          "partition",
+          "threat_regime",
+          "dataset_source",
+          "dataset_source_revision",
+          "dataset_sources",
+          "created_at",
+          "manifest_hash",
+          "sample_count",
+          "attack_count",
+          "benign_count",
+          "primary_detector_set_id",
+          "primary_detector_manifest_sha",
+          "prediction_schema_version",
+          "prediction_schema_sha",
+          "status",
+          "evidence_kind",
+          "notes",
+          "evidence",
+          "external_parents",
+          "samples"
+        ],
+        "title": "RegimeManifest",
+        "type": "object"
+      },
+      "RegimeSample": {
+        "additionalProperties": false,
+        "properties": {
+          "attack_family": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Attack Family"
+          },
+          "attack_family_provenance": {
+            "enum": [
+              "SOURCE_PROVIDED",
+              "PROTOCOL_DECLARED",
+              "ACCEPTED_METADATA",
+              "UNKNOWN",
+              "NOT_APPLICABLE"
+            ],
+            "title": "Attack Family Provenance",
+            "type": "string"
+          },
+          "attack_method": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Attack Method"
+          },
+          "attack_method_revision": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Attack Method Revision"
+          },
+          "attack_success": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Attack Success"
+          },
+          "attack_success_definition": {
+            "anyOf": [
+              {
+                "pattern": "^[A-Z][A-Z0-9_]*_V[1-9][0-9]*$",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Attack Success Definition"
+          },
+          "created_at": {
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+            "title": "Created At",
+            "type": "string"
+          },
+          "dataset_id": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Dataset Id",
+            "type": "string"
+          },
+          "dataset_revision": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Dataset Revision",
+            "type": "string"
+          },
+          "generated_sample": {
+            "title": "Generated Sample",
+            "type": "boolean"
+          },
+          "generation_evaluation_status": {
+            "enum": [
+              "NOT_APPLICABLE",
+              "PENDING",
+              "COMPLETED"
+            ],
+            "title": "Generation Evaluation Status",
+            "type": "string"
+          },
+          "generator_model": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Generator Model"
+          },
+          "generator_revision": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Generator Revision"
+          },
+          "generator_system": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Generator System"
+          },
+          "generator_type": {
+            "anyOf": [
+              {
+                "enum": [
+                  "MODEL",
+                  "RULE_BASED",
+                  "HUMAN",
+                  "DATASET_SOURCE",
+                  "OTHER"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Generator Type"
+          },
+          "is_adversarial": {
+            "title": "Is Adversarial",
+            "type": "boolean"
+          },
+          "lineage_id": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lineage Id"
+          },
+          "lineage_justification": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lineage Justification"
+          },
+          "lineage_provenance_status": {
+            "enum": [
+              "SOURCE_PROVIDED",
+              "DERIVED_FROM_PARENT",
+              "CANONICAL_DUPLICATE_GROUP",
+              "SINGLETON_FALLBACK",
+              "UNKNOWN"
+            ],
+            "title": "Lineage Provenance Status",
+            "type": "string"
+          },
+          "outer_fold": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Outer Fold"
+          },
+          "parent_sample_id": {
+            "anyOf": [
+              {
+                "maxLength": 200,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Parent Sample Id"
+          },
+          "partition": {
+            "enum": [
+              "BASE_TRAIN",
+              "CALIBRATION",
+              "VALIDATION",
+              "META_TRAIN",
+              "INTERNAL_TEST",
+              "FROZEN_EXTERNAL",
+              "FINAL_TEST",
+              "ATTACK_GENERATION",
+              "QUARANTINE"
+            ],
+            "title": "Partition",
+            "type": "string"
+          },
+          "provenance_status": {
+            "enum": [
+              "COMPLETE",
+              "PARTIAL",
+              "UNKNOWN",
+              "NOT_VERIFIED",
+              "SYNTHETIC_FIXTURE"
+            ],
+            "title": "Provenance Status",
+            "type": "string"
+          },
+          "record_version": {
+            "const": "regime_sample_v1",
+            "default": "regime_sample_v1",
+            "title": "Record Version",
+            "type": "string"
+          },
+          "sample_id": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Sample Id",
+            "type": "string"
+          },
+          "source": {
+            "maxLength": 500,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Source",
+            "type": "string"
+          },
+          "source_native_id": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Native Id"
+          },
+          "target_detector": {
+            "anyOf": [
+              {
+                "enum": [
+                  "D_S",
+                  "D_M-B",
+                  "D_G",
+                  "ALL"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Detector"
+          },
+          "threat_regime": {
+            "enum": [
+              "R0_NON_ADAPTIVE",
+              "R1_SHIFTED_UNSEEN",
+              "R2_SINGLE_DETECTOR_TARGETED",
+              "R3_ENSEMBLE_TARGETED"
+            ],
+            "title": "Threat Regime",
+            "type": "string"
+          },
+          "truth_label": {
+            "maximum": 1,
+            "minimum": 0,
+            "title": "Truth Label",
+            "type": "integer"
+          },
+          "valid_attack_attempt": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Valid Attack Attempt"
+          }
+        },
+        "required": [
+          "sample_id",
+          "dataset_id",
+          "dataset_revision",
+          "partition",
+          "threat_regime",
+          "source",
+          "source_native_id",
+          "truth_label",
+          "is_adversarial",
+          "attack_family",
+          "attack_family_provenance",
+          "target_detector",
+          "attack_method",
+          "attack_method_revision",
+          "generator_type",
+          "generator_model",
+          "generator_system",
+          "generator_revision",
+          "generated_sample",
+          "generation_evaluation_status",
+          "parent_sample_id",
+          "lineage_id",
+          "lineage_provenance_status",
+          "lineage_justification",
+          "attack_success_definition",
+          "attack_success",
+          "valid_attack_attempt",
+          "created_at",
+          "provenance_status",
+          "outer_fold"
+        ],
+        "title": "RegimeSample",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "action": {
+        "const": "EVALUATE_ONLY",
+        "default": "EVALUATE_ONLY",
+        "title": "Action",
+        "type": "string"
+      },
+      "bootstrap_unit": {
+        "enum": [
+          "SAMPLE_PAIRED",
+          "LINEAGE_CLUSTERED"
+        ],
+        "title": "Bootstrap Unit",
+        "type": "string"
+      },
+      "comparison_view_id": {
+        "const": "OPERATIONAL_FIXED_V1",
+        "default": "OPERATIONAL_FIXED_V1",
+        "title": "Comparison View Id",
+        "type": "string"
+      },
+      "decision_view": {
+        "const": "OPERATIONAL",
+        "default": "OPERATIONAL",
+        "title": "Decision View",
+        "type": "string"
+      },
+      "manifest": {
+        "$ref": "#/$defs/RegimeManifest"
+      },
+      "operating_policy_sha": {
+        "const": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+        "default": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+        "title": "Operating Policy Sha",
+        "type": "string"
+      },
+      "purpose": {
+        "default": "OFFICIAL_EVALUATION",
+        "enum": [
+          "OFFICIAL_EVALUATION",
+          "TEST_FIXTURE"
+        ],
+        "title": "Purpose",
+        "type": "string"
+      }
+    },
+    "required": [
+      "manifest",
+      "bootstrap_unit"
+    ],
+    "title": "ExperimentRequest",
+    "type": "object"
+  },
+  "required_references": [
+    "protocol_lock_sha",
+    "regime_manifest_sha",
+    "dataset_source_hashes",
+    "lineage_provenance"
+  ],
+  "template_version": "experiment_execution_template_v1",
+  "threshold_override_allowed": false
+}

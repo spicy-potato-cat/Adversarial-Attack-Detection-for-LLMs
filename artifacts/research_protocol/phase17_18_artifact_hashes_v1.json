@@ -1,0 +1,13 @@
+{
+  "artifact_version": "phase17_18_artifact_hashes_v1",
+  "phase15_commit": "d98fc5a64e09b756ef8652301e79d1d97755639c",
+  "sha256": {
+    "artifacts/research_protocol/release/experiment_execution_template_v1.json": "e51a2587852815fdd2954453b3f4f18b58f9f0495262e31cbfac85eae0aaeaae",
+    "artifacts/research_protocol/release/protocol_release_inventory_v1.json": "b04002287dfc22f5dc933f9270a5511de03b4f7877c90a72e93025ca0d75cf22",
+    "artifacts/research_protocol/release/protocol_release_manifest_v1.json": "c6a6678c7c95a870812cb8d4ea4d7a547faec6465ea7b5a85d0f38914ac4a58f",
+    "detection_service/research_protocol/release_packaging.py": "42d7bae6175d08b1821f8585453c4da773e30f4b49bc22d7ca26e3e9479dcc5f",
+    "detection_service/tests/test_protocol_release.py": "d3a45be46b416be8e482ed43732698c626e6d6373c0243bed645cfe41eefb14d",
+    "reviews/EXP_PROTOCOL_001_FROZEN_SPECIFICATION_v1.md": "0a8be4df09629395df4d4d3543a47aa7c57df42d17df8ad7067a742663f2c44b",
+    "reviews/EXP_PROTOCOL_001_RESEARCH_EXECUTION_RUNBOOK_v1.md": "3372dd50f3c6203347fb6a60502ffc2bfe41b00877ea3e4618993ce8235d09e2"
+  }
+}

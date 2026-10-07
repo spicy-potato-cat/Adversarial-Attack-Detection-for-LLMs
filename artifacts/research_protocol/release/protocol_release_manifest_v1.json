@@ -1,0 +1,26 @@
+{
+  "Phase16": "PHASE_16_NOT_DEFINED_IN_APPROVED_PLAN",
+  "R1_executed": false,
+  "core_metrics_contract_version": "core_metrics_bundle_v1",
+  "cross_regime_contract_version": "cross_regime_contract_v1",
+  "detector_set_id": "research_stack_candidate_v2",
+  "historical_R0_reference": {
+    "path": "artifacts/research_protocol/r0/r0_cross_regime_bundle_v1.json",
+    "sha256": "8ded2ad10924676dac02cc6cc867c81d13fa2cf5772f41fea24db475461eab75"
+  },
+  "manifest_hash": "ecec63dfea1618302cf23682c533054baacf6346467c4ee08969be78d1cdc189",
+  "manifest_version": "protocol_release_manifest_v1",
+  "next_authorized_research_regime": "R1_SHIFTED_UNSEEN",
+  "operating_policy_id": "operating_policy_v1",
+  "operational_R0_reference": {
+    "path": "artifacts/research_protocol/r0/r0_operational_result_bundle_v1.json",
+    "sha256": "b63b25ed4b2eafc3f6e6dd09b8cce96f4acfebff599728650260f8e786e68133"
+  },
+  "phase14_commit": "2941f1412d15f16bfc1564d1d584a76c0b909df3",
+  "phase15_commit": "d98fc5a64e09b756ef8652301e79d1d97755639c",
+  "protocol_lock_sha": "d0e1f38898b4f82c93daaa6425f4ddb3592fe080fe50db6ef36f2be9dbed2353",
+  "release_id": "exp_protocol_001_v1",
+  "release_inventory_sha": "b04002287dfc22f5dc933f9270a5511de03b4f7877c90a72e93025ca0d75cf22",
+  "status": "FROZEN",
+  "uncertainty_contract_version": "uncertainty_contract_v1"
+}
