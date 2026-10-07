@@ -1,0 +1,14 @@
+{
+  "artifact_version": "phase14_artifact_hashes_v1",
+  "sha256": {
+    "artifacts/research_protocol/r0/r0_operational_cross_regime_matrix_v1.json": "8bdb34bdc502e9fd06c39b48791d1751b4a93846b6ad4d11e076fd851dc9ecc1",
+    "artifacts/research_protocol/r0/r0_operational_metrics_v1.json": "a0899a5aba12e1fb473865ae67f650ebd637b744328f7342db6f9e49af619302",
+    "artifacts/research_protocol/r0/r0_operational_predictions_v1.csv": "2a40aba6e57fb62c6f843cb834488c2536911aac7c2d3eb0448c77c4f93c5a30",
+    "artifacts/research_protocol/r0/r0_operational_result_bundle_v1.json": "b63b25ed4b2eafc3f6e6dd09b8cce96f4acfebff599728650260f8e786e68133",
+    "artifacts/research_protocol/r0/r0_operational_uncertainty_v1.json": "5ece35c05fe3b0acf0022d75b059bcee8e15c4b5b6a04373d9387f185a2feb56",
+    "detection_service/research_protocol/r0_operational.py": "ec80cb0dfc6d70057433e8c032d0027426ae0932e46856e435511909d21d5761",
+    "detection_service/tests/test_r0_operational.py": "57a9082f1f385835212346852512c343148a7b5963a834078e313631ec4286b0",
+    "reviews/EXP_PROTOCOL_001_R0_OPERATIONAL_BASELINE_v1.md": "831b9ce83da128ad312315a87f36bb0ef8ab36e117e234a2b2ab03be75cd482f"
+  },
+  "source_commit": "f533c106765041932271b56c8ccfa30d1efe691c"
+}

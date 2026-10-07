@@ -67,3 +67,12 @@
 /reviews/EXP_PROTOCOL_001_CROSS_REGIME_v1.md -text
 /reviews/EXP_PROTOCOL_001_R0_REPRODUCTION_v1.md -text
 /reviews/EXP_PROTOCOL_001_PHASE11_13_TEST_REPORT_v1.md -text
+/detection_service/tests/test_r0_operational.py -text
+/detection_service/tests/test_protocol_lock.py -text
+/detection_service/tests/test_protocol_release.py -text
+/reviews/EXP_PROTOCOL_001_R0_OPERATIONAL_BASELINE_v1.md -text
+/reviews/EXP_PROTOCOL_001_PROTOCOL_LOCK_v1.md -text
+/reviews/EXP_PROTOCOL_001_FROZEN_SPECIFICATION_v1.md -text
+/reviews/EXP_PROTOCOL_001_RESEARCH_EXECUTION_RUNBOOK_v1.md -text
+/reviews/EXP_PROTOCOL_001_FINAL_VALIDATION_v1.md -text
+/reviews/EXP_PROTOCOL_001_FINAL_ACCEPTANCE_v1.md -text
