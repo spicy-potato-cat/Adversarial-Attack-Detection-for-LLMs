@@ -1,0 +1,21 @@
+{
+  "Phase16": "PHASE_16_NOT_DEFINED_IN_APPROVED_PLAN",
+  "authoritative_branch": "exp/protocol-001",
+  "cycle2_status": "DEFERRED",
+  "final_validation_evidence_sha": "875c1b4f7b2128aa44d154d7bdfcfce93900422f4da78a14f6afd549107862c7",
+  "manifest_hash": "dfabc68536883f1b9a45d135931c31f124b19d124e4b4d5c43f1e187f322ee6e",
+  "next_authorized_phase": "R1_SHIFTED_UNSEEN",
+  "next_phase_started": false,
+  "phase14_commit": "2941f1412d15f16bfc1564d1d584a76c0b909df3",
+  "phase15_commit": "d98fc5a64e09b756ef8652301e79d1d97755639c",
+  "phase17_18_commit": "773853e6cf39130708e9780d84d6bd9173a1613c",
+  "phase19_commit": "d7e4397a05d5b08ba1df3c73a19a38315f59697b",
+  "protected_evaluation_status": "NOT_STARTED",
+  "protocol_lock_sha": "d0e1f38898b4f82c93daaa6425f4ddb3592fe080fe50db6ef36f2be9dbed2353",
+  "release_id": "exp_protocol_001_v1",
+  "release_inventory_sha": "b04002287dfc22f5dc933f9270a5511de03b4f7877c90a72e93025ca0d75cf22",
+  "release_manifest_sha": "c6a6678c7c95a870812cb8d4ea4d7a547faec6465ea7b5a85d0f38914ac4a58f",
+  "source_commit_for_release": "d7e4397a05d5b08ba1df3c73a19a38315f59697b",
+  "status": "FROZEN_READY_FOR_R1",
+  "verifier_status": "NOT_STARTED"
+}
