@@ -1,0 +1,141 @@
+{
+  "approved_method_evidence": {
+    "PHASE-3/logs/PILOT-01_forensic_run.json": "fc01b6567a44eef09b7e39d183feed1b46a8b4b15800c7ba9fabedd9076910f6",
+    "PHASE-3/logs/WAVE-2_forensic_run.json": "b3ba2a3ca96962227622e20e0e9f0d42b3af9187e895fe2a5ebb6cd1e0691c7a"
+  },
+  "artifact_version": "r1_contamination_audit_v1",
+  "candidate_counts": {
+    "INJECAGENT_BASE": {
+      "candidate_rows": 1054
+    },
+    "LLMAIL_INJECT": {
+      "candidate_rows": 21007,
+      "near_rows_at_0.7": 1,
+      "near_rows_at_0.8": 1,
+      "near_rows_at_0.9": 1
+    },
+    "OR_BENCH_HARD": {
+      "candidate_rows": 1319
+    }
+  },
+  "canonicalization": "Approved N1: NFC then CRLF/CR to LF; all 1601 normalized hashes reconstructed",
+  "development_manifest_sha256": "9cdd5ecdd80f9ac3c8f05db63742721f4537ca2b64a2fe48f6c2b424b57483a6",
+  "development_partitions": {
+    "BASE_TRAIN": 1135,
+    "CALIBRATION": 233,
+    "VALIDATION": 233
+  },
+  "development_population": 1601,
+  "exclusions": [
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-edcd7c4eb85da6272d83db78c357d7b53a88b3edb436eed335e23829cf6e7acc",
+      "source": "LLMAIL_INJECT"
+    },
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-461e8366a325e69b5f3555d84f7563d7d3921e9229e1c0cd5538ec9b56c0dbfd",
+      "source": "LLMAIL_INJECT"
+    },
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-7d792ddfce3f48c2dadca9c5940587c23a22e1425c0157ce6188cfaae2a35f45",
+      "source": "LLMAIL_INJECT"
+    },
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-d23b8a8dc1d5d2317279dcff5d22d3ac805b9f757380d3e10d66c37cad520e63",
+      "source": "LLMAIL_INJECT"
+    },
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-2afe54638f9ff55dffca4e813f7f3c393a005aa5c72ae7b2820779df578e4f5b",
+      "source": "LLMAIL_INJECT"
+    },
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-3fb91dac9eeafdf430eb23194bd7f7b7915b2df9cbf69bc950b57d7a86f9d4ee",
+      "source": "LLMAIL_INJECT"
+    },
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-bb0bb0a6dde35d7491c6e6e83140ddb1e91bbbc563276271833a9f7f6b5f63f8",
+      "source": "LLMAIL_INJECT"
+    },
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-9e6fcfc7aeb847d95652104f434e564680fc3af08594dbafdefb9e13423db6bf",
+      "source": "LLMAIL_INJECT"
+    },
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-e211cdec40c842cf3821b31eaf93aa3217a02bacb461cc8416b274bf494953c1",
+      "source": "LLMAIL_INJECT"
+    },
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-643a433ffc25c63101416a16f41b9c7edd89ab19fa5a5778a693f62d468a4b49",
+      "source": "LLMAIL_INJECT"
+    },
+    {
+      "development_record_ids": [],
+      "reason": "MULTI_TEAM_LABEL",
+      "sample_id": "R1-DS-TXT-011-46e9dfec570efa3b4ab47cd4891878fc57ccfa59db20749be30791ce1b7f903c",
+      "source": "LLMAIL_INJECT"
+    }
+  ],
+  "lineage_overlap": {
+    "limitation": "Negative hashes/IDs do not prove unseen pretraining or hidden documentary independence",
+    "status": "NO_DOCUMENTED_SHARED_PROJECT_DEVELOPMENT_LINEAGE"
+  },
+  "near_method": "Approved Unicode casefold word-threegram exact Jaccard; exhaustive inverted-index enumeration, not approximate MinHash-LSH; original thresholds unchanged",
+  "near_pairs": [
+    {
+      "development_record_id": "W2-c3753857dd76b6de1d7da08d",
+      "intersection": 709,
+      "jaccard": 0.9712328767123287,
+      "sample_id": "R1-DS-TXT-011-395e1295cfdddcb17f943a0624f0dc0da25fca1804b717a308fc74b9c72edb29",
+      "source": "LLMAIL_INJECT",
+      "union": 730
+    }
+  ],
+  "remaining_selected_canonical_exact": 0,
+  "remaining_selected_raw_exact": 0,
+  "selected_near_pairs": [],
+  "selected_near_rows_at_threshold": {
+    "0.7": 0,
+    "0.8": 0,
+    "0.9": 0
+  },
+  "selected_source_counts": {
+    "INJECAGENT_BASE": 400,
+    "LLMAIL_INJECT": 400,
+    "OR_BENCH_HARD": 1000
+  },
+  "selection_not_scored": true,
+  "semantic_similarity": "NOT_RUN; no new semantic threshold",
+  "source_artifact_sha256": {
+    "Dataset/Raw/datasets/GitHub/Do-Not-Answer/datasets/Instruction/do_not_answer_en.csv": "8585dc135d3b8692b2e464151a313f5164e30f06416e03aa5d11e6c3a21d980e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/test-00000-of-00001-701d16158af87368.parquet": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e",
+    "Dataset/Raw/datasets/HuggingFace/deepset-prompt-injections/data/train-00000-of-00001-9564e8b05b4757ab.parquet": "2e10bc7ab30f542c97e4e83e2a5683000b5057d25ec10908784c631d44124c04"
+  },
+  "source_native_id_overlap": {
+    "detail": "Source-scoped IDs disjoint from DS-TXT-017/018; internal row numbers are not native IDs",
+    "status": "NO_COMPARABLE_SOURCE_NATIVE_IDS"
+  },
+  "thresholds": [
+    0.7,
+    0.8,
+    0.9
+  ]
+}

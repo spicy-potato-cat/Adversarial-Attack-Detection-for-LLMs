@@ -81,3 +81,7 @@
 /reviews/R1_DS_RUNTIME_EQUIVALENCE_v1.md -text
 /detection_service/tests/test_r1_source_gate.py -text
 /reviews/R1_SHIFTED_UNSEEN_RESULTS_v1.md -text
+/reviews/R1_SOURCE_CLEARANCE_v1.md -text
+/reviews/R1_SHIFTED_UNSEEN_RESULTS_v2.md -text
+/detection_service/tests/test_r1_corpus.py -text
+/detection_service/tests/test_r1_experiment.py -text

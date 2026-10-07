@@ -42,7 +42,9 @@ def test_no_downstream_experiment_artifacts():
     assert value["gate_c"] == value["gate_d"] == "NOT_STARTED"
     assert value["r1_detector_predictions"] == 0
     for name in value["not_created"]:
-        assert not (files.ROOT / files.OUT / "r1" / name).exists()
+        path = files.OUT + "/r1/" + name
+        # This evidence describes the historical stop commit, not later clearance.
+        assert not protocol_lock.git("ls-tree", "5f274f4ea2e1edc1e504f18744c56705f0646822", "--", path).strip()
 
 
 def test_missing_forensic_evidence_not_claimed_present():

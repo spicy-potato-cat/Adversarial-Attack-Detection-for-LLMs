@@ -1,0 +1,26 @@
+{
+  "bucket_snapshot_receipts": [
+    {
+      "path": "detection_service/outputs/r1-clearance-001/source_evidence/llmail_bucket.json",
+      "role": "llmail_bucket.json",
+      "sha256": "e7134032126bcf9e9d767f48d3e5193ea1f03323e9fe345958e5a9356262eb3f",
+      "size": 602
+    },
+    {
+      "path": "detection_service/outputs/r1-clearance-001/source_evidence/llmail_bucket_tree.json",
+      "role": "llmail_bucket_tree.json",
+      "sha256": "2c9f8c703daf37ec984cc57dede4b9506a23ae2b3e3c8198a6536056331ec9cc",
+      "size": 2936
+    },
+    {
+      "path": "detection_service/outputs/r1-clearance-001/source_evidence/llmail_upstream_tree.json",
+      "role": "llmail_upstream_tree.json",
+      "sha256": "2938e7d983234f818911d0b4e807190d3b38ada073c256bf4a6d47b407dd478b",
+      "size": 6906
+    }
+  ],
+  "licenses_are_dataset_specific_from_official_cards": true,
+  "llmail_code_license_url": "https://raw.githubusercontent.com/microsoft/llmail-inject-challenge/3da2399839b285e129888161fcc8cb03169d1b43/LICENSE",
+  "llmail_code_revision": "3da2399839b285e129888161fcc8cb03169d1b43",
+  "selected_input_bytes_unchanged": true
+}

@@ -1,0 +1,8 @@
+{
+  "detector_predictions_before_repair": 0,
+  "inputs_changed": false,
+  "membership_changed": false,
+  "new_file_sha256": "7e9f09fa326ed3727094358942c021c891f3ad0e0aa856db5e7d4f2484c108a0",
+  "old_file_sha256": "b657ef75bf6d7ffc9ba598ed9eb675aa0feddbcde0f76f89d470b943f9ce1a10",
+  "reason": "Use exactly the already-authorized AGENT_TOOL_INJECTION spelling, not a new family name"
+}

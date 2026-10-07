@@ -1,0 +1,291 @@
+{
+  "artifact_version": "r1_source_clearance_v1",
+  "created_at": "2026-10-07T19:31:33Z",
+  "detector_scoring": false,
+  "historical_gate_b_blocker_superseded_prospectively": true,
+  "known_upstream_contamination": [
+    "LLMail intentionally adaptive to disclosed upstream defenses (Prompt Shield/TaskTracker/judge); not targeted at our stack",
+    "InjecAgent reuses attacker/user base cases across tools; transitive source lineage union",
+    "OR hard subset model-selected for over-refusal; public seed/pretraining reuse cannot be ruled out"
+  ],
+  "llmail_labelled_release_inventory": [
+    {
+      "lastCommit": {
+        "date": "2025-05-14T13:36:00.000Z",
+        "id": "48221cf0c58adbc5ee327f02cecefff6ddb620bd",
+        "title": "Upload 9 files"
+      },
+      "lfs": {
+        "oid": "691dfa1595d2bd0e731069f233bd5448f7af1c0ebd9732bc6f12dd6cee446586",
+        "pointerSize": 134,
+        "size": 448194111
+      },
+      "oid": "6eb0414a0ea2d702049563b26444c47937142362",
+      "path": "data/labelled_unique_submissions_phase1.json",
+      "size": 448194111
+    },
+    {
+      "lastCommit": {
+        "date": "2025-05-14T13:36:00.000Z",
+        "id": "48221cf0c58adbc5ee327f02cecefff6ddb620bd",
+        "title": "Upload 9 files"
+      },
+      "lfs": {
+        "oid": "f89af984e345430c3b357903890e30867bf4676f4ef10c138cc7bad218e890b8",
+        "pointerSize": 133,
+        "size": 68586935
+      },
+      "oid": "8c018371e27669e80509c631b1e20a70e76b6a08",
+      "path": "data/labelled_unique_submissions_phase2.json",
+      "size": 68586935
+    }
+  ],
+  "llmail_schema": {
+    "explicit_positive_rows": 21007,
+    "labelled_unique_rows": 37303,
+    "labels_by_type": {
+      "bool:True": 1969,
+      "str:False": 2500,
+      "str:True": 19038,
+      "str:Unclear": 13796
+    },
+    "positive_team_cardinality": {
+      "1": 20996,
+      "2": 10,
+      "3": 1
+    }
+  },
+  "mirror_caveats": [
+    "HF buckets have no Git revision: content-addressed file snapshot instead; no fabricated commit",
+    "Original OR bucket returned 404; newest explicit user URL bench-llms/or-bench is used and byte-verified against original bench-llm"
+  ],
+  "protected_source_payloads_opened": false,
+  "sources": [
+    {
+      "attribution_requirement": "Preserve MIT copyright/permission notices; cite LLMail-Inject Abdelnabi et al. (2025)",
+      "authoritative_upstream": "https://huggingface.co/datasets/microsoft/llmail-inject-challenge",
+      "clearance_evidence": [
+        {
+          "path": "detection_service/outputs/r1-clearance-001/source_evidence/llmail_official_README.md",
+          "role": "llmail_official_README.md",
+          "sha256": "d85767e349ab1abbaf43db9390c4e906e34954e5df3a1335c8f1516efa64e812",
+          "size": 23628
+        },
+        {
+          "path": "detection_service/outputs/r1-clearance-001/source_evidence/llmail_bucket_README.md",
+          "role": "llmail_bucket_README.md",
+          "sha256": "d85767e349ab1abbaf43db9390c4e906e34954e5df3a1335c8f1516efa64e812",
+          "size": 23628
+        },
+        {
+          "path": "detection_service/outputs/r1-clearance-001/source_evidence/llmail_code_LICENSE",
+          "role": "llmail_code_LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "size": 1141
+        }
+      ],
+      "clearance_state": "CLEARED_WITH_LOCAL_ONLY_RESTRICTION",
+      "contamination_status": {
+        "candidate_rows": 21007,
+        "near_rows_at_0.7": 1,
+        "near_rows_at_0.8": 1,
+        "near_rows_at_0.9": 1,
+        "pretraining_or_hidden_source_overlap": "UNKNOWN",
+        "selected_exact_or_canonical_development_overlap": 0
+      },
+      "evaluation_use_status": "PERMITTED_BY_REVIEWED_PUBLIC_LICENSE; Commander-authorized local academic evaluation",
+      "file_hashes": {
+        "data/labelled_unique_submissions_phase2.json": "f89af984e345430c3b357903890e30867bf4676f4ef10c138cc7bad218e890b8",
+        "data/levels_descriptions.json": "d1391d6fa8bb074b1603bb20699df6c1ada3c6add64db495e1a39faebc0cd400",
+        "data/objectives_descriptions.json": "daed5cacc5126790073e1a8dfc650b8024c903c415f1e11a189a8171c0c0f183",
+        "data/raw_submissions_phase2.jsonl": "a9207e1d893ccb74ca6f9cc5eecea433bc49c23a26bed88088afd385c7ab18b6"
+      },
+      "license": "MIT",
+      "local_location": "hf://buckets/sumitt86/llmail-inject-challenge-bucket",
+      "local_revision": "CONTENT_ADDRESSED_BUCKET_SNAPSHOT:b88b450e9a629aae06ea59781b63bbd65c37b4400c50beffeabcf1fd529ccec7",
+      "privacy_status": {
+        "email_pattern_rows": 330,
+        "selected_rows": 400,
+        "status": "RESTRICTED_LOCAL_TEXT_ONLY; candidate screening not exhaustive PII clearance"
+      },
+      "redistribution_status": "PROJECT_RESTRICTED_LOCAL_ONLY; license permits reuse subject to attribution/notice, but this task authorizes no payload redistribution or PII release",
+      "selected_files": [
+        {
+          "comparison": "SHA256_EQUALS_PINNED_UPSTREAM_LFS_OBJECT; no redundant upstream payload download",
+          "path": "detection_service/outputs/r1-clearance-001/llmail_bucket/data/labelled_unique_submissions_phase2.json",
+          "role": "data/labelled_unique_submissions_phase2.json",
+          "sha256": "f89af984e345430c3b357903890e30867bf4676f4ef10c138cc7bad218e890b8",
+          "size": 68586935
+        },
+        {
+          "comparison": "SHA256_EQUALS_PINNED_UPSTREAM_LFS_OBJECT; no redundant upstream payload download",
+          "path": "detection_service/outputs/r1-clearance-001/llmail_bucket/data/raw_submissions_phase2.jsonl",
+          "role": "data/raw_submissions_phase2.jsonl",
+          "sha256": "a9207e1d893ccb74ca6f9cc5eecea433bc49c23a26bed88088afd385c7ab18b6",
+          "size": 263506099
+        },
+        {
+          "comparison": "BYTES_MATCH_PINNED_UPSTREAM_GIT_BLOB",
+          "path": "detection_service/outputs/r1-clearance-001/llmail_bucket/data/levels_descriptions.json",
+          "role": "data/levels_descriptions.json",
+          "sha256": "d1391d6fa8bb074b1603bb20699df6c1ada3c6add64db495e1a39faebc0cd400",
+          "size": 884
+        },
+        {
+          "comparison": "BYTES_MATCH_PINNED_UPSTREAM_GIT_BLOB",
+          "path": "detection_service/outputs/r1-clearance-001/llmail_bucket/data/objectives_descriptions.json",
+          "role": "data/objectives_descriptions.json",
+          "sha256": "daed5cacc5126790073e1a8dfc650b8024c903c415f1e11a189a8171c0c0f183",
+          "size": 379
+        }
+      ],
+      "separate_data_specific_terms": "Official dataset card MIT / CC-BY-4.0; no narrower terms found in reviewed pinned card/data documentation; not a legal opinion",
+      "source": "LLMAIL_INJECT",
+      "source_id": "DS-TXT-011",
+      "upstream_revision": "1063bdf01ec8762b812d5e06ee768a06faa5a6f7"
+    },
+    {
+      "attribution_requirement": "Preserve MIT copyright/permission notice (Qiusi Zhan 2023); cite InjecAgent authors/paper and pinned source",
+      "authoritative_upstream": "https://github.com/uiuc-kang-lab/InjecAgent",
+      "clearance_evidence": [
+        {
+          "path": "detection_service/outputs/r1-clearance-001/source_evidence/injec_LICENCE",
+          "role": "injec_LICENCE",
+          "sha256": "b48589499dbb84caa796b00b4ea652b0443e49660282c44d890fd473b8c0674e",
+          "size": 1066
+        },
+        {
+          "path": "detection_service/outputs/r1-clearance-001/source_evidence/injec_README.md",
+          "role": "injec_README.md",
+          "sha256": "09e81a9e68d5c2a1b491456c83da4ef0126426deb7eafa8588349c2dcce278ea",
+          "size": 4586
+        }
+      ],
+      "clearance_state": "CLEARED_WITH_LOCAL_ONLY_RESTRICTION",
+      "contamination_status": {
+        "candidate_rows": 1054,
+        "pretraining_or_hidden_source_overlap": "UNKNOWN",
+        "selected_exact_or_canonical_development_overlap": 0
+      },
+      "evaluation_use_status": "PERMITTED_BY_REVIEWED_PUBLIC_LICENSE; Commander-authorized local academic evaluation",
+      "file_hashes": {
+        "data/attacker_cases_dh.jsonl": "50892300ce734d8d4e380ecf4f3309744b7d845acbe90108250b1f1e9c502e35",
+        "data/attacker_cases_ds.jsonl": "ca791c56bd88d61f688b30adc138e08300c7487c391d7a8d5dac90221965c61b",
+        "data/test_cases_dh_base.json": "4dcc0540ad86efbd1d0658b3b0eb50bb19fd89ba3853a343235b47c281c72c5d",
+        "data/test_cases_ds_base.json": "7959777711834b23e8cca2f89717a8fd6ca92ac3a0a915e38fa563a2cf9cf8bd",
+        "data/user_cases.jsonl": "6b681f0fd26597d98c0f853c1cebc001b5507460c51baf45db2f628237049413"
+      },
+      "license": "MIT",
+      "local_location": "Dataset/Raw/datasets/GitHub/InjecAgent",
+      "local_revision": "f19c9f2c79a41046eb13c03c51a24c567a8ffa07",
+      "privacy_status": {
+        "email_pattern_rows": 260,
+        "selected_rows": 400,
+        "status": "RESTRICTED_LOCAL_TEXT_ONLY; candidate screening not exhaustive PII clearance"
+      },
+      "redistribution_status": "PROJECT_RESTRICTED_LOCAL_ONLY; license permits reuse subject to attribution/notice, but this task authorizes no payload redistribution or PII release",
+      "selected_files": [
+        {
+          "comparison": "GIT_COMMIT_VERIFIED; Windows CRLF checkout; decoded JSON values unchanged",
+          "path": "Dataset/Raw/datasets/GitHub/InjecAgent/data/attacker_cases_dh.jsonl",
+          "role": "data/attacker_cases_dh.jsonl",
+          "sha256": "50892300ce734d8d4e380ecf4f3309744b7d845acbe90108250b1f1e9c502e35",
+          "size": 10967,
+          "upstream_git_object_sha256": "999d52e15af3c80a3303a09430af0f3878d1f91e4c573ca7b477a91cdfa6b991"
+        },
+        {
+          "comparison": "GIT_COMMIT_VERIFIED; Windows CRLF checkout; decoded JSON values unchanged",
+          "path": "Dataset/Raw/datasets/GitHub/InjecAgent/data/attacker_cases_ds.jsonl",
+          "role": "data/attacker_cases_ds.jsonl",
+          "sha256": "ca791c56bd88d61f688b30adc138e08300c7487c391d7a8d5dac90221965c61b",
+          "size": 13241,
+          "upstream_git_object_sha256": "87952398c989d8ca841724e38ecdbb789676d3841e19dfc44aac7b710df9cb1f"
+        },
+        {
+          "comparison": "GIT_COMMIT_VERIFIED; Windows CRLF checkout; decoded JSON values unchanged",
+          "path": "Dataset/Raw/datasets/GitHub/InjecAgent/data/user_cases.jsonl",
+          "role": "data/user_cases.jsonl",
+          "sha256": "6b681f0fd26597d98c0f853c1cebc001b5507460c51baf45db2f628237049413",
+          "size": 10941,
+          "upstream_git_object_sha256": "c840e2b00fdce68e7142d0970220522303d67b2530d6fb36ef1112448cdd8977"
+        },
+        {
+          "comparison": "GIT_COMMIT_VERIFIED; Windows CRLF checkout; decoded JSON values unchanged",
+          "path": "Dataset/Raw/datasets/GitHub/InjecAgent/data/test_cases_dh_base.json",
+          "role": "data/test_cases_dh_base.json",
+          "sha256": "4dcc0540ad86efbd1d0658b3b0eb50bb19fd89ba3853a343235b47c281c72c5d",
+          "size": 680569,
+          "upstream_git_object_sha256": "0a8186468d21389af432e8c7b399ae42264d1b93a07b65c7a489468508604305"
+        },
+        {
+          "comparison": "GIT_COMMIT_VERIFIED; Windows CRLF checkout; decoded JSON values unchanged",
+          "path": "Dataset/Raw/datasets/GitHub/InjecAgent/data/test_cases_ds_base.json",
+          "role": "data/test_cases_ds_base.json",
+          "sha256": "7959777711834b23e8cca2f89717a8fd6ca92ac3a0a915e38fa563a2cf9cf8bd",
+          "size": 774075,
+          "upstream_git_object_sha256": "4daab35c62a3845e8b9400f4dca58b9c9f37e57cd33b2337552557fbb26282e9"
+        }
+      ],
+      "separate_data_specific_terms": "Official dataset card MIT / CC-BY-4.0; no narrower terms found in reviewed pinned card/data documentation; not a legal opinion",
+      "source": "INJECAGENT_BASE",
+      "source_id": "DS-TXT-005",
+      "upstream_revision": "f19c9f2c79a41046eb13c03c51a24c567a8ffa07"
+    },
+    {
+      "attribution_requirement": "OR-Bench authors Cui, Chiang, Stoica and Hsieh (2024); original dataset and CC-BY-4.0 link; indicate extraction/sampling",
+      "authoritative_upstream": "https://huggingface.co/datasets/bench-llm/or-bench",
+      "clearance_evidence": [
+        {
+          "path": "detection_service/outputs/r1-clearance-001/source_evidence/or_official_README.md",
+          "role": "or_official_README.md",
+          "sha256": "fe467de5f4e5810a06c1f40d146a0e0ff98148e3d4dfe5afcdcb0118912831ec",
+          "size": 7764
+        },
+        {
+          "path": "detection_service/outputs/r1-clearance-001/source_evidence/or_given_README.md",
+          "role": "or_given_README.md",
+          "sha256": "fe467de5f4e5810a06c1f40d146a0e0ff98148e3d4dfe5afcdcb0118912831ec",
+          "size": 7764
+        }
+      ],
+      "clearance_state": "CLEARED_WITH_LOCAL_ONLY_RESTRICTION",
+      "contamination_status": {
+        "candidate_rows": 1319,
+        "pretraining_or_hidden_source_overlap": "UNKNOWN",
+        "selected_exact_or_canonical_development_overlap": 0
+      },
+      "evaluation_use_status": "PERMITTED_BY_REVIEWED_PUBLIC_LICENSE; Commander-authorized local academic evaluation",
+      "file_hashes": {
+        "or-bench-hard-1k.csv": "a6e2f1166416efe5901f3bb05c47dc92ab3aca3acfe143693d38b8057d841e6d"
+      },
+      "license": "CC-BY-4.0",
+      "local_location": "hf://datasets/bench-llms/or-bench",
+      "local_revision": "fd6ee135ee63ff6c4f3ff72c0e39627bf0a7f314",
+      "privacy_status": {
+        "email_pattern_rows": 0,
+        "selected_rows": 1000,
+        "status": "RESTRICTED_LOCAL_TEXT_ONLY; candidate screening not exhaustive PII clearance"
+      },
+      "redistribution_status": "PROJECT_RESTRICTED_LOCAL_ONLY; license permits reuse subject to attribution/notice, but this task authorizes no payload redistribution or PII release",
+      "selected_files": [
+        {
+          "comparison": "BYTE_IDENTICAL_PINNED_ORIGINAL_AND_USER_MIRROR",
+          "path": "detection_service/outputs/r1-clearance-001/or_given/or-bench-hard-1k.csv",
+          "role": "or-bench-hard-1k.csv",
+          "sha256": "a6e2f1166416efe5901f3bb05c47dc92ab3aca3acfe143693d38b8057d841e6d",
+          "size": 169255,
+          "upstream_copy": {
+            "path": "detection_service/outputs/r1-clearance-001/or_official/or-bench-hard-1k.csv",
+            "role": "upstream_comparison_copy",
+            "sha256": "a6e2f1166416efe5901f3bb05c47dc92ab3aca3acfe143693d38b8057d841e6d",
+            "size": 169255
+          }
+        }
+      ],
+      "separate_data_specific_terms": "Official dataset card MIT / CC-BY-4.0; no narrower terms found in reviewed pinned card/data documentation; not a legal opinion",
+      "source": "OR_BENCH_HARD",
+      "source_id": "DS-TXT-010",
+      "upstream_revision": "e36d8b80e81837c8a8f264bbb2a49f1b32c7e272"
+    }
+  ]
+}

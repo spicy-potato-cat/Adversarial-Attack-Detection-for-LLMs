@@ -1,0 +1,14 @@
+{
+  "input_bytes_changed": false,
+  "membership_changed": false,
+  "old_sample_file_sha256": "9def6ed37244e17d3946c0a17e28732c90480ba6a994fdfb48ffeaf072a23d3e",
+  "repaired_metadata_rows": [
+    "R1-DS-TXT-011-5d37d0ce8fba39ba0301bd827c1d549ad6ee3c4b4d343841538e8ac590d64503"
+  ],
+  "rule": "Missing upstream exfil.sent remains null, never failure; no success filter or detection ground-truth change",
+  "sample_file_sha256": "e147b2650f10db6a768701d850dcb57d78222fdda75dd97467a24bf011c5f681",
+  "selected_missing_upstream_outcome_rows": [
+    "R1-DS-TXT-011-5d37d0ce8fba39ba0301bd827c1d549ad6ee3c4b4d343841538e8ac590d64503"
+  ],
+  "stage": "PRE_COMMIT_PRE_SCORE"
+}
