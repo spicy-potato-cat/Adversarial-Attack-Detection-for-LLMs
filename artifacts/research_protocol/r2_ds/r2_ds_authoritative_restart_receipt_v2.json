@@ -1,0 +1,77 @@
+{
+  "artifact_version": "r2_ds_authoritative_restart_receipt_v2",
+  "bindings": {
+    "calibrator_sha256": "964cea57d98673d2026fb2f0e9d5884aec61a653e726847e0fb6ccbf36e95f23",
+    "clarification_sha256": "be39feef8c3aff989b9d3b6c84ae26a7d96ba6ee29d6d2d297ed6d2cfd57e3fe",
+    "feature_schema_sha256": "93d3892b158c35eccfadc27c879754db69ea5293782492ee5d4ff01a33bff983",
+    "frozen_code_sha256": {
+      "r2_ds_design.py": "16adb08e79eaf220cdcadc28e24a2e07a055c30263d14dc71e34c5f38d4ea9cc",
+      "r2_ds_generate_run.py": "ba296373087bedcf56631aab757d0b2e44e78c0eda73baa83743c7dc069e5fa2",
+      "r2_ds_generator.py": "a198c1c7439c9fe0ccf5070821e6109409c7a9ce90f083dd9e36a5b5bc00dd8b",
+      "r2_ds_query_journal.py": "611b16ba48b1cf56bcc09c2f8980bc3df028038ad9f1ca72a3fb316faf123cd9"
+    },
+    "generator_contract_sha256": "d6be1be6695ccb93893fd0b5e2868f1951202f119d1f8edcb03da083de8f42b4",
+    "max_queries_per_seed": 61,
+    "model_sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157",
+    "query_journal_schema_sha256": "fc1cd4e65aad551e3165ae0410bf441e9459eba814b76fc95f7bcca778d5fe89",
+    "replay_tolerance": 1e-12,
+    "runtime_binding_sha256": "d58c472c3187e8fa6c20efa5a2e9281e1036377076c39da2562c53eb6e13bbc5",
+    "seed_manifest_sha256": "469ca9b92dee172e9124fe0d61c5fd6d6e7a22f05ab32f6d180763c95f658492",
+    "threshold": 0.5585373573968287,
+    "threshold_id": "ds_v2_op3_cal_v1"
+  },
+  "changed": {
+    "attack_design": false,
+    "operator_registry": false,
+    "query_budget": false,
+    "replay_tolerance": false,
+    "seed_membership": false,
+    "target_objective": false,
+    "threshold": false
+  },
+  "commits": {
+    "blocker_evidence": "5f5e6f4b159fb2aa75bec9a3f26360b776e4afc0",
+    "calibrated_tie_clarification": "99a33796929a8e2dbfbe1748370f693c26efb0fe",
+    "durable_accounting_repair": "35b88f7fd445e209434e77474862818211c2043c",
+    "generator": "e9a659846cb3bbc3db20ed53d734f86ae37b112e",
+    "loader_repair": "154055902dc7d28c55da3dd0a75a5ac85eaa44a7",
+    "numerical_diagnosis": "54529b121634e517e336e83051e0f54ddec312f2",
+    "numerical_disposition": "9f97e794102b06cc7a585f0baf5c57590ffd300b",
+    "predeclaration": "9a1c4371f9c1c9fc2531fc181a2f046e387b98b2"
+  },
+  "created_at": "2026-10-08T19:01:26.517208+00:00",
+  "disposition_sha256": "4c216947dc37b04948894526e32495010352a50d0b94147389218a3081904ffd",
+  "expected_seeds": 698,
+  "first_seed_sample_id": "R1-DS-TXT-005-0010925a66bfbcf27df3b1a726edbea30b29fe5eeddbccce5c62c10525777785",
+  "generator_implementation_commit": "35b88f7fd445e209434e77474862818211c2043c",
+  "historical_diagnostic_queries": {
+    "disposition_gate": 1,
+    "numerical_diagnosis": 362,
+    "prior_repair": 1,
+    "total_known": 364
+  },
+  "historical_failed_attempt": "UNKNOWN_EXACT_COUNT_BOUNDED_1_TO_61",
+  "inherited_lineages": 94,
+  "orchestration_change": "Additive receipt-gated invocation and new output directory; frozen generate/TargetOracle/isolation/journal bytes unchanged. Replaces obsolete runner startup gates only for this explicitly authorized run.",
+  "orchestration_code_sha256": "44fc24a970fb578f8ce46078c0396add78c0ef802e48cb888c761d942d1eedb2",
+  "prior_accepted_terminals": 0,
+  "prior_transfer_queries": {
+    "D_G": 0,
+    "D_M_B": 0,
+    "ensemble": 0
+  },
+  "private_directory": "detection_service/outputs/r2-ds-001-authoritative-v2",
+  "restart_from_seed_one": true,
+  "role_aliases": {
+    "BASELINE": "BASELINE_REPLAY",
+    "FINAL_REPLAY": "REPLAY_VALIDATION",
+    "SALIENCY": "SALIENCY_PROBE"
+  },
+  "run_id": "R2-DS-001-AUTHORITATIVE-V2-20261009",
+  "source_counts": {
+    "INJECAGENT_BASE": 314,
+    "LLMAIL_INJECT": 384
+  },
+  "status": "AUTHORIZED",
+  "track_b": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2"
+}
