@@ -1,0 +1,274 @@
+{
+  "artifact_version": "verifier_runtime_readiness_v1",
+  "authenticated_account": "sumitt86",
+  "authoritative_r3_queries": {
+    "D_G": 0,
+    "D_M-B": 0,
+    "D_S": 0
+  },
+  "authoritative_verifier_queries": 0,
+  "base_track_b_head": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2",
+  "checked_at": "2026-10-08T19:28:19.290855+00:00",
+  "environment_modified": false,
+  "existing_runtime": {
+    "granitemoe_implementation_present": true,
+    "scientific_inference_executed": false,
+    "torch_version": "2.10.0",
+    "transformers_version": "4.57.6"
+  },
+  "failure_population": "NOT_OPENED_NOT_CONSTRUCTED",
+  "hardware": {
+    "available_ram_bytes": 3298500608,
+    "driver_version": "610.62",
+    "gpu_model": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+    "gpu_vram_free_mib": 5920,
+    "gpu_vram_total_mib": 8192,
+    "inspected_interpreter": "Python 3.12 existing global runtime",
+    "large_tensors_allocated": false,
+    "models_loaded": false,
+    "observed_at": "2026-10-08T19:33:31.480161+00:00",
+    "other_existing_runtime": "Not investigated through Track A filesystem; existence/device support UNKNOWN",
+    "torch_cuda_available": false,
+    "torch_cuda_build": null,
+    "torch_version": "2.10.0+cpu",
+    "total_ram_bytes": 16869548032
+  },
+  "model_weights_downloaded": false,
+  "models": [
+    {
+      "access_status": "ACCESS_CONFIRMED",
+      "adapter_status": "SYNTHETIC_NATIVE_OUTPUT_MAPPING_VALIDATED; LIVE_LOADING_BLOCKED",
+      "candidate_id": "V1",
+      "config": {
+        "architectures": [
+          "DebertaV2ForSequenceClassification"
+        ],
+        "id2label": null,
+        "max_position_embeddings": 512,
+        "model_type": "deberta-v2",
+        "num_experts": null,
+        "num_experts_per_tok": null,
+        "torch_dtype": "float32"
+      },
+      "config.json_accessible": true,
+      "decision_mapping": "OR of per-chunk native class-1 argmax, ties benign",
+      "expected_runtime_class": "AutoModelForSequenceClassification / DebertaV2ForSequenceClassification",
+      "file_inventory": [
+        {
+          "lfs_sha256": null,
+          "path": "config.json",
+          "size_bytes": 871
+        },
+        {
+          "lfs_sha256": "e72017dbbe89c1232dcbc4a74ce0c389db5b468c42afd05850347b2a8c5f6b09",
+          "path": "model.safetensors",
+          "size_bytes": 1115268200
+        },
+        {
+          "lfs_sha256": "3e7e96867c2acdd575f0862c74822e05d1d15b93d9d9a4a2144b1ce83ae3339f",
+          "path": "tokenizer.json",
+          "size_bytes": 16351353
+        },
+        {
+          "lfs_sha256": null,
+          "path": "tokenizer_config.json",
+          "size_bytes": 19674
+        }
+      ],
+      "final_readiness_state": "V1_READY",
+      "gated": "manual",
+      "hardware_feasibility": "CPU_ARCHITECTURE_SUPPORTED; modest model relative to total RAM; load feasibility after Track A untested",
+      "license": "other",
+      "license_status": "Existing authenticated gated access; Llama 4 license/AUP recorded in frozen candidate manifest",
+      "live_execution_ready": false,
+      "model": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "native_weight_artifact_bytes": 1115268200,
+      "parameter_count": 278810882,
+      "readiness_scope": "Authenticated access and static adapter/runtime architecture only; no model-load or scientific readiness claim",
+      "remaining_blocker": "Track A idle; authorized isolated weight staging/load and frozen failure population",
+      "resolved_revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+      "revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+      "scientific_inference_executed": false,
+      "threshold_tuned_on_failure_population": false,
+      "tokenizer": {
+        "model_max_length": 1000000000000000019884624838656,
+        "tokenizer_class": "DebertaV2Tokenizer",
+        "truncation_side": null
+      },
+      "tokenizer_config.json_accessible": true,
+      "tokenizer_file_http_status": 200,
+      "weights_downloaded": false
+    },
+    {
+      "access_status": "ACCESS_CONFIRMED",
+      "adapter_status": "SYNTHETIC_NATIVE_OUTPUT_MAPPING_VALIDATED; LIVE_LOADING_BLOCKED",
+      "candidate_id": "V2",
+      "config": {
+        "architectures": [
+          "DebertaV2ForSequenceClassification"
+        ],
+        "id2label": {
+          "0": "SAFE",
+          "1": "INJECTION"
+        },
+        "max_position_embeddings": 512,
+        "model_type": "deberta-v2",
+        "num_experts": null,
+        "num_experts_per_tok": null,
+        "torch_dtype": "float32"
+      },
+      "config.json_accessible": true,
+      "decision_mapping": "OR of per-chunk native class-1 argmax, ties benign",
+      "expected_runtime_class": "AutoModelForSequenceClassification / DebertaV2ForSequenceClassification",
+      "file_inventory": [
+        {
+          "lfs_sha256": null,
+          "path": "config.json",
+          "size_bytes": 994
+        },
+        {
+          "lfs_sha256": "6521cb8d0ac08148c81464899c424e6148fcc62befa371089fa4061d8b6e0424",
+          "path": "model.safetensors",
+          "size_bytes": 737719272
+        },
+        {
+          "lfs_sha256": null,
+          "path": "onnx/config.json",
+          "size_bytes": 1014
+        },
+        {
+          "lfs_sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+          "path": "onnx/spm.model",
+          "size_bytes": 2464616
+        },
+        {
+          "lfs_sha256": null,
+          "path": "onnx/tokenizer.json",
+          "size_bytes": 8648886
+        },
+        {
+          "lfs_sha256": null,
+          "path": "onnx/tokenizer_config.json",
+          "size_bytes": 1392
+        },
+        {
+          "lfs_sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+          "path": "spm.model",
+          "size_bytes": 2464616
+        },
+        {
+          "lfs_sha256": null,
+          "path": "tokenizer.json",
+          "size_bytes": 8656744
+        },
+        {
+          "lfs_sha256": null,
+          "path": "tokenizer_config.json",
+          "size_bytes": 1284
+        }
+      ],
+      "final_readiness_state": "V2_READY",
+      "gated": false,
+      "hardware_feasibility": "CPU_ARCHITECTURE_SUPPORTED; modest model relative to total RAM; load feasibility after Track A untested",
+      "license": "apache-2.0",
+      "license_status": "Apache-2.0 in pinned repository metadata",
+      "live_execution_ready": false,
+      "model": "protectai/deberta-v3-base-prompt-injection-v2",
+      "native_weight_artifact_bytes": 737719272,
+      "parameter_count": 184423682,
+      "readiness_scope": "Authenticated access and static adapter/runtime architecture only; no model-load or scientific readiness claim",
+      "remaining_blocker": "Track A idle; authorized isolated weight staging/load and frozen failure population",
+      "resolved_revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+      "revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+      "scientific_inference_executed": false,
+      "threshold_tuned_on_failure_population": false,
+      "tokenizer": {
+        "model_max_length": 1000000000000000019884624838656,
+        "tokenizer_class": "DebertaV2Tokenizer",
+        "truncation_side": null
+      },
+      "tokenizer_config.json_accessible": true,
+      "tokenizer_file_http_status": 200,
+      "weights_downloaded": false
+    },
+    {
+      "access_status": "ACCESS_CONFIRMED",
+      "adapter_status": "SYNTHETIC_NATIVE_OUTPUT_MAPPING_VALIDATED; LIVE_LOADING_BLOCKED",
+      "candidate_id": "V3",
+      "config": {
+        "architectures": [
+          "GraniteMoeForCausalLM"
+        ],
+        "id2label": null,
+        "max_position_embeddings": 131072,
+        "model_type": "granitemoe",
+        "num_experts": null,
+        "num_experts_per_tok": 8,
+        "torch_dtype": "bfloat16"
+      },
+      "config.json_accessible": true,
+      "decision_mapping": "Native built-in jailbreak chat template; first generated Yes/No; deterministic generation; categorical confidence not probability",
+      "expected_runtime_class": "AutoModelForCausalLM / GraniteMoeForCausalLM",
+      "file_inventory": [
+        {
+          "lfs_sha256": null,
+          "path": "config.json",
+          "size_bytes": 891
+        },
+        {
+          "lfs_sha256": null,
+          "path": "generation_config.json",
+          "size_bytes": 132
+        },
+        {
+          "lfs_sha256": "107841cc6253a6ae64b322c385280a1ae471fdd943e9ebde28cf58d4aa0117a0",
+          "path": "model-00001-of-00002.safetensors",
+          "size_bytes": 4998548704
+        },
+        {
+          "lfs_sha256": "e75369b049a6bb1daa989e974db5e27c51907de8c41eec02e6944a949fb9b4cb",
+          "path": "model-00002-of-00002.safetensors",
+          "size_bytes": 1599073464
+        },
+        {
+          "lfs_sha256": null,
+          "path": "tokenizer.json",
+          "size_bytes": 3475806
+        },
+        {
+          "lfs_sha256": null,
+          "path": "tokenizer_config.json",
+          "size_bytes": 17974
+        }
+      ],
+      "final_readiness_state": "V3_NOT_FEASIBLE_CURRENT_MACHINE",
+      "gated": false,
+      "hardware_feasibility": "V3_NOT_FEASIBLE_CURRENT_MACHINE",
+      "license": "apache-2.0",
+      "license_status": "Apache-2.0 in pinned repository metadata",
+      "live_execution_ready": false,
+      "model": "ibm-granite/granite-guardian-3.2-3b-a800m",
+      "native_weight_artifact_bytes": 6597622168,
+      "parameter_count": 3298793472,
+      "readiness_scope": "Authenticated access and static adapter/runtime architecture only; no model-load or scientific readiness claim",
+      "remaining_blocker": "Native BF16 weights exceed currently free VRAM/RAM; inspected PyTorch is CPU-only. Native float32 CPU weights ~13.2GB plus overhead. Needs post-idle native memory/latency assessment or separately authorized supported existing runtime; no quantization/environment change.",
+      "resolved_revision": "3de033d89b499a18d9a573b5192bf3b967ef48c5",
+      "revision": "3de033d89b499a18d9a573b5192bf3b967ef48c5",
+      "scientific_inference_executed": false,
+      "threshold_tuned_on_failure_population": false,
+      "tokenizer": {
+        "model_max_length": 8192,
+        "tokenizer_class": "GPT2Tokenizer",
+        "truncation_side": null
+      },
+      "tokenizer_config.json_accessible": true,
+      "tokenizer_file_http_status": 200,
+      "weights_downloaded": false
+    }
+  ],
+  "packages_changed": false,
+  "prerequisites": "Separate scientific authorization, frozen population and post-Track-A runtime validation required.",
+  "primary_recovery_metric_changed": false,
+  "readiness_verdict": "ACCESS_CONFIRMED_ALL; STATIC_ADAPTERS_READY; V3_CURRENT_RESOURCE_BLOCKER",
+  "threshold_policy_changed": false
+}
