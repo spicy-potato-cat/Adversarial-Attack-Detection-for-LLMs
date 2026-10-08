@@ -1,0 +1,33 @@
+{
+  "artifact_version": "r3_seed_policy_v1",
+  "authoritative_queries": {
+    "D_G": 0,
+    "D_M-B": 0,
+    "D_S": 0
+  },
+  "base_commit": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+  "eligibility": "truth_label=1; inherited lineage nonempty; exactly one OK operational prediction from each frozen detector, all coverage statuses valid; at least one operational ATTACK",
+  "evidence_kind": "PREDECLARATION_ONLY",
+  "insufficient_population": "Use all eligible unique-lineage parents up to 800; freeze actual counts and source quotas before first query; no scoring for eligibility now",
+  "lineage_policy": "Copy inherited lineage_id, source, dataset revision, immediate R1 parent and attack family unchanged; N1 lineage is duplicate grouping, not proof of semantic independence",
+  "maximum_parents": 800,
+  "membership_status": "NOT_MATERIALIZED",
+  "population": "Accepted R1 attack-positive parents only; no protected/final or R2 descendants",
+  "protected_data_access": false,
+  "r2_ds_dependency": false,
+  "r2_ds_outcomes_observed": false,
+  "selection": "Sort sources lexicographically. Within each source sort by SHA256(UTF8(\"R3-ENSEMBLE-001|1701|\" + sample_id)), then sample_id. Round-robin sources until 800 selected or exhaustion; one parent per inherited lineage globally, skip duplicate lineages. No replacement based on outcomes.",
+  "source_sha256": {
+    "artifacts/research_protocol/detector_set_manifest_v1.json": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+    "artifacts/research_protocol/operating_points/selected_thresholds_before_diagnostics_v1.json": "216bf438c4608eb4b39a40ac547b427f4bb1646650b394c5e1b33aa6b7e43324",
+    "artifacts/research_protocol/protocol_patches/exp_protocol_001_patch_001.json": "b76966953f1e2c09cabef9a7dec42a3ad589e6a945ba12890e9836178baa7c50",
+    "artifacts/research_protocol/r1/r1_prediction_manifest_v1.json": "37f89afcc97c8558ae6ded53643a191b7aad97f07385ed6f3ee4e24959c7d644",
+    "artifacts/research_protocol/r1/r1_predictions_v1.csv": "7282aea1e292c9f5bb853eb0473a3e2b34bfd919a6bbfab28bf0892b51acdc0e",
+    "artifacts/research_protocol/r1/r1_sample_manifest_v1.json": "e147b2650f10db6a768701d850dcb57d78222fdda75dd97467a24bf011c5f681",
+    "artifacts/research_protocol/regime_contract_manifest_v1.json": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+    "artifacts/research_protocol/uncertainty/uncertainty_contract_v1.json": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+    "detection_service/research_protocol/r2_dmb_design.py": "60b5c2c8fd2cb976c25fd192092dd143f9d50be7936bf8c4d9db2e6bad212836",
+    "detection_service/research_protocol/r2_dmb_generator.py": "6a59ba6a1163c85d9ebd964f2c90511d4d76004ee31b77e06223f51612ebd592",
+    "detection_service/research_protocol/uncertainty.py": "abec17cb7f963de721401aef141358e32e103a00ee5417379e68c2dfba8c5a1a"
+  }
+}

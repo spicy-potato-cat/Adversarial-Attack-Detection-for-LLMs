@@ -1,0 +1,65 @@
+{
+  "accounting": "Reserve all three individual query slots before calling first stub; attempted failures charged, no retries; strict non-OK abort; no silent benign imputation",
+  "artifact_version": "r3_generator_contract_v1",
+  "authoritative_queries": {
+    "D_G": 0,
+    "D_M-B": 0,
+    "D_S": 0
+  },
+  "base_commit": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+  "cache": "Per-parent exact candidate string; cached access recorded separately and consumes no additional candidate evaluation; no cross-parent reuse",
+  "coverage": "minimum of frozen per-detector analyzed character coverage ends for parent; spans from existing word_spans, complete spans only",
+  "evidence_kind": "PREDECLARATION_ONLY",
+  "generator_revision": "r3_minimax_reversible_v1",
+  "global_operators": [
+    "GLOBAL_ALT_CASE",
+    "GLOBAL_CONFUSABLE_FIRST",
+    "GLOBAL_ZERO_WIDTH_INTERLEAVE",
+    "GLOBAL_DOT_INTERLEAVE"
+  ],
+  "global_stage": "Original parent only, all complete eligible spans; four global transforms; accept only strict objective improvement",
+  "greedy": "At each ranked span evaluate all applicable unique variants; retain lower minimax objective; stop after choosing success at end of group.",
+  "mutation_implementation": "Reuse edit/render/inverse from hash-bound r2_dmb_generator.py",
+  "operators": [
+    "ALT_CASE",
+    "CONFUSABLE_FIRST",
+    "ZERO_WIDTH_INTERLEAVE",
+    "DOT_INTERLEAVE"
+  ],
+  "padding": "Exact PREFIXES and SUFFIXES in hash-bound r2_dmb_design.py; no combined prefix/suffix",
+  "padding_stage": "Evaluate fixed eight paddings on current best; accept only strict objective improvement, ties fixed prefix before suffix then index then candidate hash",
+  "preparation_only": true,
+  "prohibited": [
+    "LLM paraphrase",
+    "translation",
+    "payload deletion",
+    "new instructions",
+    "semantic replacement",
+    "external attack API",
+    "gradient attack"
+  ],
+  "protected_data_access": false,
+  "r2_ds_outcomes_observed": false,
+  "real_detector_loading": false,
+  "saliency": "baseline minimax margin minus x-occluded minimax margin; descending then original offset; top 8. Occlusion is a query-only probe, never terminal.",
+  "source_sha256": {
+    "artifacts/research_protocol/detector_set_manifest_v1.json": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+    "artifacts/research_protocol/operating_points/selected_thresholds_before_diagnostics_v1.json": "216bf438c4608eb4b39a40ac547b427f4bb1646650b394c5e1b33aa6b7e43324",
+    "artifacts/research_protocol/protocol_patches/exp_protocol_001_patch_001.json": "b76966953f1e2c09cabef9a7dec42a3ad589e6a945ba12890e9836178baa7c50",
+    "artifacts/research_protocol/r1/r1_prediction_manifest_v1.json": "37f89afcc97c8558ae6ded53643a191b7aad97f07385ed6f3ee4e24959c7d644",
+    "artifacts/research_protocol/r1/r1_predictions_v1.csv": "7282aea1e292c9f5bb853eb0473a3e2b34bfd919a6bbfab28bf0892b51acdc0e",
+    "artifacts/research_protocol/r1/r1_sample_manifest_v1.json": "e147b2650f10db6a768701d850dcb57d78222fdda75dd97467a24bf011c5f681",
+    "artifacts/research_protocol/regime_contract_manifest_v1.json": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+    "artifacts/research_protocol/uncertainty/uncertainty_contract_v1.json": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+    "detection_service/research_protocol/r2_dmb_design.py": "60b5c2c8fd2cb976c25fd192092dd143f9d50be7936bf8c4d9db2e6bad212836",
+    "detection_service/research_protocol/r2_dmb_generator.py": "6a59ba6a1163c85d9ebd964f2c90511d4d76004ee31b77e06223f51612ebd592",
+    "detection_service/research_protocol/uncertainty.py": "abec17cb7f963de721401aef141358e32e103a00ee5417379e68c2dfba8c5a1a"
+  },
+  "span_selection": "existing evenly_spaced, limit 16",
+  "terminal": "One best valid reversible terminal per parent; exact UTF8 inverse; unchanged parent allowed and counted unsuccessful unless all three benign (ineligible seed)",
+  "tie_break": [
+    "objective",
+    "operator priority",
+    "SHA256 strict UTF8 candidate bytes"
+  ]
+}
