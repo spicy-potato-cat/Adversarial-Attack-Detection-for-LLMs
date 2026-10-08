@@ -1,0 +1,17 @@
+{
+  "status": "DOCUMENTED_PRE_QUERY_FULL_RESTART",
+  "failed_implementation_commit": "e9a659846cb3bbc3db20ed53d734f86ae37b112e",
+  "failed_invocation_directory": "detection_service/outputs/r2-ds-001-loader-failure-v1",
+  "interruption_sha256": "1dec5473426b75da72b836b5d4b6a151b0b05ce20222cc4bb873983ef70844fb",
+  "empty_journal_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "completed_parents": 0,
+  "model_queries": 0,
+  "failure_stage": "TargetOracle construction, before its scoring method is called",
+  "reason": "DS uses model-free semantic.calibration helpers; the broad semantic-package import guard rejected them",
+  "repair": "Preimport the unchanged model-free calibration helper; allow only that exact helper import inside isolation; non-target adapter/prediction and evaluator restrictions remain",
+  "scientific_design_changed": false,
+  "detectors_changed": false,
+  "protocol_patch_changed": false,
+  "partial_runs_merged": false,
+  "basis": "Predeclared restart policy permits a documented deterministic full restart before any accepted terminal artifact"
+}

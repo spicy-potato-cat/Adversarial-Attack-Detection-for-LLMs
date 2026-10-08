@@ -61,5 +61,6 @@ def test_r2_ds_raw_text_not_committed(accepted):
 
 def test_r2_ds_implementation_precedes_generation(accepted):
     stored=p.files.read_json(p.OUT/'r2_ds_generator_manifest_v1.json')
-    assert p.committed(p.ROOT/'detection_service/research_protocol/r2_ds_generate_run.py')==stored['implementation_commit']
+    from detection_service.research_protocol.r2_ds_generate_run import implementation_anchor
+    assert implementation_anchor()==stored['implementation_commit']
     assert p.git('merge-base','--is-ancestor',stored['predeclaration_commit'],stored['implementation_commit'])==b''

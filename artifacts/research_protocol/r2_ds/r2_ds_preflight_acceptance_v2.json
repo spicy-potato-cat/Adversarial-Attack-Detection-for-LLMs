@@ -1,0 +1,37 @@
+{
+  "authoritative_model_queries": 0,
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "implementation_sha256": {
+    "r2_ds_analysis.py": "0ada446a7cc874558d78bee0445361ee6b91be1c807e82f68001cf976ddd6675",
+    "r2_ds_binding.py": "412bf18d6f02e8f6393ab0c792eb3b785f43bc09d7c9122987b86f50c911b80e",
+    "r2_ds_clarification.py": "b96c276309a0a0ff511828f0ab153d11d2b5c8aa49bb7bd43d3f98b118272cc3",
+    "r2_ds_closeout.py": "36ad8536c06378e57633629974a72c90d67a22958b6d1a1c3291f210d5924c3f",
+    "r2_ds_design.py": "16adb08e79eaf220cdcadc28e24a2e07a055c30263d14dc71e34c5f38d4ea9cc",
+    "r2_ds_freeze.py": "327d5b3a9a98e830016a0a9c221e787509422f9ffd7c17fcef92c19752608419",
+    "r2_ds_generate_run.py": "fd3b38b8afdc98f72ed7954cc5261747980f6f12778e01b82ec645e566fde7fe",
+    "r2_ds_generator.py": "63fac0eed6c18d1fe4f076d0d079d87acc5bfb663cc5173dca6e7d33ea135fcf",
+    "r2_ds_predeclare.py": "c8387092b47f1b3e12344c0863729b76ec8ce25646ef543b9d2f1715b8a6e5b4",
+    "r2_ds_report.py": "0e14f5ccdfb4d563bb4a90e5a8e6bfc6f04c2813a6606649f0eea067c2c4eb34",
+    "r2_ds_transfer_run.py": "9d6955a8e5373bb4a9eacdd65af9685dee36130217e9ca5182b3b974bd261dea"
+  },
+  "patch_hash_checks": 262,
+  "release_preservation": {
+    "R1_started": false,
+    "hash_checks": 118,
+    "status": "PASS"
+  },
+  "source_preservation_checks": 503,
+  "status": "PASS",
+  "tests": {
+    "failed": 0,
+    "passed": 84,
+    "receipt_path": "tmp/r2_ds_preflight.xml",
+    "receipt_sha256": "d357e5ce63f21869671e41d8ef657f3a250372f06ae27af1550eec5c4057b72a",
+    "skipped": 0
+  }
+}

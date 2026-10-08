@@ -15,7 +15,7 @@ def run():
     p.require(len(cases)==84 and not any(c.find(tag) is not None for c in cases for tag in ('failure','error','skipped')),'PREFLIGHT_TEST_FAILURE')
     baseline=json.loads(subprocess.check_output([sys.executable,'-B','-m','detection_service.scripts.verify_quality_preservation','--mode','check'],cwd=p.ROOT))
     p.require(baseline['status']=='PASS' and baseline['hash_checks']==96,'BASELINE_FAILURE')
-    p.publish(p.OUT/'r2_ds_preflight_acceptance_v1.json',dict(status='PASS',tests=dict(passed=len(cases),failed=0,skipped=0,
+    p.publish(p.OUT/'r2_ds_preflight_acceptance_v2.json',dict(status='PASS',tests=dict(passed=len(cases),failed=0,skipped=0,
         receipt_path=path.relative_to(p.ROOT).as_posix(),receipt_sha256=p.files.sha(path)),
         baseline_preservation=baseline,release_preservation=check_acceptance(),
         source_preservation_checks=p.preserved(),patch_hash_checks=len(patch.verify_patch()['sha256']),

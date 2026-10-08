@@ -26,6 +26,8 @@ def target_isolation():
         require(self.detector_id==d.DETECTOR_ID,'BLOCKED_R2_TARGET_ISOLATION')
         return predict(self,*args,**kwargs)
     def restricted_import(name,*args,**kwargs):
+        if name=='detection_service.app.detectors.semantic.calibration':
+            return importer(name,*args,**kwargs)
         fromlist=kwargs.get('fromlist',args[2] if len(args)>2 else ()) or ()
         names=[name,*[name+'.'+item for item in fromlist]]
         require(not any(fragment in value for value in names for fragment in ('detectors.semantic','detectors.guard','common_mode','r1_scoring','r1_analysis','r2_ds_transfer','r2_ds_analysis','r2_dmb_transfer')),'BLOCKED_UNTARGETED_GENERATION_IMPORT')
@@ -61,7 +63,7 @@ class TargetOracle:
 
 
 def implementation_anchor():
-    commit=p.committed(p.ROOT/'detection_service/research_protocol/r2_ds_generate_run.py')
+    commit=p.git('log','-1','--format=%H','--','detection_service/research_protocol/r2_ds_generate_run.py').decode().strip()
     for name in ('r2_ds_generator.py','r2_ds_generate_run.py'):
         path=p.ROOT/'detection_service/research_protocol'/name
         require(path.read_bytes()==p.git('show',commit+':'+path.relative_to(p.ROOT).as_posix()),'GENERATOR_IMPLEMENTATION_DRIFT')
@@ -73,8 +75,8 @@ def run():
     from detection_service.research_protocol.release_validation import offline
     require(not p.git('status','--porcelain').decode().strip(),'CLEAN_GENERATOR_START_REQUIRED')
     implementation=implementation_anchor()
-    preflight=p.files.read_json(p.OUT/'r2_ds_preflight_acceptance_v1.json')
-    p.committed(p.OUT/'r2_ds_preflight_acceptance_v1.json')
+    preflight=p.files.read_json(p.OUT/'r2_ds_preflight_acceptance_v2.json')
+    p.committed(p.OUT/'r2_ds_preflight_acceptance_v2.json')
     require(preflight['status']=='PASS' and preflight['authoritative_model_queries']==0,'PREFLIGHT_REQUIRED')
     require(all(p.files.sha(p.ROOT/'detection_service/research_protocol'/name)==value for name,value in preflight['implementation_sha256'].items()),'PREFLIGHT_IMPLEMENTATION_DRIFT')
     require(p.git('rev-parse','HEAD').decode().strip()==implementation,'AUTHORITATIVE_IMPLEMENTATION_HEAD_REQUIRED')
@@ -98,6 +100,8 @@ def run():
     journal=p.PRIVATE/'generation_v1.jsonl'
     require(not journal.exists(),'REFUSE_PARTIAL_RUN_MERGE')
     try:
+        # DS shares these model-free probability helpers; no semantic runtime is loaded.
+        from detection_service.app.detectors.semantic import calibration
         with target_isolation(),offline(),journal.open('xb') as stream:
             oracle=TargetOracle()
             for index,parent in enumerate(seeds,1):
