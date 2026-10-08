@@ -1,0 +1,36 @@
+{
+  "artifact_version": "r2_dmb_freeze_acceptance_v1",
+  "generation_call_counts": {
+    "D_G": 0,
+    "D_M_B": 46360,
+    "D_S": 0,
+    "ensemble": 0
+  },
+  "implementation_commit": "33ef818e37c8a177c7245844f5dbacb529e9f709",
+  "invalid_utf8": 0,
+  "inverse_failed": 0,
+  "inverse_passed": 800,
+  "lineage_count": 97,
+  "max_target_queries": 61,
+  "parents": 800,
+  "payload_deletion_violations": 0,
+  "predeclaration_commit": "5c74a379b51360a4b84993beba546948344405ea",
+  "query_budget_violations": 0,
+  "sha256": {
+    "r2_dmb_blocker_v1.json": "26c28bb4a6715e6e41ecfe048aaf21e67abcddd40f9b95612bc10a89151ac2f6",
+    "r2_dmb_generator_manifest_v1.json": "891c0dd32eddf14cde360b718a50de6c2ae877ff4507e72073a0c682796f9fc5",
+    "r2_dmb_predeclaration_addendum_v1.json": "491724a41fe04f2d555d34e091581b69fe619af60c54b2911e7ad5a31e14e1af",
+    "r2_dmb_predeclaration_v1.json": "6b87558fc2db14ad6d1ff73a707529726d8d466ac64893e05b28e125ce8e7c32",
+    "r2_dmb_regime_manifest_v1.json": "f712bd46110453e5482b7b50386453be666c0ccd01ffbd05bafadcb47a9342c7",
+    "r2_dmb_seed_manifest_v1.json": "499cdcecace3b3b4725afca78aad7ee2bcca9436e297019b80cb947cd128dd56",
+    "r2_dmb_target_results_v1.json": "b20673ff67b8fac3b59b3f1471c8a215a4033f5712ddc943cbc2c7b35481e8f7",
+    "r2_dmb_terminal_manifest_v1.json": "78e19c44a5398329f70fd91079d2972218c5f521716fdabd412e55b48f8a07c3"
+  },
+  "source_counts": {
+    "INJECAGENT_BASE": 400,
+    "LLMAIL_INJECT": 400
+  },
+  "status": "PASS",
+  "terminals": 800,
+  "unique_target_queries": 46360
+}

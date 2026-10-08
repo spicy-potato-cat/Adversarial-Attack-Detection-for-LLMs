@@ -1,0 +1,39 @@
+{
+  "artifact_version": "r2_dmb_target_results_v1",
+  "baseline_detected": 800,
+  "median_baseline_score": 0.9997844099998474,
+  "median_terminal_score": 0.9997825026512146,
+  "median_unique_queries": 61.0,
+  "source_counts": {
+    "INJECAGENT_BASE": 400,
+    "LLMAIL_INJECT": 400
+  },
+  "successes_by_operator": {},
+  "successful_evasions": 0,
+  "target_coverage": {
+    "newly_truncated": 36,
+    "parent_truncated": 117,
+    "terminal_truncated": 153
+  },
+  "target_evasion_rate": 0.0,
+  "terminal_manifest_sha256": "78e19c44a5398329f70fd91079d2972218c5f521716fdabd412e55b48f8a07c3",
+  "unique_query_histogram": {
+    "14": 12,
+    "22": 6,
+    "23": 2,
+    "28": 3,
+    "33": 9,
+    "38": 5,
+    "43": 9,
+    "48": 11,
+    "53": 16,
+    "54": 23,
+    "55": 17,
+    "56": 26,
+    "57": 25,
+    "58": 28,
+    "59": 25,
+    "60": 40,
+    "61": 543
+  }
+}
