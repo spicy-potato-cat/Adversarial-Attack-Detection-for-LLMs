@@ -1,0 +1,292 @@
+{
+  "INJECAGENT_BASE": {
+    "causal_comparison": false,
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer_uncertainty": {
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "VALID_TARGET_ATTEMPTS",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": "D_M-B",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "definition": "All-three misses / successful D_M-B evasions; derived ratio, not a protocol-catalog mutation.",
+      "interval": {
+        "ci_lower": null,
+        "ci_upper": null,
+        "metric_id": "derived_joint_transfer/dm_b_v1/ds_v2_and_dg_v1",
+        "point_estimate": null,
+        "replicates_invalid": 1000,
+        "replicates_requested": 1000,
+        "replicates_valid": 0,
+        "status": "OBSERVED_UNDEFINED"
+      },
+      "plan_sha": "6709f13f0164b8bf339064de4218ab3ea6cc00dbf8030be89ddaa3ad9fea689b"
+    },
+    "lineage_count": 1,
+    "median_baseline_score": 0.9997681379318237,
+    "median_score_reduction": -1.3709068298339844e-06,
+    "median_terminal_score": 0.9997686743736267,
+    "median_unique_queries": 61.0,
+    "most_successful_operator": [],
+    "seed_count": 400,
+    "success_proportion": {
+      "denominator": 400,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 400,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "terminal_selections": 400,
+    "uncertainty": {
+      "alignment_sha": "7c802a9c363937f453e0812ba0cdea5bab3e9ce64ba848d0c900ceb929f56eaf",
+      "bootstrap_domain_lineage_count": 1,
+      "bootstrap_domain_row_count": 400,
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "VALID_TARGET_ATTEMPTS",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": "D_M-B",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+      "decision_view": "OPERATIONAL",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "experiment_id": "EXP-R2-757cd96be6f24cdc3b3d8d3c98d5a6eb1badffe3cbf6ffd3f0782e73b878e69b",
+      "intervals": [
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "target/dm_b_v1/evasion",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": null,
+          "ci_upper": null,
+          "metric_id": "transfer/dm_b_v1/dg_v1/etr",
+          "point_estimate": null,
+          "replicates_invalid": 1000,
+          "replicates_requested": 1000,
+          "replicates_valid": 0,
+          "status": "OBSERVED_UNDEFINED"
+        },
+        {
+          "ci_lower": null,
+          "ci_upper": null,
+          "metric_id": "transfer/dm_b_v1/ds_v2/etr",
+          "point_estimate": null,
+          "replicates_invalid": 1000,
+          "replicates_requested": 1000,
+          "replicates_valid": 0,
+          "status": "OBSERVED_UNDEFINED"
+        }
+      ],
+      "lineage_count": 1,
+      "numpy_version": "2.1.3",
+      "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+      "paired_reference_alignment_sha": null,
+      "plan_sha": "6709f13f0164b8bf339064de4218ab3ea6cc00dbf8030be89ddaa3ad9fea689b",
+      "population_signature": "7dd09cf936e69e6b535e87b38c853115ce4e4aa8737ffdad337e457dc8b5c37d",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "regime_manifest_sha": "6c61b22366c72e31503fda9324d950687e66f26903903c704a1d3f5af46b6646",
+      "result_version": "uncertainty_result_v1",
+      "rng_state_after_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+      "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+      "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+      "unknown_lineage_rows": 0
+    }
+  },
+  "LLMAIL_INJECT": {
+    "causal_comparison": false,
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer_uncertainty": {
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "VALID_TARGET_ATTEMPTS",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": "D_M-B",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "definition": "All-three misses / successful D_M-B evasions; derived ratio, not a protocol-catalog mutation.",
+      "interval": {
+        "ci_lower": null,
+        "ci_upper": null,
+        "metric_id": "derived_joint_transfer/dm_b_v1/ds_v2_and_dg_v1",
+        "point_estimate": null,
+        "replicates_invalid": 1000,
+        "replicates_requested": 1000,
+        "replicates_valid": 0,
+        "status": "OBSERVED_UNDEFINED"
+      },
+      "plan_sha": "739ce8a8bf61ff16c2177856c5388c9c3f9a0730f3ae82e4d852a664612bbb96"
+    },
+    "lineage_count": 96,
+    "median_baseline_score": 0.9998007416725159,
+    "median_score_reduction": 5.4836273193359375e-06,
+    "median_terminal_score": 0.9997945427894592,
+    "median_unique_queries": 61.0,
+    "most_successful_operator": [],
+    "seed_count": 400,
+    "success_proportion": {
+      "denominator": 400,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 400,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "terminal_selections": 400,
+    "uncertainty": {
+      "alignment_sha": "5d057149b1c089a2d06b878ed386ac655b4d42406f4df052bd419d1dd5a9d2bc",
+      "bootstrap_domain_lineage_count": 96,
+      "bootstrap_domain_row_count": 400,
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "VALID_TARGET_ATTEMPTS",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": "D_M-B",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+      "decision_view": "OPERATIONAL",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "experiment_id": "EXP-R2-801069946437d46c40873f6e03bd6e2521f3704653717360543796c2e201c0d3",
+      "intervals": [
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "target/dm_b_v1/evasion",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": null,
+          "ci_upper": null,
+          "metric_id": "transfer/dm_b_v1/dg_v1/etr",
+          "point_estimate": null,
+          "replicates_invalid": 1000,
+          "replicates_requested": 1000,
+          "replicates_valid": 0,
+          "status": "OBSERVED_UNDEFINED"
+        },
+        {
+          "ci_lower": null,
+          "ci_upper": null,
+          "metric_id": "transfer/dm_b_v1/ds_v2/etr",
+          "point_estimate": null,
+          "replicates_invalid": 1000,
+          "replicates_requested": 1000,
+          "replicates_valid": 0,
+          "status": "OBSERVED_UNDEFINED"
+        }
+      ],
+      "lineage_count": 96,
+      "numpy_version": "2.1.3",
+      "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+      "paired_reference_alignment_sha": null,
+      "plan_sha": "739ce8a8bf61ff16c2177856c5388c9c3f9a0730f3ae82e4d852a664612bbb96",
+      "population_signature": "ee8232a07300644d4c20455358253d071e466c97ad97d5499cdcb02ee948afc5",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "regime_manifest_sha": "5246c63cd647eb507a12922207e4c3bd9af352b86b0e7456a1342e1f9206d579",
+      "result_version": "uncertainty_result_v1",
+      "rng_state_after_sha": "2a22a2150fe99c023a903beaf4b71eda870329d4b09513841af698e8454e29fd",
+      "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+      "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+      "unknown_lineage_rows": 0
+    }
+  }
+}

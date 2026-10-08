@@ -1,0 +1,199 @@
+{
+  "alignment_sha": "6c0a22a32f9b093dd5ca16f159a1feb5307a8bc6afc6b83f0055d5e8120550ff",
+  "all_three_fn_count": 0,
+  "all_three_jfn": {
+    "denominator": 800,
+    "numerator": 0,
+    "reason": null,
+    "status": "DEFINED",
+    "value": 0.0
+  },
+  "attack_count": 800,
+  "benign_count": 0,
+  "coverage": {
+    "coverage_rate": 1.0,
+    "expected_predictions": 2400,
+    "missing_decisions": 0,
+    "missing_predictions": 0,
+    "non_ok_predictions": 0,
+    "ok_predictions": 2400,
+    "received_predictions": 2400,
+    "status": "COMPLETE"
+  },
+  "metric_status": "COMPLETE",
+  "pairs": [
+    {
+      "ejf": {
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "fn_jaccard": {
+        "denominator": 41,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "independence_reference": {
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "intersection_count": 0,
+      "jfn": {
+        "denominator": 800,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "left_detector": "ds_v2",
+      "left_fnr": {
+        "denominator": 800,
+        "numerator": 41,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.05125
+      },
+      "right_detector": "dm_b_v1",
+      "right_fnr": {
+        "denominator": 800,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "shared_fn_count": 0,
+      "union_count": 41
+    },
+    {
+      "ejf": {
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0006718750000000023
+      },
+      "fn_jaccard": {
+        "denominator": 771,
+        "numerator": 40,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.05188067444876784
+      },
+      "independence_reference": {
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.049328125
+      },
+      "intersection_count": 40,
+      "jfn": {
+        "denominator": 800,
+        "numerator": 40,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.05
+      },
+      "left_detector": "ds_v2",
+      "left_fnr": {
+        "denominator": 800,
+        "numerator": 41,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.05125
+      },
+      "right_detector": "dg_v1",
+      "right_fnr": {
+        "denominator": 800,
+        "numerator": 770,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.9625
+      },
+      "shared_fn_count": 40,
+      "union_count": 771
+    },
+    {
+      "ejf": {
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "fn_jaccard": {
+        "denominator": 770,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "independence_reference": {
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "intersection_count": 0,
+      "jfn": {
+        "denominator": 800,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "left_detector": "dm_b_v1",
+      "left_fnr": {
+        "denominator": 800,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "right_detector": "dg_v1",
+      "right_fnr": {
+        "denominator": 800,
+        "numerator": 770,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.9625
+      },
+      "shared_fn_count": 0,
+      "union_count": 770
+    }
+  ],
+  "population_count": 800,
+  "provenance": {
+    "decision_view": "OPERATIONAL",
+    "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+    "evidence_kind": "ACCEPTED_METADATA",
+    "experiment_id": "EXP-R2-1fe5df628f5bff806cc1a9b838037c072da3f163d03456c1696424c8952c333a",
+    "explicit_decisions_sha": null,
+    "explicit_provenance_id": null,
+    "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+    "operational_prediction_schema_sha": "3803cbf2f2c5c568894d894ccc51b64b86ff4f4ed2c5fa6a1e06b9d80512d173",
+    "operational_threshold_ids": [
+      "ds_v2_op3_cal_v1",
+      "dm_b_v1_op3_raw_v1",
+      "dg_v1_op3_raw_v1"
+    ],
+    "operational_thresholds": [
+      0.5585373573968287,
+      0.0004967087297700347,
+      0.21291141211986545
+    ],
+    "partition": "INTERNAL_TEST",
+    "prediction_batch_sha": "84f3ca47f4997404dc4a2db29e0f0c6b830dd1db929cd185232b360f792d98ea",
+    "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+    "primary_detector_ids": [
+      "ds_v2",
+      "dm_b_v1",
+      "dg_v1"
+    ],
+    "primary_detector_labels": [
+      "D_S",
+      "D_M-B",
+      "D_G"
+    ],
+    "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+    "regime_manifest_sha": "eba71b4ed09897530f30bb3c3acc01044f1a6bf7046c4605d5686649acd2114f",
+    "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+  },
+  "result_version": "common_mode_metrics_v1"
+}

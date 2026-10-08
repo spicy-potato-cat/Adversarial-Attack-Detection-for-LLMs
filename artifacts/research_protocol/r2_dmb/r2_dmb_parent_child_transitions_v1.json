@@ -1,0 +1,267 @@
+{
+  "by_operator": {
+    "ALT_CASE": {
+      "dg_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      }
+    },
+    "BENIGN_CONTEXT_PADDING": {
+      "dg_v1": {
+        "catch_to_catch": 18,
+        "catch_to_miss": 1,
+        "miss_to_catch": 6,
+        "miss_to_miss": 665
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 690,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 585,
+        "catch_to_miss": 4,
+        "miss_to_catch": 64,
+        "miss_to_miss": 37
+      }
+    },
+    "CONFUSABLE_FIRST": {
+      "dg_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      }
+    },
+    "DOT_INTERLEAVE": {
+      "dg_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      }
+    },
+    "GLOBAL_ALT_CASE": {
+      "dg_v1": {
+        "catch_to_catch": 5,
+        "catch_to_miss": 9,
+        "miss_to_catch": 1,
+        "miss_to_miss": 87
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 102,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 101,
+        "catch_to_miss": 0,
+        "miss_to_catch": 1,
+        "miss_to_miss": 0
+      }
+    },
+    "GLOBAL_CONFUSABLE_FIRST": {
+      "dg_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 1
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 1,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 1,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      }
+    },
+    "GLOBAL_DOT_INTERLEAVE": {
+      "dg_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 3,
+        "miss_to_catch": 0,
+        "miss_to_miss": 2
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 5,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 5,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      }
+    },
+    "GLOBAL_ZERO_WIDTH_INTERLEAVE": {
+      "dg_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 2
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 2,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 2,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      }
+    },
+    "UNCHANGED": {
+      "dg_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      }
+    },
+    "ZERO_WIDTH_INTERLEAVE": {
+      "dg_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 0,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      }
+    }
+  },
+  "by_source": {
+    "INJECAGENT_BASE": {
+      "dg_v1": {
+        "catch_to_catch": 1,
+        "catch_to_miss": 0,
+        "miss_to_catch": 2,
+        "miss_to_miss": 397
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 400,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 311,
+        "catch_to_miss": 3,
+        "miss_to_catch": 50,
+        "miss_to_miss": 36
+      }
+    },
+    "LLMAIL_INJECT": {
+      "dg_v1": {
+        "catch_to_catch": 22,
+        "catch_to_miss": 13,
+        "miss_to_catch": 5,
+        "miss_to_miss": 360
+      },
+      "dm_b_v1": {
+        "catch_to_catch": 400,
+        "catch_to_miss": 0,
+        "miss_to_catch": 0,
+        "miss_to_miss": 0
+      },
+      "ds_v2": {
+        "catch_to_catch": 383,
+        "catch_to_miss": 1,
+        "miss_to_catch": 15,
+        "miss_to_miss": 1
+      }
+    }
+  },
+  "mapping": "One authoritative R1 parent per terminal; same frozen operational policy; descriptive paired transitions, no causal or significance claim.",
+  "overall": {
+    "dg_v1": {
+      "catch_to_catch": 23,
+      "catch_to_miss": 13,
+      "miss_to_catch": 7,
+      "miss_to_miss": 757
+    },
+    "dm_b_v1": {
+      "catch_to_catch": 800,
+      "catch_to_miss": 0,
+      "miss_to_catch": 0,
+      "miss_to_miss": 0
+    },
+    "ds_v2": {
+      "catch_to_catch": 694,
+      "catch_to_miss": 4,
+      "miss_to_catch": 65,
+      "miss_to_miss": 37
+    }
+  }
+}

@@ -1,0 +1,542 @@
+{
+  "ALT_CASE": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": null,
+    "median_score_reduction": null,
+    "median_terminal_score": null,
+    "median_unique_queries": null,
+    "seed_count": 0,
+    "success_proportion": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "terminal_selections": 0
+  },
+  "BENIGN_CONTEXT_PADDING": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": 0.9997794032096863,
+    "median_score_reduction": 8.344650268554688e-07,
+    "median_terminal_score": 0.999778687953949,
+    "median_unique_queries": 61.0,
+    "seed_count": 690,
+    "success_proportion": {
+      "denominator": 690,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 690,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "terminal_selections": 690
+  },
+  "CONFUSABLE_FIRST": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": null,
+    "median_score_reduction": null,
+    "median_terminal_score": null,
+    "median_unique_queries": null,
+    "seed_count": 0,
+    "success_proportion": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "terminal_selections": 0
+  },
+  "DOT_INTERLEAVE": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": null,
+    "median_score_reduction": null,
+    "median_terminal_score": null,
+    "median_unique_queries": null,
+    "seed_count": 0,
+    "success_proportion": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "terminal_selections": 0
+  },
+  "GLOBAL_ALT_CASE": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": 0.9998165965080261,
+    "median_score_reduction": 1.1801719665527344e-05,
+    "median_terminal_score": 0.9998031854629517,
+    "median_unique_queries": 61.0,
+    "seed_count": 102,
+    "success_proportion": {
+      "denominator": 102,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 102,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "terminal_selections": 102
+  },
+  "GLOBAL_CONFUSABLE_FIRST": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": 0.9998069405555725,
+    "median_score_reduction": 6.9141387939453125e-06,
+    "median_terminal_score": 0.9998000264167786,
+    "median_unique_queries": 60,
+    "seed_count": 1,
+    "success_proportion": {
+      "denominator": 1,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 1,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "terminal_selections": 1
+  },
+  "GLOBAL_DOT_INTERLEAVE": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": 0.9998109936714172,
+    "median_score_reduction": 8.821487426757812e-06,
+    "median_terminal_score": 0.9998039603233337,
+    "median_unique_queries": 61,
+    "seed_count": 5,
+    "success_proportion": {
+      "denominator": 5,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 5,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "terminal_selections": 5
+  },
+  "GLOBAL_ZERO_WIDTH_INTERLEAVE": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": 0.9998236000537872,
+    "median_score_reduction": 2.2083520889282227e-05,
+    "median_terminal_score": 0.999801516532898,
+    "median_unique_queries": 61.0,
+    "seed_count": 2,
+    "success_proportion": {
+      "denominator": 2,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 2,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "terminal_selections": 2
+  },
+  "UNCHANGED": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": null,
+    "median_score_reduction": null,
+    "median_terminal_score": null,
+    "median_unique_queries": null,
+    "seed_count": 0,
+    "success_proportion": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "terminal_selections": 0
+  },
+  "ZERO_WIDTH_INTERLEAVE": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_ds": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": null,
+    "median_score_reduction": null,
+    "median_terminal_score": null,
+    "median_unique_queries": null,
+    "seed_count": 0,
+    "success_proportion": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "terminal_selections": 0
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "R3_started": false,
+  "analysis_run_start_commit": "7b83ff6b1da17777657611114085d2656bf7932e",
+  "artifact_version": "r2_dmb_final_acceptance_v1",
+  "attack_design_changed": false,
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "closeout_code_created_after_analysis": true,
+  "closeout_code_sha256": "8da3d25c30a1fe8fc027f807ea7fec2eb5c549973f2e751464dc8d5ca3ab0905",
+  "dmb_decision_mismatches": 0,
+  "dmb_replay_max_delta": 0.0,
+  "freeze_commit": "27d467cc0657d8de3937322cf8913544df2100dd",
+  "generation_untargeted_queries": 0,
+  "generator_implementation_commit": "33ef818e37c8a177c7245844f5dbacb529e9f709",
+  "inverse_passed": 800,
+  "max_per_parent": 61,
+  "models_changed": false,
+  "original_preservation_checks": 252,
+  "patch_hash_checks": 262,
+  "prediction_commit": "7b83ff6b1da17777657611114085d2656bf7932e",
+  "protected_experiments_started": false,
+  "protocol_patch_commit": "7e16bcb828c437d5665b0ebe855b8cb021e0dee2",
+  "protocol_patch_id": "exp_protocol_001_patch_001",
+  "raw_data_committed": false,
+  "release_preservation": {
+    "R1_started": false,
+    "hash_checks": 118,
+    "status": "PASS"
+  },
+  "sha256": {
+    "artifacts/research_protocol/r2_dmb/r2_dmb_analysis_provenance_v1.json": "cd38af3e6495a82bd0c508aa2eff9ffb552a62431a7aaf735ef32ce5a3f8a8b2",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_attack_only_guard_v1.json": "3e95e2a8f4bdc08555a54874638036663b127284d11e7840e6a4500049ad8fdc",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_blocker_v1.json": "26c28bb4a6715e6e41ecfe048aaf21e67abcddd40f9b95612bc10a89151ac2f6",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_common_mode_v1.json": "b097a96a4348f87dab00d9eace0769f570d9f2fdb2092771228fbdda7e56e19c",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_coverage_analysis_v1.json": "85b1f07a21ad63aaecc159e82172897974c745c83dedab2e6d58953bc057a1b6",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_failure_patterns_v1.json": "97a12afad30d958f345f4aec11f559c1b86e10e3dea26a38db1ea87f4777d272",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_freeze_acceptance_v1.json": "cb26bf5985fd45d23cff0c98b2f286bda058359082dbec3be26853adced66c2f",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_generator_manifest_v1.json": "891c0dd32eddf14cde360b718a50de6c2ae877ff4507e72073a0c682796f9fc5",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_operator_analysis_v1.json": "7a1115b85ebeb3ea0cebdbf563c118f1c5f1ae176428caea2bf5ef207734a9d3",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_parent_child_transitions_v1.json": "72ab64f1dc5d554269aeabcb954c66ab59f83ae11187045d317617de793ed744",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_predeclaration_addendum_v1.json": "491724a41fe04f2d555d34e091581b69fe619af60c54b2911e7ad5a31e14e1af",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_predeclaration_v1.json": "6b87558fc2db14ad6d1ff73a707529726d8d466ac64893e05b28e125ce8e7c32",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_prediction_manifest_v1.json": "22598df4ae9470ee7343f1387fb12373cce6c2b1da2e41d51c9c729dbb863368",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_predictions_v1.csv": "a3b642cff928fcb4bc4500703636e73d13b42492042a31e03ddc379f8ebc5e91",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_regime_manifest_v1.json": "f712bd46110453e5482b7b50386453be666c0ccd01ffbd05bafadcb47a9342c7",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_report_binding_v1.json": "d43363b0fc2aa3527ee08e76cfc2c313924a07a1f4567907d9ac422eb08d8dcf",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_result_bundle_v1.json": "6c3b1c02c32faf87bd706cd5774054f9af8f65f22ec390ff42e6322ddc1554ad",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_seed_manifest_v1.json": "499cdcecace3b3b4725afca78aad7ee2bcca9436e297019b80cb947cd128dd56",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_source_analysis_v1.json": "730d1e1658cf6073098f937a3b55bf0bedd5303744a332b3fa0fa89687b2b093",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_target_results_v1.json": "b20673ff67b8fac3b59b3f1471c8a215a4033f5712ddc943cbc2c7b35481e8f7",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_terminal_manifest_v1.json": "78e19c44a5398329f70fd91079d2972218c5f521716fdabd412e55b48f8a07c3",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_transfer_metrics_v1.json": "13e67f6e6cf6f13577e3f09910ea46502c5589604cae8aca619a20eed3a36378",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_uncertainty_v1.json": "aa3f91e401a998fb9c125f9ef260d5ae5d715417893b224ca6c198bb15e28866",
+    "reviews/R2_DMB_TARGETED_EVASION_RESULTS_v2.md": "82e50b7f3791c7747d0284dc667fbbb645ee5603d2ce77efc9a8a6294ae9a74b"
+  },
+  "status": "PASS",
+  "tests": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 954,
+    "prequery_accepted_tests": 931,
+    "receipts": [
+      {
+        "errors": 0,
+        "failures": 0,
+        "path": "tmp/patch001_regression_0.xml",
+        "sha256": "e9a64650c8d2119cafd5f1b15a43f63f1194bba5b5f80622494369c466fa2e2c",
+        "skipped": 0,
+        "tests": 84
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "path": "tmp/patch001_regression_1.xml",
+        "sha256": "0b2d67229af7362032e057ad1a708a81e83694ae17e81c20d44fcac9370029e4",
+        "skipped": 0,
+        "tests": 770
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "path": "tmp/r2_postrun_acceptance.xml",
+        "sha256": "13ea0a487a74f7e4eb067ea1fac319a6b490e487cf02d01bfdcd76ad51a1a4e5",
+        "skipped": 0,
+        "tests": 100
+      }
+    ],
+    "skipped": 0,
+    "total": 954
+  },
+  "thresholds_changed": false,
+  "unique_target_generation_queries": 46360
+}
