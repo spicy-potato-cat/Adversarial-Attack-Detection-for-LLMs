@@ -1,0 +1,108 @@
+{
+  "D_G_generation_queries": 0,
+  "D_M_B_generation_queries": 0,
+  "R2_DG_started": false,
+  "R3_started": false,
+  "all_seed_audit": {
+    "audit_queries": 0,
+    "authoritative_restart_attack_queries": 0,
+    "calibrated_above_tolerance": null,
+    "expected_seeds": 698,
+    "maximum_calibrated_delta": null,
+    "maximum_raw_delta": null,
+    "median_calibrated_delta": null,
+    "median_raw_delta": null,
+    "native_mismatches": null,
+    "operational_mismatches": null,
+    "reason": "First-seed root cause UNKNOWN; authorization Section 13 requires STOP before all-seed audit or restart.",
+    "replayed": 0,
+    "status": "NOT_RUN"
+  },
+  "analysis_result_commit": null,
+  "authoritative_restart_attack_queries": 0,
+  "baseline_audit_queries": 0,
+  "branch": "exp/r2-ds-001",
+  "current_diagnostic_queries": 1,
+  "diagnostic_logical_queries": 1,
+  "diagnostic_sha256": {
+    "ds_baseline_pipeline_comparison_v1.json": "4347b1cdec2eb8daee900c0933f88505ae2707f26541ffa4ae39d0f08d7be22d",
+    "ds_baseline_replay_all_seeds_v1.json": "5d6b71a8267c219edd8fe99be1f222d4226b02c7022ca0cdd5e407744984fe0e",
+    "ds_baseline_replay_first_seed_v1.json": "e65a99c4e74856ce8a3ce6c992a6e8027e0f36622c707eb869f6e69ba19836e5",
+    "ds_query_journal_schema_v1.json": "fc1cd4e65aad551e3165ae0410bf441e9459eba814b76fc95f7bcca778d5fe89"
+  },
+  "diagnostic_unique_model_queries": 1,
+  "ensemble_generation_queries": 0,
+  "final_verdict": "R2_DS_BASELINE_REPLAY_STILL_UNRESOLVED",
+  "first_causal_divergence": "UNKNOWN",
+  "first_diagnostic_code_archive": {
+    "path": "detection_service/outputs/r2-ds-repair-001/diagnostic_query_journal_code_v1.py",
+    "sha256": "7b6f358ed13c2d002f8ec4cdfdb455ed879ad4a63d494cb4cb635fe17e5e27fb"
+  },
+  "first_observed_divergence": "P_RAW_CLASS1_PROBABILITY",
+  "full_generation_journal_wiring_tested_synthetically": true,
+  "generation_resumed": false,
+  "historical_failed_attempt_queries": "UNKNOWN_EXACT_COUNT_BOUNDED_1_TO_61",
+  "journal_durability": "Exclusive new run file, append-only unbuffered JSONL, complete-write loop and os.fsync before post-query gates; separate fsync-backed logical-request ledger for future calls/cache hits.",
+  "journal_schema_sha256": "fc1cd4e65aad551e3165ae0410bf441e9459eba814b76fc95f7bcca778d5fe89",
+  "journal_schema_version": "r2_ds_query_journal_v1",
+  "live_all_seed_audit_passed": false,
+  "packages_changed": false,
+  "preservation": {
+    "Track_B_head": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2",
+    "baseline": {
+      "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+      "hash_checks": 96,
+      "status": "PASS",
+      "tracked_baseline_diff": "EMPTY"
+    },
+    "patch_hash_checks": 262,
+    "prior_ds_artifacts_unchanged": 9,
+    "release": {
+      "R1_started": false,
+      "hash_checks": 118,
+      "status": "PASS"
+    },
+    "source_hash_checks": 503
+  },
+  "primary_root_cause": "UNKNOWN",
+  "protected_evaluation_started": false,
+  "query_journal": {
+    "path": "detection_service/outputs/r2-ds-repair-001/diagnostic_queries_v1.jsonl",
+    "sha256": "5800ae312409d6c8fba35fb5deac60fdea8f2bff258b49807251b67067d78bac"
+  },
+  "repair_code_sha256": {
+    "r2_ds_generate_run.py": "ba296373087bedcf56631aab757d0b2e44e78c0eda73baa83743c7dc069e5fa2",
+    "r2_ds_generator.py": "a198c1c7439c9fe0ccf5070821e6109409c7a9ce90f083dd9e36a5b5bc00dd8b",
+    "r2_ds_query_journal.py": "611b16ba48b1cf56bcc09c2f8980bc3df028038ad9f1ca72a3fb316faf123cd9",
+    "r2_ds_repair_evidence.py": "50ce9265c5259975fdb82b19e92ab583596fa236f0837af1e1a9ebfdedc44070",
+    "r2_ds_repair_report.py": "e797d3e09ad94f354690cf456a3a8a69efc3bffcef7559a07c55fcde5528e6a2",
+    "r2_ds_replay_diagnosis.py": "16b7c807d7586a766a36aa8742a1400e6cacc158dcdf322faa988606a2d08e6c"
+  },
+  "restart_receipt_created": false,
+  "scientific_changes": false,
+  "starting_head": "5f5e6f4b159fb2aa75bec9a3f26360b776e4afc0",
+  "status": "BLOCKED",
+  "terminal_freeze_commit": null,
+  "tests": {
+    "errors": 0,
+    "failed": 0,
+    "note": "The all-seed audit predicate tests use synthetic engineering rows; no real 698-seed audit was run.",
+    "passed": 181,
+    "receipts": [
+      {
+        "passed": 109,
+        "path": "tmp/r2_ds_repair_tests.xml",
+        "sha256": "47c8fb6757f3660e01e87962637b9ea700fd5f5c7fc324c948c002bcb1c9ba20"
+      },
+      {
+        "passed": 72,
+        "path": "tmp/r2_ds_repair_preservation_tests.xml",
+        "sha256": "d49a27a339d3a30e724e0941078065fa49bbcceed27ba1613cfb3acfdf4f1b2a"
+      }
+    ],
+    "skipped": 0
+  },
+  "tolerance_changed": false,
+  "transfer_scoring_commit": null,
+  "verifier_started": false
+}

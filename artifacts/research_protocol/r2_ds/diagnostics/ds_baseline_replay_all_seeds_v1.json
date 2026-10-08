@@ -1,0 +1,15 @@
+{
+  "audit_queries": 0,
+  "authoritative_restart_attack_queries": 0,
+  "calibrated_above_tolerance": null,
+  "expected_seeds": 698,
+  "maximum_calibrated_delta": null,
+  "maximum_raw_delta": null,
+  "median_calibrated_delta": null,
+  "median_raw_delta": null,
+  "native_mismatches": null,
+  "operational_mismatches": null,
+  "reason": "First-seed root cause UNKNOWN; authorization Section 13 requires STOP before all-seed audit or restart.",
+  "replayed": 0,
+  "status": "NOT_RUN"
+}

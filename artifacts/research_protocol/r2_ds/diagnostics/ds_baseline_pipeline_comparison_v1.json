@@ -1,0 +1,42 @@
+{
+  "additional_lm_queries": 0,
+  "environmental_variation_proven": false,
+  "final_verdict": "R2_DS_BASELINE_REPLAY_STILL_UNRESOLVED",
+  "first_causal_divergence": "UNKNOWN_WITHIN_REFERENCE_INFERENCE_OR_FEATURE_PATH",
+  "first_observed_divergence": "P_RAW_CLASS1_PROBABILITY",
+  "generation_allowed": false,
+  "historical_numerical_environment": "NOT_RECORDED_IN_R1_SCORING_MANIFEST; training-package versions match replay, but do not establish R1 process configuration",
+  "live_calibration_reconstruction_delta": 0.0,
+  "primary_root_cause": "UNKNOWN",
+  "r1_calibration_reconstruction_delta": 0.0,
+  "r1_native_journal_sha256": "21f51edf46c4b9b759af160981c9b6faae211d92efc9a210ca10bd53b63ba787",
+  "raw_reconstruction_delta": 0.0,
+  "secondary_contributors": [
+    "Historical R1 intermediate telemetry and exact numerical environment are not retained; this is a diagnostic evidence limitation, not a proven numerical cause."
+  ],
+  "stages": {
+    "A_exact_input_bytes": "MATCH: frozen input file hash, seed text hash, request hash and engine-input hash identical",
+    "B_raw_text_selection": "MATCH: unchanged R1 JSONL text field; validator rejects blank text without changing text",
+    "C_tokenizer_identity": "MATCH_FROZEN_CONFIGURATION",
+    "D_tokenizer_revision": "MATCH_FROZEN_SNAPSHOT_HASHES",
+    "E_token_ids": "LIVE_HASH_RECORDED; R1 IDs not retained, historical IDs only reconstructable from frozen text/tokenizer, not observed",
+    "F_token_count": "MATCH: 101 input tokens and 100 next-token targets",
+    "G_prompt_truncation_and_windows": "MATCH_COUNTS: no truncation; frozen recipe implies one reference chunk [0,101)",
+    "H_reference_revision": "MATCH_FROZEN_REVISION_AND_WEIGHTS",
+    "I_perplexity_inputs": "LIVE_CAPTURED; R1 token-level evidence not retained",
+    "J_sliding_windows": "FROZEN_RECIPE_RECONSTRUCTION: single 100-target window, width128/stride64; R1 window telemetry absent",
+    "K_token_surprisals": "LIVE_CAPTURED; HISTORICAL_NOT_STORED",
+    "L_26_feature_vector": "LIVE_CAPTURED; HISTORICAL_NOT_STORED",
+    "M_feature_order_schema": "MATCH_FROZEN_SCHEMA_AND_CODE",
+    "N_feature_dtype": "LIVE_FLOAT64; frozen implementation specifies float64; historical runtime dtype telemetry absent",
+    "O_lr_coefficients_intercept": "MATCH_FROZEN_MODEL_HASH; float64 byte hashes recorded",
+    "P_raw_probability": "FIRST_OBSERVED_SCORE_DIVERGENCE: causal earlier divergence cannot be localized without R1 intermediates",
+    "Q_raw_log_odds": "RECONSTRUCTED_FROM_EACH_RAW_PROBABILITY: input differs; no different transform observed",
+    "R_clipping": "MATCH_FROZEN_EPSILON_1e-12; neither first-seed raw probability is at clipping boundary",
+    "S_platt_parameters": "MATCH_FROZEN_CALIBRATOR_HASH",
+    "T_calibrated_score": "DIFFERENT_BECAUSE_RAW_INPUT_DIFFERS; frozen formula reconstructs both stored R1 and live calibrated scores",
+    "U_threshold_comparison": "MATCH_NATIVE_AND_OPERATIONAL_DECISIONS; does not waive score tolerance"
+  },
+  "status": "UNRESOLVED",
+  "tolerance_changed": false
+}

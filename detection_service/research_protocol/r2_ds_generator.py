@@ -104,9 +104,16 @@ class QueryCache:
         self.logical_queries+=1
         key=sha(text)
         cached=text in self.cache
+        roles={'BASELINE':'BASELINE_REPLAY','SALIENCY':'SALIENCY_PROBE','GREEDY':'GREEDY_VARIANT','PADDING':'PADDING_VARIANT','GLOBAL':'GLOBAL_VARIANT'}
+        if hasattr(self.oracle,'logical_query'):
+            self.oracle.logical_query(text,roles[stage],cached)
         if not cached:
             require(len(self.cache)<61,'QUERY_BUDGET_EXCEEDED')
-            result=self.oracle(text)
+            if hasattr(self.oracle,'query_with_role'):
+                role=roles[stage]
+                result=self.oracle.query_with_role(text,role)
+            else:
+                result=self.oracle(text)
             require(result['status']=='OK','GENERATION_NON_OK')
             score=result['calibrated_score']
             require(type(score) is float and math.isfinite(score) and 0<=score<=1,'INVALID_CALIBRATED_TARGET_SCORE')

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "r2_ds_query_journal_v1",
+  "type": "object",
+  "required": ["schema_version", "run_id", "query_scope", "seed_sample_id", "query_sequence_number", "query_role", "candidate_id", "candidate_sha256", "candidate_byte_length", "target_detector", "raw_score", "calibrated_score", "status", "operational_decision", "input_tokens", "tokens_analyzed", "truncated", "timestamp"],
+  "properties": {
+    "schema_version": {"const": "r2_ds_query_journal_v1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "query_scope": {"enum": ["CURRENT_DIAGNOSTIC", "BASELINE_AUDIT", "AUTHORITATIVE_GENERATION", "REPLAY_VALIDATION"]},
+    "seed_sample_id": {"type": "string", "minLength": 1},
+    "query_sequence_number": {"type": "integer", "minimum": 1},
+    "query_role": {"enum": ["BASELINE_REPLAY", "SALIENCY_PROBE", "GREEDY_VARIANT", "PADDING_VARIANT", "GLOBAL_VARIANT", "REPLAY_VALIDATION"]},
+    "candidate_id": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "candidate_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "candidate_byte_length": {"type": "integer", "minimum": 0},
+    "target_detector": {"const": "D_S"},
+    "raw_score": {"type": ["number", "null"]},
+    "calibrated_score": {"type": ["number", "null"]},
+    "status": {"type": "string"},
+    "operational_decision": {"enum": [0, 1, null]},
+    "input_tokens": {"type": ["integer", "null"]},
+    "tokens_analyzed": {"type": ["integer", "null"]},
+    "truncated": {"type": ["boolean", "null"]},
+    "timestamp": {"type": "string"}
+  }
+}

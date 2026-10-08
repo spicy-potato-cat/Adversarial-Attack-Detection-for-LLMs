@@ -42,7 +42,11 @@ def target_isolation():
 class TargetOracle:
     detector_id=d.DETECTOR_ID
 
-    def __init__(self):
+    def __init__(self,journal=None):
+        require(journal is not None,'DURABLE_QUERY_JOURNAL_REQUIRED')
+        self.journal=journal
+        self.seed_sample_id=None
+        self.frozen_baseline=None
         from detection_service.research_protocol.ds_runtime import accepted_ds_adapter
         self.adapter=accepted_ds_adapter()
         self.adapter._live=self.adapter._load_live()
@@ -56,8 +60,24 @@ class TargetOracle:
         return max((b for a,b in encoded['offset_mapping'] if b>a),default=0)
 
     def __call__(self,text):
-        row=self.adapter.predict(text,sample_id='R2-PROBE-'+sha(text),truth_label=1)
+        return self.query_with_role(text,'BASELINE_REPLAY')
+
+    def logical_query(self,text,role,cached):
+        self.journal.logical(text,self.seed_sample_id,role,cached)
+        self.logical_request_pending=not cached
+
+    def query_with_role(self,text,role):
+        require(self.seed_sample_id is not None,'SEED_QUERY_BINDING_REQUIRED')
+        pending=getattr(self,'logical_request_pending',False)
+        self.logical_request_pending=False
+        row=self.journal.score(self.adapter,text,self.seed_sample_id,role,logical_already_logged=pending)
         require(row.status=='OK','GENERATION_NON_OK:'+str(row.error_code))
+        if role=='BASELINE_REPLAY':
+            require(self.frozen_baseline is not None,'FROZEN_BASELINE_REQUIRED')
+            from detection_service.research_protocol.r2_ds_repair_evidence import compare
+            delta=compare(self.frozen_baseline,dict(raw_score=row.raw_score,calibrated_score=row.calibrated_score,
+                native_decision=row.native_binary_prediction,operational_decision=int(row.calibrated_score>=d.THRESHOLD)))
+            require(delta['raw_delta']<=1e-12 and delta['calibrated_delta']<=1e-12 and delta['native_match'] and delta['operational_match'],'BASELINE_TARGET_REPLAY_MISMATCH')
         return dict(status=row.status,calibrated_score=row.calibrated_score,input_tokens=row.input_tokens,
             tokens_analyzed=row.tokens_analyzed,truncated=row.truncated)
 
@@ -73,6 +93,10 @@ def implementation_anchor():
 def run():
     os.environ.update(HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',HF_DATASETS_OFFLINE='1')
     from detection_service.research_protocol.release_validation import offline
+    from detection_service.research_protocol.r2_ds_repair_evidence import restart_gate
+    diagnostic=p.files.read_json(p.OUT/'diagnostics/ds_baseline_pipeline_comparison_v1.json')
+    audit=p.files.read_json(p.OUT/'diagnostics/ds_baseline_replay_all_seeds_v1.json')
+    restart_gate(audit,diagnostic['primary_root_cause'],[r['parent_sample_id'] for r in p.parents()],p.parents()[0]['parent_sample_id'])
     require(not p.git('status','--porcelain').decode().strip(),'CLEAN_GENERATOR_START_REQUIRED')
     implementation=implementation_anchor()
     preflight=p.files.read_json(p.OUT/'r2_ds_preflight_acceptance_v2.json')
@@ -103,8 +127,17 @@ def run():
         # DS shares these model-free probability helpers; no semantic runtime is loaded.
         from detection_service.app.detectors.semantic import calibration
         with target_isolation(),offline(),journal.open('xb') as stream:
-            oracle=TargetOracle()
+            from detection_service.research_protocol.r2_ds_query_journal import QueryJournal
+            import csv
+            query_journal=QueryJournal(p.PRIVATE/'query_receipts_v1.jsonl',started,'AUTHORITATIVE_GENERATION')
+            oracle=TargetOracle(query_journal)
+            with (p.R1/'r1_predictions_v1.csv').open(encoding='utf-8',newline='') as source:
+                baseline_rows={r['sample_id']:dict(raw_score=float(r['raw_score']),calibrated_score=float(r['calibrated_score']),
+                    native_decision=int(r['native_binary_prediction']),operational_decision=int(r['operational_binary_prediction']))
+                    for r in csv.DictReader(source) if r['detector_id']==d.DETECTOR_ID}
             for index,parent in enumerate(seeds,1):
+                oracle.seed_sample_id=parent['parent_sample_id']
+                oracle.frozen_baseline=baseline_rows[parent['parent_sample_id']]
                 result=generate(texts[parent['parent_sample_id']],oracle)
                 require(abs(result['baseline']['calibrated_score']-parent['baseline_calibrated_score'])<=1e-12,'BASELINE_TARGET_REPLAY_MISMATCH')
                 require(inverse(result['text'],result['script'])==texts[parent['parent_sample_id']].encode('utf-8'),'INVERSE_FAILURE')
@@ -134,6 +167,7 @@ def run():
                 if index%10==0 or index==1:
                     print(json.dumps(dict(stage='DS_ONLY_GENERATION',completed=index,total=p.count(),
                         successes=sum(t['target_evasion_success'] for t in terminals),unique_queries=sum(t['unique_model_queries'] for t in terminals))),flush=True)
+            query_journal.close()
         p.preserved()
         require(len(terminals)==p.count(),'INCOMPLETE_GENERATION')
         generator=dict(artifact_version='r2_ds_generator_manifest_v1',status='PASS',predeclaration_commit=precommit,
