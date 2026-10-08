@@ -1,0 +1,46 @@
+{
+  "artifact_version": "r2_ds_generator_manifest_v1",
+  "baseline_replay_passed": 698,
+  "baseline_replay_violations": 0,
+  "completed_at": "2026-10-08T21:49:58Z",
+  "completed_at_exact": "2026-10-08T21:49:58.226551+00:00",
+  "completion_acceptance_artifact": "r2_ds_completed_journal_acceptance_v2.json",
+  "design_sha256": "d6be1be6695ccb93893fd0b5e2868f1951202f119d1f8edcb03da083de8f42b4",
+  "generation_call_counts": {
+    "D_G": 0,
+    "D_M_B": 0,
+    "D_S": 36448,
+    "ensemble": 0
+  },
+  "generation_errors": 0,
+  "implementation_commit": "35b88f7fd445e209434e77474862818211c2043c",
+  "invalid_utf8": 0,
+  "inverse_failed": 0,
+  "inverse_passed": 698,
+  "isolation": "Unchanged original-run target isolation and TargetOracle; no non-target generation feedback.",
+  "manifest_validation_completed_at": "2026-10-08T22:05:39.209287+00:00",
+  "max_queries": 60,
+  "orchestration_commit": "bdecf702b09db2a2bdc9447d42e1bc83642c8dfb",
+  "partial_runs_merged": false,
+  "predeclaration_commit": "9a1c4371f9c1c9fc2531fc181a2f046e387b98b2",
+  "private_journal": {
+    "path": "detection_service/outputs/r2-ds-001-authoritative-v2/generation_v2.jsonl",
+    "sha256": "4fad90d4ac321748329505a00ebd11b59fd4d20745964adc08148c116f4bbcf9"
+  },
+  "protocol_prequery_receipt": {
+    "path": "detection_service/outputs/r2-ds-001-authoritative-v2/prequery_receipt_v2.json",
+    "sha256": "0717a4d112f08cc8ba62c3ae381dd8eab35c667b9f9996822aee40a20ff29c1d"
+  },
+  "query_budget_violations": 0,
+  "query_journal": {
+    "logical_path": "detection_service/outputs/r2-ds-001-authoritative-v2/query_receipts_v2_logical.jsonl",
+    "logical_sha256": "78157d00f524ab1b0996ebf31d95c45276747b682fde72f4b841acfc5e2ad441",
+    "path": "detection_service/outputs/r2-ds-001-authoritative-v2/query_receipts_v2.jsonl",
+    "sha256": "5522d0f25e4a7e2df65fbfa9324272652d9ed9db33e895085dac28088a5493c9"
+  },
+  "run_id": "R2-DS-001-AUTHORITATIVE-V2-20261009",
+  "started_at": "2026-10-08T19:03:28.510372+00:00",
+  "status": "PASS",
+  "target_generation_queries": 36448,
+  "total_logical_queries": 37743
+}

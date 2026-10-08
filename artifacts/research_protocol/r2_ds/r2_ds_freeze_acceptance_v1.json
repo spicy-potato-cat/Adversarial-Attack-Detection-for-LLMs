@@ -1,0 +1,45 @@
+{
+  "artifact_version": "r2_ds_freeze_acceptance_v1",
+  "generation_call_counts": {
+    "D_G": 0,
+    "D_M_B": 0,
+    "D_S": 36448,
+    "ensemble": 0
+  },
+  "implementation_commit": "35b88f7fd445e209434e77474862818211c2043c",
+  "invalid_utf8": 0,
+  "inverse_failed": 0,
+  "inverse_passed": 698,
+  "lineage_count": 94,
+  "max_target_queries": 60,
+  "parents": 698,
+  "payload_deletion_violations": 0,
+  "predeclaration_commit": "9a1c4371f9c1c9fc2531fc181a2f046e387b98b2",
+  "query_budget_violations": 0,
+  "sha256": {
+    "ds_numerical_disposition_v1.json": "4c216947dc37b04948894526e32495010352a50d0b94147389218a3081904ffd",
+    "r2_ds_authoritative_restart_receipt_v2.json": "af352b36ace6f6a95022209ace56252130c416d4584aa21c1dadc070fe53ad84",
+    "r2_ds_blocker_report_binding_v1.json": "5fbad8dc7db7aa7b5c8cc0d939bbb19e5a77be8c84d887caaa0958730cc397b9",
+    "r2_ds_blocker_v1.json": "aad4ddf38d6ae4c4b82b1e134d53b27b6f2e885dd99047e85c85d4f91290d73c",
+    "r2_ds_completed_journal_acceptance_v2.json": "1f6ad72771c8b8f0ffa38a8451b7854911211d57a89c7c8f8ea789b6cdc47610",
+    "r2_ds_generator_manifest_v1.json": "6f8579a42ddc3dc156b12009a960d3e0794add245e23079fef5e2b6361ef2b5f",
+    "r2_ds_predeclaration_clarification_v1.json": "be39feef8c3aff989b9d3b6c84ae26a7d96ba6ee29d6d2d297ed6d2cfd57e3fe",
+    "r2_ds_predeclaration_v1.json": "d6be1be6695ccb93893fd0b5e2868f1951202f119d1f8edcb03da083de8f42b4",
+    "r2_ds_preflight_acceptance_v1.json": "8e1245f860c966f049a6ab01a60ca88a2630547def5aa5206cf40e6d22f4dac3",
+    "r2_ds_preflight_acceptance_v2.json": "66f7a135cf29c4e577e97f8aae9eee6d26e5667b3747b42157e88c6b75d260f9",
+    "r2_ds_query_accounting_v2.json": "cecfc2a90ebf8f2905200323989702e7dff7911e3980edd5106da927d9c139b5",
+    "r2_ds_regime_manifest_v1.json": "e0da381531d7790d2c153fc8094dd615446add298f51cf7a0bc3ace7d1c57540",
+    "r2_ds_restart_authorization_v1.json": "76d48be1836f7564d275225ec5eb1ec286177673e5cdc441538f1fef54d91e00",
+    "r2_ds_seed_manifest_v1.json": "469ca9b92dee172e9124fe0d61c5fd6d6e7a22f05ab32f6d180763c95f658492",
+    "r2_ds_target_results_v1.json": "fa301f25b1d6e94a0a7722fca2f4c27da5c9cbd818ffaa0144d5814d2ec66ca9",
+    "r2_ds_terminal_manifest_v1.json": "20359e2cf4d8f7ffd76a3483694fd9fd199bd6a8a125a381fd3af841621c95ef",
+    "r2_ds_track_b_reference_update_v1.json": "44ac713a9f05214162f72ae5f6e6404a8d1988663007b20f59f118ea6cdf6467"
+  },
+  "source_counts": {
+    "INJECAGENT_BASE": 314,
+    "LLMAIL_INJECT": 384
+  },
+  "status": "PASS",
+  "terminals": 698,
+  "unique_target_queries": 36448
+}

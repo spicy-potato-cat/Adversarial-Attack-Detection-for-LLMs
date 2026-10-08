@@ -1,0 +1,4919 @@
+{
+  "baseline_replay_violations": 0,
+  "baseline_replays": 698,
+  "duplicate_terminal_ids": 0,
+  "duplicate_terminal_text_hashes": 0,
+  "forbidden_generation_queries": {
+    "D_G": 0,
+    "D_M_B": 0,
+    "ensemble": 0
+  },
+  "journal": {
+    "logical_path": "detection_service/outputs/r2-ds-001-authoritative-v2/query_receipts_v2_logical.jsonl",
+    "logical_sha256": "78157d00f524ab1b0996ebf31d95c45276747b682fde72f4b841acfc5e2ad441",
+    "path": "detection_service/outputs/r2-ds-001-authoritative-v2/query_receipts_v2.jsonl",
+    "sha256": "5522d0f25e4a7e2df65fbfa9324272652d9ed9db33e895085dac28088a5493c9"
+  },
+  "logical_queries": 37743,
+  "max_calibrated_delta": 0.0,
+  "max_queries_per_seed": 60,
+  "max_raw_delta": 0.0,
+  "roles": {
+    "BASELINE_REPLAY": 698,
+    "GLOBAL_VARIANT": 2344,
+    "GREEDY_VARIANT": 18470,
+    "PADDING_VARIANT": 4800,
+    "SALIENCY_PROBE": 10136
+  },
+  "rows": [
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0010925a66bfbcf27df3b1a726edbea30b29fe5eeddbccce5c62c10525777785"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-00d593cbac0b2241490c747770fdb5e23bca9ed44883f1d1b04c6769d35b0daa"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-011db86d0b5e35ab9493248365ffea861b6c9cd6f85d9b15428811e0044518c9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-01748e706a5f6dfcfd7fcae697c489d1f8bc2339359c9ee00df258ed2f1744e4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-02a35761d571bafebdd339b4f4f14f27e7f010cdca0c2865d9fbde7033dd595a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-04a81a42e6ecc782ae9584ac126a1d6a41a969bace66cd74981529b3c3434db5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 55,
+      "queries": 47,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-04cb6f3f3415ce194697a17393afa34a1df80a0d822cc8c993c963c3dbcdf349"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0868b68e350bf0e85044b2aff46ddde1133960d2f45e2f0263a320216ef57663"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-097d818b588040922ccfbfce533703cc97dd27adcd58b93063652bb774bd6761"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 49,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-09f231c5fd2611d1bdb4efc7f3faef569421c2afbc7d8e0ab4689d458801a0ea"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 13,
+      "queries": 12,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0ad4a951ffe614ec2e2adcc1f98017e0e981f7d0cbc16538e510dc73d7d58f3d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0bc915f4b0cabd2fe5a0f3a862b53f77f712a725222ea9af1f65fbc209a50924"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0c122d4d5ff5cb9326a3bbc5735f49dbefeb8341fc593a5880ccfec20c8fa10a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0dc9a4e3ea6faa33b1f1211173421ec7985619cf09869b60544536d5f02fccd3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0e069d2f60d4f9838ba2c2eda4851cc6c4902315dec6adb8c8695a053d18612e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0e480e44bd7ac972c667418ea9257970aac81645d09d66e694ab117077819fda"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0ea4ba3fe8c236786cd8825af5542de45a14118fda8fa38846aec2e4f4cac97c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 20,
+      "queries": 19,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0ec3b7b333dfa1afba833d10a41af65e27eb0ba3a936ca41ea3fe24c3bea1ae2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0fb2f72abea59e4045865247aaf51cc9f25c7cb4db43329cac82a24df6c457f2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 39,
+      "queries": 36,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-0fb9edb2063ee26c8384c93d48e85c85d2cd8a1a04c6ddc503265857bfc4bd95"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-10ae4ac937f7f525edd0198f19f6b8f262d750b0fb22d40044edef5624841e0c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-10db16b1a217fdea07cc19e80185a26c1af7dbe9abe5e53736d48789caf88aac"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-10ecf5556e0ad9d966d33ca4362b6515d23d4b4f49cc9fdf12efeaf3e08b2177"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-11e358fd31c2e2bbe7defc124225241f0be346bb2c2ef78cfae3705c5bca998b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-129fcb120b6fa2b541beaacda94f04f4c28e0c602ecd1832eafe11ea1e3b79aa"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-1332e1017c07a9bb43557a0776fb85de3e6ba065edd26b8260c6245806348b88"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-134c201951c4708d549e0dc751ef2fd9586e86a24a08fc234c7a414233d25b63"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-1615a818bc036eb2c41603991f82ae22515daa2b9300111dde4bd4f8aa7e961b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-162bb18a09b01969dbe674ff0a5370380ba1c56749cbc1e407b803288921e9be"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-166e48fe4f98f2ca62630d2ef832e7849febcbbcd6aca37f301c634e56249a3d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-19f948306d28ee4a9e20350ef8da2d296c30353651b3033359b79ce2977dfdb6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-1a019e42d663bf2dbf7da1c913974d35d12a877033d79719d64beb75b0f47b6b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-1a81862c329f3d3aebe761ac35fd6d30d07bd0d5094044a531b92e2ffe901bdc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 18,
+      "queries": 17,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-1b9bae8f3412748013a09fab6319d292696aaccb25bfc6e3b6e53bc45da4d7d9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-1cde7453b23e154df5869d4c5052f0d5ffafe189311cb23cb01b8e92e969eebe"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-1e86ddc76eea6e1f598ee80eeaa8b1d1aa13f83e5b976564796a19e5dbf500fe"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-208948d155e37dc2c470130c38763b22eb85ce541820a4f7272357688698b166"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 25,
+      "queries": 24,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-20a01a46f7867d8550ef9a390e0a09e4c3f4740cafbe2955fd52427c586aac95"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-20ba5c9b44c70b3281f41e13f4274571d244ad2a109468a67da386225cde7a6a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 14,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-22015fe2483e382d04c67e7459c2c8012b7eeca8b4ed9b0aa5241a3cdae122d1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-22ce045c1e6b5c1aaffba9a8230e745e8a9f6e1f5b8b5437a9132882232a6f6e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-23088b6be1a9c66cf097a788e3008fc455719545408bebaa13572ffd4872c4a4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 19,
+      "queries": 18,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-24053ec8827f7dcf74a44c112b9ca2c605c1b3f3e38cb1a257c565f952e4f1ff"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-240a553eb89fee5a33a3c0f54b47fb5c01fcf4dafe087a56c1c775739fcdc160"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-26baa870854fdd0df1229adc5a898640b1aa3d025d62cec5229de0b16df30293"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-2787075850ee5d29a6ee71f49db8c2481dfa22c1daf9d831a9092b88bc2c5639"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 45,
+      "queries": 44,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-2bf85355dc6029c3a7a8fb20636ac6482391445af01acf43748ca2419d87d963"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-2c6e9d9751c72a0f00a64ac2c10a3065515ef9e0f2babac0d8e65229c24c1c7b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-2c7448e6ea2b50139471d7cf103032ca5f24b1cf1c1f26ae25c8336bdaacdb0c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-2dfa470884d6cc31220e7170d41319412c8ab1630407aa17b798763243317d8d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-2ed8f16eca9a5c930f029e87b7f2f68f45526fdb6e308ab82ed5c9c488edbfbb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 15,
+      "queries": 14,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-2fada7ab7b97e5888ee695eb6246194744a468244fbe8ac607e01b896a3fe5ad"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3050e479c07807ad8f9b604b4e9f60a83bd2162bbce671800cd8a8687fddf3de"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 32,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-30574afe4b8572c8ea942ad0dd197c44ce4b3a5ffac0327fbccba6653c844786"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3061e3d2fe4a7f9a84c2bbc8096f13a761c13129664094329e094bb935489c35"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 39,
+      "queries": 38,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-30f64f0863361b39745d251ee30a26cbfbae98529aab860d014bfd0ff53cba16"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 25,
+      "queries": 24,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-314685cf1a2a7b90838d21e8d64c11431f7f2f9d75487afdbf317fc1fd7bd9a3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-31574de3351241fcc5a55875894b494dfac9dc508966f93a27718333067d8d29"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-32333ca7469cb7dacebebcb45aacc0be2ec38a774de9e2c3aa6c42184c60e52d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 17,
+      "queries": 16,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-32ae2a36b4b5bd2db3313a7ea5401f69bb3aefe633f55fbb978068bb0a06e586"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-33a7a6e21f152f882fb1a8d90a1a5af2b6baf36a4235d01f015142d249fc872c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-347828e7c6839287771ea8601fb9511c1dcb3186aa70c938604858671892a433"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 23,
+      "queries": 21,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-383c1ef713acba1ea2b40d0887d66caa3130d31eb6e50bc3b2acc6d376327d19"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-38dfbe981f73440ab7231e28da819295cec39c0dac7412da7c60cb772fa0d22e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-39d6887a0342b604dbce4d6ad67543b272c1733ec7a107dcc1ce0badcaadd138"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3aef469effadfb1e154f8daf358cbf47bc4935ab22480f593afcdb80e44ae716"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 43,
+      "queries": 42,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3b248ff447d554a1be04dd47205427748eb19ba697a073459347e0c4c4200976"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3b9c9f1282ccf66ac3f7a1ed4c8791e518e974c6b3f05400e44b1e3fb7d11a82"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3c0434fc3df303febaf63746eb501f438b6172ef5c8097a29daecb03d9ac9560"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 17,
+      "queries": 16,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3c4e0bb81210b9238237514708cfa999a61477a6f77be2dbfe71b5c481134e04"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3e1b9881ba78c27fbb5d369122bc592ae5ba33b11b72089e4dd5bc69e82973fa"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3f2ee13e5a944b5a4825c311765c93405aa93a50df09c3d1bf0f6f4a0a45fb02"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3f51561478a5565ef7287d85016f9b241d200e05bc323c2a6380c0d2856a59d3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3f776cc4b1642e5669baebad9079fe7188fb1822117d144dfd7cb8ab294a4629"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-3fe527f3fe98d4bebcbd72c4204c3ae60965b0f2a85cba537e37b14f415ecf63"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-40ca070042a6e80df05273916b2ef741f8f09f674e9b09d2b0d36e543b29a904"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4190353235f364d2b44bcda634d3750d92cdc1542868eb7dbb886c5b3332be08"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 25,
+      "queries": 24,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-425631488b8a511b9e524bd67c41d5c1b212b06daf8c80dd081cb346a6a4556f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-42bf1a7cdb3dca8523bf3a9133e74f0434ad9251a7a86c83558ffeb2d75b7692"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-432f373a2e6cb94227ebe2fbce26e72cd42ebccd743db9444b79899ddfd9c9e9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-454b21439f125bc7318ec6c49a32b8405aca189f572b9415bfe33c3c652aef52"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4572b406f50b2519bdd435c3c50b99fc1e84fef44ef528e1497b4e6f9e10ed95"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 29,
+      "queries": 28,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-45d41e32f318826cddddaa0dc75d549c11f877adbaa58e24ed89d40f811cef16"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4694afb1a594078ebf97d2c6801c09a2cf711e6630297bad40f1ccb858bdbdad"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 56,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-47782c4b7d499e30fcc09682b79740e81316fde1d8477d47f26d4f969bba260c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4782fb57335668c1408eac39d307f3626cf3986b004637046045bca0028eaf26"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-48d4a14eed96ba073a5043252c20d93542cf6388cc20eedaf61a202ae8f87ebd"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-49e2c0932de36e16ac3cce7c49c2332f4c5cdd9af54db048e0a38471281792e5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 19,
+      "queries": 18,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4a3a8e3451ebc59e6fff751c0fdaa3f2e89dc1c5175d52e586e780378d57c9f9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4ae09361c65a9e3448ced69354d84d5d7d730de0f7ef2e9e0255a12c0e5d9236"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4b3543fa89c381ab3af57d89f1dae29b4cb5a977d010b28a0d02e85f1d280fe4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 30,
+      "queries": 29,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4b6a0937bcc4584bb9faae3231d8ce2c2bb551e59e70f7cdf0693e53a0c9fecb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4d229a24bfe2153239befecb631041d598709c9d92f35e6a56df15a4fba74134"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4d898e5fdcea7c768f223a5b613d6647a84a8e69427356bf236ac8d159f74591"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4de9fbb7eb46c0f3e9205ec4340707a6cd277b0cc83fd2bc6b629518f6950d87"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 56,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4e6ec86b5656995b1569a695a33fd1f460b10727966a2cbe3afd28f894be97b8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4ec62c54ddd627182f972ed8a93aa46f7166dc611107613dda753cd6ef04b3cb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4eeba6420f77ae9f0ef489b5c1f488fb54562505da3e6bd87ea98d0282c00be3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-4fba1181cf7c1376fa2995d48b03c32bf76f2286461d302a10fff1f3b856fe23"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-50b1eae053ddb37c4551736d6dace0102360b33da37c99d4362b74149635650c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-512607eca8d638fa42456939f970059a264eaff34006201b20dcfd3bf9e43f9f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-532f2ecc78bd8e47001a7e3f947309db7f132319122843ecada27eb0dc32edcc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 24,
+      "queries": 23,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-53eb09283248311c7532316c9c75ba144724b74adb6fa3342f0399fe20a7e138"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-54fdd44b68457209a7063b095a5bab1f4b82f804b1688facafa484fbba90656a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-558c4c26b2bf01c2a583378fea89ddb7f4d016f0dacb58a32dcb370ffff28e2e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 45,
+      "queries": 38,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-56956e459864d75a7d63263e5e6223008ee37c4d9ce7a6de7327b09eb5abcc6f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5721c6e437f55e90001e0e31b6ca9e963264a45082982f3923eaa9533aa44b8e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-575d4c2fafc6868f7e16c9bdf9d21f0651c4e5d9cb7ac2f89e347010a55ff11d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5835733da5e9bceb26beebad4915d92c8e307b671e21889afca02ec1a7cb336c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-587bc6b2f0ae452e40262f4bf3d35643a9f979259655452535d835479bc2e9f3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 20,
+      "queries": 19,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-589cf2175f1a37da4011a2b6086dd545d0c1861b29cf2ab0e64aa80dc8e74efb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-58c17fd50758db8a1a7bbfb086b5f04a69f770431c6848468b8b637ebe630c28"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5b9df093f618292a28ab8989eff7db89216f3fc108f7a1f9b9e57d73e6124485"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5c8e36e227342a754f902b5036e2f483c6be94c162adb6d32f5a6432260feda9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 25,
+      "queries": 24,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5d1f2240f58b71040912d1bddd81b4352ae451241c6bf90c3b86e6e4a4db268e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5d562d91b5439d98c29e64b8be75759fc7ea75a2b12ae50ecba59fdb3f2be92d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5da6950685ba1ae728b3e44c3bbe7e60605a0f0b304004a6ce85287bdab65022"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5e71dbf337bbcd3b4e371b373f1f048cb2260e286f7c7b9b509745d2ab4d6ab6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 17,
+      "queries": 16,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5f3f14ea3561deca04670dd15ac77d075c3e02fb93f38d478a3717bf06a10fea"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5f633796fcf2d53c68d67daf25018130b66a986842389caba234e4437ed86e56"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5f86c903e3087204b3f4b91186ae3723e8d1d4920dd1b07301e26a14aed78076"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-5fac251b2abb45b1c0463cfc384f50dd407da3d5b8dc3895e58695ef6f91a2d2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-6095262e868810d3c964dcf760b9998aaa4bd57ddb3e5bb790b5fe3e555a08d6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-61c9897e68f5efeaf544ffbb3e501ded1c6f2e4e1a9fa9ffffd0a5f94d1783d2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-61fb8a31ed50e47f4c75f38f071af33e6bc4e4089f2993d5e56c11af6ddb1ae5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-633457ded7824e1a7124d1ff66fedee934faab230d3fdfd04d43910f0c3b7e72"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-643d5a5a14802c78bd9688a10217389f760b794ea2a8a873341a1e80e6488e52"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-648d4c383f1cac1db441df189326b7d2b6a5eb9a45dd79e7133a2d9fa2415a2f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-6640dc3c9cac5eb4a57bc254cfd63dfe2f2cbbaf048dc3315634868b473fb7ba"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-66cc9335a7c860430c335cb4949741a5ce4cb83be286c3506333c3bcf67dc58f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 14,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-66f333c26f8c7daa7a222a8b3692a8742231bf11faf30dc3e795e5ea72ceb630"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-6719da33a796a67683cff65c92a2a354d567b2fd880c2979f57c34cc9d0be8f4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-67c413639e8c80c096a7b1d0a3e1dfd69fcc946d92033b600c496b5bf1bc1cc3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-68a98bc7c198a3c09109a24c518914ac958a9ba431819097e36f67d5376acc72"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-68dad937265ef8e15de6c292eab4a27b71b76aa29aa0b8dc90bfa83eae68ac99"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-69c728ff626c1ac5577cb6e5e3c5ce9c203dc89271aab80068099883c56c2e1e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-6d0653f75b04adbab50dcc642d0caba4bfff7973c99a2bc0aca7d597820972b5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-6dd78e5786327fcbca9fe35da98d1964652618d962822bf8bf378c75fa0cba71"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 56,
+      "queries": 48,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-6febc6047defb1e8d85263609f74d9cc21ee314cb432e36c149c3d7397396f94"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-6ff67059ddbec6d5971fb8ac916ffc40c5adeb6a3e608463de8f4558e863f454"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-729f7b5e45923a93c0d4d6a714338fa80f6c5379a379f98de76d2591c477d8f6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-732643980ba194d85401e023c286b651938110847d7327932751f33aa81cbfb7"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-7330b8590f0663e21de9676231dba756e9149d025c91808f49871b7f3dfc4f55"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-737eb2a75d47d843e38f89dc9089f92bc0425212774cb22057ab02fb146085a0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 49,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-73ee2e10c14a5ffb5fcf5ba8cbf080ebd675d3f4d80244b1e1ff7a9c723cd711"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-764dc1dfe10bfee122390fc13e058b4520bca719bfc837b47810ddbdbac51920"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 36,
+      "queries": 35,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-76ac310e38c10be357c2cddabfce7cf6eed12cb66ca16dba83b946ed1fe31494"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-78770d623cf0f0d8de163eb96dd203fc2b57ef7598580fae83101ea33308ce53"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-78d38579a639751f08839fe1c356d15604b82883c2519a76ccf22ee7dd95335a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 48,
+      "queries": 47,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-796aaf40990738972febf705e5e580dff274e0ed8e521f1e4e7f0699e129701a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 28,
+      "queries": 27,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-7aea586529d6d6da7c4b583877f809c8e400b145c47d48451fb6b62b2a3c4d4d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 24,
+      "queries": 23,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-7bfd752e942391d6507b42a560532b13494f127a93c2fd74f83d4a4406d94289"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-7d311c396e6906cd678131c783fa11ba9d715efde88f7d70dba9b2e86a0d7699"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-7e7ab7acbac6c94d766cc9f8a46d2bada6da99820d450f1bac789a028498fb99"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 17,
+      "queries": 16,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-7e83b6e0c1b8b7922cdf04b0ddc48a1450317a8756e733c2a34eb729dcfb822f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-7fa37e049aaf1c79e71fe4386972aeb6a760b481c4f9374d41eee38802f9d299"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 14,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-80179193bd5d497beb93accb5a1979215293f4006ade67fdcde109b168910d2d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-821bbb3fbe172bdbcd55f9ac5e8d3d9e8d19650b1743f5a0037c4530990df8f9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-827970b22ea5455460a869a73fdb001f6def95d9de751ce97b5fcaf0c2cb02e1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-83c6f3c15d3f731015698ac797551551eb66d466055785de0b25e533cf746ff0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 37,
+      "queries": 36,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-8410cdfaaa492b3ea0d8b6dcde25a994f82120ac01e11dbfbef688ebfad81379"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-84587013e1ff4c0f1310cc7abdb1ddc3fb73707c97f99181566f37f74243096c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-86a9c8d452d0e540623afec4f6a420b7b695ecb950d4c3485bb145db48dd9f20"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-87d28f01bc144d98b2a423e380618473e1d04639530f545a3d497018f4b77a92"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-88ef13ddbd0fe2bc072003d32c1f13ecbfed663c07a932c49de18f6eee7aeeda"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-8a52de0dcd1fb9183c08349947e98bc7ced5ca02342b17251aa4bbb60de45af2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-8abfe01ec932ca1b2e4863965baf1f5942e19795a27d01a61e0e74560d41b0c5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 20,
+      "queries": 19,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-8b078c1d5a06c3338dea68bda05f2484da80b86dc9ba013feb87d1d5bc520221"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-8c76493ff3e8efee2d2c53061f2cc3a1957cf01a2583fa3c974b37ff45a53adc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-8ce501f3df0d05faab1de57fbd3142af09ba01be4a2cff2bc24f5dc35e5a722a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-8ce91c60eb414bcfbd49578e9681eec3924357027d61c6bbce64c94e0e6e972c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-8e4969924f671c0444a151b8477d7c1c8c0f442949a01e53a3f676d44e582213"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-8eab321d16481c0505d7f7413485abd9fb5f5ec784c4714b130e20cd88f6de3d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-8fa9f347b6a807e9e125d8afe34599577ed9305c0d5c0c370f0e8b58659b609d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-9163eb01677561cc534c37b9bc47f8d1101e3d401a8e15b0c45523a23f86e986"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-93eaa11dac8ebb1ec4753f96a22684b0382c4f0fb15e0ac10b967ce51d810fd4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-950061ed5b917f27356258df3d4111bc2eefd048c6b5f361901c08bc11129090"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-987fa28e4c1804f789b80ea4f119a98c4f1db5d8c1b2baaf6d0d94403441cc1e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-997c75e99e456d93b4f1d8ca7aff4481e734fe4ad95b2d90c4ea9c6da30a7376"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 16,
+      "queries": 15,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-99834bb2445d3f362fad45765d9014647aece8cf5b8d33df8f0cab95527620e3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-9afceea87ddaa976bcae14416730b86d9844f3aae200e50e46e831991d75b5fc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-9b67491e944dcbfe82989751a87e4d720e35d3dd70690f8c80afdc37b4fe825e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-9d7c094c87ff2f69dda716d639b758a7ccc27feb6bbb3e1e10b036ec408bb5cb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-9d87d5f5d7e641e3c01efb19e9e056ed5cdb8c7cfa924de9dd6d740d899692d5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-9dec6b884a0bb2e8e69913ff87f1da3dc01c7635ab689a42caf6ba020e1ebc14"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-9e8778a02304dd61299db2b336237805e077210cc2f0c1502b8a08235721280d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-a0d3299c81c7b8b28d6b884396b11366ff707ba87966b542dbc8a7a96492b6cc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-a1bd5266565ce5338a22fbee864b1ef5d744442010e41e5527345bb38c0bd6b6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-a3b4b19f0ae7a5b49b9af5185457e2c2698350e5d7bde0737ad962018e326327"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-a430f99bc08074e38a58106cf83c83be79abd956782408e74d556719be4b6673"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-a43b484a62196f4781734348c258407813e41db1969a615e97deec4dd95eadf5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 35,
+      "queries": 34,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-a65ffff41c405d04314dbc52dedb78460d410edd8968699fda2360ddaacb3571"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-a874acf16e638e82a622610b41b8b90896ac14d5bd3b5d122363227a0cde8744"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-a89ee4a67fbfc5438a0bd37781b995dfb333141c5e0fe0c74948f40d88106a38"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 20,
+      "queries": 19,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-a975a2bbc004bb08559cc9a45e75755384e3937648a4daad718b2205bfd1a2e8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-abb1ff39fbf201cd5f6db912e2a9e6ce021930c14b656b9b32d2e367ec79f5ae"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ac78eb4542f3507f25af8065dbca7edaeac33adbd035b2883c23cdcf7a1c9254"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ad4ca71728bc18b0ebadeb878f2670371c0cdc8744f25999bd8a434c173bad43"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ad54aff36a2d65fcee44194895670cbc7d556150f2f2e995f9300c3847fb4b5b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ad6c2c931cb07a1357f3db2ca4bfc04c2d287b19eec0b07b0a5addbc11850d1a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 20,
+      "queries": 19,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-aea1af54a255412aa2c2e1e907de7ffe50d807e3a0a7ad3821fbb3fbb06f9c50"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 55,
+      "queries": 54,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b157f875b77dfcf326e34e4412ed01a0fdbee0a37b61153135e94146da0be46a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b1fdc439bded79f73b95d3c7f7dbc198544294e2ec91670ff5e392b65872d85f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b35aed1a77302722134cdce692c3c2e3e0f30ec2d099eac6ed6579c56e575a46"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b4970f99e2161b63a9d78feb6163d869a28bff8daa7873b7d91a76316f384d76"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b4be713d34186232e612f872decbdfd81fd4e166741a98f2e10a1d5cbaec5d72"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 25,
+      "queries": 24,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b4c0e4f777f99e9056b4f7fd622d40d1bb6db75af7f52bd5a87d891bb5169f17"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b59b9a174347c81925dca32dd18a94287be2b3c49f459f2f330cd339174b0b4f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b5d9b2bcf109037f4c765bbc5c4c59a92d704d6c6e935183dbfc9f6d4db5b91c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b68264e7e1725348e38bbcc6e2ff391b9d51e65144557edf99870b6fa2f93cb5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b81324589b7e8c323c0eb994222d45e61b8de3a0334b72010ab79da8888117c4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 48,
+      "queries": 46,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b859035ddadbecb2ca30e5e4099c08954f5d587eec559fe809d52a9d2554f27e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 55,
+      "queries": 54,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b919567379af9768956acb927dfb90f0c062bc5e76106ee88542949e34c4ba8e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-b9ac913532cd2066aa11103a450a4dae042f7e3aed059e901a7e6ea7ab11e7c5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ba1f6fa82b2d60d9b54774b898fdad52336559532d94e8e1d01431413ee065cf"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-baabec555e9ed33c7f846a26c240eb37a618010da55cd730beb1d0b6df4c9916"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 16,
+      "queries": 15,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-bd360ffe8df19beed5b4be380973e00b68912cae998242a024374b057aeda856"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-bf2d3d248dc030cc9afa8fe3222efb5c6bf94a9583030fa6dc4aeffbb506f085"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-bf5dddbf5666b5673ab7b7d6e71aa8f6fa5d80e35dd0ece0de54fb4eb56de8bf"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-bf9ccadd3b573ea76a774435561a54775f4fe0bb3f64d63120a49530fabd3f8a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c03f8a6244e95110e5ffc3090aa9400d3e039a87bb129974010ed8f39c49645f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c0e9f0aab4dbfb1fa7004fbfaea4cda2134c5e914d35ae00596509aa0447f537"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c13697b80e992fe3fa980678a00689b222d5b76215595e6b839cf1223b37818d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c137210eae1399aebdc880b0f639f1f481ca7e6733ad47393834a63743290eaa"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c13f01fc8ac2552d04f5831c5f67f02394e15d3175a24604d772e90435058c35"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 53,
+      "queries": 52,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c1dbc44dde16c61d9e50aa04911392140b9b0494dc674107dfdae67d7e83c2b0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c2548000c68f61917e2036bd2c5aaaed56f60d7936bfc1a7fc2ef968e0890c43"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c3a710383112c579484e3682428d0b73244a009f17d916455e3c6af7556caf5b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c441e61a6d272218d4e3e83364fb7c09a61ca32c7f5ef7a2cd6d05aa657db185"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 45,
+      "queries": 44,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c4a6f1b55c129ea71285838d6638279d6fd0769e6e1fc92c47a17e764c55b560"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c4ba0ef68b1afe2a17aa6bcfd81e361501bbc1ba6016363e4c89324227db2f0d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c5d2ab8632b76b9be266d7e313d25362e01fe0ef4e0d7cb97a8d5226d8f3ddcf"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c63c08c2f78471b854551a803a4acb666d671988a302fa13a4e5b1408e7028be"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 29,
+      "queries": 26,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c72e48959e8d24626e6cc7322431abc03a21eef0abe99c44ec0224d05c0e7a5c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c838a43cb8ecb53a4086ca1b176681e58d0ac2730eb847bc0a8e1216ae51f0ca"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 29,
+      "queries": 28,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c87fc54d9e359d2ebcbcd95ae0c81b4d8c04c7839550e2f089d67f8a53a7d6fc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c8a9eda699cafbe8441cb3ac7b246e524e06be0fdd0b061d27938852dac99b87"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c8fa592c7ba7d1de5ef64bf12e25e0aeb0c57048deadb50dec8c6d0978c5c671"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 46,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c93fdfad5c21d8a4488704f2c2d6f5a3db89be19d6734e814ab4193d477ad856"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-c998633c84d01b69595f1d30655d92bb46d236e90fd5afc9edac1d336f9575cc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ca6c6b7d6533d2138e4cbcb422f547706b75fd8b2f46671b949b0cbbed57f2a3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-cbabd02ab6df8998c5a605d57cf1f3fa1d539e804833e881c3d752ab5dea90db"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 14,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-cc3b107c078d86f84f1f0f83d1e10b40ac75823bf8f0d8550b7c706e37496301"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-cc7273b0c050de707bee490b7f7a6cb78538afeea77412fdd9fe7fdb937611b7"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-cd7921d2f904e86c558d1f6bdf017fd90280861ee02ae6e376c905a8476bf780"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ce60f0bd723ce9e3d04eeed0940fbf9c89ac89b9f23935d67528b865223c89e4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ceb44d436daef18064271f2adeeabf503936eb3be10a5aa7b85e56c7b05d8d40"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-cee1f4bbcc14ab20e7a2dc23315244e9df7db5985631728cb44f8883233e64a8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 47,
+      "queries": 46,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-cf7c8f0716d499a4b3dec9bf42ef3441e200f0ed779eff123a0ea4d952c12834"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-cf7cfa4f4a692ad5e155c6c5f6af42d4405f79230c357a82fe46fda9c631fde2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d02c41647ac317af3a729eaf42d76928cf7b5514f127ca963bb5420dae781d9d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d1eda24fce73f51b5561bb33409a7cacad4e77e9bc853322e23784cfa4ecb822"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 53,
+      "queries": 51,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d277a3d2238100a25b429be002bff664dafecdf1831675a8461a8cd3f6ac4b7e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d2813d52a1a7df80404e635d422226628bda072b0394762087064cdfacb2eeff"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 19,
+      "queries": 18,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d331598976b2d7cfd387ea475df91c81bbfe1af002a569ff9953c9ee54b1b73f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d3fce271ce96efddc148e1852856a585283677e6e66cc21290d8c68f8813a46b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d4b3a4e78f81dfca0c6414191763c3af70cce701a5b33e220a3f7967a28154bb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d5eb411f2975a5f7835fbda4acdd92a66d11b82a845b1ae68fdabedb26a66af0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d646b19e5737ba064b5b972f4a11bbf751b9470b89fed8d2bf49d6bd2dd3e66b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d85becbcfea82109930fef094bcd51be1c6b2f91db7c552880ab639756b84e4a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 17,
+      "queries": 16,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d889d59333f171513daf8d1d2241861951200b46723166c7cbf9ff8e74db024a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-d8ca947c639e8734ef35617cbc7cd9bd9054930ee36160db1bfd31e8838c13ca"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-da4a83654128515ca1d63bd8100a19c49871fdf17e6e4d363ad063f0c877a5b0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-da5bcc341db227ed28d967fa031d75849f1796442ba694c48daed81e14d70648"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-db8270da474acfdeb8a5e472a964e67ce6233993d30a625ca66367d7a866cf2a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-dbbc1b46369e244799cb581223a89b17ddef60afb51f2e479363f6af6b236a26"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-dc00f32faf11705769bae5926d09ed1177faa095c6508c0b47ca2766d3e2b0d0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-dd52e0a75cda43154c953ec5e6786e553fa1d36f02dc4e3e73c94040eb0d9343"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 35,
+      "queries": 34,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ddbe9874813738049496a595d726235f54754331bf1a6f6e2c00ae1ed5152db8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-de3650d48452f272171b709d8663f925ee3bbc4047c1217810d8206192802a09"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-de4971e5098eb153dee7c45459579896a451dc1907f54d95ad65096de8d0ba23"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-de90bf111b8fb036b16865f995cc783970107ac1157cf647e111499436506a23"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 56,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-df27382738996811dbff2ebdc8fb5878a5782de899bd7e2150a433e72f88a96c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-dfa5279c281336af36e57a941e6f0a2ac64e6e3bf9a5b98b9885a7bde43451e1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-dfc52a4fc69b44092fa7a4b4a6016356dfddcd7ad1fb0bd0a01d8a32701538dc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-dfcbeacd112c90a74c7cb26eb016af52c5563a674bdbd98f6f7b0b1fb6f4d422"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e07fec0abb4d1ffffcd6ff1126fbb08257173ed5441b451ce2ef89985af58ee1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e1ae2e4d5a8af87b6c9ef10f5fdb173051a5133db19b6676a650cc5c4fc4e34f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 37,
+      "queries": 36,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e2362d6d407d01c23701efa7b0950c8b11cba7e3d92a122a754e514f47f44b54"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e43727123905a62539e3f60c5d590659ed64f486c8871fa3038518e9679a4418"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e4541040dcb077c00ea1acd921736f3525cdc502066771d5f0e62d37043154af"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e4a01cac2fc9175517d6d14477a382b3cf95b60f96db069a51675aad6e323ac3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e574cfbd469279f6adbd666c7bd41e9225f476639d7bbba4fd9545e1e866b965"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e6ac267958446d5a859e8db99af4955f0d5ad54a1189d488fa1bddd2b7b0741d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e720247328e586a33b6bd88ece1e9aa20c4fab3bac45af5537077b080684fabf"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e74dbaf2235d0eba28d59529e562a0aea21928b0c2123e1665ebad7bcca014fc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e8bcb0b22afd310da2195846a36c710ea8fa71ea57f1c2b7027b86e55bf46a82"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e90e71e0c26070e9c7b0bd2c422d11c651c6aebb16c09986e7915847373e1dd1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 16,
+      "queries": 15,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e92e75fa72a1f1ee02da1a1a5cf7405ccd593d963f189f8d99de58dbcc0f03e6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 41,
+      "queries": 40,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e946fbebcf32244caad2f074e2b58dbe2cc1ed2bc7bdc4c36b2fe86dcc892fb2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 56,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-e9503c2585ef475f23f2f661b344fee4507e2f5857dfff01828ebda211e3a26e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ea386ef74890a406e47af83ce57eff326f8f44b19613721de0ce2dae15848a7a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-ec657957c994611917f8dfee948a1755afef2235b9fb7e138125a19c51a879b1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-edfae86b2affe6cad113c7fd3e5aaf80269158fa799149cd6395f12290277649"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f02918e805ca957baf32c5f3dcdd675e04e78bb2456a0f4e9eabad4912ee7f28"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f0b1b537ebac5da8a755fa6c9812829d99d8c128614eb271618b4070ef07400d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f170ac4f8b02faa0b41468a0106066c0d9e4d5f0ffee922e934595429075aeca"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 54,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f1e56e1a0c19272c4436827471fc64c745d84dd73e211f8f136b1a800e446ec6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f22a827acd9d2ca3984b99aef5fcc0aede22da9a0d876ae58e18dcccd6b6c2e1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 28,
+      "queries": 27,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f26396f8967f7c51c1c8a0fd017c24450f3fc662bb46f6620d40d97f55f97ca7"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 20,
+      "queries": 19,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f29207c1a52f3f6af2f36f0c22a4e01aa9124a0acd6a94abfb9f298bde50f3ab"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 50,
+      "queries": 42,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f485060b3a24fbbef7a2491d78d655f87482e85de740b0d51c58ab1be0ec737e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 20,
+      "queries": 19,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f507cb3332f11c396ebc0f4382ca61c3388e56f504940aca40400ee335893d33"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f5ba0fde8590fae967e97b43976f0f4c18c81a99ff5849ea03d738f8a5d3f09b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f7406983fefbab2cdeb273aa689f86963e71e55c09fbd9e871abda6d1ef21c41"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f7d92f57982b5cf91343c6c48370ea7ed18612cee22ccdcd30291a7517d87ea6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f827a2b7a05a7cb034186a00b64f02095ea698579c95311f2162c610eceab686"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f8552da46c872f00fd48bf21a009096067a69aea616bbde4fad2860902f85923"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f88980746fe976f1a9df9b6ca93d2f70dfa9efa257b0bba16841ca5653848b0b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 29,
+      "queries": 28,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-f89a2dc4e2ff1746792e9d407fca0e60e5e54aec9959494773cc9bc957be253a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-fa67b2844b9f5414877b4f621655a952c864e0ce2ebc843a730fb981502905a2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-fb7d5f4dc219ae7fea902f7f14b3e0cc1df777ea34726d7e808fd1e23f6b08fd"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-fbab1a92628961d1a73cd415940baa3cee9bb301b4fdb7bca86352307a1a00f1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 56,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-005-fcec8e573d3541575f975cde77f91b59ad444a98d6dada4dd2e2b07cd0f41779"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-000a02e4b098308c8840830bba470d7fd9f167fb9e71114eab687b8d051ecf7f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0029161c4e17456b15167f2595bb6092c2617c597b2f1aba498a72c52964fdf9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0037611f7ae3ee2beede9ffa8e5c5fdbe0ebfbd10532418071e6dc7b55942dcd"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-011bae7705724879375e5386ad51e40a65859da41d9a95de1be8e7ae05f755c8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-01cdf7401a687aca11f1ad502e7f8b9f3064206ed955e46a13b16e4b5bbab967"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-01e5026d0aa7385df7a488bc55114dcb446644711b36a32707849a2395445a51"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-01f2e876e94b987012c9ef8bc74f85995ce59615135ce9f1dd9e25d0c758206d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-025f8f99dacff8ed19352c1d26f8bfa9999935c841c6918dfe096fd59d8f2727"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0354c57bb3865838be8d879873092e0da361005a9fbe88487900f0ab2f180e65"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-03f1a574fa2e3447f70cbf965a5e185e67e28dbce991b3179c2c46fbd1a74cc8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 36,
+      "queries": 34,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-045e2dd621a4b47e69ccd6d0d54659370a2f5b0e2ec9e0f291ffc11bfd54b675"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-05bef77118a49e2e8baad05a4821ff083760400e1651a3ab363602c913ee520b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-05dfa42188ccd554b96e2ec8ed2e622c0dadb2451f45495176fe709f96737d66"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0796c029925f4b3fb9ca47f07557a0561193a34b68e773717c58809455029134"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-07b3ab21ade3d90efea6508f695cf3f888efe79372a7cd1ad91a7c8706b30650"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-07fd127d2701aad2c55c8f40362fd3c743aeb9dd67e02dafb0a631da58744388"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-08007ebb6e44209cc33c26b7079b0e37a59ce3325c1d227136d877fc80cf64ab"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-08a910ea9e567f9b36798c38b7220fe07066dd4932b9e26f1d5747f1f36b2f79"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-098305ecdc129c474fcfaf27c97a0eea70099f6b6d8a453bff7035b77d46030f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0998b9fed2ee524787d398d92a57ce97aeede038a9dcf0780ef4615adde003ae"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0ae07235beb872b308e3995d6368e11da054dff000954a5ca525284ed464ffa3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0af31196ab09e0bff75ac99400598efbcdc73e1dd6a329f586acb44f4bbf80cc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0b0078e90c121f47279e722a1a6be7cd21f4dfa4223d497685df07e48e0a1ca3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0c4a4106725273cb32b3fa9f015c191f3f19dcf2d97ad0f9024e4fca18f9e4f4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 41,
+      "queries": 40,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0c66563991bc67474d7d41a0fcedbd9356c69572b03152b939daba4a4887b80e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 24,
+      "queries": 23,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0ca2a803758b5b5f621ee42a6c80d94f6f6b7c1c4e30106881eb0c25bf0031ce"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0d0858c81e7b8ae0f696aa2b94d3bd4b9c100870c757ee32ec94bf1167478f10"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 18,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0eb35970aba68eb7277a2c9d7f4b2bb600a833b43ce1e6ffd78aa65a4c10212b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0ec57e0e44deddb315742c05a75133dbd16374f84f5b42e88beb6286d2a6cc81"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0ed9b4097d38bba34006231c4c2a61c9ed40dbd35111721c4abcd237aaebc8a4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0f16d2e55018cdca455bac95a3feb01fc122d18f423d061a2c47a9b3076c5f2e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-0ffad8f8433cda729cb778a7386edd2c07d201b7ae255b7a6d1d363aadaecadd"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-13683ebe9f8e858f0e8a78fdab20f36ceb05decd4bee565d44eaa70d8e3b7fd5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1830ebce36d8ee14fda7bc198b08510842afb7abbadf3ebd1111fc19bdcacd1d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 31,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-190fadd7a3cacf1c36ed32c0e91433ebe20ceebcff2c1b371eae540cadabbe3c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-19572c3010691336712fff28f70f0ab8fccccef40b53c005a2eca35ca25d0aa0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1988f82ad2e0554cb98ccf60626d87b00ffab1b7ab6b14b335e8e2544466f88a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-19df0d2b9211f5be9a5d31f53aac90f5d4a40ec269d1c57c73cab1d321d4bbe3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-19e08fd6d5ba30efe473364503bdc208c508414d42e9dee4f590cc7d8eca4db8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1a91f5eaf026a946e30197c5417644b63ef018b164ad369445b177cd3ac7e1f6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1b34aca9847ef773f0e4becf0683e4bc186512835b2620ee55ac5b52a6f34729"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 45,
+      "queries": 44,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1b84d07ce5a801dc2f73a1dbeb1d4786ef5e3eafdd10aa1504865ccdee246958"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1b869b4d47fb9f7204c5e5a7e4e4a0beb5d697536cc48d6b64a956fd22fce753"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1b9be775c8d4f7f8e926894031c265e94b7bc364ee1dcf3ce6bb8a2107df5efe"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 18,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1be636d28c81674c185a25233722693ee76d46674e697a01582ed1647c8df95e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1c67f5374f51d68c6702c6a001e5a1039e7b1cb9fb2501abc9428b3149ad2d57"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1c9e00821e7ffc8cc7cf9f264cc0870e8caf1e375aed092f2776d0a5fba866da"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 32,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1cca0ef5186050e2ba218fa81f59d9322d2bc765bfb89d522d4dc9eab554492a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 54,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1d3f55eda60bf72b394fd3ea16490c8a09765e4a86a3b49722ae369dba817027"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 56,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1d7da45b4939b98ded07cc9aa2d78de4b881b2010ade9243673a5c24d66097c3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1eaf3eca2d8c187d71125786474c634d2a37b97ca60e7c3287696032af9066f3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1f431e465feb04f1d4a081a191099311317efe1adf3755d8f9142e6dde6c4c35"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-1fc70b44bab6d6903f0e0acafd9c91d318291f40926e59da1a3d0b3253c90403"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 18,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-20648d8856dc7a55a9270d937735cc260f89cd7f56ebf4e0f7d927cc0df91fdf"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-20d0c454f473acd3ea1581a74cc9785bf2ff2b586c6b925435d005d043c43f61"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2108c23bae7e2fb272e0d17f0ca1c8ecc843647bda5a537275e63b273564baf6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-213f2eba9e932a2712090d60662da9fafc16c395c95b7729b00d299629cf738b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 52,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-21f32ece11713dd43a7fde2c59807050319283a77e001de265a13922d80d7310"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2356303575041b752472796bc4fcac945ec2269d3d309fc50b88677505974c94"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-23ea98b678232ac09d0c4ea31737e7307f21629f63d8152514f7457f61865549"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-24fec671cc4e09c85a579623be7f8610e1023d0863a2579005b3ef514a2b0b28"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 13,
+      "queries": 11,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-25215603db177cccdc353baf02d460f05c0b5b46311c6b294f0608b032d09010"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 23,
+      "queries": 21,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-25b36f82263767c31132166dd8162fc93dbbc13d77afbbc96d90e1ba8c6ca5e9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 30,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-26a94fef6531254d15d1e3d0d5e62d8273f251e6c253485f3bbaec26c216553c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-27b52c3eac1aeba070e814ea06829c01bab70f0040c2bf561db045b7c5acdf0a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-281b43be795cdf9065551be6eb8269185110a628daeb6bdf227d4b9ea9205a62"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 38,
+      "queries": 37,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-29cbac5964cc2821c37f4d5e7f439f55550b43426a2b87548c37a5226b83b521"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2a3f3208f488bc335c5685b9df9925f15417d9e1e1a58bcf332623defb764b9d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2b251c0fc4214eef73d3fe85c536432da0c1f797de28aff5fea33423bb42cab9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 17,
+      "queries": 16,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2b5de919da5dadca35d20949ce04fc3091e7487f0ba92f8c69714c0c57416941"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 25,
+      "queries": 23,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2b7f28ea810eb5966e2ffc4adf796d063ec4877819c361b1f2500832fb8efbe3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2b881d230bcd961b28b4f25cd9ae2fd1ae05da4a3e1edb17aec37eb78e9c6bc8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 50,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2bb70837e93c32f045bdca03e0419e06b42a3d4c31a798b0e47bfd015c245287"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2bd1f8ce210712c76312a18b466132966affe7bc53ea3f602fd6cc51387c0b3d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2bf9c8d653840aa9c3fa6b0e1c87a16bbc56684879276c488ee47583ad9676ab"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2c045498c175ffd3283cec8d589b1f173e5873d2f2260d557f5455183a6a6a9f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2c32ba8843c32f9c0ce3b3c6cbef7fda4d00231a2ca21f4822c8c049077f9f70"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2d62102fac55f8cd390b3f8b0ba13742ba21df2b193f43900bd32c112deb3a97"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2dad5ed96c83585a1df37f3150b292df1b75f99d5314974b3ea0315f8b28e613"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-2f52402c73c2cc00ec09288980a196eb1df3e50104d4dd9ae2136ff6b5bdf9b7"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 25,
+      "queries": 23,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-305a712b3e8c4ab827526a47b9f0da326a101265cd767fa1aa323b0b7bdb6657"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-30cba02566eb47ef43c7b2ae73458b5a545d4bddd96208d63bcb8762277679eb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-30fede58abc1a690ac48c813e4996f8ba6d72735714d3aefd57b5dc2ca1adcbe"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 48,
+      "queries": 47,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-3105d3cfb5d03da10488e9f533326d8189a4415a8d90e38a4d1a8063a18828d2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-31313c5a9942e82f9ab28027e9276dd5cf0735ea141d9efb69dcd61ffef3f5fe"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 32,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-31463fcd680560106a182ec0ad234468191f1fb6c0c61f44ceda4a3c7b69dd13"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 19,
+      "queries": 18,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-31de2a94c0ddd507e10b96de83134cf31cd55764d53d6536dc8f06b90589cb77"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-327fc5112c408cd8299f76fdc813e890565bcc6b209cf4545f621d9eb90ba00f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-32f0718612d36fa1ee90525c7d8de7cf432f23ea070268ffb727db9f32e72413"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-339aa66e593b8171c8f06dfa07701250215871fc2f1eb10f5fa5d2de99e0f089"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-34f1767ca90136317a648784314103c82ed37d83320a4bfd80e690bb76a24760"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-359acdcfc2feda99f7cfd5d7be77dc906e1149c20c6f4eff0ee538c00ad996b6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-35af573b15c4bac1791b034c2dd2d0660107dd66e98476265322649e9d5e54ec"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 51,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-35da306a0ae0e160916fd8759f63b5b89b12ec454125fdfda1c0e110d1cb691d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-36764e28693f2e195bb200b9b0fdde80245b66f3237350e2f710313582a4b505"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-36a7a67c3656ba18c96c439bc8bfb7918c6e4b0f2a9d1cab6a42fe26e65c9bb8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-3714f2e264b080399f3473ff8b143063be8db7e463eb4fa8e13753677405328b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-37285fe03401d92b68f84eba290b43f7a73cf2525d053fbfa0ebcf06c9b9b087"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-379ca208ce525493a0618dc3d75ed349355402b96ce32b20396f30bac75ee695"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-38b03bfb53705cae897164313a67a5252ef56b8d4a696d1d47c2bf6dcd84f9ad"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-38e8845231f5d41bea285a3c61ad76a6f75d656e9c2346df273b4ca87afae4e4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-39a332c63475433cc1c5c65a1f67425b097d8053fc5d1c7a6bdc7e5790e5ed6e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-39f13cc2b979d84cdfd064d83b554209f490b9f57bd6a28acc8ca347839ad285"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 25,
+      "queries": 23,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-3a7b72e3ce39de028e643686b21bd8694a3a77507aabb1a6caf139a9feb1b4c4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-3d0efe5263316dd2374d49835e08a3ef71db6356e125b533c783b78344e700f2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-3d11e75427268007e3786ece2d92de91ced885c3a05488be9f78e4eddad1db9f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 52,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-3da9351123bf03b067ae2669573087d35c05f3be7e89a523f447d42389e0ef2e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-3f0897dfd5a0054471a8beebac0376f6d5da707f0e517fb23e7c0fae60cae8b4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 18,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-3fc901c3929a0a27056e9e347171013c3b64f81eb20ebf3045ded709ed95aa93"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-405b6111ed7b34da064bab7ec917ee069eed37767e0a22156b4cfc72a58ee096"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-417582416b723c9eef5a769212be267c2e2886405dc17f75080d703e8288f379"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 52,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-41a03dc7cdf085c052a6515e2a0a3823c078ec75a44593ad7879b2bc142dfce3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-422824f3f7541a74d514f8fca31c7406f9230f78ea1d77e37333fc0c736da45c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-43cb3128b9dfb936d3cc9c61c9921e80682788dca748cab4023d29ec0ef3202d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-43e0d25079871ca9a6c30ff8cae3a160dabacaa7bf5b63f84e0ca1d8a0b4aaa9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4522cfe7c81c83d3c37d030e84980fe02b7eb3d8f5064d85a8bdf971f59195c1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-46750ac79f10a11452f4bd1d7e5909537ea51e590c481edb665b218d41b5389b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4759e3b8f5f5852a1c43e3d649363eeb30a13de62d7859de6506aeff5b547dc1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-47910592eb57ceb523a9a11724ac30725a4c6e7fb86e9186ad54db2cf038477c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-47a99530d012e93b03c0f23149756ad460e0d3f4b722f0735334280d126ef7fd"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-47d6a6613810438fff3774dce9bacafba39c5966d9d200f5114c507f7dccc387"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-47d7864b47151cfdfa2b0a2899800ddeab23e5e4080eeaceb8f70d54e9d1ffc4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-487f8f8e1dba88bb40b1e04e0dfe6ddf55f6f6bc3f382d4d37e576469a32a224"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-488bf4e924e47501aad0817b7c3decb3c55046aafea0126bbff804961a627dea"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-49f37843e4672de665ac03372667137f76612db88edf76b99dfa6c942df2f2b9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4a76e14b300d6c64432d95c82790e4a1be6382f97991da1103104327bb640f52"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4abd06723c677665b8899eef4f6e5e4927df6407f25356530555b01d941fb108"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4af5872b90771a63f6dc51c396cdd73040b3a3df1c3e95cb8939f8cc5d90fdf7"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4b87edf3f4f3cfdacad21ba6eaa7fde0721ec41f775945b3227f3c402a23021e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 23,
+      "queries": 22,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4be422b85299589cb4ab9e6f545cbac3d64fadce9ca95037d950d480ff974655"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4c6ed5923efa0180d69e4b6dd02d4377feaa1f45a5fe0346d598899e7b8e09dc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 45,
+      "queries": 44,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4c9845f073c9ccdd99465d8b1d4e1c4ca0126e3741dcfa8ca3ca43034560788b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4ddf89a54b39d1242f19fc48ee06d73f88bd66b116b1a72e398d4f1d30d80322"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4eec4f0708a7cc995434a73486542420ef4d456ff2ea434ee741c3ef2fb1dff6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4f3e8fdb674e84b41b72366a2fc643ac0703589282098a29b38bd556d1bd930e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-4fc000ab7da019c3eeebb6991924713a6d626ac559312eb1d7813b17ccbf0647"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-50b8f4bba81c48d80190cbbf250baa8daaed2fa00fa8722ec4e91e7f2cd98274"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-50d70a863e33a80178de35b7ecdf3eca76a2762f18e5bb11aecfe038a57e091d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-50fc4f5e7099a41750c3d1a93d77c88a99f453bc9995c031eb79bcd9cecf04bf"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-51068f3728dacd8de365b05580399716cd83730108795840f55da2e0f2c3b3d6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5114eae42b6c5b2588e7be0670181b9cbf30e249487384207c419d3e076f469c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-517b4ce0a71360832f9f137cbcc2e907593dbe707444577262a3953ae63aefb3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-52ba7afbba9287a6b4353019ba53294c99111c3198b1e152e8ac91937302f705"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 38,
+      "queries": 37,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-52cea62c8c75d3844a99944c2727f32e16f0797601294368d7cd3c92b372931a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5404d8e83005b60b5536e6b67220264cabe9b7eb9792a6f03a21a0539f5aee6f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 41,
+      "queries": 40,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5514324198d5333a6d1d8651be319e5118cf34359ccd31e0fbc640a433d1d340"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-555f0763b433ab5f547f7c9821f049caa0689df5ceb7df2c6600896852dee4b4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-569a137be5b76f4e3006f0bfda2d5f90f5b5f09c2f4f3f9122b44919ffc445fb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-576b8d7d66eab82dbf47f68609d5732705670f3e2e5f6eb189bb4fc8c8c4fad5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-58012fac4e85b992de7d92a5b63a9f8158663e17dd30f0df51f427e952b8f80e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-58d119b91adeca1be5119471755ec33f18bb3c6072a8b11814c543e0f098606b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-59e001814fc760856dc761677ec3c327bd8d0e1299dc934e54a993c421fc7e21"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5a8cb584485c908ad1d573c41894ef6a17004234bc0f1fc06057e6e7494d4e2f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 23,
+      "queries": 21,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5abaa7f94615bfff005a13225d3c62f4938ff273aca50e776961e51deaa6994a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 46,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5bccf5f91b230d98dfeae0c7659d3233324c7049a18d2e1e46a64ee61f305a14"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5bf4c1e6f272b3ab5ca5f94bfe6b5bfcf7a95a9bb64c12b05e14ad998d0a54c5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5c83027e35953042189a00759f68427d7f0e6ba1509cd65f28412bea53c6d179"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5cbad04ebd108c17909cf5b40621a5da4d148d238a3c6eb593ea8ffc608886e5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 32,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5cc969f09f3bd5ed3131da772532e34e6d7f4ee1f4c3a56b97dd7379351b0a87"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 18,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5d37d0ce8fba39ba0301bd827c1d549ad6ee3c4b4d343841538e8ac590d64503"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5dc6d401eff6e594340ea9dce67ac39940b140e56f4e1865eeac06e4a25235fd"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5e9afc768768a26e5c2ce61dc531644f6fca621fd136a99a229ee5cbbf9719eb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5efa93ca1d92e6de9fa47f05a8841e7c22c1bbc6ca497b71216598c86b0f5aba"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-5f9581d95c29f3413f03778030151e9126e87988960a037fb66d199f3bc89119"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-60384816c9074615c52da80bc14ab43c1fb6c26b62a3d9aa99d5016d1afa6419"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-60a4403afa61e14e297b5b907f1effa4fd85e03c9811501f59d9857726ced4ca"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-61d8ee4c8c1fd3fcc6ae78912358670f42e04eefe56297f488567392f35327a3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-635518a9a5dfa8c164f9a9cf4c462c9ea9c0bab2a2c9e135c4483b6cff9eaaeb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-63e59d67bd5cb30fd677efbe491df2b03ae69e622f02f96cd3b1c918b48fcbf5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 50,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-64d00734d4d7d5d3c37967c3bb9e7644146b0468704517de4e9f812ad8c7adb4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-66c2aaad33799ac2709617626142b2c5a6b5480fe0523d7df863a47ff1abbc2e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-670e3ed2cad8dc8a252cafcff913c1504e8fe8252c8fdd572a6e34b7c7a6be25"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-67eaea202bdc4923164b4542568435344a837d20dc62e349908591aede67c128"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-67ffff1faa5c6635195c9c145f6767c35d0d7623568bb23dfa4dcdbad8feaf04"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-6806dbf1c272e5e84f5938a9b9e4d1f09636b946600602557016ea52c45af1a0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 32,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-681cce6f5cf4fb5568e4497ce5e22877671ea30b624fbe35171b204e57159389"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 32,
+      "queries": 31,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-684b97394227a0434e01dba27e1770fbdbb372351793751f7109243b7ffaae49"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-696587ec3ebc26a3ef4685549ff861af6369a717afb27f5304e08b8a68431de2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 32,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-699a27655c74dbeae60652c78357c3f0cb19b4347cf6c019b3bb41fe2ed943a2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-6b287cabbc52626a8295906d63aef02e408232cb15013ef944e0509335452636"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-6bd23eb142be49b15eadb37a9da2dad544ed40739436fe86e118cbdc0ec228c8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-6c8a6ca248acbf080672293f49b7101f111236db1dc1445368dd4bc86d638d13"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-6d4b494d2325210c71b99aa2512d35d12499a1539ea0dcc871c94e479e54b906"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-6ecd6362a0ac57a1ed4a52c2035823214cd326e1b0f1899f6b6daeb5b00c0c74"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-6efbd7f212b6b4ec2af75a295253dc5f0edcd21a31a1aff073795c175a1682ab"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-6f42f1cf071981e370a63597aab5a55569fb40fa329ccdc74ea567c2e2280529"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 23,
+      "queries": 21,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-70208f5fdf4ea794c6464716817ef04723dfd7884e70d3696ce67d8f7102df56"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-702d8886ceee415a37b6435f591af6de621b4a4431128f9be9f94e12470f35c4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-71a657f934c861570bfb567ffabbb6814b34579a97f7dd79df44719af0aaa259"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-72b918334965c2d2f58df59af7cb1fd546926aef45271b9768b3503f373ca1a8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 42,
+      "queries": 41,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-733f6e225ef93372a0c6a1772e6ecc034ad3b322d4fc3e2fd441b801a6ebb178"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-74e67668213622ddc38e9a27070367952f9864fc748aaaee45fb72fa37cb8888"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-752e691c5c3a2dcb13df747985da738e647d8a61f625b4821728d8d209b294af"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-756440f29eb7c71ee240ae7ba9aa0fb237d45fc6d8f01b0025eba34dd983f2b1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-75e9d8f8e9ab9f4b263177ea34d2005b8fdd639915d1fb12ff5a503fa7c1a554"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-769c79fb9e4ff430ecd41f2d3ac0d24570900af48fbf113bab402c81a9e8c3aa"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7710c613f3bfeb9278a3f9d186557517d18d185d35a91baa3f3f09d127f3d6e7"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-778716eb34e13e672664b7fdfb02d097d2a5e6bd2264d7387b4f8e52ea2b1881"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-77f276102cae1afbb422610523e920dca30c9f49cf24c7ea82d0fdd501662f54"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-78448797e9dbd8592028c671a76751a4a8abdc53e60007547edb649401eb94f2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-78642e8dcb00a7b123533e29eb9729f9591ae63ae8d7530938fda638c4c31ccb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-791d0415dadd33231013eba1e1829681ba675692cea0fcdf4f0bfeefa9e482b0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7a44235f3908fbf096a54535bd5c275cc38e3d9d695135465d0cc23ab990d4ca"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7a87b82e5a0f0f8fc36005aa185d4230c3ef9d65976213445c7198c180542305"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7b2f1b37b4f91ba1c64ef6e0a8b52ae285d3306596fca565debd7ce09e51ff82"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7b344daa7c9744dffc652b341663620861e7561be0a353d5dc5aaad8902c33d1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7ce95879989700ffb13bd84f8537173bb7d3eb3e59838d497a9cbed34ff41593"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7dd63e2a4f22fb1ab466e4c975b888986a85231027f2e90df3aa1c506c07a39f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7df6959b4ecbc3dbae84aadc3c6a9d3ed5c6e2779b80abbb1263f90286231ae1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7e329bccc9c5b502242d0cab02d2ac1329942a5a441f34713d5f7c95462b934f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7e6482374d56b5f1f92b96f6325a406ec469c140ec0e45d80812de275ef081fb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7f66383ff8cfa5d817bef0e3bf87d49e5aceea7cf45f97f1bf3f50fce87a3a92"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 57,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-7fa04fd706c894a3b82215c98813b0400709d90bc6d66f0e889996976671bab5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8198a026926cbeecbb3172525cc256378dac99ad3469f505f46a66d168b15389"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-828e2f8aa73333e49c58d57347f2c4f71ef6f076733ead12192634d316badd4c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8362beabfd378e8de70d1113f42e979af74acceaf555786bef8498658c21c33e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-84346adf60399d105efb4582429bfb471af89f35e7f4963cb7650190282ca3e1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8475e5789274b29e074da018da59f291d8c133c86b2fde12349fddbae96de8c0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-84e6c4fc3e9954b6d08401e287ff935869114b4cbaef73ecaadb8c0c761e9e8e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-852df9230d8be5d125b6f4626fe4d40ee1ded5504e9f254aedc1053facb1217f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-85b5d9720f0f7ef2f57b13692f8e4634b2fd489cf98a4f20c1111f9dd8baae3d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8691234bc97789c738f9393b34e5edc66439d2b459265942fd022ab5cf8ad571"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-86d41df6e3b82eef50871dc78d848543e093fce40f2523abd792db69eced3227"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 23,
+      "queries": 21,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-89077195d09ea90e8446a6f2289af69ea4fff4b055c257d81ad943f2b14a62aa"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 32,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-89150b0813911a4948494fddae07a957fa874fe5ec5d659b359b113f6540f271"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-89664fe6f32b072baade00b8df620fce4888a44805a43ad555d2967a6a0d6f2d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8b5171a8b8a2364d0a6e10d3c1eeb1e6734153fddc275bd1865bbef28de996cc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8b6c90c91f86c68f794fa0ed00fee65607dc65c4799f36bf2da34b78e3c5387d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8be4423ff6d9b329951137a0e6263b74a824b66d5bd3c2f7c9970fa117348fd4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8c48a4cec1d621ceb9c75c04975c563047ed859bb8acc81c4b40b5b04a00a2f1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8cc1621a7d9775f8166e619a85537c439efee5b86c3630b95494d1bd682c6139"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8d13dc3b31cddf216d27b4d585aaa3ef7ba01ca359c85ae4763ee3c93f64a5e4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 56,
+      "queries": 48,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8dc07b9752528c81c7f73d8385ccd21d5b751d263ad8e2ce47fdfbc93513bebf"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8df2a4ce4e14f411bcf0fd18e6da2595e7dcd391103a241418ecd8af9e8176a3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 53,
+      "queries": 52,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8fd282099c2ae8933dddecbddf24da83a9b5f0f99a2a09a4571abd0674ef3cff"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 54,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-8fe06077bf85347784dc634d96575b8773a7205fba759b04e4de648bc37ef610"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 18,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-903897c4d381e9ce1aef9e9d3d188b4eedb1f3733f42d88b250582d310451d30"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-90cabf75ce883821246ab826088dde1754ee186467786a76d834c7a17cdabf1e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-91e2a1ffb01b4dd8f266e904e1a7f8393bf15ca536a5165edc939c5418639cac"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-91ef6a0d7b38b4bb8b70a14556bc054376eb4a82c23780326473905be4c1cee1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-934a73dff9071de565fc8bce6965ce3a9184d0cafe70cf24a00e2f3ec03cdc7a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-957746539dfe275fe4cc9102f775e7d94d10eadd34f0841703038ef42b2856a4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 59,
+      "queries": 55,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-957f4d75cc175d531c6f80a8c62ce8dfca670502f98307268426fd5dd30442fc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-989e4e1132bd2290b21a40bd63b306c23e9cee991c67b7afacaee20fd3ad9c4d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9940c93a761218d8d06485051f2a49dbffc733d6ea9bb0776b645b1151bab322"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 55,
+      "queries": 54,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9987734107423fa5f293ce31973ee46849cb48617b1dce309e097660cb26a183"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-998c731831e68ec365b47ce8710b9ddb24c8a8966ecb0d66d8b016a987957f37"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9a50d297d4eee632e603336cc870499e8c0ecd8fd3ae4218eda75dc1fb029daa"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9ad2f9f40bd28fb889c3d7e1d176b097043f37a93057abcaf9ed44b9f10c9197"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 54,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9ad51006f1ed9e4a4d191a5514a37b8716c0a87ad9e2906bbe1657308e24fe39"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 53,
+      "queries": 52,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9b04ca6b0a0b6fcdb1b770fc9f119ac3431502d6b2feb994b41514b4a14a0eb6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 25,
+      "queries": 23,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9b892a1d034cc966a4d4b4c1420d35c3198fc80c2d16006a2b353517e3334ab1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9bf7055a52568743bea614a6816a03054b1026e8b3938e9befd047ec995eaeb1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9d0ddd05662d6405f27ef37ccb6cf07394d74b03a0f3da7f00490fe47d770f2f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9d9a1138da6c9d5f129b8f86636505355e278598fa6a71796604188ea9e360eb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9e5227e0f616a0919fb3546b2086c18d2a814ddccd82e333df3ebc5517a9528f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-9fc279456520e7ad969ade9fdd95bae102f4cabaed4a2d114820bbaeace6db33"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a0eccec5c098ef4bb691c7bc05ce3404c610e203566dad32ed91d36fc7949d8e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 55,
+      "queries": 49,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a1449f53d4693e4f9309922592b03bd59003e41d7a06c9423abb06886333f7ab"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a19ee3c5044e93f4be7d5b37ae2bae1cd0b6fbca21a96ebf5ffa9241c2ebd131"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a38ab71ba0cde19312850c46e98d1075441c52d6901f10563e07b7852642e3de"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a41c0b4acad0ed2f9a5bb65c31ed194130f037ba48df605518faa88c4b0e9b0a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a4fc3478e8dec62049ad36ce0f2baa77cc1ed2d2b60c756c57f9d8f8fddc17bc"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 48,
+      "queries": 41,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a5d728d043327b42301653ff37049910a7154a56b39b7d96e7e8d7359cad9ee7"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a6af4a922455484a7f4db3939ec5518a8ddadb24f84f8c101a2e3f2489c012ba"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a720eb0be3b97bbc9c73ccc08356125095462c61b87bd558ad1e1e42c9ee69ac"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a948053aad65724e0f771a0ab625983bc96bac418e6aefd02bf39765a3068de0"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-a9df2c248125fd6f7c89b370fcc5ca7d2dd8c81c573601c6cb5bdf275b086fc2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ac0aabce0038a8b0ece7ba3c59a478918b267d27d2f99e27b6af3d257e2d8286"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ac218d937a2de0c78f00e64b0d55670eb75e7984481ac7a67c1ff6cdf924173e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ad288e490bfe665ab3f1102319145dccd4a52b5c06584b5c523a960d1654237e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ad63b732527e35a428c3f70de7051962a59ecce111dd40ef5e72669c696f42e1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 53,
+      "queries": 52,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b269a914d159e46d34f7ff3e43008d84c8d60a10d38c3eca6bba5789072c1759"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 52,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b295f4195a77aabd51d9dfc9d7580c0dd0389e0c4fcf21629ed03a2c8bc64ddd"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b53ffc11f2ca4414611baae213b1f6add3dbd8effa2020754e1046b089e5226c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 38,
+      "queries": 33,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b57887b982c8549147a08266d4d2e7f502c0902289402c76616095ddd7b79803"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b66f292d8caa1f5cbdc88cf23f2f6df7bcf5718afa86b67a68035878c977ffd2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b6c1c503dfefd7ed99d1b11810ecd936fa26bc6f44b6481eb780a525c5332a77"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b73e11242fc1457c361db9b47158f5d1f691044c7e24c9a3ab4372c3e2825868"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b794d8ff375a1b1665f22ed52fc935b86fd91c9f1381f439afbaf029911f23e4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b7cd29bf1f84fbd737608d85dc938d388433f3d59b7d26dc4bb7022789425370"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 55,
+      "queries": 51,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b89f057f3082c3badfee62961a23169384342e779c89ab9e5960e34cf9ad9138"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b9472cd4f099e9aa53a784302ee52c3788c932c0d850e34fd253a6fba86293db"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b9933d018899ec59b510d06c27838e5eb39f975667dd3d62887736d37bee8bc6"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b9a64855e6732d2b644bc71d0a59c470a25e03f4250f793f12a870ac2be02d51"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b9bdfd85ba7ba6364a7f183ccc9b250b71dcb6fe1c2071e893557db3a3b860cb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-b9c9b2cc346158efbf161fbc54471eeaf8990e579fa256cc1798d29978d0175c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ba67fd272e0f9c1968752c63a3547091aaa21c935ae66ad2a8f67162029a9d8a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 18,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-bc383500e404313594077cb48e61f9065ee10270be2b4e752e0b17ac9090b28b"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-bccdfd1cf922efd9e1be85b6f3abbb42129e48a0ec520164782a723b7667ca4d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-bd13a1647d5290923c69ae9c209da1b25bf0624b4eaaa53f74c08c96bc63d759"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-be2579d0482e0d2fbab406e0f0161d5d5248876ddc25e4717e3c4d84c5f7d7cf"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-be9ec66e64896ed3c0d5fc8f78c0f7f715d5e611949342d4e307d88837a27ddb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-bf5687f7760c37c274987f859b16f4e3a02cfb717df7188f8ecef0c9316bb3c2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-bf72db5b845b5197cdd6cdeccc41644bde5e0b07ec737007183f0fb1a02e025d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c08255b8e818265ed8fa16dd226d50631bf54baef16d0ca9919a477ea07c6c4c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 23,
+      "queries": 21,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c08ecaf91fe610cc64ffb3304368f19571b48c5db708a59a3abe2c775a1dfadf"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 29,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c11aa9a0aeb0f2a1860e42538ccc490981772cfab685a94167b9af54d9d15cb3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c23d14e0c293eece9b70f8ce37d8e33ceceeb39d1c1bab254fd59ca14c239b75"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c26335ee270976628a2f0b9c1931c11b20c8ceee642c5c3c0f37775e32dab8f8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 53,
+      "queries": 45,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c30e764ed8f34edbab6266d24604207aa9a51ec2c276557ab9d80e6b23a9dd2f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 32,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c34184e6bceac46b27cac2297579a5834dde6e506c30eb9f1f51b125e1eb465f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c359effd0b9b8e61d864d7850253b626b845dcb35d5bb4d6318976e0995a0b8c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c431d6a2a64d3076450a848f3bee8d1c7cbd452c89f5c3f7f3631e96067a5f59"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c5241d046e326c7aff1338dbb9914e651535feeb22760f861f0bcb47d9b4bddf"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c567a88bf3681d862c228a275a8b285fa8f4cdd4fef5cf16b40d87fac19c0e19"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c69fdc22471c051321ce81157df3f28092885b0972e480e7d22e9d99f7910a8a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c6bf2e3b0af15b81c149828020a3bae4fecc44d70a6e40a14f398fa53f6a3f10"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c6f594e3deb7e2d5d1dffe5cf3397494c7c791e941c88b1e88b2903c842a0255"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c7b83ab384509edf43a216c0e65f8c14450a62acffc891b4ecb23740db43e369"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-c8546394d8ff68bc89cb3454890648f246757e5f1074b9bbaa16a48045f0eb02"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ca06b29fb8e54b4fe37351fcab0d275168a69a6c381b928b1e3561b5f5e500dd"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ca54cf56051ad07588dd2551499e6d6a76715a6e939943086e9d3fdf010268b2"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-cac70bd90ee78d06ad238744a68b4f3ac5a615197edd08af0ef996f0c6472bc9"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 43,
+      "queries": 42,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-cb9ec262d73a3e91899e096c44ff0671fac34bc45e9e5d0f630005b943be1bfd"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-cbb3bfd44c0deef33087fe5979e8c7990b577ca67ec4db1ae619e24549f55152"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 48,
+      "queries": 47,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-cc08ed500989e3f9169b4c9ef4cf8b74f101a94ab20d179f8b164b7ceebca2f8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-cc390706811c3ff75f6a7fab84d5e4f8cdcca0cd96434f7dd67c6853a3665fa8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-cc971d49e1bd7dcc698f0dcbc590b0698a0fd4bb3d3cd44a51117a34a305fbe8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ce7cf4f932f66cd0632324daa6979221af6e97e7095e24d240bbe4bb26f47b44"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-cfe5a575e1a25b07d5c134316763bf091b6e1a7a056f769375ada5b1d18c043e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-d0510c16a00a434cd3be73079b474c271ef408b534ffcb3b2393df1cc98d8f2d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-d1f5d23fe807c932dbb56fac3b855804b4e7f959d531bd1a713d323ef9a4d04a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-d22e709f2606035a141b17e4b4d6fb5747341c4c085f96e5a6bfa789ed7bb732"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-d42341feab06a7e45e5844a4491062066b22d8123b23ea4082737c90ab5d656e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-d6b48cb263f16f404f5f3a2bb82552388ba2a4d4be50c252ba0b6a0be441a578"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 58,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-d7dafdded9bb3ecb905741eb932295f17f217898034c1943f5f1ca930238008d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 53,
+      "queries": 52,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-d7e4c1528602919ef073486bdeba96cc2e4521aa6d6d0746d4b6013ae16f4579"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-d8039b43c5d8c6869d0b53277ceea2edfeb9cdb67ea01087a393f63a4e432afe"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 29,
+      "queries": 26,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-d87626e65da176f0824a40c910eff571208adc14ba65cafa26ff71391cf6e3c4"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-d9e0beec37a191998c560f56f87d74d48875478bb6bb348fd40dbed40f74ed36"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-da727f5982d6ec9a996ced4afd5ef05075fed97c70a03556b0a94dc0f97202fb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 21,
+      "queries": 20,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-da8bc187b73c9cb3a59e3b9898015fd23e884676d56d79cdc8e721a3a0ecec38"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-dbdc6cf205b8ce36b8bb8940c1e58dcb51dd44a41eaaffae10e7f8c1c4623d78"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-dc7647ff421a2988ea431661d5325e3e9656ed4a693431e61b08624e3a64f2f3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-dceb0044705dae7f418b9d3a4f1e0109b8c526843d3007d84c63f18a1c49f607"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 60,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-de2ed22f1de29c4988be699d53816d485c7f83d8aa77c618e214cebab7050a79"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-de60b37a1e9e4b57979baff551731d39ba4956f20623f8bb72bfb73821ab68a8"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 29,
+      "queries": 27,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e00518b5c17e5187e744e49fb5c1ad28c1cf370b6a0cea6a7d0b9c334eaf062e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e2db87e7cca5df57d48525c6b1ea8029fdad5c743cba64e9d4b22856a1edd947"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 33,
+      "queries": 32,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e368dc3b29d559534730c6d1a3359bfb4a58852a6cb8c5684419fd31f2f8b885"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e39932c68a615d39cc276c73fc6636f5d21c38b6ea8f9eb6dd21c50336dadcfb"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 58,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e674300adfc38167d75cd65b817b2338436fbeffcee8908d465fdf1b58e620d7"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e6f183f6649ea88ba41ac77da3e0a0239bb9848312d08aa842c32118dbde3ead"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 23,
+      "queries": 22,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e8240b8f230d469dbc907e26c5582ba1a2f4cd1ffc1129adbaf3d4a3a4e570f5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e847bf40890f98c945ccdcf36618e29461a712a4469ff749a4aa059a55a7f160"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 59,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e86f3dfa84b3d268124cfbe33feb5ecf2b58c9c27bf70e6ad90ab891c69eaaed"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e89e8f89af62f10d7a10d1cefbcb88bf56d4e329e5161f9f2830ffba43927219"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-e9c8253a52e2c641134b96c0ed7ede02670020feee4e125af51ae8ce8069cd62"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 41,
+      "queries": 37,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ea77270e9b7bec693f1ff15b985fd21db9747457f587dc21487a982189f2f5da"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-eab2ef9255307eedf5656236032662c59d038ed0f99a2f1712a60e6f7ed4f763"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ebdad8a71a0e7653a361de855c10b1d4b73b3852813bf8aee1b932320b9c0e68"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ec9827b6468057ae6444aaf6fe0425a54789cf8de6ed309b3c6501ee62d74e0e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-eda739fd8ddb1bc2f008e9642b9a1ce8e3e51689f68a8d41724c5de243ce9a10"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 43,
+      "queries": 42,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-edd4249ffa7ed9a12c5812f8af5fc3d3f6407c5c1b88a5a465b0f6f2efa9f8ea"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ee1784c878312db655197de6ef0c1760956d125b6bc08c5ac3077c2c85f53547"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 26,
+      "queries": 24,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-eea2903287238ed82234c98f4d9d75827f18a2fd69e93092261102b9163ffb02"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ef343012fedbdfc9a39f8e079fa4ae0e1985a48f75b9e380547d65989c36133a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-ef9b6601b693de47a0ad3f95d6b8c50a922bf56283d8577274fefa4f42310f1f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f008690bebc2bb2a95f1d69379df413cdc8fa707f58d862ad70bc18a62fa079d"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 55,
+      "queries": 54,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f052a2bf63e1f033b795f7904eec187f29db9ccba24f4a31d6cf7d5a490fb430"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f06d20eaba21c81fcd2239b7e957041adcd57d85af5db49aeb89e5b3b1b3ed36"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 55,
+      "queries": 51,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f0a53f036ce7dc62b366f086762ad52c8b555980529ed46a76a5469b8db7c3ac"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 49,
+      "queries": 44,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f18496dcd3789523b1a864af8a3d76d6c7b5b194c2af082368237ef7db38d9d1"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 57,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f1a1da9f7d1978f8ff31f67789e40e8286f97e6ad6ab869bc48b0bb54cbe62fe"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 23,
+      "queries": 21,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f36f6c9fa03e6318bce433781668355c40ebd2e6b7c06a9bf4b4d355b80e4c16"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f4076264b3288aec30ed2ccade98e722398ce8727101d132489710b7a58a0f38"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f5cf9a2f109c4410a504a466fd090765ba973a3b675c8fc64d0f4028eb8d2a1f"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 35,
+      "queries": 34,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f5e9a105d7c1c812f7131b70c2a937cf893be21820efa9e8f32afa6da466e259"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f5eef51357d6aac1dcbf79c6ade24839dde3c750bb0779e113cec91966c6531a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 56,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f6766e3ad73d2b88111c99c24f13723766c7550936981b9249576fae9507fc61"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f811d457d42138bc7166448ed6e979307e6daa07fb7be2aedd5fca6fbaaae207"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-f82159cc34262af26afd33932f3cdbb06a8e336d54e45a9d6120d5f9b3c0c049"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fa4fb6b3170c52386c80413542b55dc835b8a79b5c593736ea86415ba74ec79e"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fa810a3a2710a4426941208edeb6e6c62dd84722e8d2730c6c21cd1966a753a5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fb3df9964e3ca463021a481929d3006d1e0690a53a03f1cf87e369d834eb7a7a"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fb5e3f65d16ee7177d2d138ae4deb1aa61b850e66370cbbafdb1cfd133b5a69c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fb6d1ab66aebd890c60a5fe5b97feda8e01cfdefd4d17e4a82efbbcac2f0c57c"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fbfcd19c2653a1920dbe979e5ca08eb2a6b4311a129fa5cc27093c432741a565"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 54,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fc20f1e5874b678ed93b42915826c907253fda6d007c7683be8a9db5f9422ef5"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 18,
+      "queries": 13,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fc5872171d24d7c6c6e9f733bdeebc1c210932efe4a038d51eed3091abe96cff"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 28,
+      "queries": 27,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fe35fd9747102d196628318b8ae14f163c4c3009a8144883ebec57195166e156"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 53,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fe36a614abd3d98ca0407ee1232752a3942e8cdc304bf779863455725582baf3"
+    },
+    {
+      "calibrated_delta": 0.0,
+      "logical_queries": 61,
+      "queries": 60,
+      "raw_delta": 0.0,
+      "sample_id": "R1-DS-TXT-011-fe47fdb2227f890087248f63f8bf999e0ece3353793707d6f698308a54a4ecef"
+    }
+  ],
+  "run_id": "R2-DS-001-AUTHORITATIVE-V2-20261009",
+  "status": "PASS",
+  "unique_model_queries": 36448
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_version": "r2_ds_track_b_reference_update_v1",
+  "branch": "prep/r3-verifier-001",
+  "original_task_reference": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2",
+  "approved_untouched_reference": "6c7173b70a10d1506d92360b421eaceb5e56405e",
+  "commander_authorization": "Accept the updated Track-B reference; finish Track A",
+  "authorization_date_local": "2026-10-09",
+  "observed_ref_reflog": "2026-10-09 01:12:22 +0530: commit: docs(integration): prepare merge gate and R2-DG decision",
+  "disposition": "EXTERNAL_BRANCH_ADVANCEMENT_ACCEPTED_FOR_FINAL_GIT_GATE",
+  "track_b_modified_by_this_task": false,
+  "track_b_merged_by_this_task": false,
+  "scientific_protocol_changed": false,
+  "generation_receipts_rewritten": false,
+  "scope": "Final untouched-branch reference only; no change to models, seeds, generator, tolerance, thresholds, query budget, or scientific outcome definitions."
+}

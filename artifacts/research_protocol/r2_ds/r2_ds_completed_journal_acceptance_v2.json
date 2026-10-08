@@ -1,0 +1,17 @@
+{
+  "approved_track_b_reference": "6c7173b70a10d1506d92360b421eaceb5e56405e",
+  "complete_seeds": 698,
+  "generation_journal_sha256": "4fad90d4ac321748329505a00ebd11b59fd4d20745964adc08148c116f4bbcf9",
+  "new_model_calls": 0,
+  "original_orchestrator_code_commit": "bdecf702b09db2a2bdc9447d42e1bc83642c8dfb",
+  "original_run_code_sha256": "44fc24a970fb578f8ce46078c0396add78c0ef802e48cb888c761d942d1eedb2",
+  "original_track_b_reference": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2",
+  "publication": "Model-free reconstruction from complete original-run records; not a rerun or historical receipt rewrite.",
+  "reason": "COMMANDER_APPROVED_TRACK_B_REFERENCE_UPDATE",
+  "reference_authorization_sha256": "44ac713a9f05214162f72ae5f6e6404a8d1988663007b20f59f118ea6cdf6467",
+  "run_id": "R2-DS-001-AUTHORITATIVE-V2-20261009",
+  "scientific_bindings_unchanged": true,
+  "scientific_generator_unchanged": true,
+  "status": "PASS",
+  "validated_at": "2026-10-08T22:05:39.209287+00:00"
+}
