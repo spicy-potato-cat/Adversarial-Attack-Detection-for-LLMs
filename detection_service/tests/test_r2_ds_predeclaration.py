@@ -16,7 +16,9 @@ def test_seed_projection_and_counts():
 
 def test_frozen_objective_and_reversible_probes():
     frozen=p.files.read_json(p.OUT/'r2_ds_predeclaration_v1.json')
-    assert frozen['design']==d.DESIGN
+    clarification=p.files.read_json(p.OUT/'r2_ds_predeclaration_clarification_v1.json')
+    assert clarification['design']==d.DESIGN
+    assert clarification['authoritative_prior_model_queries']==0
     assert frozen['model_queries_before_predeclaration']==0
     assert d.DESIGN['target_score']=='calibrated_score'
     assert 'ALT_CASE' in d.DESIGN['saliency_probe']
