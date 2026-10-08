@@ -1,0 +1,66 @@
+{
+  "allowed_main_checkout_interaction": "Read-only exact DMB weight hash/metadata only, specifically authorized by Part A; no other Track A working files read.",
+  "artifact_version": "track_b_002_test_receipt_v1",
+  "authoritative_r3_queries": {
+    "D_G": 0,
+    "D_M-B": 0,
+    "D_S": 0
+  },
+  "authoritative_verifier_queries": 0,
+  "caches_cleared": false,
+  "errors": 0,
+  "failed": 0,
+  "fresh_clone_execution": "DEFERRED_UNTIL_TRACK_A_IDLE",
+  "gpu_heavy_inference": false,
+  "initial_head": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2",
+  "initial_remote_match": true,
+  "initial_worktree_clean": true,
+  "model_runtime_checks": "DEFERRED_UNTIL_TRACK_A_IDLE",
+  "modules": [
+    "detection_service.tests.test_track_b_002",
+    "detection_service.tests.test_r3_preparation",
+    "detection_service.tests.test_verifier_preparation",
+    "detection_service.tests.test_track_b_portability"
+  ],
+  "omp_mkl_settings_changed": false,
+  "packages_changed": false,
+  "passed": 50,
+  "protected_data_accessed": false,
+  "resolved_test_issue": "One omitted fresh-clone D_S model-manifest hash supplied from exact historic Git blob; previous failure resolved.",
+  "skipped": [
+    {
+      "reason": "Private remote backup blocked by automatic approval review; no success fabricated",
+      "test": "detection_service.tests.test_track_b_002.TrackB002Tests.test_dmb_remote_manifest_revision_pinned"
+    },
+    {
+      "reason": "Private remote backup blocked by automatic approval review; no success fabricated",
+      "test": "detection_service.tests.test_track_b_002.TrackB002Tests.test_dmb_verification_copy_hash"
+    }
+  ],
+  "source_hashes": {
+    "artifacts/research_protocol/portability/dg_hash_binding_clarification_v1.json": "98b22ee882cefba56581937b271d4548fac21cf622a404c1591827c667a0632b",
+    "artifacts/research_protocol/portability/dmb_remote_artifact_manifest_draft_v1.json": "fc83b6cfd9d2cdda7ab5cdde84d0d4321fec130d75aebd2728dc1894a24cb73b",
+    "artifacts/research_protocol/portability/dmb_remote_backup_receipt_v1.json": "3e66c0c9f0d589e02dd013e956114b466d92f5f62a722894acc78354f3327215",
+    "artifacts/research_protocol/portability/fresh_clone_required_artifacts_v1.json": "c60c866bbc495149aa91c6221e9821c2c594c05ad36907a02887e5fe9275a92d",
+    "artifacts/research_protocol/portability/frozen_stack_portability_manifest_v1.json": "bff13e3232b5317aaed7452bdc529981e7a30ae8d57d7dc02e328a3f297604c9",
+    "artifacts/research_protocol/portability/frozen_stack_portability_manifest_v2.json": "dbc0a345a51456222040277ce3f743233a65a47ec96db7197398b1f6d6a15f87",
+    "artifacts/research_protocol/portability/merge_gate_1_plan_v1.json": "5d430d0aa4df5df30e87d151b06d359b2edf518042423c2b11a80686fab4182c",
+    "artifacts/research_protocol/portability/r2_dg_value_assessment_metadata_v1.json": "0af97d83a5dd4f65ebcae5c71c6f32902eecd313b7a5e78f0b96f2786047be5d",
+    "artifacts/research_protocol/verifier/verifier_candidate_manifest_v1.json": "9255b9f4e38e1140693e4ae742d8c21c39bbb4992545ba670cec6cbbc3b22355",
+    "artifacts/research_protocol/verifier/verifier_prediction_schema_v1.json": "22f06236be4d4a1d12e4b30c84e9368503b713958bfa80187cf26946dd278688",
+    "artifacts/research_protocol/verifier/verifier_runtime_readiness_v1.json": "fe7455bbf4743a778adf5e8882e2988e55802e7fa2dd116d543027cc9b2aa21a",
+    "artifacts/research_protocol/verifier/verifier_study_predeclaration_v1.json": "282fa95bc43f52a4149af3ae88cd0d1d01058998e35134e1ce1eb31e03f9af98",
+    "detection_service/research_protocol/track_b_002_validation.py": "3064b54880603bdfbef5326ec1cef252064f8e2991df088ed4df6b2b1f38626e",
+    "detection_service/research_protocol/track_b_post_idle_load_check.py": "457e1c63be490aa095b8b1f5acbf2e8a19c5730f91cf7d9b479c5785135733a9",
+    "detection_service/tests/test_track_b_002.py": "1464b222bf5695cede86a799b3306383cb9d5e011cb6a89eb065a308c3c690fb"
+  },
+  "start_ahead_behind": [
+    0,
+    0
+  ],
+  "status": "PASS_WITH_TWO_REMOTE_BACKUP_PREREQUISITE_SKIPS",
+  "tested_at": "2026-10-08T19:41:45.297763+00:00",
+  "tests_run": 52,
+  "track_a_checkout_modified": false,
+  "track_a_ref_inspection_only": true
+}

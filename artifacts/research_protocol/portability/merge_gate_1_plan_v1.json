@@ -1,0 +1,510 @@
+{
+  "artifact_version": "merge_gate_1_plan_v1",
+  "authoritative_queries": {
+    "R3": 0,
+    "verifier": 0
+  },
+  "changed_files": [
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/portability/dg_hash_binding_clarification_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "3ed1ad4fdf8f7a7288351382ee7cf3880a998131"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/portability/dmb_remote_artifact_manifest_draft_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "463e88a972ce31b4c1c66c9f5e92beaaba9d6d3b"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/portability/dmb_remote_backup_receipt_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "463e88a972ce31b4c1c66c9f5e92beaaba9d6d3b"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/portability/fresh_clone_required_artifacts_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/portability/frozen_stack_portability_manifest_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/portability/frozen_stack_portability_manifest_v2.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/portability/merge_gate_1_plan_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/portability/r2_dg_value_assessment_metadata_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/portability/track_b_002_test_receipt_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/r3/r3_generator_contract_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "e37c91dfce79f15a50d8cc12288b9f19cd01c9c7"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/r3/r3_predeclaration_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "e37c91dfce79f15a50d8cc12288b9f19cd01c9c7"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/r3/r3_seed_policy_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "e37c91dfce79f15a50d8cc12288b9f19cd01c9c7"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/track_b/track_b_preparation_test_receipt_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/verifier/verifier_candidate_manifest_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "b70a3d42aff2907e61fd1b2aa03cceb7dbe2b773"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/verifier/verifier_prediction_schema_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "b70a3d42aff2907e61fd1b2aa03cceb7dbe2b773"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/verifier/verifier_runtime_readiness_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "c75483939b635b31261f3bf6a83555db76bc7718"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "artifacts/research_protocol/verifier/verifier_study_predeclaration_v1.json",
+      "track_a_also_changed": false,
+      "track_b_commit": "b70a3d42aff2907e61fd1b2aa03cceb7dbe2b773"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "detection_service/research_protocol/r3_preparation.py",
+      "track_a_also_changed": false,
+      "track_b_commit": "c4d0830fdb69a704bc2213e4b461dc983ecd5012"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "detection_service/research_protocol/track_b_002_validation.py",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "detection_service/research_protocol/track_b_portability.py",
+      "track_a_also_changed": false,
+      "track_b_commit": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "detection_service/research_protocol/verifier_preparation.py",
+      "track_a_also_changed": false,
+      "track_b_commit": "b70a3d42aff2907e61fd1b2aa03cceb7dbe2b773"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "detection_service/tests/test_r3_preparation.py",
+      "track_a_also_changed": false,
+      "track_b_commit": "c4d0830fdb69a704bc2213e4b461dc983ecd5012"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "detection_service/tests/test_track_b_002.py",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "detection_service/tests/test_track_b_portability.py",
+      "track_a_also_changed": false,
+      "track_b_commit": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "detection_service/tests/test_verifier_preparation.py",
+      "track_a_also_changed": false,
+      "track_b_commit": "b70a3d42aff2907e61fd1b2aa03cceb7dbe2b773"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "reviews/DG_HASH_BINDING_REVIEW_v1.md",
+      "track_a_also_changed": false,
+      "track_b_commit": "3ed1ad4fdf8f7a7288351382ee7cf3880a998131"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "reviews/FRESH_CLONE_PORTABILITY_PLAN_v1.md",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "reviews/FROZEN_STACK_PORTABILITY_AUDIT_v1.md",
+      "track_a_also_changed": false,
+      "track_b_commit": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "reviews/FROZEN_STACK_PORTABILITY_AUDIT_v2.md",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "reviews/MERGE_GATE_1_PREPARATION_v1.md",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "reviews/R2_DG_VALUE_ASSESSMENT_v1.md",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "reviews/R3_ENSEMBLE_PREPARATION_v1.md",
+      "track_a_also_changed": false,
+      "track_b_commit": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2"
+    },
+    {
+      "committed_track_a_dependency_paths": [],
+      "dependency_types": [],
+      "overlap_type": "NONE",
+      "path": "reviews/VERIFIER_RECOVERY_METHODOLOGY_v1.md",
+      "track_a_also_changed": false,
+      "track_b_commit": "b70a3d42aff2907e61fd1b2aa03cceb7dbe2b773"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "reviews/VERIFIER_RUNTIME_READINESS_v1.md",
+      "track_a_also_changed": false,
+      "track_b_commit": "c75483939b635b31261f3bf6a83555db76bc7718"
+    },
+    {
+      "committed_track_a_dependency_paths": [
+        "detection_service/tests/test_r2_ds_repair.py"
+      ],
+      "dependency_types": [
+        "TEST_DEPENDENCY"
+      ],
+      "overlap_type": "NONE",
+      "path": "detection_service/research_protocol/track_b_post_idle_load_check.py",
+      "track_a_also_changed": false,
+      "track_b_commit": "B8_SELF"
+    }
+  ],
+  "commits": [
+    {
+      "classification": "SAFE_CHERRY_PICK",
+      "commit": "e37c91dfce79f15a50d8cc12288b9f19cd01c9c7",
+      "reason": "Additive preparation files; no direct committed Track A path overlap observed. Scientific execution remains separately gated.",
+      "title": "exp(r3): predeclare ensemble-aware evasion experiment"
+    },
+    {
+      "classification": "SAFE_CHERRY_PICK",
+      "commit": "c4d0830fdb69a704bc2213e4b461dc983ecd5012",
+      "reason": "Additive preparation files; no direct committed Track A path overlap observed. Scientific execution remains separately gated.",
+      "title": "feat(r3): prepare ensemble attack infrastructure with synthetic tests"
+    },
+    {
+      "classification": "SAFE_CHERRY_PICK",
+      "commit": "b70a3d42aff2907e61fd1b2aa03cceb7dbe2b773",
+      "reason": "Additive preparation files; no direct committed Track A path overlap observed. Scientific execution remains separately gated.",
+      "title": "research(verifier): predeclare recovery study and prepare adapters"
+    },
+    {
+      "classification": "SAFE_CHERRY_PICK",
+      "commit": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2",
+      "reason": "Additive preparation files; no direct committed Track A path overlap observed. Scientific execution remains separately gated.",
+      "title": "docs(repro): audit frozen-stack artifact portability"
+    },
+    {
+      "classification": "CHERRY_PICK_WITH_MANUAL_RECONCILIATION",
+      "commit": "463e88a972ce31b4c1c66c9f5e92beaaba9d6d3b",
+      "reason": "No direct path collision, but Track A test_track_b_preservation hard-codes the old mutable Track B tip. Resolve semantically only after closeout and gate authorization.",
+      "title": "docs(repro): verify frozen DMB bytes and record blocked remote backup"
+    },
+    {
+      "classification": "CHERRY_PICK_WITH_MANUAL_RECONCILIATION",
+      "commit": "3ed1ad4fdf8f7a7288351382ee7cf3880a998131",
+      "reason": "No direct path collision, but Track A test_track_b_preservation hard-codes the old mutable Track B tip. Resolve semantically only after closeout and gate authorization.",
+      "title": "docs(repro): resolve DG provenance hash binding"
+    },
+    {
+      "classification": "CHERRY_PICK_WITH_MANUAL_RECONCILIATION",
+      "commit": "c75483939b635b31261f3bf6a83555db76bc7718",
+      "reason": "No direct path collision, but Track A test_track_b_preservation hard-codes the old mutable Track B tip. Resolve semantically only after closeout and gate authorization.",
+      "title": "chore(verifier): validate runtime and access readiness"
+    },
+    {
+      "classification": "CHERRY_PICK_WITH_MANUAL_RECONCILIATION",
+      "commit": null,
+      "commit_role": "B8_SELF",
+      "reason": "No direct path collision, but Track A test_track_b_preservation hard-codes the old mutable Track B tip. Resolve semantically only after closeout and gate authorization.",
+      "title": "docs(integration): prepare merge gate and R2-DG decision"
+    }
+  ],
+  "common_ancestor": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+  "created_at": "2026-10-08T19:36:31.172759+00:00",
+  "direct_overlap_paths": [],
+  "gates": [
+    "Track A finishes, final closeout accepted, clean and pushed",
+    "Human/lead authorizes Merge Gate 1",
+    "Refresh refs and redo filename/dependency overlap analysis against final Track A HEAD",
+    "Create separate integration branch/worktree from final Track A HEAD",
+    "Cherry-pick one commit at a time; semantic reconciliation on conflicts; no blind ours/theirs",
+    "Run preservation and synthetic suites in separate processes",
+    "Resolve DMB portability blocker before any off-machine runtime claim"
+  ],
+  "integration_strategy": "MANUAL_RECONCILIATION",
+  "merge_executed": false,
+  "model_free_commands": [
+    "python -B -m pytest detection_service/tests/test_r2_ds_predeclaration.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_ds_generator.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_ds_authoritative_v2.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_ds_repair.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_ds_analysis_synthetic.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_ds_freeze_outputs.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_ds_results.py -q",
+    "python -B -m pytest detection_service/tests/test_ds_numerical_disposition.py -q",
+    "python -B -m pytest detection_service/tests/test_ds_numerical_diagnosis.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_dmb_predeclaration.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_dmb_generator.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_dmb_analysis_synthetic.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_dmb_freeze_outputs.py -q",
+    "python -B -m pytest detection_service/tests/test_r2_dmb_results.py -q",
+    "python -B -m pytest detection_service/tests/test_r1_corpus.py -q",
+    "python -B -m pytest detection_service/tests/test_r1_experiment.py -q",
+    "python -B -m pytest detection_service/tests/test_r1_source_gate.py -q",
+    "python -B -m pytest detection_service/tests/test_r0_operational.py -q",
+    "python -B -m pytest detection_service/tests/test_r0_reproduction.py -q",
+    "python -B -m pytest detection_service/tests/test_protocol_lock.py -q",
+    "python -B -m pytest detection_service/tests/test_protocol_patch_001.py -q",
+    "python -B -m pytest detection_service/tests/test_protocol_release.py -q",
+    "python -B -m pytest detection_service/tests/test_protocol_release_audit.py -q",
+    "python -B -m unittest detection_service.tests.test_r3_preparation -v",
+    "python -B -m unittest detection_service.tests.test_verifier_preparation -v",
+    "python -B -m unittest detection_service.tests.test_track_b_portability -v",
+    "python -B -m unittest detection_service.tests.test_track_b_002 -v"
+  ],
+  "model_free_required": [
+    "detection_service/tests/test_r2_ds_predeclaration.py",
+    "detection_service/tests/test_r2_ds_generator.py",
+    "detection_service/tests/test_r2_ds_authoritative_v2.py",
+    "detection_service/tests/test_r2_ds_repair.py",
+    "detection_service/tests/test_r2_ds_analysis_synthetic.py",
+    "detection_service/tests/test_r2_ds_freeze_outputs.py",
+    "detection_service/tests/test_r2_ds_results.py",
+    "detection_service/tests/test_ds_numerical_disposition.py",
+    "detection_service/tests/test_ds_numerical_diagnosis.py",
+    "detection_service/tests/test_r2_dmb_predeclaration.py",
+    "detection_service/tests/test_r2_dmb_generator.py",
+    "detection_service/tests/test_r2_dmb_analysis_synthetic.py",
+    "detection_service/tests/test_r2_dmb_freeze_outputs.py",
+    "detection_service/tests/test_r2_dmb_results.py",
+    "detection_service/tests/test_r1_corpus.py",
+    "detection_service/tests/test_r1_experiment.py",
+    "detection_service/tests/test_r1_source_gate.py",
+    "detection_service/tests/test_r0_operational.py",
+    "detection_service/tests/test_r0_reproduction.py",
+    "detection_service/tests/test_protocol_lock.py",
+    "detection_service/tests/test_protocol_patch_001.py",
+    "detection_service/tests/test_protocol_release.py",
+    "detection_service/tests/test_protocol_release_audit.py"
+  ],
+  "model_runtime_commands": [
+    "python -B -m detection_service.research_protocol.track_b_post_idle_load_check --post-idle-authorized-gate-id <LEAD_AUTHORIZED_GATE_ID>"
+  ],
+  "model_runtime_required": [
+    "After authorization, exact frozen artifact loader/hash preflight for DS/DMB/DG with no fitting.",
+    "Use the exact load-only command below in a fresh authorized isolated runtime; no detector predict/detect call and no scientific samples. Synthetic-input inference is a separate future authorization.",
+    "Run authorized synthetic-input smoke predictions only if separately authorized after Track A; never protected samples or scientific verifier population.",
+    "V1/V2/V3 native loading and synthetic-input smoke require separate authorization/resource headroom; do not call preparation-only load_model() expecting live support."
+  ],
+  "optional_fresh_clone_plan": "reviews/FRESH_CLONE_PORTABILITY_PLAN_v1.md",
+  "protected_data_accessed": false,
+  "release_hash_check": "Use committed authoritative R2-DS preservation hashes and protocol_release/protocol_patch test checks. Additive supporting clarification does not authorize relaxing raw-byte hashes.",
+  "runtime_execution_status": "DEFERRED_UNTIL_TRACK_A_IDLE",
+  "semantic_test_dependencies": [
+    {
+      "assertion": "rev-parse prep/r3-verifier-001 == 0cd2d506380cbb3ec513207e4fa66ad422d2b3f2",
+      "cause": "Current task explicitly advances Track B branch; mutable branch-tip assertion becomes stale without changing Track A file.",
+      "committed_source_sha256": "3215373922aaaff6e5158222259325935a4df910c18d4a00e45be33b9842f08e",
+      "gate_action": "After Track A final closeout and lead authorization, reconcile only test semantics: verify original immutable snapshot remains ancestor and its frozen files/hashes unchanged. Preserve old diagnostic/preflight receipts. Do not merely replace literal with latest branch tip.",
+      "reconciliation_executed": false,
+      "track_a_test": "detection_service/tests/test_r2_ds_repair.py::test_track_b_preservation",
+      "type": "TEST_DEPENDENCY"
+    }
+  ],
+  "snapshot_policy": "Latest descendant committed local/remote ref at analysis time; no uncommitted files or scientific artifact contents read",
+  "test_process_isolation": "Run each suite separately so R3 imports do not contaminate Track A detector-isolation assertions.",
+  "track_a_committed_snapshot": "bdecf702b09db2a2bdc9447d42e1bc83642c8dfb",
+  "track_a_local_ref": "bdecf702b09db2a2bdc9447d42e1bc83642c8dfb",
+  "track_a_remote_ref": "54529b121634e517e336e83051e0f54ddec312f2",
+  "track_b_head_before_B8": "c75483939b635b31261f3bf6a83555db76bc7718"
+}

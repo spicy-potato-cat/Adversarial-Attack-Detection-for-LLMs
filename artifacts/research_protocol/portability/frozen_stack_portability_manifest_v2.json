@@ -1,0 +1,2177 @@
+{
+  "accepted_detector_manifest_sha256": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+  "accepted_detector_manifests_modified": false,
+  "artifact_version": "frozen_stack_portability_manifest_v2",
+  "artifacts": [
+    {
+      "byte_size": 523,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "BINDING_EXPECTED_DIFFERS_FROM_BASE_BLOB",
+      "clarification": "dg_hash_binding_clarification_v1.json",
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "e23929244cd567f6d1c236fe050a7b894bbfe12a7ae4c51f47d7aa2bbe739e2d",
+      "git_blob_matches_frozen_hash": false,
+      "git_blob_sha256": "9269b0b2ec53a92edec118937c5f07ceb6ed2a2ebdb9184c85da8ab79d453706",
+      "hash_observed_sha256": "9269b0b2ec53a92edec118937c5f07ceb6ed2a2ebdb9184c85da8ab79d453706",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dg_v1\\environment.json",
+      "logical_path": "artifacts/models/dg_v1/environment.json",
+      "present_in_track_b_checkout": true,
+      "reconstruction": {
+        "output_sha256": "e23929244cd567f6d1c236fe050a7b894bbfe12a7ae4c51f47d7aa2bbe739e2d",
+        "parsed_content_changed": false,
+        "source_commit": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+        "source_git_path": "artifacts/models/dg_v1/environment.json",
+        "source_git_sha256": "9269b0b2ec53a92edec118937c5f07ceb6ed2a2ebdb9184c85da8ab79d453706",
+        "transform": "Replace LF with CRLF only"
+      },
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Post-idle isolated exact-byte CRLF restoration; historical hashes remain unchanged",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "artifacts/models/dg_v1/environment.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 4138,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "25145fd1efff9817ab22fafaa67f8a049bc245c237a53c20ef3897fecc263552",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "25145fd1efff9817ab22fafaa67f8a049bc245c237a53c20ef3897fecc263552",
+      "hash_observed_sha256": "25145fd1efff9817ab22fafaa67f8a049bc245c237a53c20ef3897fecc263552",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dg_v1\\freeze_metadata.json",
+      "logical_path": "artifacts/models/dg_v1/freeze_metadata.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "REVISION_LICENSE_DEPENDENCY_BINDING"
+      ],
+      "runtime_location": "artifacts/models/dg_v1/freeze_metadata.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 488,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "b425a32c46b959eaa50aea06088f074145c8b51bb1c6213db36e7dfccfebaffb",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "b425a32c46b959eaa50aea06088f074145c8b51bb1c6213db36e7dfccfebaffb",
+      "hash_observed_sha256": "b425a32c46b959eaa50aea06088f074145c8b51bb1c6213db36e7dfccfebaffb",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dg_v1\\model_config.json",
+      "logical_path": "artifacts/models/dg_v1/model_config.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "CONFIGURATION"
+      ],
+      "runtime_location": "artifacts/models/dg_v1/model_config.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 627,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "b6962568aa244fd228536891d195341d916740a4f53efefeba545a1c05847f5d",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "b6962568aa244fd228536891d195341d916740a4f53efefeba545a1c05847f5d",
+      "hash_observed_sha256": "b6962568aa244fd228536891d195341d916740a4f53efefeba545a1c05847f5d",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dm_b_v1\\calibration\\calibration_config.json",
+      "logical_path": "artifacts/models/dm_b_v1/calibration/calibration_config.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "CALIBRATION_CONFIGURATION"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/calibration/calibration_config.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 94,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "7af044ff8e0e29020450bffa93f92c973da4cc4a4888067d88938eefbb2566b9",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "7af044ff8e0e29020450bffa93f92c973da4cc4a4888067d88938eefbb2566b9",
+      "hash_observed_sha256": "7af044ff8e0e29020450bffa93f92c973da4cc4a4888067d88938eefbb2566b9",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dm_b_v1\\calibration\\calibrator.json",
+      "logical_path": "artifacts/models/dm_b_v1/calibration/calibrator.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "CALIBRATOR"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/calibration/calibrator.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 802,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "8cca036d1ea11250f337fedbd551ffd7865b838af1ae86dcaaf64ac7a29d09aa",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "8cca036d1ea11250f337fedbd551ffd7865b838af1ae86dcaaf64ac7a29d09aa",
+      "hash_observed_sha256": "8cca036d1ea11250f337fedbd551ffd7865b838af1ae86dcaaf64ac7a29d09aa",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dm_b_v1\\integrity_manifest.json",
+      "logical_path": "artifacts/models/dm_b_v1/integrity_manifest.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "INTEGRITY_BINDING"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/integrity_manifest.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 1214,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "c0dd94ebf78d1918a74e70964ed3e0d0873685c04c51d2835710ee237d36fa10",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "c0dd94ebf78d1918a74e70964ed3e0d0873685c04c51d2835710ee237d36fa10",
+      "hash_observed_sha256": "c0dd94ebf78d1918a74e70964ed3e0d0873685c04c51d2835710ee237d36fa10",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dm_b_v1\\model_config.json",
+      "logical_path": "artifacts/models/dm_b_v1/model_config.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "CONFIGURATION"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/model_config.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 968,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "3d747d91542e014f5db4d7577924298fa71d4396e8eb9e429ed1ea95ddbf41c8",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "3d747d91542e014f5db4d7577924298fa71d4396e8eb9e429ed1ea95ddbf41c8",
+      "hash_observed_sha256": "3d747d91542e014f5db4d7577924298fa71d4396e8eb9e429ed1ea95ddbf41c8",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dm_b_v1\\transformer\\config.json",
+      "logical_path": "artifacts/models/dm_b_v1/transformer/config.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FINE_TUNED_MODEL_TOKENIZER"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/transformer/config.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 456318,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "hash_observed_sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dm_b_v1\\transformer\\merges.txt",
+      "logical_path": "artifacts/models/dm_b_v1/transformer/merges.txt",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FINE_TUNED_MODEL_TOKENIZER"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/transformer/merges.txt",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "backup_status": "BLOCKED_APPROVAL_REVIEW",
+      "byte_size": 328492280,
+      "classification": "LOCAL_ONLY",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844",
+      "hash_observed_sha256": "0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844",
+      "hash_status": "VERIFIED_READ_ONLY_SOURCE",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\transformer\\model.safetensors",
+      "logical_path": "artifacts/models/dm_b_v1/transformer/model.safetensors",
+      "present_in_track_b_checkout": false,
+      "proposed_private_repository": "sumitt86/adversarial-attack-detection-frozen-artifacts",
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "MODEL_OR_CLASSIFIER",
+        "FINE_TUNED_MODEL_TOKENIZER"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/transformer/model.safetensors",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 295,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "8574792bfefae68f2ce2eae93a4145d95b1232c59e71094bcdcb49dbcb549c97",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "8574792bfefae68f2ce2eae93a4145d95b1232c59e71094bcdcb49dbcb549c97",
+      "hash_observed_sha256": "8574792bfefae68f2ce2eae93a4145d95b1232c59e71094bcdcb49dbcb549c97",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dm_b_v1\\transformer\\special_tokens_map.json",
+      "logical_path": "artifacts/models/dm_b_v1/transformer/special_tokens_map.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FINE_TUNED_MODEL_TOKENIZER"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/transformer/special_tokens_map.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 3558896,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "fa6e9e4de220a47ece0c8f9c1865f4e353419331bf8ba21ea9d34230a702ffcb",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "fa6e9e4de220a47ece0c8f9c1865f4e353419331bf8ba21ea9d34230a702ffcb",
+      "hash_observed_sha256": "fa6e9e4de220a47ece0c8f9c1865f4e353419331bf8ba21ea9d34230a702ffcb",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dm_b_v1\\transformer\\tokenizer.json",
+      "logical_path": "artifacts/models/dm_b_v1/transformer/tokenizer.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FINE_TUNED_MODEL_TOKENIZER"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/transformer/tokenizer.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 1304,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "253e231e9ae9fd6e64762375b14c8f7f266c711b75d2b74a17170e6f3defe729",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "253e231e9ae9fd6e64762375b14c8f7f266c711b75d2b74a17170e6f3defe729",
+      "hash_observed_sha256": "253e231e9ae9fd6e64762375b14c8f7f266c711b75d2b74a17170e6f3defe729",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dm_b_v1\\transformer\\tokenizer_config.json",
+      "logical_path": "artifacts/models/dm_b_v1/transformer/tokenizer_config.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FINE_TUNED_MODEL_TOKENIZER"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/transformer/tokenizer_config.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 798293,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e",
+      "hash_observed_sha256": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\models\\dm_b_v1\\transformer\\vocab.json",
+      "logical_path": "artifacts/models/dm_b_v1/transformer/vocab.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FINE_TUNED_MODEL_TOKENIZER"
+      ],
+      "runtime_location": "artifacts/models/dm_b_v1/transformer/vocab.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 69338,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "hash_observed_sha256": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\research_protocol\\detector_set_manifest_v1.json",
+      "logical_path": "artifacts/research_protocol/detector_set_manifest_v1.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "artifacts/research_protocol/detector_set_manifest_v1.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 3231,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "992eac53d0b9bd84ce8bb28cd94f8c20d79f768072c625b87f004d4d69f6cfca",
+      "hash_observed_sha256": "992eac53d0b9bd84ce8bb28cd94f8c20d79f768072c625b87f004d4d69f6cfca",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\research_protocol\\operating_points\\predeclared_policy_v1.json",
+      "logical_path": "artifacts/research_protocol/operating_points/predeclared_policy_v1.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "artifacts/research_protocol/operating_points/predeclared_policy_v1.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 1272,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "216bf438c4608eb4b39a40ac547b427f4bb1646650b394c5e1b33aa6b7e43324",
+      "hash_observed_sha256": "216bf438c4608eb4b39a40ac547b427f4bb1646650b394c5e1b33aa6b7e43324",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\research_protocol\\operating_points\\selected_thresholds_before_diagnostics_v1.json",
+      "logical_path": "artifacts/research_protocol/operating_points/selected_thresholds_before_diagnostics_v1.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "artifacts/research_protocol/operating_points/selected_thresholds_before_diagnostics_v1.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 17183,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "d0e1f38898b4f82c93daaa6425f4ddb3592fe080fe50db6ef36f2be9dbed2353",
+      "hash_observed_sha256": "d0e1f38898b4f82c93daaa6425f4ddb3592fe080fe50db6ef36f2be9dbed2353",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\research_protocol\\protocol_lock_manifest_v1.json",
+      "logical_path": "artifacts/research_protocol/protocol_lock_manifest_v1.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "artifacts/research_protocol/protocol_lock_manifest_v1.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 36449,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "b76966953f1e2c09cabef9a7dec42a3ad589e6a945ba12890e9836178baa7c50",
+      "hash_observed_sha256": "b76966953f1e2c09cabef9a7dec42a3ad589e6a945ba12890e9836178baa7c50",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\research_protocol\\protocol_patches\\exp_protocol_001_patch_001.json",
+      "logical_path": "artifacts/research_protocol/protocol_patches/exp_protocol_001_patch_001.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "artifacts/research_protocol/protocol_patches/exp_protocol_001_patch_001.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 122101,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "2302ce04d41d872e81386347da382403af39205d9d2e9ec2d7102cccbd9d72e6",
+      "hash_observed_sha256": "2302ce04d41d872e81386347da382403af39205d9d2e9ec2d7102cccbd9d72e6",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\research_protocol\\runtime\\ds_v2_equivalence_evidence_v1.json",
+      "logical_path": "artifacts/research_protocol/runtime/ds_v2_equivalence_evidence_v1.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "artifacts/research_protocol/runtime/ds_v2_equivalence_evidence_v1.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 1988,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "d58c472c3187e8fa6c20efa5a2e9281e1036377076c39da2562c53eb6e13bbc5",
+      "hash_observed_sha256": "d58c472c3187e8fa6c20efa5a2e9281e1036377076c39da2562c53eb6e13bbc5",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\artifacts\\research_protocol\\runtime\\ds_v2_runtime_binding_v1.json",
+      "logical_path": "artifacts/research_protocol/runtime/ds_v2_runtime_binding_v1.json",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "artifacts/research_protocol/runtime/ds_v2_runtime_binding_v1.json",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 309,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_integrity_v1.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_integrity_v1.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "05729c90b0485444a6268151b488eb5cb8f13bc696731475f0a856bd1fb764f9"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "05729c90b0485444a6268151b488eb5cb8f13bc696731475f0a856bd1fb764f9",
+      "hash_observed_sha256": "05729c90b0485444a6268151b488eb5cb8f13bc696731475f0a856bd1fb764f9",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\calibration\\completed_v1\\ds_v2_calibration_integrity_v1.json",
+      "logical_path": "artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_integrity_v1.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "CALIBRATION_BINDING"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_integrity_v1.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 4990,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_manifest_v1.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_manifest_v1.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "6ad2a6d42a81f4b51f2390bc14a126dfe9236b3c04b01e4eabbc0c3479d54d94"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "6ad2a6d42a81f4b51f2390bc14a126dfe9236b3c04b01e4eabbc0c3479d54d94",
+      "hash_observed_sha256": "6ad2a6d42a81f4b51f2390bc14a126dfe9236b3c04b01e4eabbc0c3479d54d94",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\calibration\\completed_v1\\ds_v2_calibration_manifest_v1.json",
+      "logical_path": "artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_manifest_v1.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "CALIBRATION_BINDING"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/calibration/completed_v1/ds_v2_calibration_manifest_v1.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 176177,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_feature_reference.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/final/ds_v2_feature_reference.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "fd26774585223913d12b8c20556a8fc1a50fa5dea7a3a75068a7bb30efce76ec"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "fd26774585223913d12b8c20556a8fc1a50fa5dea7a3a75068a7bb30efce76ec",
+      "hash_observed_sha256": "fd26774585223913d12b8c20556a8fc1a50fa5dea7a3a75068a7bb30efce76ec",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\final\\ds_v2_feature_reference.json",
+      "logical_path": "artifacts/statistical_v2/final/ds_v2_feature_reference.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "MODEL_FEATURE_SCHEMA_BINDING"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_feature_reference.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 402,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_integrity_v1.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/final/ds_v2_integrity_v1.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "3465236b57a89b8b1c4f148e45dec192d2b295e6baefc0226402160d6f2740a9"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "3465236b57a89b8b1c4f148e45dec192d2b295e6baefc0226402160d6f2740a9",
+      "hash_observed_sha256": "3465236b57a89b8b1c4f148e45dec192d2b295e6baefc0226402160d6f2740a9",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\final\\ds_v2_integrity_v1.json",
+      "logical_path": "artifacts/statistical_v2/final/ds_v2_integrity_v1.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "MODEL_FEATURE_SCHEMA_BINDING"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_integrity_v1.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 1196,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_model.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/final/ds_v2_model.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157",
+      "hash_observed_sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\final\\ds_v2_model.json",
+      "logical_path": "artifacts/statistical_v2/final/ds_v2_model.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "MODEL_FEATURE_SCHEMA_BINDING"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_model.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 4912,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_model_manifest_v1.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/final/ds_v2_model_manifest_v1.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "8b62666f713c47c6f35fceb3a153a6da80de6081654d0b552bd882e8750c4aa1"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "8b62666f713c47c6f35fceb3a153a6da80de6081654d0b552bd882e8750c4aa1",
+      "hash_observed_sha256": "8b62666f713c47c6f35fceb3a153a6da80de6081654d0b552bd882e8750c4aa1",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\final\\ds_v2_model_manifest_v1.json",
+      "logical_path": "artifacts/statistical_v2/final/ds_v2_model_manifest_v1.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "MODEL_FEATURE_SCHEMA_BINDING"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_model_manifest_v1.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 2286,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_training_metadata_v1.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/final/ds_v2_training_metadata_v1.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "5dcbf8c45180612b2a20d9879c7ccb1d80bfd6d6055d4e7a80f85420d98d1839"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "5dcbf8c45180612b2a20d9879c7ccb1d80bfd6d6055d4e7a80f85420d98d1839",
+      "hash_observed_sha256": "5dcbf8c45180612b2a20d9879c7ccb1d80bfd6d6055d4e7a80f85420d98d1839",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\final\\ds_v2_training_metadata_v1.json",
+      "logical_path": "artifacts/statistical_v2/final/ds_v2_training_metadata_v1.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "MODEL_FEATURE_SCHEMA_BINDING"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_training_metadata_v1.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 7554,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "73755cee886613ae3135140882289e0a4955d5f0e90f8b1c1ffc962aa9082917",
+      "hash_observed_sha256": "73755cee886613ae3135140882289e0a4955d5f0e90f8b1c1ffc962aa9082917",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\LICENSE",
+      "logical_path": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/LICENSE",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "LICENSE",
+        "gated": true,
+        "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+        "revision": "11614a155199674a0a95e6602d6ab0417b790ed0"
+      },
+      "remote_availability": "ACCESS_CONFIRMED_METADATA_CONFIG_TOKENIZER; WEIGHT_DOWNLOAD_DEFERRED",
+      "roles": [
+        "MODEL_TOKENIZER_LICENSE_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/LICENSE",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 9747,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "7aacb25a94cab70530bca3545feda87bf7a935eaca92998222365b090acfd97c",
+      "hash_observed_sha256": "7aacb25a94cab70530bca3545feda87bf7a935eaca92998222365b090acfd97c",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\MODEL_CARD.md",
+      "logical_path": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/MODEL_CARD.md",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "MODEL_CARD.md",
+        "gated": true,
+        "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+        "revision": "11614a155199674a0a95e6602d6ab0417b790ed0"
+      },
+      "remote_availability": "ACCESS_CONFIRMED_METADATA_CONFIG_TOKENIZER; WEIGHT_DOWNLOAD_DEFERRED",
+      "roles": [
+        "MODEL_TOKENIZER_LICENSE_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/MODEL_CARD.md",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 19046,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "5d2a3e0c46397609a784a5034dc823da408aa8b5a414828609f32dc18ee16933",
+      "hash_observed_sha256": "5d2a3e0c46397609a784a5034dc823da408aa8b5a414828609f32dc18ee16933",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\README.md",
+      "logical_path": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/README.md",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "README.md",
+        "gated": true,
+        "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+        "revision": "11614a155199674a0a95e6602d6ab0417b790ed0"
+      },
+      "remote_availability": "ACCESS_CONFIRMED_METADATA_CONFIG_TOKENIZER; WEIGHT_DOWNLOAD_DEFERRED",
+      "roles": [
+        "MODEL_TOKENIZER_LICENSE_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/README.md",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 5796,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "5ae40fe842b87b5773c47cfd25992a496cc09b17cbb246968762f06352d89270",
+      "hash_observed_sha256": "5ae40fe842b87b5773c47cfd25992a496cc09b17cbb246968762f06352d89270",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\USE_POLICY.md",
+      "logical_path": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/USE_POLICY.md",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "USE_POLICY.md",
+        "gated": true,
+        "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+        "revision": "11614a155199674a0a95e6602d6ab0417b790ed0"
+      },
+      "remote_availability": "ACCESS_CONFIRMED_METADATA_CONFIG_TOKENIZER; WEIGHT_DOWNLOAD_DEFERRED",
+      "roles": [
+        "MODEL_TOKENIZER_LICENSE_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/USE_POLICY.md",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 870,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "1dc4742d04507072cafffb7235dc5dba5af9ba126f7a9830b95ed7ec00fd9104",
+      "hash_observed_sha256": "1dc4742d04507072cafffb7235dc5dba5af9ba126f7a9830b95ed7ec00fd9104",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\config.json",
+      "logical_path": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/config.json",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "config.json",
+        "gated": true,
+        "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+        "revision": "11614a155199674a0a95e6602d6ab0417b790ed0"
+      },
+      "remote_availability": "ACCESS_CONFIRMED_METADATA_CONFIG_TOKENIZER; WEIGHT_DOWNLOAD_DEFERRED",
+      "roles": [
+        "MODEL_TOKENIZER_LICENSE_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/config.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 283347432,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "5120e30bcd536ce285345d9ec104bea6bd6e8f94365b99a340c764f417ea5fa1",
+      "hash_observed_sha256": null,
+      "hash_status": "RECORDED_NOT_REHASHED_LARGE_FILE",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\model.safetensors",
+      "logical_path": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/model.safetensors",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "model.safetensors",
+        "gated": true,
+        "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+        "revision": "11614a155199674a0a95e6602d6ab0417b790ed0"
+      },
+      "remote_availability": "ACCESS_CONFIRMED_METADATA_CONFIG_TOKENIZER; WEIGHT_DOWNLOAD_DEFERRED",
+      "roles": [
+        "MODEL_OR_CLASSIFIER",
+        "MODEL_TOKENIZER_LICENSE_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/model.safetensors",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 286,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+      "hash_observed_sha256": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\special_tokens_map.json",
+      "logical_path": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/special_tokens_map.json",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "special_tokens_map.json",
+        "gated": true,
+        "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+        "revision": "11614a155199674a0a95e6602d6ab0417b790ed0"
+      },
+      "remote_availability": "ACCESS_CONFIRMED_METADATA_CONFIG_TOKENIZER; WEIGHT_DOWNLOAD_DEFERRED",
+      "roles": [
+        "MODEL_TOKENIZER_LICENSE_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/special_tokens_map.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 8657051,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "6eb983352e73f1697b883a8c3f6b66bdfa336ab3d29dd3687f8316d0ff2789c1",
+      "hash_observed_sha256": "6eb983352e73f1697b883a8c3f6b66bdfa336ab3d29dd3687f8316d0ff2789c1",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\tokenizer.json",
+      "logical_path": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/tokenizer.json",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "tokenizer.json",
+        "gated": true,
+        "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+        "revision": "11614a155199674a0a95e6602d6ab0417b790ed0"
+      },
+      "remote_availability": "ACCESS_CONFIRMED_METADATA_CONFIG_TOKENIZER; WEIGHT_DOWNLOAD_DEFERRED",
+      "roles": [
+        "MODEL_TOKENIZER_LICENSE_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/tokenizer.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 1284,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "557b3d33d3f41b81ad769244e506549e98a1857d41dd58160aacd4d98d710b5a",
+      "hash_observed_sha256": "557b3d33d3f41b81ad769244e506549e98a1857d41dd58160aacd4d98d710b5a",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\dg_v1\\snapshot-11614a155199674a0a95e6602d6ab0417b790ed0\\tokenizer_config.json",
+      "logical_path": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/tokenizer_config.json",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "tokenizer_config.json",
+        "gated": true,
+        "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+        "revision": "11614a155199674a0a95e6602d6ab0417b790ed0"
+      },
+      "remote_availability": "ACCESS_CONFIRMED_METADATA_CONFIG_TOKENIZER; WEIGHT_DOWNLOAD_DEFERRED",
+      "roles": [
+        "MODEL_TOKENIZER_LICENSE_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/dg_v1/snapshot-11614a155199674a0a95e6602d6ab0417b790ed0/tokenizer_config.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 762,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "4ec5947c1d59fee6212cdf3b0ec1a53eac02092554c5ff0a733488cbd2c64f3a",
+      "hash_observed_sha256": "4ec5947c1d59fee6212cdf3b0ec1a53eac02092554c5ff0a733488cbd2c64f3a",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\ds_v1\\snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa\\config.json",
+      "logical_path": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/config.json",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "config.json",
+        "model_id": "distilbert/distilgpt2",
+        "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+      },
+      "remote_availability": "NEEDS_POST_TRACK_A_FRESH_CLONE_TEST",
+      "roles": [
+        "REFERENCE_LM_TOKENIZER_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/config.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 124,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+      "hash_observed_sha256": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\ds_v1\\snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa\\generation_config.json",
+      "logical_path": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/generation_config.json",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "generation_config.json",
+        "model_id": "distilbert/distilgpt2",
+        "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+      },
+      "remote_availability": "NEEDS_POST_TRACK_A_FRESH_CLONE_TEST",
+      "roles": [
+        "REFERENCE_LM_TOKENIZER_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/generation_config.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 456318,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "hash_observed_sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\ds_v1\\snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa\\merges.txt",
+      "logical_path": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/merges.txt",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "merges.txt",
+        "model_id": "distilbert/distilgpt2",
+        "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+      },
+      "remote_availability": "NEEDS_POST_TRACK_A_FRESH_CLONE_TEST",
+      "roles": [
+        "REFERENCE_LM_TOKENIZER_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/merges.txt",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 352824413,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "e1ff18884359fe8beb795a5f414feb85a6ce3d929ad019c0d958c039d2b94a1b",
+      "hash_observed_sha256": null,
+      "hash_status": "RECORDED_NOT_REHASHED_LARGE_FILE",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\ds_v1\\snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa\\model.safetensors",
+      "logical_path": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/model.safetensors",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "model.safetensors",
+        "model_id": "distilbert/distilgpt2",
+        "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+      },
+      "remote_availability": "NEEDS_POST_TRACK_A_FRESH_CLONE_TEST",
+      "roles": [
+        "REFERENCE_LM_TOKENIZER_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/model.safetensors",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 1355256,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+      "hash_observed_sha256": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\ds_v1\\snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa\\tokenizer.json",
+      "logical_path": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/tokenizer.json",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "tokenizer.json",
+        "model_id": "distilbert/distilgpt2",
+        "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+      },
+      "remote_availability": "NEEDS_POST_TRACK_A_FRESH_CLONE_TEST",
+      "roles": [
+        "REFERENCE_LM_TOKENIZER_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/tokenizer.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 26,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+      "hash_observed_sha256": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\ds_v1\\snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa\\tokenizer_config.json",
+      "logical_path": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/tokenizer_config.json",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "tokenizer_config.json",
+        "model_id": "distilbert/distilgpt2",
+        "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+      },
+      "remote_availability": "NEEDS_POST_TRACK_A_FRESH_CLONE_TEST",
+      "roles": [
+        "REFERENCE_LM_TOKENIZER_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/tokenizer_config.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 1042301,
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783",
+      "hash_observed_sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\.model-cache\\ds_v1\\snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa\\vocab.json",
+      "logical_path": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/vocab.json",
+      "present_in_track_b_checkout": false,
+      "remote": {
+        "file": "vocab.json",
+        "model_id": "distilbert/distilgpt2",
+        "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+      },
+      "remote_availability": "NEEDS_POST_TRACK_A_FRESH_CLONE_TEST",
+      "roles": [
+        "REFERENCE_LM_TOKENIZER_SNAPSHOT"
+      ],
+      "runtime_location": "detection_service/.model-cache/ds_v1/snapshot-2290a62682d06624634c1f46a6ad5be0f47f38aa/vocab.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 14855,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "cbde0ee5e4216aa024e6d60facf310e57a22e5d653612db12840365b08819e70",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "cbde0ee5e4216aa024e6d60facf310e57a22e5d653612db12840365b08819e70",
+      "hash_observed_sha256": "cbde0ee5e4216aa024e6d60facf310e57a22e5d653612db12840365b08819e70",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\analysis\\statistical_feature_ablation.py",
+      "logical_path": "detection_service/analysis/statistical_feature_ablation.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FEATURE_RUNTIME_CODE",
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/analysis/statistical_feature_ablation.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 9195,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "288f2517f918d48ceaa07bb9f1b345cde031e2d2db1ee6d0d10b10a7fe93e0b2",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "288f2517f918d48ceaa07bb9f1b345cde031e2d2db1ee6d0d10b10a7fe93e0b2",
+      "hash_observed_sha256": "288f2517f918d48ceaa07bb9f1b345cde031e2d2db1ee6d0d10b10a7fe93e0b2",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\analysis\\statistical_scorer_comparison.py",
+      "logical_path": "detection_service/analysis/statistical_scorer_comparison.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FEATURE_RUNTIME_CODE",
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/analysis/statistical_scorer_comparison.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 2292,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "1fa6e3edf788a0660c9ec15d1a68875d8281fe841083eadc3cdd91caf5911004",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "1fa6e3edf788a0660c9ec15d1a68875d8281fe841083eadc3cdd91caf5911004",
+      "hash_observed_sha256": "70f1f90045a30e11668e3dd1bce16feacab92beb16cb68dbb41134188bfed37b",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\contracts\\detector_result.py",
+      "logical_path": "detection_service/app/contracts/detector_result.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/app/contracts/detector_result.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 428,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "e0b6d7e9f0bfdffd8fa90f49d6ca82b46a7ef31a7acd01605b685ff7c2f307de",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "e0b6d7e9f0bfdffd8fa90f49d6ca82b46a7ef31a7acd01605b685ff7c2f307de",
+      "hash_observed_sha256": "ca861bf71282487c5816a07ca76162960fe1bc4e023871e0e010cb35c9a270e3",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\base.py",
+      "logical_path": "detection_service/app/detectors/base.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/app/detectors/base.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 1746,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "ac39082b44400db70c8e13a2ae51a4d9632fd5bc458bfcceff708b2d3784cc53",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "ac39082b44400db70c8e13a2ae51a4d9632fd5bc458bfcceff708b2d3784cc53",
+      "hash_observed_sha256": "4491429fbd940617a9549871ff200d1953a4016bcce4c75148a5d332c0944d4c",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\guard\\config.py",
+      "logical_path": "detection_service/app/detectors/guard/config.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/app/detectors/guard/config.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 6443,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_G"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "cad7fa7ac3a43dc935eb30d964c8cef41a49f07618b97bfef73740d408c6982a",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "cad7fa7ac3a43dc935eb30d964c8cef41a49f07618b97bfef73740d408c6982a",
+      "hash_observed_sha256": "f1d052e27e92e6b00266d6461dd14d44b4926880013a447454bd60544ab36f5a",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\guard\\detector.py",
+      "logical_path": "detection_service/app/detectors/guard/detector.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "IMPLEMENTATION"
+      ],
+      "runtime_location": "detection_service/app/detectors/guard/detector.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 4508,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "bb6c06f0ea2de880c95a8a4e034b1a6eec2dffc39077a220d8076d5f9991ccd9",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "bb6c06f0ea2de880c95a8a4e034b1a6eec2dffc39077a220d8076d5f9991ccd9",
+      "hash_observed_sha256": "85daaf9881b65d77b34fcb0d4615abf11a10c88ea89e018685eb594f6fbac6e5",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\guard\\model.py",
+      "logical_path": "detection_service/app/detectors/guard/model.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/app/detectors/guard/model.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 6199,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "06e7d3679ecfcb8f585e8b7741c261340bbecff838a30aadf52ceef1436c1f7b",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "06e7d3679ecfcb8f585e8b7741c261340bbecff838a30aadf52ceef1436c1f7b",
+      "hash_observed_sha256": "5d099270bdbd810b2b6d5585a92adc8127f3178d7fbac2cfc56e8ff88a27a948",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\semantic\\calibration.py",
+      "logical_path": "detection_service/app/detectors/semantic/calibration.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/app/detectors/semantic/calibration.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 3392,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "821c1b748dba36bfbfa9f991c4034fa6f9abd8784695c94d34175c3e1d2dbe7e",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "821c1b748dba36bfbfa9f991c4034fa6f9abd8784695c94d34175c3e1d2dbe7e",
+      "hash_observed_sha256": "a931196acc0f5a5e4c9fa483075d7a6f67a7434655e30b9d5365fd8665187c4b",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\semantic_finetuned\\calibration.py",
+      "logical_path": "detection_service/app/detectors/semantic_finetuned/calibration.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/app/detectors/semantic_finetuned/calibration.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 3747,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "5880f5e98e7ca935f8b421877f0242450f7cbd04397605335f0d27b9bc5ec4e0",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "5880f5e98e7ca935f8b421877f0242450f7cbd04397605335f0d27b9bc5ec4e0",
+      "hash_observed_sha256": "30410646a9ff917806b666607d22a585c1bf6e09b083d5d4712b0275ccb50ba1",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\semantic_finetuned\\config.py",
+      "logical_path": "detection_service/app/detectors/semantic_finetuned/config.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/app/detectors/semantic_finetuned/config.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 8284,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_M-B"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "0c13a0da3a762cd0bfe374ea67d8a37b9c9b49851adaebd6d116e05f1b98666c",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "0c13a0da3a762cd0bfe374ea67d8a37b9c9b49851adaebd6d116e05f1b98666c",
+      "hash_observed_sha256": "31569a6baa481a5f8be39a15f4ef4c0ee0d107a1f3c09dea58f469900a9f08f2",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\semantic_finetuned\\detector.py",
+      "logical_path": "detection_service/app/detectors/semantic_finetuned/detector.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "IMPLEMENTATION"
+      ],
+      "runtime_location": "detection_service/app/detectors/semantic_finetuned/detector.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 42,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "32ec738f8a25da0552facb413a694b038876ec4b35c56d21de5ed25145608a2e",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "32ec738f8a25da0552facb413a694b038876ec4b35c56d21de5ed25145608a2e",
+      "hash_observed_sha256": "0db252975ca0dcf599cfa2d91015012598e502845f3108fb07507825aa88b42b",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\statistical\\__init__.py",
+      "logical_path": "detection_service/app/detectors/statistical/__init__.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "FEATURE_RUNTIME_CODE",
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/app/detectors/statistical/__init__.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 866,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "e5cc8512c3acbdad323ec826176513fd8173c8864c7aa8ae081a7503d46f7f17",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "e5cc8512c3acbdad323ec826176513fd8173c8864c7aa8ae081a7503d46f7f17",
+      "hash_observed_sha256": "7f2c0366c02f13259ce22fc578c934d5e2486442d23f8873bc010d8837f7cf4c",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\statistical\\config.py",
+      "logical_path": "detection_service/app/detectors/statistical/config.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "FEATURE_RUNTIME_CODE",
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/app/detectors/statistical/config.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 3902,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "b2ccdc4cc64789170a730990570373079645b870f027f6d11da2d78fe71866fa",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "b2ccdc4cc64789170a730990570373079645b870f027f6d11da2d78fe71866fa",
+      "hash_observed_sha256": "c5a1ce76d2d4e964aed89f19404443d5b412a447c8b2812f696bd14111401f06",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\statistical\\features.py",
+      "logical_path": "detection_service/app/detectors/statistical/features.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "FEATURE_RUNTIME_CODE",
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/app/detectors/statistical/features.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 4011,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "032ab0652fdc5d4ddd3d6e833d558f29d63d04164e90901dc3eecd05b3dde599",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "032ab0652fdc5d4ddd3d6e833d558f29d63d04164e90901dc3eecd05b3dde599",
+      "hash_observed_sha256": "cc8858a6baba6f93f0c7e30c62122c38e578a9f4f235ffd4feb3b4beb1018d77",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\statistical\\perplexity_detector.py",
+      "logical_path": "detection_service/app/detectors/statistical/perplexity_detector.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "FEATURE_RUNTIME_CODE",
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/app/detectors/statistical/perplexity_detector.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 7152,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "cd978bd44d719dbee29b510f8f6138638a2ff30d8d23a6a379fdf48e5c26b4c1",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "cd978bd44d719dbee29b510f8f6138638a2ff30d8d23a6a379fdf48e5c26b4c1",
+      "hash_observed_sha256": "3848cbb4002dc54feb6393e6850667280d002387d57fc15e31d78b5e5ce9834b",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\statistical\\perplexity_engine.py",
+      "logical_path": "detection_service/app/detectors/statistical/perplexity_engine.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "FEATURE_RUNTIME_CODE",
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/app/detectors/statistical/perplexity_engine.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 1638,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "994e5660a8eaa69749f31f8afc6fecfc2d22adfa3e17fcb190c08ed22898955a",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "994e5660a8eaa69749f31f8afc6fecfc2d22adfa3e17fcb190c08ed22898955a",
+      "hash_observed_sha256": "3ad077ef43541729b25492b3b99792a776fde9d1090e4a1d0fdb4573f5caf90f",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\statistical_risk\\schema.py",
+      "logical_path": "detection_service/app/detectors/statistical_risk/schema.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/app/detectors/statistical_risk/schema.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 7197,
+      "checkout_byte_drift": true,
+      "checkout_drift_reason": "LINE_ENDING_CONVERSION",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "D_S"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": "a410637562e201b8d64ca8670e5c034f827f416bc7b6655da94de97817a17c12",
+      "git_blob_matches_frozen_hash": true,
+      "git_blob_sha256": "a410637562e201b8d64ca8670e5c034f827f416bc7b6655da94de97817a17c12",
+      "hash_observed_sha256": "65c59321b3c8d3f8f5d6f35750a1959a1456a8f08840da6555df1d7d87fe15be",
+      "hash_status": "MISMATCH",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\app\\detectors\\statistical_risk\\scorer.py",
+      "logical_path": "detection_service/app/detectors/statistical_risk/scorer.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "required_action": "Restore exact accepted Git blob bytes in an authorized isolated runtime; never change frozen expected hash. Audit does not modify checkout.",
+      "roles": [
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/app/detectors/statistical_risk/scorer.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 242,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/detection_service/app/detectors/statistical_v2/__init__.py",
+        "executed": false,
+        "git_path": "detection_service/app/detectors/statistical_v2/__init__.py",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "7ac35c423a5a0e1450481ec4215b6cf6ed9b64b104e2b9358b2843a68f4d474d"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "7ac35c423a5a0e1450481ec4215b6cf6ed9b64b104e2b9358b2843a68f4d474d",
+      "hash_observed_sha256": "7ac35c423a5a0e1450481ec4215b6cf6ed9b64b104e2b9358b2843a68f4d474d",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\detection_service\\app\\detectors\\statistical_v2\\__init__.py",
+      "logical_path": "detection_service/app/detectors/statistical_v2/__init__.py",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FEATURE_RUNTIME_CODE",
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/detection_service/app/detectors/statistical_v2/__init__.py",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 4107,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/detection_service/app/detectors/statistical_v2/detector.py",
+        "executed": false,
+        "git_path": "detection_service/app/detectors/statistical_v2/detector.py",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "4912273d2caad3ff4f4094b9684310dc85199421fde7823b7de66d55607558fd"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "4912273d2caad3ff4f4094b9684310dc85199421fde7823b7de66d55607558fd",
+      "hash_observed_sha256": "4912273d2caad3ff4f4094b9684310dc85199421fde7823b7de66d55607558fd",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\detection_service\\app\\detectors\\statistical_v2\\detector.py",
+      "logical_path": "detection_service/app/detectors/statistical_v2/detector.py",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FEATURE_RUNTIME_CODE",
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/detection_service/app/detectors/statistical_v2/detector.py",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 5412,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/detection_service/app/detectors/statistical_v2/model.py",
+        "executed": false,
+        "git_path": "detection_service/app/detectors/statistical_v2/model.py",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "bd456d513cdb109d05a3e81ddfadf77cd8c8fea40a6c5dd9d9265ef1557cf646"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "bd456d513cdb109d05a3e81ddfadf77cd8c8fea40a6c5dd9d9265ef1557cf646",
+      "hash_observed_sha256": "bd456d513cdb109d05a3e81ddfadf77cd8c8fea40a6c5dd9d9265ef1557cf646",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\detection_service\\app\\detectors\\statistical_v2\\model.py",
+      "logical_path": "detection_service/app/detectors/statistical_v2/model.py",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FEATURE_RUNTIME_CODE",
+        "MODEL_RUNTIME_CODE_BINDING"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/detection_service/app/detectors/statistical_v2/model.py",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 90,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/calibration/completed_v1/ds_v2_cal_v1.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/calibration/completed_v1/ds_v2_cal_v1.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "964cea57d98673d2026fb2f0e9d5884aec61a653e726847e0fb6ccbf36e95f23"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "964cea57d98673d2026fb2f0e9d5884aec61a653e726847e0fb6ccbf36e95f23",
+      "hash_observed_sha256": "964cea57d98673d2026fb2f0e9d5884aec61a653e726847e0fb6ccbf36e95f23",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\calibration\\completed_v1\\ds_v2_cal_v1.json",
+      "logical_path": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/calibration/completed_v1/ds_v2_cal_v1.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "CALIBRATOR"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/calibration/completed_v1/ds_v2_cal_v1.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 176177,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_feature_reference.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/final/ds_v2_feature_reference.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "fd26774585223913d12b8c20556a8fc1a50fa5dea7a3a75068a7bb30efce76ec"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "fd26774585223913d12b8c20556a8fc1a50fa5dea7a3a75068a7bb30efce76ec",
+      "hash_observed_sha256": "fd26774585223913d12b8c20556a8fc1a50fa5dea7a3a75068a7bb30efce76ec",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\final\\ds_v2_feature_reference.json",
+      "logical_path": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_feature_reference.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "FEATURE_REFERENCE"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_feature_reference.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 1196,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_model.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/final/ds_v2_model.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157",
+      "hash_observed_sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\final\\ds_v2_model.json",
+      "logical_path": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_model.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "MODEL_OR_CLASSIFIER"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_model.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 4912,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_model_manifest_v1.json",
+        "executed": false,
+        "git_path": "artifacts/statistical_v2/final/ds_v2_model_manifest_v1.json",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "8b62666f713c47c6f35fceb3a153a6da80de6081654d0b552bd882e8750c4aa1"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "hash_observed_sha256": "8b62666f713c47c6f35fceb3a153a6da80de6081654d0b552bd882e8750c4aa1",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\artifacts\\statistical_v2\\final\\ds_v2_model_manifest_v1.json",
+      "logical_path": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_model_manifest_v1.json",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "CONFIGURATION"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/artifacts/statistical_v2/final/ds_v2_model_manifest_v1.json",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 4107,
+      "classification": "DETERMINISTICALLY_RECONSTRUCTABLE",
+      "detectors": [
+        "D_S"
+      ],
+      "exact_restoration": {
+        "commit": "e6b6a2af2a78e2a31aae6d9377378993f678b073",
+        "destination": "detection_service/outputs/common003-preserved-stack/detection_service/app/detectors/statistical_v2/detector.py",
+        "executed": false,
+        "git_path": "detection_service/app/detectors/statistical_v2/detector.py",
+        "method": "Extract exact Git blob after authorization; no retraining, refitting or recalibration",
+        "remote_commit_reachability": "NOT_PROVEN; accepted historic commit exists locally",
+        "sha256": "4912273d2caad3ff4f4094b9684310dc85199421fde7823b7de66d55607558fd"
+      },
+      "exists_on_machine": true,
+      "expected_sha256": "4912273d2caad3ff4f4094b9684310dc85199421fde7823b7de66d55607558fd",
+      "hash_observed_sha256": "4912273d2caad3ff4f4094b9684310dc85199421fde7823b7de66d55607558fd",
+      "hash_status": "VERIFIED",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\detection_service\\outputs\\common003-preserved-stack\\detection_service\\app\\detectors\\statistical_v2\\detector.py",
+      "logical_path": "detection_service/outputs/common003-preserved-stack/detection_service/app/detectors/statistical_v2/detector.py",
+      "present_in_track_b_checkout": false,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "IMPLEMENTATION"
+      ],
+      "runtime_location": "detection_service/outputs/common003-preserved-stack/detection_service/app/detectors/statistical_v2/detector.py",
+      "source": "ACCEPTED_LOCAL_FILE_READ_ONLY"
+    },
+    {
+      "byte_size": 38,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "dcad6bf0d138d39c90db293fa5b302a928ace8d1454a8ed8f74241184b80ae6c",
+      "hash_observed_sha256": "59dd6f28f1027a5fa5cc54b0a169e86563c33b607b4e9c88e8fbb4a7e71996c0",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\requirements-finetuned.txt",
+      "logical_path": "detection_service/requirements-finetuned.txt",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/requirements-finetuned.txt",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 181,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "11b64da48ddfa9f5043cd5d22ef0bcc82fb1cd02e1f48e2d766934752020c509",
+      "hash_observed_sha256": "7e36493ce5186d8186f0e0d6b0a298df6dfaeaf5279f88fb14f681b167ced3e1",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\requirements-quality.txt",
+      "logical_path": "detection_service/requirements-quality.txt",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/requirements-quality.txt",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 184,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "1df9d4412f5e34ef1df80d1b7d79982813275a49162bf4e11959ea4ef363b679",
+      "hash_observed_sha256": "c99cd72406001d3b0bf803b53794e4620e1ebbb15c61f54a2d899a327b4491be",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\requirements.txt",
+      "logical_path": "detection_service/requirements.txt",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/requirements.txt",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 21038,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "ffef3f67cd0b9a052efa0eb95983f24bdee52bac0d41c3cc513b0a0a538a3609",
+      "hash_observed_sha256": "ffef3f67cd0b9a052efa0eb95983f24bdee52bac0d41c3cc513b0a0a538a3609",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\research_protocol\\adapters.py",
+      "logical_path": "detection_service/research_protocol/adapters.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/research_protocol/adapters.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 24470,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "bae95988b52093744f28be2e2e62d46f158f381c54dfa10c15443d4a35766b99",
+      "hash_observed_sha256": "bae95988b52093744f28be2e2e62d46f158f381c54dfa10c15443d4a35766b99",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\research_protocol\\detector_semantics.py",
+      "logical_path": "detection_service/research_protocol/detector_semantics.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/research_protocol/detector_semantics.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 4805,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "64c648fbf4758bacc6416d34b98538cff5ae6ef52d2c359ac62271ce413c9ca5",
+      "hash_observed_sha256": "64c648fbf4758bacc6416d34b98538cff5ae6ef52d2c359ac62271ce413c9ca5",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\research_protocol\\ds_runtime.py",
+      "logical_path": "detection_service/research_protocol/ds_runtime.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/research_protocol/ds_runtime.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 12628,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "5c521850da7c9776223ceb402eb2cf51a91d796705d446582672e86b4cf4f3e6",
+      "hash_observed_sha256": "5c521850da7c9776223ceb402eb2cf51a91d796705d446582672e86b4cf4f3e6",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\research_protocol\\operating_policy.py",
+      "logical_path": "detection_service/research_protocol/operating_policy.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/research_protocol/operating_policy.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 6597,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "64eca2216669f990c3b180df4bc5176140629ae5f8e8983a83543eb7c978d649",
+      "hash_observed_sha256": "64eca2216669f990c3b180df4bc5176140629ae5f8e8983a83543eb7c978d649",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\research_protocol\\prediction.py",
+      "logical_path": "detection_service/research_protocol/prediction.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/research_protocol/prediction.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "byte_size": 13133,
+      "checkout_byte_drift": false,
+      "checkout_drift_reason": "OTHER_OR_NONE",
+      "classification": "GIT_TRACKED",
+      "detectors": [
+        "FULL_STACK"
+      ],
+      "exists_on_machine": true,
+      "expected_sha256": null,
+      "git_blob_matches_frozen_hash": null,
+      "git_blob_sha256": "a67dfc606279cda0638e727b83c2241a1aeb0a58a69b85608bcdf39f38808fd5",
+      "hash_observed_sha256": "a67dfc606279cda0638e727b83c2241a1aeb0a58a69b85608bcdf39f38808fd5",
+      "hash_status": "UNBOUND",
+      "location_inspected": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs-track-b\\detection_service\\research_protocol\\protocol_lock.py",
+      "logical_path": "detection_service/research_protocol/protocol_lock.py",
+      "present_in_track_b_checkout": true,
+      "remote": null,
+      "remote_availability": "NOT_APPLICABLE",
+      "roles": [
+        "RUNTIME_POLICY_DEPENDENCY_MANIFEST"
+      ],
+      "runtime_location": "detection_service/research_protocol/protocol_lock.py",
+      "source": "TRACK_B_CHECKOUT"
+    },
+    {
+      "classification": "REMOTE_IMMUTABLE",
+      "detectors": [
+        "D_M-B"
+      ],
+      "logical_path": "remote://D_M-B-base",
+      "remote": {
+        "model_id": "distilbert/distilroberta-base",
+        "revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+        "role": "BASE_PROVENANCE_ONLY_NOT_A_WEIGHT_REPLACEMENT",
+        "tokenizer_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b"
+      },
+      "remote_availability": "NEEDS_POST_TRACK_A_FRESH_CLONE_TEST",
+      "roles": [
+        "BASE_MODEL_PROVENANCE"
+      ]
+    }
+  ],
+  "authoritative_queries": {
+    "D_G": 0,
+    "D_M-B": 0,
+    "D_S": 0,
+    "verifier": 0
+  },
+  "base_commit": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+  "classification_enum": [
+    "GIT_TRACKED",
+    "GIT_LFS",
+    "REMOTE_IMMUTABLE",
+    "DETERMINISTICALLY_RECONSTRUCTABLE",
+    "LOCAL_ONLY",
+    "UNKNOWN"
+  ],
+  "critical_local_only": [
+    "artifacts/models/dm_b_v1/transformer/model.safetensors"
+  ],
+  "dg_clarification": "artifacts/research_protocol/portability/dg_hash_binding_clarification_v1.json",
+  "dmb_backup_receipt": "artifacts/research_protocol/portability/dmb_remote_backup_receipt_v1.json",
+  "dmb_remote_backup_status": "BLOCKED_NO_AUTHORIZED_REMOTE_DESTINATION",
+  "fresh_clone_test": "NEEDS_POST_TRACK_A_FRESH_CLONE_TEST",
+  "hash_mismatches": [
+    "detection_service/app/detectors/statistical/__init__.py",
+    "detection_service/app/detectors/statistical/config.py",
+    "detection_service/app/detectors/statistical/features.py",
+    "detection_service/app/detectors/statistical/perplexity_detector.py",
+    "detection_service/app/detectors/statistical/perplexity_engine.py",
+    "detection_service/app/detectors/semantic/calibration.py",
+    "detection_service/app/detectors/statistical_risk/schema.py",
+    "detection_service/app/detectors/statistical_risk/scorer.py",
+    "detection_service/app/detectors/semantic_finetuned/detector.py",
+    "detection_service/app/detectors/guard/detector.py",
+    "detection_service/app/detectors/guard/model.py",
+    "detection_service/app/detectors/guard/config.py",
+    "detection_service/app/detectors/semantic_finetuned/config.py",
+    "detection_service/app/detectors/semantic_finetuned/calibration.py",
+    "detection_service/app/detectors/base.py",
+    "detection_service/app/contracts/detector_result.py"
+  ],
+  "overall_status": "LOCAL_ARTIFACTS_CRITICAL",
+  "previous_manifest": "artifacts/research_protocol/portability/frozen_stack_portability_manifest_v1.json",
+  "protected_data_opened": false,
+  "resolved_metadata_only_discrepancies": [
+    "artifacts/models/dg_v1/environment.json: exact CRLF reconstruction proven"
+  ],
+  "restoration_executed": false,
+  "retraining_permitted": false,
+  "runtime_environment": {
+    "accepted_reference": "artifacts/models/dg_v1/environment.json and frozen requirements",
+    "authoritative_runtime": "Restore frozen Python/dependency versions on another isolated machine; no package/environment changes performed here",
+    "preparation_interpreter": "Python 3.12 metadata/synthetic only; not accepted scientific runtime"
+  },
+  "scope": "Static explicitly bound runtime files only; no dataset payloads, model loading, inference, downloads, cache writes or restoration",
+  "source_checkout_line_ending_restoration_required": true,
+  "unresolved_outcome_relevant_discrepancies": [],
+  "updated_at": "2026-10-08T19:36:31.172759+00:00",
+  "v1_modified": false
+}
