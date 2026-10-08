@@ -39,5 +39,6 @@ serialization. Its original SHA-256 was unchanged. The follow-up gate correction
 preserves that existing local-byte hash authority and additionally Git-anchors
 only new patch files and the patch manifest, to the manifest's latest committed
 revision. This is provenance validation only, before any R2 query. Original
-acceptance v1 and Git history remain available; acceptance v2 binds this corrected
-gate. Scoped attributes preserve new hash-bound files across Windows checkouts.
+acceptances v1/v2 and Git history remain available; acceptance v3 binds the final
+gate and self-protected root attributes. Scoped attributes preserve new hash-bound
+files across Windows checkouts, including the attribute files themselves.

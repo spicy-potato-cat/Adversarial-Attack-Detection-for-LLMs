@@ -1,4 +1,5 @@
 # Preserve frozen D_M-B hashes across Git checkout and platform line endings.
+/.gitattributes -text
 /detection_service/tests/.gitattributes -text
 /reviews/.gitattributes -text
 /detection_service/configs/dm_b_v1_training.json -text

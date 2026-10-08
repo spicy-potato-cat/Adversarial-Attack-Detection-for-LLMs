@@ -1,0 +1,71 @@
+{
+  "R0_R1_evidence_changed": false,
+  "R3_started": false,
+  "additive_patch_hash_checks": 262,
+  "artifact_version": "exp_protocol_001_patch_001_acceptance",
+  "authoritative_R2_queries_before_patch": 0,
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "formulas_bootstrap_changed": false,
+  "generator_archive_identical": true,
+  "generator_sha256": "6a59ba6a1163c85d9ebd964f2c90511d4d76004ee31b77e06223f51612ebd592",
+  "models_thresholds_calibrators_changed": false,
+  "original_preservation_checks": 252,
+  "patch_id": "exp_protocol_001_patch_001",
+  "patch_sha256": "b76966953f1e2c09cabef9a7dec42a3ad589e6a945ba12890e9836178baa7c50",
+  "release_preservation": {
+    "R1_started": false,
+    "hash_checks": 118,
+    "status": "PASS"
+  },
+  "scientific_R2_outcomes_before_patch": "NONE",
+  "scientific_design_changed": false,
+  "source_branch": "62bf867b2acc53c3a8dc35d18f443558cd9da508",
+  "status": "PASS",
+  "tests": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 931,
+    "receipts": [
+      {
+        "errors": 0,
+        "failures": 0,
+        "path": "tmp/patch001_regression_0.xml",
+        "sha256": "e9a64650c8d2119cafd5f1b15a43f63f1194bba5b5f80622494369c466fa2e2c",
+        "skipped": 0,
+        "tests": 84
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "path": "tmp/patch001_regression_1.xml",
+        "sha256": "0b2d67229af7362032e057ad1a708a81e83694ae17e81c20d44fcac9370029e4",
+        "skipped": 0,
+        "tests": 770
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "path": "tmp/patch001_domains.xml",
+        "sha256": "7b493b948ca7f7ca81ad43d187d1294f6a3f243ef9b5deff4e3cf4063fe2e129",
+        "skipped": 0,
+        "tests": 42
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "path": "tmp/r2_resume_implementation.xml",
+        "sha256": "d5c40190bccaf6cf49f690f64678cbfee900a02ab217beeeb95b6897ca98fd24",
+        "skipped": 0,
+        "tests": 35
+      }
+    ],
+    "skipped": 0,
+    "total": 931
+  },
+  "verdict": "PROTOCOL_PATCH_ACCEPTED_R2_DMB_MAY_RESUME"
+}

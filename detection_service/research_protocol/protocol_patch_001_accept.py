@@ -45,7 +45,7 @@ def accept():
         generator_sha256=p.files.sha(p.ROOT/'detection_service/research_protocol/r2_dmb_generator.py'),
         generator_archive_identical=True,R3_started=False)
     p.require(value['generator_sha256']=='6a59ba6a1163c85d9ebd964f2c90511d4d76004ee31b77e06223f51612ebd592','ATTACK_DESIGN_DRIFT')
-    p.publish(p.ROOT/'artifacts/research_protocol/protocol_patches/exp_protocol_001_patch_001_acceptance_v2.json',value)
+    p.publish(p.ROOT/'artifacts/research_protocol/protocol_patches/exp_protocol_001_patch_001_acceptance_v3.json',value)
     print(json.dumps(value,indent=2))
 
 
