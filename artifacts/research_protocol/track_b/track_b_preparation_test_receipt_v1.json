@@ -1,0 +1,55 @@
+{
+  "accepted_files_modified": false,
+  "artifact_version": "track_b_preparation_test_receipt_v1",
+  "authoritative_queries": {
+    "D_G_R3": 0,
+    "D_M-B_R3": 0,
+    "D_S_R3": 0,
+    "verifier": 0
+  },
+  "base_commit": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+  "caches_deleted": false,
+  "command": "python -B -m unittest detection_service.tests.test_r3_preparation detection_service.tests.test_verifier_preparation detection_service.tests.test_track_b_portability -v",
+  "date": "2026-10-08",
+  "deferred_checks": [
+    "DEFERRED_UNTIL_TRACK_A_IDLE: real detector runtime/model tests",
+    "DEFERRED_UNTIL_TRACK_A_IDLE: GPU tests (not invoked)",
+    "NEEDS_POST_TRACK_A_FRESH_CLONE_TEST: exact runtime portability, remote/gated weight access and dependency validation"
+  ],
+  "errors": 0,
+  "evidence_kind": "SYNTHETIC_STATIC_TESTS_ONLY",
+  "failures": 0,
+  "frozen_failure_population": "NOT_OPENED_NOT_CONSTRUCTED",
+  "gpu_inference": false,
+  "interpreter": "Python 3.12; pydantic 2.11.7; preparation-only, not a scientific runtime equivalence claim",
+  "packages_installed": false,
+  "protected_data_opened": false,
+  "protected_data_scored": false,
+  "r2_ds_results_observed": false,
+  "result": "PASS",
+  "schema_validation": "Strict runtime dataclass validation plus schema field contract checks. jsonschema not installed in preparation interpreter; no package installation performed.",
+  "seed_membership": "NOT_MATERIALIZED",
+  "shared_environment_modified": false,
+  "skipped": 0,
+  "source_sha256": {
+    "artifacts/research_protocol/portability/frozen_stack_portability_manifest_v1.json": "bff13e3232b5317aaed7452bdc529981e7a30ae8d57d7dc02e328a3f297604c9",
+    "artifacts/research_protocol/r3/r3_generator_contract_v1.json": "486e425ef68181be23502a3e646197f58b3ccaf5b2ec48c025f2ead1b184ddab",
+    "artifacts/research_protocol/r3/r3_predeclaration_v1.json": "084a24344c51683a222ca88d0abad417f40a3777980dd8f3c910dfdff2f4f969",
+    "artifacts/research_protocol/r3/r3_seed_policy_v1.json": "b6dc869d2e81c16d644115d15b5a52089b028340428fb4e600cca56186e09b56",
+    "artifacts/research_protocol/verifier/verifier_candidate_manifest_v1.json": "9255b9f4e38e1140693e4ae742d8c21c39bbb4992545ba670cec6cbbc3b22355",
+    "artifacts/research_protocol/verifier/verifier_prediction_schema_v1.json": "22f06236be4d4a1d12e4b30c84e9368503b713958bfa80187cf26946dd278688",
+    "artifacts/research_protocol/verifier/verifier_study_predeclaration_v1.json": "282fa95bc43f52a4149af3ae88cd0d1d01058998e35134e1ce1eb31e03f9af98",
+    "detection_service/research_protocol/r3_preparation.py": "e1da59afa3912fb1c5646954de2cf3cee3618767700e9bcd423aa9f3e0ab2b6d",
+    "detection_service/research_protocol/track_b_portability.py": "f5b8ab7d32feb4fa07b02a8111ce5894b2d71e57852b3b05afe1563edd5f9ab5",
+    "detection_service/research_protocol/verifier_preparation.py": "51b73e01c3411e5cf5b115c6f4732fa1c96f642409929734036306f72bed75b9",
+    "detection_service/tests/test_r3_preparation.py": "8cd1f92d21b6c3dd074de6ac12d17ca19e258b8e41403949c5a49d6406d9226d",
+    "detection_service/tests/test_track_b_portability.py": "996e43e29646b27a4d6f5f60b6991f6cf1b4d9380474c1eea7a638d72696f3bd",
+    "detection_service/tests/test_verifier_preparation.py": "46250c1579f912fedacaeb0c71d989fd5a7aeb3b914e7b444fce5c9aed3914fc"
+  },
+  "suites": {
+    "R3": 16,
+    "portability": 6,
+    "verifier": 13
+  },
+  "tests_run": 35
+}
