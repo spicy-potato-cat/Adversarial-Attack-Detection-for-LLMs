@@ -1,0 +1,39 @@
+{
+  "Cycle2": "DEFERRED",
+  "R2_started": false,
+  "R3_started": false,
+  "actual_predictions": 5400,
+  "artifact_version": "r1_gate_c_acceptance_v1",
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "dataset_manifest_sha256": "44990563b0835c16b19c596fad6a91c3581a6b6c285468f9153a3a9df29244fa",
+  "expected_predictions": 5400,
+  "failures": 0,
+  "gate_b_commit": "eeafd52b097b43e8afbda6f08c97fa96fdeaecec",
+  "no_post_R1_adaptation": true,
+  "passed": 8,
+  "predictions_sha256": "7282aea1e292c9f5bb853eb0473a3e2b34bfd919a6bbfab28bf0892b51acdc0e",
+  "receipts": [
+    {
+      "errors": 0,
+      "failures": 0,
+      "path": "tmp/r1_gate_c.xml",
+      "sha256": "cca61f43f237f47a8c7c8d3fda88965c7276d60fe058d1d533b9a9b37cad55da",
+      "skipped": 0,
+      "tests": 8
+    }
+  ],
+  "release_preservation": {
+    "R1_started": false,
+    "hash_checks": 118,
+    "status": "PASS"
+  },
+  "skipped": 0,
+  "status": "PASS",
+  "tests": 8,
+  "verifier_started": false
+}
