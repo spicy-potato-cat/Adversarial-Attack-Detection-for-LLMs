@@ -1,0 +1,39 @@
+{
+  "actual_predictions": 2400,
+  "artifact_version": "r2_dmb_prediction_manifest_v1",
+  "completed_at": "2026-10-08T16:28:11Z",
+  "coverage": {
+    "coverage_rate": 1.0,
+    "expected_predictions": 2400,
+    "missing_decisions": 0,
+    "missing_predictions": 0,
+    "non_ok_predictions": 0,
+    "ok_predictions": 2400,
+    "received_predictions": 2400,
+    "status": "COMPLETE"
+  },
+  "detector_changes": false,
+  "detector_ok_counts": {
+    "dg_v1": 800,
+    "dm_b_v1": 800,
+    "ds_v2": 800
+  },
+  "dmb_max_raw_score_delta": 0.0,
+  "dmb_operational_mismatches": 0,
+  "duplicates": 0,
+  "expected_predictions": 2400,
+  "freeze_commit": "27d467cc0657d8de3937322cf8913544df2100dd",
+  "manifest_sha256": "f712bd46110453e5482b7b50386453be666c0ccd01ffbd05bafadcb47a9342c7",
+  "model_training": false,
+  "native_journal_sha256": {
+    "dg_v1": "9f4f8cf3cb5975a412ce7c8363b589a9d72179f3dcdf1b2065c2eb2ab050c2be",
+    "dm_b_v1": "e563b0cf12e41d277e5403bec47cc23b2f856304e12c90d96e05b307ea84f626",
+    "ds_v2": "0c56d0156fa30674b31ca335967438de9c235e1d84506ac1dc2515689cc98d07"
+  },
+  "prediction_sha256": "a3b642cff928fcb4bc4500703636e73d13b42492042a31e03ddc379f8ebc5e91",
+  "runtime_seconds": 784.9462677999982,
+  "scoring_code_commit": "33ef818e37c8a177c7245844f5dbacb529e9f709",
+  "started_at": "2026-10-08T16:15:06Z",
+  "status": "PASS",
+  "threshold_changes": false
+}
