@@ -1,0 +1,68 @@
+{
+  "accepted_target_results": false,
+  "accepted_terminals": 0,
+  "artifact_version": "r2_ds_blocker_v1",
+  "branch": "exp/r2-ds-001",
+  "ds_query_count_status": "NOT_PERSISTED: first parent search completed before baseline comparison; at least 1 and at most 61 unique DS evaluations. Do not report zero queries.",
+  "final_verdict": "BLOCKED",
+  "first_generator_commit": "e9a659846cb3bbc3db20ed53d734f86ae37b112e",
+  "generation_queries": {
+    "D_G": 0,
+    "D_M_B": 0,
+    "D_S": null,
+    "ensemble": 0
+  },
+  "integrity": {
+    "R0_changed": false,
+    "R1_changed": false,
+    "R2_DG_started": false,
+    "R2_DMB_changed": false,
+    "R3_started": false,
+    "baseline_preservation": {
+      "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+      "hash_checks": 96,
+      "status": "PASS",
+      "tracked_baseline_diff": "EMPTY"
+    },
+    "models_changed": false,
+    "patch_hash_checks": 262,
+    "protected_evaluation_started": false,
+    "release_preservation": {
+      "R1_started": false,
+      "hash_checks": 118,
+      "status": "PASS"
+    },
+    "source_preservation_checks": 503,
+    "thresholds_changed": false,
+    "verifier_started": false
+  },
+  "lineages": 94,
+  "observed_delta": null,
+  "observed_delta_status": "NOT_PERSISTED: failed check establishes absolute delta > 1e-12, but exact live baseline/result and query trace were not journaled.",
+  "predeclaration_commit": "9a1c4371f9c1c9fc2531fc181a2f046e387b98b2",
+  "private_receipt_hashes": {
+    "detection_service/outputs/r2-ds-001/generation_v1.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "detection_service/outputs/r2-ds-001/interruption_v1.json": "4db21933fcfddd52ceb265c595bb847bb801e251ceb1a4a7d9a15a60706b844c",
+    "detection_service/outputs/r2-ds-001/invocation_v1.json": "2375ca4c892a396c60e17411a0bc6790271a8e1a57dc9fba0dd5ddbd42500bae",
+    "detection_service/outputs/r2-ds-001/prequery_receipt_v1.json": "dc3b02c7c610080b4b2d500143c58d12744f779afbb73e12c2ea2951c9da4ee4"
+  },
+  "reason": "BASELINE_TARGET_REPLAY_MISMATCH",
+  "remaining_work": "Diagnose frozen R1 baseline replay and add immediate baseline checking plus durable per-query accounting under separately reviewed repair; no tolerance relaxation or another run is authorized by this blocker.",
+  "repaired_generator_commit": "154055902dc7d28c55da3dd0a75a5ac85eaa44a7",
+  "replay_tolerance": 1e-12,
+  "seed_count": 698,
+  "sources": {
+    "INJECAGENT_BASE": 314,
+    "LLMAIL_INJECT": 384
+  },
+  "starting_commit": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+  "status": "BLOCKED",
+  "tests": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 156,
+    "receipt_sha256": "62f15d88549a3228985f4e4e0da26103dc26cfb0a2058c49bb453c1f8e808c8c",
+    "skipped": 0
+  },
+  "transfer_scoring_started": false
+}

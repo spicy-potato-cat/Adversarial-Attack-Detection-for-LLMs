@@ -91,7 +91,7 @@ def analyze():
     terminals=p.files.read_json(p.OUT/'r2_ds_terminal_manifest_v1.json')['terminals']
     by_id={r['sample_id']:r for r in terminals}
     decisions={r.sample_id:r.decisions for r in table.rows}
-    require(all((decisions[r['sample_id']][1]==0)==r['target_evasion_success'] for r in terminals),'TARGET_RESCORE_SUCCESS_CONFLICT')
+    require(all((decisions[r['sample_id']][0]==0)==r['target_evasion_success'] for r in terminals),'TARGET_RESCORE_SUCCESS_CONFLICT')
     summary=describe(terminals,decisions)
     joint=joint_transfer_interval(table)
     target=next(r for r in bundle.core_metrics.evasion_transfer.targets if r.target_detector==d.DETECTOR_ID)
@@ -108,6 +108,7 @@ def analyze():
         sources[source]={**describe(selected,decisions),'lineage_count':len({r['lineage_id'] for r in selected}),
             'uncertainty':intervals.model_dump(mode='json'),'joint_transfer_uncertainty':joint_transfer_interval(sub),
             'most_successful_operator':Counter(r['mechanism'] for r in selected if r['target_evasion_success']).most_common(),
+            'terminal_operator_distribution':dict(Counter(r['mechanism'] for r in selected)),
             'causal_comparison':False}
     mechanisms=(*d.OPERATORS,'BENIGN_CONTEXT_PADDING',*d.DESIGN['global_operators'],'UNCHANGED')
     operators={op:describe([r for r in terminals if r['mechanism']==op],decisions) for op in mechanisms}
