@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "else": {
+        "properties": {
+          "decision": {
+            "type": "null"
+          }
+        }
+      },
+      "if": {
+        "properties": {
+          "status": {
+            "const": "OK"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "decision": {
+            "enum": [
+              "ATTACK",
+              "BENIGN"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "probability_semantics": {
+            "const": "UNAVAILABLE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "normalized_probability": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "decision": {
+      "enum": [
+        "ATTACK",
+        "BENIGN",
+        null
+      ]
+    },
+    "evidence_kind": {
+      "const": "SYNTHETIC_FIXTURE"
+    },
+    "input_coverage": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": "number"
+    },
+    "latency_ms": {
+      "minimum": 0,
+      "type": "number"
+    },
+    "lineage_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "model_revision": {
+      "pattern": "^[0-9a-f]{40}$",
+      "type": "string"
+    },
+    "normalized_probability": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "probability_semantics": {
+      "enum": [
+        "NATIVE_CLASS_SOFTMAX",
+        "UNAVAILABLE"
+      ]
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "raw_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "regime": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "sample_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "OK",
+        "ERROR",
+        "INVALID_OUTPUT",
+        "INPUT_LIMIT_EXCEEDED"
+      ]
+    },
+    "truncation": {
+      "type": "boolean"
+    },
+    "verifier_id": {
+      "enum": [
+        "V1",
+        "V2",
+        "V3"
+      ]
+    }
+  },
+  "required": [
+    "sample_id",
+    "verifier_id",
+    "model_revision",
+    "raw_score",
+    "normalized_probability",
+    "probability_semantics",
+    "decision",
+    "status",
+    "input_coverage",
+    "truncation",
+    "latency_ms",
+    "lineage_id",
+    "regime",
+    "provenance",
+    "evidence_kind"
+  ],
+  "title": "Preparation-only verifier prediction v1",
+  "type": "object"
+}

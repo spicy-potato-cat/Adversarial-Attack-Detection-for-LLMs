@@ -1,0 +1,96 @@
+{
+  "artifact_version": "verifier_candidate_manifest_v1",
+  "authoritative_queries": 0,
+  "base_commit": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+  "candidate_selection": "Frozen proposals; do not replace after failure inspection. Access/hardware failure requires prospective documented amendment before any study query.",
+  "candidate_selection_independent_of_r2_ds": true,
+  "candidates": [
+    {
+      "downloadability_current_environment": "Gated manual access; existing D_G access does not establish permission for V1. Authenticated weight access UNVERIFIED; no access request submitted.",
+      "input_limits": {
+        "aggregation": "OR native argmax malicious",
+        "content_chunk_tokens": 510,
+        "context_tokens": 512,
+        "overlap_tokens": 64
+      },
+      "license": "Llama 4 Community License; Acceptable Use Policy",
+      "local_hardware_feasibility": "About 1.12 GB float32 weights plus activation/runtime overhead; CPU plausible after Track A; actual RAM and latency untested.",
+      "model_family": "mDeBERTa-v3-base / DebertaV2ForSequenceClassification",
+      "model_id": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "overlap_with_base_stack": "Material overlap with D_G: same provider, model series, discriminative mechanism and likely training provenance; base mDeBERTa rather than xsmall. No claimed independence. D_M-B shares broad encoder ancestry only.",
+      "provider_repository": "meta-llama",
+      "rationale": "Larger backbone within D_G provider/task family provides a broadly matched capability contrast; 86M backbone versus 22M marketed backbone, not full parameter count.",
+      "remote_metadata_verified": true,
+      "revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+      "sources": [
+        "https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M/blob/a8ded8e697ce7c355e395a0df51f94adb4a2fd27/README.md",
+        "https://huggingface.co/api/models/meta-llama/Llama-Prompt-Guard-2-86M/revision/a8ded8e697ce7c355e395a0df51f94adb4a2fd27"
+      ],
+      "status": "REVISION_PINNED_PROPOSAL_NOT_EXECUTED",
+      "tokenizer_revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+      "total_parameters": 278810882,
+      "training_security_provenance": "Meta supervised malicious instruction-override detection, expanded security data and energy-based objective. Full training membership undisclosed.",
+      "verifier_id": "V1",
+      "weights_downloaded": false
+    },
+    {
+      "downloadability_current_environment": "Public ungated metadata/config accessible; full weight download not tested, defer until Track A idle.",
+      "input_limits": {
+        "aggregation": "OR native argmax INJECTION",
+        "content_chunk_tokens": 510,
+        "context_tokens": 512,
+        "overlap_tokens": 64
+      },
+      "license": "Apache-2.0",
+      "local_hardware_feasibility": "About 0.74 GB float32 weights plus runtime; CPU plausible after Track A; latency untested.",
+      "model_family": "Microsoft DeBERTa-v3-base / DebertaV2ForSequenceClassification",
+      "model_id": "protectai/deberta-v3-base-prompt-injection-v2",
+      "overlap_with_base_stack": "Different fine-tuner from Meta and project D_M-B; shared Microsoft DeBERTa ancestry with D_G. Training overlap with project populations UNKNOWN; independent organization does not imply disjoint datasets.",
+      "provider_repository": "protectai",
+      "rationale": "Separately security-fine-tuned by Protect AI; contrasts training organization/provenance while retaining a discriminative encoder mechanism.",
+      "remote_metadata_verified": true,
+      "revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+      "sources": [
+        "https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2/blob/90c9989b1a342275dd0d1a95aad283c04e075671/README.md",
+        "https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection-v2/revision/90c9989b1a342275dd0d1a95aad283c04e075671"
+      ],
+      "status": "REVISION_PINNED_PROPOSAL_NOT_EXECUTED",
+      "tokenizer_revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+      "total_parameters": 184423682,
+      "training_security_provenance": "Protect AI fine-tuning; model card lists XSTest, VMware/open-instruct, chatbot_instruction_prompts, grok-conversation-harmless, Prompt-Injection-Mixed-Techniques-2024, Salad-Data and jailbreak-classification. Card warns English injection scope does not establish jailbreak coverage; project archived.",
+      "verifier_id": "V2",
+      "weights_downloaded": false
+    },
+    {
+      "downloadability_current_environment": "Public ungated metadata/config accessible; full weight availability not tested, defer multi-GB download.",
+      "input_limits": {
+        "aggregation": "Native first generated Yes/No token",
+        "config_context_tokens": 131072,
+        "overflow": "INPUT_LIMIT_EXCEEDED, no truncation or benign imputation",
+        "reserved_generation_tokens": 20,
+        "study_rendered_input_limit": 4096
+      },
+      "license": "Apache-2.0",
+      "local_hardware_feasibility": "About 13.2 GB float32 weights (6.6 GB BF16) plus runtime/activations; current CPU RAM/latency and granitemoe support UNVERIFIED. No quantization substitution frozen; separate hardware/runtime validation required.",
+      "model_family": "Granite 3.2 MoE causal language model, approximately 800M active parameters",
+      "model_id": "ibm-granite/granite-guardian-3.2-3b-a800m",
+      "overlap_with_base_stack": "No documented shared fine-tuning with D_M-B or D_G; upstream overlap UNKNOWN. Capability, provenance and mechanism all differ, so three-way study is descriptive, not causal attribution.",
+      "provider_repository": "ibm-granite",
+      "rationale": "Autoregressive templated Yes/No risk assessment differs from base encoder-classification and surprisal LR mechanisms; use built-in jailbreak risk, never generic harm default.",
+      "remote_metadata_verified": true,
+      "revision": "3de033d89b499a18d9a573b5192bf3b967ef48c5",
+      "sources": [
+        "https://huggingface.co/ibm-granite/granite-guardian-3.2-3b-a800m/blob/3de033d89b499a18d9a573b5192bf3b967ef48c5/README.md",
+        "https://huggingface.co/api/models/ibm-granite/granite-guardian-3.2-3b-a800m/revision/3de033d89b499a18d9a573b5192bf3b967ef48c5"
+      ],
+      "status": "REVISION_PINNED_PROPOSAL_NOT_EXECUTED",
+      "tokenizer_revision": "3de033d89b499a18d9a573b5192bf3b967ef48c5",
+      "total_parameters": 3298793472,
+      "training_security_provenance": "IBM Research Granite fine-tune; human annotations and synthetic internal red-team data, hh-rlhf-derived Granite/Mixtral pairs. Jailbreak risk supported. English only.",
+      "verifier_id": "V3",
+      "weights_downloaded": false
+    }
+  ],
+  "metadata_observed_date": "2026-10-08",
+  "repository_prior_selection": "No finalized candidates found in accepted runbook/specification; those deferred verifier selection."
+}
