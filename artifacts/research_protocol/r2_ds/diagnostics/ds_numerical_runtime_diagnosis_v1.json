@@ -1,0 +1,473 @@
+{
+  "accounting": {
+    "accepted_terminals": 0,
+    "equivalence": 243,
+    "fresh_processes": 10,
+    "historical_failed_attempt": "UNKNOWN_BOUNDED_1_TO_61",
+    "prior_repair": 1,
+    "r1": 9,
+    "r2_generation_this_task": 0,
+    "same_process": 100
+  },
+  "classification": "INSUFFICIENT_HISTORICAL_EVIDENCE",
+  "decision_reproducibility_current_diagnostic_set": true,
+  "diagnostic_code_sha256": "a72e4d0e57f2e6975d617cb1aefd44e328153e7c94e67afc201fefc9a2635ebd",
+  "diagnostic_queries": 362,
+  "evidence_sha256": {
+    "ds_243_equivalence_recheck": "476b87d376be2f4338ee61d85d427c389b4b39584a8da697bf4c137bb278fc0e",
+    "ds_dtype_device_trace": "5c1b3ec9649e6e0482559b6dac56bc46da265a02835a0cc941f6431dd25a3820",
+    "ds_feature_sensitivity": "af453730775764af369e71883659ea5bf43e6566c4463d2ab7ff8812d63b2f07",
+    "ds_r1_diagnostic_replays": "30ce5b784cf65c6e3223b724b842a4a882ad457b8a9ab063bd99b94ceb831134",
+    "ds_repeatability_first_seed": "720a1e0e6bd6154c77060354e0a8ea2efce22b3a4b6c6240822dbd9c2ffdd0d6",
+    "ds_runtime_environment": "624268d7d383242231aea8e625bb4e1a2afb8bafea64483f7fb0b3d240e3500e"
+  },
+  "first_observed_divergence": "Token surprisals in saved prior repair vs current capture; historical R1 logits/surprisals absent. First retained R1 score divergence is raw LR probability.",
+  "historical_environment": {
+    "container": {
+      "status": "UNKNOWN"
+    },
+    "dependencies": {
+      "numpy": {
+        "reason": "No R1 inference-process version receipt found; training and uncertainty-analysis receipts excluded.",
+        "status": "UNKNOWN"
+      },
+      "python": {
+        "reason": "No R1 inference-process version receipt found; training and uncertainty-analysis receipts excluded.",
+        "status": "UNKNOWN"
+      },
+      "scikit-learn": {
+        "reason": "No R1 inference-process version receipt found; training and uncertainty-analysis receipts excluded.",
+        "status": "UNKNOWN"
+      },
+      "scipy": {
+        "reason": "No R1 inference-process version receipt found; training and uncertainty-analysis receipts excluded.",
+        "status": "UNKNOWN"
+      },
+      "torch": {
+        "reason": "No R1 inference-process version receipt found; training and uncertainty-analysis receipts excluded.",
+        "status": "UNKNOWN"
+      },
+      "transformers": {
+        "reason": "No R1 inference-process version receipt found; training and uncertainty-analysis receipts excluded.",
+        "status": "UNKNOWN"
+      }
+    },
+    "device": {
+      "evidence": "artifacts/research_protocol/runtime/ds_v2_runtime_binding_v1.json",
+      "rationale": "Pinned loader checks configured CPU; R1 scoring uses accepted_ds_adapter; canonical native journal records LIVE outputs.",
+      "status": "KNOWN",
+      "value": "cpu"
+    },
+    "exact_command": {
+      "known_entrypoint": "python -m detection_service.research_protocol.r1_scoring --score",
+      "status": "UNKNOWN"
+    },
+    "loader_intended_settings": {
+      "deterministic_algorithms": true,
+      "evidence": "detection_service/scripts/statistical_oof_baseline.py:extractor called by accepted archived B2 loader",
+      "seed": 1701,
+      "status": "KNOWN",
+      "torch_threads": 8
+    },
+    "requirement_hashes": {
+      "status": "UNKNOWN_NOT_BOUND_TO_R1_PROCESS"
+    },
+    "run_provenance": "6a8044c9a304095a04d5bab1502aae702e0943d7",
+    "runtime_settings": {
+      "fields": [
+        "OMP_NUM_THREADS",
+        "MKL_NUM_THREADS",
+        "torch_interop_threads",
+        "BLAS build",
+        "CPU identity"
+      ],
+      "status": "UNKNOWN"
+    },
+    "search_paths": [
+      {
+        "path": "artifacts/research_protocol/r1/r0_r1_comparison_v1.json",
+        "sha256": "7145730eaec94999633b3318af7cb736d98b46b408dcc82b1f17ca50f38fdb0d"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_analysis_provenance_v1.json",
+        "sha256": "3733a88333631a63f38c68339482bf7ffec232c63c6066cc0b09bb7075704061"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_common_mode_v1.json",
+        "sha256": "45d9c0254b2f20cb8d0b4ef843e87bbfbfe295f12b32d9b04a84bfd8b21b1fc7"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_contamination_audit_v1.json",
+        "sha256": "be7f0704014e07c785a43292196045f5aeab827c37a3111884c9f1f8214ebe31"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_dataset_manifest_v1.json",
+        "sha256": "44990563b0835c16b19c596fad6a91c3581a6b6c285468f9153a3a9df29244fa"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_descriptive_frontier_v1.json",
+        "sha256": "2ba58eca76a50c41fc74858c25a4d4ecb62f506e7ccd6e3ae0b68405be825a40"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_failure_patterns_v1.json",
+        "sha256": "ce4c9faccbf6dfc82e5ab41d028ea7a8baddc7939459e53932f316e7c0bd5ccc"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_family_analysis_v1.json",
+        "sha256": "d49a91d0a8905b15e52e552983e403b2c8c197e9be065e50cca2924df844822e"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_gate_b_acceptance_v1.json",
+        "sha256": "71539b23b4147c95dda263ef36c4f1e3376da90adf3760e71c5026e355452711"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_gate_b_test_receipt_v1.json",
+        "sha256": "162a44419346521666975f256fa184c2b6b6e314f94fd0dc185654a06669b29f"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_gate_c_acceptance_v1.json",
+        "sha256": "b703cb0d3a4de904518458d384710e2e097f9a9ded649f4c7c089ec6cd92305d"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_gate_d_acceptance_v1.json",
+        "sha256": "5cb9b3cf84a666d3b882e41de0d4993a55e7634507e96d00de631175542a22e3"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_operational_metrics_v1.json",
+        "sha256": "03001138e105406a42dc4baf3eaa321cedf2c511feaf14d150eff489f70cc1d6"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_precommit_outcome_validation_v1.json",
+        "sha256": "1d7deafade19bd4802761510ba088d7337643d18c381d9c1604d580c27571aa4"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_precommit_schema_repair_v1.json",
+        "sha256": "4d2d4d4300a1237a80ed6a34b8522df079a3ee90b4a9c87c25cd4b1b02df548d"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_prediction_manifest_v1.json",
+        "sha256": "37f89afcc97c8558ae6ded53643a191b7aad97f07385ed6f3ee4e24959c7d644"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_ranking_metrics_v1.json",
+        "sha256": "ccb3e224baecbd48f4503b9f3102b59b70c842eece261b6db8307d8fd4f0459b"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_ranking_reference_bindings_v1.json",
+        "sha256": "67e326412b29199b5218aeb9032405790ff0b591d3c29b39ae296a46c8d569ab"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_result_bundle_v1.json",
+        "sha256": "f393d9453828a52c4dbc71952b208f7c718e2971ca0697b38ca1f479237f0cda"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_sample_manifest_v1.json",
+        "sha256": "e147b2650f10db6a768701d850dcb57d78222fdda75dd97467a24bf011c5f681"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_source_clearance_v1.json",
+        "sha256": "b624c55d8acdd1c55a5c84a197983914478dd3c238ac07a7ac81661458244cd6"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_source_evidence_bindings_v1.json",
+        "sha256": "a4deac9dcf88d3edf1830547d808a44a357fccb0429910c98dd69efce7d7a921"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_source_qualification_blocker_v1.json",
+        "sha256": "2f972d4f7f78c7adfcd6b17d37a9c23c0da0c6531fbe718670c3d1a36b66fc7d"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_source_selection_v1.json",
+        "sha256": "abc4fec13616a6b6a0f9b1a0c6b58ac9084ab8ee65dedae4b27770a117a201a0"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_token_coverage_v1.json",
+        "sha256": "f582e44ce018f1b761cbbd8388d390156e9228937b6c6e91d3682f2f13c16679"
+      },
+      {
+        "path": "artifacts/research_protocol/r1/r1_uncertainty_v1.json",
+        "sha256": "3259f2a3cad89960dbcae625ffa10bfea4b9bcd7beb6513ea4fa82e7c1755ca0"
+      },
+      {
+        "path": "detection_service/research_protocol/r1_scoring.py",
+        "sha256": "258b3a0ace6634268a28c667e2491c8ee807f7e34cb9c21d5075707cc319fe2b"
+      },
+      {
+        "path": "detection_service/outputs/r1-clearance-001/native_ds_v2_binding_v1.json",
+        "sha256": "2188a420c0982832cf815c5c2f04eb9f2586dacf37530351e24bf2ab51441c6b"
+      },
+      {
+        "path": "detection_service/outputs/r1-clearance-001/native_ds_v2_v1.jsonl",
+        "sha256": "21f51edf46c4b9b759af160981c9b6faae211d92efc9a210ca10bd53b63ba787"
+      },
+      {
+        "path": "reviews/R1_DS_RUNTIME_EQUIVALENCE_v1.md",
+        "sha256": "c51e28a0beb0d51904182c8c02bb254a9728cc8f8c8803098455130c2ba5f17d"
+      },
+      {
+        "path": "reviews/R1_SHIFTED_UNSEEN_RESULTS_v1.md",
+        "sha256": "6f8cdff1877d1f98e791b989419f19707f8a82cdc3c14c1775090f7fa2103530"
+      },
+      {
+        "path": "reviews/R1_SHIFTED_UNSEEN_RESULTS_v2.md",
+        "sha256": "d789f9ed1d3d391265e6d6b136ecac5ad6ef13c5e9d03f85d788b130791ab509"
+      },
+      {
+        "path": "reviews/R1_SOURCE_CLEARANCE_v1.md",
+        "sha256": "1ea8a2e9772ab1d7cae12dbe426cc12e06fcfe435462d0a5da5fe1d8eaf3c9ff"
+      }
+    ],
+    "warning": "NumPy 2.1.3 in r1_uncertainty_v1.json describes analysis, not reference-LM inference."
+  },
+  "historical_failed_replay_score_gate_preserved": false,
+  "integrity": {
+    "attack_generator_changes": false,
+    "calibrator_changes": false,
+    "dg_queries": 0,
+    "dmb_queries": 0,
+    "ensemble_queries": 0,
+    "feature_schema_changes": false,
+    "generation_queries": 0,
+    "model_changes": false,
+    "r3_started": false,
+    "source_preservation": 503,
+    "start": "35b88f7fd445e209434e77474862818211c2043c",
+    "threshold": 0.5585373573968287,
+    "tolerance": 1e-12,
+    "track_b": "0cd2d506380cbb3ec513207e4fa66ad422d2b3f2"
+  },
+  "journal_code_sha256": "611b16ba48b1cf56bcc09c2f8980bc3df028038ad9f1ca72a3fb316faf123cd9",
+  "journals": [
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/equivalence_logical.jsonl",
+      "logical_sha256": "1c7adbe474ffd76a19e6af4a656d35e24044adf1aa2b592d9270fcf0d1c1c4b6",
+      "path": "detection_service/outputs/ds-numerical-001/equivalence.jsonl",
+      "queries": 243,
+      "sha256": "85bd8ec66f5922cda849e9dd555c996881024157361c7caf64b1a7c13402002a"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/r1_logical.jsonl",
+      "logical_sha256": "e5716be3dbbfe4eb0f0eb5cf200be0301cc8368688b34fd0de8854dca7da93b6",
+      "path": "detection_service/outputs/ds-numerical-001/r1.jsonl",
+      "queries": 9,
+      "sha256": "88f91cc52480e19bd0fa034057301b415561f04f4b3450af71e41f0001d9723f"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/repeat_logical.jsonl",
+      "logical_sha256": "756ba010be0d1f88ffc64140e546657fcda3f94c6ce553b28b05398f195c6d5b",
+      "path": "detection_service/outputs/ds-numerical-001/repeat.jsonl",
+      "queries": 100,
+      "sha256": "509698136bf684dc2e2954977163335f21d9da550e16ab25e1d3f0fa4aba8107"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/worker_0_logical.jsonl",
+      "logical_sha256": "7074149a67e2e473ac3c6e68fcb98ae29ed62ff0e79575ae50ced0ad9ea22a53",
+      "path": "detection_service/outputs/ds-numerical-001/worker_0.jsonl",
+      "queries": 1,
+      "sha256": "4169c4f6f79c75956dec0c3abf64d60421e94f21b3244eac0bf9c81343e1ae92"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/worker_1_logical.jsonl",
+      "logical_sha256": "9f27b023dac9bf31dbf47edf5931fcf1df18c2ceb3cd4bf75ef5c3f6f9606288",
+      "path": "detection_service/outputs/ds-numerical-001/worker_1.jsonl",
+      "queries": 1,
+      "sha256": "3eedc35961ff34a7a10cf72acea96d46c684267f42b018b64e28e7b7d87de3f0"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/worker_2_logical.jsonl",
+      "logical_sha256": "ef834195f52f2bfa55496d2f842c049ac1f42db5adea97f773fad203dc565f98",
+      "path": "detection_service/outputs/ds-numerical-001/worker_2.jsonl",
+      "queries": 1,
+      "sha256": "46e6ba72a282d647c1b8763b2f410792d66e27bd17afc3886017d38d8b111863"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/worker_3_logical.jsonl",
+      "logical_sha256": "bdad0640e32905154b24f42f88e967231697a93889b24051646836f6368b0a51",
+      "path": "detection_service/outputs/ds-numerical-001/worker_3.jsonl",
+      "queries": 1,
+      "sha256": "c45975b87836d4a8f471626969af865bc83ddf2108b205e291c53b4fde26c97a"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/worker_4_logical.jsonl",
+      "logical_sha256": "066c8f81e2c14977263d2b9e2ebc6c1738c39ed063ca96cde06d0ba4adeec8b1",
+      "path": "detection_service/outputs/ds-numerical-001/worker_4.jsonl",
+      "queries": 1,
+      "sha256": "5a7c6cc00bd5327c65c5594055d4b7c7751bc8d68a9f853e795311c2f4b5aaaa"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/worker_5_logical.jsonl",
+      "logical_sha256": "7ca206be1dc8bc249cc2c3787de00ffb3794acf483b75ca39a30d4a870430571",
+      "path": "detection_service/outputs/ds-numerical-001/worker_5.jsonl",
+      "queries": 1,
+      "sha256": "2263eb415a8230ed642d1c3f68d4d5739c82c9235a1040d65b4a5b4dc4e5f092"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/worker_6_logical.jsonl",
+      "logical_sha256": "30befb682f94248c92098776353b3143ae3d9adb2a5723386ce7fa4bc3afc945",
+      "path": "detection_service/outputs/ds-numerical-001/worker_6.jsonl",
+      "queries": 1,
+      "sha256": "6e33b1cb722acdf74b2462187a00fbae63db9bdc79f088e613fa9c8e54f65c4a"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/worker_7_logical.jsonl",
+      "logical_sha256": "ccba31f77ca3c14b2887767771e893823adabdb25bc6fa550e93ff84c17e50e7",
+      "path": "detection_service/outputs/ds-numerical-001/worker_7.jsonl",
+      "queries": 1,
+      "sha256": "dda725d48c282ed587f8d7543b1705dfb129899e0f7406ead4e47d4387f3b977"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/worker_8_logical.jsonl",
+      "logical_sha256": "35ce26148db45e7b2c097f7b40c7125944f4a3767d021d28d85cc5fb238acecb",
+      "path": "detection_service/outputs/ds-numerical-001/worker_8.jsonl",
+      "queries": 1,
+      "sha256": "a23393e6ab405f0a8002d5b141af27f77546e1fc7d521d5b040e1b339869e659"
+    },
+    {
+      "logical_path": "detection_service/outputs/ds-numerical-001/worker_9_logical.jsonl",
+      "logical_sha256": "9f956819f9e958b2b13574060bec2e872d0ae391925cdd2806b6a663230e3a72",
+      "path": "detection_service/outputs/ds-numerical-001/worker_9.jsonl",
+      "queries": 1,
+      "sha256": "90eec782b86e2f4b31538e5326450f2f94c6a9c8646c6c53754bf77b4949f545"
+    }
+  ],
+  "materially_changed_behavior": "NO_EVIDENCE_IN_OBSERVED_RECORDS; not a proof about untested records",
+  "next_change": "Seek separate authorization for an isolated thread/backend A/B reproduction with immutable environment receipts; do not relax tolerance or resume generation.",
+  "numerical_only_consistency": "Consistent with small upstream numerical variation; no causal proof of the backend/environment parameter responsible.",
+  "precision_findings": {
+    "caveat": "The L1 bound assumes independent feature perturbations. Same-logits float64 change is larger than prior drift but does not recreate its cause. No production substitution.",
+    "float64_postprocessing_delta": {
+      "calibrated": 0.8445702251972679,
+      "calibrated_delta": 4.937104543856208e-06,
+      "diagnostic_dtype": "torch.float64",
+      "high_feature_vector": [
+        3.409529573857742,
+        30.251010045634267,
+        30.251010045634267,
+        30.251010045634267,
+        30.251010045634267,
+        0.0,
+        3.409529573857742,
+        14.104933896616446,
+        3.3285881871262197,
+        0.1,
+        -2.6348285181199094,
+        0.1,
+        1.5067342791232574,
+        0.8666666666666667,
+        2.676326809801397,
+        0.9666666666666667,
+        2.3017511208280315,
+        2.1555275599651287,
+        5.174927479303319,
+        0.6326219994011475,
+        5.807549478704467,
+        8.007681373217153,
+        8.85908258464328,
+        13.57139219030267,
+        11.947948067846857,
+        10.215667443255725
+      ],
+      "logits_sha256": "e007f82f828f1a68fccd2e9099e09f6c6ba764f0ecc5f6dfbd01bb0719abb1bc",
+      "maximum_feature_delta": 0.00046462068182506755,
+      "maximum_token_delta": 3.721801357581267e-05,
+      "normal_dtype": "torch.float32",
+      "raw": 0.9254993312327059,
+      "raw_delta": 2.093341425202233e-06
+    },
+    "linear_float32_scale_l1_bound": 4.462502991047397e-07,
+    "observed_prior_raw_delta": 1.9159158060055859e-07,
+    "plausible_scale_sufficient": true,
+    "reduction_mean_delta": {
+      "numpy_mean_minus_statistics_fmean": 0.0
+    }
+  },
+  "prior_vs_current": {
+    "causal_thread_ab_not_run": true,
+    "current_calibrated": 0.844565288092724,
+    "current_environment": {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "39c5857419f9b5e7ec59f036eb2afbd19404b46e693dadb8ee52e9fb34a2ba25",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "e0643005d0daa5ef6c02cf191f14278d24f324c9c1e0b7b3067e0327c0b36052",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    },
+    "current_raw": 0.9254972378912807,
+    "current_settings": {
+      "MKL_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "PYTHONHASHSEED": null
+    },
+    "evidence": "Both recorded package versions, CPU/float32, loader torch threads 8 and deterministic=True match. Shell OMP/MKL differ. Prior logits were not saved; cannot separate LM forward from log_softmax effects.",
+    "historical_failed_attempt": "UNKNOWN_EXACT_COUNT_BOUNDED_1_TO_61",
+    "maximum_feature_delta": 3.814697265625e-06,
+    "maximum_token_surprisal_delta": 8.58306884765625e-06,
+    "prior_environment": {
+      "deterministic_algorithms": true,
+      "device": "cpu",
+      "model_dtype": "torch.float32",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "torch_interop_threads": 10,
+      "torch_num_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": "4",
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": null
+      }
+    },
+    "prior_repair_calibrated": 0.8445657399577122,
+    "prior_repair_queries": 1,
+    "prior_repair_raw": 0.9254974294828613,
+    "prior_settings": {
+      "MKL_NUM_THREADS": "4",
+      "OMP_NUM_THREADS": "4"
+    },
+    "token_surprisals_changed": 82
+  },
+  "private_numeric_capture_sha256": "2782d5d2f29d7c59f65011d67169c13d0286acec7bb3eb5305bafd2639399ca5",
+  "purpose": "DIAGNOSTIC_ONLY",
+  "recommendation": "D. INSUFFICIENT_EVIDENCE_KEEP_R2_DS_BLOCKED",
+  "runtime_deterministic_in_observed_runs": true,
+  "score_reproducibility_current_diagnostic_set": true,
+  "scoring_code_commit": "0697ccdea0306f8f209b8594aba0bc4ba205c074",
+  "start_commit": "35b88f7fd445e209434e77474862818211c2043c",
+  "status": "UNRESOLVED"
+}

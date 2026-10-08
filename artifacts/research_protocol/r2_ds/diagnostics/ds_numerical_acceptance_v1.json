@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "ds_243_equivalence_recheck": "476b87d376be2f4338ee61d85d427c389b4b39584a8da697bf4c137bb278fc0e",
+    "ds_dtype_device_trace": "5c1b3ec9649e6e0482559b6dac56bc46da265a02835a0cc941f6431dd25a3820",
+    "ds_feature_sensitivity": "af453730775764af369e71883659ea5bf43e6566c4463d2ab7ff8812d63b2f07",
+    "ds_numerical_runtime_diagnosis": "d84d83d56649fa55c3fc8a5d1001e3f9812587969928ad1f58d9f674b5a46ce0",
+    "ds_r1_diagnostic_replays": "30ce5b784cf65c6e3223b724b842a4a882ad457b8a9ab063bd99b94ceb831134",
+    "ds_repeatability_first_seed": "720a1e0e6bd6154c77060354e0a8ea2efce22b3a4b6c6240822dbd9c2ffdd0d6",
+    "ds_runtime_environment": "624268d7d383242231aea8e625bb4e1a2afb8bafea64483f7fb0b3d240e3500e"
+  },
+  "case_ids_sha256": "45302ce5a7a26e242c7b37f4b72220a5622dc0f2f522db0227f1685bef02ffa2",
+  "diagnostic_queries": 362,
+  "interpretation_status": "UNRESOLVED",
+  "passed": 200,
+  "preservation": {
+    "patch": 262,
+    "quality": {
+      "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+      "hash_checks": 96,
+      "status": "PASS",
+      "tracked_baseline_diff": "EMPTY"
+    },
+    "release": {
+      "R1_started": false,
+      "hash_checks": 118,
+      "status": "PASS"
+    },
+    "source": 503
+  },
+  "r2_status": "BLOCKED",
+  "receipts": [
+    {
+      "path": "tmp/ds_numerical_tests.xml",
+      "sha256": "ca4eaf525a3478569112186d2eca8b8f8600e00b03fb6982d40b26058e0ded58"
+    },
+    {
+      "path": "tmp/ds_numerical_dmb_tests.xml",
+      "sha256": "f286af2ee19ab6095415e22b110a6e657908fd038e36dc65260bb8ca09777a25"
+    }
+  ],
+  "status": "PASS",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 200
+  }
+}

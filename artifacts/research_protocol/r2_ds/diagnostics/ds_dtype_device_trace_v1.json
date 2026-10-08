@@ -1,0 +1,67 @@
+{
+  "calibration_log_odds": {
+    "dtype": "float64",
+    "value": 2.5194949475757693
+  },
+  "calibration_output": {
+    "dtype": "float64",
+    "value": 0.844565288092724
+  },
+  "cpu_comparison": "NOT_APPLICABLE_ALREADY_CPU",
+  "feature_vector": "float64",
+  "historical_device": {
+    "evidence": "artifacts/research_protocol/runtime/ds_v2_runtime_binding_v1.json",
+    "status": "KNOWN",
+    "value": "cpu"
+  },
+  "historical_dtype": "UNKNOWN_PER_RUN; accepted loader default float32, native R1 journal has no dtype receipt",
+  "input_tensors": {
+    "device": "cpu",
+    "dtype": "torch.int64"
+  },
+  "log_softmax": {
+    "device": "cpu",
+    "dtype": "torch.float32"
+  },
+  "logits": {
+    "device": "cpu",
+    "dtype": "torch.float32"
+  },
+  "lr_coefficients": "float64",
+  "lr_decision_function": {
+    "dtype": "float64",
+    "value": 2.5194949475757715
+  },
+  "lr_intercept": "float64",
+  "model_mode": {
+    "active_dropout": [],
+    "grad_enabled": false,
+    "inference_mode": true,
+    "input_device": "cpu",
+    "input_dtype": "torch.int64",
+    "logits_device": "cpu",
+    "logits_dtype": "torch.float32",
+    "parameter_devices": [
+      "cpu"
+    ],
+    "parameter_dtypes": [
+      "torch.float32"
+    ],
+    "parameters_require_grad": false,
+    "training": false
+  },
+  "probability_tensor": "Not materialized in accepted path: log_softmax plus gather",
+  "raw_probability": {
+    "dtype": "float64",
+    "value": 0.9254972378912807
+  },
+  "reference_weights": {
+    "device": "cpu",
+    "dtype": "torch.float32"
+  },
+  "sliding_window_perplexities": "Python float binary64: statistics.fmean then math.exp",
+  "statistical_summaries": "Python binary64 statistics; NumPy float64 quantiles/median/reference transform",
+  "tf32_relevant": false,
+  "token_surprisals": "torch.float32 -> Python float binary64, exact widening",
+  "whole_prompt_perplexity": "Python float binary64: statistics.fmean then math.exp"
+}

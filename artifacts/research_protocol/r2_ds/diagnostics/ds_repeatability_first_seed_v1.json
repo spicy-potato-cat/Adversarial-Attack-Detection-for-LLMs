@@ -1,0 +1,2342 @@
+{
+  "combined": {
+    "calibrated": {
+      "count": 110,
+      "distinct_binary64_values": 1,
+      "maximum": 0.844565288092724,
+      "maximum_delta": 0.0,
+      "mean": 0.844565288092724,
+      "minimum": 0.844565288092724,
+      "standard_deviation": 0.0
+    },
+    "raw": {
+      "count": 110,
+      "distinct_binary64_values": 1,
+      "maximum": 0.9254972378912807,
+      "maximum_delta": 0.0,
+      "mean": 0.9254972378912805,
+      "minimum": 0.9254972378912807,
+      "standard_deviation": 2.220446049250313e-16
+    }
+  },
+  "cross_process": {
+    "calibrated": {
+      "count": 10,
+      "distinct_binary64_values": 1,
+      "maximum": 0.844565288092724,
+      "maximum_delta": 0.0,
+      "mean": 0.8445652880927239,
+      "minimum": 0.844565288092724,
+      "standard_deviation": 1.1102230246251565e-16
+    },
+    "raw": {
+      "count": 10,
+      "distinct_binary64_values": 1,
+      "maximum": 0.9254972378912807,
+      "maximum_delta": 0.0,
+      "mean": 0.9254972378912806,
+      "minimum": 0.9254972378912807,
+      "standard_deviation": 1.1102230246251565e-16
+    }
+  },
+  "diagnostic_queries": 110,
+  "same_process": {
+    "calibrated": {
+      "count": 100,
+      "distinct_binary64_values": 1,
+      "maximum": 0.844565288092724,
+      "maximum_delta": 0.0,
+      "mean": 0.844565288092724,
+      "minimum": 0.844565288092724,
+      "standard_deviation": 0.0
+    },
+    "raw": {
+      "count": 100,
+      "distinct_binary64_values": 1,
+      "maximum": 0.9254972378912807,
+      "maximum_delta": 0.0,
+      "mean": 0.9254972378912805,
+      "minimum": 0.9254972378912807,
+      "standard_deviation": 2.220446049250313e-16
+    }
+  },
+  "same_process_mode_trace": [
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    },
+    {
+      "active_dropout": [],
+      "grad_enabled": false,
+      "inference_mode": true,
+      "input_device": "cpu",
+      "input_dtype": "torch.int64",
+      "logits_device": "cpu",
+      "logits_dtype": "torch.float32",
+      "parameter_devices": [
+        "cpu"
+      ],
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "parameters_require_grad": false,
+      "training": false
+    }
+  ],
+  "same_process_pid": 30600,
+  "worker_environments": [
+    {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "0dcd354afe91b7038dd72d08b733c1f88826b4e610bd75232fdf9d21272c150f",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "b28dd030834952ee8cde7e0153c29e35d68b726ced23065303730fb925957b95",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    },
+    {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "47e9120666096417fd6dfa0ea9e744285af3dc12898b7484bcd36d6c5ebd457a",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "09b56430bcd494a86d8b11d94396f13e071fb1a80c1e84759bf05e8ea25d0eb4",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    },
+    {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "911f5b83c5a703c5a62259cb808e35e4a3261f1691639e69ef52efcaf29cc2a3",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "3c5d07c3a1837ec1598659a20f715e18130789e0e74e2a541a5baa9401a9de39",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    },
+    {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "5b1f411f0b9e30ac70d8794f4469209271c241e53591125654f50c0fd874e15f",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "40e7f026c7a8cd69a706df16c63a97e4d7b25112e0746794ec00775fd475234b",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    },
+    {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "5613fc9a7087b7c6b66071ecec70fee809f0503d2393d2b7a1d8468e6a494544",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "60e9e80ca02b62c4f85e55c035c838f295244c8ac601ede95ce6a95e397567ca",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    },
+    {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "f4cdc7444371061013723d758e060bf03e543a2795a392d4f430f0dc1fb4f7e9",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "10052435062945d8718aaf750ac061538835ad01f01546c3103999d195eb4b01",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    },
+    {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "7366a703f9e85552ac066aababc2f0cee7b0c8fd73805ec2162d6acc94e9f841",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "0dec81a77ca4e9bce4f63a0e86b37ac2ef1ed66b43128c5c3af846f638fb60c8",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    },
+    {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "0921326f1cc9a2b155deafab3b4c2d39acc870cf78fe6ffbd11e1bb069cc0459",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "e46563cbe788df47de540603bd0ae164a6135e6e7e06ebae70716b33170c0f79",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    },
+    {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "afcb3f4a2b99743186e519191297afa522c5ae1f5d6fefe9e3d04d2bffbeca31",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "2fd80fb5751f8dc5a346911aef69d3a0efddca863a3c9394326c56abfca74627",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    },
+    {
+      "cuda_version": null,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_version": null,
+      "deterministic_algorithms": true,
+      "grad_enabled_outside_inference": true,
+      "machine": "AMD64",
+      "numpy_backend": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j8vn_sl2/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.27  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: D:/a/numpy/numpy/.openblas\n    version: 0.3.27\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30156\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.0.11\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-0xvfl3v_\\Scripts\\python.exe\n  version: '3.11'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n",
+      "numpy_rng_state_sha256": "7449c70d93edd004cfc06283f8accd2e15b1bb090c9bb4f213ca69de566ce7b1",
+      "numpy_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "packages": {
+        "numpy": "2.1.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.17.1",
+        "torch": "2.6.0",
+        "transformers": "4.49.0"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_rng_state_sha256": "fb0798582c620428063208c8e0661299960152a0e87842e5b23e559e731a5204",
+      "python_seed": "UNKNOWN_NOT_SET_BY_DIAGNOSTIC",
+      "tf32_cudnn": true,
+      "tf32_matmul": false,
+      "torch_backend": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930157\n  - Intel(R) oneAPI Math Kernel Library Version 2025.0.1-Product Build 20241031 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+      "torch_initial_seed": 1701,
+      "torch_interop_threads": 10,
+      "torch_rng_state_sha256": "812f3a64622ad1e81b43d21a18d0a7b0ea56aae4f9a15d54ac3c482d6da83b57",
+      "torch_threads": 8,
+      "variables": {
+        "MKL_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONHASHSEED": null
+      }
+    }
+  ],
+  "worker_mode_traces": [
+    [
+      {
+        "active_dropout": [],
+        "grad_enabled": false,
+        "inference_mode": true,
+        "input_device": "cpu",
+        "input_dtype": "torch.int64",
+        "logits_device": "cpu",
+        "logits_dtype": "torch.float32",
+        "parameter_devices": [
+          "cpu"
+        ],
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "parameters_require_grad": false,
+        "training": false
+      }
+    ],
+    [
+      {
+        "active_dropout": [],
+        "grad_enabled": false,
+        "inference_mode": true,
+        "input_device": "cpu",
+        "input_dtype": "torch.int64",
+        "logits_device": "cpu",
+        "logits_dtype": "torch.float32",
+        "parameter_devices": [
+          "cpu"
+        ],
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "parameters_require_grad": false,
+        "training": false
+      }
+    ],
+    [
+      {
+        "active_dropout": [],
+        "grad_enabled": false,
+        "inference_mode": true,
+        "input_device": "cpu",
+        "input_dtype": "torch.int64",
+        "logits_device": "cpu",
+        "logits_dtype": "torch.float32",
+        "parameter_devices": [
+          "cpu"
+        ],
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "parameters_require_grad": false,
+        "training": false
+      }
+    ],
+    [
+      {
+        "active_dropout": [],
+        "grad_enabled": false,
+        "inference_mode": true,
+        "input_device": "cpu",
+        "input_dtype": "torch.int64",
+        "logits_device": "cpu",
+        "logits_dtype": "torch.float32",
+        "parameter_devices": [
+          "cpu"
+        ],
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "parameters_require_grad": false,
+        "training": false
+      }
+    ],
+    [
+      {
+        "active_dropout": [],
+        "grad_enabled": false,
+        "inference_mode": true,
+        "input_device": "cpu",
+        "input_dtype": "torch.int64",
+        "logits_device": "cpu",
+        "logits_dtype": "torch.float32",
+        "parameter_devices": [
+          "cpu"
+        ],
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "parameters_require_grad": false,
+        "training": false
+      }
+    ],
+    [
+      {
+        "active_dropout": [],
+        "grad_enabled": false,
+        "inference_mode": true,
+        "input_device": "cpu",
+        "input_dtype": "torch.int64",
+        "logits_device": "cpu",
+        "logits_dtype": "torch.float32",
+        "parameter_devices": [
+          "cpu"
+        ],
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "parameters_require_grad": false,
+        "training": false
+      }
+    ],
+    [
+      {
+        "active_dropout": [],
+        "grad_enabled": false,
+        "inference_mode": true,
+        "input_device": "cpu",
+        "input_dtype": "torch.int64",
+        "logits_device": "cpu",
+        "logits_dtype": "torch.float32",
+        "parameter_devices": [
+          "cpu"
+        ],
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "parameters_require_grad": false,
+        "training": false
+      }
+    ],
+    [
+      {
+        "active_dropout": [],
+        "grad_enabled": false,
+        "inference_mode": true,
+        "input_device": "cpu",
+        "input_dtype": "torch.int64",
+        "logits_device": "cpu",
+        "logits_dtype": "torch.float32",
+        "parameter_devices": [
+          "cpu"
+        ],
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "parameters_require_grad": false,
+        "training": false
+      }
+    ],
+    [
+      {
+        "active_dropout": [],
+        "grad_enabled": false,
+        "inference_mode": true,
+        "input_device": "cpu",
+        "input_dtype": "torch.int64",
+        "logits_device": "cpu",
+        "logits_dtype": "torch.float32",
+        "parameter_devices": [
+          "cpu"
+        ],
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "parameters_require_grad": false,
+        "training": false
+      }
+    ],
+    [
+      {
+        "active_dropout": [],
+        "grad_enabled": false,
+        "inference_mode": true,
+        "input_device": "cpu",
+        "input_dtype": "torch.int64",
+        "logits_device": "cpu",
+        "logits_dtype": "torch.float32",
+        "parameter_devices": [
+          "cpu"
+        ],
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "parameters_require_grad": false,
+        "training": false
+      }
+    ]
+  ],
+  "worker_pids": [
+    27788,
+    23716,
+    26092,
+    23212,
+    19316,
+    29260,
+    31104,
+    21972,
+    29344,
+    6116
+  ]
+}
