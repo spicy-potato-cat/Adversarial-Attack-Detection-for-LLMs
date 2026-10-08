@@ -1,0 +1,70 @@
+{
+  "Cycle2": "DEFERRED",
+  "R3_started": false,
+  "accepted_generation_exists": false,
+  "archived_drafts": {
+    "detection_service/outputs/r2-dmb-001/blocked_implementation_draft/detection_service/research_protocol/r2_dmb_analysis.py": "9f24d9cd08520f1a68702c254975757bc7ad986c40842210322c646acf0325ec",
+    "detection_service/outputs/r2-dmb-001/blocked_implementation_draft/detection_service/research_protocol/r2_dmb_freeze.py": "3de917083fa004908300968064eed400182ad105d88ecd85a721bbeb10ef7f52",
+    "detection_service/outputs/r2-dmb-001/blocked_implementation_draft/detection_service/research_protocol/r2_dmb_generate_run.py": "80fb18076891be4cbc904d439b75d34f5ecc93593a824725fde328301946c91a",
+    "detection_service/outputs/r2-dmb-001/blocked_implementation_draft/detection_service/research_protocol/r2_dmb_generator.py": "6a59ba6a1163c85d9ebd964f2c90511d4d76004ee31b77e06223f51612ebd592",
+    "detection_service/outputs/r2-dmb-001/blocked_implementation_draft/detection_service/research_protocol/r2_dmb_report.py": "b48e71a558cb9f9b175a5559040b89f184065784d19ea1a48cb790a9caef4086",
+    "detection_service/outputs/r2-dmb-001/blocked_implementation_draft/detection_service/research_protocol/r2_dmb_transfer_run.py": "0aa3c77d1bf06e52898e177a94fcedcfde5ce581636e422e735892b4ad3dfd0f",
+    "detection_service/outputs/r2-dmb-001/blocked_implementation_draft/detection_service/tests/test_r2_dmb_analysis_synthetic.py": "7913bd2b6c73012a50073b07f8cf18bb1046b59d52926ba3bf192193154e2ca3",
+    "detection_service/outputs/r2-dmb-001/blocked_implementation_draft/detection_service/tests/test_r2_dmb_freeze_outputs.py": "d7c4953083c0e4623ed6ac193dbd4ca501b0d3fe127ee3dcc5a5a3406a1d7e43",
+    "detection_service/outputs/r2-dmb-001/blocked_implementation_draft/detection_service/tests/test_r2_dmb_generator.py": "71b3eab9d21e08bfd7056c8f545ef29a9277692bb02a8e4f15c379894cbb1ef8",
+    "detection_service/outputs/r2-dmb-001/blocked_implementation_draft/tmp/r2_generator.xml": "21fd9e697bc879cbc9d22c1dde0164f663526ccd677f4f9254f6efbecb46629b"
+  },
+  "artifact_version": "r2_dmb_blocker_v1",
+  "baseline_preservation": {
+    "hash_checks": 96,
+    "status": "PASS"
+  },
+  "blocker": "Official R2 caller requests all target/transfer catalog entries for one target; frozen validator rejects TARGET_METRIC_DOMAIN_CONFLICT.",
+  "draft_tests": {
+    "accepted_as_experiment": false,
+    "generator_stage_passed": 41,
+    "subsequent_analytics_stage_failed": 5,
+    "subsequent_analytics_stage_passed": 43
+  },
+  "frozen_code_sha256": {
+    "detection_service/research_protocol/core_metrics.py": "cd62c85923bec28710817c91fc356a0e35a4a4ca09b79d3a659dae80b5135231",
+    "detection_service/research_protocol/metric_catalog.py": "555226d318ed90b5c7a1c0c51844acc0272bea7a88890a0cc5b1084a57364b26",
+    "detection_service/research_protocol/protocol_lock.py": "a67dfc606279cda0638e727b83c2241a1aeb0a58a69b85608bcdf39f38808fd5",
+    "detection_service/research_protocol/uncertainty.py": "abec17cb7f963de721401aef141358e32e103a00ee5417379e68c2dfba8c5a1a"
+  },
+  "generation_queries": {
+    "D_G": 0,
+    "D_M-B": 0,
+    "D_S": 0,
+    "ensemble": 0
+  },
+  "predeclaration_commit": "5c74a379b51360a4b84993beba546948344405ea",
+  "protocol_modified": false,
+  "receipt": {
+    "errors": 0,
+    "failures": 0,
+    "path": "tmp/r2_blocked_acceptance.xml",
+    "sha256": "6fe14cef151be09c4b155eeeb8db54056fd5b28cd18dbe995853bd770305202a",
+    "skipped": 0,
+    "tests": 14
+  },
+  "release_preservation": {
+    "R1_started": false,
+    "hash_checks": 118,
+    "status": "PASS"
+  },
+  "reproduction": "Synthetic metadata and frozen APIs only; no model inference.",
+  "sha256": {
+    "artifacts/research_protocol/r2_dmb/r2_dmb_predeclaration_v1.json": "6b87558fc2db14ad6d1ff73a707529726d8d466ac64893e05b28e125ce8e7c32",
+    "artifacts/research_protocol/r2_dmb/r2_dmb_seed_manifest_v1.json": "499cdcecace3b3b4725afca78aad7ee2bcca9436e297019b80cb947cd128dd56",
+    "detection_service/tests/test_r2_dmb_protocol_blocker.py": "0c3535cf4bd26791c7c348e9289fb2b834b3f5c6e5c8796dd9f3c38dde474038",
+    "reviews/R2_DMB_TARGETED_EVASION_RESULTS_v1.md": "0616d888b2fd7d3a63068a970402fb4b73efa4274523b103fdc29d35f1c8be39"
+  },
+  "source_branch_modified": false,
+  "source_head": "62bf867b2acc53c3a8dc35d18f443558cd9da508",
+  "source_preservation_checks": 252,
+  "status": "BLOCKED",
+  "stop_code": "R2_PROTOCOL_MUTATION_REQUIRED",
+  "transfer_scoring_started": false,
+  "verifier_started": false
+}
