@@ -1,0 +1,21 @@
+{
+  "acceptance_sha256": "4a5a8acaebf3d5fe45377acb4a07ff5fa67d10a7d81797789dc7c99f76725db5",
+  "artifact_version": "r2_dmb_predeclaration_addendum_v1",
+  "attack_target": "D_M-B",
+  "authoritative_prior_model_queries": 0,
+  "only_change": "Prospective protocol-version binding from exp_protocol_001_v1 to exp_protocol_001_patch_001",
+  "operators_unchanged": true,
+  "original_predeclaration_commit": "5c74a379b51360a4b84993beba546948344405ea",
+  "original_predeclaration_sha256": "6b87558fc2db14ad6d1ff73a707529726d8d466ac64893e05b28e125ce8e7c32",
+  "original_predeclaration_unchanged": true,
+  "protocol_patch_commit": "7e16bcb828c437d5665b0ebe855b8cb021e0dee2",
+  "protocol_patch_id": "exp_protocol_001_patch_001",
+  "protocol_patch_sha256": "b76966953f1e2c09cabef9a7dec42a3ad589e6a945ba12890e9836178baa7c50",
+  "query_budget_unchanged": true,
+  "random_seed_unchanged": true,
+  "scientific_outcomes_observed": "NONE",
+  "seed_manifest_sha256": "499cdcecace3b3b4725afca78aad7ee2bcca9436e297019b80cb947cd128dd56",
+  "seed_population_unchanged": true,
+  "success_condition_unchanged": true,
+  "target_isolation_unchanged": true
+}
