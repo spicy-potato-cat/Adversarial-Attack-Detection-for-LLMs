@@ -32,3 +32,12 @@ testing; this review does not claim a pending test has already passed.
 
 R2 must bind this patch through a separate predeclaration addendum and a pre-query
 receipt before resumption. No experiment, model inference or R3 is run by this patch.
+
+The initial correction commit's post-commit gate rejected historical model
+environment metadata whose accepted local serialization differs from its Git
+serialization. Its original SHA-256 was unchanged. The follow-up gate correction
+preserves that existing local-byte hash authority and additionally Git-anchors
+only new patch files and the patch manifest, to the manifest's latest committed
+revision. This is provenance validation only, before any R2 query. Original
+acceptance v1 and Git history remain available; acceptance v2 binds this corrected
+gate. Scoped attributes preserve new hash-bound files across Windows checkouts.

@@ -119,3 +119,24 @@ def test_frozen_scientific_scope_unchanged(scope,prefix):
     selected = {path:sha for path,sha in snapshot.items() if path.startswith(prefix)}
     assert selected, scope
     assert all(p.digest(path) == sha for path,sha in selected.items())
+
+
+@pytest.mark.parametrize('tamper',(False,True))
+def test_patch_git_anchor_and_historical_local_hash_authority(monkeypatch,tamper):
+    seen=[]
+    def git(*args):
+        if args[0]=='log':
+            return (('f'*40)+'\n').encode('ascii')
+        assert args[0]=='show'
+        path=args[1].split(':',1)[1]
+        seen.append(path)
+        data=(p.ROOT/path).read_bytes()
+        return data+b' ' if tamper and path.endswith('protocol_patch_001.py') else data
+    monkeypatch.setattr(patch.parent,'git',git)
+    if tamper:
+        with pytest.raises(ValueError,match='COMMITTED_PATCH_BYTES_REQUIRED'):
+            patch.verify_patch()
+    else:
+        value=patch.verify_patch()
+        assert set(seen)==set(value['patch_code_paths'])|{patch.ARTIFACT}
+        assert 'artifacts/models/dg_v1/environment.json' not in seen

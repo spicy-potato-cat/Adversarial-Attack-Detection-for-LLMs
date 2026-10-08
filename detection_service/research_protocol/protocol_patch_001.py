@@ -46,11 +46,17 @@ def verify_patch(*, require_committed=True):
     for path, expected in value["sha256"].items():
         require(parent.files.sha(parent.files.ROOT / path) == expected, "PATCH_PRESERVATION_FAILURE:" + path)
     if require_committed:
-        commits = parent.git("log", "--format=%H", "--diff-filter=A", "--", ARTIFACT).decode().splitlines()
-        require(len(commits) == 1, "COMMITTED_PATCH_REQUIRED")
-        for path in (*value["sha256"], ARTIFACT):
-            require((parent.files.ROOT / path).read_bytes() == parent.git("show", commits[0] + ":" + path), "COMMITTED_PATCH_BYTES_REQUIRED:" + path)
+        commit = patch_commit()
+        require((parent.files.ROOT / ARTIFACT).read_bytes() == parent.git("show", commit + ":" + ARTIFACT), "COMMITTED_PATCH_BYTES_REQUIRED:" + ARTIFACT)
+        for path in value["patch_code_paths"]:
+            require((parent.files.ROOT / path).read_bytes() == parent.git("show", commit + ":" + path), "COMMITTED_PATCH_BYTES_REQUIRED:" + path)
     return value
+
+
+def patch_commit():
+    commits = parent.git("log", "-1", "--format=%H", "--", ARTIFACT).decode().splitlines()
+    require(len(commits) == 1, "COMMITTED_PATCH_REQUIRED")
+    return commits[0]
 
 
 def verify_experiment_preflight(request):

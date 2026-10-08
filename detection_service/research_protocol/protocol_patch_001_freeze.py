@@ -8,7 +8,7 @@ CODE = ("detection_service/research_protocol/protocol_patch_001.py",
         "detection_service/research_protocol/protocol_patch_001_freeze.py",
         "detection_service/research_protocol/protocol_patch_001_accept.py",
         "detection_service/tests/test_protocol_patch_001.py",
-        "detection_service/tests/.gitattributes", "reviews/.gitattributes")
+        "detection_service/tests/.gitattributes", "reviews/.gitattributes", ".gitattributes")
 REVIEW = "reviews/EXP_PROTOCOL_001_PATCH_001_REVIEW.md"
 
 
@@ -29,6 +29,8 @@ def freeze():
         transfer_evaluation_domain=list(patch.PRIMARY),common_mode_domain=list(patch.PRIMARY),
         official_entrypoint="detection_service.research_protocol.protocol_patch_001.evaluate_official",
         parent_entrypoint_preserved=True,scientific_algorithms_reused_unchanged=True,
+        patch_code_paths=list((*CODE,REVIEW)),
+        provenance_gate_correction='Historical model metadata retains accepted local-byte hash authority; only new patch files are additionally Git-byte anchored.',
         sha256=dict(sorted(snapshot.items())))
     value['manifest_hash'] = patch.parent.digest(value)
     publish(p.ROOT/patch.ARTIFACT,value)
