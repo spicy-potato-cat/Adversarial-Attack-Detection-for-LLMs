@@ -1,0 +1,159 @@
+{
+  "artifact_version": "r1_descriptive_frontier_v1",
+  "detectors": {
+    "dg_v1": {
+      "points": [
+        {
+          "budget": 0.01,
+          "fn": 787,
+          "fnr": 0.98375,
+          "fp": 3,
+          "fpr": 0.003,
+          "negative_denominator": 1000,
+          "no_positive_predictions": false,
+          "positive_denominator": 800,
+          "recall": 0.01625,
+          "role": "R1_SECONDARY_DESCRIPTIVE_ONLY_NOT_OPERATIONAL",
+          "threshold": 0.9891414642333984,
+          "tn": 997,
+          "tp": 13
+        },
+        {
+          "budget": 0.03,
+          "fn": 781,
+          "fnr": 0.97625,
+          "fp": 27,
+          "fpr": 0.027,
+          "negative_denominator": 1000,
+          "no_positive_predictions": false,
+          "positive_denominator": 800,
+          "recall": 0.02375,
+          "role": "R1_SECONDARY_DESCRIPTIVE_ONLY_NOT_OPERATIONAL",
+          "threshold": 0.9605088829994202,
+          "tn": 973,
+          "tp": 19
+        },
+        {
+          "budget": 0.05,
+          "fn": 778,
+          "fnr": 0.9725,
+          "fp": 48,
+          "fpr": 0.048,
+          "negative_denominator": 1000,
+          "no_positive_predictions": false,
+          "positive_denominator": 800,
+          "recall": 0.0275,
+          "role": "R1_SECONDARY_DESCRIPTIVE_ONLY_NOT_OPERATIONAL",
+          "threshold": 0.8984565734863281,
+          "tn": 952,
+          "tp": 22
+        }
+      ],
+      "score_basis": "raw_score",
+      "view": "descriptive_frontier_v1"
+    },
+    "dm_b_v1": {
+      "points": [
+        {
+          "budget": 0.01,
+          "fn": 0,
+          "fnr": 0.0,
+          "fp": 0,
+          "fpr": 0.0,
+          "negative_denominator": 1000,
+          "no_positive_predictions": false,
+          "positive_denominator": 800,
+          "recall": 1.0,
+          "role": "R1_SECONDARY_DESCRIPTIVE_ONLY_NOT_OPERATIONAL",
+          "threshold": 0.9989068508148193,
+          "tn": 1000,
+          "tp": 800
+        },
+        {
+          "budget": 0.03,
+          "fn": 0,
+          "fnr": 0.0,
+          "fp": 0,
+          "fpr": 0.0,
+          "negative_denominator": 1000,
+          "no_positive_predictions": false,
+          "positive_denominator": 800,
+          "recall": 1.0,
+          "role": "R1_SECONDARY_DESCRIPTIVE_ONLY_NOT_OPERATIONAL",
+          "threshold": 0.9989068508148193,
+          "tn": 1000,
+          "tp": 800
+        },
+        {
+          "budget": 0.05,
+          "fn": 0,
+          "fnr": 0.0,
+          "fp": 0,
+          "fpr": 0.0,
+          "negative_denominator": 1000,
+          "no_positive_predictions": false,
+          "positive_denominator": 800,
+          "recall": 1.0,
+          "role": "R1_SECONDARY_DESCRIPTIVE_ONLY_NOT_OPERATIONAL",
+          "threshold": 0.9989068508148193,
+          "tn": 1000,
+          "tp": 800
+        }
+      ],
+      "score_basis": "raw_score",
+      "view": "descriptive_frontier_v1"
+    },
+    "ds_v2": {
+      "points": [
+        {
+          "budget": 0.01,
+          "fn": 161,
+          "fnr": 0.20125,
+          "fp": 10,
+          "fpr": 0.01,
+          "negative_denominator": 1000,
+          "no_positive_predictions": false,
+          "positive_denominator": 800,
+          "recall": 0.79875,
+          "role": "R1_SECONDARY_DESCRIPTIVE_ONLY_NOT_OPERATIONAL",
+          "threshold": 0.845165738165399,
+          "tn": 990,
+          "tp": 639
+        },
+        {
+          "budget": 0.03,
+          "fn": 94,
+          "fnr": 0.1175,
+          "fp": 30,
+          "fpr": 0.03,
+          "negative_denominator": 1000,
+          "no_positive_predictions": false,
+          "positive_denominator": 800,
+          "recall": 0.8825,
+          "role": "R1_SECONDARY_DESCRIPTIVE_ONLY_NOT_OPERATIONAL",
+          "threshold": 0.7878432442707937,
+          "tn": 970,
+          "tp": 706
+        },
+        {
+          "budget": 0.05,
+          "fn": 78,
+          "fnr": 0.0975,
+          "fp": 50,
+          "fpr": 0.05,
+          "negative_denominator": 1000,
+          "no_positive_predictions": false,
+          "positive_denominator": 800,
+          "recall": 0.9025,
+          "role": "R1_SECONDARY_DESCRIPTIVE_ONLY_NOT_OPERATIONAL",
+          "threshold": 0.7493022625470236,
+          "tn": 950,
+          "tp": 722
+        }
+      ],
+      "score_basis": "raw_score",
+      "view": "descriptive_frontier_v1"
+    }
+  },
+  "operational_policy_changed": false
+}

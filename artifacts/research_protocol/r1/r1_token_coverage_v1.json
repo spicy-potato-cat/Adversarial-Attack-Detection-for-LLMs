@@ -1,0 +1,59 @@
+{
+  "artifact_version": "r1_token_coverage_v1",
+  "detectors": {
+    "dg_v1": {
+      "by_source": {
+        "INJECAGENT_BASE": {
+          "rows": 400,
+          "truncated": 0
+        },
+        "LLMAIL_INJECT": {
+          "rows": 400,
+          "truncated": 0
+        },
+        "OR_BENCH_HARD": {
+          "rows": 1000,
+          "truncated": 0
+        }
+      },
+      "max_input_tokens": 6390,
+      "truncated_rows": 0
+    },
+    "dm_b_v1": {
+      "by_source": {
+        "INJECAGENT_BASE": {
+          "rows": 400,
+          "truncated": 0
+        },
+        "LLMAIL_INJECT": {
+          "rows": 400,
+          "truncated": 117
+        },
+        "OR_BENCH_HARD": {
+          "rows": 1000,
+          "truncated": 0
+        }
+      },
+      "max_input_tokens": 7144,
+      "truncated_rows": 117
+    },
+    "ds_v2": {
+      "by_source": {
+        "INJECAGENT_BASE": {
+          "rows": 400,
+          "truncated": 0
+        },
+        "LLMAIL_INJECT": {
+          "rows": 400,
+          "truncated": 1
+        },
+        "OR_BENCH_HARD": {
+          "rows": 1000,
+          "truncated": 0
+        }
+      },
+      "max_input_tokens": 7144,
+      "truncated_rows": 1
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "artifact_version": "r1_ranking_metrics_v1",
+  "definition_source": "Frozen Phase-13 development_characterization.characterization; whole tied blocks; no operational decision changes",
+  "detectors": {
+    "dg_v1": {
+      "average_precision": 0.37789020357305086,
+      "definition": "average_precision_whole_tied_blocks",
+      "roc_auc": 0.40694875,
+      "sample_count": 1800,
+      "score_basis": "raw_score"
+    },
+    "dm_b_v1": {
+      "average_precision": 0.9999999999999911,
+      "definition": "average_precision_whole_tied_blocks",
+      "roc_auc": 1.0,
+      "sample_count": 1800,
+      "score_basis": "raw_score"
+    },
+    "ds_v2": {
+      "average_precision": 0.9748953375370448,
+      "definition": "average_precision_whole_tied_blocks",
+      "roc_auc": 0.97433625,
+      "sample_count": 1800,
+      "score_basis": "raw_score"
+    }
+  }
+}

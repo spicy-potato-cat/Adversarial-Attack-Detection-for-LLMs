@@ -1,0 +1,30 @@
+{
+  "r0_frontier_reference": {
+    "artifact_path": "artifacts/research_protocol/r0/r0_descriptive_frontier_v1.json",
+    "artifact_version": "r0_descriptive_frontier_v1",
+    "logical_role": "support/artifacts/research_protocol/r0/r0_descriptive_frontier_v1.json",
+    "required_for_execution": false,
+    "required_for_reproducibility": true,
+    "sha256": "b7dfac22a7e05ce23ef874ae6878f0ec2273097eb51e748f6f3fea7beb85ac4c",
+    "source_phase": "0-14"
+  },
+  "r0_operational_reference": {
+    "artifact_path": "artifacts/research_protocol/r0/r0_operational_result_bundle_v1.json",
+    "artifact_version": "r0_operational_result_bundle_v1",
+    "logical_role": "operational_R0_baseline",
+    "required_for_execution": true,
+    "required_for_reproducibility": true,
+    "sha256": "b63b25ed4b2eafc3f6e6dd09b8cce96f4acfebff599728650260f8e786e68133",
+    "source_phase": "0-14"
+  },
+  "r0_ranking_reference": {
+    "artifact_path": "artifacts/research_protocol/r0/r0_score_metrics_reproduction_v1.json",
+    "artifact_version": "r0_score_metrics_reproduction_v1",
+    "logical_role": "support/artifacts/research_protocol/r0/r0_score_metrics_reproduction_v1.json",
+    "required_for_execution": false,
+    "required_for_reproducibility": true,
+    "sha256": "3dc999069a85c7c0cd5c8e7a3cc94073b4948430670f0ea494f02a0213211ca6",
+    "source_phase": "0-14"
+  },
+  "report_sha256": "d789f9ed1d3d391265e6d6b136ecac5ad6ef13c5e9d03f85d788b130791ab509"
+}

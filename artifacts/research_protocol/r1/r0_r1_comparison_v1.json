@@ -1,0 +1,378 @@
+{
+  "comparison_version": "cross_regime_comparison_v1",
+  "current_experiment_id": "EXP-R1-64ecea9c55340ad7ea84427620e95f5e434c2e2906029803b148c888854bacd7",
+  "incompatibilities": [],
+  "interpretation": "DESCRIPTIVE_UNPAIRED_RATE_DIFFERENCE",
+  "limitation": "R0 statistical/semantic evidence is fold-local OOF; R1 uses frozen final models. Sources, attack mix, lengths, prevalence and model execution provenance differ; no causal or paired inference.",
+  "metrics": {
+    "all_three/jfn": {
+      "current": 0.0,
+      "delta_fraction": -0.01092896174863388,
+      "delta_percentage_points": -1.092896174863388,
+      "reference": 0.01092896174863388,
+      "status": "OBSERVED"
+    },
+    "individual/dg_v1/accuracy": {
+      "current": 0.46055555555555555,
+      "delta_fraction": -0.40023739598629465,
+      "delta_percentage_points": -40.02373959862947,
+      "reference": 0.8607929515418502,
+      "status": "OBSERVED"
+    },
+    "individual/dg_v1/f1": {
+      "current": 0.06903163950143816,
+      "delta_fraction": -0.2780757985150908,
+      "delta_percentage_points": -27.80757985150908,
+      "reference": 0.34710743801652894,
+      "status": "OBSERVED"
+    },
+    "individual/dg_v1/fnr": {
+      "current": 0.955,
+      "delta_fraction": 0.18450819672131147,
+      "delta_percentage_points": 18.450819672131146,
+      "reference": 0.7704918032786885,
+      "status": "OBSERVED"
+    },
+    "individual/dg_v1/fpr": {
+      "current": 0.207,
+      "delta_fraction": 0.18914285714285714,
+      "delta_percentage_points": 18.914285714285715,
+      "reference": 0.017857142857142856,
+      "status": "OBSERVED"
+    },
+    "individual/dg_v1/npv": {
+      "current": 0.5093127809890816,
+      "delta_fraction": -0.3596463268176099,
+      "delta_percentage_points": -35.96463268176099,
+      "reference": 0.8689591078066915,
+      "status": "OBSERVED"
+    },
+    "individual/dg_v1/precision": {
+      "current": 0.14814814814814814,
+      "delta_fraction": -0.5637162586315129,
+      "delta_percentage_points": -56.37162586315129,
+      "reference": 0.711864406779661,
+      "status": "OBSERVED"
+    },
+    "individual/dg_v1/recall": {
+      "current": 0.045,
+      "delta_fraction": -0.18450819672131147,
+      "delta_percentage_points": -18.450819672131146,
+      "reference": 0.22950819672131148,
+      "status": "OBSERVED"
+    },
+    "individual/dg_v1/specificity": {
+      "current": 0.793,
+      "delta_fraction": -0.18914285714285706,
+      "delta_percentage_points": -18.914285714285704,
+      "reference": 0.9821428571428571,
+      "status": "OBSERVED"
+    },
+    "individual/dm_b_v1/accuracy": {
+      "current": 0.9266666666666666,
+      "delta_fraction": -0.020469897209985377,
+      "delta_percentage_points": -2.0469897209985377,
+      "reference": 0.947136563876652,
+      "status": "OBSERVED"
+    },
+    "individual/dm_b_v1/f1": {
+      "current": 0.9237875288683602,
+      "delta_fraction": 0.06596762365509012,
+      "delta_percentage_points": 6.596762365509012,
+      "reference": 0.8578199052132701,
+      "status": "OBSERVED"
+    },
+    "individual/dm_b_v1/fnr": {
+      "current": 0.0,
+      "delta_fraction": -0.01092896174863388,
+      "delta_percentage_points": -1.092896174863388,
+      "reference": 0.01092896174863388,
+      "status": "OBSERVED"
+    },
+    "individual/dm_b_v1/fpr": {
+      "current": 0.132,
+      "delta_fraction": 0.07107563025210084,
+      "delta_percentage_points": 7.107563025210084,
+      "reference": 0.06092436974789916,
+      "status": "OBSERVED"
+    },
+    "individual/dm_b_v1/npv": {
+      "current": 1.0,
+      "delta_fraction": 0.0022321428571429047,
+      "delta_percentage_points": 0.22321428571429047,
+      "reference": 0.9977678571428571,
+      "status": "OBSERVED"
+    },
+    "individual/dm_b_v1/precision": {
+      "current": 0.8583690987124464,
+      "delta_fraction": 0.10104692298022877,
+      "delta_percentage_points": 10.104692298022877,
+      "reference": 0.7573221757322176,
+      "status": "OBSERVED"
+    },
+    "individual/dm_b_v1/recall": {
+      "current": 1.0,
+      "delta_fraction": 0.010928961748633892,
+      "delta_percentage_points": 1.0928961748633892,
+      "reference": 0.9890710382513661,
+      "status": "OBSERVED"
+    },
+    "individual/dm_b_v1/specificity": {
+      "current": 0.868,
+      "delta_fraction": -0.07107563025210084,
+      "delta_percentage_points": -7.107563025210084,
+      "reference": 0.9390756302521008,
+      "status": "OBSERVED"
+    },
+    "individual/ds_v2/accuracy": {
+      "current": 0.9277777777777778,
+      "delta_fraction": 0.02733724914341662,
+      "delta_percentage_points": 2.733724914341662,
+      "reference": 0.9004405286343612,
+      "status": "OBSERVED"
+    },
+    "individual/ds_v2/f1": {
+      "current": 0.9148099606815203,
+      "delta_fraction": 0.2481432940148537,
+      "delta_percentage_points": 24.81432940148537,
+      "reference": 0.6666666666666666,
+      "status": "OBSERVED"
+    },
+    "individual/ds_v2/fnr": {
+      "current": 0.1275,
+      "delta_fraction": -0.25501366120218577,
+      "delta_percentage_points": -25.501366120218577,
+      "reference": 0.3825136612021858,
+      "status": "OBSERVED"
+    },
+    "individual/ds_v2/fpr": {
+      "current": 0.028,
+      "delta_fraction": -0.017168067226890755,
+      "delta_percentage_points": -1.7168067226890755,
+      "reference": 0.045168067226890755,
+      "status": "OBSERVED"
+    },
+    "individual/ds_v2/npv": {
+      "current": 0.9050279329608939,
+      "delta_fraction": -0.02347053486341666,
+      "delta_percentage_points": -2.347053486341666,
+      "reference": 0.9284984678243106,
+      "status": "OBSERVED"
+    },
+    "individual/ds_v2/precision": {
+      "current": 0.9614325068870524,
+      "delta_fraction": 0.23707353252807806,
+      "delta_percentage_points": 23.707353252807806,
+      "reference": 0.7243589743589743,
+      "status": "OBSERVED"
+    },
+    "individual/ds_v2/recall": {
+      "current": 0.8725,
+      "delta_fraction": 0.2550136612021858,
+      "delta_percentage_points": 25.501366120218584,
+      "reference": 0.6174863387978142,
+      "status": "OBSERVED"
+    },
+    "individual/ds_v2/specificity": {
+      "current": 0.972,
+      "delta_fraction": 0.017168067226890682,
+      "delta_percentage_points": 1.7168067226890682,
+      "reference": 0.9548319327731093,
+      "status": "OBSERVED"
+    },
+    "pair/dm_b_v1/dg_v1/ejf": {
+      "current": 0.0,
+      "delta_fraction": -0.002508286302965153,
+      "delta_percentage_points": -0.2508286302965153,
+      "reference": 0.002508286302965153,
+      "status": "OBSERVED"
+    },
+    "pair/dm_b_v1/dg_v1/fn_jaccard": {
+      "current": 0.0,
+      "delta_fraction": -0.014184397163120567,
+      "delta_percentage_points": -1.4184397163120568,
+      "reference": 0.014184397163120567,
+      "status": "OBSERVED"
+    },
+    "pair/dm_b_v1/dg_v1/independence_reference": {
+      "current": 0.0,
+      "delta_fraction": -0.008420675445668727,
+      "delta_percentage_points": -0.8420675445668726,
+      "reference": 0.008420675445668727,
+      "status": "OBSERVED"
+    },
+    "pair/dm_b_v1/dg_v1/jfn": {
+      "current": 0.0,
+      "delta_fraction": -0.01092896174863388,
+      "delta_percentage_points": -1.092896174863388,
+      "reference": 0.01092896174863388,
+      "status": "OBSERVED"
+    },
+    "pair/ds_v2/dg_v1/ejf": {
+      "current": 0.004487500000000005,
+      "delta_fraction": 0.015058135133924594,
+      "delta_percentage_points": 1.5058135133924595,
+      "reference": -0.010570635133924589,
+      "status": "OBSERVED"
+    },
+    "pair/ds_v2/dg_v1/fn_jaccard": {
+      "current": 0.13202614379084968,
+      "delta_fraction": -0.195017881366383,
+      "delta_percentage_points": -19.5017881366383,
+      "reference": 0.3270440251572327,
+      "status": "OBSERVED"
+    },
+    "pair/ds_v2/dg_v1/independence_reference": {
+      "current": 0.1217625,
+      "delta_fraction": -0.17296114059840545,
+      "delta_percentage_points": -17.296114059840544,
+      "reference": 0.29472364059840545,
+      "status": "OBSERVED"
+    },
+    "pair/ds_v2/dg_v1/jfn": {
+      "current": 0.12625,
+      "delta_fraction": -0.15790300546448086,
+      "delta_percentage_points": -15.790300546448085,
+      "reference": 0.28415300546448086,
+      "status": "OBSERVED"
+    },
+    "pair/ds_v2/dm_b_v1/ejf": {
+      "current": 0.0,
+      "delta_fraction": -0.006748484577025292,
+      "delta_percentage_points": -0.6748484577025292,
+      "reference": 0.006748484577025292,
+      "status": "OBSERVED"
+    },
+    "pair/ds_v2/dm_b_v1/fn_jaccard": {
+      "current": 0.0,
+      "delta_fraction": -0.02857142857142857,
+      "delta_percentage_points": -2.857142857142857,
+      "reference": 0.02857142857142857,
+      "status": "OBSERVED"
+    },
+    "pair/ds_v2/dm_b_v1/independence_reference": {
+      "current": 0.0,
+      "delta_fraction": -0.004180477171608588,
+      "delta_percentage_points": -0.41804771716085876,
+      "reference": 0.004180477171608588,
+      "status": "OBSERVED"
+    },
+    "pair/ds_v2/dm_b_v1/jfn": {
+      "current": 0.0,
+      "delta_fraction": -0.01092896174863388,
+      "delta_percentage_points": -1.092896174863388,
+      "reference": 0.01092896174863388,
+      "status": "OBSERVED"
+    },
+    "pattern/000": {
+      "current": 0.04375,
+      "delta_fraction": -0.08739754098360657,
+      "delta_percentage_points": -8.739754098360656,
+      "reference": 0.13114754098360656,
+      "status": "OBSERVED"
+    },
+    "pattern/001": {
+      "current": 0.82875,
+      "delta_fraction": 0.34241120218579235,
+      "delta_percentage_points": 34.24112021857923,
+      "reference": 0.48633879781420764,
+      "status": "OBSERVED"
+    },
+    "pattern/010": {
+      "current": 0.0,
+      "delta_fraction": 0.0,
+      "delta_percentage_points": 0.0,
+      "reference": 0.0,
+      "status": "OBSERVED"
+    },
+    "pattern/011": {
+      "current": 0.0,
+      "delta_fraction": 0.0,
+      "delta_percentage_points": 0.0,
+      "reference": 0.0,
+      "status": "OBSERVED"
+    },
+    "pattern/100": {
+      "current": 0.00125,
+      "delta_fraction": -0.09711065573770492,
+      "delta_percentage_points": -9.711065573770492,
+      "reference": 0.09836065573770492,
+      "status": "OBSERVED"
+    },
+    "pattern/101": {
+      "current": 0.12625,
+      "delta_fraction": -0.14697404371584702,
+      "delta_percentage_points": -14.697404371584701,
+      "reference": 0.273224043715847,
+      "status": "OBSERVED"
+    },
+    "pattern/110": {
+      "current": 0.0,
+      "delta_fraction": 0.0,
+      "delta_percentage_points": 0.0,
+      "reference": 0.0,
+      "status": "OBSERVED"
+    },
+    "pattern/111": {
+      "current": 0.0,
+      "delta_fraction": -0.01092896174863388,
+      "delta_percentage_points": -1.092896174863388,
+      "reference": 0.01092896174863388,
+      "status": "OBSERVED"
+    },
+    "recovery/dg_v1/conditional_recovery": {
+      "current": null,
+      "delta_fraction": null,
+      "delta_percentage_points": null,
+      "reference": 0.0,
+      "status": "UNDEFINED"
+    },
+    "recovery/dg_v1/unique_catch_rate": {
+      "current": 0.0,
+      "delta_fraction": 0.0,
+      "delta_percentage_points": 0.0,
+      "reference": 0.0,
+      "status": "OBSERVED"
+    },
+    "recovery/dm_b_v1/conditional_recovery": {
+      "current": 1.0,
+      "delta_fraction": 0.038461538461538436,
+      "delta_percentage_points": 3.8461538461538436,
+      "reference": 0.9615384615384616,
+      "status": "OBSERVED"
+    },
+    "recovery/dm_b_v1/unique_catch_rate": {
+      "current": 0.12625,
+      "delta_fraction": -0.14697404371584702,
+      "delta_percentage_points": -14.697404371584701,
+      "reference": 0.273224043715847,
+      "status": "OBSERVED"
+    },
+    "recovery/ds_v2/conditional_recovery": {
+      "current": null,
+      "delta_fraction": null,
+      "delta_percentage_points": null,
+      "reference": 0.0,
+      "status": "UNDEFINED"
+    },
+    "recovery/ds_v2/unique_catch_rate": {
+      "current": 0.0,
+      "delta_fraction": 0.0,
+      "delta_percentage_points": 0.0,
+      "reference": 0.0,
+      "status": "OBSERVED"
+    }
+  },
+  "paired": false,
+  "reference_experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+  "reference_inventory_entry": {
+    "artifact_path": "artifacts/research_protocol/r0/r0_operational_result_bundle_v1.json",
+    "artifact_version": "r0_operational_result_bundle_v1",
+    "logical_role": "operational_R0_baseline",
+    "required_for_execution": true,
+    "required_for_reproducibility": true,
+    "sha256": "b63b25ed4b2eafc3f6e6dd09b8cce96f4acfebff599728650260f8e786e68133",
+    "source_phase": "0-14"
+  },
+  "status": "OBSERVED"
+}

@@ -1,0 +1,80 @@
+{
+  "Cycle2": "DEFERRED",
+  "R2_started": false,
+  "R3_started": false,
+  "artifact_version": "r1_analysis_provenance_v1",
+  "contracts": {
+    "core_metrics": {
+      "path": "artifacts/research_protocol/core_metrics/core_metrics_contract_v1.json",
+      "sha256": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9"
+    },
+    "cross_regime_contract": {
+      "path": "artifacts/research_protocol/cross_regime/cross_regime_contract_v1.json",
+      "sha256": "0669afb3766494978095a2db78027e6390035ef5d52b779d22261a8e942931d4"
+    },
+    "detector_contract": {
+      "path": "artifacts/research_protocol/detector_set_manifest_v1.json",
+      "sha256": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31"
+    },
+    "operating_policy": {
+      "path": "artifacts/research_protocol/operating_point_manifest_v1.json",
+      "sha256": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc"
+    },
+    "prediction_contract": {
+      "path": "artifacts/research_protocol/schemas/prediction_schema_v1.json",
+      "sha256": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484"
+    },
+    "protocol_lock": {
+      "path": "artifacts/research_protocol/protocol_lock_manifest_v1.json",
+      "sha256": "d0e1f38898b4f82c93daaa6425f4ddb3592fe080fe50db6ef36f2be9dbed2353"
+    },
+    "regime_contract": {
+      "path": "artifacts/research_protocol/regime_contract_manifest_v1.json",
+      "sha256": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149"
+    },
+    "uncertainty_contract": {
+      "path": "artifacts/research_protocol/uncertainty/uncertainty_contract_v1.json",
+      "sha256": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013"
+    }
+  },
+  "gate_b_commit": "eeafd52b097b43e8afbda6f08c97fa96fdeaecec",
+  "model_training": false,
+  "post_R1_adaptation": false,
+  "predictions_sha256": "7282aea1e292c9f5bb853eb0473a3e2b34bfd919a6bbfab28bf0892b51acdc0e",
+  "preflight": {
+    "experiment_executed": false,
+    "experiment_id": "EXP-R1-64ecea9c55340ad7ea84427620e95f5e434c2e2906029803b148c888854bacd7",
+    "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+    "protocol_lock_sha": "d0e1f38898b4f82c93daaa6425f4ddb3592fe080fe50db6ef36f2be9dbed2353",
+    "purpose": "OFFICIAL_EVALUATION",
+    "status": "PASS"
+  },
+  "protocol_release_id": "exp_protocol_001_v1",
+  "scoring_commit": "6a8044c9a304095a04d5bab1502aae702e0943d7",
+  "sha256": {
+    "artifacts/research_protocol/r1/r0_r1_comparison_v1.json": "7145730eaec94999633b3318af7cb736d98b46b408dcc82b1f17ca50f38fdb0d",
+    "artifacts/research_protocol/r1/r1_common_mode_v1.json": "45d9c0254b2f20cb8d0b4ef843e87bbfbfe295f12b32d9b04a84bfd8b21b1fc7",
+    "artifacts/research_protocol/r1/r1_contamination_audit_v1.json": "be7f0704014e07c785a43292196045f5aeab827c37a3111884c9f1f8214ebe31",
+    "artifacts/research_protocol/r1/r1_dataset_manifest_v1.json": "44990563b0835c16b19c596fad6a91c3581a6b6c285468f9153a3a9df29244fa",
+    "artifacts/research_protocol/r1/r1_descriptive_frontier_v1.json": "2ba58eca76a50c41fc74858c25a4d4ecb62f506e7ccd6e3ae0b68405be825a40",
+    "artifacts/research_protocol/r1/r1_failure_patterns_v1.json": "ce4c9faccbf6dfc82e5ab41d028ea7a8baddc7939459e53932f316e7c0bd5ccc",
+    "artifacts/research_protocol/r1/r1_family_analysis_v1.json": "d49a91d0a8905b15e52e552983e403b2c8c197e9be065e50cca2924df844822e",
+    "artifacts/research_protocol/r1/r1_gate_b_acceptance_v1.json": "71539b23b4147c95dda263ef36c4f1e3376da90adf3760e71c5026e355452711",
+    "artifacts/research_protocol/r1/r1_gate_b_test_receipt_v1.json": "162a44419346521666975f256fa184c2b6b6e314f94fd0dc185654a06669b29f",
+    "artifacts/research_protocol/r1/r1_gate_c_acceptance_v1.json": "b703cb0d3a4de904518458d384710e2e097f9a9ded649f4c7c089ec6cd92305d",
+    "artifacts/research_protocol/r1/r1_operational_metrics_v1.json": "03001138e105406a42dc4baf3eaa321cedf2c511feaf14d150eff489f70cc1d6",
+    "artifacts/research_protocol/r1/r1_precommit_outcome_validation_v1.json": "1d7deafade19bd4802761510ba088d7337643d18c381d9c1604d580c27571aa4",
+    "artifacts/research_protocol/r1/r1_precommit_schema_repair_v1.json": "4d2d4d4300a1237a80ed6a34b8522df079a3ee90b4a9c87c25cd4b1b02df548d",
+    "artifacts/research_protocol/r1/r1_prediction_manifest_v1.json": "37f89afcc97c8558ae6ded53643a191b7aad97f07385ed6f3ee4e24959c7d644",
+    "artifacts/research_protocol/r1/r1_ranking_metrics_v1.json": "ccb3e224baecbd48f4503b9f3102b59b70c842eece261b6db8307d8fd4f0459b",
+    "artifacts/research_protocol/r1/r1_result_bundle_v1.json": "f393d9453828a52c4dbc71952b208f7c718e2971ca0697b38ca1f479237f0cda",
+    "artifacts/research_protocol/r1/r1_sample_manifest_v1.json": "e147b2650f10db6a768701d850dcb57d78222fdda75dd97467a24bf011c5f681",
+    "artifacts/research_protocol/r1/r1_source_clearance_v1.json": "b624c55d8acdd1c55a5c84a197983914478dd3c238ac07a7ac81661458244cd6",
+    "artifacts/research_protocol/r1/r1_source_evidence_bindings_v1.json": "a4deac9dcf88d3edf1830547d808a44a357fccb0429910c98dd69efce7d7a921",
+    "artifacts/research_protocol/r1/r1_source_qualification_blocker_v1.json": "2f972d4f7f78c7adfcd6b17d37a9c23c0da0c6531fbe718670c3d1a36b66fc7d",
+    "artifacts/research_protocol/r1/r1_source_selection_v1.json": "abc4fec13616a6b6a0f9b1a0c6b58ac9084ab8ee65dedae4b27770a117a201a0",
+    "artifacts/research_protocol/r1/r1_token_coverage_v1.json": "f582e44ce018f1b761cbbd8388d390156e9228937b6c6e91d3682f2f13c16679",
+    "artifacts/research_protocol/r1/r1_uncertainty_v1.json": "3259f2a3cad89960dbcae625ffa10bfea4b9bcd7beb6513ea4fa82e7c1755ca0"
+  },
+  "status": "PASS"
+}
