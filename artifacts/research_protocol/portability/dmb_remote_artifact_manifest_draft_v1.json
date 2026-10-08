@@ -1,0 +1,28 @@
+{
+  "artifact_type": "fine_tuned_transformer_weights",
+  "base_model_identity": "distilbert/distilroberta-base",
+  "base_model_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+  "detector_id": "dm_b_v1",
+  "filename": "model.safetensors",
+  "original_local_path": "C:\\Users\\harsh\\Adversarial-Attack-Detection-for-LLMs\\artifacts\\models\\dm_b_v1\\transformer\\model.safetensors",
+  "project_tokenizer_config_provenance": {
+    "accepted_commit": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+    "file_sha256": {
+      "model_config.json": "c0dd94ebf78d1918a74e70964ed3e0d0873685c04c51d2835710ee237d36fa10",
+      "transformer/config.json": "3d747d91542e014f5db4d7577924298fa71d4396e8eb9e429ed1ea95ddbf41c8",
+      "transformer/merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "transformer/model.safetensors": "0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844",
+      "transformer/special_tokens_map.json": "8574792bfefae68f2ce2eae93a4145d95b1232c59e71094bcdcb49dbcb549c97",
+      "transformer/tokenizer.json": "fa6e9e4de220a47ece0c8f9c1865f4e353419331bf8ba21ea9d34230a702ffcb",
+      "transformer/tokenizer_config.json": "253e231e9ae9fd6e64762375b14c8f7f266c711b75d2b74a17170e6f3defe729",
+      "transformer/vocab.json": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e"
+    }
+  },
+  "retraining_substitution_allowed": false,
+  "scientific_status": "FROZEN",
+  "sha256": "0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844",
+  "size_bytes": 328492280,
+  "status": "DRAFT_NOT_UPLOADED",
+  "storage_repository": "sumitt86/adversarial-attack-detection-frozen-artifacts",
+  "storage_revision": null
+}
