@@ -1,0 +1,12 @@
+{
+  "authoritative_generation_calls": 16377,
+  "candidate_evaluations": 5459,
+  "generation_accounting_sha256": "214a86b174761ced8b3bdfa26bfa478a997cbdacbb6e1bfc84eaac34a54f61d4",
+  "permitted_synthetic_preflight_calls": 3,
+  "post_freeze_replay_calls": 291,
+  "prediction_manifest_sha256": "feac18f77d4608ba86c11fa26dd106205992337e0806391ed83dfd25cb922d4a",
+  "protected_calls": 0,
+  "status": "PASS",
+  "total_model_calls": 16671,
+  "verifier_calls": 0
+}

@@ -1,0 +1,77 @@
+{
+  "actual_calls": 291,
+  "artifact_version": "r3_prediction_manifest_v1",
+  "completed_at": "2026-10-09T19:53:29Z",
+  "coverage": {
+    "coverage_rate": 1.0,
+    "expected_predictions": 291,
+    "missing_decisions": 0,
+    "missing_predictions": 0,
+    "non_ok_predictions": 0,
+    "ok_predictions": 291,
+    "received_predictions": 291,
+    "status": "COMPLETE"
+  },
+  "detector_ok_counts": {
+    "D_G": 97,
+    "D_M-B": 97,
+    "D_S": 97
+  },
+  "duplicates": 0,
+  "expected_calls": 291,
+  "freeze_commit": "51b40432f12676bf0b62e8f04b9bf48eb0e612f1",
+  "generation_calls": 16377,
+  "generation_score_reuse": false,
+  "journal_sha256": "eeb13006a067d91fcc644d46e172a71edeae38eecc8996286c2eb00a67d3c9da",
+  "max_operational_score_delta": {
+    "D_G": 0.0,
+    "D_M-B": 0.0,
+    "D_S": 0.0
+  },
+  "missing": 0,
+  "non_OK": 0,
+  "prediction_sha256": "8cc5fa96ecc9801fd9b8440c30d3a9e5d5f49bd72ed86b41a85bc58a626cb235",
+  "protected_calls": 0,
+  "protected_queries": 0,
+  "protocol_preflight": {
+    "experiment_executed": false,
+    "experiment_id": "EXP-R3-298f4cf4b760079e7600d4afc488fd374a354c6c5751ea655f10ec7674b26e88",
+    "metric_domains": {
+      "attack_target_domain": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "attack_target_uncertainty_domain": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "common_mode_domain": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "transfer_evaluation_domain": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ]
+    },
+    "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+    "protocol_lock_sha": "d0e1f38898b4f82c93daaa6425f4ddb3592fe080fe50db6ef36f2be9dbed2353",
+    "protocol_patch_id": "exp_protocol_001_patch_001",
+    "purpose": "OFFICIAL_EVALUATION",
+    "status": "PASS"
+  },
+  "regime_sha256": "1cfcb20ab40a95c1efa7b8b5943d4b9dc5c2985e56b98b74609dce404e8a87b2",
+  "replay_decision_mismatches": 0,
+  "replay_required": true,
+  "runtime_seconds": 114.64760059999935,
+  "scoring_code_commit": "8512416d247576aa5507c879ca55801a874e49ef",
+  "scoring_code_sha256": "0a278824081c0c63ed0cfaf3a557ac5d8d2d124bb61e8a35d5530e48a0dedfa1",
+  "started_at": "2026-10-09T19:51:34Z",
+  "status": "PASS",
+  "verifier_calls": 0,
+  "verifier_queries": 0
+}
