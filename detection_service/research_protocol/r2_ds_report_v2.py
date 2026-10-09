@@ -27,7 +27,10 @@ def render():
     attempts = p.files.read_json(p.OUT / 'r2_ds_operator_attempts_v2.json')
     intervals = {r['metric_id']: r for group in bundle['uncertainty'] for r in group['intervals']}
     successes = summary['target_evasion_count']
-    verdict = ('R2_DS_COMPLETE_READY_FOR_MERGE_GATE_1' if successes else
+    full_counts = test_counts(p.ROOT / 'tmp/r2_ds_all_postrun.xml')
+    full_suite_green = not any(full_counts[key] for key in ('failures', 'errors', 'skipped'))
+    verdict = ('R2_DS_REQUIRES_REPAIR' if not full_suite_green else
+               'R2_DS_COMPLETE_READY_FOR_MERGE_GATE_1' if successes else
                'R2_DS_COMPLETE_INSUFFICIENT_TARGET_EVASIONS_READY_FOR_MERGE_GATE_1')
     sections = []
 
@@ -121,7 +124,20 @@ def render():
         verifier_started=False, protected_evaluation_started=False, Cycle2='DEFERRED'))
     receipts = {path.name: dict(path=path.relative_to(p.ROOT).as_posix(), sha256=p.files.sha(path), **test_counts(path))
                 for path in sorted((p.ROOT / 'tmp').glob('r2_ds_*postrun*.xml'))}
-    section('Fresh Tests', receipts)
+    section('Fresh Tests', dict(receipts=receipts,
+        full_suite_counts=full_counts,
+        full_suite_execution='Every maintained test module ran in a fresh Python process with the explicit approved-reference plugin; no tests were filtered or skipped. The combined JUnit receipt contains each case exactly once.',
+        environment_diagnostic='The sandbox stalled Windows asyncio socketpair in FastAPI TestClient. The full suite therefore used approved local socket access. A monolithic diagnostic failed test_common_mode.test_analyze_order_grouped_and_no_model_imports because unrelated collected model tests already imported torch. Module isolation preserves that assertion unchanged.',
+        execution_receipt=p.files.read_json(p.OUT / 'r2_ds_test_execution_v2.json')))
+    if not full_suite_green:
+        section('Remaining Acceptance Blockers', dict(
+            scientific_processing='Generation, freeze, all 2094 predictions, analysis, and targeted post-run checks completed.',
+            full_suite_status='NOT_GREEN; no failed test was skipped, rewritten, or represented as passing.',
+            failures=[
+                'test_r2_ds_repair.test_track_b_preservation hard-codes the superseded 0cd2d50 reference; the Commander-approved 6c7173b reference passes the new live check.',
+                'test_semantic_oof.test_run_stops_at_preflight_before_loading_text_or_training expects an absent run marker, but the accepted historical OOF run marker exists. The production no-rerun guard stopped it before training.',
+                'test_statistical_scorer_comparison.test_frozen_b2_and_fixture invokes a startup gate requiring tech/stat-005 while this task must stay on exp/r2-ds-001. The production wrong-branch guard stopped it.'],
+            disposition='Keep frozen research files and historical receipts unchanged. Review and repair test fixture/context isolation before claiming a green full-suite acceptance or advancing Merge Gate 1.'))
     section('Provenance', dict(starting_head='54529b121634e517e336e83051e0f54ddec312f2',
         disposition_commit=p.committed(p.OUT / 'ds_numerical_disposition_v1.json'),
         restart_commit=p.committed(p.OUT / 'r2_ds_authoritative_restart_receipt_v2.json'),
@@ -131,11 +147,14 @@ def render():
         final_analysis_commit='See final Git delivery receipt; not retroactively substituted for run provenance.'))
     section('Final Verdict', verdict + '\n\nTHE D_S NUMERICAL ANOMALY WAS DISPOSED AS:\n'
         'A non-reproducible execution-context numerical anomaly with unresolved cause; failed-run evidence is retained.\n\n'
-        'THE SINGLE MOST IMPORTANT R2-DS RESULT IS:\n' + finding + '\n\nNEXT AUTHORIZED STEP:\n'
-        'Perform Merge Gate 1 with frozen Track B and decide whether R2-DG is worth running before R3. '
+        'THE SINGLE MOST IMPORTANT R2-DS RESULT IS:\n' + finding + '\n\nNEXT AUTHORIZED STEP:\n' +
+        ('Resolve the three legacy test-context failures and rerun acceptance before Merge Gate 1. ' if not full_suite_green else
+         'Perform Merge Gate 1 with frozen Track B and decide whether R2-DG is worth running before R3. ')
+        +
         'Neither merge nor new experiment was performed in this task.')
     path = p.ROOT / 'reviews/R2_DS_TARGETED_EVASION_RESULTS_v2.md'
-    data = ('# DS DISPOSITION + R2-DS COMPLETION REPORT\n\nSTATUS: PASS\n\n' + '\n'.join(sections)).encode('ascii')
+    status = 'PASS' if full_suite_green else 'BLOCKED'
+    data = ('# DS DISPOSITION + R2-DS COMPLETION REPORT\n\nSTATUS: ' + status + '\n\n' + '\n'.join(sections)).encode('ascii')
     p.require(not path.exists() or path.read_bytes() == data, 'REPORT_OVERWRITE_CONFLICT')
     if not path.exists():
         path.write_bytes(data)

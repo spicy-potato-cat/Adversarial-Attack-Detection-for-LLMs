@@ -1,0 +1,542 @@
+{
+  "ALT_CASE": {
+    "etr_dg": {
+      "denominator": 19,
+      "numerator": 19,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "etr_dmb": {
+      "denominator": 19,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "joint_transfer": {
+      "denominator": 19,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "median_baseline_score": 0.6231158951890238,
+    "median_score_reduction": 0.13370410934614907,
+    "median_terminal_score": 0.5332324100201051,
+    "median_unique_queries": 20,
+    "seed_count": 19,
+    "success_proportion": {
+      "denominator": 19,
+      "numerator": 19,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 19,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 19,
+    "target_evasion_rate": {
+      "denominator": 19,
+      "numerator": 19,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "terminal_selections": 19
+  },
+  "BENIGN_CONTEXT_PADDING": {
+    "etr_dg": {
+      "denominator": 5,
+      "numerator": 5,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "etr_dmb": {
+      "denominator": 5,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "joint_transfer": {
+      "denominator": 5,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "median_baseline_score": 0.9364231812474726,
+    "median_score_reduction": 0.025824573475454082,
+    "median_terminal_score": 0.8815703322101357,
+    "median_unique_queries": 60.0,
+    "seed_count": 496,
+    "success_proportion": {
+      "denominator": 496,
+      "numerator": 5,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.010080645161290322
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 5,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 5,
+    "target_evasion_rate": {
+      "denominator": 496,
+      "numerator": 5,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.010080645161290322
+    },
+    "terminal_selections": 496
+  },
+  "CONFUSABLE_FIRST": {
+    "etr_dg": {
+      "denominator": 8,
+      "numerator": 8,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "etr_dmb": {
+      "denominator": 8,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "joint_transfer": {
+      "denominator": 8,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "median_baseline_score": 0.7498419793032642,
+    "median_score_reduction": 0.19460744158526894,
+    "median_terminal_score": 0.5413897307044389,
+    "median_unique_queries": 33.0,
+    "seed_count": 8,
+    "success_proportion": {
+      "denominator": 8,
+      "numerator": 8,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 8,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 8,
+    "target_evasion_rate": {
+      "denominator": 8,
+      "numerator": 8,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "terminal_selections": 8
+  },
+  "DOT_INTERLEAVE": {
+    "etr_dg": {
+      "denominator": 41,
+      "numerator": 41,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "etr_dmb": {
+      "denominator": 41,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "joint_transfer": {
+      "denominator": 41,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "median_baseline_score": 0.6960134333456943,
+    "median_score_reduction": 0.16608605209187638,
+    "median_terminal_score": 0.5319673851668232,
+    "median_unique_queries": 24,
+    "seed_count": 41,
+    "success_proportion": {
+      "denominator": 41,
+      "numerator": 41,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 41,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 41,
+    "target_evasion_rate": {
+      "denominator": 41,
+      "numerator": 41,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "terminal_selections": 41
+  },
+  "GLOBAL_ALT_CASE": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_dmb": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": 0.97843776069369,
+    "median_score_reduction": 0.0018300079928559865,
+    "median_terminal_score": 0.9838079367537551,
+    "median_unique_queries": 55.5,
+    "seed_count": 6,
+    "success_proportion": {
+      "denominator": 6,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 6,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "terminal_selections": 6
+  },
+  "GLOBAL_CONFUSABLE_FIRST": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_dmb": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": null,
+    "median_score_reduction": null,
+    "median_terminal_score": null,
+    "median_unique_queries": null,
+    "seed_count": 0,
+    "success_proportion": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "terminal_selections": 0
+  },
+  "GLOBAL_DOT_INTERLEAVE": {
+    "etr_dg": {
+      "denominator": 1,
+      "numerator": 1,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "etr_dmb": {
+      "denominator": 1,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "joint_transfer": {
+      "denominator": 1,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "median_baseline_score": 0.999999956084184,
+    "median_score_reduction": 6.547766138176314e-07,
+    "median_terminal_score": 0.9999496208138909,
+    "median_unique_queries": 60.0,
+    "seed_count": 72,
+    "success_proportion": {
+      "denominator": 72,
+      "numerator": 1,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.013888888888888888
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 1,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 1,
+    "target_evasion_rate": {
+      "denominator": 72,
+      "numerator": 1,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.013888888888888888
+    },
+    "terminal_selections": 72
+  },
+  "GLOBAL_ZERO_WIDTH_INTERLEAVE": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_dmb": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": 0.9999999879264556,
+    "median_score_reduction": 2.349786986877156e-06,
+    "median_terminal_score": 0.9999852910691263,
+    "median_unique_queries": 60.0,
+    "seed_count": 26,
+    "success_proportion": {
+      "denominator": 26,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 26,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "terminal_selections": 26
+  },
+  "UNCHANGED": {
+    "etr_dg": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "etr_dmb": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "joint_transfer": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "median_baseline_score": null,
+    "median_score_reduction": null,
+    "median_terminal_score": null,
+    "median_unique_queries": null,
+    "seed_count": 0,
+    "success_proportion": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 0,
+      "101": 0,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 0,
+    "target_evasion_rate": {
+      "denominator": 0,
+      "numerator": 0,
+      "reason": "ZERO_DENOMINATOR",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    "terminal_selections": 0
+  },
+  "ZERO_WIDTH_INTERLEAVE": {
+    "etr_dg": {
+      "denominator": 30,
+      "numerator": 28,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.9333333333333333
+    },
+    "etr_dmb": {
+      "denominator": 30,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "joint_transfer": {
+      "denominator": 30,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "median_baseline_score": 0.7339290658582827,
+    "median_score_reduction": 0.20548419218996994,
+    "median_terminal_score": 0.5213626754570575,
+    "median_unique_queries": 22.0,
+    "seed_count": 30,
+    "success_proportion": {
+      "denominator": 30,
+      "numerator": 30,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 2,
+      "101": 28,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 30,
+    "target_evasion_rate": {
+      "denominator": 30,
+      "numerator": 30,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 1.0
+    },
+    "terminal_selections": 30
+  }
+}

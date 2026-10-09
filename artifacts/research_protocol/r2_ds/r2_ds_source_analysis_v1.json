@@ -1,0 +1,352 @@
+{
+  "INJECAGENT_BASE": {
+    "causal_comparison": false,
+    "etr_dg": {
+      "denominator": 73,
+      "numerator": 72,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.9863013698630136
+    },
+    "etr_dmb": {
+      "denominator": 73,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "joint_transfer": {
+      "denominator": 73,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "joint_transfer_uncertainty": {
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "VALID_TARGET_ATTEMPTS",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": "D_S",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "definition": "All-three misses / successful D_S evasions; derived ratio, not a protocol-catalog mutation.",
+      "interval": {
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "metric_id": "derived_joint_transfer/ds_v2/dm_b_v1_and_dg_v1",
+        "point_estimate": 0.0,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      "plan_sha": "e8bfb97df4495150702daf40dd5487f9addb2404bb9e65b21b1fd76fb0779368"
+    },
+    "lineage_count": 1,
+    "median_baseline_score": 0.8876117814607467,
+    "median_score_reduction": 0.07527106504735065,
+    "median_terminal_score": 0.7750869046305561,
+    "median_unique_queries": 59.0,
+    "most_successful_operator": [
+      [
+        "ZERO_WIDTH_INTERLEAVE",
+        22
+      ],
+      [
+        "DOT_INTERLEAVE",
+        22
+      ],
+      [
+        "ALT_CASE",
+        16
+      ],
+      [
+        "CONFUSABLE_FIRST",
+        8
+      ],
+      [
+        "BENIGN_CONTEXT_PADDING",
+        4
+      ],
+      [
+        "GLOBAL_DOT_INTERLEAVE",
+        1
+      ]
+    ],
+    "seed_count": 314,
+    "success_proportion": {
+      "denominator": 314,
+      "numerator": 73,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.23248407643312102
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 1,
+      "101": 72,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 73,
+    "target_evasion_rate": {
+      "denominator": 314,
+      "numerator": 73,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.23248407643312102
+    },
+    "terminal_operator_distribution": {
+      "ALT_CASE": 16,
+      "BENIGN_CONTEXT_PADDING": 235,
+      "CONFUSABLE_FIRST": 8,
+      "DOT_INTERLEAVE": 22,
+      "GLOBAL_DOT_INTERLEAVE": 8,
+      "GLOBAL_ZERO_WIDTH_INTERLEAVE": 3,
+      "ZERO_WIDTH_INTERLEAVE": 22
+    },
+    "terminal_selections": 314,
+    "uncertainty": {
+      "alignment_sha": "0571007678ae9fb2d4cf96127c180792e1a3c8361ca284c5811285bfefc07f59",
+      "bootstrap_domain_lineage_count": 1,
+      "bootstrap_domain_row_count": 314,
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "VALID_TARGET_ATTEMPTS",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": "D_S",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+      "decision_view": "OPERATIONAL",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "experiment_id": "EXP-R2-b46fda480d7395ff8fbbe54cf67ff9382540beaa6de053185041aa26feb9b359",
+      "intervals": [
+        {
+          "ci_lower": 0.23248407643312102,
+          "ci_upper": 0.23248407643312102,
+          "metric_id": "target/ds_v2/evasion",
+          "point_estimate": 0.23248407643312102,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.9863013698630136,
+          "ci_upper": 0.9863013698630136,
+          "metric_id": "transfer/ds_v2/dg_v1/etr",
+          "point_estimate": 0.9863013698630136,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "transfer/ds_v2/dm_b_v1/etr",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        }
+      ],
+      "lineage_count": 1,
+      "numpy_version": "2.1.3",
+      "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+      "paired_reference_alignment_sha": null,
+      "plan_sha": "e8bfb97df4495150702daf40dd5487f9addb2404bb9e65b21b1fd76fb0779368",
+      "population_signature": "49e22e54313b2344b73aae761f6928f4e87ebe47d35f780299fcdcc9190c004c",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "regime_manifest_sha": "35a3fdba350bb3557d15e0c458b87b0d5bd02aa0fa64ea1825e3613ede7927db",
+      "result_version": "uncertainty_result_v1",
+      "rng_state_after_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+      "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+      "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+      "unknown_lineage_rows": 0
+    }
+  },
+  "LLMAIL_INJECT": {
+    "causal_comparison": false,
+    "etr_dg": {
+      "denominator": 31,
+      "numerator": 30,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.967741935483871
+    },
+    "etr_dmb": {
+      "denominator": 31,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "joint_transfer": {
+      "denominator": 31,
+      "numerator": 0,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.0
+    },
+    "joint_transfer_uncertainty": {
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "VALID_TARGET_ATTEMPTS",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": "D_S",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "definition": "All-three misses / successful D_S evasions; derived ratio, not a protocol-catalog mutation.",
+      "interval": {
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "metric_id": "derived_joint_transfer/ds_v2/dm_b_v1_and_dg_v1",
+        "point_estimate": 0.0,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      "plan_sha": "a47475e083993d7ddeac2449cfb7297e20d88e5711ff8e7d32c2601fe6db96bd"
+    },
+    "lineage_count": 93,
+    "median_baseline_score": 0.9930126924541054,
+    "median_score_reduction": 0.0023929916971833776,
+    "median_terminal_score": 0.9878303805600954,
+    "median_unique_queries": 60.0,
+    "most_successful_operator": [
+      [
+        "DOT_INTERLEAVE",
+        19
+      ],
+      [
+        "ZERO_WIDTH_INTERLEAVE",
+        8
+      ],
+      [
+        "ALT_CASE",
+        3
+      ],
+      [
+        "BENIGN_CONTEXT_PADDING",
+        1
+      ]
+    ],
+    "seed_count": 384,
+    "success_proportion": {
+      "denominator": 384,
+      "numerator": 31,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.08072916666666667
+    },
+    "successful_evasion_patterns": {
+      "000": 0,
+      "001": 0,
+      "010": 0,
+      "011": 0,
+      "100": 1,
+      "101": 30,
+      "110": 0,
+      "111": 0
+    },
+    "target_evasion_count": 31,
+    "target_evasion_rate": {
+      "denominator": 384,
+      "numerator": 31,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.08072916666666667
+    },
+    "terminal_operator_distribution": {
+      "ALT_CASE": 3,
+      "BENIGN_CONTEXT_PADDING": 261,
+      "DOT_INTERLEAVE": 19,
+      "GLOBAL_ALT_CASE": 6,
+      "GLOBAL_DOT_INTERLEAVE": 64,
+      "GLOBAL_ZERO_WIDTH_INTERLEAVE": 23,
+      "ZERO_WIDTH_INTERLEAVE": 8
+    },
+    "terminal_selections": 384,
+    "uncertainty": {
+      "alignment_sha": "731b2c25170ad9ad08a2a5add3b5a76f0cdebdef7fd35404c642ee00eace0479",
+      "bootstrap_domain_lineage_count": 93,
+      "bootstrap_domain_row_count": 384,
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "VALID_TARGET_ATTEMPTS",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": "D_S",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+      "decision_view": "OPERATIONAL",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "experiment_id": "EXP-R2-02bd4e63e1d248609327dab134b42ae23f4a3fd2f5795448e6af4991ea6c8e42",
+      "intervals": [
+        {
+          "ci_lower": 0.05398111528574254,
+          "ci_upper": 0.11286089238845144,
+          "metric_id": "target/ds_v2/evasion",
+          "point_estimate": 0.08072916666666667,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.8846153846153846,
+          "ci_upper": 1.0,
+          "metric_id": "transfer/ds_v2/dg_v1/etr",
+          "point_estimate": 0.967741935483871,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "transfer/ds_v2/dm_b_v1/etr",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        }
+      ],
+      "lineage_count": 93,
+      "numpy_version": "2.1.3",
+      "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+      "paired_reference_alignment_sha": null,
+      "plan_sha": "a47475e083993d7ddeac2449cfb7297e20d88e5711ff8e7d32c2601fe6db96bd",
+      "population_signature": "2039cf43a415d8bc387dedfc4e0555748580ab5499dc66585ef461657117f462",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "regime_manifest_sha": "98e48d0e988844ce1cc570784066a087357e95b8d9b67b7196487cc8a273c4f1",
+      "result_version": "uncertainty_result_v1",
+      "rng_state_after_sha": "c987ee149fce2f10013173c1c8754c41486b5aa8d0d65a1ad1b4cd8147b1b9c5",
+      "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+      "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+      "unknown_lineage_rows": 0
+    }
+  }
+}

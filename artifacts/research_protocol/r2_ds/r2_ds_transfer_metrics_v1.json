@@ -1,0 +1,123 @@
+{
+  "canonical_target": {
+    "target_detector": "ds_v2",
+    "target_evasion_count": 104,
+    "target_evasion_lineage_count": 28,
+    "target_evasion_rate": {
+      "denominator": 698,
+      "numerator": 104,
+      "reason": null,
+      "status": "DEFINED",
+      "value": 0.1489971346704871
+    },
+    "transfers": [
+      {
+        "etr": {
+          "denominator": 104,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "joint_evasion_count": 0,
+        "target_detector": "ds_v2",
+        "target_evasion_count": 104,
+        "transfer_detector": "dm_b_v1",
+        "valid_attempt_count": 698
+      },
+      {
+        "etr": {
+          "denominator": 104,
+          "numerator": 102,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.9807692307692307
+        },
+        "joint_evasion_count": 102,
+        "target_detector": "ds_v2",
+        "target_evasion_count": 104,
+        "transfer_detector": "dg_v1",
+        "valid_attempt_count": 698
+      }
+    ],
+    "unique_lineage_count": 94,
+    "valid_attempt_count": 698,
+    "valid_attempt_lineage_count": 94
+  },
+  "etr_dg": {
+    "denominator": 104,
+    "numerator": 102,
+    "reason": null,
+    "status": "DEFINED",
+    "value": 0.9807692307692307
+  },
+  "etr_dmb": {
+    "denominator": 104,
+    "numerator": 0,
+    "reason": null,
+    "status": "DEFINED",
+    "value": 0.0
+  },
+  "joint_transfer": {
+    "denominator": 104,
+    "numerator": 0,
+    "reason": null,
+    "status": "DEFINED",
+    "value": 0.0
+  },
+  "joint_transfer_uncertainty": {
+    "config": {
+      "confidence_level": 0.95,
+      "domain": "VALID_TARGET_ATTEMPTS",
+      "method": "PERCENTILE_BOOTSTRAP_V1",
+      "quantile_method": "linear",
+      "replicates": 1000,
+      "seed": 1701,
+      "target_detector": "D_S",
+      "unit": "LINEAGE_CLUSTERED"
+    },
+    "definition": "All-three misses / successful D_S evasions; derived ratio, not a protocol-catalog mutation.",
+    "interval": {
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "metric_id": "derived_joint_transfer/ds_v2/dm_b_v1_and_dg_v1",
+      "point_estimate": 0.0,
+      "replicates_invalid": 0,
+      "replicates_requested": 1000,
+      "replicates_valid": 1000,
+      "status": "ESTIMATED"
+    },
+    "plan_sha": "aa6a705739f806d1d724bbd58335b913a4af576ac3e7ab23a9517d5a3585955b"
+  },
+  "median_baseline_score": 0.9357327697322733,
+  "median_score_reduction": 0.025824573475454082,
+  "median_terminal_score": 0.8820153429900661,
+  "median_unique_queries": 60.0,
+  "seed_count": 698,
+  "success_proportion": {
+    "denominator": 698,
+    "numerator": 104,
+    "reason": null,
+    "status": "DEFINED",
+    "value": 0.1489971346704871
+  },
+  "successful_evasion_patterns": {
+    "000": 0,
+    "001": 0,
+    "010": 0,
+    "011": 0,
+    "100": 2,
+    "101": 102,
+    "110": 0,
+    "111": 0
+  },
+  "target_evasion_count": 104,
+  "target_evasion_rate": {
+    "denominator": 698,
+    "numerator": 104,
+    "reason": null,
+    "status": "DEFINED",
+    "value": 0.1489971346704871
+  },
+  "terminal_selections": 698
+}

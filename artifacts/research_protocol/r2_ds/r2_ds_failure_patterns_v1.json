@@ -1,0 +1,280 @@
+{
+  "alignment_sha": "da52023784d879cd5bd8921a44a0c8ab8c5544f224e2b6c37c0d8a8299d71458",
+  "attack_count": 698,
+  "benign_count": 0,
+  "bit_order": "S/M/G",
+  "bit_semantics": "0=CATCH;1=MISS",
+  "coverage": {
+    "coverage_rate": 1.0,
+    "expected_predictions": 2094,
+    "missing_decisions": 0,
+    "missing_predictions": 0,
+    "non_ok_predictions": 0,
+    "ok_predictions": 2094,
+    "received_predictions": 2094,
+    "status": "COMPLETE"
+  },
+  "metric_status": "COMPLETE",
+  "patterns": [
+    {
+      "attack_rate": {
+        "denominator": 698,
+        "numerator": 29,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.04154727793696275
+      },
+      "count": 29,
+      "meaning": "All three catch",
+      "pattern_id": "000"
+    },
+    {
+      "attack_rate": {
+        "denominator": 698,
+        "numerator": 565,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.8094555873925502
+      },
+      "count": 565,
+      "meaning": "Only D_G misses",
+      "pattern_id": "001"
+    },
+    {
+      "attack_rate": {
+        "denominator": 698,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "count": 0,
+      "meaning": "Only D_M-B misses",
+      "pattern_id": "010"
+    },
+    {
+      "attack_rate": {
+        "denominator": 698,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "count": 0,
+      "meaning": "D_M-B and D_G miss; D_S catches",
+      "pattern_id": "011"
+    },
+    {
+      "attack_rate": {
+        "denominator": 698,
+        "numerator": 2,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0028653295128939827
+      },
+      "count": 2,
+      "meaning": "Only D_S misses",
+      "pattern_id": "100"
+    },
+    {
+      "attack_rate": {
+        "denominator": 698,
+        "numerator": 102,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.14613180515759314
+      },
+      "count": 102,
+      "meaning": "D_S and D_G miss; D_M-B catches",
+      "pattern_id": "101"
+    },
+    {
+      "attack_rate": {
+        "denominator": 698,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "count": 0,
+      "meaning": "D_S and D_M-B miss; D_G catches",
+      "pattern_id": "110"
+    },
+    {
+      "attack_rate": {
+        "denominator": 698,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "count": 0,
+      "meaning": "All three miss",
+      "pattern_id": "111"
+    }
+  ],
+  "population_count": 698,
+  "provenance": {
+    "decision_view": "OPERATIONAL",
+    "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+    "evidence_kind": "ACCEPTED_METADATA",
+    "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+    "explicit_decisions_sha": null,
+    "explicit_provenance_id": null,
+    "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+    "operational_prediction_schema_sha": "3803cbf2f2c5c568894d894ccc51b64b86ff4f4ed2c5fa6a1e06b9d80512d173",
+    "operational_threshold_ids": [
+      "ds_v2_op3_cal_v1",
+      "dm_b_v1_op3_raw_v1",
+      "dg_v1_op3_raw_v1"
+    ],
+    "operational_thresholds": [
+      0.5585373573968287,
+      0.0004967087297700347,
+      0.21291141211986545
+    ],
+    "partition": "INTERNAL_TEST",
+    "prediction_batch_sha": "1ffae1d922f1a0c0a466b54bb2284e4c370f93050d2014db8a36fd3f771a0f97",
+    "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+    "primary_detector_ids": [
+      "ds_v2",
+      "dm_b_v1",
+      "dg_v1"
+    ],
+    "primary_detector_labels": [
+      "D_S",
+      "D_M-B",
+      "D_G"
+    ],
+    "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+    "regime_manifest_sha": "25d8e08bf48c38bb3dc1bcf297b16c6ace6ea5aabfadb8780a622ed1276191a4",
+    "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+  },
+  "recovery": {
+    "alignment_sha": "da52023784d879cd5bd8921a44a0c8ab8c5544f224e2b6c37c0d8a8299d71458",
+    "attack_count": 698,
+    "benign_count": 0,
+    "coverage": {
+      "coverage_rate": 1.0,
+      "expected_predictions": 2094,
+      "missing_decisions": 0,
+      "missing_predictions": 0,
+      "non_ok_predictions": 0,
+      "ok_predictions": 2094,
+      "received_predictions": 2094,
+      "status": "COMPLETE"
+    },
+    "detectors": [
+      {
+        "both_others_miss_count": 0,
+        "conditional_recovery": {
+          "denominator": 0,
+          "numerator": 0,
+          "reason": "ZERO_DENOMINATOR",
+          "status": "UNDEFINED",
+          "value": null
+        },
+        "detector_id": "ds_v2",
+        "unique_catch_count": 0,
+        "unique_catch_pattern": "011",
+        "unique_catch_rate": {
+          "denominator": 698,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        }
+      },
+      {
+        "both_others_miss_count": 102,
+        "conditional_recovery": {
+          "denominator": 102,
+          "numerator": 102,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 1.0
+        },
+        "detector_id": "dm_b_v1",
+        "unique_catch_count": 102,
+        "unique_catch_pattern": "101",
+        "unique_catch_rate": {
+          "denominator": 698,
+          "numerator": 102,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.14613180515759314
+        }
+      },
+      {
+        "both_others_miss_count": 0,
+        "conditional_recovery": {
+          "denominator": 0,
+          "numerator": 0,
+          "reason": "ZERO_DENOMINATOR",
+          "status": "UNDEFINED",
+          "value": null
+        },
+        "detector_id": "dg_v1",
+        "unique_catch_count": 0,
+        "unique_catch_pattern": "110",
+        "unique_catch_rate": {
+          "denominator": 698,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        }
+      }
+    ],
+    "metric_status": "COMPLETE",
+    "population_count": 698,
+    "provenance": {
+      "decision_view": "OPERATIONAL",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "evidence_kind": "ACCEPTED_METADATA",
+      "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+      "explicit_decisions_sha": null,
+      "explicit_provenance_id": null,
+      "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+      "operational_prediction_schema_sha": "3803cbf2f2c5c568894d894ccc51b64b86ff4f4ed2c5fa6a1e06b9d80512d173",
+      "operational_threshold_ids": [
+        "ds_v2_op3_cal_v1",
+        "dm_b_v1_op3_raw_v1",
+        "dg_v1_op3_raw_v1"
+      ],
+      "operational_thresholds": [
+        0.5585373573968287,
+        0.0004967087297700347,
+        0.21291141211986545
+      ],
+      "partition": "INTERNAL_TEST",
+      "prediction_batch_sha": "1ffae1d922f1a0c0a466b54bb2284e4c370f93050d2014db8a36fd3f771a0f97",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "primary_detector_ids": [
+        "ds_v2",
+        "dm_b_v1",
+        "dg_v1"
+      ],
+      "primary_detector_labels": [
+        "D_S",
+        "D_M-B",
+        "D_G"
+      ],
+      "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+      "regime_manifest_sha": "25d8e08bf48c38bb3dc1bcf297b16c6ace6ea5aabfadb8780a622ed1276191a4",
+      "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+    },
+    "result_version": "recovery_metrics_v1"
+  },
+  "result_version": "failure_patterns_v1",
+  "success_subset_patterns": {
+    "000": 0,
+    "001": 0,
+    "010": 0,
+    "011": 0,
+    "100": 2,
+    "101": 102,
+    "110": 0,
+    "111": 0
+  }
+}

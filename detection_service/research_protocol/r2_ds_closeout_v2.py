@@ -10,9 +10,23 @@ from detection_service.research_protocol import r2_ds_closeout as original
 def accept():
     path = p.ROOT / 'tmp/r2_ds_all_postrun.xml'
     cases = list(ET.parse(path).getroot().iter('testcase'))
+    execution = p.files.read_json(p.OUT / 'r2_ds_test_execution_v2.json')
+    expected = {item.relative_to(p.ROOT).as_posix()
+                for item in (p.ROOT / 'detection_service/tests').glob('test_*.py')}
+    p.require({item['module'] for item in execution['modules']} == expected,
+              'FULL_SUITE_MODULE_COVERAGE_FAILURE')
+    identifiers = [case.attrib['classname'] + '::' + case.attrib['name'] for case in cases]
+    p.require(len(identifiers) == len(set(identifiers)), 'DUPLICATE_FULL_SUITE_CASE')
+    p.require(sum(item['cases'] for item in execution['modules']) == len(cases),
+              'FULL_SUITE_CASE_COUNT_CONFLICT')
+    p.require(execution['combined_receipt_sha256'] == p.files.sha(path),
+              'FULL_SUITE_RECEIPT_HASH_DRIFT')
     p.require(len(cases) >= 1500, 'FULL_TEST_SUITE_NOT_RUN')
-    p.require(not any(case.find(tag) is not None for case in cases
-                      for tag in ('failure', 'error', 'skipped')), 'FULL_SUITE_FAILURE')
+    failures = [case.attrib['classname'] + '::' + case.attrib['name']
+                for case in cases if case.find('failure') is not None]
+    errors = sum(case.find('error') is not None for case in cases)
+    skipped = sum(case.find('skipped') is not None for case in cases)
+    full_suite_green = not (failures or errors or skipped)
     track_b = p.files.read_json(p.OUT / 'r2_ds_track_b_reference_update_v1.json')
     p.require(track_b['commander_authorization'] == 'Accept the updated Track-B reference; finish Track A',
               'TRACK_B_REFERENCE_NOT_AUTHORIZED')
@@ -23,11 +37,17 @@ def accept():
     prior = p.files.read_json(p.OUT / 'r2_ds_final_acceptance_v1.json')
     report = p.files.read_json(p.OUT / 'r2_ds_report_binding_v1.json')
     p.require(report['report_path'].endswith('_v2.md'), 'NEW_REPORT_REQUIRED')
+    if not full_suite_green:
+        p.require(report['verdict'] == 'R2_DS_REQUIRES_REPAIR', 'FAILED_SUITE_CANNOT_BE_ACCEPTED')
     paths = [*p.OUT.glob('*.json'), *p.OUT.glob('*.csv'), p.ROOT / report['report_path']]
     destination = p.OUT / 'r2_ds_final_acceptance_v2.json'
     paths = [item for item in paths if item != destination]
-    p.publish(destination, dict(status='PASS', artifact_version='r2_ds_final_acceptance_v2',
-        run_id=accounting['run_id'], tests=dict(passed=len(cases), failed=0, errors=0, skipped=0,
+    p.publish(destination, dict(status='PASS' if full_suite_green else 'BLOCKED',
+        scientific_validation_status=prior['status'],
+        full_suite_status='PASS' if full_suite_green else 'FAIL',
+        merge_gate_ready=full_suite_green, artifact_version='r2_ds_final_acceptance_v2',
+        run_id=accounting['run_id'], tests=dict(passed=len(cases)-len(failures)-errors-skipped,
+            failed=len(failures), errors=errors, skipped=skipped, failure_cases=failures,
             receipt_path=path.relative_to(p.ROOT).as_posix(), receipt_sha256=p.files.sha(path)),
         baseline_preservation=prior['baseline_preservation'], release_preservation=prior['release_preservation'],
         patch_hash_checks=prior['patch_hash_checks'], source_preservation_checks=prior['source_preservation_checks'],

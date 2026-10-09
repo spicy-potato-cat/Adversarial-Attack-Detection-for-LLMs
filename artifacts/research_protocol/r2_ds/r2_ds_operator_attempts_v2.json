@@ -1,0 +1,79 @@
+{
+  "definition": "Logical attempts include cached candidates; unique calls exclude cache hits. Score decrease and evasion counts describe attempted candidates, not independent trials. Selection and transfer outcomes are in operator_analysis_v1.",
+  "generation_journal_sha256": "4fad90d4ac321748329505a00ebd11b59fd4d20745964adc08148c116f4bbcf9",
+  "new_model_queries": 0,
+  "operators": {
+    "ALT_CASE": {
+      "attempts_decreasing_baseline_score": 4176,
+      "attempts_evading_target": 40,
+      "logical_attempts": 15070,
+      "seeds_attempting": 698,
+      "unique_model_calls": 13811
+    },
+    "BENIGN_CONTEXT_PADDING": {
+      "attempts_decreasing_baseline_score": 2419,
+      "attempts_evading_target": 7,
+      "logical_attempts": 4800,
+      "seeds_attempting": 600,
+      "unique_model_calls": 4800
+    },
+    "CONFUSABLE_FIRST": {
+      "attempts_decreasing_baseline_score": 2216,
+      "attempts_evading_target": 9,
+      "logical_attempts": 4929,
+      "seeds_attempting": 698,
+      "unique_model_calls": 4929
+    },
+    "DOT_INTERLEAVE": {
+      "attempts_decreasing_baseline_score": 2609,
+      "attempts_evading_target": 71,
+      "logical_attempts": 4933,
+      "seeds_attempting": 698,
+      "unique_model_calls": 4933
+    },
+    "GLOBAL_ALT_CASE": {
+      "attempts_decreasing_baseline_score": 19,
+      "attempts_evading_target": 0,
+      "logical_attempts": 595,
+      "seeds_attempting": 595,
+      "unique_model_calls": 584
+    },
+    "GLOBAL_CONFUSABLE_FIRST": {
+      "attempts_decreasing_baseline_score": 10,
+      "attempts_evading_target": 0,
+      "logical_attempts": 595,
+      "seeds_attempting": 595,
+      "unique_model_calls": 587
+    },
+    "GLOBAL_DOT_INTERLEAVE": {
+      "attempts_decreasing_baseline_score": 113,
+      "attempts_evading_target": 1,
+      "logical_attempts": 595,
+      "seeds_attempting": 595,
+      "unique_model_calls": 586
+    },
+    "GLOBAL_ZERO_WIDTH_INTERLEAVE": {
+      "attempts_decreasing_baseline_score": 99,
+      "attempts_evading_target": 0,
+      "logical_attempts": 595,
+      "seeds_attempting": 595,
+      "unique_model_calls": 587
+    },
+    "ZERO_WIDTH_INTERLEAVE": {
+      "attempts_decreasing_baseline_score": 2355,
+      "attempts_evading_target": 38,
+      "logical_attempts": 4933,
+      "seeds_attempting": 698,
+      "unique_model_calls": 4933
+    }
+  },
+  "reconstructed_seeds": 698,
+  "run_id": "R2-DS-001-AUTHORITATIVE-V2-20261009",
+  "stage_attempts": {
+    "GLOBAL": 2380,
+    "GREEDY": 19728,
+    "PADDING": 4800,
+    "SALIENCY": 10137
+  },
+  "status": "PASS"
+}

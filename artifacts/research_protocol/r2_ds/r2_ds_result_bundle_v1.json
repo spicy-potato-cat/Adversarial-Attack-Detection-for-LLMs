@@ -1,0 +1,1374 @@
+{
+  "attack_count": 698,
+  "benign_count": 0,
+  "comparison_view_id": "OPERATIONAL_FIXED_V1",
+  "core_metrics": {
+    "common_mode": {
+      "alignment_sha": "da52023784d879cd5bd8921a44a0c8ab8c5544f224e2b6c37c0d8a8299d71458",
+      "all_three_fn_count": 0,
+      "all_three_jfn": {
+        "denominator": 698,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "attack_count": 698,
+      "benign_count": 0,
+      "coverage": {
+        "coverage_rate": 1.0,
+        "expected_predictions": 2094,
+        "missing_decisions": 0,
+        "missing_predictions": 0,
+        "non_ok_predictions": 0,
+        "ok_predictions": 2094,
+        "received_predictions": 2094,
+        "status": "COMPLETE"
+      },
+      "metric_status": "COMPLETE",
+      "pairs": [
+        {
+          "ejf": {
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "fn_jaccard": {
+            "denominator": 104,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "independence_reference": {
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "intersection_count": 0,
+          "jfn": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "left_detector": "ds_v2",
+          "left_fnr": {
+            "denominator": 698,
+            "numerator": 104,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.1489971346704871
+          },
+          "right_detector": "dm_b_v1",
+          "right_fnr": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "shared_fn_count": 0,
+          "union_count": 104
+        },
+        {
+          "ejf": {
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0037520217403798073
+          },
+          "fn_jaccard": {
+            "denominator": 669,
+            "numerator": 102,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.15246636771300448
+          },
+          "independence_reference": {
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.14237978341721333
+          },
+          "intersection_count": 102,
+          "jfn": {
+            "denominator": 698,
+            "numerator": 102,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.14613180515759314
+          },
+          "left_detector": "ds_v2",
+          "left_fnr": {
+            "denominator": 698,
+            "numerator": 104,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.1489971346704871
+          },
+          "right_detector": "dg_v1",
+          "right_fnr": {
+            "denominator": 698,
+            "numerator": 667,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.9555873925501432
+          },
+          "shared_fn_count": 102,
+          "union_count": 669
+        },
+        {
+          "ejf": {
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "fn_jaccard": {
+            "denominator": 667,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "independence_reference": {
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "intersection_count": 0,
+          "jfn": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "left_detector": "dm_b_v1",
+          "left_fnr": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "right_detector": "dg_v1",
+          "right_fnr": {
+            "denominator": 698,
+            "numerator": 667,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.9555873925501432
+          },
+          "shared_fn_count": 0,
+          "union_count": 667
+        }
+      ],
+      "population_count": 698,
+      "provenance": {
+        "decision_view": "OPERATIONAL",
+        "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+        "evidence_kind": "ACCEPTED_METADATA",
+        "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+        "explicit_decisions_sha": null,
+        "explicit_provenance_id": null,
+        "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+        "operational_prediction_schema_sha": "3803cbf2f2c5c568894d894ccc51b64b86ff4f4ed2c5fa6a1e06b9d80512d173",
+        "operational_threshold_ids": [
+          "ds_v2_op3_cal_v1",
+          "dm_b_v1_op3_raw_v1",
+          "dg_v1_op3_raw_v1"
+        ],
+        "operational_thresholds": [
+          0.5585373573968287,
+          0.0004967087297700347,
+          0.21291141211986545
+        ],
+        "partition": "INTERNAL_TEST",
+        "prediction_batch_sha": "1ffae1d922f1a0c0a466b54bb2284e4c370f93050d2014db8a36fd3f771a0f97",
+        "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+        "primary_detector_ids": [
+          "ds_v2",
+          "dm_b_v1",
+          "dg_v1"
+        ],
+        "primary_detector_labels": [
+          "D_S",
+          "D_M-B",
+          "D_G"
+        ],
+        "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+        "regime_manifest_sha": "25d8e08bf48c38bb3dc1bcf297b16c6ace6ea5aabfadb8780a622ed1276191a4",
+        "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+      },
+      "result_version": "common_mode_metrics_v1"
+    },
+    "evasion_transfer": {
+      "alignment_sha": "da52023784d879cd5bd8921a44a0c8ab8c5544f224e2b6c37c0d8a8299d71458",
+      "attack_count": 698,
+      "benign_count": 0,
+      "coverage": {
+        "coverage_rate": 1.0,
+        "expected_predictions": 2094,
+        "missing_decisions": 0,
+        "missing_predictions": 0,
+        "non_ok_predictions": 0,
+        "ok_predictions": 2094,
+        "received_predictions": 2094,
+        "status": "COMPLETE"
+      },
+      "metric_status": "COMPLETE",
+      "population_count": 698,
+      "provenance": {
+        "decision_view": "OPERATIONAL",
+        "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+        "evidence_kind": "ACCEPTED_METADATA",
+        "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+        "explicit_decisions_sha": null,
+        "explicit_provenance_id": null,
+        "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+        "operational_prediction_schema_sha": "3803cbf2f2c5c568894d894ccc51b64b86ff4f4ed2c5fa6a1e06b9d80512d173",
+        "operational_threshold_ids": [
+          "ds_v2_op3_cal_v1",
+          "dm_b_v1_op3_raw_v1",
+          "dg_v1_op3_raw_v1"
+        ],
+        "operational_thresholds": [
+          0.5585373573968287,
+          0.0004967087297700347,
+          0.21291141211986545
+        ],
+        "partition": "INTERNAL_TEST",
+        "prediction_batch_sha": "1ffae1d922f1a0c0a466b54bb2284e4c370f93050d2014db8a36fd3f771a0f97",
+        "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+        "primary_detector_ids": [
+          "ds_v2",
+          "dm_b_v1",
+          "dg_v1"
+        ],
+        "primary_detector_labels": [
+          "D_S",
+          "D_M-B",
+          "D_G"
+        ],
+        "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+        "regime_manifest_sha": "25d8e08bf48c38bb3dc1bcf297b16c6ace6ea5aabfadb8780a622ed1276191a4",
+        "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+      },
+      "result_version": "evasion_transfer_metrics_v1",
+      "targets": [
+        {
+          "target_detector": "ds_v2",
+          "target_evasion_count": 104,
+          "target_evasion_lineage_count": 28,
+          "target_evasion_rate": {
+            "denominator": 698,
+            "numerator": 104,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.1489971346704871
+          },
+          "transfers": [
+            {
+              "etr": {
+                "denominator": 104,
+                "numerator": 0,
+                "reason": null,
+                "status": "DEFINED",
+                "value": 0.0
+              },
+              "joint_evasion_count": 0,
+              "target_detector": "ds_v2",
+              "target_evasion_count": 104,
+              "transfer_detector": "dm_b_v1",
+              "valid_attempt_count": 698
+            },
+            {
+              "etr": {
+                "denominator": 104,
+                "numerator": 102,
+                "reason": null,
+                "status": "DEFINED",
+                "value": 0.9807692307692307
+              },
+              "joint_evasion_count": 102,
+              "target_detector": "ds_v2",
+              "target_evasion_count": 104,
+              "transfer_detector": "dg_v1",
+              "valid_attempt_count": 698
+            }
+          ],
+          "unique_lineage_count": 94,
+          "valid_attempt_count": 698,
+          "valid_attempt_lineage_count": 94
+        },
+        {
+          "target_detector": "dm_b_v1",
+          "target_evasion_count": 0,
+          "target_evasion_lineage_count": 0,
+          "target_evasion_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "transfers": [
+            {
+              "etr": {
+                "denominator": 0,
+                "numerator": 0,
+                "reason": "ZERO_DENOMINATOR",
+                "status": "UNDEFINED",
+                "value": null
+              },
+              "joint_evasion_count": 0,
+              "target_detector": "dm_b_v1",
+              "target_evasion_count": 0,
+              "transfer_detector": "ds_v2",
+              "valid_attempt_count": 0
+            },
+            {
+              "etr": {
+                "denominator": 0,
+                "numerator": 0,
+                "reason": "ZERO_DENOMINATOR",
+                "status": "UNDEFINED",
+                "value": null
+              },
+              "joint_evasion_count": 0,
+              "target_detector": "dm_b_v1",
+              "target_evasion_count": 0,
+              "transfer_detector": "dg_v1",
+              "valid_attempt_count": 0
+            }
+          ],
+          "unique_lineage_count": 0,
+          "valid_attempt_count": 0,
+          "valid_attempt_lineage_count": 0
+        },
+        {
+          "target_detector": "dg_v1",
+          "target_evasion_count": 0,
+          "target_evasion_lineage_count": 0,
+          "target_evasion_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "transfers": [
+            {
+              "etr": {
+                "denominator": 0,
+                "numerator": 0,
+                "reason": "ZERO_DENOMINATOR",
+                "status": "UNDEFINED",
+                "value": null
+              },
+              "joint_evasion_count": 0,
+              "target_detector": "dg_v1",
+              "target_evasion_count": 0,
+              "transfer_detector": "ds_v2",
+              "valid_attempt_count": 0
+            },
+            {
+              "etr": {
+                "denominator": 0,
+                "numerator": 0,
+                "reason": "ZERO_DENOMINATOR",
+                "status": "UNDEFINED",
+                "value": null
+              },
+              "joint_evasion_count": 0,
+              "target_detector": "dg_v1",
+              "target_evasion_count": 0,
+              "transfer_detector": "dm_b_v1",
+              "valid_attempt_count": 0
+            }
+          ],
+          "unique_lineage_count": 0,
+          "valid_attempt_count": 0,
+          "valid_attempt_lineage_count": 0
+        }
+      ]
+    },
+    "failure_patterns": {
+      "alignment_sha": "da52023784d879cd5bd8921a44a0c8ab8c5544f224e2b6c37c0d8a8299d71458",
+      "attack_count": 698,
+      "benign_count": 0,
+      "bit_order": "S/M/G",
+      "bit_semantics": "0=CATCH;1=MISS",
+      "coverage": {
+        "coverage_rate": 1.0,
+        "expected_predictions": 2094,
+        "missing_decisions": 0,
+        "missing_predictions": 0,
+        "non_ok_predictions": 0,
+        "ok_predictions": 2094,
+        "received_predictions": 2094,
+        "status": "COMPLETE"
+      },
+      "metric_status": "COMPLETE",
+      "patterns": [
+        {
+          "attack_rate": {
+            "denominator": 698,
+            "numerator": 29,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.04154727793696275
+          },
+          "count": 29,
+          "meaning": "All three catch",
+          "pattern_id": "000"
+        },
+        {
+          "attack_rate": {
+            "denominator": 698,
+            "numerator": 565,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.8094555873925502
+          },
+          "count": 565,
+          "meaning": "Only D_G misses",
+          "pattern_id": "001"
+        },
+        {
+          "attack_rate": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "count": 0,
+          "meaning": "Only D_M-B misses",
+          "pattern_id": "010"
+        },
+        {
+          "attack_rate": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "count": 0,
+          "meaning": "D_M-B and D_G miss; D_S catches",
+          "pattern_id": "011"
+        },
+        {
+          "attack_rate": {
+            "denominator": 698,
+            "numerator": 2,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0028653295128939827
+          },
+          "count": 2,
+          "meaning": "Only D_S misses",
+          "pattern_id": "100"
+        },
+        {
+          "attack_rate": {
+            "denominator": 698,
+            "numerator": 102,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.14613180515759314
+          },
+          "count": 102,
+          "meaning": "D_S and D_G miss; D_M-B catches",
+          "pattern_id": "101"
+        },
+        {
+          "attack_rate": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "count": 0,
+          "meaning": "D_S and D_M-B miss; D_G catches",
+          "pattern_id": "110"
+        },
+        {
+          "attack_rate": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "count": 0,
+          "meaning": "All three miss",
+          "pattern_id": "111"
+        }
+      ],
+      "population_count": 698,
+      "provenance": {
+        "decision_view": "OPERATIONAL",
+        "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+        "evidence_kind": "ACCEPTED_METADATA",
+        "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+        "explicit_decisions_sha": null,
+        "explicit_provenance_id": null,
+        "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+        "operational_prediction_schema_sha": "3803cbf2f2c5c568894d894ccc51b64b86ff4f4ed2c5fa6a1e06b9d80512d173",
+        "operational_threshold_ids": [
+          "ds_v2_op3_cal_v1",
+          "dm_b_v1_op3_raw_v1",
+          "dg_v1_op3_raw_v1"
+        ],
+        "operational_thresholds": [
+          0.5585373573968287,
+          0.0004967087297700347,
+          0.21291141211986545
+        ],
+        "partition": "INTERNAL_TEST",
+        "prediction_batch_sha": "1ffae1d922f1a0c0a466b54bb2284e4c370f93050d2014db8a36fd3f771a0f97",
+        "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+        "primary_detector_ids": [
+          "ds_v2",
+          "dm_b_v1",
+          "dg_v1"
+        ],
+        "primary_detector_labels": [
+          "D_S",
+          "D_M-B",
+          "D_G"
+        ],
+        "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+        "regime_manifest_sha": "25d8e08bf48c38bb3dc1bcf297b16c6ace6ea5aabfadb8780a622ed1276191a4",
+        "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+      },
+      "result_version": "failure_patterns_v1"
+    },
+    "individual": {
+      "alignment_sha": "da52023784d879cd5bd8921a44a0c8ab8c5544f224e2b6c37c0d8a8299d71458",
+      "attack_count": 698,
+      "benign_count": 0,
+      "coverage": {
+        "coverage_rate": 1.0,
+        "expected_predictions": 2094,
+        "missing_decisions": 0,
+        "missing_predictions": 0,
+        "non_ok_predictions": 0,
+        "ok_predictions": 2094,
+        "received_predictions": 2094,
+        "status": "COMPLETE"
+      },
+      "detectors": [
+        {
+          "accuracy": {
+            "denominator": 698,
+            "numerator": 594,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.8510028653295129
+          },
+          "attack_count": 698,
+          "benign_count": 0,
+          "coverage": {
+            "coverage_rate": 1.0,
+            "expected_predictions": 698,
+            "missing_decisions": 0,
+            "missing_predictions": 0,
+            "non_ok_predictions": 0,
+            "ok_predictions": 698,
+            "received_predictions": 698,
+            "status": "COMPLETE"
+          },
+          "detector_id": "ds_v2",
+          "f1": {
+            "denominator": 1292,
+            "numerator": 1188,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.9195046439628483
+          },
+          "fn": 104,
+          "fnr": {
+            "denominator": 698,
+            "numerator": 104,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.1489971346704871
+          },
+          "fp": 0,
+          "fpr": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "metric_status": "COMPLETE",
+          "npv": {
+            "denominator": 104,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "population_count": 698,
+          "precision": {
+            "denominator": 594,
+            "numerator": 594,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 1.0
+          },
+          "recall": {
+            "denominator": 698,
+            "numerator": 594,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.8510028653295129
+          },
+          "specificity": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "tn": 0,
+          "tp": 594
+        },
+        {
+          "accuracy": {
+            "denominator": 698,
+            "numerator": 698,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 1.0
+          },
+          "attack_count": 698,
+          "benign_count": 0,
+          "coverage": {
+            "coverage_rate": 1.0,
+            "expected_predictions": 698,
+            "missing_decisions": 0,
+            "missing_predictions": 0,
+            "non_ok_predictions": 0,
+            "ok_predictions": 698,
+            "received_predictions": 698,
+            "status": "COMPLETE"
+          },
+          "detector_id": "dm_b_v1",
+          "f1": {
+            "denominator": 1396,
+            "numerator": 1396,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 1.0
+          },
+          "fn": 0,
+          "fnr": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "fp": 0,
+          "fpr": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "metric_status": "COMPLETE",
+          "npv": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "population_count": 698,
+          "precision": {
+            "denominator": 698,
+            "numerator": 698,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 1.0
+          },
+          "recall": {
+            "denominator": 698,
+            "numerator": 698,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 1.0
+          },
+          "specificity": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "tn": 0,
+          "tp": 698
+        },
+        {
+          "accuracy": {
+            "denominator": 698,
+            "numerator": 31,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.044412607449856735
+          },
+          "attack_count": 698,
+          "benign_count": 0,
+          "coverage": {
+            "coverage_rate": 1.0,
+            "expected_predictions": 698,
+            "missing_decisions": 0,
+            "missing_predictions": 0,
+            "non_ok_predictions": 0,
+            "ok_predictions": 698,
+            "received_predictions": 698,
+            "status": "COMPLETE"
+          },
+          "detector_id": "dg_v1",
+          "f1": {
+            "denominator": 729,
+            "numerator": 62,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0850480109739369
+          },
+          "fn": 667,
+          "fnr": {
+            "denominator": 698,
+            "numerator": 667,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.9555873925501432
+          },
+          "fp": 0,
+          "fpr": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "metric_status": "COMPLETE",
+          "npv": {
+            "denominator": 667,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "population_count": 698,
+          "precision": {
+            "denominator": 31,
+            "numerator": 31,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 1.0
+          },
+          "recall": {
+            "denominator": 698,
+            "numerator": 31,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.044412607449856735
+          },
+          "specificity": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "tn": 0,
+          "tp": 31
+        }
+      ],
+      "metric_status": "COMPLETE",
+      "population_count": 698,
+      "provenance": {
+        "decision_view": "OPERATIONAL",
+        "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+        "evidence_kind": "ACCEPTED_METADATA",
+        "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+        "explicit_decisions_sha": null,
+        "explicit_provenance_id": null,
+        "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+        "operational_prediction_schema_sha": "3803cbf2f2c5c568894d894ccc51b64b86ff4f4ed2c5fa6a1e06b9d80512d173",
+        "operational_threshold_ids": [
+          "ds_v2_op3_cal_v1",
+          "dm_b_v1_op3_raw_v1",
+          "dg_v1_op3_raw_v1"
+        ],
+        "operational_thresholds": [
+          0.5585373573968287,
+          0.0004967087297700347,
+          0.21291141211986545
+        ],
+        "partition": "INTERNAL_TEST",
+        "prediction_batch_sha": "1ffae1d922f1a0c0a466b54bb2284e4c370f93050d2014db8a36fd3f771a0f97",
+        "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+        "primary_detector_ids": [
+          "ds_v2",
+          "dm_b_v1",
+          "dg_v1"
+        ],
+        "primary_detector_labels": [
+          "D_S",
+          "D_M-B",
+          "D_G"
+        ],
+        "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+        "regime_manifest_sha": "25d8e08bf48c38bb3dc1bcf297b16c6ace6ea5aabfadb8780a622ed1276191a4",
+        "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+      },
+      "result_version": "individual_metrics_v1"
+    },
+    "recovery": {
+      "alignment_sha": "da52023784d879cd5bd8921a44a0c8ab8c5544f224e2b6c37c0d8a8299d71458",
+      "attack_count": 698,
+      "benign_count": 0,
+      "coverage": {
+        "coverage_rate": 1.0,
+        "expected_predictions": 2094,
+        "missing_decisions": 0,
+        "missing_predictions": 0,
+        "non_ok_predictions": 0,
+        "ok_predictions": 2094,
+        "received_predictions": 2094,
+        "status": "COMPLETE"
+      },
+      "detectors": [
+        {
+          "both_others_miss_count": 0,
+          "conditional_recovery": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "detector_id": "ds_v2",
+          "unique_catch_count": 0,
+          "unique_catch_pattern": "011",
+          "unique_catch_rate": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          }
+        },
+        {
+          "both_others_miss_count": 102,
+          "conditional_recovery": {
+            "denominator": 102,
+            "numerator": 102,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 1.0
+          },
+          "detector_id": "dm_b_v1",
+          "unique_catch_count": 102,
+          "unique_catch_pattern": "101",
+          "unique_catch_rate": {
+            "denominator": 698,
+            "numerator": 102,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.14613180515759314
+          }
+        },
+        {
+          "both_others_miss_count": 0,
+          "conditional_recovery": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "detector_id": "dg_v1",
+          "unique_catch_count": 0,
+          "unique_catch_pattern": "110",
+          "unique_catch_rate": {
+            "denominator": 698,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          }
+        }
+      ],
+      "metric_status": "COMPLETE",
+      "population_count": 698,
+      "provenance": {
+        "decision_view": "OPERATIONAL",
+        "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+        "evidence_kind": "ACCEPTED_METADATA",
+        "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+        "explicit_decisions_sha": null,
+        "explicit_provenance_id": null,
+        "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+        "operational_prediction_schema_sha": "3803cbf2f2c5c568894d894ccc51b64b86ff4f4ed2c5fa6a1e06b9d80512d173",
+        "operational_threshold_ids": [
+          "ds_v2_op3_cal_v1",
+          "dm_b_v1_op3_raw_v1",
+          "dg_v1_op3_raw_v1"
+        ],
+        "operational_thresholds": [
+          0.5585373573968287,
+          0.0004967087297700347,
+          0.21291141211986545
+        ],
+        "partition": "INTERNAL_TEST",
+        "prediction_batch_sha": "1ffae1d922f1a0c0a466b54bb2284e4c370f93050d2014db8a36fd3f771a0f97",
+        "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+        "primary_detector_ids": [
+          "ds_v2",
+          "dm_b_v1",
+          "dg_v1"
+        ],
+        "primary_detector_labels": [
+          "D_S",
+          "D_M-B",
+          "D_G"
+        ],
+        "regime_contract_sha": "716631bec5e7bbe562acd375c90260f5bf11f92cffb6c6d63a7639908408c149",
+        "regime_manifest_sha": "25d8e08bf48c38bb3dc1bcf297b16c6ace6ea5aabfadb8780a622ed1276191a4",
+        "threat_regime": "R2_SINGLE_DETECTOR_TARGETED"
+      },
+      "result_version": "recovery_metrics_v1"
+    },
+    "result_version": "core_metrics_bundle_v1"
+  },
+  "core_metrics_contract_hash": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+  "dataset_id": "R2-DS-001",
+  "dataset_revision": "20359e2cf4d8f7ffd76a3483694fd9fd199bd6a8a125a381fd3af841621c95ef",
+  "decision_view": "OPERATIONAL",
+  "detector_manifest_hash": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+  "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+  "label_semantics": "BINARY_ATTACK_1_BENIGN_0_V1",
+  "lineage_count": 94,
+  "operating_point_manifest_hash": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+  "partition": "INTERNAL_TEST",
+  "population_count": 698,
+  "prediction_schema_hash": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+  "regime_manifest_hash": "25d8e08bf48c38bb3dc1bcf297b16c6ace6ea5aabfadb8780a622ed1276191a4",
+  "result_version": "regime_result_bundle_v1",
+  "status": "OBSERVED",
+  "target_detector": "D_S",
+  "threat_regime": "R2_SINGLE_DETECTOR_TARGETED",
+  "uncertainty": [
+    {
+      "alignment_sha": "da52023784d879cd5bd8921a44a0c8ab8c5544f224e2b6c37c0d8a8299d71458",
+      "bootstrap_domain_lineage_count": 94,
+      "bootstrap_domain_row_count": 698,
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "ATTACK_ONLY",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": null,
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+      "decision_view": "OPERATIONAL",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+      "intervals": [
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "all_three/jfn",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.8960344471947195,
+          "ci_upper": 0.9803096828436638,
+          "metric_id": "individual/dg_v1/fnr",
+          "point_estimate": 0.9555873925501432,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "individual/dm_b_v1/fnr",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.05986527423469388,
+          "ci_upper": 0.19592120415199615,
+          "metric_id": "individual/ds_v2/fnr",
+          "point_estimate": 0.1489971346704871,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pair/dm_b_v1/dg_v1/ejf",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pair/dm_b_v1/dg_v1/fn_jaccard",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pair/dm_b_v1/dg_v1/independence_reference",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pair/dm_b_v1/dg_v1/jfn",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": -0.0011140518068601757,
+          "ci_upper": 0.007715933539187981,
+          "metric_id": "pair/ds_v2/dg_v1/ejf",
+          "point_estimate": 0.0037520217403798073,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.061330612244897956,
+          "ci_upper": 0.19636021151017227,
+          "metric_id": "pair/ds_v2/dg_v1/fn_jaccard",
+          "point_estimate": 0.15246636771300448,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0552269711606981,
+          "ci_upper": 0.19053344006683187,
+          "metric_id": "pair/ds_v2/dg_v1/independence_reference",
+          "point_estimate": 0.14237978341721333,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.05655164458506361,
+          "ci_upper": 0.19252130113760302,
+          "metric_id": "pair/ds_v2/dg_v1/jfn",
+          "point_estimate": 0.14613180515759314,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pair/ds_v2/dm_b_v1/ejf",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pair/ds_v2/dm_b_v1/fn_jaccard",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pair/ds_v2/dm_b_v1/independence_reference",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pair/ds_v2/dm_b_v1/jfn",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.01676821751575504,
+          "ci_upper": 0.10127130592806115,
+          "metric_id": "pattern/000",
+          "point_estimate": 0.04154727793696275,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.7791197867055154,
+          "ci_upper": 0.8813733159495871,
+          "metric_id": "pattern/001",
+          "point_estimate": 0.8094555873925502,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pattern/010",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pattern/011",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.007614697562676793,
+          "metric_id": "pattern/100",
+          "point_estimate": 0.0028653295128939827,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.05655164458506361,
+          "ci_upper": 0.19252130113760302,
+          "metric_id": "pattern/101",
+          "point_estimate": 0.14613180515759314,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pattern/110",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "pattern/111",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": null,
+          "ci_upper": null,
+          "metric_id": "recovery/dg_v1/conditional_recovery",
+          "point_estimate": null,
+          "replicates_invalid": 1000,
+          "replicates_requested": 1000,
+          "replicates_valid": 0,
+          "status": "OBSERVED_UNDEFINED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "recovery/dg_v1/unique_catch_rate",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 1.0,
+          "ci_upper": 1.0,
+          "metric_id": "recovery/dm_b_v1/conditional_recovery",
+          "point_estimate": 1.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.05655164458506361,
+          "ci_upper": 0.19252130113760302,
+          "metric_id": "recovery/dm_b_v1/unique_catch_rate",
+          "point_estimate": 0.14613180515759314,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": null,
+          "ci_upper": null,
+          "metric_id": "recovery/ds_v2/conditional_recovery",
+          "point_estimate": null,
+          "replicates_invalid": 1000,
+          "replicates_requested": 1000,
+          "replicates_valid": 0,
+          "status": "OBSERVED_UNDEFINED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "recovery/ds_v2/unique_catch_rate",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        }
+      ],
+      "lineage_count": 94,
+      "numpy_version": "2.1.3",
+      "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+      "paired_reference_alignment_sha": null,
+      "plan_sha": "4fff3a17cb561a0a55c6254fd333c9d4f11ed9774c1b136511e7aa7bb314909e",
+      "population_signature": "7789ade11e9e1dabf84c18d4eadec9430e826b78970ea7288f674e0e91569a91",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "regime_manifest_sha": "25d8e08bf48c38bb3dc1bcf297b16c6ace6ea5aabfadb8780a622ed1276191a4",
+      "result_version": "uncertainty_result_v1",
+      "rng_state_after_sha": "08db1f15ca8736fecd7bc0e15b759af1ae5e4411f60e2d80d4cbdd3e72696a40",
+      "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+      "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+      "unknown_lineage_rows": 0
+    },
+    {
+      "alignment_sha": "da52023784d879cd5bd8921a44a0c8ab8c5544f224e2b6c37c0d8a8299d71458",
+      "bootstrap_domain_lineage_count": 94,
+      "bootstrap_domain_row_count": 698,
+      "config": {
+        "confidence_level": 0.95,
+        "domain": "VALID_TARGET_ATTEMPTS",
+        "method": "PERCENTILE_BOOTSTRAP_V1",
+        "quantile_method": "linear",
+        "replicates": 1000,
+        "seed": 1701,
+        "target_detector": "D_S",
+        "unit": "LINEAGE_CLUSTERED"
+      },
+      "core_metrics_contract_sha": "86f7dfc69a1841f9ded303bad349f7cbd0082898f1524bdcfac9edb49ef3d2d9",
+      "decision_view": "OPERATIONAL",
+      "detector_manifest_sha": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+      "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+      "intervals": [
+        {
+          "ci_lower": 0.05986527423469388,
+          "ci_upper": 0.19592120415199615,
+          "metric_id": "target/ds_v2/evasion",
+          "point_estimate": 0.1489971346704871,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.9130434782608695,
+          "ci_upper": 1.0,
+          "metric_id": "transfer/ds_v2/dg_v1/etr",
+          "point_estimate": 0.9807692307692307,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        },
+        {
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "metric_id": "transfer/ds_v2/dm_b_v1/etr",
+          "point_estimate": 0.0,
+          "replicates_invalid": 0,
+          "replicates_requested": 1000,
+          "replicates_valid": 1000,
+          "status": "ESTIMATED"
+        }
+      ],
+      "lineage_count": 94,
+      "numpy_version": "2.1.3",
+      "operating_policy_sha": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc",
+      "paired_reference_alignment_sha": null,
+      "plan_sha": "aa6a705739f806d1d724bbd58335b913a4af576ac3e7ab23a9517d5a3585955b",
+      "population_signature": "7789ade11e9e1dabf84c18d4eadec9430e826b78970ea7288f674e0e91569a91",
+      "prediction_schema_sha": "f61cc717b6118e288201ee8525b41e6806a642d665c42c0d1b9d6d1bcde2e484",
+      "regime_manifest_sha": "25d8e08bf48c38bb3dc1bcf297b16c6ace6ea5aabfadb8780a622ed1276191a4",
+      "result_version": "uncertainty_result_v1",
+      "rng_state_after_sha": "08db1f15ca8736fecd7bc0e15b759af1ae5e4411f60e2d80d4cbdd3e72696a40",
+      "rng_state_before_sha": "8beedb764400585e0f5ee0f7644be03d75d8e9eb01dee7f8aa41c7692be3f9c3",
+      "uncertainty_contract_sha": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+      "unknown_lineage_rows": 0
+    }
+  ],
+  "uncertainty_contract_hash": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+  "unknown_lineage_rows": 0
+}
