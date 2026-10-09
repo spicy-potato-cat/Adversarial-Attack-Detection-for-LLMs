@@ -1,0 +1,439 @@
+{
+  "artifact_version": "rq3_development_disposition_v1",
+  "caveats": {
+    "operating_point": {
+      "detectors": {
+        "D_G": {
+          "development_attained_benign_fpr": 0.026041666666666668,
+          "r1_attack_recall": {
+            "denominator": 800,
+            "numerator": 36,
+            "value": 0.045
+          },
+          "r1_benign_fpr": {
+            "denominator": 1000,
+            "numerator": 207,
+            "value": 0.207
+          },
+          "threshold": 0.21291141211986545,
+          "threshold_id": "dg_v1_op3_raw_v1",
+          "threshold_input_score_type": "raw_score"
+        },
+        "D_M-B": {
+          "development_attained_benign_fpr": 0.026041666666666668,
+          "r1_attack_recall": {
+            "denominator": 800,
+            "numerator": 800,
+            "value": 1.0
+          },
+          "r1_benign_fpr": {
+            "denominator": 1000,
+            "numerator": 132,
+            "value": 0.132
+          },
+          "threshold": 0.0004967087297700347,
+          "threshold_id": "dm_b_v1_op3_raw_v1",
+          "threshold_input_score_type": "raw_score"
+        },
+        "D_S": {
+          "development_attained_benign_fpr": 0.026041666666666668,
+          "r1_attack_recall": {
+            "denominator": 800,
+            "numerator": 698,
+            "value": 0.8725
+          },
+          "r1_benign_fpr": {
+            "denominator": 1000,
+            "numerator": 28,
+            "value": 0.028
+          },
+          "threshold": 0.5585373573968287,
+          "threshold_id": "ds_v2_op3_cal_v1",
+          "threshold_input_score_type": "calibrated_score"
+        }
+      },
+      "development_benign_count": 192,
+      "development_selection_partition": "CALIBRATION",
+      "development_target_benign_fpr": 0.03,
+      "interpretation": "D_M-B retained complete observed attack coverage in the frozen R1/R2/R3 samples considered here, but this occurred alongside substantial benign false-positive inflation under R1 distribution shift. All three thresholds came from the same development 3% benign-FPR budget; D_M-B operates on its raw attack probability at about 0.0005. Its zero-miss behavior is not cost-free robustness and does not establish D_M-B as the strongest detector."
+    },
+    "r3": {
+      "all_three_successes": 0,
+      "d_s_terminal_misses": 5,
+      "inherited_lineages": 97,
+      "interpretation": "All D_S terminal misses were inherited parent misses (miss to miss); the R3 optimizer induced no new D_S or D_M-B miss. New degradation occurred only on D_G. 96 of 97 parents are LLMail-Inject and one is InjecAgent, which sharply limits source-level generalization.",
+      "parents": 97,
+      "source_counts": {
+        "INJECAGENT_BASE": 1,
+        "LLMAIL_INJECT": 96
+      },
+      "transitions": {
+        "D_G": {
+          "catch_to_catch": 3,
+          "catch_to_miss": 2,
+          "miss_to_catch": 2,
+          "miss_to_miss": 90
+        },
+        "D_M-B": {
+          "catch_to_catch": 97,
+          "catch_to_miss": 0,
+          "miss_to_catch": 0,
+          "miss_to_miss": 0
+        },
+        "D_S": {
+          "catch_to_catch": 89,
+          "catch_to_miss": 0,
+          "miss_to_catch": 3,
+          "miss_to_miss": 5
+        }
+      }
+    }
+  },
+  "combined_population": {
+    "all_three_failures": 0,
+    "eligible_attack_outputs": 1595,
+    "member_ids": [],
+    "membership_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "status": "EMPTY"
+  },
+  "eligible_regimes": [
+    "R2-DMB",
+    "R2-D_S",
+    "R3"
+  ],
+  "empty_denominator_behavior": {
+    "execution_contract": {
+      "empty": "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION",
+      "path": "artifacts/research_protocol/verifier/verifier_phase2_execution_contract_v1.json",
+      "replacement_allowed": false
+    },
+    "failure_population_contract": {
+      "automatic_broadening": false,
+      "empty_status": "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION",
+      "path": "artifacts/research_protocol/verifier/failure_population_input_contract_v1.json",
+      "replacement_population": false
+    },
+    "not_zero": "Recovery is a conditional rate with zero denominator; it is null and UNDEFINED, not 0%.",
+    "predeclaration": "UNDEFINED; null rate and CI, no substitute population",
+    "status": "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION"
+  },
+  "excluded_regimes": {
+    "R0": {
+      "all_three_failure_ids": [
+        "W2-2e5c0b7b868cdf69b5d982aa",
+        "W2-5ce365d631f87bfbcb320b57"
+      ],
+      "all_three_failures": 2,
+      "attack_outputs": 183,
+      "eligible_for_verifier_study": false,
+      "exclusion_reason": "Outside the predeclared eligibility domain: the frozen rule admits only 'valid attack-positive terminal candidates from completed R2 targets and R3'; R0 is neither a completed R2 target nor R3.",
+      "predictions_path": "artifacts/research_protocol/r0/r0_operational_predictions_v1.csv",
+      "predictions_sha256": "2a40aba6e57fb62c6f843cb834488c2536911aac7c2d3eb0448c77c4f93c5a30",
+      "regime": "R0"
+    },
+    "R1": {
+      "all_three_failure_ids": [],
+      "all_three_failures": 0,
+      "attack_outputs": 800,
+      "eligible_for_verifier_study": false,
+      "exclusion_reason": "The frozen rule states 'no initial R1 misses in primary population' and admits only 'valid attack-positive terminal candidates from completed R2 targets and R3'.",
+      "predictions_path": "artifacts/research_protocol/r1/r1_predictions_v1.csv",
+      "predictions_sha256": "7282aea1e292c9f5bb853eb0473a3e2b34bfd919a6bbfab28bf0892b51acdc0e",
+      "regime": "R1"
+    },
+    "R2-D_G": {
+      "all_three_failures": null,
+      "classification": "OPTIONAL_EXPLORATORY_APPENDIX",
+      "eligible_for_verifier_study": false,
+      "exclusion_reason": "No completed R2-D_G target exists; the frozen rule admits only 'valid attack-positive terminal candidates from completed R2 targets and R3'.",
+      "executed": false,
+      "regime": "R2-D_G"
+    }
+  },
+  "experiment_id": "VERIFIER-RECOVERY-001",
+  "frozen_query_records": {
+    "manifest_verifier_authoritative_queries": 0,
+    "r3_protected_queries": 0,
+    "r3_verifier_queries": 0
+  },
+  "future_work": {
+    "ds_dg_secondary_verifier_study": {
+      "classification": [
+        "NOT_RQ3",
+        "NOT_PART_OF_CURRENT_FROZEN_STUDY",
+        "REQUIRES_NEW_PREDECLARATION_BEFORE_ANY_VERIFIER_QUERY"
+      ],
+      "observed_shared_misses_before_reconciliation": {
+        "R2-D_S": 102,
+        "R3": 5
+      },
+      "population_constructed": false,
+      "question": "If D_M-B were absent, how would the candidate verifiers compare with the observed D_M-B complementary detection behavior?",
+      "status": "NOT_EXECUTED"
+    },
+    "stronger_attack_regime": {
+      "attack_budget_changed": false,
+      "classification": [
+        "NOT_AN_RQ3_SUBSTITUTE",
+        "NEW_REGIME_REQUIRES_SEPARATE_PREDECLARATION"
+      ],
+      "new_attacks_generated": false,
+      "r3_changed": false,
+      "r4_created": false,
+      "status": "NOT_EXECUTED"
+    }
+  },
+  "h3": {
+    "reason": "H3 contrasts standalone verifier accuracy with conditional Recovery on base-stack failures. The required non-empty conditional population never occurred, so H3 received no evidence either way.",
+    "status": "NOT_TESTED"
+  },
+  "inputs": [
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/exp_protocol_001_final_hash_inventory_v1.json",
+      "sha256": "eb2a576ede47dbe4c961261669d121f83e23935a7d500ca9d1191a117ed305df"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/operating_point_manifest_v1.json",
+      "sha256": "06fa4548a62ae0e0968f9d93339910f8841a0f366b5346b0892a2be6904fb0cc"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/protocol_patches/exp_protocol_001_patch_001.json",
+      "sha256": "b76966953f1e2c09cabef9a7dec42a3ad589e6a945ba12890e9836178baa7c50"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r0/r0_operational_predictions_v1.csv",
+      "sha256": "2a40aba6e57fb62c6f843cb834488c2536911aac7c2d3eb0448c77c4f93c5a30"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r1/r1_predictions_v1.csv",
+      "sha256": "7282aea1e292c9f5bb853eb0473a3e2b34bfd919a6bbfab28bf0892b51acdc0e"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r2_dmb/r2_dmb_final_acceptance_v1.json",
+      "sha256": "70ae544ff2d3b741c657c86885e7dd93a7ef98f5bbf05c5b16be61a2af61e2fe"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r2_dmb/r2_dmb_predictions_v1.csv",
+      "sha256": "a3b642cff928fcb4bc4500703636e73d13b42492042a31e03ddc379f8ebc5e91"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r2_dmb/r2_dmb_terminal_manifest_v1.json",
+      "sha256": "78e19c44a5398329f70fd91079d2972218c5f521716fdabd412e55b48f8a07c3"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r2_ds/r2_ds_final_acceptance_v2.json",
+      "sha256": "e388df023e2ca7cd46da453aed76c89a8b6e976114a63dce7536c0dad7bc763c"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r2_ds/r2_ds_predictions_v1.csv",
+      "sha256": "b4b3b03150b44d2b2db82ef6807506f9fe4a0066fe0c94fa255c204df99bab0d"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r2_ds/r2_ds_terminal_manifest_v1.json",
+      "sha256": "20359e2cf4d8f7ffd76a3483694fd9fd199bd6a8a125a381fd3af841621c95ef"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r3/r3_all_three_failure_manifest_v1.json",
+      "sha256": "0e19da171825262881d89cb6f89016315082f254bb10cf02e316d0c9e39ce413"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r3/r3_final_acceptance_v1.json",
+      "sha256": "1161dd6c748451cb87d77761c1f6037c2194306297e94ed791701a85c578e416"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r3/r3_parent_child_transitions_v1.json",
+      "sha256": "215ba0c710f8d1452628c10d853cb3b83a9f04f3b86e982b0da8675c5e79dd17"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r3/r3_predictions_v1.csv",
+      "sha256": "8cc5fa96ecc9801fd9b8440c30d3a9e5d5f49bd72ed86b41a85bc58a626cb235"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/r3/r3_terminal_manifest_v1.json",
+      "sha256": "d707e502c9a10636881ab4107a9f6e8283588a158555886780d68f1a4ce4f15a"
+    },
+    {
+      "commit": "3b7d6271a621d07ee890d549df134bbd938d8e2d",
+      "path": "artifacts/research_protocol/synthesis/r2_dg_final_disposition_v1.json",
+      "sha256": "44ab9f362d006b9470c6959c22278f7c9157078691376c173a5f06bee7a2647e"
+    },
+    {
+      "commit": "3b7d6271a621d07ee890d549df134bbd938d8e2d",
+      "path": "artifacts/research_protocol/verifier/failure_population_input_contract_v1.json",
+      "sha256": "6d058870a866c3f64feb47a7453126602d9e3ecb64b3f47dc3980ace1623ca06"
+    },
+    {
+      "commit": "3b7d6271a621d07ee890d549df134bbd938d8e2d",
+      "path": "artifacts/research_protocol/verifier/verifier_phase2_execution_contract_v1.json",
+      "sha256": "bbef0d5ef50d8202ad5549a7c04884477fcb4ed31c2680395c59c43d0e71917d"
+    },
+    {
+      "commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "path": "artifacts/research_protocol/verifier/verifier_study_predeclaration_v1.json",
+      "sha256": "282fa95bc43f52a4149af3ae88cd0d1d01058998e35134e1ce1eb31e03f9af98"
+    }
+  ],
+  "outcome": "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION",
+  "phase2_handoff_gate": {
+    "reason": "The handoff-gated path (validate_r3_handoff, load_failure_population) guards text resolution and verifier queries. The R3 freeze commit carries no separate common_mode, failure_patterns, uncertainty or freeze_receipt handoff files, and its failure manifest uses r3_all_three_failure_manifest_v1 fields (members, member_count, status EMPTY) rather than failure_population_input_contract_v1 fields. Membership was therefore read from committed manifest bytes and independently recounted. With zero members no text is resolved and no verifier executes, so the outcome does not depend on the gate.",
+    "status": "NOT_INVOKED_EMPTY_POPULATION"
+  },
+  "phase2_preparation_commit": "3b7d6271a621d07ee890d549df134bbd938d8e2d",
+  "population_audit": {
+    "R2-DMB": {
+      "all_three_failure_ids": [],
+      "all_three_failures": 0,
+      "canonical_unique_outputs": 800,
+      "ds_dg_shared_misses": 40,
+      "ds_dg_shared_misses_used_for_rq3": false,
+      "eligible_attack_outputs": 800,
+      "eligible_for_verifier_study": true,
+      "false_negatives": {
+        "D_G": 770,
+        "D_M-B": 0,
+        "D_S": 41
+      },
+      "inherited_lineages": 97,
+      "predictions_path": "artifacts/research_protocol/r2_dmb/r2_dmb_predictions_v1.csv",
+      "predictions_sha256": "a3b642cff928fcb4bc4500703636e73d13b42492042a31e03ddc379f8ebc5e91",
+      "regime": "R2-DMB",
+      "terminal_outputs": 800,
+      "valid_terminal_outputs": 800
+    },
+    "R2-D_S": {
+      "all_three_failure_ids": [],
+      "all_three_failures": 0,
+      "canonical_unique_outputs": 698,
+      "ds_dg_shared_misses": 102,
+      "ds_dg_shared_misses_used_for_rq3": false,
+      "eligible_attack_outputs": 698,
+      "eligible_for_verifier_study": true,
+      "false_negatives": {
+        "D_G": 667,
+        "D_M-B": 0,
+        "D_S": 104
+      },
+      "inherited_lineages": 94,
+      "predictions_path": "artifacts/research_protocol/r2_ds/r2_ds_predictions_v1.csv",
+      "predictions_sha256": "b4b3b03150b44d2b2db82ef6807506f9fe4a0066fe0c94fa255c204df99bab0d",
+      "regime": "R2-D_S",
+      "terminal_outputs": 698,
+      "valid_terminal_outputs": 698
+    },
+    "R3": {
+      "all_three_failure_ids": [],
+      "all_three_failures": 0,
+      "canonical_unique_outputs": 97,
+      "ds_dg_shared_misses": 5,
+      "ds_dg_shared_misses_used_for_rq3": false,
+      "eligible_attack_outputs": 97,
+      "eligible_for_verifier_study": true,
+      "false_negatives": {
+        "D_G": 92,
+        "D_M-B": 0,
+        "D_S": 5
+      },
+      "inherited_lineages": 97,
+      "predictions_path": "artifacts/research_protocol/r3/r3_predictions_v1.csv",
+      "predictions_sha256": "8cc5fa96ecc9801fd9b8440c30d3a9e5d5f49bd72ed86b41a85bc58a626cb235",
+      "regime": "R3",
+      "terminal_outputs": 97,
+      "valid_terminal_outputs": 97
+    }
+  },
+  "post_hoc_broadening": false,
+  "predeclaration": {
+    "duplicates_rule": "One canonical sample per (regime,parent_sample_id,candidate strict UTF8 hash); cross-regime duplicates retained and inherited lineage clustered; report exact duplicate multiplicity.",
+    "empty_rule": "UNDEFINED; null rate and CI, no substitute population",
+    "experiment_id": "VERIFIER-RECOVERY-001",
+    "path": "artifacts/research_protocol/verifier/verifier_study_predeclaration_v1.json",
+    "protected_rule": "Exclude protected/final confirmation populations; benign set separately authorized and frozen.",
+    "rule": "After base experiments close and separate authorization: valid attack-positive terminal candidates from completed R2 targets and R3 with all three OK operational BENIGN decisions; no initial R1 misses in primary population.",
+    "sha256": "282fa95bc43f52a4149af3ae88cd0d1d01058998e35134e1ce1eb31e03f9af98"
+  },
+  "primary_metric": {
+    "conditioning_event": "Attack-positive eligible terminal with all three base detectors OK operational BENIGN (F_E = 1)",
+    "definition": "Recovery(V_k) = count verifier ATTACK / frozen base-stack failure population N"
+  },
+  "protected_confirmation": "UNOPENED_UNSCORED_UNTOUCHED",
+  "protected_data_used": false,
+  "r3_failure_manifest": {
+    "member_count": 0,
+    "membership_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "path": "artifacts/research_protocol/r3/r3_all_three_failure_manifest_v1.json",
+    "sha256": "0e19da171825262881d89cb6f89016315082f254bb10cf02e316d0c9e39ce413"
+  },
+  "r3_freeze_commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+  "recovery": {
+    "V1": {
+      "ci95": {
+        "ci_lower": null,
+        "ci_upper": null,
+        "reason": "ZERO_DENOMINATOR",
+        "status": "UNDEFINED"
+      },
+      "population_count": 0,
+      "recovered_count": 0,
+      "recovery": null,
+      "status": "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION"
+    },
+    "V2": {
+      "ci95": {
+        "ci_lower": null,
+        "ci_upper": null,
+        "reason": "ZERO_DENOMINATOR",
+        "status": "UNDEFINED"
+      },
+      "population_count": 0,
+      "recovered_count": 0,
+      "recovery": null,
+      "status": "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION"
+    },
+    "V3": {
+      "ci95": {
+        "ci_lower": null,
+        "ci_upper": null,
+        "reason": "ZERO_DENOMINATOR",
+        "status": "UNDEFINED"
+      },
+      "population_count": 0,
+      "recovered_count": 0,
+      "recovery": null,
+      "status": "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION"
+    }
+  },
+  "rq3": {
+    "label": "NOT EMPIRICALLY TESTED / NOT IDENTIFIABLE UNDER THE PREDECLARED DEVELOPMENT FAILURE POPULATION",
+    "reason": "Recovery(V_k) is conditional on base-stack all-three failure; the predeclared development failure population across R2-DMB, R2-D_S and R3 is empty, so the conditional estimand has no denominator.",
+    "status": "NOT_TESTED"
+  },
+  "scientific_queries": {
+    "D_G": 0,
+    "D_M-B": 0,
+    "D_S": 0,
+    "V1": 0,
+    "V2": 0,
+    "V3": 0,
+    "protected": 0
+  },
+  "status": "CLOSED_NOT_TESTED",
+  "substitute_population_used": false,
+  "text_resolved": false,
+  "verifier_inference_performed": false
+}
