@@ -50,6 +50,15 @@ def test_all_frozen_regime_bundles_load(metrics):
     assert metrics['population_type'] == {'R0': 'MIXED', 'R1': 'MIXED', 'R2-DMB': 'ATTACK_ONLY', 'R2-D_S': 'ATTACK_ONLY', 'R3': 'ATTACK_ONLY'}
 
 
+def test_same_frozen_stack_across_regimes(metrics):
+    keys = ('operational_threshold_ids', 'operational_thresholds', 'detector_manifest_sha', 'operating_policy_sha')
+    stacks = {r['regime_id']: tuple(json.dumps(r['provenance']['frozen_bundle_provenance'][k]) for k in keys) for r in metrics['records']}
+    assert len(set(stacks.values())) == 1
+    assert [d['threshold'] for d in metrics['r3']['detector_identities']] == [0.5585373573968287, 0.0004967087297700347, 0.21291141211986545]
+    assert metrics['r3']['detector_identities'][1]['model_sha256'] == '0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844'
+    assert metrics['r3']['detector_identities'][2]['model_revision'] == '11614a155199674a0a95e6602d6ab0417b790ed0'
+
+
 def test_frozen_headline_values(X):
     assert [X[f'R0/{d}/fn'] for d in c.IDS] == [70, 2, 141] and X['R0/all_three_fn'] == 2
     assert [X[f'R1/{d}/recall'] for d in c.IDS] == [0.8725, 1.0, 0.045] and X['R1/all_three_fn'] == 0

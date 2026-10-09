@@ -69,7 +69,9 @@ def render(values, bundle, bundle_sha):
               [[r['label'], r['detector_id'], r['threshold_id'], repr(r['threshold']), '`' + r['model_sha256'] + '`', r['model_revision'] or 'n/a']
                for r in r3['detector_identities']]), '',
         'Operational decisions use `score >= threshold` (ties are ATTACK). D_S uses its calibrated probability; D_M-B and D_G use raw '
-        'scores. Thresholds, models and calibrators are identical across all five regimes; no detector was retrained or re-selected.')
+        'scores. All five frozen bundles carry identical operational threshold IDs/values, detector-manifest hash `' +
+        records['R0']['provenance']['frozen_bundle_provenance']['detector_manifest_sha'] + '` and operating-policy hash `' +
+        records['R0']['provenance']['frozen_bundle_provenance']['operating_policy_sha'] + '`; no detector was retrained or re-selected.')
     section('3. Regime Definitions',
         table(['Regime', 'Population type', 'Attacks', 'Benign', 'Lineages', 'Target'],
               [[rid, records[rid]['population_type'], records[rid]['attack_count'], records[rid]['benign_count'],
