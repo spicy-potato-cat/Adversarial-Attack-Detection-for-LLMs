@@ -1,13 +1,17 @@
 """Phase 2 Track B RQ3 development disposition from committed frozen evidence; no model loading."""
 from __future__ import annotations
+import argparse
 import csv
 import io
 import json
 from pathlib import Path
 import subprocess
-from detection_service.research_protocol.phase1_synthesis import require, sha256
+from detection_service.research_protocol.phase1_synthesis import bytes_json, require, sha256
+from detection_service.research_protocol.verifier_phase2 import EMPTY, RecoveryMetric
+from detection_service.research_protocol.verifier_preparation import REVISIONS
 
 ROOT = Path(__file__).resolve().parents[2]
+OUTPUT = 'artifacts/research_protocol/verifier/rq3_development_disposition_v1.json'
 R3_FREEZE_SHA = 'adc2f7077203a7c3a8b7b58122123fa27e2b0918'
 PREP_SHA = '3b7d6271a621d07ee890d549df134bbd938d8e2d'
 P = 'artifacts/research_protocol/'
@@ -195,3 +199,129 @@ def audit_population(reader):
             status='EMPTY' if not failures else 'NONEMPTY'),
         r3_manifest=dict(path=R3_MANIFEST, sha256=reader.reads[R3_MANIFEST]['sha256'],
             membership_sha256=manifest['membership_sha256'], member_count=manifest['member_count']))
+
+
+def recovery_cells():
+    """Predeclared empty rule through the frozen result schema: null rate and CI, never 0."""
+    return {v: RecoveryMetric(population_count=0, recovered_count=0, status=EMPTY, recovery=None,
+                ci95=dict(status='UNDEFINED', ci_lower=None, ci_upper=None, reason='ZERO_DENOMINATOR')
+            ).model_dump(mode='json') for v in sorted(REVISIONS)}
+
+
+def operating_point_caveat(reader):
+    manifest = json.loads(reader.bound(OPERATING_POINTS))
+    points = {p['detector_id']: p for p in manifest['points']}
+    r1 = predictions(reader.bound(R1_PREDICTIONS))
+
+    def positive_rate(truth, detector):
+        rows = [s for s in r1.values() if s['truth'] == truth and s['decisions'][detector][0] == 'OK']
+        hits = sum(s['decisions'][detector][1] == '1' for s in rows)
+        return dict(numerator=hits, denominator=len(rows), value=hits / len(rows))
+    return dict(development_target_benign_fpr=manifest['target_fpr'],
+        development_selection_partition=manifest['selection_partition'],
+        development_benign_count=manifest['selection_benign_count'],
+        detectors={LABELS[d]: dict(threshold=points[d]['threshold'], threshold_id=points[d]['threshold_id'],
+            threshold_input_score_type=points[d]['threshold_input_score_type'],
+            development_attained_benign_fpr=points[d]['attained_fpr'],
+            r1_attack_recall=positive_rate('1', d), r1_benign_fpr=positive_rate('0', d)) for d in DETECTORS},
+        interpretation='D_M-B retained complete observed attack coverage in the frozen R1/R2/R3 samples considered '
+            'here, but this occurred alongside substantial benign false-positive inflation under R1 distribution '
+            'shift. All three thresholds came from the same development 3% benign-FPR budget; D_M-B operates on '
+            'its raw attack probability at about 0.0005. Its zero-miss behavior is not cost-free robustness and '
+            'does not establish D_M-B as the strongest detector.')
+
+
+def r3_caveat(reader, r3):
+    terminals = json.loads(reader.bound(ELIGIBLE['R3']['terminals']))
+    overall = json.loads(reader.bound(R3_TRANSITIONS))['overall']
+    moves = {LABELS[d]: overall[d] for d in DETECTORS}
+    require(all(m['catch_to_miss'] + m['miss_to_miss'] == r3['false_negatives'][k] for k, m in moves.items()),
+            'RQ3_R3_TRANSITION_RECOUNT_CONFLICT')
+    return dict(parents=terminals['parent_count'], inherited_lineages=terminals['inherited_lineages'],
+        source_counts=terminals['source_counts'], d_s_terminal_misses=r3['false_negatives']['D_S'],
+        transitions=moves, all_three_successes=r3['all_three_failures'],
+        interpretation='All D_S terminal misses were inherited parent misses (miss to miss); the R3 optimizer '
+            'induced no new D_S or D_M-B miss. New degradation occurred only on D_G. 96 of 97 parents are '
+            'LLMail-Inject and one is InjecAgent, which sharply limits source-level generalization.')
+
+
+def build(root=ROOT):
+    reader = FrozenReader(root)
+    audit = audit_population(reader)
+    require(audit['combined']['all_three_failures'] == 0,
+            'RQ3_NONEMPTY_POPULATION_REQUIRES_HANDOFF_GATED_EXECUTION')
+    population_contract = reader.json(POPULATION_CONTRACT)
+    execution = reader.json(EXECUTION_CONTRACT)
+    require(population_contract['empty_status'] == EMPTY and population_contract['automatic_broadening'] is False and
+            population_contract['replacement_population'] is False and execution['empty'] == EMPTY and
+            execution['replacement_allowed'] is False and execution['no_future_sample_tuning'] is True,
+            'RQ3_EMPTY_POLICY_CONFLICT')
+    acceptance = reader.json(R3_ACCEPTANCE)
+    require(acceptance['verdict'] == 'R3_COMPLETE_EMPTY_FAILURE_POPULATION_READY_FOR_PHASE2_REVIEW' and
+            acceptance['verifier_queries'] == 0 and acceptance['protected_queries'] == 0, 'RQ3_R3_ACCEPTANCE_CONFLICT')
+    manifest = json.loads(reader.bound(R3_MANIFEST))
+    require('samples' not in manifest and 'population_count' not in manifest, 'RQ3_MANIFEST_SHAPE_CHANGED')
+    caveats = dict(operating_point=operating_point_caveat(reader), r3=r3_caveat(reader, audit['regimes']['R3']))
+    return dict(artifact_version='rq3_development_disposition_v1', experiment_id='VERIFIER-RECOVERY-001',
+        status='CLOSED_NOT_TESTED', outcome=EMPTY, r3_freeze_commit=R3_FREEZE_SHA, phase2_preparation_commit=PREP_SHA,
+        predeclaration=audit['predeclaration'], eligible_regimes=audit['eligible_regimes'],
+        population_audit=audit['regimes'], excluded_regimes=audit['excluded_regimes'],
+        combined_population=audit['combined'], r3_failure_manifest=audit['r3_manifest'],
+        primary_metric=dict(definition=PRIMARY_METRIC, conditioning_event='Attack-positive eligible terminal with '
+            'all three base detectors OK operational BENIGN (F_E = 1)'),
+        empty_denominator_behavior=dict(status=EMPTY, predeclaration=EMPTY_RULE,
+            failure_population_contract=dict(path=POPULATION_CONTRACT, empty_status=population_contract['empty_status'],
+                automatic_broadening=False, replacement_population=False),
+            execution_contract=dict(path=EXECUTION_CONTRACT, empty=execution['empty'], replacement_allowed=False),
+            not_zero='Recovery is a conditional rate with zero denominator; it is null and UNDEFINED, not 0%.'),
+        recovery=recovery_cells(),
+        rq3=dict(status='NOT_TESTED', label='NOT EMPIRICALLY TESTED / NOT IDENTIFIABLE UNDER THE PREDECLARED '
+            'DEVELOPMENT FAILURE POPULATION', reason='Recovery(V_k) is conditional on base-stack all-three failure; '
+            'the predeclared development failure population across R2-DMB, R2-D_S and R3 is empty, so the '
+            'conditional estimand has no denominator.'),
+        h3=dict(status='NOT_TESTED', reason='H3 contrasts standalone verifier accuracy with conditional Recovery on '
+            'base-stack failures. The required non-empty conditional population never occurred, so H3 received no '
+            'evidence either way.'),
+        scientific_queries={'V1': 0, 'V2': 0, 'V3': 0, 'D_S': 0, 'D_M-B': 0, 'D_G': 0, 'protected': 0},
+        frozen_query_records=dict(r3_verifier_queries=acceptance['verifier_queries'],
+            r3_protected_queries=acceptance['protected_queries'],
+            manifest_verifier_authoritative_queries=manifest['verifier_authoritative_queries']),
+        verifier_inference_performed=False, text_resolved=False, substitute_population_used=False,
+        post_hoc_broadening=False, protected_data_used=False, protected_confirmation='UNOPENED_UNSCORED_UNTOUCHED',
+        phase2_handoff_gate=dict(status='NOT_INVOKED_EMPTY_POPULATION', reason='The handoff-gated path '
+            '(validate_r3_handoff, load_failure_population) guards text resolution and verifier queries. The R3 '
+            'freeze commit carries no separate common_mode, failure_patterns, uncertainty or freeze_receipt handoff '
+            'files, and its failure manifest uses r3_all_three_failure_manifest_v1 fields (members, member_count, '
+            'status EMPTY) rather than failure_population_input_contract_v1 fields. Membership was therefore read '
+            'from committed manifest bytes and independently recounted. With zero members no text is resolved and '
+            'no verifier executes, so the outcome does not depend on the gate.'),
+        caveats=caveats,
+        future_work=dict(
+            ds_dg_secondary_verifier_study=dict(status='NOT_EXECUTED', population_constructed=False,
+                classification=['NOT_RQ3', 'NOT_PART_OF_CURRENT_FROZEN_STUDY',
+                                'REQUIRES_NEW_PREDECLARATION_BEFORE_ANY_VERIFIER_QUERY'],
+                question='If D_M-B were absent, how would the candidate verifiers compare with the observed D_M-B '
+                    'complementary detection behavior?',
+                observed_shared_misses_before_reconciliation={r: audit['regimes'][r]['ds_dg_shared_misses']
+                                                              for r in ('R2-D_S', 'R3')}),
+            stronger_attack_regime=dict(status='NOT_EXECUTED', classification=['NOT_AN_RQ3_SUBSTITUTE',
+                'NEW_REGIME_REQUIRES_SEPARATE_PREDECLARATION'], r3_changed=False, attack_budget_changed=False,
+                new_attacks_generated=False, r4_created=False)),
+        inputs=sorted(reader.reads.values(), key=lambda r: r['path']))
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', default=OUTPUT)
+    parser.add_argument('--check', action='store_true', help='fail if the committed disposition is stale')
+    args = parser.parse_args(argv)
+    data = bytes_json(build())
+    path = Path(args.output)
+    if args.check:
+        require(json.loads(path.read_bytes()) == json.loads(data), 'RQ3_DISPOSITION_STALE')
+    else:
+        path.write_bytes(data)
+
+
+if __name__ == '__main__':
+    main()

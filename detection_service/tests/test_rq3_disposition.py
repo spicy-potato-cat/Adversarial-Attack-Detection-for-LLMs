@@ -1,13 +1,18 @@
 """RQ3 development disposition tests over committed frozen bytes; no detector or verifier models."""
 import json
 import subprocess
+import sys
 
 import pytest
 
 from detection_service.research_protocol import rq3_disposition as rq3
-from detection_service.research_protocol.phase1_synthesis import sha256
+from detection_service.research_protocol.phase1_synthesis import bytes_json, sha256
+from detection_service.research_protocol.verifier_phase2 import EMPTY, RecoveryMetric
 
 FROZEN_SCIENTIFIC_DIRS = [rq3.P + name for name in ('r0', 'r1', 'r2_dmb', 'r2_ds', 'r3', 'operating_points')]
+MODEL_LIBRARIES = ('torch', 'transformers', 'onnxruntime', 'sentence_transformers', 'huggingface_hub',
+                   'safetensors', 'tokenizers', 'accelerate')
+VERDICT_WORDS = ('REJECT', 'SUPPORTED', 'FAIL', 'CONFIRM')
 
 
 def git(*args, text=True):
@@ -17,6 +22,16 @@ def git(*args, text=True):
 @pytest.fixture(scope='module')
 def audit():
     return rq3.audit_population(rq3.FrozenReader())
+
+
+@pytest.fixture(scope='module')
+def disposition():
+    return json.loads((rq3.ROOT / rq3.OUTPUT).read_bytes())
+
+
+def test_committed_disposition_reproduces_from_frozen_bytes(disposition):
+    assert disposition == json.loads(bytes_json(rq3.build()))
+    assert {i['path'] for i in disposition['inputs']} <= set(rq3.ALLOWED)
 
 
 def test_verifier_predeclaration_spans_expected_r2_r3_regimes(audit):
@@ -89,3 +104,65 @@ def test_frozen_scientific_artifacts_unchanged():
     acceptance = json.loads(git('show', f'{rq3.R3_FREEZE_SHA}:{rq3.R3_ACCEPTANCE}'))
     for path, digest in acceptance['sha256'].items():
         assert sha256(git('show', f'HEAD:{path}', text=False)) == digest, path
+
+
+def test_empty_population_recovery_is_null(disposition):
+    assert disposition['outcome'] == EMPTY and set(disposition['recovery']) == {'V1', 'V2', 'V3'}
+    for cell in disposition['recovery'].values():
+        assert cell['population_count'] == cell['recovered_count'] == 0
+        assert cell['status'] == EMPTY and cell['recovery'] is None
+        assert cell['ci95']['status'] == 'UNDEFINED' and cell['ci95']['ci_lower'] is cell['ci95']['ci_upper'] is None
+
+
+def test_empty_population_recovery_not_zero(disposition):
+    assert all(not isinstance(cell['recovery'], (int, float)) for cell in disposition['recovery'].values())
+    assert 'not 0%' in disposition['empty_denominator_behavior']['not_zero']
+    with pytest.raises(ValueError, match='EMPTY_RECOVERY_UNDEFINED_REQUIRED'):
+        RecoveryMetric(population_count=0, recovered_count=0, status='COMPLETE', recovery=0.0, ci95={})
+
+
+def test_h3_not_tested(disposition):
+    assert disposition['h3']['status'] == 'NOT_TESTED'
+    assert not any(word in disposition['h3']['status'] for word in VERDICT_WORDS)
+
+
+def test_rq3_not_tested(disposition):
+    assert disposition['rq3']['status'] == 'NOT_TESTED' and disposition['status'] == 'CLOSED_NOT_TESTED'
+    assert disposition['rq3']['label'] == ('NOT EMPIRICALLY TESTED / NOT IDENTIFIABLE UNDER THE PREDECLARED '
+                                           'DEVELOPMENT FAILURE POPULATION')
+    assert not any(word in disposition['rq3']['status'] for word in VERDICT_WORDS)
+
+
+def test_no_substitute_population(disposition):
+    assert disposition['substitute_population_used'] is False and disposition['post_hoc_broadening'] is False
+    assert disposition['combined_population']['member_ids'] == []
+    assert disposition['combined_population']['membership_sha256'] == disposition['r3_failure_manifest']['membership_sha256']
+    contract = disposition['empty_denominator_behavior']
+    assert contract['failure_population_contract']['automatic_broadening'] is False
+    assert contract['failure_population_contract']['replacement_population'] is False
+    assert contract['execution_contract']['replacement_allowed'] is False
+    assert not any(r['eligible_for_verifier_study'] for r in disposition['excluded_regimes'].values())
+    secondary = disposition['future_work']['ds_dg_secondary_verifier_study']
+    assert secondary['status'] == 'NOT_EXECUTED' and secondary['population_constructed'] is False
+    assert {'NOT_RQ3', 'REQUIRES_NEW_PREDECLARATION_BEFORE_ANY_VERIFIER_QUERY'} <= set(secondary['classification'])
+    stronger = disposition['future_work']['stronger_attack_regime']
+    assert stronger['status'] == 'NOT_EXECUTED'
+    assert not (stronger['new_attacks_generated'] or stronger['r3_changed'] or stronger['r4_created'])
+
+
+def test_no_verifier_scientific_queries(disposition):
+    assert disposition['scientific_queries'] == dict.fromkeys(('V1', 'V2', 'V3', 'D_S', 'D_M-B', 'D_G', 'protected'), 0)
+    assert set(disposition['frozen_query_records'].values()) == {0}
+    assert disposition['verifier_inference_performed'] is False and disposition['text_resolved'] is False
+    probe = ('import sys; from detection_service.research_protocol import rq3_disposition as r; r.build(); '
+             f'print(sorted(m for m in sys.modules if m.split(".")[0] in {MODEL_LIBRARIES!r}))')
+    assert subprocess.check_output([sys.executable, '-B', '-c', probe], cwd=rq3.ROOT, text=True).strip() == '[]'
+
+
+def test_no_protected_data_access(disposition):
+    assert disposition['protected_data_used'] is False
+    assert disposition['protected_confirmation'] == 'UNOPENED_UNSCORED_UNTOUCHED'
+    assert disposition['scientific_queries']['protected'] == disposition['frozen_query_records']['r3_protected_queries'] == 0
+    assert not any(word in path.lower() for path in rq3.ALLOWED for word in ('protected', 'final_test', 'confirmation'))
+    manifest = json.loads(git('show', f'{rq3.R3_FREEZE_SHA}:{rq3.R3_MANIFEST}'))
+    assert manifest['protected_evaluation_accessed'] is False
