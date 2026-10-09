@@ -1,0 +1,15 @@
+# Phase 2 handoff contract v1
+
+Preparation branch `prep/phase2-analysis-verifier-001` starts exactly at `71e3a5239cb24a3e59e99d271c6aa46841dbc084`. Old Track B stays at `6c7173b70a10d1506d92360b421eaceb5e56405e`. No live R3 outcomes are inputs to this preparation.
+
+Track A supplies one final handoff envelope: `status=ACCEPTED`, `frozen=true`, existing `freeze_commit_sha`, and `artifacts` descriptors with committed paths and SHA256 for result_bundle, prediction_manifest, common_mode, failure_patterns, uncertainty, all_three_failure_manifest, and freeze_receipt. Paths must be inside `artifacts/research_protocol/r3/`. The receipt binds the six scientific components by hash and includes zero verifier queries at freeze plus no protected access. The envelope names the commit after it exists, avoiding a receipt/self-commit hash cycle.
+
+The result bundle must use the frozen regime-bundle schema with R3 target ALL and operational view. Common-mode/failure-pattern components and uncertainty must exactly match the bundle. The prediction manifest supplies `prediction_batch_sha` matching its provenance. Failure population_count matches all-three FN. The freeze receipt includes `failure_population_freeze_receipt`: accepted/frozen R3, manifest_sha256, timezone-aware frozen_at, zero verifier queries, and protected_evaluation_accessed=false. Manifest rows follow `failure_population_input_contract_v1.json`; text_ref paths and hashes are resolved locally only at execution.
+
+Consumers use the role descriptors, so filenames may differ without changing analysis design. Missing components, uncommitted inputs, absent hashes/receipts, mismatched components, or invalid population membership fail closed. Synthetic fixtures are explicitly labeled and cannot enter an authoritative handoff through the committed-reader interface.
+
+Phase 2 Track A calls `validate_r3_handoff`, then `normalize('R3', payload['result_bundle'], provenance={'freeze_commit_sha': handoff['freeze_commit_sha'], 'artifacts': handoff['artifacts']})` and replaces the single R3 slot. Frozen source/family or parent-child supplements may be supplied with hash descriptors; they are optional, otherwise those analyses remain unavailable. Re-export tables/figures and fill the RQ1/RQ2 scaffold using final frozen evidence. Never use current branch head as a substitute for the declared freeze SHA.
+
+Phase 2 Track B validates the same handoff and frozen all-three manifest before any verifier query, resolves local text at execution, and executes available pinned candidates independently. Empty population yields undefined recovery and zero queries. Later V3 exports must bind to the same frozen population; V3 and R2-DG do not block V1/V2 or core synthesis. Freeze verifier output hashes and return the seven schema-bound artifacts.
+
+NEXT AUTHORIZED STEP: Wait for Track A to freeze R3 and the all-three failure population. Then begin Phase 2 with cross-regime synthesis and verifier recovery in parallel. This Phase 1 task does not itself authorize reading a live R3 outcome or running a model.
