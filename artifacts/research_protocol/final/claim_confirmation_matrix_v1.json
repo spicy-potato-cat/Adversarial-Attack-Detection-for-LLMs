@@ -1,0 +1,212 @@
+{
+  "artifact_version": "claim_confirmation_matrix_v1",
+  "claims": [
+    {
+      "allowed_statuses": [
+        "CONFIRMED",
+        "PARTIALLY_CONFIRMED",
+        "QUALIFIED",
+        "CONTRADICTED",
+        "NOT_EVALUABLE"
+      ],
+      "claim": "Detector behavior changed substantially and heterogeneously under R0->R1 distribution shift at fixed operating thresholds.",
+      "claim_id": "C1-RQ1-HETEROGENEOUS-SHIFT",
+      "criteria": {
+        "CONFIRMED": "Per-detector protected recall and benign FPR differ from R0 in detector-specific directions: at least two detectors move in opposite directions on recall or on FPR.",
+        "CONTRADICTED": "All three detectors protected recall and FPR lie inside their frozen R0 95% intervals (no observable shift).",
+        "NOT_EVALUABLE": "Protected population lacks the label classes needed or is not a distribution-shifted population.",
+        "PARTIALLY_CONFIRMED": "Detector-specific movement is observable on only one label side (attack-only or benign-only protected population).",
+        "QUALIFIED": "All three detectors move in the same direction on both recall and FPR (shift present but not heterogeneous)."
+      },
+      "development_evidence": {
+        "R0/dg_v1/fpr": 0.017857142857142856,
+        "R0/dg_v1/recall": 0.22950819672131148,
+        "R0/dm_b_v1/fpr": 0.06092436974789916,
+        "R0/dm_b_v1/recall": 0.9890710382513661,
+        "R0/ds_v2/fpr": 0.045168067226890755,
+        "R0/ds_v2/recall": 0.6174863387978142,
+        "R1/dg_v1/fpr": 0.207,
+        "R1/dg_v1/recall": 0.045,
+        "R1/dm_b_v1/fpr": 0.132,
+        "R1/dm_b_v1/recall": 1.0,
+        "R1/ds_v2/fpr": 0.028,
+        "R1/ds_v2/recall": 0.8725
+      },
+      "protected_requirements": "Protected population with attack and benign labels.",
+      "question": "RQ1"
+    },
+    {
+      "allowed_statuses": [
+        "CONFIRMED",
+        "PARTIALLY_CONFIRMED",
+        "QUALIFIED",
+        "CONTRADICTED",
+        "NOT_EVALUABLE"
+      ],
+      "claim": "D_S and D_G exhibited substantial failure overlap under targeted/adaptive regimes.",
+      "claim_id": "C2-RQ2-DS-DG-OVERLAP",
+      "criteria": {
+        "CONFIRMED": "More than half of protected D_S misses are also D_G misses.",
+        "CONTRADICTED": "Not used: the development claim concerns adversarial regimes; a non-adversarial protected population cannot contradict it.",
+        "NOT_EVALUABLE": "No protected attack positives or zero protected D_S misses (shared-miss share UNDEFINED).",
+        "PARTIALLY_CONFIRMED": "Some but at most half of protected D_S misses are also D_G misses.",
+        "QUALIFIED": "Protected D_S misses exist but none is shared with D_G."
+      },
+      "development_evidence": {
+        "R1/ds_v2/fn": 102,
+        "R1/pair/ds_v2~dg_v1/shared_fn": 101,
+        "R2-D_S/target/ds_v2/target_evasion_count": 104,
+        "R2-D_S/transfer/ds_v2->dg_v1/joint_evasion_count": 102,
+        "R3/ds_v2/fn": 5,
+        "R3/pair/ds_v2~dg_v1/shared_fn": 5
+      },
+      "protected_requirements": "Protected attack-positive population with at least one D_S miss.",
+      "question": "RQ2"
+    },
+    {
+      "allowed_statuses": [
+        "CONFIRMED",
+        "PARTIALLY_CONFIRMED",
+        "QUALIFIED",
+        "CONTRADICTED",
+        "NOT_EVALUABLE"
+      ],
+      "claim": "D_M-B remained complementary in the observed R1/R2/R3 samples (no observed miss shared with D_S or D_G).",
+      "claim_id": "C3-RQ2-DMB-COMPLEMENTARY",
+      "criteria": {
+        "CONFIRMED": "Protected D_M-B shares no false negative with D_S or with D_G.",
+        "CONTRADICTED": "At least one protected all-three miss (pattern 111) occurs.",
+        "NOT_EVALUABLE": "No protected attack positives.",
+        "PARTIALLY_CONFIRMED": "D_M-B shares misses with exactly one other detector and no all-three miss occurs.",
+        "QUALIFIED": "D_M-B shares misses with both other detectors pairwise but no all-three miss occurs."
+      },
+      "development_evidence": {
+        "R1/dm_b_v1/fn": 0,
+        "R1/pair/dm_b_v1~dg_v1/shared_fn": 0,
+        "R1/pair/ds_v2~dm_b_v1/shared_fn": 0,
+        "R2-DMB/dm_b_v1/fn": 0,
+        "R2-DMB/pair/dm_b_v1~dg_v1/shared_fn": 0,
+        "R2-DMB/pair/ds_v2~dm_b_v1/shared_fn": 0,
+        "R2-D_S/dm_b_v1/fn": 0,
+        "R2-D_S/pair/dm_b_v1~dg_v1/shared_fn": 0,
+        "R2-D_S/pair/ds_v2~dm_b_v1/shared_fn": 0,
+        "R3/dm_b_v1/fn": 0,
+        "R3/pair/dm_b_v1~dg_v1/shared_fn": 0,
+        "R3/pair/ds_v2~dm_b_v1/shared_fn": 0
+      },
+      "protected_requirements": "Protected attack-positive population.",
+      "question": "RQ2"
+    },
+    {
+      "allowed_statuses": [
+        "CONFIRMED",
+        "PARTIALLY_CONFIRMED",
+        "QUALIFIED",
+        "CONTRADICTED",
+        "NOT_EVALUABLE"
+      ],
+      "claim": "No all-three common-mode failure was observed in development R1, R2-DMB, R2-D_S or R3.",
+      "claim_id": "C4-RQ2-NO-ALL-THREE",
+      "criteria": {
+        "CONFIRMED": "Zero protected all-three false negatives (reported as an observation, never as zero risk).",
+        "CONTRADICTED": "Protected all-three JFN above the frozen R0 all-three JFN 95% upper bound (0.0273).",
+        "NOT_EVALUABLE": "No protected attack positives.",
+        "PARTIALLY_CONFIRMED": "Not used for this binary observation.",
+        "QUALIFIED": "One or more protected all-three false negatives with all-three JFN at or below the frozen R0 all-three JFN 95% upper bound (0.0273): the development observation does not generalize."
+      },
+      "development_evidence": {
+        "R0/all_three_fn": 2,
+        "R0/ci/all_three/jfn": [
+          0.0,
+          0.0273224043715847
+        ],
+        "R1/all_three_fn": 0,
+        "R2-DMB/all_three_fn": 0,
+        "R2-D_S/all_three_fn": 0,
+        "R3/all_three_fn": 0
+      },
+      "protected_requirements": "Protected attack-positive population.",
+      "question": "RQ2"
+    },
+    {
+      "allowed_statuses": [
+        "CONFIRMED",
+        "PARTIALLY_CONFIRMED",
+        "QUALIFIED",
+        "CONTRADICTED",
+        "NOT_EVALUABLE"
+      ],
+      "claim": "D_M-B observed attack coverage coexists with substantial benign false-positive inflation under distribution shift.",
+      "claim_id": "C5-DMB-OPERATING-POINT",
+      "criteria": {
+        "CONFIRMED": "Protected D_M-B benign FPR above its R0 value (0.0609) while protected D_M-B attack recall is at least its R0 value (0.9891).",
+        "CONTRADICTED": "Not used: a protected FPR cannot contradict the observed development FPR.",
+        "NOT_EVALUABLE": "No protected benign examples.",
+        "PARTIALLY_CONFIRMED": "Protected D_M-B benign FPR above the R0 value, attack recall below it or not evaluable.",
+        "QUALIFIED": "Protected D_M-B benign FPR at or below the R0 value."
+      },
+      "development_evidence": {
+        "R0/dm_b_v1/fpr": 0.06092436974789916,
+        "R1/dm_b_v1/fpr": 0.132,
+        "R1/dm_b_v1/recall": 1.0
+      },
+      "protected_requirements": "Protected population with benign examples.",
+      "question": "RQ1/RQ2 caveat"
+    },
+    {
+      "allowed_statuses": [
+        "CONFIRMED",
+        "PARTIALLY_CONFIRMED",
+        "QUALIFIED",
+        "CONTRADICTED",
+        "NOT_EVALUABLE"
+      ],
+      "claim": "D_G had weak R1 attack recall and high R1 benign FPR.",
+      "claim_id": "C6-DG-WEAK-UNDER-SHIFT",
+      "criteria": {
+        "CONFIRMED": "Protected D_G attack recall below its R0 value (0.2295) and benign FPR above its R0 value (0.0179).",
+        "CONTRADICTED": "Not used.",
+        "NOT_EVALUABLE": "Missing attack or benign labels.",
+        "PARTIALLY_CONFIRMED": "Only one of the two conditions holds.",
+        "QUALIFIED": "Neither condition holds."
+      },
+      "development_evidence": {
+        "R1/dg_v1/fpr": 0.207,
+        "R1/dg_v1/recall": 0.045,
+        "R1/dg_v1/roc_auc": 0.40694875
+      },
+      "protected_requirements": "Protected population with attack and benign labels.",
+      "question": "RQ1"
+    },
+    {
+      "allowed_statuses": [
+        "CONFIRMED",
+        "PARTIALLY_CONFIRMED",
+        "QUALIFIED",
+        "CONTRADICTED",
+        "NOT_EVALUABLE"
+      ],
+      "claim": "RQ3 and H3 are NOT_TESTED because the predeclared conditional failure population across 1,595 eligible R2/R3 terminals was empty.",
+      "claim_id": "C7-RQ3-NOT-TESTED",
+      "criteria": {
+        "CONFIRMED": "Not applicable.",
+        "CONTRADICTED": "Not applicable.",
+        "NOT_EVALUABLE": "Always: development RQ3/H3 status remains NOT_TESTED regardless of protected outcomes.",
+        "PARTIALLY_CONFIRMED": "Not applicable.",
+        "QUALIFIED": "Not applicable."
+      },
+      "development_evidence": {
+        "all_three_failures": 0,
+        "eligible_terminals": 1595,
+        "recovery": "UNDEFINED"
+      },
+      "protected_requirements": "None; protected data cannot retroactively create the development RQ3 denominator.",
+      "question": "RQ3/H3"
+    }
+  ],
+  "evaluation_status": "NOT_EVALUATED_PROTECTED_CONFIRMATION_BLOCKED",
+  "frozen_before_protected_access": true,
+  "protected_protocol_id": "PROTECTED-CONFIRMATION-001",
+  "protected_protocol_status": "PROTECTED_CONFIRMATION_PROTOCOL_INCOMPLETE",
+  "rule": "Statuses may be assigned only from a protected population admitted by a committed, pushed protocol; criteria may not be redefined after access."
+}

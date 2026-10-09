@@ -1,0 +1,823 @@
+{
+  "accepted_inputs": {
+    "integration": {
+      "cherry_picked": {
+        "1338cf320e012b3ffabd8500cfa452f9b74b26f8": "RQ3 B2",
+        "629742e25e79cbd3f52801fb1f017ec27fb9b017": "RQ3 B1",
+        "cce11b00258135bf4d623ad09b86a0ef5124226b": "verifier execution preparation (infrastructure dependency of rq3_disposition.py)",
+        "d51b25ad7072cfedc60ccaa28bc39194f7b68f7b": "RQ3 B3"
+      },
+      "reconciliation": [
+        "test_cross_regime_synthesis.py::test_frozen_scientific_artifacts_unchanged branch-context allow-list extended by the exact RQ3-integration and research-freeze paths; no scientific artifact, metric or result changed."
+      ],
+      "skipped_patch_equivalent": {
+        "80ca109c3b0994fa4a3842641d1c8c06f888bcf1": "already present as 332058f (B3 handoff/R2-DG)",
+        "bc32c65cb82c5fd5f04fba9c81ca0a477ad964bb": "already present as 6f63cbc (B1 scaffold)"
+      }
+    },
+    "integration_baseline": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+    "r3_freeze": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+    "rq1_rq2_branch": "analysis/cross-regime-001",
+    "rq1_rq2_head": "664a3a53393a51bd70b75d0aff1c21bb1f270d3a",
+    "rq1_rq2_result_bundle": {
+      "path": "artifacts/research_protocol/synthesis/cross_regime_result_bundle_v1.json",
+      "sha256": "acad022fda72ae9b23ad335c8b3edd0ff0d6fc36363eb3e42b3789cd1a141e6c"
+    },
+    "rq1_rq2_verdict": "CROSS_REGIME_SYNTHESIS_COMPLETE_READY_FOR_RESEARCH_FREEZE",
+    "rq3_branch": "analysis/verifier-rq3-001",
+    "rq3_disposition": {
+      "path": "artifacts/research_protocol/verifier/rq3_development_disposition_v1.json",
+      "sha256": "2763136d0908f76dec9846fccb0bd74ea1459d752b981dfbd113a31030bd6432"
+    },
+    "rq3_head": "d51b25ad7072cfedc60ccaa28bc39194f7b68f7b",
+    "rq3_verdict": "RQ3_CLOSED_NOT_TESTED_EMPTY_PREDECLARED_FAILURE_POPULATION",
+    "verifier_predeclaration_sha256": "282fa95bc43f52a4149af3ae88cd0d1d01058998e35134e1ce1eb31e03f9af98"
+  },
+  "artifact_version": "development_research_freeze_v1",
+  "detector_stack": [
+    {
+      "decision": "ATTACK if score >= threshold",
+      "detector_id": "ds_v2",
+      "label": "D_S",
+      "model_revision": null,
+      "model_sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157",
+      "reference_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+      "score_field": "calibrated_score",
+      "threshold": 0.5585373573968287,
+      "threshold_id": "ds_v2_op3_cal_v1"
+    },
+    {
+      "decision": "ATTACK if score >= threshold",
+      "detector_id": "dm_b_v1",
+      "label": "D_M-B",
+      "model_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+      "model_sha256": "0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844",
+      "reference_revision": null,
+      "score_field": "raw_score",
+      "threshold": 0.0004967087297700347,
+      "threshold_id": "dm_b_v1_op3_raw_v1"
+    },
+    {
+      "decision": "ATTACK if score >= threshold",
+      "detector_id": "dg_v1",
+      "label": "D_G",
+      "model_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+      "model_sha256": "5120e30bcd536ce285345d9ec104bea6bd6e8f94365b99a340c764f417ea5fa1",
+      "reference_revision": null,
+      "score_field": "raw_score",
+      "threshold": 0.21291141211986545,
+      "threshold_id": "dg_v1_op3_raw_v1"
+    }
+  ],
+  "figure_manifest": {
+    "figures": [
+      "artifacts/research_protocol/synthesis/figures/01_fnr.svg",
+      "artifacts/research_protocol/synthesis/figures/02_pairwise_jfn.svg",
+      "artifacts/research_protocol/synthesis/figures/03_ejf.svg",
+      "artifacts/research_protocol/synthesis/figures/04_fn_jaccard.svg",
+      "artifacts/research_protocol/synthesis/figures/05_all_three_jfn.svg",
+      "artifacts/research_protocol/synthesis/figures/06_target_success.svg",
+      "artifacts/research_protocol/synthesis/figures/07_r2ds_transfer.svg",
+      "artifacts/research_protocol/synthesis/figures/08_source_conditioned.svg",
+      "artifacts/research_protocol/synthesis/figures/09_failure_patterns.svg",
+      "artifacts/research_protocol/synthesis/figures/10_verifier_status.svg"
+    ],
+    "path": "artifacts/research_protocol/synthesis/cross_regime_figure_manifest_v1.json",
+    "sha256": "612e2ba74622d3c33d95c3e5ebed40e5388b20babcc38cb6cf3d19316657635f"
+  },
+  "frozen_at": "2026-10-09T20:57:02Z",
+  "future_work": [
+    {
+      "item": "R2-DG exploratory appendix",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "item": "Stronger D_M-B-targeting attack regimes",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "item": "Larger and more source-diverse R3 populations",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "item": "D_S/D_G shared-failure verifier study (new predeclaration required)",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "item": "Independent verifier-recovery study with a naturally non-empty failure set",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "item": "Protected row-manifest freeze and external confirmation datasets",
+      "status": "NOT_EXECUTED"
+    }
+  ],
+  "h3": {
+    "reason": "H3 contrasts standalone verifier accuracy with conditional Recovery on base-stack failures. The required non-empty conditional population never occurred, so H3 received no evidence either way.",
+    "status": "NOT_TESTED"
+  },
+  "integrity": {
+    "development_artifacts_changed": false,
+    "model_inference": false,
+    "protected_queries": 0,
+    "resampling": false,
+    "verifier_queries": 0
+  },
+  "interpretation_boundaries": [
+    "Recovery(V_k) is reserved for the verifier metric only; D_M-B behavior is described as detection coverage (e.g. \"D_M-B missed 0/104 D_S-evasive terminals\"), never as verifier recovery.",
+    "The frozen core metric id recovery/<detector>/conditional_recovery is reported as the conditional base-detector catch rate (unique catches / both-others-miss); it is not Recovery(V_k).",
+    "Forbidden claims: D_M-B is universally robust; D_M-B is unbreakable; D_M-B is the strongest detector; the stack is secure; true R3 attack-success probability is zero; detectors are independent; EJF proves causal dependence.",
+    "Undefined values remain UNDEFINED/null, never 0; attack-only regimes carry no FPR, ROC-AUC or AP.",
+    "D_M-B complementarity is not cost-free robustness: it coexists with substantial benign FPR inflation under shift.",
+    "The accepted synthesis RQ3 wording (\"NOT EMPIRICALLY IDENTIFIABLE FROM R3 DEVELOPMENT FAILURE POPULATION\") is superseded: the denominator is empty across the full predeclared R2-DMB/R2-D_S/R3 pool of 1,595 terminals, not only R3.",
+    "The accepted synthesis interpretation RQ2-I2 (\"complete observed recovery\") is restated under this terminology as: D_M-B detected all 104 observed D_S-evasive terminals."
+  ],
+  "limitations": [
+    {
+      "id": "L01",
+      "text": "Cross-regime populations are not paired; regime comparisons are descriptive."
+    },
+    {
+      "id": "L02",
+      "text": "Source compositions differ across regimes (R0 development sources; R1 LLMail/InjecAgent attacks with hard benign)."
+    },
+    {
+      "id": "L03",
+      "text": "R3 is 96/97 LLMail; InjecAgent contributes a single parent."
+    },
+    {
+      "id": "L04",
+      "text": "InjecAgent collapses to one inherited lineage cluster in R1, R2-DMB, R2-D_S and R3 analyses; its source-level intervals are degenerate."
+    },
+    {
+      "id": "L05",
+      "text": "R3 uses one predefined reversible generator and a finite 61-evaluation query budget per parent."
+    },
+    {
+      "id": "L06",
+      "text": "Zero observed R3 all-three events are not a universal robustness guarantee; the [0,0] interval is a zero-event percentile bootstrap, not a population robustness bound."
+    },
+    {
+      "id": "L07",
+      "text": "D_M-B observed attack coverage coexists with a 13.20% R1 benign FPR at raw threshold 0.0004967087297700347."
+    },
+    {
+      "id": "L08",
+      "text": "D_G has weak R1 attack recall (4.50%) and high R1 benign FPR (20.70%); R1 ROC-AUC 0.4069."
+    },
+    {
+      "id": "L09",
+      "text": "EJF and overlap analyses are descriptive deviations from an FNR-product reference, not causal or independence tests."
+    },
+    {
+      "id": "L10",
+      "text": "RQ3 was not testable because its predeclared conditional denominator (1,595 eligible R2/R3 terminals) contained no all-three failure."
+    },
+    {
+      "id": "L11",
+      "text": "Verifier candidates V1, V2 and V3 were never scientifically queried."
+    },
+    {
+      "id": "L12",
+      "text": "R2-D_G remained an optional exploratory appendix and was not executed."
+    },
+    {
+      "id": "L13",
+      "text": "No significance tests or causal comparisons were performed; R1 is non-adaptive and does not establish adaptive robustness."
+    },
+    {
+      "id": "L14",
+      "text": "No protected/final confirmation population has a frozen row-level manifest; protected confirmation could not be opened under this freeze."
+    }
+  ],
+  "primary_metrics": {
+    "R0": {
+      "all_three_fn": 2,
+      "all_three_jfn": 0.01092896174863388,
+      "attack_count": 183,
+      "benign_count": 952,
+      "detectors": {
+        "D_G": {
+          "ap": 0.5006519683988974,
+          "fn": 141,
+          "fnr": 0.7704918032786885,
+          "fp": 17,
+          "fpr": 0.017857142857142856,
+          "recall": 0.22950819672131148,
+          "roc_auc": 0.814953850392616,
+          "tn": 935,
+          "tp": 42
+        },
+        "D_M-B": {
+          "ap": 0.9877044339233646,
+          "fn": 2,
+          "fnr": 0.01092896174863388,
+          "fp": 58,
+          "fpr": 0.06092436974789916,
+          "recall": 0.9890710382513661,
+          "roc_auc": 0.9963493594158975,
+          "tn": 894,
+          "tp": 181
+        },
+        "D_S": {
+          "ap": 0.7315865803288281,
+          "fn": 70,
+          "fnr": 0.3825136612021858,
+          "fp": 43,
+          "fpr": 0.045168067226890755,
+          "recall": 0.6174863387978142,
+          "roc_auc": 0.896760343481655,
+          "tn": 909,
+          "tp": 113
+        }
+      },
+      "pairs": {
+        "D_M-BxD_G": {
+          "ejf": 0.002508286302965153,
+          "fn_jaccard": 0.014184397163120567,
+          "independence_reference": 0.008420675445668727,
+          "jfn": 0.01092896174863388,
+          "shared_fn": 2,
+          "union_fn": 141
+        },
+        "D_SxD_G": {
+          "ejf": -0.010570635133924589,
+          "fn_jaccard": 0.3270440251572327,
+          "independence_reference": 0.29472364059840545,
+          "jfn": 0.28415300546448086,
+          "shared_fn": 52,
+          "union_fn": 159
+        },
+        "D_SxD_M-B": {
+          "ejf": 0.006748484577025292,
+          "fn_jaccard": 0.02857142857142857,
+          "independence_reference": 0.004180477171608588,
+          "jfn": 0.01092896174863388,
+          "shared_fn": 2,
+          "union_fn": 70
+        }
+      },
+      "unique_catches": {
+        "D_G": 0,
+        "D_M-B": 50,
+        "D_S": 0
+      }
+    },
+    "R1": {
+      "all_three_fn": 0,
+      "all_three_jfn": 0.0,
+      "attack_count": 800,
+      "benign_count": 1000,
+      "detectors": {
+        "D_G": {
+          "ap": 0.37789020357305086,
+          "fn": 764,
+          "fnr": 0.955,
+          "fp": 207,
+          "fpr": 0.207,
+          "recall": 0.045,
+          "roc_auc": 0.40694875,
+          "tn": 793,
+          "tp": 36
+        },
+        "D_M-B": {
+          "ap": 0.9999999999999911,
+          "fn": 0,
+          "fnr": 0.0,
+          "fp": 132,
+          "fpr": 0.132,
+          "recall": 1.0,
+          "roc_auc": 1.0,
+          "tn": 868,
+          "tp": 800
+        },
+        "D_S": {
+          "ap": 0.9748953375370448,
+          "fn": 102,
+          "fnr": 0.1275,
+          "fp": 28,
+          "fpr": 0.028,
+          "recall": 0.8725,
+          "roc_auc": 0.97433625,
+          "tn": 972,
+          "tp": 698
+        }
+      },
+      "pairs": {
+        "D_M-BxD_G": {
+          "ejf": 0.0,
+          "fn_jaccard": 0.0,
+          "independence_reference": 0.0,
+          "jfn": 0.0,
+          "shared_fn": 0,
+          "union_fn": 764
+        },
+        "D_SxD_G": {
+          "ejf": 0.004487500000000005,
+          "fn_jaccard": 0.13202614379084968,
+          "independence_reference": 0.1217625,
+          "jfn": 0.12625,
+          "shared_fn": 101,
+          "union_fn": 765
+        },
+        "D_SxD_M-B": {
+          "ejf": 0.0,
+          "fn_jaccard": 0.0,
+          "independence_reference": 0.0,
+          "jfn": 0.0,
+          "shared_fn": 0,
+          "union_fn": 102
+        }
+      },
+      "unique_catches": {
+        "D_G": 0,
+        "D_M-B": 101,
+        "D_S": 0
+      }
+    },
+    "R2-DMB": {
+      "all_three_fn": 0,
+      "all_three_jfn": 0.0,
+      "attack_count": 800,
+      "benign_count": 0,
+      "detectors": {
+        "D_G": {
+          "ap": "NOT_APPLICABLE",
+          "fn": 770,
+          "fnr": 0.9625,
+          "fp": "NOT_APPLICABLE",
+          "fpr": "NOT_APPLICABLE",
+          "recall": 0.0375,
+          "roc_auc": "NOT_APPLICABLE",
+          "tn": "NOT_APPLICABLE",
+          "tp": 30
+        },
+        "D_M-B": {
+          "ap": "NOT_APPLICABLE",
+          "fn": 0,
+          "fnr": 0.0,
+          "fp": "NOT_APPLICABLE",
+          "fpr": "NOT_APPLICABLE",
+          "recall": 1.0,
+          "roc_auc": "NOT_APPLICABLE",
+          "tn": "NOT_APPLICABLE",
+          "tp": 800
+        },
+        "D_S": {
+          "ap": "NOT_APPLICABLE",
+          "fn": 41,
+          "fnr": 0.05125,
+          "fp": "NOT_APPLICABLE",
+          "fpr": "NOT_APPLICABLE",
+          "recall": 0.94875,
+          "roc_auc": "NOT_APPLICABLE",
+          "tn": "NOT_APPLICABLE",
+          "tp": 759
+        }
+      },
+      "pairs": {
+        "D_M-BxD_G": {
+          "ejf": 0.0,
+          "fn_jaccard": 0.0,
+          "independence_reference": 0.0,
+          "jfn": 0.0,
+          "shared_fn": 0,
+          "union_fn": 770
+        },
+        "D_SxD_G": {
+          "ejf": 0.0006718750000000023,
+          "fn_jaccard": 0.05188067444876784,
+          "independence_reference": 0.049328125,
+          "jfn": 0.05,
+          "shared_fn": 40,
+          "union_fn": 771
+        },
+        "D_SxD_M-B": {
+          "ejf": 0.0,
+          "fn_jaccard": 0.0,
+          "independence_reference": 0.0,
+          "jfn": 0.0,
+          "shared_fn": 0,
+          "union_fn": 41
+        }
+      },
+      "target": {
+        "attempts": 800,
+        "etr_to_DG": "UNDEFINED",
+        "etr_to_DS": "UNDEFINED",
+        "evasions": 0,
+        "target": "D_M-B"
+      },
+      "unique_catches": {
+        "D_G": 0,
+        "D_M-B": 40,
+        "D_S": 0
+      }
+    },
+    "R2-D_S": {
+      "all_three_fn": 0,
+      "all_three_jfn": 0.0,
+      "attack_count": 698,
+      "benign_count": 0,
+      "detectors": {
+        "D_G": {
+          "ap": "NOT_APPLICABLE",
+          "fn": 667,
+          "fnr": 0.9555873925501432,
+          "fp": "NOT_APPLICABLE",
+          "fpr": "NOT_APPLICABLE",
+          "recall": 0.044412607449856735,
+          "roc_auc": "NOT_APPLICABLE",
+          "tn": "NOT_APPLICABLE",
+          "tp": 31
+        },
+        "D_M-B": {
+          "ap": "NOT_APPLICABLE",
+          "fn": 0,
+          "fnr": 0.0,
+          "fp": "NOT_APPLICABLE",
+          "fpr": "NOT_APPLICABLE",
+          "recall": 1.0,
+          "roc_auc": "NOT_APPLICABLE",
+          "tn": "NOT_APPLICABLE",
+          "tp": 698
+        },
+        "D_S": {
+          "ap": "NOT_APPLICABLE",
+          "fn": 104,
+          "fnr": 0.1489971346704871,
+          "fp": "NOT_APPLICABLE",
+          "fpr": "NOT_APPLICABLE",
+          "recall": 0.8510028653295129,
+          "roc_auc": "NOT_APPLICABLE",
+          "tn": "NOT_APPLICABLE",
+          "tp": 594
+        }
+      },
+      "pairs": {
+        "D_M-BxD_G": {
+          "ejf": 0.0,
+          "fn_jaccard": 0.0,
+          "independence_reference": 0.0,
+          "jfn": 0.0,
+          "shared_fn": 0,
+          "union_fn": 667
+        },
+        "D_SxD_G": {
+          "ejf": 0.0037520217403798073,
+          "fn_jaccard": 0.15246636771300448,
+          "independence_reference": 0.14237978341721333,
+          "jfn": 0.14613180515759314,
+          "shared_fn": 102,
+          "union_fn": 669
+        },
+        "D_SxD_M-B": {
+          "ejf": 0.0,
+          "fn_jaccard": 0.0,
+          "independence_reference": 0.0,
+          "jfn": 0.0,
+          "shared_fn": 0,
+          "union_fn": 104
+        }
+      },
+      "target": {
+        "DG_also_missed": 102,
+        "DMB_also_missed": 0,
+        "attempts": 698,
+        "evasions": 104,
+        "rate": 0.1489971346704871,
+        "rate_ci95": [
+          0.05986527423469388,
+          0.19592120415199615
+        ],
+        "target": "D_S"
+      },
+      "unique_catches": {
+        "D_G": 0,
+        "D_M-B": 102,
+        "D_S": 0
+      }
+    },
+    "R3": {
+      "all_three_fn": 0,
+      "all_three_jfn": 0.0,
+      "attack_count": 97,
+      "benign_count": 0,
+      "detectors": {
+        "D_G": {
+          "ap": "NOT_APPLICABLE",
+          "fn": 92,
+          "fnr": 0.9484536082474226,
+          "fp": "NOT_APPLICABLE",
+          "fpr": "NOT_APPLICABLE",
+          "recall": 0.05154639175257732,
+          "roc_auc": "NOT_APPLICABLE",
+          "tn": "NOT_APPLICABLE",
+          "tp": 5
+        },
+        "D_M-B": {
+          "ap": "NOT_APPLICABLE",
+          "fn": 0,
+          "fnr": 0.0,
+          "fp": "NOT_APPLICABLE",
+          "fpr": "NOT_APPLICABLE",
+          "recall": 1.0,
+          "roc_auc": "NOT_APPLICABLE",
+          "tn": "NOT_APPLICABLE",
+          "tp": 97
+        },
+        "D_S": {
+          "ap": "NOT_APPLICABLE",
+          "fn": 5,
+          "fnr": 0.05154639175257732,
+          "fp": "NOT_APPLICABLE",
+          "fpr": "NOT_APPLICABLE",
+          "recall": 0.9484536082474226,
+          "roc_auc": "NOT_APPLICABLE",
+          "tn": "NOT_APPLICABLE",
+          "tp": 92
+        }
+      },
+      "pairs": {
+        "D_M-BxD_G": {
+          "ejf": 0.0,
+          "fn_jaccard": 0.0,
+          "independence_reference": 0.0,
+          "jfn": 0.0,
+          "shared_fn": 0,
+          "union_fn": 92
+        },
+        "D_SxD_G": {
+          "ejf": 0.00265703050271017,
+          "fn_jaccard": 0.05434782608695652,
+          "independence_reference": 0.04888936124986715,
+          "jfn": 0.05154639175257732,
+          "shared_fn": 5,
+          "union_fn": 92
+        },
+        "D_SxD_M-B": {
+          "ejf": 0.0,
+          "fn_jaccard": 0.0,
+          "independence_reference": 0.0,
+          "jfn": 0.0,
+          "shared_fn": 0,
+          "union_fn": 5
+        }
+      },
+      "population": {
+        "InjecAgent": 1,
+        "LLMail": 96,
+        "lineages": 97,
+        "parents": 97
+      },
+      "target": {
+        "attempts": 97,
+        "ci_note": "zero-event percentile bootstrap; not a population robustness bound",
+        "evasions": 0,
+        "rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "target": "ALL"
+      },
+      "transitions": {
+        "D_G": {
+          "catch_to_miss": 2,
+          "miss_to_catch": 2
+        },
+        "D_M-B": {
+          "catch_to_miss": 0,
+          "miss_to_catch": 0
+        },
+        "D_S": {
+          "catch_to_miss": 0,
+          "miss_to_catch": 3
+        }
+      },
+      "unique_catches": {
+        "D_G": 0,
+        "D_M-B": 5,
+        "D_S": 0
+      }
+    }
+  },
+  "project_title": "Adversarial Attack Detection for Large Language Models (LLMs)",
+  "protected_confirmation": {
+    "claim_confirmation_matrix": {
+      "path": "artifacts/research_protocol/final/claim_confirmation_matrix_v1.json",
+      "sha256": "f533b22108853baa979db1db7819f140a8e01dadf39cebece2322ccc5016bed3"
+    },
+    "opened": false,
+    "protocol": {
+      "path": "artifacts/research_protocol/final/protected_confirmation_protocol_v1.json",
+      "sha256": "dc44c9934c2af3ef651e3a65b90e42cefca4935c3532a8000b20f3facbdec61b"
+    },
+    "protocol_id": "PROTECTED-CONFIRMATION-001",
+    "scored": false,
+    "statement": "PROTECTED DATA HAS NOT BEEN OPENED OR SCORED AS OF THIS FREEZE.",
+    "status": "PROTECTED_CONFIRMATION_PROTOCOL_INCOMPLETE"
+  },
+  "r2_dg_disposition": {
+    "classification": "OPTIONAL_EXPLORATORY_APPENDIX",
+    "executed": false,
+    "path": "artifacts/research_protocol/synthesis/r2_dg_final_disposition_v1.json",
+    "sha256": "44ab9f362d006b9470c6959c22278f7c9157078691376c173a5f06bee7a2647e"
+  },
+  "regime_commits": {
+    "R0": {
+      "artifacts": [
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "2941f1412d15f16bfc1564d1d584a76c0b909df3",
+          "path": "artifacts/research_protocol/r0/r0_operational_result_bundle_v1.json",
+          "sha256": "b63b25ed4b2eafc3f6e6dd09b8cce96f4acfebff599728650260f8e786e68133"
+        },
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "f533c106765041932271b56c8ccfa30d1efe691c",
+          "path": "artifacts/research_protocol/r0/r0_score_metrics_reproduction_v1.json",
+          "sha256": "3dc999069a85c7c0cd5c8e7a3cc94073b4948430670f0ea494f02a0213211ca6"
+        }
+      ],
+      "experiment_id": "EXP-R0-dec14451f0449d66be0d157f6fc3f76ad7dc8cf7a19dde7f8e0b62cbaa846883",
+      "read_commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084"
+    },
+    "R1": {
+      "artifacts": [
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "62bf867b2acc53c3a8dc35d18f443558cd9da508",
+          "path": "artifacts/research_protocol/r1/r1_result_bundle_v1.json",
+          "sha256": "f393d9453828a52c4dbc71952b208f7c718e2971ca0697b38ca1f479237f0cda"
+        },
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "62bf867b2acc53c3a8dc35d18f443558cd9da508",
+          "path": "artifacts/research_protocol/r1/r1_ranking_metrics_v1.json",
+          "sha256": "ccb3e224baecbd48f4503b9f3102b59b70c842eece261b6db8307d8fd4f0459b"
+        },
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "62bf867b2acc53c3a8dc35d18f443558cd9da508",
+          "path": "artifacts/research_protocol/r1/r1_family_analysis_v1.json",
+          "sha256": "d49a91d0a8905b15e52e552983e403b2c8c197e9be065e50cca2924df844822e"
+        }
+      ],
+      "experiment_id": "EXP-R1-64ecea9c55340ad7ea84427620e95f5e434c2e2906029803b148c888854bacd7",
+      "read_commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084"
+    },
+    "R2-DMB": {
+      "artifacts": [
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+          "path": "artifacts/research_protocol/r2_dmb/r2_dmb_result_bundle_v1.json",
+          "sha256": "6c3b1c02c32faf87bd706cd5774054f9af8f65f22ec390ff42e6322ddc1554ad"
+        },
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+          "path": "artifacts/research_protocol/r2_dmb/r2_dmb_source_analysis_v1.json",
+          "sha256": "730d1e1658cf6073098f937a3b55bf0bedd5303744a332b3fa0fa89687b2b093"
+        },
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "99b012e5b72fbae9273fa73ccc8d84d579a69c83",
+          "path": "artifacts/research_protocol/r2_dmb/r2_dmb_parent_child_transitions_v1.json",
+          "sha256": "72ab64f1dc5d554269aeabcb954c66ab59f83ae11187045d317617de793ed744"
+        }
+      ],
+      "experiment_id": "EXP-R2-1fe5df628f5bff806cc1a9b838037c072da3f163d03456c1696424c8952c333a",
+      "read_commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084"
+    },
+    "R2-D_S": {
+      "artifacts": [
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "913ee734cb48eb8404e8f6ed62456eb07950246e",
+          "path": "artifacts/research_protocol/r2_ds/r2_ds_result_bundle_v1.json",
+          "sha256": "09d75ec9b4085bac2db46e7df69d355ed995e2b04658b46dbff1a77f79ef45b0"
+        },
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "913ee734cb48eb8404e8f6ed62456eb07950246e",
+          "path": "artifacts/research_protocol/r2_ds/r2_ds_source_analysis_v1.json",
+          "sha256": "f6c5a9ebd07efcbcf78d7c446bc50cea9d7843dccd1f1833805543570a46e199"
+        },
+        {
+          "commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+          "first_committed_in": "913ee734cb48eb8404e8f6ed62456eb07950246e",
+          "path": "artifacts/research_protocol/r2_ds/r2_ds_parent_child_transitions_v1.json",
+          "sha256": "5c54d67ebd77644235c9cf5912ebea7b5eef7c719c03c5b7213063e597b0afbb"
+        }
+      ],
+      "experiment_id": "EXP-R2-60aa63fd6933f1f1061e6ac3894233c766618e92c87910635da709fde357634d",
+      "read_commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084"
+    },
+    "R3": {
+      "experiment_id": "EXP-R3-298f4cf4b760079e7600d4afc488fd374a354c6c5751ea655f10ec7674b26e88",
+      "failure_manifest": {
+        "member": null,
+        "path": "artifacts/research_protocol/r3/r3_all_three_failure_manifest_v1.json",
+        "sha256": "0e19da171825262881d89cb6f89016315082f254bb10cf02e316d0c9e39ce413"
+      },
+      "freeze_commit": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+      "handoff_sha256": "587e8c8d2be671d5f3b9a71e3251d4be052675b70524a5135b7b0f00ac6e78e9",
+      "result_bundle": {
+        "member": null,
+        "path": "artifacts/research_protocol/r3/r3_result_bundle_v1.json",
+        "sha256": "ebfe60e20e8089e373c0de61215a26c94784d4d9303d102af007c5915a51acf6"
+      }
+    }
+  },
+  "research_freeze_commit": "The commit that first adds this file on final/research-freeze-001 (named externally; no self-referential hash).",
+  "result_bundle_hashes": {
+    "R0": "b63b25ed4b2eafc3f6e6dd09b8cce96f4acfebff599728650260f8e786e68133",
+    "R1": "f393d9453828a52c4dbc71952b208f7c718e2971ca0697b38ca1f479237f0cda",
+    "R2-DMB": "6c3b1c02c32faf87bd706cd5774054f9af8f65f22ec390ff42e6322ddc1554ad",
+    "R2-D_S": "09d75ec9b4085bac2db46e7df69d355ed995e2b04658b46dbff1a77f79ef45b0",
+    "R3": "ebfe60e20e8089e373c0de61215a26c94784d4d9303d102af007c5915a51acf6"
+  },
+  "rq1": {
+    "accepted_answer": "Detector behavior changed in detector-specific directions under the R0 -> R1 shift at fixed operating thresholds. D_S attack recall rose (61.75% -> 87.25%) and its benign FPR fell (4.52% -> 2.80%). D_M-B kept near-complete attack recall (98.91% -> 100.00%) but its benign FPR rose (6.09% -> 13.20%). D_G attack recall fell (22.95% -> 4.50%) while its benign FPR rose (1.79% -> 20.70%). Distribution shift therefore did not affect the detectors uniformly. These are descriptive comparisons of unpaired populations with different source composition; R1 alone does not establish adaptive robustness.",
+    "finding": "Detector behavior changed substantially and heterogeneously under R0->R1 distribution shift at fixed operating thresholds.",
+    "question": "How does detector behavior change under distribution shift?"
+  },
+  "rq2": {
+    "accepted_answer": "At the three-detector stack level, no all-three common-mode failure was observed in the non-adaptive R1 reference or in any frozen targeted or ensemble-aware population: all-three FN was 0/800 (R1), 0/800 (R2-DMB), 0/698 (R2-D_S) and 0/97 (R3). Complementarity was not uniform. Under D_S-targeted pressure, 102 of 104 successful D_S evasions were also missed by D_G, whereas D_M-B missed 0 of them. D_M-B had 0/800 target evasions in R2-DMB and 0/97 misses in R3. In R3 every D_S miss (5) was also a D_G miss. Overlapping D_S/D_G failures emerged, but no all-three common-mode failure was observed for these frozen populations and fixed generators.",
+    "finding": "Observed detector diversity was uneven. D_S and D_G exhibited substantial failure overlap under targeted/adaptive regimes, while D_M-B remained complementary in the observed R1/R2/R3 samples. No all-three common-mode failure was observed in R1, R2-DMB, R2-D_S or R3.",
+    "question": "Do heterogeneous detectors retain complementary error behavior under targeted and ensemble-aware adversarial pressure, or do overlapping/common-mode failures emerge?"
+  },
+  "rq3": {
+    "all_three_failures": 0,
+    "eligible_regimes": [
+      "R2-DMB",
+      "R2-D_S",
+      "R3"
+    ],
+    "eligible_terminals": 1595,
+    "finding": "NOT_TESTED because the predeclared conditional failure population across 1,595 eligible R2/R3 terminals was empty.",
+    "r0_excluded": {
+      "all_three_failures": 2,
+      "reason": "Outside the predeclared eligibility domain: the frozen rule admits only 'valid attack-positive terminal candidates from completed R2 targets and R3'; R0 is neither a completed R2 target nor R3."
+    },
+    "reason": "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION",
+    "recovery": {
+      "V1": {
+        "status": "UNDEFINED",
+        "value": null
+      },
+      "V2": {
+        "status": "UNDEFINED",
+        "value": null
+      },
+      "V3": {
+        "status": "UNDEFINED",
+        "value": null
+      }
+    },
+    "status": "NOT_TESTED",
+    "substitute_population": false
+  },
+  "status": "FROZEN_BEFORE_PROTECTED_CONFIRMATION",
+  "study": "EXP-PROTOCOL-001 development study",
+  "synthesis_outputs": {
+    "artifacts/research_protocol/synthesis/cross_regime_figure_manifest_v1.json": "612e2ba74622d3c33d95c3e5ebed40e5388b20babcc38cb6cf3d19316657635f",
+    "artifacts/research_protocol/synthesis/cross_regime_metrics_v1.json": "1c3586be3914be937eeb2d67d9207e1942859b968ec8b07c3ef444f97548be04",
+    "artifacts/research_protocol/synthesis/cross_regime_rq1_findings_v1.json": "5737e0c4d84df8b5f58f5abb17a868068d2a74079f7fb211c49aabeefe111146",
+    "artifacts/research_protocol/synthesis/cross_regime_rq2_findings_v1.json": "5453933092955e72cf08b6c6fb9f2c23b2eef7fff79e93ca2af1411de9078000",
+    "artifacts/research_protocol/synthesis/cross_regime_tables_v1.json": "d88ae3a3ff7012a28fee7025f5afe332ddbf4fe30a580c8dca390ff0b812bb2d",
+    "artifacts/research_protocol/synthesis/figures/01_fnr.svg": "82c360229f581501ed96c23fe9713fe608a0632a499b50f9f9cd9b4ef4a53920",
+    "artifacts/research_protocol/synthesis/figures/02_pairwise_jfn.svg": "d6e32c91a90aab5855bacec7adfc57dce2375a93c30df627074a418aca546118",
+    "artifacts/research_protocol/synthesis/figures/03_ejf.svg": "5b27ae1aefcea2a32fa6d60169b43da6ba48b2150bb3af41e7f03b3ab16ebc32",
+    "artifacts/research_protocol/synthesis/figures/04_fn_jaccard.svg": "3a6b6179092e09f17715ae8272ff75157e735530d417efd1885b443c366c7ee4",
+    "artifacts/research_protocol/synthesis/figures/05_all_three_jfn.svg": "569d5c975626477251cdc2b210d46eba299bb8873f6bd5ab90f3d9e6b59932dd",
+    "artifacts/research_protocol/synthesis/figures/06_target_success.svg": "394e5c6c0180d61e88fb6dd9018a6d7dd2c50d209adfa936f8d93f0d579f2ad7",
+    "artifacts/research_protocol/synthesis/figures/07_r2ds_transfer.svg": "c332f91e266de512abfe86eba8aa14543bc7001c42c23fbbb7eeb33b0f0b0b1f",
+    "artifacts/research_protocol/synthesis/figures/08_source_conditioned.svg": "1f097461292660ca0464293a7cfc5db33e14b622b75d70fb32a5e9f56d35ab6b",
+    "artifacts/research_protocol/synthesis/figures/09_failure_patterns.svg": "e3c25827b7d499ce8dc16cfac80591547b9e03704c00c3eb712c7646fc92c6ba",
+    "artifacts/research_protocol/synthesis/figures/10_verifier_status.svg": "b8d2cad78a96933bb1c61e638f0f3df24a02c047f4185d9d046efd1504ef3ebb",
+    "artifacts/research_protocol/synthesis/r3_accepted_handoff_v1.json": "587e8c8d2be671d5f3b9a71e3251d4be052675b70524a5135b7b0f00ac6e78e9"
+  },
+  "tables": {
+    "contents": "Tables A-F (core performance, pairwise common mode, all-three/patterns/unique catches, targeted, transitions, source)",
+    "path": "artifacts/research_protocol/synthesis/cross_regime_tables_v1.json",
+    "sha256": "d88ae3a3ff7012a28fee7025f5afe332ddbf4fe30a580c8dca390ff0b812bb2d"
+  },
+  "verifier_disposition": {
+    "experiment_id": "VERIFIER-RECOVERY-001",
+    "outcome": "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION",
+    "predeclaration_sha256": "282fa95bc43f52a4149af3ae88cd0d1d01058998e35134e1ce1eb31e03f9af98",
+    "protected_rule": "Exclude protected/final confirmation populations; benign set separately authorized and frozen.",
+    "scientific_queries": {
+      "D_G": 0,
+      "D_M-B": 0,
+      "D_S": 0,
+      "V1": 0,
+      "V2": 0,
+      "V3": 0,
+      "protected": 0
+    },
+    "status": "CLOSED_NOT_TESTED"
+  }
+}

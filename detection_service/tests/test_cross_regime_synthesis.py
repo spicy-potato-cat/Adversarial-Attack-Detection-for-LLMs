@@ -240,7 +240,15 @@ def test_frozen_scientific_artifacts_unchanged(metrics):
     for read in metrics['read_receipt']:
         assert s.sha256((c.ROOT / read['path']).read_bytes()) == read['sha256']
     changed = subprocess.check_output(['git', 'diff', '--name-only', c.ACCEPTED_R3['freeze_commit_sha'], 'HEAD'], cwd=c.ROOT).decode().split()
+    # Branch context: RQ3 integration and the research freeze add exactly these paths on final/research-freeze-001.
+    integrated = ('artifacts/research_protocol/verifier/failure_population_input_contract_v1.json',
+        'artifacts/research_protocol/verifier/rq3_development_disposition_v1.json',
+        'artifacts/research_protocol/verifier/verifier_phase2_execution_contract_v1.json',
+        'artifacts/research_protocol/verifier/verifier_result_schema_v1.json', 'artifacts/research_protocol/final/',
+        'detection_service/research_protocol/rq3_disposition.py', 'detection_service/research_protocol/verifier_phase2.py',
+        'detection_service/research_protocol/research_freeze', 'detection_service/tests/test_rq3_disposition.py',
+        'detection_service/tests/test_verifier_phase2.py', 'detection_service/tests/test_research_freeze.py')
     assert all(p.startswith(('artifacts/research_protocol/synthesis/', 'detection_service/research_protocol/phase1_',
         'detection_service/research_protocol/cross_regime_', 'detection_service/tests/test_phase1_synthesis.py',
-        'detection_service/tests/test_cross_regime_synthesis.py', 'reviews/')) for p in changed), changed
+        'detection_service/tests/test_cross_regime_synthesis.py', 'reviews/') + integrated) for p in changed), changed
     assert metrics['authoritative_queries'] == dict(ds_v2=0, dm_b_v1=0, dg_v1=0, verifier=0) and metrics['protected_access'] is False
