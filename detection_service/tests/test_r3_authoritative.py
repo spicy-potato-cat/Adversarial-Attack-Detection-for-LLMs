@@ -43,6 +43,12 @@ def test_search_matches_frozen_preparation(tmp_path, mode, parent):
     assert sum(r['event'] == 'ATTEMPTED' for r in rows) == sum(r['event'] == 'RETURNED' for r in rows) == actual['individual_detector_queries']
     assert actual['individual_detector_queries'] == 3 * actual['candidate_evaluations']
     assert g.inverse(actual['text'], actual['script']) == parent.encode('utf-8')
+    from detection_service.research_protocol.r3_reconstruction import reconstruct
+    proof = reconstruct(parent, actual, rows)
+    assert proof['status'] == 'PASS' and proof['additional_model_calls'] == 0
+    rows[0]['stage'] = 'CORRUPTED'
+    with pytest.raises(ValueError, match='QUERY_ORDER'):
+        reconstruct(parent, actual, rows)
 
 
 def test_failure_charged_and_returned_before_abort(tmp_path):

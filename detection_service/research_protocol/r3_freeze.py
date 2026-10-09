@@ -5,6 +5,7 @@ import json
 from detection_service.research_protocol import r3_inputs as i, r3_preparation as d
 from detection_service.research_protocol.r3_generator import inverse
 from detection_service.research_protocol.regime import create_manifest, require
+from detection_service.research_protocol.r3_readonly_cache import verified_reads
 
 TERMINALS = i.OUT / 'r3_terminal_manifest_v1.json'
 REGIME = i.OUT / 'r3_regime_manifest_v1.json'
@@ -15,7 +16,15 @@ def private_rows():
 
 
 def validate():
+    with verified_reads():
+        return _validate()
+
+
+def _validate():
+    from detection_service.research_protocol.prediction import PredictionRecord
+    from detection_service.research_protocol.r0_operational import verified_policy
     i.gate()
+    policy = verified_policy()
     parents, texts = i.frozen_parents(), i.private_texts()
     private = private_rows()
     require(len(private) == len(parents), 'R3_INCOMPLETE_TERMINAL_POPULATION')
@@ -35,6 +44,13 @@ def validate():
         original = texts[parent['sample_id']]
         require(inverse(result['text'], result['script']) == original.encode('utf-8'), 'R3_RECONSTRUCTION_FAILURE')
         require(d.sha(result['text']) == row['terminal_text_sha256'] and d.sha(original) == row['parent_text_sha256'], 'R3_TEXT_HASH_DRIFT')
+        require(row['sample_id'] == 'R3-' + d.sha(parent['sample_id']) and row['target_detector'] == 'ALL' and
+            row['truth_label'] == 1 and row['threat_regime'] == 'R3_ENSEMBLE_TARGETED' and
+            row['inverse_reconstruction'] is True and row['validity_status'] == 'VALID_REVERSIBLE_TEXT_PRESERVING',
+            'R3_TERMINAL_IDENTITY_OR_VALIDITY_CONFLICT')
+        require(row['mechanism'] == result['mechanism'] and row['analyzed_parent_character_end'] == result['coverage_end'] and
+            row['operators_used'] == list(dict.fromkeys(e['operator'] for e in result['script']['edits'])) and
+            d.objective(result['baseline_scores']) >= 0, 'R3_TERMINAL_MECHANISM_CONFLICT')
         require(all(row[k] == parent[k] for k in ('source', 'lineage_id', 'dataset_id', 'dataset_revision', 'attack_family')), 'R3_LINEAGE_OR_SOURCE_DRIFT')
         require(result['scores'] == row['terminal_scores'] and result['baseline_scores'] == row['baseline_scores'] and
             row['objective'] == d.objective(result['scores']) and row['success'] == (row['objective'] < 0), 'R3_OUTCOME_CONFLICT')
@@ -49,6 +65,7 @@ def validate():
         terminal = [r for r in events if r['event'] == 'TERMINAL']
         require(len(terminal) == 1 and terminal[0]['metadata'] == row, 'R3_TERMINAL_JOURNAL_CONFLICT')
         require(1 <= len(reservations) <= 61 and len(reservations) == len(evaluated) == row['candidate_evaluations'], 'R3_CANDIDATE_BUDGET_VIOLATION')
+        require([r['candidate_evaluation'] for r in reservations] == list(range(1, len(reservations) + 1)), 'R3_RESERVATION_SEQUENCE_CONFLICT')
         require(len(attempted) == len(returned) == 3 * len(reservations) == row['detector_calls'] <= 183, 'R3_DETECTOR_BUDGET_VIOLATION')
         require(len(logical) == row['logical_requests'] == len(result['trace']), 'R3_LOGICAL_JOURNAL_CONFLICT')
         require([r['candidate_id'] for r in logical] == [r['candidate_id'] for r in result['trace']] and
@@ -63,12 +80,22 @@ def validate():
                 all(a['sequence'] < b['sequence'] for a, b in zip(attempts, calls)) and
                 max(r['sequence'] for r in calls) < evaluation['sequence'], 'R3_JOURNAL_ORDER_CONFLICT')
             require(all(r['prediction']['status'] == 'OK' for r in calls), 'R3_NON_OK_JOURNAL')
+            for call, point in zip(calls, policy.manifest.points):
+                payload = dict(call['prediction'])
+                payload.pop('calibrated_probability')
+                record = PredictionRecord.model_validate(payload)
+                policy.validate_native(record)
+                require(record.detector_id == point.detector_id and record.truth_label == 1 and
+                    record.sample_id == 'R3-PROBE-' + call['candidate_id'] and
+                    record.metadata.evidence_kind == 'LIVE_FROZEN_MODEL', 'R3_CANONICAL_QUERY_IDENTITY_CONFLICT')
             scores = {r['detector']: r['prediction'][field] for r, field in zip(calls, d.FIELDS)}
             require(scores == evaluation['scores'] and d.objective(scores) == evaluation['objective'], 'R3_EVALUATION_JOURNAL_CONFLICT')
         require(any(r['candidate_id'] == row['terminal_text_sha256'] and r['scores'] == row['terminal_scores'] for r in evaluated), 'R3_TERMINAL_NOT_EVALUATED')
         require(all(e['operator'] in d.OPERATORS for e in result['script']['edits']) and
             result['script']['prefix'] in ('', *d.legacy.PREFIXES) and result['script']['suffix'] in ('', *d.legacy.SUFFIXES) and
             not (result['script']['prefix'] and result['script']['suffix']), 'R3_OPERATOR_CONTRACT_DRIFT')
+        from detection_service.research_protocol.r3_reconstruction import reconstruct
+        reconstruct(original, result, events)
         candidate_total += len(reservations)
         call_total += len(attempted)
         logical_total += len(logical)
@@ -80,8 +107,12 @@ def validate():
         max_candidate_evaluations_per_parent=max(r['candidate_evaluations'] for r in rows),
         max_detector_calls_per_parent=max(r['detector_calls'] for r in rows),
         journal_sha256=i.p.files.sha(journal_path), private_generation_sha256=i.p.files.sha(i.PRIVATE / 'generation_v1.jsonl'),
-        budget_violations=0, reconstruction_failures=0, verifier_queries=0, protected_queries=0,
-        synthetic_preflight_calls=3, post_freeze_scoring_calls='NOT_STARTED')
+        budget_violations=0, reconstruction_failures=0, deterministic_terminal_reconstructions=len(rows),
+        reconstruction_additional_model_calls=0, verifier_queries=0, protected_queries=0,
+        synthetic_preflight_calls=3, accounting_scope='GENERATION_AT_TERMINAL_FREEZE',
+        post_freeze_scoring_calls='NOT_STARTED_AT_THIS_BOUNDARY',
+        terminal_validation_code_sha256={name: i.p.files.sha(i.p.ROOT / 'detection_service/research_protocol' / name)
+            for name in ('r3_freeze.py', 'r3_reconstruction.py')})
 
 
 def regime_manifest(rows, completed_at, implementation):
