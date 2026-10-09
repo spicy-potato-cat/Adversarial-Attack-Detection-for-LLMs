@@ -1,0 +1,45 @@
+{
+  "actual_predictions": 2094,
+  "artifact_version": "r2_ds_prediction_manifest_v1",
+  "completed_at": "2026-10-08T22:21:20.240331+00:00",
+  "coverage": {
+    "coverage_rate": 1.0,
+    "expected_predictions": 2094,
+    "missing_decisions": 0,
+    "missing_predictions": 0,
+    "non_ok_predictions": 0,
+    "ok_predictions": 2094,
+    "received_predictions": 2094,
+    "status": "COMPLETE"
+  },
+  "detector_changes": false,
+  "detector_ok_counts": {
+    "dg_v1": 698,
+    "dm_b_v1": 698,
+    "ds_v2": 698
+  },
+  "ds_max_calibrated_score_delta": 0.0,
+  "ds_operational_mismatches": 0,
+  "duplicates": 0,
+  "expected_predictions": 2094,
+  "final_replay_query_journal": {
+    "path": "detection_service/outputs/r2-ds-001-authoritative-v2/final_replay_queries_v2.jsonl",
+    "queries": 698,
+    "sha256": "f7dde4c68547646f4547b5dbc407750b0015dd9ddbae4955ae0def4b8fdd3dd9"
+  },
+  "freeze_commit": "26caa88dc9cceab624b0005fdc0144480c12ac98",
+  "manifest_sha256": "e0da381531d7790d2c153fc8094dd615446add298f51cf7a0bc3ace7d1c57540",
+  "model_training": false,
+  "native_journal_sha256": {
+    "dg_v1": "194278dc15aa4e3fa9c9e315ffb71099202881124be90eab8fe0cb3d4cf8c061",
+    "dm_b_v1": "3e8fb9641b602afbf03d7c30c4bb43b946fc2bcdb638ffd7d47be8e6f5744b7b",
+    "ds_v2": "05c02c24e1f105108e1416574759af54307d9393eec3febd4d848790339f9fcf"
+  },
+  "prediction_sha256": "b4b3b03150b44d2b2db82ef6807506f9fe4a0066fe0c94fa255c204df99bab0d",
+  "run_id": "R2-DS-001-AUTHORITATIVE-V2-20261009",
+  "runtime_seconds": 809.5882203999936,
+  "scoring_code_commit": "26caa88dc9cceab624b0005fdc0144480c12ac98",
+  "started_at": "2026-10-08T22:07:50.652612+00:00",
+  "status": "PASS",
+  "threshold_changes": false
+}
