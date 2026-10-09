@@ -1,0 +1,24 @@
+{
+  "artifact_version": "r2_dg_final_disposition_v1",
+  "baseline_sha": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+  "blocks": {
+    "R3": false,
+    "final_synthesis": false,
+    "protected_confirmation": false,
+    "verifier_study": false
+  },
+  "classification": "OPTIONAL_EXPLORATORY_APPENDIX",
+  "executed": false,
+  "frozen_r1_evidence": {
+    "attack_population": 800,
+    "caught": 36,
+    "caught_inherited_lineages": 22,
+    "source_catches": {
+      "INJECAGENT_BASE": 1,
+      "LLMAIL_INJECT": 35
+    },
+    "source_manifest_sha256": "e147b2650f10db6a768701d850dcb57d78222fdda75dd97467a24bf011c5f681",
+    "source_prediction_sha256": "7282aea1e292c9f5bb853eb0473a3e2b34bfd919a6bbfab28bf0892b51acdc0e"
+  },
+  "future_execution": "Separate optional authorization; no automatic execution"
+}
