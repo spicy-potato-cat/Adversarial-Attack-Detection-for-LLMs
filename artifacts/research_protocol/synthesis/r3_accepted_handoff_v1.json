@@ -1,0 +1,111 @@
+{
+  "artifact_version": "r3_accepted_handoff_v1",
+  "artifacts": {
+    "all_three_failure_manifest": {
+      "member": null,
+      "path": "artifacts/research_protocol/r3/r3_all_three_failure_manifest_v1.json",
+      "sha256": "0e19da171825262881d89cb6f89016315082f254bb10cf02e316d0c9e39ce413"
+    },
+    "common_mode": {
+      "member": "core_metrics/common_mode",
+      "path": "artifacts/research_protocol/r3/r3_result_bundle_v1.json",
+      "sha256": "ebfe60e20e8089e373c0de61215a26c94784d4d9303d102af007c5915a51acf6"
+    },
+    "failure_patterns": {
+      "member": "core_metrics/failure_patterns",
+      "path": "artifacts/research_protocol/r3/r3_result_bundle_v1.json",
+      "sha256": "ebfe60e20e8089e373c0de61215a26c94784d4d9303d102af007c5915a51acf6"
+    },
+    "freeze_receipt": {
+      "member": null,
+      "path": "artifacts/research_protocol/r3/r3_final_acceptance_v1.json",
+      "sha256": "1161dd6c748451cb87d77761c1f6037c2194306297e94ed791701a85c578e416"
+    },
+    "prediction_manifest": {
+      "member": null,
+      "path": "artifacts/research_protocol/r3/r3_prediction_manifest_v1.json",
+      "sha256": "feac18f77d4608ba86c11fa26dd106205992337e0806391ed83dfd25cb922d4a"
+    },
+    "result_bundle": {
+      "member": null,
+      "path": "artifacts/research_protocol/r3/r3_result_bundle_v1.json",
+      "sha256": "ebfe60e20e8089e373c0de61215a26c94784d4d9303d102af007c5915a51acf6"
+    },
+    "uncertainty": {
+      "member": "uncertainty",
+      "path": "artifacts/research_protocol/r3/r3_result_bundle_v1.json",
+      "sha256": "ebfe60e20e8089e373c0de61215a26c94784d4d9303d102af007c5915a51acf6"
+    }
+  },
+  "commits": {
+    "freeze_commit_sha": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+    "integration_baseline_commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+    "scoring_commit": "875f2fcf5bea4b1c9b01c654609fcba1b5098375",
+    "seed_freeze_commit": "37fb38e9fd3d5be2f69e1961b6f80ff8c130e466",
+    "terminal_freeze_commit": "51b40432f12676bf0b62e8f04b9bf48eb0e612f1"
+  },
+  "freeze_commit_sha": "adc2f7077203a7c3a8b7b58122123fa27e2b0918",
+  "frozen": true,
+  "input_contract": "r3_result_input_contract_v1",
+  "protected_evaluation_accessed": false,
+  "schema_reconciliation": [
+    "The accepted R3 freeze predates separate component files: common_mode, failure_patterns and uncertainty are addressed as members of the committed result bundle and checked for exact equality.",
+    "prediction_batch_sha is bound by re-deriving the frozen core metrics from the committed prediction CSV and regime manifest (model-free), not by a manifest field.",
+    "The frozen failure manifest reports member_count (population_count equivalent), file SHA and membership SHA.",
+    "r3_final_acceptance_v1.json is the freeze receipt; its committed SHA map binds every R3 component.",
+    "All reads are committed Git objects at the freeze SHA; no frozen R3 file is created or modified."
+  ],
+  "source_schema": "ACCEPTED_R3_FREEZE_V1",
+  "status": "ACCEPTED",
+  "supplements": {
+    "analysis_provenance": {
+      "path": "artifacts/research_protocol/r3/r3_analysis_provenance_v1.json",
+      "sha256": "4af5b18beba4721d8cbe0aaeef3faf721f98d9b2d742613a447e681ee394e3e1"
+    },
+    "full_query_accounting": {
+      "path": "artifacts/research_protocol/r3/r3_full_query_accounting_v1.json",
+      "sha256": "10b2e3039d8fb41274b0bc9cde7ca92327096b734aff62f25e857da12c08c9bc"
+    },
+    "generation_results": {
+      "path": "artifacts/research_protocol/r3/r3_generation_results_v1.json",
+      "sha256": "074a283fba0fb43ae45d25e39d9e57b33c0acf15e22766b6b35b8275d31e5f5f"
+    },
+    "predictions": {
+      "path": "artifacts/research_protocol/r3/r3_predictions_v1.csv",
+      "sha256": "8cc5fa96ecc9801fd9b8440c30d3a9e5d5f49bd72ed86b41a85bc58a626cb235"
+    },
+    "query_accounting": {
+      "path": "artifacts/research_protocol/r3/r3_query_accounting_v1.json",
+      "sha256": "214a86b174761ced8b3bdfa26bfa478a997cbdacbb6e1bfc84eaac34a54f61d4"
+    },
+    "regime_manifest": {
+      "path": "artifacts/research_protocol/r3/r3_regime_manifest_v1.json",
+      "sha256": "1cfcb20ab40a95c1efa7b8b5943d4b9dc5c2985e56b98b74609dce404e8a87b2"
+    },
+    "runtime_preflight": {
+      "path": "artifacts/research_protocol/r3/r3_runtime_preflight_v1.json",
+      "sha256": "f93bf977b59826076a76f36fdf50d41d0271729a18d7d13d2c7a81fdd5bb1fed"
+    },
+    "seed_manifest": {
+      "path": "artifacts/research_protocol/r3/r3_seed_manifest_v1.json",
+      "sha256": "2650e958175254ce50bdc33a031f10d10664f8a85c6b4d238a82916eb7525951"
+    },
+    "source": {
+      "path": "artifacts/research_protocol/r3/r3_source_analysis_v1.json",
+      "sha256": "0fe9ced1650df4ec70661569fc55ad418ca5f93c4eb569853e1938cae1fdc553"
+    },
+    "summary": {
+      "path": "artifacts/research_protocol/r3/r3_summary_v1.json",
+      "sha256": "b5e38122a0b23b08df4e6794fc5c6b9e1803dcc88b48af901ed8fd0c43658cff"
+    },
+    "terminal_manifest": {
+      "path": "artifacts/research_protocol/r3/r3_terminal_manifest_v1.json",
+      "sha256": "d707e502c9a10636881ab4107a9f6e8283588a158555886780d68f1a4ce4f15a"
+    },
+    "transitions": {
+      "path": "artifacts/research_protocol/r3/r3_parent_child_transitions_v1.json",
+      "sha256": "215ba0c710f8d1452628c10d853cb3b83a9f04f3b86e982b0da8675c5e79dd17"
+    }
+  },
+  "verifier_authoritative_queries_at_freeze": 0
+}
