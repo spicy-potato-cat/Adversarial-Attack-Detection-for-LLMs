@@ -1,0 +1,651 @@
+{
+  "01_fnr": [
+    {
+      "regime": "R0",
+      "series": "ds_v2",
+      "status": "OBSERVED",
+      "value": 0.3825136612021858
+    },
+    {
+      "regime": "R0",
+      "series": "dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.01092896174863388
+    },
+    {
+      "regime": "R0",
+      "series": "dg_v1",
+      "status": "OBSERVED",
+      "value": 0.7704918032786885
+    },
+    {
+      "regime": "R1",
+      "series": "ds_v2",
+      "status": "OBSERVED",
+      "value": 0.1275
+    },
+    {
+      "regime": "R1",
+      "series": "dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R1",
+      "series": "dg_v1",
+      "status": "OBSERVED",
+      "value": 0.955
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "ds_v2",
+      "status": "OBSERVED",
+      "value": 0.05125
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "dg_v1",
+      "status": "OBSERVED",
+      "value": 0.9625
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "ds_v2",
+      "status": "OBSERVED",
+      "value": 0.1489971346704871
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "dg_v1",
+      "status": "OBSERVED",
+      "value": 0.9555873925501432
+    },
+    {
+      "regime": "R3",
+      "series": "ds_v2",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "dm_b_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "dg_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    }
+  ],
+  "02_pairwise_jfn": [
+    {
+      "regime": "R0",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.01092896174863388
+    },
+    {
+      "regime": "R0",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.28415300546448086
+    },
+    {
+      "regime": "R0",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.01092896174863388
+    },
+    {
+      "regime": "R1",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R1",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.12625
+    },
+    {
+      "regime": "R1",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.05
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.14613180515759314
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R3",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    }
+  ],
+  "03_ejf": [
+    {
+      "regime": "R0",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.006748484577025292
+    },
+    {
+      "regime": "R0",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": -0.010570635133924589
+    },
+    {
+      "regime": "R0",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.002508286302965153
+    },
+    {
+      "regime": "R1",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R1",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.004487500000000005
+    },
+    {
+      "regime": "R1",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0006718750000000023
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0037520217403798073
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R3",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    }
+  ],
+  "04_fn_jaccard": [
+    {
+      "regime": "R0",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.02857142857142857
+    },
+    {
+      "regime": "R0",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.3270440251572327
+    },
+    {
+      "regime": "R0",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.014184397163120567
+    },
+    {
+      "regime": "R1",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R1",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.13202614379084968
+    },
+    {
+      "regime": "R1",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.05188067444876784
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.15246636771300448
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R3",
+      "series": "ds_v2 \u00d7 dm_b_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "ds_v2 \u00d7 dg_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "dm_b_v1 \u00d7 dg_v1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    }
+  ],
+  "05_all_three_jfn": [
+    {
+      "ci95": {
+        "ci_lower": 0.0,
+        "ci_upper": 0.0273224043715847,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.01092896174863388,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      "regime": "R0",
+      "series": "all_three",
+      "status": "OBSERVED",
+      "value": 0.01092896174863388
+    },
+    {
+      "ci95": {
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.0,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      "regime": "R1",
+      "series": "all_three",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "ci95": {
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.0,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      "regime": "R2-DMB",
+      "series": "all_three",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "ci95": {
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.0,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      "regime": "R2-D_S",
+      "series": "all_three",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "ci95": {
+        "status": "NOT_YET_OBSERVED"
+      },
+      "regime": "R3",
+      "series": "all_three",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    }
+  ],
+  "06_targeted_evasion": [
+    {
+      "regime": "R2-DMB",
+      "series": "dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "ds_v2",
+      "status": "OBSERVED",
+      "value": 0.1489971346704871
+    },
+    {
+      "regime": "R3",
+      "series": "ALL",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    }
+  ],
+  "07_transfer_matrix": [
+    {
+      "regime": "R2-DMB",
+      "series": "dm_b_v1 \u2192 ds_v2",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "dm_b_v1 \u2192 dg_v1",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "ds_v2 \u2192 dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "ds_v2 \u2192 dg_v1",
+      "status": "OBSERVED",
+      "value": 0.9807692307692307
+    },
+    {
+      "regime": "R3",
+      "series": "ALL",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    }
+  ],
+  "08_source_failure": [
+    {
+      "lineage_count": 1,
+      "regime": "R1",
+      "series": "INJECAGENT_BASE/ds_v2",
+      "status": "OBSERVED",
+      "uncertainty_status": "ONE_CLUSTER_NOT_INDEPENDENT_SOURCE_INFERENCE",
+      "value": 0.215
+    },
+    {
+      "lineage_count": 1,
+      "regime": "R1",
+      "series": "INJECAGENT_BASE/dm_b_v1",
+      "status": "OBSERVED",
+      "uncertainty_status": "ONE_CLUSTER_NOT_INDEPENDENT_SOURCE_INFERENCE",
+      "value": 0.0
+    },
+    {
+      "lineage_count": 1,
+      "regime": "R1",
+      "series": "INJECAGENT_BASE/dg_v1",
+      "status": "OBSERVED",
+      "uncertainty_status": "ONE_CLUSTER_NOT_INDEPENDENT_SOURCE_INFERENCE",
+      "value": 0.9975
+    },
+    {
+      "lineage_count": 96,
+      "regime": "R1",
+      "series": "LLMAIL_INJECT/ds_v2",
+      "status": "OBSERVED",
+      "uncertainty_status": "NO_ADDITIONAL_FAMILY_CI_REQUESTED",
+      "value": 0.04
+    },
+    {
+      "lineage_count": 96,
+      "regime": "R1",
+      "series": "LLMAIL_INJECT/dm_b_v1",
+      "status": "OBSERVED",
+      "uncertainty_status": "NO_ADDITIONAL_FAMILY_CI_REQUESTED",
+      "value": 0.0
+    },
+    {
+      "lineage_count": 96,
+      "regime": "R1",
+      "series": "LLMAIL_INJECT/dg_v1",
+      "status": "OBSERVED",
+      "uncertainty_status": "NO_ADDITIONAL_FAMILY_CI_REQUESTED",
+      "value": 0.9125
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "INJECAGENT_BASE/dg_v1",
+      "status": "OBSERVED",
+      "value": 0.9925
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "INJECAGENT_BASE/dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "INJECAGENT_BASE/ds_v2",
+      "status": "OBSERVED",
+      "value": 0.0975
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "LLMAIL_INJECT/dg_v1",
+      "status": "OBSERVED",
+      "value": 0.9325
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "LLMAIL_INJECT/dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-DMB",
+      "series": "LLMAIL_INJECT/ds_v2",
+      "status": "OBSERVED",
+      "value": 0.005
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "INJECAGENT_BASE/dg_v1",
+      "status": "OBSERVED",
+      "value": 0.9936305732484076
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "INJECAGENT_BASE/dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "INJECAGENT_BASE/ds_v2",
+      "status": "OBSERVED",
+      "value": 0.23248407643312102
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "LLMAIL_INJECT/dg_v1",
+      "status": "OBSERVED",
+      "value": 0.9244791666666666
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "LLMAIL_INJECT/dm_b_v1",
+      "status": "OBSERVED",
+      "value": 0.0
+    },
+    {
+      "regime": "R2-D_S",
+      "series": "LLMAIL_INJECT/ds_v2",
+      "status": "OBSERVED",
+      "value": 0.08072916666666667
+    },
+    {
+      "regime": "R0",
+      "series": "source decomposition unavailable",
+      "status": "UNDEFINED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "source",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    }
+  ],
+  "09_verifier_recovery": [
+    {
+      "regime": "R3",
+      "series": "V1",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "V2",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    },
+    {
+      "regime": "R3",
+      "series": "V3",
+      "status": "NOT_YET_OBSERVED",
+      "value": null
+    }
+  ]
+}

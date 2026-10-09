@@ -1,0 +1,102 @@
+{
+  "attack_only": "FPR, ROC-AUC, AP NOT_APPLICABLE; TN/FP null",
+  "contract_version": "synthesis_table_contract_v1",
+  "export": "generated/tables_v1.json",
+  "formulas": {
+    "EJF": "JFN - independence_reference",
+    "ETR": "joint_evasion_count / target_evasion_count",
+    "FNR": "FN/attacks",
+    "FN_Jaccard": "shared_FN / union_FN",
+    "JFN": "shared_FN/attacks",
+    "all_three_JFN": "all_three_FN/attacks",
+    "conditional_recovery": "unique_catch / both_others_miss",
+    "independence_reference": "FNR_i * FNR_j; reference only, no independence claim",
+    "target_evasion": "target_evasion_count / valid_attempt_count",
+    "unique_catch": "count with detector catch and both others miss"
+  },
+  "generator": "phase1_synthesis.tables",
+  "r3_missing": "NOT_YET_OBSERVED, null; never zero",
+  "rate_unit": "fraction",
+  "tables": {
+    "A": {
+      "columns": [
+        "ap",
+        "attack_count",
+        "benign_count",
+        "detector_id",
+        "fn",
+        "fnr",
+        "fp",
+        "fpr",
+        "recall",
+        "regime",
+        "roc_auc",
+        "status",
+        "threshold",
+        "threshold_id",
+        "tn",
+        "tp"
+      ],
+      "description": "Core detector performance"
+    },
+    "B": {
+      "columns": [
+        "attack_count",
+        "ejf",
+        "fn_jaccard",
+        "independence_reference",
+        "jfn",
+        "left_detector",
+        "regime",
+        "right_detector",
+        "shared_fn",
+        "status",
+        "union_fn"
+      ],
+      "description": "Pairwise common-mode failure"
+    },
+    "C": {
+      "columns": [
+        "all_three_fn",
+        "all_three_jfn",
+        "attack_count",
+        "ci95",
+        "regime",
+        "status"
+      ],
+      "description": "All-three failure and stored 95% interval"
+    },
+    "D": {
+      "columns": [
+        "attack_count",
+        "regime",
+        "status",
+        "target_detector",
+        "target_evasion_count",
+        "target_evasion_lineage_count",
+        "target_evasion_rate",
+        "transfers",
+        "unique_lineage_count",
+        "valid_attempt_count",
+        "valid_attempt_lineage_count"
+      ],
+      "description": "Target evasion and ETR"
+    },
+    "E": {
+      "columns": [
+        "attack_count",
+        "catch_to_catch",
+        "catch_to_miss",
+        "detector_id",
+        "miss_to_catch",
+        "miss_to_miss",
+        "regime",
+        "status",
+        "transition_status"
+      ],
+      "description": "Frozen paired parent-child transitions"
+    }
+  },
+  "uncertainty": "Stored frozen intervals and generating NumPy/config/hash provenance copied unchanged; no resampling",
+  "undefined": "value=null/status=UNDEFINED; denominator retained"
+}

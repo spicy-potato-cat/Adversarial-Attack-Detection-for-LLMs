@@ -1,0 +1,327 @@
+{
+  "$defs": {
+    "DetectorRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "ap": {
+          "$ref": "#/$defs/MetricCell"
+        },
+        "detector_id": {
+          "title": "Detector Id",
+          "type": "string"
+        },
+        "fn": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Fn"
+        },
+        "fnr": {
+          "$ref": "#/$defs/MetricCell"
+        },
+        "fp": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Fp"
+        },
+        "fpr": {
+          "$ref": "#/$defs/MetricCell"
+        },
+        "recall": {
+          "$ref": "#/$defs/MetricCell"
+        },
+        "roc_auc": {
+          "$ref": "#/$defs/MetricCell"
+        },
+        "threshold": {
+          "title": "Threshold",
+          "type": "number"
+        },
+        "threshold_id": {
+          "title": "Threshold Id",
+          "type": "string"
+        },
+        "tn": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Tn"
+        },
+        "tp": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Tp"
+        }
+      },
+      "required": [
+        "detector_id",
+        "threshold_id",
+        "threshold",
+        "tp",
+        "fn",
+        "tn",
+        "fp",
+        "recall",
+        "fnr",
+        "fpr",
+        "roc_auc",
+        "ap"
+      ],
+      "title": "DetectorRecord",
+      "type": "object"
+    },
+    "MetricCell": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "OBSERVED",
+            "UNDEFINED",
+            "NOT_APPLICABLE",
+            "NOT_YET_OBSERVED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "status",
+        "value"
+      ],
+      "title": "MetricCell",
+      "type": "object"
+    },
+    "PairRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "ejf": {
+          "$ref": "#/$defs/MetricCell"
+        },
+        "fn_jaccard": {
+          "$ref": "#/$defs/MetricCell"
+        },
+        "independence_reference": {
+          "$ref": "#/$defs/MetricCell"
+        },
+        "jfn": {
+          "$ref": "#/$defs/MetricCell"
+        },
+        "left_detector": {
+          "title": "Left Detector",
+          "type": "string"
+        },
+        "right_detector": {
+          "title": "Right Detector",
+          "type": "string"
+        },
+        "shared_fn": {
+          "title": "Shared Fn",
+          "type": "integer"
+        },
+        "union_fn": {
+          "title": "Union Fn",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "left_detector",
+        "right_detector",
+        "shared_fn",
+        "union_fn",
+        "jfn",
+        "independence_reference",
+        "ejf",
+        "fn_jaccard"
+      ],
+      "title": "PairRecord",
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "all_three_fn": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "All Three Fn"
+    },
+    "all_three_jfn": {
+      "$ref": "#/$defs/MetricCell"
+    },
+    "attack_count": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Attack Count"
+    },
+    "benign_count": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Benign Count"
+    },
+    "detectors": {
+      "items": {
+        "$ref": "#/$defs/DetectorRecord"
+      },
+      "title": "Detectors",
+      "type": "array"
+    },
+    "failure_patterns": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Failure Patterns",
+      "type": "array"
+    },
+    "lineage": {
+      "additionalProperties": true,
+      "title": "Lineage",
+      "type": "object"
+    },
+    "pairs": {
+      "items": {
+        "$ref": "#/$defs/PairRecord"
+      },
+      "title": "Pairs",
+      "type": "array"
+    },
+    "parent_child": {
+      "additionalProperties": true,
+      "title": "Parent Child",
+      "type": "object"
+    },
+    "population_type": {
+      "enum": [
+        "MIXED",
+        "ATTACK_ONLY",
+        "NOT_YET_OBSERVED"
+      ],
+      "title": "Population Type",
+      "type": "string"
+    },
+    "provenance": {
+      "additionalProperties": true,
+      "title": "Provenance",
+      "type": "object"
+    },
+    "recovery": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Recovery",
+      "type": "array"
+    },
+    "regime_id": {
+      "title": "Regime Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "canonical_regime_v1",
+      "default": "canonical_regime_v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_family": {
+      "additionalProperties": true,
+      "title": "Source Family",
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "OBSERVED",
+        "AWAITING_FROZEN_R3_BUNDLE"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "targeted": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Targeted",
+      "type": "array"
+    },
+    "uncertainty": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Uncertainty",
+      "type": "array"
+    }
+  },
+  "required": [
+    "regime_id",
+    "status",
+    "population_type",
+    "attack_count",
+    "benign_count",
+    "detectors",
+    "pairs",
+    "all_three_fn",
+    "all_three_jfn",
+    "recovery",
+    "failure_patterns",
+    "targeted",
+    "source_family",
+    "parent_child",
+    "uncertainty",
+    "lineage",
+    "provenance"
+  ],
+  "title": "RegimeRecord",
+  "type": "object"
+}
