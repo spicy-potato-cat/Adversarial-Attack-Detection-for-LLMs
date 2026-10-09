@@ -25,7 +25,23 @@ def test_frozen_b2_and_fixture():
     assert d["feature_names"] == list(core.features.names("B2"))
     assert driver.file_hash(driver.ROOT / driver.baseline.FOLD_PATH) == driver.source.FOLDS
     assert driver.file_hash(driver.ROOT / "data_governance/manifests/development_partition_manifest_v1.csv") == driver.source.MANIFEST
-    driver.verify_source()
+    assert driver.git('branch', '--show-current') == 'exp/r2-ds-001'
+    metadata = driver.read(driver.OUT / 'run_metadata_v1.json')
+    accepted = driver.read(driver.OUT / 'acceptance_evidence_v1.json')
+    assert accepted['status'] == 'PASS'
+    assert metadata['start_commit'] == driver.START
+    assert metadata['code_commit'] == accepted['model_run_code_commit']
+    assert driver.git('merge-base', '--is-ancestor', driver.START, metadata['code_commit']) == ''
+    assert driver.git('merge-base', '--is-ancestor', metadata['code_commit'], 'HEAD') == ''
+    driver.baseline.verify_hashes(driver.OUT, metadata['artifact_sha256'])
+    driver.baseline.verify_hashes(driver.OUT, accepted['verified_sha256'])
+    # Runtime provenance stays frozen; test code may evolve after the model run.
+    runtime = {path: digest for path, digest in metadata['code_sha256'].items()
+               if not path.startswith('detection_service/tests/')}
+    driver.baseline.verify_hashes(driver.ROOT, runtime)
+    assert metadata['B2_schema_sha256'] == core.B2_SHA
+    assert metadata['manifest_sha256'] == driver.source.MANIFEST
+    assert metadata['fold_sha256'] == driver.source.FOLDS
 
 
 def test_exact_scorer_configs():

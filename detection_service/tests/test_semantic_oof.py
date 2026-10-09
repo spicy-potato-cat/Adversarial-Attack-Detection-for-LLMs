@@ -434,8 +434,15 @@ def test_dirty_tree_cannot_start_full_run(monkeypatch):
         pipeline.committed_freeze(require_clean=True)
 
 
-def test_run_stops_at_preflight_before_loading_text_or_training(monkeypatch):
+def test_run_stops_at_preflight_before_loading_text_or_training(monkeypatch, tmp_path):
     from detection_service.scripts import semantic_oof_baseline as pipeline
+    historical_output = pipeline.OUTPUT
+    acceptance = json.loads((historical_output / 'acceptance_manifest_v1.json').read_text())
+    marker = historical_output / 'run_started_v1.json'
+    marker_hash = file_hash(marker)
+    assert marker_hash == acceptance['original_input_sha256']['run_started_v1.json']
+    # Exercise the pre-run gate in a fresh fixture, not the accepted run directory.
+    monkeypatch.setattr(pipeline, 'OUTPUT', tmp_path / 'fresh-oof-output')
     def blocked():
         raise ValueError("STOP: intentionally uncommitted preflight")
     def forbidden(*args, **kwargs):
@@ -445,6 +452,8 @@ def test_run_stops_at_preflight_before_loading_text_or_training(monkeypatch):
     monkeypatch.setattr(pipeline, "run_folds", forbidden)
     with pytest.raises(ValueError, match="uncommitted"):
         pipeline.run()
+    assert not pipeline.OUTPUT.exists()
+    assert file_hash(marker) == marker_hash
 
 
 def test_preflight_plan_deterministic_and_single_class_rejected():

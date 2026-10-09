@@ -1,0 +1,54 @@
+{
+  "acceptance_supersedes_only_test_context_blockers": true,
+  "baseline_preservation": {
+    "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+    "hash_checks": 96,
+    "status": "PASS",
+    "tracked_baseline_diff": "EMPTY"
+  },
+  "bootstrap_recomputed": false,
+  "delta_receipts": [
+    {
+      "passed": 3,
+      "path": "tmp/r2_ds_context_three.xml",
+      "sha256": "6d75892054445073fc2bdacfa6363ff8ea84f8d479d2955d3c0be9944eacda1d"
+    },
+    {
+      "passed": 103,
+      "path": "tmp/r2_ds_context_modules.xml",
+      "sha256": "54ae70a212a49945c4458a33f7f412e6ef1bd840508c4693614c7d5690f01dca"
+    }
+  ],
+  "generation_rerun": false,
+  "historical_report_preserved": true,
+  "new_scientific_queries": {
+    "D_G": 0,
+    "D_M_B": 0,
+    "D_S": 0,
+    "R3": 0,
+    "verifier": 0
+  },
+  "predictions_rescored": false,
+  "prior_full_suite": {
+    "failed": 3,
+    "passed": 1559,
+    "rerun": false,
+    "skipped": 0
+  },
+  "protocol_patch_hash_checks": 262,
+  "r1_hash_checks": 28,
+  "r2_dmb_hash_checks": 252,
+  "release_preservation": {
+    "R1_started": false,
+    "hash_checks": 118,
+    "status": "PASS"
+  },
+  "scientific_files_unchanged": 56,
+  "snapshot_sha256": "8af3939a12925f37b5562c1881a0d07a620e8ad62af733bcfdeca0af451c883f",
+  "source_hash_checks": 503,
+  "starting_HEAD": "913ee734cb48eb8404e8f6ed62456eb07950246e",
+  "status": "PASS",
+  "track_b": "6c7173b70a10d1506d92360b421eaceb5e56405e",
+  "track_b_reflog_unchanged": true,
+  "verdict": "R2_DS_COMPLETE_READY_FOR_MERGE_GATE_1"
+}

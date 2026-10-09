@@ -197,4 +197,14 @@ def test_logical_cache_hits_are_durable_without_extra_model_calls(tmp_path):
 
 
 def test_track_b_preservation():
-    assert p.git('rev-parse','prep/r3-verifier-001').decode().strip()=='0cd2d506380cbb3ec513207e4fa66ad422d2b3f2'
+    from detection_service.research_protocol.r2_ds_track_b_reference_v1 import verified
+    receipt = verified()
+    assert receipt['branch'] == 'prep/r3-verifier-001'
+    assert receipt['original_task_reference'] == '0cd2d506380cbb3ec513207e4fa66ad422d2b3f2'
+    assert receipt['approved_untouched_reference'] == '6c7173b70a10d1506d92360b421eaceb5e56405e'
+    assert not receipt['track_b_modified_by_this_task']
+    assert not receipt['scientific_protocol_changed']
+    assert p.git('branch', '--show-current').decode().strip() == 'exp/r2-ds-001'
+    before = p.files.read_json(p.ROOT / 'reviews/evidence/r2_ds_acceptance_context/before_v1.json')
+    assert p.git('reflog', 'show', '--format=%H %gs', receipt['branch']).decode() == before['track_b_reflog']
+    assert all(p.digest(name) == expected for name, expected in before['sha256'].items())
