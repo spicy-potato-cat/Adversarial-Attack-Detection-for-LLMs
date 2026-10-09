@@ -1,0 +1,62 @@
+{
+  "integration_baseline_commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+  "model_run_commit": "2f6622e5575e766546901bf24573e5b0f51ecf5c",
+  "protected_queries": 0,
+  "scoring_commit": "875f2fcf5bea4b1c9b01c654609fcba1b5098375",
+  "seed_freeze_commit": "37fb38e9fd3d5be2f69e1961b6f80ff8c130e466",
+  "sha256": {
+    "artifacts/research_protocol/r3/phase1_integration_baseline_v1.json": "934fc487b26fe214dfdbfcbe48e8ea970c9385dac7a75887d573e2aa03b36a8e",
+    "artifacts/research_protocol/r3/r3_all_three_failure_manifest_v1.json": "0e19da171825262881d89cb6f89016315082f254bb10cf02e316d0c9e39ce413",
+    "artifacts/research_protocol/r3/r3_analysis_provenance_v1.json": "4af5b18beba4721d8cbe0aaeef3faf721f98d9b2d742613a447e681ee394e3e1",
+    "artifacts/research_protocol/r3/r3_attack_only_guard_v1.json": "3e95e2a8f4bdc08555a54874638036663b127284d11e7840e6a4500049ad8fdc",
+    "artifacts/research_protocol/r3/r3_authoritative_run_receipt_v1.json": "dfd8f45110e88e2f5076d953bbffafb20fff60c983186184d2d72cdad20ac690",
+    "artifacts/research_protocol/r3/r3_coverage_analysis_v1.json": "ad04351edd73262ed20a738c880dc9f88f85d0e1050e84bac337258401ee4a68",
+    "artifacts/research_protocol/r3/r3_final_validation_v1.json": "3a3814529123d941eaecf7f7b9d0ea521700267d531e6b66d1c71949ae8f5183",
+    "artifacts/research_protocol/r3/r3_full_query_accounting_v1.json": "10b2e3039d8fb41274b0bc9cde7ca92327096b734aff62f25e857da12c08c9bc",
+    "artifacts/research_protocol/r3/r3_generation_results_v1.json": "074a283fba0fb43ae45d25e39d9e57b33c0acf15e22766b6b35b8275d31e5f5f",
+    "artifacts/research_protocol/r3/r3_generator_contract_v1.json": "486e425ef68181be23502a3e646197f58b3ccaf5b2ec48c025f2ead1b184ddab",
+    "artifacts/research_protocol/r3/r3_matched_comparison_v1.json": "da1df05a371a242f14a1b7a07713c1eb0693fd85a18736aecfe829dd281e9576",
+    "artifacts/research_protocol/r3/r3_operator_analysis_v1.json": "907c2a0d00f39c9b56b32e2ef4e287a3f2f38bc0b03d9315b91cec5d5594fbb6",
+    "artifacts/research_protocol/r3/r3_parent_child_transitions_v1.json": "215ba0c710f8d1452628c10d853cb3b83a9f04f3b86e982b0da8675c5e79dd17",
+    "artifacts/research_protocol/r3/r3_predeclaration_v1.json": "084a24344c51683a222ca88d0abad417f40a3777980dd8f3c910dfdff2f4f969",
+    "artifacts/research_protocol/r3/r3_prediction_manifest_v1.json": "feac18f77d4608ba86c11fa26dd106205992337e0806391ed83dfd25cb922d4a",
+    "artifacts/research_protocol/r3/r3_predictions_v1.csv": "8cc5fa96ecc9801fd9b8440c30d3a9e5d5f49bd72ed86b41a85bc58a626cb235",
+    "artifacts/research_protocol/r3/r3_query_accounting_v1.json": "214a86b174761ced8b3bdfa26bfa478a997cbdacbb6e1bfc84eaac34a54f61d4",
+    "artifacts/research_protocol/r3/r3_regime_manifest_v1.json": "1cfcb20ab40a95c1efa7b8b5943d4b9dc5c2985e56b98b74609dce404e8a87b2",
+    "artifacts/research_protocol/r3/r3_result_bundle_v1.json": "ebfe60e20e8089e373c0de61215a26c94784d4d9303d102af007c5915a51acf6",
+    "artifacts/research_protocol/r3/r3_runtime_preflight_v1.json": "f93bf977b59826076a76f36fdf50d41d0271729a18d7d13d2c7a81fdd5bb1fed",
+    "artifacts/research_protocol/r3/r3_seed_manifest_v1.json": "2650e958175254ce50bdc33a031f10d10664f8a85c6b4d238a82916eb7525951",
+    "artifacts/research_protocol/r3/r3_seed_policy_v1.json": "b6dc869d2e81c16d644115d15b5a52089b028340428fb4e600cca56186e09b56",
+    "artifacts/research_protocol/r3/r3_source_analysis_v1.json": "0fe9ced1650df4ec70661569fc55ad418ca5f93c4eb569853e1938cae1fdc553",
+    "artifacts/research_protocol/r3/r3_summary_v1.json": "b5e38122a0b23b08df4e6794fc5c6b9e1803dcc88b48af901ed8fd0c43658cff",
+    "artifacts/research_protocol/r3/r3_terminal_manifest_v1.json": "d707e502c9a10636881ab4107a9f6e8283588a158555886780d68f1a4ce4f15a",
+    "reviews/R3_ENSEMBLE_AWARE_RESULTS_v1.md": "00a9020f3d7eaabbca270f4818c45398d8165dfdafbf7720612d739fb1ca7c1e"
+  },
+  "status": "PASS",
+  "terminal_freeze_commit": "51b40432f12676bf0b62e8f04b9bf48eb0e612f1",
+  "test_receipts": [
+    {
+      "failed": 0,
+      "passed": 47,
+      "path": "tmp/r3_pre_run.xml",
+      "sha256": "5dd01d43d13d1f51fc21625e2e7c78c2e52fdda9a21653eeabf74dfd5d877235",
+      "skipped": 0
+    },
+    {
+      "failed": 0,
+      "passed": 166,
+      "path": "tmp/r3_metrics_regression.xml",
+      "sha256": "64aa04dfd0db91645f0e8bcd9514a7005842dac1c63a9d98db64a39715c00154",
+      "skipped": 0
+    },
+    {
+      "failed": 0,
+      "passed": 50,
+      "path": "tmp/r3_post_run.xml",
+      "sha256": "001f6c9a02971069d4354b2f00d624b4eea29921c11c42411d668f9fb9b4b722",
+      "skipped": 0
+    }
+  ],
+  "verdict": "R3_COMPLETE_EMPTY_FAILURE_POPULATION_READY_FOR_PHASE2_REVIEW",
+  "verifier_queries": 0
+}

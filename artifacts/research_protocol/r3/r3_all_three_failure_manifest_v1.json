@@ -1,0 +1,64 @@
+{
+  "artifact_version": "r3_all_three_failure_manifest_v1",
+  "deduplication": "One member per (regime,parent_sample_id,terminal strict UTF8 hash).",
+  "detector_identities": [
+    {
+      "detector_id": "ds_v2",
+      "label": "D_S",
+      "model_revision": null,
+      "model_sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157",
+      "reference_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+      "threshold": 0.5585373573968287,
+      "threshold_id": "ds_v2_op3_cal_v1"
+    },
+    {
+      "detector_id": "dm_b_v1",
+      "label": "D_M-B",
+      "model_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+      "model_sha256": "0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844",
+      "reference_revision": null,
+      "threshold": 0.0004967087297700347,
+      "threshold_id": "dm_b_v1_op3_raw_v1"
+    },
+    {
+      "detector_id": "dg_v1",
+      "label": "D_G",
+      "model_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+      "model_sha256": "5120e30bcd536ce285345d9ec104bea6bd6e8f94365b99a340c764f417ea5fa1",
+      "reference_revision": null,
+      "threshold": 0.21291141211986545,
+      "threshold_id": "dg_v1_op3_raw_v1"
+    }
+  ],
+  "detector_manifest_sha256": "2da5aa92cb14ac19cd49fa7150e7a4ef79b59e1e5fb1aa8ba4148456da618f31",
+  "empty": true,
+  "freeze_before_verifier_inference": true,
+  "frozen_R2_failure_populations": {
+    "R2_DMB": {
+      "count": 0,
+      "prediction_sha256": "a3b642cff928fcb4bc4500703636e73d13b42492042a31e03ddc379f8ebc5e91"
+    },
+    "R2_DS": {
+      "count": 0,
+      "prediction_sha256": "b4b3b03150b44d2b2db82ef6807506f9fe4a0066fe0c94fa255c204df99bab0d"
+    }
+  },
+  "member_count": 0,
+  "members": [],
+  "membership_hash_definition": "SHA256 canonical ASCII JSON of members sorted by (parent_sample_id,terminal_text_sha256); sorted keys, compact separators, no newline.",
+  "membership_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "prediction_commit": "875f2fcf5bea4b1c9b01c654609fcba1b5098375",
+  "prediction_sha256": "8cc5fa96ecc9801fd9b8440c30d3a9e5d5f49bd72ed86b41a85bc58a626cb235",
+  "protected_evaluation_accessed": false,
+  "raw_text_policy": "LOCAL_ONLY_IGNORED; exact bytes in frozen generation journal",
+  "regime_sha256": "1cfcb20ab40a95c1efa7b8b5943d4b9dc5c2985e56b98b74609dce404e8a87b2",
+  "status": "EMPTY",
+  "terminal_manifest_sha256": "d707e502c9a10636881ab4107a9f6e8283588a158555886780d68f1a4ce4f15a",
+  "thresholds": {
+    "D_G": 0.21291141211986545,
+    "D_M-B": 0.0004967087297700347,
+    "D_S": 0.5585373573968287
+  },
+  "verifier_authoritative_queries": 0,
+  "verifier_contract_sha256": "282fa95bc43f52a4149af3ae88cd0d1d01058998e35134e1ce1eb31e03f9af98"
+}

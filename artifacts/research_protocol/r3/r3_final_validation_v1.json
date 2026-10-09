@@ -1,0 +1,57 @@
+{
+  "attack_contract_changed": false,
+  "integrity_summary": {
+    "R0": "PASS",
+    "R1": "PASS",
+    "R2_DMB": "PASS",
+    "R2_DS": "PASS",
+    "baseline": {
+      "evidence_sha256": "4b42dd44f2604f12e099f1fc60decef866c64d036c9a6554fcd3e049513b8a21",
+      "hash_checks": 96,
+      "status": "PASS",
+      "tracked_baseline_diff": "EMPTY"
+    },
+    "old_tracked_files": 676,
+    "protocol_patch_hash_checks": 262,
+    "r1_evidence_hash_checks": 28,
+    "r2_dmb_evidence_hash_checks": 24,
+    "r2_dmb_source_hash_checks": 252,
+    "r2_ds_historical_hash_checks": 56,
+    "release": {
+      "R1_started": false,
+      "hash_checks": 118,
+      "status": "PASS"
+    },
+    "source_hash_checks": 503,
+    "status": "PASS"
+  },
+  "models_changed": false,
+  "portability_gate": "DEFERRED_NOT_BLOCKING_PHASE1",
+  "protected_queries": 0,
+  "status": "PASS",
+  "test_receipts": [
+    {
+      "failed": 0,
+      "passed": 47,
+      "path": "tmp/r3_pre_run.xml",
+      "sha256": "5dd01d43d13d1f51fc21625e2e7c78c2e52fdda9a21653eeabf74dfd5d877235",
+      "skipped": 0
+    },
+    {
+      "failed": 0,
+      "passed": 166,
+      "path": "tmp/r3_metrics_regression.xml",
+      "sha256": "64aa04dfd0db91645f0e8bcd9514a7005842dac1c63a9d98db64a39715c00154",
+      "skipped": 0
+    },
+    {
+      "failed": 0,
+      "passed": 50,
+      "path": "tmp/r3_post_run.xml",
+      "sha256": "001f6c9a02971069d4354b2f00d624b4eea29921c11c42411d668f9fb9b4b722",
+      "skipped": 0
+    }
+  ],
+  "thresholds_changed": false,
+  "verifier_queries": 0
+}

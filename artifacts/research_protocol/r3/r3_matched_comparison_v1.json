@@ -1,0 +1,2628 @@
+{
+  "R2_DMB": {
+    "full_all_three_FN": 0,
+    "full_population": 800,
+    "interpretation": "Descriptive matched-parent accounting, not an architecture-controlled or causal comparison; seed sets/objectives/coverage differ.",
+    "matched_R3_all_three_FN": 0,
+    "matched_parent_count": 97,
+    "matched_past_all_three_FN": 0,
+    "prediction_sha256": "a3b642cff928fcb4bc4500703636e73d13b42492042a31e03ddc379f8ebc5e91",
+    "rows": [
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        },
+        "inherited_lineage": "R1-LG-17d3bd95345061aba9ca639132aea69b33aac6a5e64a48fdc1710eebce3ad0be",
+        "parent_sample_id": "R1-DS-TXT-005-a6afe8430556d61f06132545a4690dff49a324a4815908d17edce2b687e6c116",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-5564605288a40ec78c160095a4161dcf9d64fe7557977faeaade43d40d5330fc",
+        "parent_sample_id": "R1-DS-TXT-011-0029161c4e17456b15167f2595bb6092c2617c597b2f1aba498a72c52964fdf9",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-2212221719a7ff4eeba183f53ad9c9cc438e81a5280e797ac36f8c9746e64192",
+        "parent_sample_id": "R1-DS-TXT-011-01e5026d0aa7385df7a488bc55114dcb446644711b36a32707849a2395445a51",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-7b6bac6fb7fce77145b6381abc217f63816dba7268797d64da7ddb97ba5d6b53",
+        "parent_sample_id": "R1-DS-TXT-011-01f2e876e94b987012c9ef8bc74f85995ce59615135ce9f1dd9e25d0c758206d",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-f85ae1a03ff7cd6c929f94e17c9307cdf9820cf64d45d882f68940dd106aa92f",
+        "parent_sample_id": "R1-DS-TXT-011-03f1a574fa2e3447f70cbf965a5e185e67e28dbce991b3179c2c46fbd1a74cc8",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-c8a17127c535836530debdb2c68f863d622cac59f79150aa2639a1a12ebe39a4",
+        "parent_sample_id": "R1-DS-TXT-011-0b0078e90c121f47279e722a1a6be7cd21f4dfa4223d497685df07e48e0a1ca3",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-520769f158db35d224e8ad674fef75f199fc7f51c0c81a58de36db4e1cca873c",
+        "parent_sample_id": "R1-DS-TXT-011-12b477cf24016571d68e2568e10635f0ee344db542793954762b0753d5a55b29",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-58ccfc32fff6a7d13c22c521ffec02f72e3273950a237d9fcc12db9c3b9f4b41",
+        "parent_sample_id": "R1-DS-TXT-011-190fadd7a3cacf1c36ed32c0e91433ebe20ceebcff2c1b371eae540cadabbe3c",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-2e913e7919d00b83b664076149cf80f29a475e454278be91bb9f25b012924652",
+        "parent_sample_id": "R1-DS-TXT-011-19e08fd6d5ba30efe473364503bdc208c508414d42e9dee4f590cc7d8eca4db8",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-0675c9cef405373ead36d67cbfce6b2fce94202fab65d5c243cda7ee74125f19",
+        "parent_sample_id": "R1-DS-TXT-011-1b84d07ce5a801dc2f73a1dbeb1d4786ef5e3eafdd10aa1504865ccdee246958",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-057fd68aa1390cc0b8dff8a0a25d8d3a3147d4b6a8d71d25b6b51eee2288c2ae",
+        "parent_sample_id": "R1-DS-TXT-011-1cca0ef5186050e2ba218fa81f59d9322d2bc765bfb89d522d4dc9eab554492a",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-249b40b4d2db3ab3dc89d2e13ffc97340b22ebf66d00a379a8c81f20b49cbab4",
+        "parent_sample_id": "R1-DS-TXT-011-1d3f55eda60bf72b394fd3ea16490c8a09765e4a86a3b49722ae369dba817027",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        },
+        "inherited_lineage": "R1-LG-6776c03b47ab0fd661ca835ae7ab9c64fd2de6ed54a7dfa728de6cd2359b2c34",
+        "parent_sample_id": "R1-DS-TXT-011-227ff28a668d3cf36c0936f7c52d2b0aa2ea8d8335b533bf74dce882654f36a1",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-371131d10c1aa51620ef5d0693d267c7bdb6cc1e113253054bac262563b25015",
+        "parent_sample_id": "R1-DS-TXT-011-2349e4ee15feea5e854f1802fbeb6b6459d9af736b01f1d57f3662f5ae7ca6d7",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-5de79ec3713f1174ed466c851c61d66f9be7377e572079875b9037b43dec9625",
+        "parent_sample_id": "R1-DS-TXT-011-24fec671cc4e09c85a579623be7f8610e1023d0863a2579005b3ef514a2b0b28",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-89ec2733a6d6e29c4f127c9110982386b38c705ff2d2e14e30dbebecb4aeb0f4",
+        "parent_sample_id": "R1-DS-TXT-011-26a94fef6531254d15d1e3d0d5e62d8273f251e6c253485f3bbaec26c216553c",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-d158b2d0df72fc6206136f181e2424689060d0edfbcf3636d46cedfb46db764a",
+        "parent_sample_id": "R1-DS-TXT-011-305a712b3e8c4ab827526a47b9f0da326a101265cd767fa1aa323b0b7bdb6657",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b1b8e8a6058d478bd061a5d19164f2b3615ecb3d2131730fca455fa2fc700f0c",
+        "parent_sample_id": "R1-DS-TXT-011-31de2a94c0ddd507e10b96de83134cf31cd55764d53d6536dc8f06b90589cb77",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b29a4facb1fa18e8184f951890a595402f79b57150c1e2007870e8c21d1c1d90",
+        "parent_sample_id": "R1-DS-TXT-011-32f0718612d36fa1ee90525c7d8de7cf432f23ea070268ffb727db9f32e72413",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-4bbeadedb1a01c6ff0248161079177f7abeacc57c23a9dce61ae9597473a8469",
+        "parent_sample_id": "R1-DS-TXT-011-359acdcfc2feda99f7cfd5d7be77dc906e1149c20c6f4eff0ee538c00ad996b6",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-802fe05254e6c6215ad9c8082e02246743a2fd3976ee443fecc764056438408d",
+        "parent_sample_id": "R1-DS-TXT-011-35af573b15c4bac1791b034c2dd2d0660107dd66e98476265322649e9d5e54ec",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6f1c025a07e88a70b87a55cacfbf1279cc055afb7dbb9a5e57a9494fa2f1449f",
+        "parent_sample_id": "R1-DS-TXT-011-35da306a0ae0e160916fd8759f63b5b89b12ec454125fdfda1c0e110d1cb691d",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-4958c0fed4d8da87a1d4e3a58fabda7a27f08e13964b9c60198d536dc36d17db",
+        "parent_sample_id": "R1-DS-TXT-011-38e8845231f5d41bea285a3c61ad76a6f75d656e9c2346df273b4ca87afae4e4",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-3d386ffc865bde6539feec0ab130e77c9569ff0bfca8b4294800ba568aa0cb6f",
+        "parent_sample_id": "R1-DS-TXT-011-3f0897dfd5a0054471a8beebac0376f6d5da707f0e517fb23e7c0fae60cae8b4",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-4c020a8e390560ee2a092663a9b2741d2e45919b9b77056a373f4c6c82fa2f5f",
+        "parent_sample_id": "R1-DS-TXT-011-3fc901c3929a0a27056e9e347171013c3b64f81eb20ebf3045ded709ed95aa93",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-9198d6123b3f580dd71e7896ce5807568ba11b3b5bf949054dd2507a436ef960",
+        "parent_sample_id": "R1-DS-TXT-011-422824f3f7541a74d514f8fca31c7406f9230f78ea1d77e37333fc0c736da45c",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6b3703f5d157d67832680ea5bf230f397725dc456f99e812a578fa7654bd1917",
+        "parent_sample_id": "R1-DS-TXT-011-45a06958f8027ec3c3e4e0d45d1a7168b2db3eeadb410f3ff7e069e2a78120dd",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-eafa535e3ed018fac35d6065e804a69b9eb44aafe53ab9f837e1beaa97e6fe32",
+        "parent_sample_id": "R1-DS-TXT-011-46750ac79f10a11452f4bd1d7e5909537ea51e590c481edb665b218d41b5389b",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-3b02a253afba7283198f217f1f4330f3fed23c37b94e5b63319609899cb0db27",
+        "parent_sample_id": "R1-DS-TXT-011-47910592eb57ceb523a9a11724ac30725a4c6e7fb86e9186ad54db2cf038477c",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-f8d07dda8b9898aadc2a73bcd3b5cf5bcb39c008a1d44dcb7d28fe8d6b226cde",
+        "parent_sample_id": "R1-DS-TXT-011-47a99530d012e93b03c0f23149756ad460e0d3f4b722f0735334280d126ef7fd",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-e7bcbe369efe623e1adc39e77e46df31b04e2fd69a37bf4fae7443fb4bcbfcdd",
+        "parent_sample_id": "R1-DS-TXT-011-47d6a6613810438fff3774dce9bacafba39c5966d9d200f5114c507f7dccc387",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-3d957c4237a5b8fb3ff9e643179b7b810fc8006811ac98dedfdec9bc0731f07d",
+        "parent_sample_id": "R1-DS-TXT-011-47d7864b47151cfdfa2b0a2899800ddeab23e5e4080eeaceb8f70d54e9d1ffc4",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6772d9a35f42593f93d70725067f336dde679d809b93ffb458f7debdc8f0bb32",
+        "parent_sample_id": "R1-DS-TXT-011-49f37843e4672de665ac03372667137f76612db88edf76b99dfa6c942df2f2b9",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-de0cff876c41af5a8a87ac50adbdb6a67c357dbae330242c8f44e872f4110b5b",
+        "parent_sample_id": "R1-DS-TXT-011-4af5872b90771a63f6dc51c396cdd73040b3a3df1c3e95cb8939f8cc5d90fdf7",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b298926c8d800628cbe317767c738dc328a37a70d1a15d4844e723f904b666f1",
+        "parent_sample_id": "R1-DS-TXT-011-4eec4f0708a7cc995434a73486542420ef4d456ff2ea434ee741c3ef2fb1dff6",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-cf809df9994c51aada534c96eda037c79cc6c9a3785c1e0706bdb8dc4aec8821",
+        "parent_sample_id": "R1-DS-TXT-011-50b8f4bba81c48d80190cbbf250baa8daaed2fa00fa8722ec4e91e7f2cd98274",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-725c32e64eab39e00fa1adb77c34090b4a121459600b71690ba0c6ade401bcb6",
+        "parent_sample_id": "R1-DS-TXT-011-52ba7afbba9287a6b4353019ba53294c99111c3198b1e152e8ac91937302f705",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-c582f8b138c4ad4521b0d37788fa571383c58900b65b2f58e1902011e66a6189",
+        "parent_sample_id": "R1-DS-TXT-011-555f0763b433ab5f547f7c9821f049caa0689df5ceb7df2c6600896852dee4b4",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-92285d8e794c81a72b7c2af7b2bab689a3d385722e0d0437b6ea58868d2b3b2c",
+        "parent_sample_id": "R1-DS-TXT-011-59e001814fc760856dc761677ec3c327bd8d0e1299dc934e54a993c421fc7e21",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-fbdbe5c3c84030a57f1cea7ba16aaa7a1d8fcaeba1085fcf5ec34e6032859f09",
+        "parent_sample_id": "R1-DS-TXT-011-5bccf5f91b230d98dfeae0c7659d3233324c7049a18d2e1e46a64ee61f305a14",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-41d59e15d8f9cd8f27afd361e0951f851f85d7f75826b04e391a23a18e542101",
+        "parent_sample_id": "R1-DS-TXT-011-5bf4c1e6f272b3ab5ca5f94bfe6b5bfcf7a95a9bb64c12b05e14ad998d0a54c5",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-d57b34d4b7d567e3e33bafcda0a7f38d8dfbe0ae2772d1b476cb84d59b50fa4b",
+        "parent_sample_id": "R1-DS-TXT-011-5c83027e35953042189a00759f68427d7f0e6ba1509cd65f28412bea53c6d179",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-8ec9dd6f9c44f92125c9079349eb46ffb6a4db3b8c55b6c3be9b0f97304cbe47",
+        "parent_sample_id": "R1-DS-TXT-011-5f9581d95c29f3413f03778030151e9126e87988960a037fb66d199f3bc89119",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6812e92c7c36e08b6ca7c38a3e2092de2101b63d25f59153893cb2bebf205a3c",
+        "parent_sample_id": "R1-DS-TXT-011-61d8ee4c8c1fd3fcc6ae78912358670f42e04eefe56297f488567392f35327a3",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-697802c61f8ca548228c9ea5d7f64485d16d0d9966dfa8f8f99cd39394ee6a6d",
+        "parent_sample_id": "R1-DS-TXT-011-681cce6f5cf4fb5568e4497ce5e22877671ea30b624fbe35171b204e57159389",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b81ea6e093650949a7ba1b07904ac93bd3826295cdcde553aad3fee4a588490b",
+        "parent_sample_id": "R1-DS-TXT-011-6c8a6ca248acbf080672293f49b7101f111236db1dc1445368dd4bc86d638d13",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-aaa9e2d424a0f9a9b7e49d15eafbe714609614b2c2ded6273c5eb9a070e6a631",
+        "parent_sample_id": "R1-DS-TXT-011-702d8886ceee415a37b6435f591af6de621b4a4431128f9be9f94e12470f35c4",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-1285e774d3cac3a170452d89f07abab041bb6183b6fc60f4c8bbed2203222121",
+        "parent_sample_id": "R1-DS-TXT-011-74e67668213622ddc38e9a27070367952f9864fc748aaaee45fb72fa37cb8888",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-d5bfb8a56bf5bd78cb863148e8008ac690d5fa3007a23809bff471b6f547f781",
+        "parent_sample_id": "R1-DS-TXT-011-769c79fb9e4ff430ecd41f2d3ac0d24570900af48fbf113bab402c81a9e8c3aa",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-ac55e3e39161cf36a080b447861f96f9b5b6b8d44120dd4b052faa2b0d4d36b8",
+        "parent_sample_id": "R1-DS-TXT-011-7710c613f3bfeb9278a3f9d186557517d18d185d35a91baa3f3f09d127f3d6e7",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-d7ac833392177ccb38c6dd2bd594045c2df5c121ebbbb984238a1fdd24f1ead3",
+        "parent_sample_id": "R1-DS-TXT-011-78642e8dcb00a7b123533e29eb9729f9591ae63ae8d7530938fda638c4c31ccb",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-a482bb5f99ef9ba036ad94736f995c098be00cfe4dd2ac5e883cf46cfe378297",
+        "parent_sample_id": "R1-DS-TXT-011-7ce95879989700ffb13bd84f8537173bb7d3eb3e59838d497a9cbed34ff41593",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-8ce87aba9fab64b55bac5418bbcb0f91db1c6425ad39f8d2a4a6d9ca2dba08fc",
+        "parent_sample_id": "R1-DS-TXT-011-7f66383ff8cfa5d817bef0e3bf87d49e5aceea7cf45f97f1bf3f50fce87a3a92",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-aec2ab79cdecb2eba09835e2a4cf86b0cae9759d71c0403dec05a3c3f3eeff2b",
+        "parent_sample_id": "R1-DS-TXT-011-8b5171a8b8a2364d0a6e10d3c1eeb1e6734153fddc275bd1865bbef28de996cc",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-fb1b3f6bd0e109ec71256e5baad40d7fc5c3272dd4c05a40c8c32a13860cc8f6",
+        "parent_sample_id": "R1-DS-TXT-011-8b6c90c91f86c68f794fa0ed00fee65607dc65c4799f36bf2da34b78e3c5387d",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-2e7ca43ac464d1dd351b4bf2b37f6a040d86cd87248eaf6ad022bed2843aa8d1",
+        "parent_sample_id": "R1-DS-TXT-011-8be4423ff6d9b329951137a0e6263b74a824b66d5bd3c2f7c9970fa117348fd4",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-94191dfe60752f726c285bbe26a65442e132bce1a8cfaf5a2c085f0f0a43a889",
+        "parent_sample_id": "R1-DS-TXT-011-8cc1621a7d9775f8166e619a85537c439efee5b86c3630b95494d1bd682c6139",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-254323a7781039d2c6c404b78ddb346236076e47cff840b966a643051d9c7f93",
+        "parent_sample_id": "R1-DS-TXT-011-8df2a4ce4e14f411bcf0fd18e6da2595e7dcd391103a241418ecd8af9e8176a3",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-972a37970e0f3d99b7cdd5f340e017be0baab7dad6943df6daaa30defa6ead03",
+        "parent_sample_id": "R1-DS-TXT-011-903897c4d381e9ce1aef9e9d3d188b4eedb1f3733f42d88b250582d310451d30",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-8741bde807d77f2da887bfa1a4e53807c1d716a519569749375854382e330618",
+        "parent_sample_id": "R1-DS-TXT-011-90cabf75ce883821246ab826088dde1754ee186467786a76d834c7a17cdabf1e",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-8259aa8389f5284f6b1a5ab378ae38b7b21cb5492db22cc350ff72927c052a77",
+        "parent_sample_id": "R1-DS-TXT-011-957746539dfe275fe4cc9102f775e7d94d10eadd34f0841703038ef42b2856a4",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-30050259e176cff5fac3fe66042e0baa634ae77bd29708d47f14223c35d43e7c",
+        "parent_sample_id": "R1-DS-TXT-011-9940c93a761218d8d06485051f2a49dbffc733d6ea9bb0776b645b1151bab322",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-8c8c558938ba2b09817f19b67cb8fc619e007f1410fc5b6fc5d1a0b9b373520b",
+        "parent_sample_id": "R1-DS-TXT-011-9ad2f9f40bd28fb889c3d7e1d176b097043f37a93057abcaf9ed44b9f10c9197",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-c3d363b216d8318a6e65d781070646c259c69b28c84398bb12efd7dd0be2fd97",
+        "parent_sample_id": "R1-DS-TXT-011-9b04ca6b0a0b6fcdb1b770fc9f119ac3431502d6b2feb994b41514b4a14a0eb6",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-51df8b311edc6f8ae24e1d677b1c0f44d93e96a4b4a4cd6827f4afc16304c85f",
+        "parent_sample_id": "R1-DS-TXT-011-9b892a1d034cc966a4d4b4c1420d35c3198fc80c2d16006a2b353517e3334ab1",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-1893c93e16b8f8c1baaba9caa1d597695dac8b4341f94f0e0f508d94716ffcc9",
+        "parent_sample_id": "R1-DS-TXT-011-9e5227e0f616a0919fb3546b2086c18d2a814ddccd82e333df3ebc5517a9528f",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-73a53ad6a675406bdad39cbcfd4f7fe2dab3eb16776666ec7e5e874b3dcd2f1b",
+        "parent_sample_id": "R1-DS-TXT-011-a38ab71ba0cde19312850c46e98d1075441c52d6901f10563e07b7852642e3de",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-87ee8e97e556d03564a7176b28bde3f0cdab0f663f9ab74e59ccd8a34479f78f",
+        "parent_sample_id": "R1-DS-TXT-011-a41c0b4acad0ed2f9a5bb65c31ed194130f037ba48df605518faa88c4b0e9b0a",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-c3b4425d4e3142dc952861b05c6eae08b0fe961a8cc4b0ea953ab58edd1f6288",
+        "parent_sample_id": "R1-DS-TXT-011-a6af4a922455484a7f4db3939ec5518a8ddadb24f84f8c101a2e3f2489c012ba",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-0492632de8c064bf4ced93370ab941b985eaa8572a99d3f130d9f280587253e3",
+        "parent_sample_id": "R1-DS-TXT-011-a720eb0be3b97bbc9c73ccc08356125095462c61b87bd558ad1e1e42c9ee69ac",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-83a19495e2a48df7995044615b7c9633062c1f40796d75b90a6dd1e06e9e2d51",
+        "parent_sample_id": "R1-DS-TXT-011-ac0aabce0038a8b0ece7ba3c59a478918b267d27d2f99e27b6af3d257e2d8286",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-759e5011e6828f4b7db31cdc82eef28a8f5779137741728ce6d1e04e718d0e29",
+        "parent_sample_id": "R1-DS-TXT-011-b73e11242fc1457c361db9b47158f5d1f691044c7e24c9a3ab4372c3e2825868",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-c6f81b09b1892150b18218ea0fec691e8c5fa0e588430f9bc2faac8eebfc108b",
+        "parent_sample_id": "R1-DS-TXT-011-b9933d018899ec59b510d06c27838e5eb39f975667dd3d62887736d37bee8bc6",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        },
+        "inherited_lineage": "R1-LG-a0bc34423531d05e7a8425824e0a1279631659fee2e2c65d8be55b076832b341",
+        "parent_sample_id": "R1-DS-TXT-011-bd3505b60c6b2a163b98e316bb568d202609ed7dfc849cc392b70ee4fb98ad6d",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-0d793b67daf79efce2d8b4e045ece27efed3e3e21e5da4f2a1667ad4a29465e4",
+        "parent_sample_id": "R1-DS-TXT-011-be9ec66e64896ed3c0d5fc8f78c0f7f715d5e611949342d4e307d88837a27ddb",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6772ebb92fb51f32b424037c53a1c738752978f78229f80471cc7924c7e6dd84",
+        "parent_sample_id": "R1-DS-TXT-011-c08ecaf91fe610cc64ffb3304368f19571b48c5db708a59a3abe2c775a1dfadf",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6319538ef59d3a99a629c7a51e886dac8286203080144449e657db4437e1cffc",
+        "parent_sample_id": "R1-DS-TXT-011-c11aa9a0aeb0f2a1860e42538ccc490981772cfab685a94167b9af54d9d15cb3",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-9177dad3216f35f4c353df4acdfedbb2d20b10ba56d2bfe1c00ede4e44a91dc5",
+        "parent_sample_id": "R1-DS-TXT-011-c26335ee270976628a2f0b9c1931c11b20c8ceee642c5c3c0f37775e32dab8f8",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-76fc7273f0ff43e16687111402393eddd7c9ebb4a2937b526cd02906ac0d100f",
+        "parent_sample_id": "R1-DS-TXT-011-c69fdc22471c051321ce81157df3f28092885b0972e480e7d22e9d99f7910a8a",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-27ee20124bc61928b682a19d81ecf35052d6fc8a2767987035fc669c3f6fe212",
+        "parent_sample_id": "R1-DS-TXT-011-cc390706811c3ff75f6a7fab84d5e4f8cdcca0cd96434f7dd67c6853a3665fa8",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-313169b8b08ae13fd07171700d22f4b2790a1f76467cb9ea16d7431dc4a19ec4",
+        "parent_sample_id": "R1-DS-TXT-011-d6b48cb263f16f404f5f3a2bb82552388ba2a4d4be50c252ba0b6a0be441a578",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6719887880b3731d11d6d1480589d2df82c82699a90f2b498cc51f4675c617bc",
+        "parent_sample_id": "R1-DS-TXT-011-da727f5982d6ec9a996ced4afd5ef05075fed97c70a03556b0a94dc0f97202fb",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b2e97cc55d4ec74dfed8bcffebc6ab97b71198717e8e1cfb8bd9cff18efff295",
+        "parent_sample_id": "R1-DS-TXT-011-da8bc187b73c9cb3a59e3b9898015fd23e884676d56d79cdc8e721a3a0ecec38",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-adce992fcdc46230ec4e64c37efc203509d13cd5951b1e9f572f299f8cd0b4ef",
+        "parent_sample_id": "R1-DS-TXT-011-e00518b5c17e5187e744e49fb5c1ad28c1cf370b6a0cea6a7d0b9c334eaf062e",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        },
+        "inherited_lineage": "R1-LG-c9c6d9ca2a11437381ce1d12b0eebe3a91d49d37f1858d8fe1448e4cc561649f",
+        "parent_sample_id": "R1-DS-TXT-011-e1d01d500d6b9c55fb530ea3d011dd0ce6abf069a4ccd6850fd63b19abb82712",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b51a2536ae02e9ce51a0aeb10d6608dd3cd3bea5c5326cf6d5a1d3cead4b2c76",
+        "parent_sample_id": "R1-DS-TXT-011-e6f183f6649ea88ba41ac77da3e0a0239bb9848312d08aa842c32118dbde3ead",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        },
+        "inherited_lineage": "R1-LG-f9ac9e2081feabd017c0b0796c5d5752c0e0c3f114ff875ac695a4c8c6ac4df1",
+        "parent_sample_id": "R1-DS-TXT-011-e70ddf665822c492418f77d96a7d8aa76393b16bb9c1b5264b94dc05e5080622",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-23b0ac18473eecd01f58d6b3acc93ee43385c0fad11094a66ec640d284d449b2",
+        "parent_sample_id": "R1-DS-TXT-011-e8240b8f230d469dbc907e26c5582ba1a2f4cd1ffc1129adbaf3d4a3a4e570f5",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-10dba883b5fb45c0207605a8f3db4ebd8e4c1945105dfbd4d3398eb412f75f1d",
+        "parent_sample_id": "R1-DS-TXT-011-e89e8f89af62f10d7a10d1cefbcb88bf56d4e329e5161f9f2830ffba43927219",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-2d6236cbb29a21fc16ca1c0d5a5279794199aa7873ecb65357384909bf6769bf",
+        "parent_sample_id": "R1-DS-TXT-011-ea77270e9b7bec693f1ff15b985fd21db9747457f587dc21487a982189f2f5da",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-703a137c07afe9ad285ec83954459fc35c680a9ccd411404aea8b995b4ae070e",
+        "parent_sample_id": "R1-DS-TXT-011-eab2ef9255307eedf5656236032662c59d038ed0f99a2f1712a60e6f7ed4f763",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b4ec251cdf98300e9db977c98d179baad1bb77336d3e1835fc9b5e931e29903a",
+        "parent_sample_id": "R1-DS-TXT-011-ec9827b6468057ae6444aaf6fe0425a54789cf8de6ed309b3c6501ee62d74e0e",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-a0fb256d321ce98b981dd46b9a05401228926e1b85b1dd22442da3d88418d0d4",
+        "parent_sample_id": "R1-DS-TXT-011-eda739fd8ddb1bc2f008e9642b9a1ce8e3e51689f68a8d41724c5de243ce9a10",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-558f6e8c76e57a09014124c0d7ad84022bab2737e6f0faad3441739880c52a69",
+        "parent_sample_id": "R1-DS-TXT-011-f0a53f036ce7dc62b366f086762ad52c8b555980529ed46a76a5469b8db7c3ac",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-3983833b8e655166b25cc90a12cd742e4e965d953a5e8e2fbaf5448f64adffa3",
+        "parent_sample_id": "R1-DS-TXT-011-f4076264b3288aec30ed2ccade98e722398ce8727101d132489710b7a58a0f38",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-5e4bf6fda8410f7eb09cd741d8327b27e91aa0d66e3749c5344a26e0c9719ca0",
+        "parent_sample_id": "R1-DS-TXT-011-fbfcd19c2653a1920dbe979e5ca08eb2a6b4311a129fa5cc27093c432741a565",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-fb45fbf10d5670aef9e4cd7e7fc77362e157a451e2650c9fb717f23f6b13a38a",
+        "parent_sample_id": "R1-DS-TXT-011-fc20f1e5874b678ed93b42915826c907253fda6d007c7683be8a9db5f9422ef5",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      }
+    ]
+  },
+  "R2_DS": {
+    "full_all_three_FN": 0,
+    "full_population": 698,
+    "interpretation": "Descriptive matched-parent accounting, not an architecture-controlled or causal comparison; seed sets/objectives/coverage differ.",
+    "matched_R3_all_three_FN": 0,
+    "matched_parent_count": 89,
+    "matched_past_all_three_FN": 0,
+    "prediction_sha256": "b4b3b03150b44d2b2db82ef6807506f9fe4a0066fe0c94fa255c204df99bab0d",
+    "rows": [
+      {
+        "R3_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-5564605288a40ec78c160095a4161dcf9d64fe7557977faeaade43d40d5330fc",
+        "parent_sample_id": "R1-DS-TXT-011-0029161c4e17456b15167f2595bb6092c2617c597b2f1aba498a72c52964fdf9",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-2212221719a7ff4eeba183f53ad9c9cc438e81a5280e797ac36f8c9746e64192",
+        "parent_sample_id": "R1-DS-TXT-011-01e5026d0aa7385df7a488bc55114dcb446644711b36a32707849a2395445a51",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-7b6bac6fb7fce77145b6381abc217f63816dba7268797d64da7ddb97ba5d6b53",
+        "parent_sample_id": "R1-DS-TXT-011-01f2e876e94b987012c9ef8bc74f85995ce59615135ce9f1dd9e25d0c758206d",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-f85ae1a03ff7cd6c929f94e17c9307cdf9820cf64d45d882f68940dd106aa92f",
+        "parent_sample_id": "R1-DS-TXT-011-03f1a574fa2e3447f70cbf965a5e185e67e28dbce991b3179c2c46fbd1a74cc8",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-c8a17127c535836530debdb2c68f863d622cac59f79150aa2639a1a12ebe39a4",
+        "parent_sample_id": "R1-DS-TXT-011-0b0078e90c121f47279e722a1a6be7cd21f4dfa4223d497685df07e48e0a1ca3",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-58ccfc32fff6a7d13c22c521ffec02f72e3273950a237d9fcc12db9c3b9f4b41",
+        "parent_sample_id": "R1-DS-TXT-011-190fadd7a3cacf1c36ed32c0e91433ebe20ceebcff2c1b371eae540cadabbe3c",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-2e913e7919d00b83b664076149cf80f29a475e454278be91bb9f25b012924652",
+        "parent_sample_id": "R1-DS-TXT-011-19e08fd6d5ba30efe473364503bdc208c508414d42e9dee4f590cc7d8eca4db8",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-0675c9cef405373ead36d67cbfce6b2fce94202fab65d5c243cda7ee74125f19",
+        "parent_sample_id": "R1-DS-TXT-011-1b84d07ce5a801dc2f73a1dbeb1d4786ef5e3eafdd10aa1504865ccdee246958",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-057fd68aa1390cc0b8dff8a0a25d8d3a3147d4b6a8d71d25b6b51eee2288c2ae",
+        "parent_sample_id": "R1-DS-TXT-011-1cca0ef5186050e2ba218fa81f59d9322d2bc765bfb89d522d4dc9eab554492a",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-249b40b4d2db3ab3dc89d2e13ffc97340b22ebf66d00a379a8c81f20b49cbab4",
+        "parent_sample_id": "R1-DS-TXT-011-1d3f55eda60bf72b394fd3ea16490c8a09765e4a86a3b49722ae369dba817027",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-5de79ec3713f1174ed466c851c61d66f9be7377e572079875b9037b43dec9625",
+        "parent_sample_id": "R1-DS-TXT-011-24fec671cc4e09c85a579623be7f8610e1023d0863a2579005b3ef514a2b0b28",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-89ec2733a6d6e29c4f127c9110982386b38c705ff2d2e14e30dbebecb4aeb0f4",
+        "parent_sample_id": "R1-DS-TXT-011-26a94fef6531254d15d1e3d0d5e62d8273f251e6c253485f3bbaec26c216553c",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-d158b2d0df72fc6206136f181e2424689060d0edfbcf3636d46cedfb46db764a",
+        "parent_sample_id": "R1-DS-TXT-011-305a712b3e8c4ab827526a47b9f0da326a101265cd767fa1aa323b0b7bdb6657",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b1b8e8a6058d478bd061a5d19164f2b3615ecb3d2131730fca455fa2fc700f0c",
+        "parent_sample_id": "R1-DS-TXT-011-31de2a94c0ddd507e10b96de83134cf31cd55764d53d6536dc8f06b90589cb77",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b29a4facb1fa18e8184f951890a595402f79b57150c1e2007870e8c21d1c1d90",
+        "parent_sample_id": "R1-DS-TXT-011-32f0718612d36fa1ee90525c7d8de7cf432f23ea070268ffb727db9f32e72413",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-4bbeadedb1a01c6ff0248161079177f7abeacc57c23a9dce61ae9597473a8469",
+        "parent_sample_id": "R1-DS-TXT-011-359acdcfc2feda99f7cfd5d7be77dc906e1149c20c6f4eff0ee538c00ad996b6",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-802fe05254e6c6215ad9c8082e02246743a2fd3976ee443fecc764056438408d",
+        "parent_sample_id": "R1-DS-TXT-011-35af573b15c4bac1791b034c2dd2d0660107dd66e98476265322649e9d5e54ec",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6f1c025a07e88a70b87a55cacfbf1279cc055afb7dbb9a5e57a9494fa2f1449f",
+        "parent_sample_id": "R1-DS-TXT-011-35da306a0ae0e160916fd8759f63b5b89b12ec454125fdfda1c0e110d1cb691d",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-4958c0fed4d8da87a1d4e3a58fabda7a27f08e13964b9c60198d536dc36d17db",
+        "parent_sample_id": "R1-DS-TXT-011-38e8845231f5d41bea285a3c61ad76a6f75d656e9c2346df273b4ca87afae4e4",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-3d386ffc865bde6539feec0ab130e77c9569ff0bfca8b4294800ba568aa0cb6f",
+        "parent_sample_id": "R1-DS-TXT-011-3f0897dfd5a0054471a8beebac0376f6d5da707f0e517fb23e7c0fae60cae8b4",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-4c020a8e390560ee2a092663a9b2741d2e45919b9b77056a373f4c6c82fa2f5f",
+        "parent_sample_id": "R1-DS-TXT-011-3fc901c3929a0a27056e9e347171013c3b64f81eb20ebf3045ded709ed95aa93",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-9198d6123b3f580dd71e7896ce5807568ba11b3b5bf949054dd2507a436ef960",
+        "parent_sample_id": "R1-DS-TXT-011-422824f3f7541a74d514f8fca31c7406f9230f78ea1d77e37333fc0c736da45c",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-eafa535e3ed018fac35d6065e804a69b9eb44aafe53ab9f837e1beaa97e6fe32",
+        "parent_sample_id": "R1-DS-TXT-011-46750ac79f10a11452f4bd1d7e5909537ea51e590c481edb665b218d41b5389b",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-3b02a253afba7283198f217f1f4330f3fed23c37b94e5b63319609899cb0db27",
+        "parent_sample_id": "R1-DS-TXT-011-47910592eb57ceb523a9a11724ac30725a4c6e7fb86e9186ad54db2cf038477c",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-f8d07dda8b9898aadc2a73bcd3b5cf5bcb39c008a1d44dcb7d28fe8d6b226cde",
+        "parent_sample_id": "R1-DS-TXT-011-47a99530d012e93b03c0f23149756ad460e0d3f4b722f0735334280d126ef7fd",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-e7bcbe369efe623e1adc39e77e46df31b04e2fd69a37bf4fae7443fb4bcbfcdd",
+        "parent_sample_id": "R1-DS-TXT-011-47d6a6613810438fff3774dce9bacafba39c5966d9d200f5114c507f7dccc387",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-3d957c4237a5b8fb3ff9e643179b7b810fc8006811ac98dedfdec9bc0731f07d",
+        "parent_sample_id": "R1-DS-TXT-011-47d7864b47151cfdfa2b0a2899800ddeab23e5e4080eeaceb8f70d54e9d1ffc4",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6772d9a35f42593f93d70725067f336dde679d809b93ffb458f7debdc8f0bb32",
+        "parent_sample_id": "R1-DS-TXT-011-49f37843e4672de665ac03372667137f76612db88edf76b99dfa6c942df2f2b9",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-de0cff876c41af5a8a87ac50adbdb6a67c357dbae330242c8f44e872f4110b5b",
+        "parent_sample_id": "R1-DS-TXT-011-4af5872b90771a63f6dc51c396cdd73040b3a3df1c3e95cb8939f8cc5d90fdf7",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b298926c8d800628cbe317767c738dc328a37a70d1a15d4844e723f904b666f1",
+        "parent_sample_id": "R1-DS-TXT-011-4eec4f0708a7cc995434a73486542420ef4d456ff2ea434ee741c3ef2fb1dff6",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-cf809df9994c51aada534c96eda037c79cc6c9a3785c1e0706bdb8dc4aec8821",
+        "parent_sample_id": "R1-DS-TXT-011-50b8f4bba81c48d80190cbbf250baa8daaed2fa00fa8722ec4e91e7f2cd98274",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-725c32e64eab39e00fa1adb77c34090b4a121459600b71690ba0c6ade401bcb6",
+        "parent_sample_id": "R1-DS-TXT-011-52ba7afbba9287a6b4353019ba53294c99111c3198b1e152e8ac91937302f705",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-c582f8b138c4ad4521b0d37788fa571383c58900b65b2f58e1902011e66a6189",
+        "parent_sample_id": "R1-DS-TXT-011-555f0763b433ab5f547f7c9821f049caa0689df5ceb7df2c6600896852dee4b4",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-92285d8e794c81a72b7c2af7b2bab689a3d385722e0d0437b6ea58868d2b3b2c",
+        "parent_sample_id": "R1-DS-TXT-011-59e001814fc760856dc761677ec3c327bd8d0e1299dc934e54a993c421fc7e21",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-fbdbe5c3c84030a57f1cea7ba16aaa7a1d8fcaeba1085fcf5ec34e6032859f09",
+        "parent_sample_id": "R1-DS-TXT-011-5bccf5f91b230d98dfeae0c7659d3233324c7049a18d2e1e46a64ee61f305a14",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-41d59e15d8f9cd8f27afd361e0951f851f85d7f75826b04e391a23a18e542101",
+        "parent_sample_id": "R1-DS-TXT-011-5bf4c1e6f272b3ab5ca5f94bfe6b5bfcf7a95a9bb64c12b05e14ad998d0a54c5",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-d57b34d4b7d567e3e33bafcda0a7f38d8dfbe0ae2772d1b476cb84d59b50fa4b",
+        "parent_sample_id": "R1-DS-TXT-011-5c83027e35953042189a00759f68427d7f0e6ba1509cd65f28412bea53c6d179",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-8ec9dd6f9c44f92125c9079349eb46ffb6a4db3b8c55b6c3be9b0f97304cbe47",
+        "parent_sample_id": "R1-DS-TXT-011-5f9581d95c29f3413f03778030151e9126e87988960a037fb66d199f3bc89119",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6812e92c7c36e08b6ca7c38a3e2092de2101b63d25f59153893cb2bebf205a3c",
+        "parent_sample_id": "R1-DS-TXT-011-61d8ee4c8c1fd3fcc6ae78912358670f42e04eefe56297f488567392f35327a3",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-697802c61f8ca548228c9ea5d7f64485d16d0d9966dfa8f8f99cd39394ee6a6d",
+        "parent_sample_id": "R1-DS-TXT-011-681cce6f5cf4fb5568e4497ce5e22877671ea30b624fbe35171b204e57159389",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b81ea6e093650949a7ba1b07904ac93bd3826295cdcde553aad3fee4a588490b",
+        "parent_sample_id": "R1-DS-TXT-011-6c8a6ca248acbf080672293f49b7101f111236db1dc1445368dd4bc86d638d13",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-aaa9e2d424a0f9a9b7e49d15eafbe714609614b2c2ded6273c5eb9a070e6a631",
+        "parent_sample_id": "R1-DS-TXT-011-702d8886ceee415a37b6435f591af6de621b4a4431128f9be9f94e12470f35c4",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-1285e774d3cac3a170452d89f07abab041bb6183b6fc60f4c8bbed2203222121",
+        "parent_sample_id": "R1-DS-TXT-011-74e67668213622ddc38e9a27070367952f9864fc748aaaee45fb72fa37cb8888",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-d5bfb8a56bf5bd78cb863148e8008ac690d5fa3007a23809bff471b6f547f781",
+        "parent_sample_id": "R1-DS-TXT-011-769c79fb9e4ff430ecd41f2d3ac0d24570900af48fbf113bab402c81a9e8c3aa",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-ac55e3e39161cf36a080b447861f96f9b5b6b8d44120dd4b052faa2b0d4d36b8",
+        "parent_sample_id": "R1-DS-TXT-011-7710c613f3bfeb9278a3f9d186557517d18d185d35a91baa3f3f09d127f3d6e7",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-d7ac833392177ccb38c6dd2bd594045c2df5c121ebbbb984238a1fdd24f1ead3",
+        "parent_sample_id": "R1-DS-TXT-011-78642e8dcb00a7b123533e29eb9729f9591ae63ae8d7530938fda638c4c31ccb",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-a482bb5f99ef9ba036ad94736f995c098be00cfe4dd2ac5e883cf46cfe378297",
+        "parent_sample_id": "R1-DS-TXT-011-7ce95879989700ffb13bd84f8537173bb7d3eb3e59838d497a9cbed34ff41593",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-8ce87aba9fab64b55bac5418bbcb0f91db1c6425ad39f8d2a4a6d9ca2dba08fc",
+        "parent_sample_id": "R1-DS-TXT-011-7f66383ff8cfa5d817bef0e3bf87d49e5aceea7cf45f97f1bf3f50fce87a3a92",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-aec2ab79cdecb2eba09835e2a4cf86b0cae9759d71c0403dec05a3c3f3eeff2b",
+        "parent_sample_id": "R1-DS-TXT-011-8b5171a8b8a2364d0a6e10d3c1eeb1e6734153fddc275bd1865bbef28de996cc",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-fb1b3f6bd0e109ec71256e5baad40d7fc5c3272dd4c05a40c8c32a13860cc8f6",
+        "parent_sample_id": "R1-DS-TXT-011-8b6c90c91f86c68f794fa0ed00fee65607dc65c4799f36bf2da34b78e3c5387d",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-2e7ca43ac464d1dd351b4bf2b37f6a040d86cd87248eaf6ad022bed2843aa8d1",
+        "parent_sample_id": "R1-DS-TXT-011-8be4423ff6d9b329951137a0e6263b74a824b66d5bd3c2f7c9970fa117348fd4",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-94191dfe60752f726c285bbe26a65442e132bce1a8cfaf5a2c085f0f0a43a889",
+        "parent_sample_id": "R1-DS-TXT-011-8cc1621a7d9775f8166e619a85537c439efee5b86c3630b95494d1bd682c6139",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-254323a7781039d2c6c404b78ddb346236076e47cff840b966a643051d9c7f93",
+        "parent_sample_id": "R1-DS-TXT-011-8df2a4ce4e14f411bcf0fd18e6da2595e7dcd391103a241418ecd8af9e8176a3",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-972a37970e0f3d99b7cdd5f340e017be0baab7dad6943df6daaa30defa6ead03",
+        "parent_sample_id": "R1-DS-TXT-011-903897c4d381e9ce1aef9e9d3d188b4eedb1f3733f42d88b250582d310451d30",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-8741bde807d77f2da887bfa1a4e53807c1d716a519569749375854382e330618",
+        "parent_sample_id": "R1-DS-TXT-011-90cabf75ce883821246ab826088dde1754ee186467786a76d834c7a17cdabf1e",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-8259aa8389f5284f6b1a5ab378ae38b7b21cb5492db22cc350ff72927c052a77",
+        "parent_sample_id": "R1-DS-TXT-011-957746539dfe275fe4cc9102f775e7d94d10eadd34f0841703038ef42b2856a4",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-30050259e176cff5fac3fe66042e0baa634ae77bd29708d47f14223c35d43e7c",
+        "parent_sample_id": "R1-DS-TXT-011-9940c93a761218d8d06485051f2a49dbffc733d6ea9bb0776b645b1151bab322",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-8c8c558938ba2b09817f19b67cb8fc619e007f1410fc5b6fc5d1a0b9b373520b",
+        "parent_sample_id": "R1-DS-TXT-011-9ad2f9f40bd28fb889c3d7e1d176b097043f37a93057abcaf9ed44b9f10c9197",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-c3d363b216d8318a6e65d781070646c259c69b28c84398bb12efd7dd0be2fd97",
+        "parent_sample_id": "R1-DS-TXT-011-9b04ca6b0a0b6fcdb1b770fc9f119ac3431502d6b2feb994b41514b4a14a0eb6",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-51df8b311edc6f8ae24e1d677b1c0f44d93e96a4b4a4cd6827f4afc16304c85f",
+        "parent_sample_id": "R1-DS-TXT-011-9b892a1d034cc966a4d4b4c1420d35c3198fc80c2d16006a2b353517e3334ab1",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-1893c93e16b8f8c1baaba9caa1d597695dac8b4341f94f0e0f508d94716ffcc9",
+        "parent_sample_id": "R1-DS-TXT-011-9e5227e0f616a0919fb3546b2086c18d2a814ddccd82e333df3ebc5517a9528f",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-73a53ad6a675406bdad39cbcfd4f7fe2dab3eb16776666ec7e5e874b3dcd2f1b",
+        "parent_sample_id": "R1-DS-TXT-011-a38ab71ba0cde19312850c46e98d1075441c52d6901f10563e07b7852642e3de",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-87ee8e97e556d03564a7176b28bde3f0cdab0f663f9ab74e59ccd8a34479f78f",
+        "parent_sample_id": "R1-DS-TXT-011-a41c0b4acad0ed2f9a5bb65c31ed194130f037ba48df605518faa88c4b0e9b0a",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-c3b4425d4e3142dc952861b05c6eae08b0fe961a8cc4b0ea953ab58edd1f6288",
+        "parent_sample_id": "R1-DS-TXT-011-a6af4a922455484a7f4db3939ec5518a8ddadb24f84f8c101a2e3f2489c012ba",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-0492632de8c064bf4ced93370ab941b985eaa8572a99d3f130d9f280587253e3",
+        "parent_sample_id": "R1-DS-TXT-011-a720eb0be3b97bbc9c73ccc08356125095462c61b87bd558ad1e1e42c9ee69ac",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-83a19495e2a48df7995044615b7c9633062c1f40796d75b90a6dd1e06e9e2d51",
+        "parent_sample_id": "R1-DS-TXT-011-ac0aabce0038a8b0ece7ba3c59a478918b267d27d2f99e27b6af3d257e2d8286",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-759e5011e6828f4b7db31cdc82eef28a8f5779137741728ce6d1e04e718d0e29",
+        "parent_sample_id": "R1-DS-TXT-011-b73e11242fc1457c361db9b47158f5d1f691044c7e24c9a3ab4372c3e2825868",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-c6f81b09b1892150b18218ea0fec691e8c5fa0e588430f9bc2faac8eebfc108b",
+        "parent_sample_id": "R1-DS-TXT-011-b9933d018899ec59b510d06c27838e5eb39f975667dd3d62887736d37bee8bc6",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-0d793b67daf79efce2d8b4e045ece27efed3e3e21e5da4f2a1667ad4a29465e4",
+        "parent_sample_id": "R1-DS-TXT-011-be9ec66e64896ed3c0d5fc8f78c0f7f715d5e611949342d4e307d88837a27ddb",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6772ebb92fb51f32b424037c53a1c738752978f78229f80471cc7924c7e6dd84",
+        "parent_sample_id": "R1-DS-TXT-011-c08ecaf91fe610cc64ffb3304368f19571b48c5db708a59a3abe2c775a1dfadf",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6319538ef59d3a99a629c7a51e886dac8286203080144449e657db4437e1cffc",
+        "parent_sample_id": "R1-DS-TXT-011-c11aa9a0aeb0f2a1860e42538ccc490981772cfab685a94167b9af54d9d15cb3",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-9177dad3216f35f4c353df4acdfedbb2d20b10ba56d2bfe1c00ede4e44a91dc5",
+        "parent_sample_id": "R1-DS-TXT-011-c26335ee270976628a2f0b9c1931c11b20c8ceee642c5c3c0f37775e32dab8f8",
+        "past_decisions": {
+          "dg_v1": 1,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-76fc7273f0ff43e16687111402393eddd7c9ebb4a2937b526cd02906ac0d100f",
+        "parent_sample_id": "R1-DS-TXT-011-c69fdc22471c051321ce81157df3f28092885b0972e480e7d22e9d99f7910a8a",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-27ee20124bc61928b682a19d81ecf35052d6fc8a2767987035fc669c3f6fe212",
+        "parent_sample_id": "R1-DS-TXT-011-cc390706811c3ff75f6a7fab84d5e4f8cdcca0cd96434f7dd67c6853a3665fa8",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-313169b8b08ae13fd07171700d22f4b2790a1f76467cb9ea16d7431dc4a19ec4",
+        "parent_sample_id": "R1-DS-TXT-011-d6b48cb263f16f404f5f3a2bb82552388ba2a4d4be50c252ba0b6a0be441a578",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-6719887880b3731d11d6d1480589d2df82c82699a90f2b498cc51f4675c617bc",
+        "parent_sample_id": "R1-DS-TXT-011-da727f5982d6ec9a996ced4afd5ef05075fed97c70a03556b0a94dc0f97202fb",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b2e97cc55d4ec74dfed8bcffebc6ab97b71198717e8e1cfb8bd9cff18efff295",
+        "parent_sample_id": "R1-DS-TXT-011-da8bc187b73c9cb3a59e3b9898015fd23e884676d56d79cdc8e721a3a0ecec38",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-adce992fcdc46230ec4e64c37efc203509d13cd5951b1e9f572f299f8cd0b4ef",
+        "parent_sample_id": "R1-DS-TXT-011-e00518b5c17e5187e744e49fb5c1ad28c1cf370b6a0cea6a7d0b9c334eaf062e",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b51a2536ae02e9ce51a0aeb10d6608dd3cd3bea5c5326cf6d5a1d3cead4b2c76",
+        "parent_sample_id": "R1-DS-TXT-011-e6f183f6649ea88ba41ac77da3e0a0239bb9848312d08aa842c32118dbde3ead",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-23b0ac18473eecd01f58d6b3acc93ee43385c0fad11094a66ec640d284d449b2",
+        "parent_sample_id": "R1-DS-TXT-011-e8240b8f230d469dbc907e26c5582ba1a2f4cd1ffc1129adbaf3d4a3a4e570f5",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-10dba883b5fb45c0207605a8f3db4ebd8e4c1945105dfbd4d3398eb412f75f1d",
+        "parent_sample_id": "R1-DS-TXT-011-e89e8f89af62f10d7a10d1cefbcb88bf56d4e329e5161f9f2830ffba43927219",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-2d6236cbb29a21fc16ca1c0d5a5279794199aa7873ecb65357384909bf6769bf",
+        "parent_sample_id": "R1-DS-TXT-011-ea77270e9b7bec693f1ff15b985fd21db9747457f587dc21487a982189f2f5da",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 0
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-703a137c07afe9ad285ec83954459fc35c680a9ccd411404aea8b995b4ae070e",
+        "parent_sample_id": "R1-DS-TXT-011-eab2ef9255307eedf5656236032662c59d038ed0f99a2f1712a60e6f7ed4f763",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-b4ec251cdf98300e9db977c98d179baad1bb77336d3e1835fc9b5e931e29903a",
+        "parent_sample_id": "R1-DS-TXT-011-ec9827b6468057ae6444aaf6fe0425a54789cf8de6ed309b3c6501ee62d74e0e",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-a0fb256d321ce98b981dd46b9a05401228926e1b85b1dd22442da3d88418d0d4",
+        "parent_sample_id": "R1-DS-TXT-011-eda739fd8ddb1bc2f008e9642b9a1ce8e3e51689f68a8d41724c5de243ce9a10",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-558f6e8c76e57a09014124c0d7ad84022bab2737e6f0faad3441739880c52a69",
+        "parent_sample_id": "R1-DS-TXT-011-f0a53f036ce7dc62b366f086762ad52c8b555980529ed46a76a5469b8db7c3ac",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-3983833b8e655166b25cc90a12cd742e4e965d953a5e8e2fbaf5448f64adffa3",
+        "parent_sample_id": "R1-DS-TXT-011-f4076264b3288aec30ed2ccade98e722398ce8727101d132489710b7a58a0f38",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-5e4bf6fda8410f7eb09cd741d8327b27e91aa0d66e3749c5344a26e0c9719ca0",
+        "parent_sample_id": "R1-DS-TXT-011-fbfcd19c2653a1920dbe979e5ca08eb2a6b4311a129fa5cc27093c432741a565",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      },
+      {
+        "R3_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        },
+        "inherited_lineage": "R1-LG-fb45fbf10d5670aef9e4cd7e7fc77362e157a451e2650c9fb717f23f6b13a38a",
+        "parent_sample_id": "R1-DS-TXT-011-fc20f1e5874b678ed93b42915826c907253fda6d007c7683be8a9db5f9422ef5",
+        "past_decisions": {
+          "dg_v1": 0,
+          "dm_b_v1": 1,
+          "ds_v2": 1
+        }
+      }
+    ]
+  }
+}
