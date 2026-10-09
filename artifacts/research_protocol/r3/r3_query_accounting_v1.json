@@ -1,0 +1,26 @@
+{
+  "accounting_scope": "GENERATION_AT_TERMINAL_FREEZE",
+  "artifact_version": "r3_query_accounting_v1",
+  "budget_violations": 0,
+  "cached_requests": 13,
+  "candidate_evaluations": 5459,
+  "detector_calls": 16377,
+  "deterministic_terminal_reconstructions": 97,
+  "journal_sha256": "264a199bcea67608021d0769f8de340c99553099bd0a4ea9afbdda954cd8785f",
+  "logical_requests": 5472,
+  "max_candidate_evaluations_per_parent": 61,
+  "max_detector_calls_per_parent": 183,
+  "parents": 97,
+  "post_freeze_scoring_calls": "NOT_STARTED_AT_THIS_BOUNDARY",
+  "private_generation_sha256": "53b90cc6f0b6d25d658be76712ef32439b919f0ec12dc7d07aa332c319b8b7be",
+  "protected_queries": 0,
+  "reconstruction_additional_model_calls": 0,
+  "reconstruction_failures": 0,
+  "status": "PASS",
+  "synthetic_preflight_calls": 3,
+  "terminal_validation_code_sha256": {
+    "r3_freeze.py": "d56651bd3c6030bba171bcf093c6d623484c30f973453c74a326e308203a9386",
+    "r3_reconstruction.py": "a4788ccb2bf6eb4d78c7f2790c469e8ba64929d09244828d2da78ef85d93abaf"
+  },
+  "verifier_queries": 0
+}

@@ -1,0 +1,53 @@
+{
+  "authoritative_prior_attack_calls": 0,
+  "candidate_evaluation_ceiling": 5917,
+  "contract_sha256": {
+    "r3_generator_contract_v1.json": "486e425ef68181be23502a3e646197f58b3ccaf5b2ec48c025f2ead1b184ddab",
+    "r3_predeclaration_v1.json": "084a24344c51683a222ca88d0abad417f40a3777980dd8f3c910dfdff2f4f969",
+    "r3_seed_policy_v1.json": "b6dc869d2e81c16d644115d15b5a52089b028340428fb4e600cca56186e09b56"
+  },
+  "detector_call_ceiling": 17751,
+  "detector_identities": [
+    {
+      "detector_id": "ds_v2",
+      "label": "D_S",
+      "model_revision": null,
+      "model_sha256": "c5e754dc8b6e88b7437e4b81016e8f8ec23d018607d4f4e78906212b2a561157",
+      "reference_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+      "threshold": 0.5585373573968287,
+      "threshold_id": "ds_v2_op3_cal_v1"
+    },
+    {
+      "detector_id": "dm_b_v1",
+      "label": "D_M-B",
+      "model_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+      "model_sha256": "0bb192d2c468530479fa8ec0786f35d8bf5a8287e4ee401a953292d221736844",
+      "reference_revision": null,
+      "threshold": 0.0004967087297700347,
+      "threshold_id": "dm_b_v1_op3_raw_v1"
+    },
+    {
+      "detector_id": "dg_v1",
+      "label": "D_G",
+      "model_revision": "11614a155199674a0a95e6602d6ab0417b790ed0",
+      "model_sha256": "5120e30bcd536ce285345d9ec104bea6bd6e8f94365b99a340c764f417ea5fa1",
+      "reference_revision": null,
+      "threshold": 0.21291141211986545,
+      "threshold_id": "dg_v1_op3_raw_v1"
+    }
+  ],
+  "execution_commit": "2f6622e5575e766546901bf24573e5b0f51ecf5c",
+  "implementation_commit": "2f6622e5575e766546901bf24573e5b0f51ecf5c",
+  "integration_baseline_commit": "71e3a5239cb24a3e59e99d271c6aa46841dbc084",
+  "operator_registry_sha256": "60b5c2c8fd2cb976c25fd192092dd143f9d50be7936bf8c4d9db2e6bad212836",
+  "private_receipt_sha256": "10b3817799a517c6ddea73e980bbd8128a05db2f17e28670ccd363f42c0c6360",
+  "protected_calls": 0,
+  "query_budget_contract_sha256": "084a24344c51683a222ca88d0abad417f40a3777980dd8f3c910dfdff2f4f969",
+  "run_id": "R3-ENSEMBLE-001-AUTHORITATIVE-V1",
+  "runtime_preflight_sha256": "f93bf977b59826076a76f36fdf50d41d0271729a18d7d13d2c7a81fdd5bb1fed",
+  "seed_freeze_commit": "37fb38e9fd3d5be2f69e1961b6f80ff8c130e466",
+  "seed_manifest_sha256": "2650e958175254ce50bdc33a031f10d10664f8a85c6b4d238a82916eb7525951",
+  "started_at": "2026-10-09T18:20:07Z",
+  "uncertainty_policy_sha256": "849c2de4182fce5173d03a2278dfa61644d0bd447c492ee0ee06862e6f6e9013",
+  "verifier_calls": 0
+}
