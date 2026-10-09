@@ -1,0 +1,1352 @@
+{
+  "backend": "Dependency-free deterministic SVG (no plotting library; fixed numeric formatting)",
+  "figures": {
+    "01_fnr": {
+      "file": "figures/01_fnr.svg",
+      "sha256": "82c360229f581501ed96c23fe9713fe608a0632a499b50f9f9cd9b4ef4a53920",
+      "spec": {
+        "description": "Grouped bars of FNR per detector for R0, R1, R2-DMB, R2-D_S and R3.",
+        "groups": [
+          "R0",
+          "R1",
+          "R2-DMB",
+          "R2-D_S",
+          "R3"
+        ],
+        "high": 1.0,
+        "kind": "grouped",
+        "note": "R0, R1: mixed attack+benign. R2-DMB, R2-D_S, R3: attack-only. Whiskers: frozen 95% lineage-clustered percentile CIs where stored.",
+        "series": [
+          {
+            "key": "ds_v2",
+            "name": "D_S",
+            "points": [
+              {
+                "hi": 0.453551912568306,
+                "label": "70/183",
+                "lo": 0.31693989071038253,
+                "tip": "R0 D_S FNR",
+                "value": 0.3825136612021858
+              },
+              {
+                "hi": 0.17532033675662764,
+                "label": "102/800",
+                "lo": 0.026631173604830947,
+                "tip": "R1 D_S FNR",
+                "value": 0.1275
+              },
+              {
+                "hi": 0.07595869194079237,
+                "label": "41/800",
+                "lo": 0.0,
+                "tip": "R2-DMB D_S FNR",
+                "value": 0.05125
+              },
+              {
+                "hi": 0.19592120415199615,
+                "label": "104/698",
+                "lo": 0.05986527423469388,
+                "tip": "R2-D_S D_S FNR",
+                "value": 0.1489971346704871
+              },
+              {
+                "hi": 0.10309278350515463,
+                "label": "5/97",
+                "lo": 0.010309278350515464,
+                "tip": "R3 D_S FNR",
+                "value": 0.05154639175257732
+              }
+            ]
+          },
+          {
+            "key": "dm_b_v1",
+            "name": "D_M-B",
+            "points": [
+              {
+                "hi": 0.0273224043715847,
+                "label": "2/183",
+                "lo": 0.0,
+                "tip": "R0 D_M-B FNR",
+                "value": 0.01092896174863388
+              },
+              {
+                "hi": 0.0,
+                "label": "0/800",
+                "lo": 0.0,
+                "tip": "R1 D_M-B FNR",
+                "value": 0.0
+              },
+              {
+                "hi": 0.0,
+                "label": "0/800",
+                "lo": 0.0,
+                "tip": "R2-DMB D_M-B FNR",
+                "value": 0.0
+              },
+              {
+                "hi": 0.0,
+                "label": "0/698",
+                "lo": 0.0,
+                "tip": "R2-D_S D_M-B FNR",
+                "value": 0.0
+              },
+              {
+                "hi": 0.0,
+                "label": "0/97",
+                "lo": 0.0,
+                "tip": "R3 D_M-B FNR",
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "key": "dg_v1",
+            "name": "D_G",
+            "points": [
+              {
+                "hi": 0.8252732240437157,
+                "label": "141/183",
+                "lo": 0.7103825136612022,
+                "tip": "R0 D_G FNR",
+                "value": 0.7704918032786885
+              },
+              {
+                "hi": 0.9817214309230254,
+                "label": "764/800",
+                "lo": 0.8848039215686274,
+                "tip": "R1 D_G FNR",
+                "value": 0.955
+              },
+              {
+                "hi": 0.9823984215336397,
+                "label": "770/800",
+                "lo": 0.9054204660587639,
+                "tip": "R2-DMB D_G FNR",
+                "value": 0.9625
+              },
+              {
+                "hi": 0.9803096828436638,
+                "label": "667/698",
+                "lo": 0.8960344471947195,
+                "tip": "R2-D_S D_G FNR",
+                "value": 0.9555873925501432
+              },
+              {
+                "hi": 0.9896907216494846,
+                "label": "92/97",
+                "lo": 0.8969072164948454,
+                "tip": "R3 D_G FNR",
+                "value": 0.9484536082474226
+              }
+            ]
+          }
+        ],
+        "subtitle": "Operational fixed thresholds; FNR = FN / attacks",
+        "title": "Detector false-negative rate by regime"
+      }
+    },
+    "02_pairwise_jfn": {
+      "file": "figures/02_pairwise_jfn.svg",
+      "sha256": "d6e32c91a90aab5855bacec7adfc57dce2375a93c30df627074a418aca546118",
+      "spec": {
+        "description": "Small multiples of pairwise JFN by regime.",
+        "kind": "panels",
+        "note": "R0, R1: mixed attack+benign. R2-DMB, R2-D_S, R3: attack-only. Whiskers: frozen 95% lineage-clustered percentile CIs where stored.",
+        "panels": [
+          {
+            "groups": [
+              "R0",
+              "R1",
+              "R2-DMB",
+              "R2-D_S",
+              "R3"
+            ],
+            "series": [
+              {
+                "key": null,
+                "points": [
+                  {
+                    "hi": 0.0273224043715847,
+                    "label": "2",
+                    "lo": 0.0,
+                    "tip": "R0 D_S x D_M-B jfn",
+                    "value": 0.01092896174863388
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R1 D_S x D_M-B jfn",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R2-DMB D_S x D_M-B jfn",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R2-D_S D_S x D_M-B jfn",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R3 D_S x D_M-B jfn",
+                    "value": 0.0
+                  }
+                ]
+              }
+            ],
+            "title": "D_S x D_M-B"
+          },
+          {
+            "groups": [
+              "R0",
+              "R1",
+              "R2-DMB",
+              "R2-D_S",
+              "R3"
+            ],
+            "series": [
+              {
+                "key": null,
+                "points": [
+                  {
+                    "hi": 0.3442622950819672,
+                    "label": "52",
+                    "lo": 0.2185792349726776,
+                    "tip": "R0 D_S x D_G jfn",
+                    "value": 0.28415300546448086
+                  },
+                  {
+                    "hi": 0.17503849483029715,
+                    "label": "101",
+                    "lo": 0.023909471001207352,
+                    "tip": "R1 D_S x D_G jfn",
+                    "value": 0.12625
+                  },
+                  {
+                    "hi": 0.07407580477673935,
+                    "label": "40",
+                    "lo": 0.0,
+                    "tip": "R2-DMB D_S x D_G jfn",
+                    "value": 0.05
+                  },
+                  {
+                    "hi": 0.19252130113760302,
+                    "label": "102",
+                    "lo": 0.05655164458506361,
+                    "tip": "R2-D_S D_S x D_G jfn",
+                    "value": 0.14613180515759314
+                  },
+                  {
+                    "hi": 0.10309278350515463,
+                    "label": "5",
+                    "lo": 0.010309278350515464,
+                    "tip": "R3 D_S x D_G jfn",
+                    "value": 0.05154639175257732
+                  }
+                ]
+              }
+            ],
+            "title": "D_S x D_G"
+          },
+          {
+            "groups": [
+              "R0",
+              "R1",
+              "R2-DMB",
+              "R2-D_S",
+              "R3"
+            ],
+            "series": [
+              {
+                "key": null,
+                "points": [
+                  {
+                    "hi": 0.0273224043715847,
+                    "label": "2",
+                    "lo": 0.0,
+                    "tip": "R0 D_M-B x D_G jfn",
+                    "value": 0.01092896174863388
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R1 D_M-B x D_G jfn",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R2-DMB D_M-B x D_G jfn",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R2-D_S D_M-B x D_G jfn",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R3 D_M-B x D_G jfn",
+                    "value": 0.0
+                  }
+                ]
+              }
+            ],
+            "title": "D_M-B x D_G"
+          }
+        ],
+        "subtitle": "JFN = shared FN / attacks",
+        "title": "Pairwise joint false-negative rate (JFN)"
+      }
+    },
+    "03_ejf": {
+      "file": "figures/03_ejf.svg",
+      "sha256": "5b27ae1aefcea2a32fa6d60169b43da6ba48b2150bb3af41e7f03b3ab16ebc32",
+      "spec": {
+        "description": "Small multiples of EJF by regime; red above zero, blue below.",
+        "diverging": true,
+        "kind": "panels",
+        "note": "R0, R1: mixed attack+benign. R2-DMB, R2-D_S, R3: attack-only. Whiskers: frozen 95% lineage-clustered percentile CIs where stored.",
+        "panels": [
+          {
+            "groups": [
+              "R0",
+              "R1",
+              "R2-DMB",
+              "R2-D_S",
+              "R3"
+            ],
+            "series": [
+              {
+                "key": null,
+                "points": [
+                  {
+                    "label": "+0.007",
+                    "tip": "R0 D_S x D_M-B ejf",
+                    "value": 0.006748484577025292
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R1 D_S x D_M-B ejf",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R2-DMB D_S x D_M-B ejf",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R2-D_S D_S x D_M-B ejf",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R3 D_S x D_M-B ejf",
+                    "value": 0.0
+                  }
+                ]
+              }
+            ],
+            "title": "D_S x D_M-B"
+          },
+          {
+            "groups": [
+              "R0",
+              "R1",
+              "R2-DMB",
+              "R2-D_S",
+              "R3"
+            ],
+            "series": [
+              {
+                "key": null,
+                "points": [
+                  {
+                    "label": "-0.011",
+                    "tip": "R0 D_S x D_G ejf",
+                    "value": -0.010570635133924589
+                  },
+                  {
+                    "hi": 0.006959610478944632,
+                    "label": "+0.004",
+                    "lo": -0.0027784249083637014,
+                    "tip": "R1 D_S x D_G ejf",
+                    "value": 0.004487500000000005
+                  },
+                  {
+                    "hi": 0.0013477692597847453,
+                    "label": "+0.001",
+                    "lo": -0.0005225151755748273,
+                    "tip": "R2-DMB D_S x D_G ejf",
+                    "value": 0.0006718750000000023
+                  },
+                  {
+                    "hi": 0.007715933539187981,
+                    "label": "+0.004",
+                    "lo": -0.0011140518068601757,
+                    "tip": "R2-D_S D_S x D_G ejf",
+                    "value": 0.0037520217403798073
+                  },
+                  {
+                    "hi": 0.006801998086938044,
+                    "label": "+0.003",
+                    "lo": 0.00042512488043362773,
+                    "tip": "R3 D_S x D_G ejf",
+                    "value": 0.00265703050271017
+                  }
+                ]
+              }
+            ],
+            "title": "D_S x D_G"
+          },
+          {
+            "groups": [
+              "R0",
+              "R1",
+              "R2-DMB",
+              "R2-D_S",
+              "R3"
+            ],
+            "series": [
+              {
+                "key": null,
+                "points": [
+                  {
+                    "label": "+0.003",
+                    "tip": "R0 D_M-B x D_G ejf",
+                    "value": 0.002508286302965153
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R1 D_M-B x D_G ejf",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R2-DMB D_M-B x D_G ejf",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R2-D_S D_M-B x D_G ejf",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R3 D_M-B x D_G ejf",
+                    "value": 0.0
+                  }
+                ]
+              }
+            ],
+            "title": "D_M-B x D_G"
+          }
+        ],
+        "subtitle": "EJF = JFN - FNR_i x FNR_j (descriptive reference, not an independence test)",
+        "title": "Excess joint failure (EJF) by detector pair"
+      }
+    },
+    "04_fn_jaccard": {
+      "file": "figures/04_fn_jaccard.svg",
+      "sha256": "3a6b6179092e09f17715ae8272ff75157e735530d417efd1885b443c366c7ee4",
+      "spec": {
+        "description": "Small multiples of FN Jaccard by regime.",
+        "kind": "panels",
+        "note": "R0, R1: mixed attack+benign. R2-DMB, R2-D_S, R3: attack-only. Whiskers: frozen 95% lineage-clustered percentile CIs where stored.",
+        "panels": [
+          {
+            "groups": [
+              "R0",
+              "R1",
+              "R2-DMB",
+              "R2-D_S",
+              "R3"
+            ],
+            "series": [
+              {
+                "key": null,
+                "points": [
+                  {
+                    "label": "0.029",
+                    "tip": "R0 D_S x D_M-B fn_jaccard",
+                    "value": 0.02857142857142857
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0.000",
+                    "lo": 0.0,
+                    "tip": "R1 D_S x D_M-B fn_jaccard",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0.000",
+                    "lo": 0.0,
+                    "tip": "R2-DMB D_S x D_M-B fn_jaccard",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0.000",
+                    "lo": 0.0,
+                    "tip": "R2-D_S D_S x D_M-B fn_jaccard",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0.000",
+                    "lo": 0.0,
+                    "tip": "R3 D_S x D_M-B fn_jaccard",
+                    "value": 0.0
+                  }
+                ]
+              }
+            ],
+            "title": "D_S x D_M-B"
+          },
+          {
+            "groups": [
+              "R0",
+              "R1",
+              "R2-DMB",
+              "R2-D_S",
+              "R3"
+            ],
+            "series": [
+              {
+                "key": null,
+                "points": [
+                  {
+                    "label": "0.327",
+                    "tip": "R0 D_S x D_G fn_jaccard",
+                    "value": 0.3270440251572327
+                  },
+                  {
+                    "hi": 0.17932315308981644,
+                    "label": "0.132",
+                    "lo": 0.026036619832041346,
+                    "tip": "R1 D_S x D_G fn_jaccard",
+                    "value": 0.13202614379084968
+                  },
+                  {
+                    "hi": 0.07542294119570493,
+                    "label": "0.052",
+                    "lo": 0.0,
+                    "tip": "R2-DMB D_S x D_G fn_jaccard",
+                    "value": 0.05188067444876784
+                  },
+                  {
+                    "hi": 0.19636021151017227,
+                    "label": "0.152",
+                    "lo": 0.061330612244897956,
+                    "tip": "R2-D_S D_S x D_G fn_jaccard",
+                    "value": 0.15246636771300448
+                  },
+                  {
+                    "hi": 0.10638297872340426,
+                    "label": "0.054",
+                    "lo": 0.01098901098901099,
+                    "tip": "R3 D_S x D_G fn_jaccard",
+                    "value": 0.05434782608695652
+                  }
+                ]
+              }
+            ],
+            "title": "D_S x D_G"
+          },
+          {
+            "groups": [
+              "R0",
+              "R1",
+              "R2-DMB",
+              "R2-D_S",
+              "R3"
+            ],
+            "series": [
+              {
+                "key": null,
+                "points": [
+                  {
+                    "label": "0.014",
+                    "tip": "R0 D_M-B x D_G fn_jaccard",
+                    "value": 0.014184397163120567
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0.000",
+                    "lo": 0.0,
+                    "tip": "R1 D_M-B x D_G fn_jaccard",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0.000",
+                    "lo": 0.0,
+                    "tip": "R2-DMB D_M-B x D_G fn_jaccard",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0.000",
+                    "lo": 0.0,
+                    "tip": "R2-D_S D_M-B x D_G fn_jaccard",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0.000",
+                    "lo": 0.0,
+                    "tip": "R3 D_M-B x D_G fn_jaccard",
+                    "value": 0.0
+                  }
+                ]
+              }
+            ],
+            "title": "D_M-B x D_G"
+          }
+        ],
+        "subtitle": "Shared FN / union FN; UNDEF where the union is empty",
+        "title": "False-negative Jaccard by detector pair"
+      }
+    },
+    "05_all_three_jfn": {
+      "file": "figures/05_all_three_jfn.svg",
+      "sha256": "569d5c975626477251cdc2b210d46eba299bb8873f6bd5ab90f3d9e6b59932dd",
+      "spec": {
+        "description": "All-three JFN by regime with stored intervals.",
+        "groups": [
+          "R0",
+          "R1",
+          "R2-DMB",
+          "R2-D_S",
+          "R3"
+        ],
+        "kind": "grouped",
+        "note": "R3 [0, 0] is a zero-event percentile-bootstrap interval, not a population robustness bound.\nR0, R1: mixed attack+benign. R2-DMB, R2-D_S, R3: attack-only. Whiskers: frozen 95% lineage-clustered percentile CIs where stored.",
+        "series": [
+          {
+            "key": null,
+            "name": "All three",
+            "points": [
+              {
+                "hi": 0.0273224043715847,
+                "label": "2/183",
+                "lo": 0.0,
+                "tip": "R0 all-three JFN",
+                "value": 0.01092896174863388
+              },
+              {
+                "hi": 0.0,
+                "label": "0/800",
+                "lo": 0.0,
+                "tip": "R1 all-three JFN",
+                "value": 0.0
+              },
+              {
+                "hi": 0.0,
+                "label": "0/800",
+                "lo": 0.0,
+                "tip": "R2-DMB all-three JFN",
+                "value": 0.0
+              },
+              {
+                "hi": 0.0,
+                "label": "0/698",
+                "lo": 0.0,
+                "tip": "R2-D_S all-three JFN",
+                "value": 0.0
+              },
+              {
+                "hi": 0.0,
+                "label": "0/97",
+                "lo": 0.0,
+                "tip": "R3 all-three JFN",
+                "value": 0.0
+              }
+            ]
+          }
+        ],
+        "subtitle": "Attacks missed by D_S, D_M-B and D_G simultaneously",
+        "title": "All-three joint false-negative rate"
+      }
+    },
+    "06_target_success": {
+      "file": "figures/06_target_success.svg",
+      "sha256": "394e5c6c0180d61e88fb6dd9018a6d7dd2c50d209adfa936f8d93f0d579f2ad7",
+      "spec": {
+        "description": "Target success rate per targeted regime.",
+        "groups": [
+          "R2-DMB\ntarget D_M-B",
+          "R2-D_S\ntarget D_S",
+          "R3\ntarget ALL"
+        ],
+        "high": 0.25,
+        "kind": "grouped",
+        "note": "Valid attempts: R2-DMB 800, R2-D_S 698, R3 97 lineage-distinct parents. Whiskers: frozen 95% CIs.",
+        "series": [
+          {
+            "key": null,
+            "name": "Target success",
+            "points": [
+              {
+                "hi": 0.0,
+                "label": "0/800",
+                "lo": 0.0,
+                "tip": "R2-DMB target success",
+                "value": 0.0
+              },
+              {
+                "hi": 0.19592120415199615,
+                "label": "104/698",
+                "lo": 0.05986527423469388,
+                "tip": "R2-D_S target success",
+                "value": 0.1489971346704871
+              },
+              {
+                "hi": 0.0,
+                "label": "0/97",
+                "lo": 0.0,
+                "tip": "R3 target success",
+                "value": 0.0
+              }
+            ]
+          }
+        ],
+        "subtitle": "Target evasion rate (R3 target ALL = simultaneous evasion of all three)",
+        "title": "Targeted attack success: R2-DMB vs R2-D_S vs R3"
+      }
+    },
+    "07_r2ds_transfer": {
+      "file": "figures/07_r2ds_transfer.svg",
+      "sha256": "c332f91e266de512abfe86eba8aa14543bc7001c42c23fbbb7eeb33b0f0b0b1f",
+      "spec": {
+        "description": "R2-D_S transfer behavior.",
+        "high": 1.0,
+        "kind": "panels",
+        "note": "Frozen conditional ETR; not a detector-independent transfer probability.",
+        "panels": [
+          {
+            "groups": [
+              "to D_M-B",
+              "to D_G"
+            ],
+            "series": [
+              {
+                "key": null,
+                "points": [
+                  {
+                    "hi": 0.0,
+                    "label": "0/104",
+                    "lo": 0.0,
+                    "tip": "R2-D_S ETR to D_M-B",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 1.0,
+                    "label": "102/104",
+                    "lo": 0.9130434782608695,
+                    "tip": "R2-D_S ETR to D_G",
+                    "value": 0.9807692307692307
+                  }
+                ]
+              }
+            ],
+            "title": "R2-D_S (104 D_S evasions)"
+          },
+          {
+            "status": "UNDEFINED: 0 target evasions",
+            "title": "R2-DMB"
+          },
+          {
+            "status": "NOT_APPLICABLE: target ALL",
+            "title": "R3"
+          }
+        ],
+        "subtitle": "ETR = joint evasions / target evasions",
+        "title": "Evasion transfer from successful targeted evasions (ETR)"
+      }
+    },
+    "08_source_conditioned": {
+      "file": "figures/08_source_conditioned.svg",
+      "sha256": "1f097461292660ca0464293a7cfc5db33e14b622b75d70fb32a5e9f56d35ab6b",
+      "spec": {
+        "description": "Per-source FNR by detector for R1, R2-DMB, R2-D_S and R3.",
+        "high": 1.0,
+        "kind": "panels",
+        "legend": [
+          [
+            "D_S",
+            "ds_v2"
+          ],
+          [
+            "D_M-B",
+            "dm_b_v1"
+          ],
+          [
+            "D_G",
+            "dg_v1"
+          ]
+        ],
+        "note": "Bars: FN / source attacks. Labels: FN counts. Whiskers only where a frozen source interval exists (R3).",
+        "panels": [
+          {
+            "groups": [
+              "INJECAGENT\nn=400",
+              "LLMAIL\nn=400"
+            ],
+            "series": [
+              {
+                "key": "ds_v2",
+                "points": [
+                  {
+                    "label": "86",
+                    "tip": "R1 INJECAGENT_BASE D_S",
+                    "value": 0.215
+                  },
+                  {
+                    "label": "16",
+                    "tip": "R1 LLMAIL_INJECT D_S",
+                    "value": 0.04
+                  }
+                ]
+              },
+              {
+                "key": "dm_b_v1",
+                "points": [
+                  {
+                    "label": "0",
+                    "tip": "R1 INJECAGENT_BASE D_M-B",
+                    "value": 0.0
+                  },
+                  {
+                    "label": "0",
+                    "tip": "R1 LLMAIL_INJECT D_M-B",
+                    "value": 0.0
+                  }
+                ]
+              },
+              {
+                "key": "dg_v1",
+                "points": [
+                  {
+                    "label": "399",
+                    "tip": "R1 INJECAGENT_BASE D_G",
+                    "value": 0.9975
+                  },
+                  {
+                    "label": "365",
+                    "tip": "R1 LLMAIL_INJECT D_G",
+                    "value": 0.9125
+                  }
+                ]
+              }
+            ],
+            "title": "R1"
+          },
+          {
+            "groups": [
+              "INJECAGENT\nn=400",
+              "LLMAIL\nn=400"
+            ],
+            "series": [
+              {
+                "key": "ds_v2",
+                "points": [
+                  {
+                    "label": "39",
+                    "tip": "R2-DMB INJECAGENT_BASE D_S",
+                    "value": 0.0975
+                  },
+                  {
+                    "label": "2",
+                    "tip": "R2-DMB LLMAIL_INJECT D_S",
+                    "value": 0.005
+                  }
+                ]
+              },
+              {
+                "key": "dm_b_v1",
+                "points": [
+                  {
+                    "label": "0",
+                    "tip": "R2-DMB INJECAGENT_BASE D_M-B",
+                    "value": 0.0
+                  },
+                  {
+                    "label": "0",
+                    "tip": "R2-DMB LLMAIL_INJECT D_M-B",
+                    "value": 0.0
+                  }
+                ]
+              },
+              {
+                "key": "dg_v1",
+                "points": [
+                  {
+                    "label": "397",
+                    "tip": "R2-DMB INJECAGENT_BASE D_G",
+                    "value": 0.9925
+                  },
+                  {
+                    "label": "373",
+                    "tip": "R2-DMB LLMAIL_INJECT D_G",
+                    "value": 0.9325
+                  }
+                ]
+              }
+            ],
+            "title": "R2-DMB"
+          },
+          {
+            "groups": [
+              "INJECAGENT\nn=314",
+              "LLMAIL\nn=384"
+            ],
+            "series": [
+              {
+                "key": "ds_v2",
+                "points": [
+                  {
+                    "label": "73",
+                    "tip": "R2-D_S INJECAGENT_BASE D_S",
+                    "value": 0.23248407643312102
+                  },
+                  {
+                    "label": "31",
+                    "tip": "R2-D_S LLMAIL_INJECT D_S",
+                    "value": 0.08072916666666667
+                  }
+                ]
+              },
+              {
+                "key": "dm_b_v1",
+                "points": [
+                  {
+                    "label": "0",
+                    "tip": "R2-D_S INJECAGENT_BASE D_M-B",
+                    "value": 0.0
+                  },
+                  {
+                    "label": "0",
+                    "tip": "R2-D_S LLMAIL_INJECT D_M-B",
+                    "value": 0.0
+                  }
+                ]
+              },
+              {
+                "key": "dg_v1",
+                "points": [
+                  {
+                    "label": "312",
+                    "tip": "R2-D_S INJECAGENT_BASE D_G",
+                    "value": 0.9936305732484076
+                  },
+                  {
+                    "label": "355",
+                    "tip": "R2-D_S LLMAIL_INJECT D_G",
+                    "value": 0.9244791666666666
+                  }
+                ]
+              }
+            ],
+            "title": "R2-D_S"
+          },
+          {
+            "groups": [
+              "INJECAGENT\nn=1",
+              "LLMAIL\nn=96"
+            ],
+            "series": [
+              {
+                "key": "ds_v2",
+                "points": [
+                  {
+                    "hi": 1.0,
+                    "label": "1",
+                    "lo": 1.0,
+                    "tip": "R3 INJECAGENT_BASE D_S",
+                    "value": 1.0
+                  },
+                  {
+                    "hi": 0.08333333333333333,
+                    "label": "4",
+                    "lo": 0.010416666666666666,
+                    "tip": "R3 LLMAIL_INJECT D_S",
+                    "value": 0.041666666666666664
+                  }
+                ]
+              },
+              {
+                "key": "dm_b_v1",
+                "points": [
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R3 INJECAGENT_BASE D_M-B",
+                    "value": 0.0
+                  },
+                  {
+                    "hi": 0.0,
+                    "label": "0",
+                    "lo": 0.0,
+                    "tip": "R3 LLMAIL_INJECT D_M-B",
+                    "value": 0.0
+                  }
+                ]
+              },
+              {
+                "key": "dg_v1",
+                "points": [
+                  {
+                    "hi": 1.0,
+                    "label": "1",
+                    "lo": 1.0,
+                    "tip": "R3 INJECAGENT_BASE D_G",
+                    "value": 1.0
+                  },
+                  {
+                    "hi": 0.9895833333333334,
+                    "label": "91",
+                    "lo": 0.8958333333333334,
+                    "tip": "R3 LLMAIL_INJECT D_G",
+                    "value": 0.9479166666666666
+                  }
+                ]
+              }
+            ],
+            "title": "R3"
+          }
+        ],
+        "subtitle": "R0 has no frozen source decomposition. InjecAgent is one inherited lineage cluster in every regime.",
+        "title": "Source-conditioned detector FNR"
+      }
+    },
+    "09_failure_patterns": {
+      "file": "figures/09_failure_patterns.svg",
+      "sha256": "e3c25827b7d499ce8dc16cfac80591547b9e03704c00c3eb712c7646fc92c6ba",
+      "spec": {
+        "columns": [
+          {
+            "id": "000",
+            "meaning": "none missed"
+          },
+          {
+            "id": "001",
+            "meaning": "D_G miss"
+          },
+          {
+            "id": "010",
+            "meaning": "D_M-B miss"
+          },
+          {
+            "id": "011",
+            "meaning": "D_M-B+D_G miss"
+          },
+          {
+            "id": "100",
+            "meaning": "D_S miss"
+          },
+          {
+            "id": "101",
+            "meaning": "D_S+D_G miss"
+          },
+          {
+            "id": "110",
+            "meaning": "D_S+D_M-B miss"
+          },
+          {
+            "id": "111",
+            "meaning": "all missed"
+          }
+        ],
+        "description": "Heatmap of the eight failure patterns per regime.",
+        "kind": "heatmap",
+        "note": "111 = all-three common-mode miss. Attack rows only; R0/R1 benign samples excluded.",
+        "rows": [
+          {
+            "cells": [
+              {
+                "count": 24,
+                "fraction": 0.13114754098360656
+              },
+              {
+                "count": 89,
+                "fraction": 0.48633879781420764
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 18,
+                "fraction": 0.09836065573770492
+              },
+              {
+                "count": 50,
+                "fraction": 0.273224043715847
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 2,
+                "fraction": 0.01092896174863388
+              }
+            ],
+            "n": 183,
+            "regime": "R0"
+          },
+          {
+            "cells": [
+              {
+                "count": 35,
+                "fraction": 0.04375
+              },
+              {
+                "count": 663,
+                "fraction": 0.82875
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 1,
+                "fraction": 0.00125
+              },
+              {
+                "count": 101,
+                "fraction": 0.12625
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              }
+            ],
+            "n": 800,
+            "regime": "R1"
+          },
+          {
+            "cells": [
+              {
+                "count": 29,
+                "fraction": 0.03625
+              },
+              {
+                "count": 730,
+                "fraction": 0.9125
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 1,
+                "fraction": 0.00125
+              },
+              {
+                "count": 40,
+                "fraction": 0.05
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              }
+            ],
+            "n": 800,
+            "regime": "R2-DMB"
+          },
+          {
+            "cells": [
+              {
+                "count": 29,
+                "fraction": 0.04154727793696275
+              },
+              {
+                "count": 565,
+                "fraction": 0.8094555873925502
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 2,
+                "fraction": 0.0028653295128939827
+              },
+              {
+                "count": 102,
+                "fraction": 0.14613180515759314
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              }
+            ],
+            "n": 698,
+            "regime": "R2-D_S"
+          },
+          {
+            "cells": [
+              {
+                "count": 5,
+                "fraction": 0.05154639175257732
+              },
+              {
+                "count": 87,
+                "fraction": 0.8969072164948454
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 5,
+                "fraction": 0.05154639175257732
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              },
+              {
+                "count": 0,
+                "fraction": 0.0
+              }
+            ],
+            "n": 97,
+            "regime": "R3"
+          }
+        ],
+        "subtitle": "Pattern bits = (D_S, D_M-B, D_G) miss; cell = count and share of attacks",
+        "title": "Failure-pattern distribution by regime"
+      }
+    },
+    "10_verifier_status": {
+      "file": "figures/10_verifier_status.svg",
+      "sha256": "b8d2cad78a96933bb1c61e638f0f3df24a02c047f4185d9d046efd1504ef3ebb",
+      "spec": {
+        "description": "Status-only panel; no verifier data.",
+        "kind": "status",
+        "note": "RQ3 remains NOT EMPIRICALLY IDENTIFIABLE FROM R3 DEVELOPMENT FAILURE POPULATION; Track B owns the final disposition.",
+        "rows": [
+          {
+            "label": "R3 base-stack all-three failure population",
+            "status": "0"
+          },
+          {
+            "label": "Development-stage recovery denominator",
+            "status": "0"
+          },
+          {
+            "label": "Development-stage Recovery(V_k), V1/V2/V3",
+            "status": "UNDEFINED"
+          },
+          {
+            "label": "Verifier panel",
+            "status": "PENDING_FINAL_CONFIRMATION_OR_UNDEFINED"
+          }
+        ],
+        "subtitle": "No verifier inference performed; no recovery result is reported",
+        "title": "Verifier recovery (RQ3) status"
+      }
+    }
+  },
+  "palette": {
+    "categorical": {
+      "D_G": "#1baf7a",
+      "D_M-B": "#eb6834",
+      "D_S": "#2a78d6"
+    },
+    "diverging": {
+      "negative": "#2a78d6",
+      "positive": "#e34948"
+    },
+    "sequential": [
+      "#f0efec",
+      "#cde2fb",
+      "#9ec5f4",
+      "#6da7ec",
+      "#3987e5",
+      "#256abf",
+      "#184f95",
+      "#0d366b"
+    ],
+    "single": "#2a78d6",
+    "validation": "validate_palette.js light --pairs all: PASS; aqua contrast WARN relieved by direct labels and table views"
+  },
+  "renderer": "detection_service/research_protocol/cross_regime_figures.py",
+  "renderer_sha256": "e827c8f337da3a099db551ea4dc82bb6dbe6c90b0a46ee9d63a21d625954d72c",
+  "schema_version": "cross_regime_figure_manifest_v1",
+  "undefined": "Non-observed values are labeled (UNDEF, N/A, status panels), never drawn as zero",
+  "verifier_panel": "PENDING_FINAL_CONFIRMATION_OR_UNDEFINED"
+}

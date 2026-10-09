@@ -1,0 +1,410 @@
+{
+  "answer": "Detector behavior changed in detector-specific directions under the R0 -> R1 shift at fixed operating thresholds. D_S attack recall rose (61.75% -> 87.25%) and its benign FPR fell (4.52% -> 2.80%). D_M-B kept near-complete attack recall (98.91% -> 100.00%) but its benign FPR rose (6.09% -> 13.20%). D_G attack recall fell (22.95% -> 4.50%) while its benign FPR rose (1.79% -> 20.70%). Distribution shift therefore did not affect the detectors uniformly. These are descriptive comparisons of unpaired populations with different source composition; R1 alone does not establish adaptive robustness.",
+  "causal_claims": false,
+  "findings": [
+    {
+      "evidence": [
+        {
+          "key": "R0/ds_v2/tp",
+          "value": 113
+        },
+        {
+          "key": "R0/ds_v2/fn",
+          "value": 70
+        },
+        {
+          "key": "R0/ds_v2/fp",
+          "value": 43
+        },
+        {
+          "key": "R0/ds_v2/recall",
+          "value": 0.6174863387978142
+        },
+        {
+          "key": "R0/ds_v2/fnr",
+          "value": 0.3825136612021858
+        },
+        {
+          "key": "R0/ds_v2/fpr",
+          "value": 0.045168067226890755
+        },
+        {
+          "key": "R0/ds_v2/roc_auc",
+          "value": 0.896760343481655
+        },
+        {
+          "key": "R0/ds_v2/ap",
+          "value": 0.7315865803288281
+        },
+        {
+          "key": "R1/ds_v2/tp",
+          "value": 698
+        },
+        {
+          "key": "R1/ds_v2/fn",
+          "value": 102
+        },
+        {
+          "key": "R1/ds_v2/fp",
+          "value": 28
+        },
+        {
+          "key": "R1/ds_v2/recall",
+          "value": 0.8725
+        },
+        {
+          "key": "R1/ds_v2/fnr",
+          "value": 0.1275
+        },
+        {
+          "key": "R1/ds_v2/fpr",
+          "value": 0.028
+        },
+        {
+          "key": "R1/ds_v2/roc_auc",
+          "value": 0.97433625
+        },
+        {
+          "key": "R1/ds_v2/ap",
+          "value": 0.9748953375370448
+        },
+        {
+          "key": "R0/attack_count",
+          "value": 183
+        },
+        {
+          "key": "R1/attack_count",
+          "value": 800
+        },
+        {
+          "key": "R0/benign_count",
+          "value": 952
+        },
+        {
+          "key": "R1/benign_count",
+          "value": 1000
+        }
+      ],
+      "id": "RQ1-D_S",
+      "kind": "OBSERVED",
+      "statement": "D_S: attack recall 61.75% (113/183) in R0 vs 87.25% (698/800) in R1 (FNR 38.25% -> 12.75%); benign FPR 4.52% (43/952) -> 2.80% (28/1000) at the same fixed operating threshold. Frozen ranking metrics: ROC-AUC 0.8968 -> 0.9743, AP 0.7316 -> 0.9749."
+    },
+    {
+      "evidence": [
+        {
+          "key": "R0/dm_b_v1/tp",
+          "value": 181
+        },
+        {
+          "key": "R0/dm_b_v1/fn",
+          "value": 2
+        },
+        {
+          "key": "R0/dm_b_v1/fp",
+          "value": 58
+        },
+        {
+          "key": "R0/dm_b_v1/recall",
+          "value": 0.9890710382513661
+        },
+        {
+          "key": "R0/dm_b_v1/fnr",
+          "value": 0.01092896174863388
+        },
+        {
+          "key": "R0/dm_b_v1/fpr",
+          "value": 0.06092436974789916
+        },
+        {
+          "key": "R0/dm_b_v1/roc_auc",
+          "value": 0.9963493594158975
+        },
+        {
+          "key": "R0/dm_b_v1/ap",
+          "value": 0.9877044339233646
+        },
+        {
+          "key": "R1/dm_b_v1/tp",
+          "value": 800
+        },
+        {
+          "key": "R1/dm_b_v1/fn",
+          "value": 0
+        },
+        {
+          "key": "R1/dm_b_v1/fp",
+          "value": 132
+        },
+        {
+          "key": "R1/dm_b_v1/recall",
+          "value": 1.0
+        },
+        {
+          "key": "R1/dm_b_v1/fnr",
+          "value": 0.0
+        },
+        {
+          "key": "R1/dm_b_v1/fpr",
+          "value": 0.132
+        },
+        {
+          "key": "R1/dm_b_v1/roc_auc",
+          "value": 1.0
+        },
+        {
+          "key": "R1/dm_b_v1/ap",
+          "value": 0.9999999999999911
+        },
+        {
+          "key": "R0/attack_count",
+          "value": 183
+        },
+        {
+          "key": "R1/attack_count",
+          "value": 800
+        },
+        {
+          "key": "R0/benign_count",
+          "value": 952
+        },
+        {
+          "key": "R1/benign_count",
+          "value": 1000
+        }
+      ],
+      "id": "RQ1-D_M-B",
+      "kind": "OBSERVED",
+      "statement": "D_M-B: attack recall 98.91% (181/183) in R0 vs 100.00% (800/800) in R1 (FNR 1.09% -> 0.00%); benign FPR 6.09% (58/952) -> 13.20% (132/1000) at the same fixed operating threshold. Frozen ranking metrics: ROC-AUC 0.9963 -> 1.0000, AP 0.9877 -> 1.0000."
+    },
+    {
+      "evidence": [
+        {
+          "key": "R0/dg_v1/tp",
+          "value": 42
+        },
+        {
+          "key": "R0/dg_v1/fn",
+          "value": 141
+        },
+        {
+          "key": "R0/dg_v1/fp",
+          "value": 17
+        },
+        {
+          "key": "R0/dg_v1/recall",
+          "value": 0.22950819672131148
+        },
+        {
+          "key": "R0/dg_v1/fnr",
+          "value": 0.7704918032786885
+        },
+        {
+          "key": "R0/dg_v1/fpr",
+          "value": 0.017857142857142856
+        },
+        {
+          "key": "R0/dg_v1/roc_auc",
+          "value": 0.814953850392616
+        },
+        {
+          "key": "R0/dg_v1/ap",
+          "value": 0.5006519683988974
+        },
+        {
+          "key": "R1/dg_v1/tp",
+          "value": 36
+        },
+        {
+          "key": "R1/dg_v1/fn",
+          "value": 764
+        },
+        {
+          "key": "R1/dg_v1/fp",
+          "value": 207
+        },
+        {
+          "key": "R1/dg_v1/recall",
+          "value": 0.045
+        },
+        {
+          "key": "R1/dg_v1/fnr",
+          "value": 0.955
+        },
+        {
+          "key": "R1/dg_v1/fpr",
+          "value": 0.207
+        },
+        {
+          "key": "R1/dg_v1/roc_auc",
+          "value": 0.40694875
+        },
+        {
+          "key": "R1/dg_v1/ap",
+          "value": 0.37789020357305086
+        },
+        {
+          "key": "R0/attack_count",
+          "value": 183
+        },
+        {
+          "key": "R1/attack_count",
+          "value": 800
+        },
+        {
+          "key": "R0/benign_count",
+          "value": 952
+        },
+        {
+          "key": "R1/benign_count",
+          "value": 1000
+        }
+      ],
+      "id": "RQ1-D_G",
+      "kind": "OBSERVED",
+      "statement": "D_G: attack recall 22.95% (42/183) in R0 vs 4.50% (36/800) in R1 (FNR 77.05% -> 95.50%); benign FPR 1.79% (17/952) -> 20.70% (207/1000) at the same fixed operating threshold. Frozen ranking metrics: ROC-AUC 0.8150 -> 0.4069, AP 0.5007 -> 0.3779."
+    },
+    {
+      "evidence": [
+        {
+          "key": "R0/all_three_fn",
+          "value": 2
+        },
+        {
+          "key": "R0/attack_count",
+          "value": 183
+        },
+        {
+          "key": "R1/all_three_fn",
+          "value": 0
+        },
+        {
+          "key": "R1/attack_count",
+          "value": 800
+        }
+      ],
+      "id": "RQ1-ALL-THREE",
+      "kind": "OBSERVED",
+      "statement": "All-three attack FN: 2/183 in R0 and 0/800 in R1."
+    },
+    {
+      "evidence": [
+        {
+          "key": "R0/attack_count",
+          "value": 183
+        },
+        {
+          "key": "R0/benign_count",
+          "value": 952
+        },
+        {
+          "key": "R0/lineage_count",
+          "value": 1134
+        },
+        {
+          "key": "R1/attack_count",
+          "value": 800
+        },
+        {
+          "key": "R1/benign_count",
+          "value": 1000
+        },
+        {
+          "key": "R1/lineage_count",
+          "value": 1097
+        },
+        {
+          "key": "R1/attack_source/INJECAGENT_BASE/sample_count",
+          "value": 400
+        },
+        {
+          "key": "R1/attack_source/INJECAGENT_BASE/lineage_count",
+          "value": 1
+        },
+        {
+          "key": "R1/attack_source/LLMAIL_INJECT/sample_count",
+          "value": 400
+        },
+        {
+          "key": "R1/attack_source/LLMAIL_INJECT/lineage_count",
+          "value": 96
+        }
+      ],
+      "id": "RQ1-COMPOSITION",
+      "kind": "LIMITATION",
+      "statement": "R0 contains 183 attacks and 952 benign samples (1134 lineages); R1 contains 800 attacks and 1000 hard-benign samples (1097 lineages). R1 attacks are 400 INJECAGENT_BASE (1 lineage) and 400 LLMAIL_INJECT (96 lineages). R0 has no frozen source decomposition in the synthesis inputs. The populations are unpaired and differ in source composition."
+    },
+    {
+      "evidence": [
+        {
+          "key": "R1/source/INJECAGENT_BASE/ds_v2/fnr",
+          "value": 0.215
+        },
+        {
+          "key": "R1/source/INJECAGENT_BASE/dm_b_v1/fnr",
+          "value": 0.0
+        },
+        {
+          "key": "R1/source/INJECAGENT_BASE/dg_v1/fnr",
+          "value": 0.9975
+        },
+        {
+          "key": "R1/source/LLMAIL_INJECT/ds_v2/fnr",
+          "value": 0.04
+        },
+        {
+          "key": "R1/source/LLMAIL_INJECT/dm_b_v1/fnr",
+          "value": 0.0
+        },
+        {
+          "key": "R1/source/LLMAIL_INJECT/dg_v1/fnr",
+          "value": 0.9125
+        },
+        {
+          "key": "R1/source/INJECAGENT_BASE/ds_v2/fn",
+          "value": 86
+        },
+        {
+          "key": "R1/source/INJECAGENT_BASE/dm_b_v1/fn",
+          "value": 0
+        },
+        {
+          "key": "R1/source/INJECAGENT_BASE/dg_v1/fn",
+          "value": 399
+        },
+        {
+          "key": "R1/source/LLMAIL_INJECT/ds_v2/fn",
+          "value": 16
+        },
+        {
+          "key": "R1/source/LLMAIL_INJECT/dm_b_v1/fn",
+          "value": 0
+        },
+        {
+          "key": "R1/source/LLMAIL_INJECT/dg_v1/fn",
+          "value": 365
+        },
+        {
+          "key": "R1/attack_source/INJECAGENT_BASE/sample_count",
+          "value": 400
+        },
+        {
+          "key": "R1/attack_source/LLMAIL_INJECT/sample_count",
+          "value": 400
+        }
+      ],
+      "id": "RQ1-SOURCE",
+      "kind": "OBSERVED",
+      "statement": "R1 source-conditioned FNR: INJECAGENT_BASE: D_S 86/400 (21.50%), D_M-B 0/400 (0.00%), D_G 399/400 (99.75%); LLMAIL_INJECT: D_S 16/400 (4.00%), D_M-B 0/400 (0.00%), D_G 365/400 (91.25%). InjecAgent is a single inherited lineage cluster; its source-level behavior is not independent-case evidence."
+    },
+    {
+      "evidence": [],
+      "id": "RQ1-LIMITS",
+      "kind": "LIMITATION",
+      "statement": "R0 -> R1 differences are descriptive: different, unpaired populations and sources at fixed thresholds; no single cause is attributed. R1 is a non-adaptive shifted population and does not establish adaptive robustness."
+    }
+  ],
+  "primary_comparison": "R0 -> R1",
+  "question": "How does detector behavior change under distribution shift?",
+  "schema_version": "cross_regime_rq1_findings_v1",
+  "significance_tests": false
+}

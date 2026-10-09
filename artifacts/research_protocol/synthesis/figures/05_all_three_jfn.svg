@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="446" viewBox="0 0 760 446" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" role="img">
+<title>All-three joint false-negative rate</title>
+<desc>All-three JFN by regime with stored intervals.</desc>
+<rect x="0" y="0" width="760" height="446" fill="#fcfcfb"/>
+<text x="16.00" y="24.00" font-size="14" text-anchor="start" fill="#0b0b0b" font-weight="bold">All-three joint false-negative rate</text>
+<text x="16.00" y="42.00" font-size="10" text-anchor="start" fill="#52514e" font-weight="normal">Attacks missed by D_S, D_M-B and D_G simultaneously</text>
+<line x1="50.00" y1="356.00" x2="744.00" y2="356.00" stroke="#b9b8b2" stroke-width="1.20"/>
+<text x="46.00" y="359.50" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">0.0%</text>
+<line x1="50.00" y1="301.20" x2="744.00" y2="301.20" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="46.00" y="304.70" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">1.0%</text>
+<line x1="50.00" y1="246.40" x2="744.00" y2="246.40" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="46.00" y="249.90" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">2.0%</text>
+<line x1="50.00" y1="191.60" x2="744.00" y2="191.60" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="46.00" y="195.10" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">3.0%</text>
+<line x1="50.00" y1="136.80" x2="744.00" y2="136.80" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="46.00" y="140.30" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">4.0%</text>
+<line x1="50.00" y1="82.00" x2="744.00" y2="82.00" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="46.00" y="85.50" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">5.0%</text>
+<text x="122.80" y="370.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">R0</text>
+<rect x="109.80" y="296.11" width="26.00" height="59.89" rx="2.00" fill="#2a78d6"><title>R0 all-three JFN</title></rect>
+<line x1="122.80" y1="356.00" x2="122.80" y2="206.27" stroke="#52514e" stroke-width="1.00"/>
+<line x1="119.80" y1="356.00" x2="125.80" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="119.80" y1="206.27" x2="125.80" y2="206.27" stroke="#52514e" stroke-width="1.00"/>
+<text x="122.80" y="203.27" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">2/183</text>
+<text x="260.40" y="370.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">R1</text>
+<rect x="247.40" y="356.00" width="26.00" height="0.00" rx="2.00" fill="#2a78d6"><title>R1 all-three JFN</title></rect>
+<line x1="260.40" y1="356.00" x2="260.40" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="257.40" y1="356.00" x2="263.40" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="257.40" y1="356.00" x2="263.40" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<text x="260.40" y="353.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0/800</text>
+<text x="398.00" y="370.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">R2-DMB</text>
+<rect x="385.00" y="356.00" width="26.00" height="0.00" rx="2.00" fill="#2a78d6"><title>R2-DMB all-three JFN</title></rect>
+<line x1="398.00" y1="356.00" x2="398.00" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="395.00" y1="356.00" x2="401.00" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="395.00" y1="356.00" x2="401.00" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<text x="398.00" y="353.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0/800</text>
+<text x="535.60" y="370.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">R2-D_S</text>
+<rect x="522.60" y="356.00" width="26.00" height="0.00" rx="2.00" fill="#2a78d6"><title>R2-D_S all-three JFN</title></rect>
+<line x1="535.60" y1="356.00" x2="535.60" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="532.60" y1="356.00" x2="538.60" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="532.60" y1="356.00" x2="538.60" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<text x="535.60" y="353.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0/698</text>
+<text x="673.20" y="370.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">R3</text>
+<rect x="660.20" y="356.00" width="26.00" height="0.00" rx="2.00" fill="#2a78d6"><title>R3 all-three JFN</title></rect>
+<line x1="673.20" y1="356.00" x2="673.20" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="670.20" y1="356.00" x2="676.20" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="670.20" y1="356.00" x2="676.20" y2="356.00" stroke="#52514e" stroke-width="1.00"/>
+<text x="673.20" y="353.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0/97</text>
+<text x="16.00" y="418.00" font-size="8.5" text-anchor="start" fill="#52514e" font-weight="normal">R3 [0, 0] is a zero-event percentile-bootstrap interval, not a population robustness bound.</text>
+<text x="16.00" y="428.20" font-size="8.5" text-anchor="start" fill="#52514e" font-weight="normal">R0, R1: mixed attack+benign. R2-DMB, R2-D_S, R3: attack-only. Whiskers: frozen 95% lineage-clustered percentile CIs where stored.</text>
+</svg>

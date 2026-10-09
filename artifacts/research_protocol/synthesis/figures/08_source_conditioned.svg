@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="430" viewBox="0 0 1020 430" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" role="img">
+<title>Source-conditioned detector FNR</title>
+<desc>Per-source FNR by detector for R1, R2-DMB, R2-D_S and R3.</desc>
+<rect x="0" y="0" width="1020" height="430" fill="#fcfcfb"/>
+<text x="16.00" y="24.00" font-size="14" text-anchor="start" fill="#0b0b0b" font-weight="bold">Source-conditioned detector FNR</text>
+<text x="16.00" y="42.00" font-size="10" text-anchor="start" fill="#52514e" font-weight="normal">R0 has no frozen source decomposition. InjecAgent is one inherited lineage cluster in every regime.</text>
+<rect x="16.00" y="55.00" width="10.00" height="10.00" rx="2.00" fill="#2a78d6"></rect>
+<text x="30.00" y="64.00" font-size="10" text-anchor="start" fill="#52514e" font-weight="normal">D_S</text>
+<rect x="56.60" y="55.00" width="10.00" height="10.00" rx="2.00" fill="#eb6834"></rect>
+<text x="70.60" y="64.00" font-size="10" text-anchor="start" fill="#52514e" font-weight="normal">D_M-B</text>
+<rect x="109.60" y="55.00" width="10.00" height="10.00" rx="2.00" fill="#1baf7a"></rect>
+<text x="123.60" y="64.00" font-size="10" text-anchor="start" fill="#52514e" font-weight="normal">D_G</text>
+<text x="10.00" y="84.00" font-size="11" text-anchor="start" fill="#0b0b0b" font-weight="bold">R1</text>
+<line x1="44.00" y1="358.00" x2="254.00" y2="358.00" stroke="#b9b8b2" stroke-width="1.20"/>
+<text x="40.00" y="361.50" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">0%</text>
+<line x1="44.00" y1="305.20" x2="254.00" y2="305.20" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="40.00" y="308.70" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">20%</text>
+<line x1="44.00" y1="252.40" x2="254.00" y2="252.40" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="40.00" y="255.90" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">40%</text>
+<line x1="44.00" y1="199.60" x2="254.00" y2="199.60" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="40.00" y="203.10" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">60%</text>
+<line x1="44.00" y1="146.80" x2="254.00" y2="146.80" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="40.00" y="150.30" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">80%</text>
+<line x1="44.00" y1="94.00" x2="254.00" y2="94.00" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="40.00" y="97.50" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">100%</text>
+<text x="99.00" y="372.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">INJECAGENT</text>
+<text x="99.00" y="382.80" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">n=400</text>
+<rect x="60.22" y="301.24" width="24.52" height="56.76" rx="2.00" fill="#2a78d6"><title>R1 INJECAGENT_BASE D_S</title></rect>
+<text x="72.48" y="298.24" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">86</text>
+<rect x="86.74" y="358.00" width="24.52" height="0.00" rx="2.00" fill="#eb6834"><title>R1 INJECAGENT_BASE D_M-B</title></rect>
+<text x="99.00" y="355.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0</text>
+<rect x="113.26" y="94.66" width="24.52" height="263.34" rx="2.00" fill="#1baf7a"><title>R1 INJECAGENT_BASE D_G</title></rect>
+<text x="125.52" y="91.66" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">399</text>
+<text x="201.00" y="372.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">LLMAIL</text>
+<text x="201.00" y="382.80" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">n=400</text>
+<rect x="162.22" y="347.44" width="24.52" height="10.56" rx="2.00" fill="#2a78d6"><title>R1 LLMAIL_INJECT D_S</title></rect>
+<text x="174.48" y="344.44" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">16</text>
+<rect x="188.74" y="358.00" width="24.52" height="0.00" rx="2.00" fill="#eb6834"><title>R1 LLMAIL_INJECT D_M-B</title></rect>
+<text x="201.00" y="355.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0</text>
+<rect x="215.26" y="117.10" width="24.52" height="240.90" rx="2.00" fill="#1baf7a"><title>R1 LLMAIL_INJECT D_G</title></rect>
+<text x="227.52" y="114.10" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">365</text>
+<text x="260.00" y="84.00" font-size="11" text-anchor="start" fill="#0b0b0b" font-weight="bold">R2-DMB</text>
+<line x1="294.00" y1="358.00" x2="504.00" y2="358.00" stroke="#b9b8b2" stroke-width="1.20"/>
+<text x="290.00" y="361.50" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">0%</text>
+<line x1="294.00" y1="305.20" x2="504.00" y2="305.20" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="290.00" y="308.70" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">20%</text>
+<line x1="294.00" y1="252.40" x2="504.00" y2="252.40" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="290.00" y="255.90" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">40%</text>
+<line x1="294.00" y1="199.60" x2="504.00" y2="199.60" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="290.00" y="203.10" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">60%</text>
+<line x1="294.00" y1="146.80" x2="504.00" y2="146.80" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="290.00" y="150.30" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">80%</text>
+<line x1="294.00" y1="94.00" x2="504.00" y2="94.00" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="290.00" y="97.50" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">100%</text>
+<text x="349.00" y="372.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">INJECAGENT</text>
+<text x="349.00" y="382.80" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">n=400</text>
+<rect x="310.22" y="332.26" width="24.52" height="25.74" rx="2.00" fill="#2a78d6"><title>R2-DMB INJECAGENT_BASE D_S</title></rect>
+<text x="322.48" y="329.26" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">39</text>
+<rect x="336.74" y="358.00" width="24.52" height="0.00" rx="2.00" fill="#eb6834"><title>R2-DMB INJECAGENT_BASE D_M-B</title></rect>
+<text x="349.00" y="355.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0</text>
+<rect x="363.26" y="95.98" width="24.52" height="262.02" rx="2.00" fill="#1baf7a"><title>R2-DMB INJECAGENT_BASE D_G</title></rect>
+<text x="375.52" y="92.98" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">397</text>
+<text x="451.00" y="372.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">LLMAIL</text>
+<text x="451.00" y="382.80" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">n=400</text>
+<rect x="412.22" y="356.68" width="24.52" height="1.32" rx="2.00" fill="#2a78d6"><title>R2-DMB LLMAIL_INJECT D_S</title></rect>
+<text x="424.48" y="353.68" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">2</text>
+<rect x="438.74" y="358.00" width="24.52" height="0.00" rx="2.00" fill="#eb6834"><title>R2-DMB LLMAIL_INJECT D_M-B</title></rect>
+<text x="451.00" y="355.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0</text>
+<rect x="465.26" y="111.82" width="24.52" height="246.18" rx="2.00" fill="#1baf7a"><title>R2-DMB LLMAIL_INJECT D_G</title></rect>
+<text x="477.52" y="108.82" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">373</text>
+<text x="510.00" y="84.00" font-size="11" text-anchor="start" fill="#0b0b0b" font-weight="bold">R2-D_S</text>
+<line x1="544.00" y1="358.00" x2="754.00" y2="358.00" stroke="#b9b8b2" stroke-width="1.20"/>
+<text x="540.00" y="361.50" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">0%</text>
+<line x1="544.00" y1="305.20" x2="754.00" y2="305.20" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="540.00" y="308.70" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">20%</text>
+<line x1="544.00" y1="252.40" x2="754.00" y2="252.40" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="540.00" y="255.90" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">40%</text>
+<line x1="544.00" y1="199.60" x2="754.00" y2="199.60" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="540.00" y="203.10" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">60%</text>
+<line x1="544.00" y1="146.80" x2="754.00" y2="146.80" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="540.00" y="150.30" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">80%</text>
+<line x1="544.00" y1="94.00" x2="754.00" y2="94.00" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="540.00" y="97.50" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">100%</text>
+<text x="599.00" y="372.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">INJECAGENT</text>
+<text x="599.00" y="382.80" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">n=314</text>
+<rect x="560.22" y="296.62" width="24.52" height="61.38" rx="2.00" fill="#2a78d6"><title>R2-D_S INJECAGENT_BASE D_S</title></rect>
+<text x="572.48" y="293.62" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">73</text>
+<rect x="586.74" y="358.00" width="24.52" height="0.00" rx="2.00" fill="#eb6834"><title>R2-D_S INJECAGENT_BASE D_M-B</title></rect>
+<text x="599.00" y="355.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0</text>
+<rect x="613.26" y="95.68" width="24.52" height="262.32" rx="2.00" fill="#1baf7a"><title>R2-D_S INJECAGENT_BASE D_G</title></rect>
+<text x="625.52" y="92.68" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">312</text>
+<text x="701.00" y="372.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">LLMAIL</text>
+<text x="701.00" y="382.80" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">n=384</text>
+<rect x="662.22" y="336.69" width="24.52" height="21.31" rx="2.00" fill="#2a78d6"><title>R2-D_S LLMAIL_INJECT D_S</title></rect>
+<text x="674.48" y="333.69" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">31</text>
+<rect x="688.74" y="358.00" width="24.52" height="0.00" rx="2.00" fill="#eb6834"><title>R2-D_S LLMAIL_INJECT D_M-B</title></rect>
+<text x="701.00" y="355.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0</text>
+<rect x="715.26" y="113.94" width="24.52" height="244.06" rx="2.00" fill="#1baf7a"><title>R2-D_S LLMAIL_INJECT D_G</title></rect>
+<text x="727.52" y="110.94" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">355</text>
+<text x="760.00" y="84.00" font-size="11" text-anchor="start" fill="#0b0b0b" font-weight="bold">R3</text>
+<line x1="794.00" y1="358.00" x2="1004.00" y2="358.00" stroke="#b9b8b2" stroke-width="1.20"/>
+<text x="790.00" y="361.50" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">0%</text>
+<line x1="794.00" y1="305.20" x2="1004.00" y2="305.20" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="790.00" y="308.70" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">20%</text>
+<line x1="794.00" y1="252.40" x2="1004.00" y2="252.40" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="790.00" y="255.90" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">40%</text>
+<line x1="794.00" y1="199.60" x2="1004.00" y2="199.60" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="790.00" y="203.10" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">60%</text>
+<line x1="794.00" y1="146.80" x2="1004.00" y2="146.80" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="790.00" y="150.30" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">80%</text>
+<line x1="794.00" y1="94.00" x2="1004.00" y2="94.00" stroke="#e6e5e0" stroke-width="1.00"/>
+<text x="790.00" y="97.50" font-size="9" text-anchor="end" fill="#52514e" font-weight="normal">100%</text>
+<text x="849.00" y="372.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">INJECAGENT</text>
+<text x="849.00" y="382.80" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">n=1</text>
+<rect x="810.22" y="94.00" width="24.52" height="264.00" rx="2.00" fill="#2a78d6"><title>R3 INJECAGENT_BASE D_S</title></rect>
+<line x1="822.48" y1="94.00" x2="822.48" y2="94.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="819.48" y1="94.00" x2="825.48" y2="94.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="819.48" y1="94.00" x2="825.48" y2="94.00" stroke="#52514e" stroke-width="1.00"/>
+<text x="822.48" y="91.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">1</text>
+<rect x="836.74" y="358.00" width="24.52" height="0.00" rx="2.00" fill="#eb6834"><title>R3 INJECAGENT_BASE D_M-B</title></rect>
+<line x1="849.00" y1="358.00" x2="849.00" y2="358.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="846.00" y1="358.00" x2="852.00" y2="358.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="846.00" y1="358.00" x2="852.00" y2="358.00" stroke="#52514e" stroke-width="1.00"/>
+<text x="849.00" y="355.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0</text>
+<rect x="863.26" y="94.00" width="24.52" height="264.00" rx="2.00" fill="#1baf7a"><title>R3 INJECAGENT_BASE D_G</title></rect>
+<line x1="875.52" y1="94.00" x2="875.52" y2="94.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="872.52" y1="94.00" x2="878.52" y2="94.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="872.52" y1="94.00" x2="878.52" y2="94.00" stroke="#52514e" stroke-width="1.00"/>
+<text x="875.52" y="91.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">1</text>
+<text x="951.00" y="372.00" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">LLMAIL</text>
+<text x="951.00" y="382.80" font-size="9" text-anchor="middle" fill="#52514e" font-weight="normal">n=96</text>
+<rect x="912.22" y="347.00" width="24.52" height="11.00" rx="2.00" fill="#2a78d6"><title>R3 LLMAIL_INJECT D_S</title></rect>
+<line x1="924.48" y1="355.25" x2="924.48" y2="336.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="921.48" y1="355.25" x2="927.48" y2="355.25" stroke="#52514e" stroke-width="1.00"/>
+<line x1="921.48" y1="336.00" x2="927.48" y2="336.00" stroke="#52514e" stroke-width="1.00"/>
+<text x="924.48" y="333.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">4</text>
+<rect x="938.74" y="358.00" width="24.52" height="0.00" rx="2.00" fill="#eb6834"><title>R3 LLMAIL_INJECT D_M-B</title></rect>
+<line x1="951.00" y1="358.00" x2="951.00" y2="358.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="948.00" y1="358.00" x2="954.00" y2="358.00" stroke="#52514e" stroke-width="1.00"/>
+<line x1="948.00" y1="358.00" x2="954.00" y2="358.00" stroke="#52514e" stroke-width="1.00"/>
+<text x="951.00" y="355.00" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">0</text>
+<rect x="965.26" y="107.75" width="24.52" height="250.25" rx="2.00" fill="#1baf7a"><title>R3 LLMAIL_INJECT D_G</title></rect>
+<line x1="977.52" y1="121.50" x2="977.52" y2="96.75" stroke="#52514e" stroke-width="1.00"/>
+<line x1="974.52" y1="121.50" x2="980.52" y2="121.50" stroke="#52514e" stroke-width="1.00"/>
+<line x1="974.52" y1="96.75" x2="980.52" y2="96.75" stroke="#52514e" stroke-width="1.00"/>
+<text x="977.52" y="93.75" font-size="7.5" text-anchor="middle" fill="#0b0b0b" font-weight="normal">91</text>
+<text x="16.00" y="418.00" font-size="8.5" text-anchor="start" fill="#52514e" font-weight="normal">Bars: FN / source attacks. Labels: FN counts. Whiskers only where a frozen source interval exists (R3).</text>
+</svg>

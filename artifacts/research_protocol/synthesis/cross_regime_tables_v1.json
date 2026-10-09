@@ -1,0 +1,3161 @@
+{
+  "attack_only_guard": "FPR, ROC-AUC and AP are NOT_APPLICABLE for R2-DMB, R2-D_S and R3 (no benign denominator); TN/FP null.",
+  "descriptions": {
+    "A": "Core detector performance by regime (operational fixed thresholds)",
+    "B": "Pairwise/common-mode failure metrics",
+    "C": "All-three failure behavior, failure patterns, unique catches and conditional recovery",
+    "D": "Targeted attack behavior and ETR",
+    "E": "Parent-child transitions (immediate R1 parent to terminal)",
+    "F": "Source-conditioned results"
+  },
+  "intervals": "ci95 copied from frozen bundles; NOT_IN_FROZEN_BUNDLE where the regime did not compute that interval.",
+  "population_classes": {
+    "attack_only": [
+      "R2-DMB",
+      "R2-D_S",
+      "R3"
+    ],
+    "mixed": [
+      "R0",
+      "R1"
+    ]
+  },
+  "schema_version": "cross_regime_tables_v1",
+  "tables": {
+    "A": [
+      {
+        "ap": {
+          "status": "OBSERVED",
+          "value": 0.7315865803288281
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "detector_id": "ds_v2",
+        "fn": 70,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.31693989071038253,
+            "point": 0.3825136612021858,
+            "status": "ESTIMATED",
+            "upper": 0.453551912568306,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.3825136612021858
+        },
+        "fp": 43,
+        "fpr": {
+          "ci95": {
+            "domain": "BENIGN_ONLY",
+            "lower": 0.031512605042016806,
+            "point": 0.045168067226890755,
+            "status": "ESTIMATED",
+            "upper": 0.058823529411764705,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.045168067226890755
+        },
+        "population_type": "MIXED",
+        "ranking_source": "FROZEN_RANKING_SUPPLEMENT",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.6174863387978142
+        },
+        "regime": "R0",
+        "roc_auc": {
+          "status": "OBSERVED",
+          "value": 0.896760343481655
+        },
+        "threshold": 0.5585373573968287,
+        "threshold_id": "ds_v2_op3_cal_v1",
+        "tn": 909,
+        "tp": 113
+      },
+      {
+        "ap": {
+          "status": "OBSERVED",
+          "value": 0.9877044339233646
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "detector_id": "dm_b_v1",
+        "fn": 2,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.01092896174863388,
+            "status": "ESTIMATED",
+            "upper": 0.0273224043715847,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.01092896174863388
+        },
+        "fp": 58,
+        "fpr": {
+          "ci95": {
+            "domain": "BENIGN_ONLY",
+            "lower": 0.04719550194581724,
+            "point": 0.06092436974789916,
+            "status": "ESTIMATED",
+            "upper": 0.0776495278069255,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.06092436974789916
+        },
+        "population_type": "MIXED",
+        "ranking_source": "FROZEN_RANKING_SUPPLEMENT",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.9890710382513661
+        },
+        "regime": "R0",
+        "roc_auc": {
+          "status": "OBSERVED",
+          "value": 0.9963493594158975
+        },
+        "threshold": 0.0004967087297700347,
+        "threshold_id": "dm_b_v1_op3_raw_v1",
+        "tn": 894,
+        "tp": 181
+      },
+      {
+        "ap": {
+          "status": "OBSERVED",
+          "value": 0.5006519683988974
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "detector_id": "dg_v1",
+        "fn": 141,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.7103825136612022,
+            "point": 0.7704918032786885,
+            "status": "ESTIMATED",
+            "upper": 0.8252732240437157,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.7704918032786885
+        },
+        "fp": 17,
+        "fpr": {
+          "ci95": {
+            "domain": "BENIGN_ONLY",
+            "lower": 0.00946372239747634,
+            "point": 0.017857142857142856,
+            "status": "ESTIMATED",
+            "upper": 0.026260504201680673,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.017857142857142856
+        },
+        "population_type": "MIXED",
+        "ranking_source": "FROZEN_RANKING_SUPPLEMENT",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.22950819672131148
+        },
+        "regime": "R0",
+        "roc_auc": {
+          "status": "OBSERVED",
+          "value": 0.814953850392616
+        },
+        "threshold": 0.21291141211986545,
+        "threshold_id": "dg_v1_op3_raw_v1",
+        "tn": 935,
+        "tp": 42
+      },
+      {
+        "ap": {
+          "status": "OBSERVED",
+          "value": 0.9748953375370448
+        },
+        "attack_count": 800,
+        "benign_count": 1000,
+        "detector_id": "ds_v2",
+        "fn": 102,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.026631173604830947,
+            "point": 0.1275,
+            "status": "ESTIMATED",
+            "upper": 0.17532033675662764,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.1275
+        },
+        "fp": 28,
+        "fpr": {
+          "ci95": {
+            "domain": "BENIGN_ONLY",
+            "lower": 0.018,
+            "point": 0.028,
+            "status": "ESTIMATED",
+            "upper": 0.038,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.028
+        },
+        "population_type": "MIXED",
+        "ranking_source": "FROZEN_RANKING_SUPPLEMENT",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.8725
+        },
+        "regime": "R1",
+        "roc_auc": {
+          "status": "OBSERVED",
+          "value": 0.97433625
+        },
+        "threshold": 0.5585373573968287,
+        "threshold_id": "ds_v2_op3_cal_v1",
+        "tn": 972,
+        "tp": 698
+      },
+      {
+        "ap": {
+          "status": "OBSERVED",
+          "value": 0.9999999999999911
+        },
+        "attack_count": 800,
+        "benign_count": 1000,
+        "detector_id": "dm_b_v1",
+        "fn": 0,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fp": 132,
+        "fpr": {
+          "ci95": {
+            "domain": "BENIGN_ONLY",
+            "lower": 0.110975,
+            "point": 0.132,
+            "status": "ESTIMATED",
+            "upper": 0.152,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.132
+        },
+        "population_type": "MIXED",
+        "ranking_source": "FROZEN_RANKING_SUPPLEMENT",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 1.0
+        },
+        "regime": "R1",
+        "roc_auc": {
+          "status": "OBSERVED",
+          "value": 1.0
+        },
+        "threshold": 0.0004967087297700347,
+        "threshold_id": "dm_b_v1_op3_raw_v1",
+        "tn": 868,
+        "tp": 800
+      },
+      {
+        "ap": {
+          "status": "OBSERVED",
+          "value": 0.37789020357305086
+        },
+        "attack_count": 800,
+        "benign_count": 1000,
+        "detector_id": "dg_v1",
+        "fn": 764,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.8848039215686274,
+            "point": 0.955,
+            "status": "ESTIMATED",
+            "upper": 0.9817214309230254,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.955
+        },
+        "fp": 207,
+        "fpr": {
+          "ci95": {
+            "domain": "BENIGN_ONLY",
+            "lower": 0.183,
+            "point": 0.207,
+            "status": "ESTIMATED",
+            "upper": 0.23202499999999998,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.207
+        },
+        "population_type": "MIXED",
+        "ranking_source": "FROZEN_RANKING_SUPPLEMENT",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.045
+        },
+        "regime": "R1",
+        "roc_auc": {
+          "status": "OBSERVED",
+          "value": 0.40694875
+        },
+        "threshold": 0.21291141211986545,
+        "threshold_id": "dg_v1_op3_raw_v1",
+        "tn": 793,
+        "tp": 36
+      },
+      {
+        "ap": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "attack_count": 800,
+        "benign_count": 0,
+        "detector_id": "ds_v2",
+        "fn": 41,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.05125,
+            "status": "ESTIMATED",
+            "upper": 0.07595869194079237,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.05125
+        },
+        "fp": null,
+        "fpr": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "population_type": "ATTACK_ONLY",
+        "ranking_source": "NOT_APPLICABLE_ATTACK_ONLY",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.94875
+        },
+        "regime": "R2-DMB",
+        "roc_auc": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "threshold": 0.5585373573968287,
+        "threshold_id": "ds_v2_op3_cal_v1",
+        "tn": null,
+        "tp": 759
+      },
+      {
+        "ap": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "attack_count": 800,
+        "benign_count": 0,
+        "detector_id": "dm_b_v1",
+        "fn": 0,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fp": null,
+        "fpr": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "population_type": "ATTACK_ONLY",
+        "ranking_source": "NOT_APPLICABLE_ATTACK_ONLY",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 1.0
+        },
+        "regime": "R2-DMB",
+        "roc_auc": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "threshold": 0.0004967087297700347,
+        "threshold_id": "dm_b_v1_op3_raw_v1",
+        "tn": null,
+        "tp": 800
+      },
+      {
+        "ap": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "attack_count": 800,
+        "benign_count": 0,
+        "detector_id": "dg_v1",
+        "fn": 770,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.9054204660587639,
+            "point": 0.9625,
+            "status": "ESTIMATED",
+            "upper": 0.9823984215336397,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.9625
+        },
+        "fp": null,
+        "fpr": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "population_type": "ATTACK_ONLY",
+        "ranking_source": "NOT_APPLICABLE_ATTACK_ONLY",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.0375
+        },
+        "regime": "R2-DMB",
+        "roc_auc": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "threshold": 0.21291141211986545,
+        "threshold_id": "dg_v1_op3_raw_v1",
+        "tn": null,
+        "tp": 30
+      },
+      {
+        "ap": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "attack_count": 698,
+        "benign_count": 0,
+        "detector_id": "ds_v2",
+        "fn": 104,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.05986527423469388,
+            "point": 0.1489971346704871,
+            "status": "ESTIMATED",
+            "upper": 0.19592120415199615,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.1489971346704871
+        },
+        "fp": null,
+        "fpr": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "population_type": "ATTACK_ONLY",
+        "ranking_source": "NOT_APPLICABLE_ATTACK_ONLY",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.8510028653295129
+        },
+        "regime": "R2-D_S",
+        "roc_auc": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "threshold": 0.5585373573968287,
+        "threshold_id": "ds_v2_op3_cal_v1",
+        "tn": null,
+        "tp": 594
+      },
+      {
+        "ap": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "attack_count": 698,
+        "benign_count": 0,
+        "detector_id": "dm_b_v1",
+        "fn": 0,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fp": null,
+        "fpr": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "population_type": "ATTACK_ONLY",
+        "ranking_source": "NOT_APPLICABLE_ATTACK_ONLY",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 1.0
+        },
+        "regime": "R2-D_S",
+        "roc_auc": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "threshold": 0.0004967087297700347,
+        "threshold_id": "dm_b_v1_op3_raw_v1",
+        "tn": null,
+        "tp": 698
+      },
+      {
+        "ap": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "attack_count": 698,
+        "benign_count": 0,
+        "detector_id": "dg_v1",
+        "fn": 667,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.8960344471947195,
+            "point": 0.9555873925501432,
+            "status": "ESTIMATED",
+            "upper": 0.9803096828436638,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.9555873925501432
+        },
+        "fp": null,
+        "fpr": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "population_type": "ATTACK_ONLY",
+        "ranking_source": "NOT_APPLICABLE_ATTACK_ONLY",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.044412607449856735
+        },
+        "regime": "R2-D_S",
+        "roc_auc": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "threshold": 0.21291141211986545,
+        "threshold_id": "dg_v1_op3_raw_v1",
+        "tn": null,
+        "tp": 31
+      },
+      {
+        "ap": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "attack_count": 97,
+        "benign_count": 0,
+        "detector_id": "ds_v2",
+        "fn": 5,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.010309278350515464,
+            "point": 0.05154639175257732,
+            "status": "ESTIMATED",
+            "upper": 0.10309278350515463,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.05154639175257732
+        },
+        "fp": null,
+        "fpr": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "population_type": "ATTACK_ONLY",
+        "ranking_source": "NOT_APPLICABLE_ATTACK_ONLY",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.9484536082474226
+        },
+        "regime": "R3",
+        "roc_auc": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "threshold": 0.5585373573968287,
+        "threshold_id": "ds_v2_op3_cal_v1",
+        "tn": null,
+        "tp": 92
+      },
+      {
+        "ap": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "attack_count": 97,
+        "benign_count": 0,
+        "detector_id": "dm_b_v1",
+        "fn": 0,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fp": null,
+        "fpr": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "population_type": "ATTACK_ONLY",
+        "ranking_source": "NOT_APPLICABLE_ATTACK_ONLY",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 1.0
+        },
+        "regime": "R3",
+        "roc_auc": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "threshold": 0.0004967087297700347,
+        "threshold_id": "dm_b_v1_op3_raw_v1",
+        "tn": null,
+        "tp": 97
+      },
+      {
+        "ap": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "attack_count": 97,
+        "benign_count": 0,
+        "detector_id": "dg_v1",
+        "fn": 92,
+        "fnr": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.8969072164948454,
+            "point": 0.9484536082474226,
+            "status": "ESTIMATED",
+            "upper": 0.9896907216494846,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.9484536082474226
+        },
+        "fp": null,
+        "fpr": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "population_type": "ATTACK_ONLY",
+        "ranking_source": "NOT_APPLICABLE_ATTACK_ONLY",
+        "recall": {
+          "status": "OBSERVED",
+          "value": 0.05154639175257732
+        },
+        "regime": "R3",
+        "roc_auc": {
+          "status": "NOT_APPLICABLE",
+          "value": null
+        },
+        "threshold": 0.21291141211986545,
+        "threshold_id": "dg_v1_op3_raw_v1",
+        "tn": null,
+        "tp": 5
+      }
+    ],
+    "B": [
+      {
+        "attack_count": 183,
+        "benign_count": 952,
+        "ejf": {
+          "ci95": {
+            "status": "NOT_IN_FROZEN_BUNDLE"
+          },
+          "status": "OBSERVED",
+          "value": 0.006748484577025292
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "status": "NOT_IN_FROZEN_BUNDLE"
+          },
+          "status": "OBSERVED",
+          "value": 0.02857142857142857
+        },
+        "independence_reference": {
+          "ci95": {
+            "status": "NOT_IN_FROZEN_BUNDLE"
+          },
+          "status": "OBSERVED",
+          "value": 0.004180477171608588
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.01092896174863388,
+            "status": "ESTIMATED",
+            "upper": 0.0273224043715847,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.01092896174863388
+        },
+        "left_detector": "ds_v2",
+        "population_type": "MIXED",
+        "regime": "R0",
+        "right_detector": "dm_b_v1",
+        "shared_fn": 2,
+        "union_fn": 70
+      },
+      {
+        "attack_count": 183,
+        "benign_count": 952,
+        "ejf": {
+          "ci95": {
+            "status": "NOT_IN_FROZEN_BUNDLE"
+          },
+          "status": "OBSERVED",
+          "value": -0.010570635133924589
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "status": "NOT_IN_FROZEN_BUNDLE"
+          },
+          "status": "OBSERVED",
+          "value": 0.3270440251572327
+        },
+        "independence_reference": {
+          "ci95": {
+            "status": "NOT_IN_FROZEN_BUNDLE"
+          },
+          "status": "OBSERVED",
+          "value": 0.29472364059840545
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.2185792349726776,
+            "point": 0.28415300546448086,
+            "status": "ESTIMATED",
+            "upper": 0.3442622950819672,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.28415300546448086
+        },
+        "left_detector": "ds_v2",
+        "population_type": "MIXED",
+        "regime": "R0",
+        "right_detector": "dg_v1",
+        "shared_fn": 52,
+        "union_fn": 159
+      },
+      {
+        "attack_count": 183,
+        "benign_count": 952,
+        "ejf": {
+          "ci95": {
+            "status": "NOT_IN_FROZEN_BUNDLE"
+          },
+          "status": "OBSERVED",
+          "value": 0.002508286302965153
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "status": "NOT_IN_FROZEN_BUNDLE"
+          },
+          "status": "OBSERVED",
+          "value": 0.014184397163120567
+        },
+        "independence_reference": {
+          "ci95": {
+            "status": "NOT_IN_FROZEN_BUNDLE"
+          },
+          "status": "OBSERVED",
+          "value": 0.008420675445668727
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.01092896174863388,
+            "status": "ESTIMATED",
+            "upper": 0.0273224043715847,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.01092896174863388
+        },
+        "left_detector": "dm_b_v1",
+        "population_type": "MIXED",
+        "regime": "R0",
+        "right_detector": "dg_v1",
+        "shared_fn": 2,
+        "union_fn": 141
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 1000,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "left_detector": "ds_v2",
+        "population_type": "MIXED",
+        "regime": "R1",
+        "right_detector": "dm_b_v1",
+        "shared_fn": 0,
+        "union_fn": 102
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 1000,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": -0.0027784249083637014,
+            "point": 0.004487500000000005,
+            "status": "ESTIMATED",
+            "upper": 0.006959610478944632,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.004487500000000005
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.026036619832041346,
+            "point": 0.13202614379084968,
+            "status": "ESTIMATED",
+            "upper": 0.17932315308981644,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.13202614379084968
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.024486238926203992,
+            "point": 0.1217625,
+            "status": "ESTIMATED",
+            "upper": 0.17193936758664813,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.1217625
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.023909471001207352,
+            "point": 0.12625,
+            "status": "ESTIMATED",
+            "upper": 0.17503849483029715,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.12625
+        },
+        "left_detector": "ds_v2",
+        "population_type": "MIXED",
+        "regime": "R1",
+        "right_detector": "dg_v1",
+        "shared_fn": 101,
+        "union_fn": 765
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 1000,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "left_detector": "dm_b_v1",
+        "population_type": "MIXED",
+        "regime": "R1",
+        "right_detector": "dg_v1",
+        "shared_fn": 0,
+        "union_fn": 764
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 0,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 954
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "left_detector": "ds_v2",
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-DMB",
+        "right_detector": "dm_b_v1",
+        "shared_fn": 0,
+        "union_fn": 41
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 0,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": -0.0005225151755748273,
+            "point": 0.0006718750000000023,
+            "status": "ESTIMATED",
+            "upper": 0.0013477692597847453,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0006718750000000023
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.05188067444876784,
+            "status": "ESTIMATED",
+            "upper": 0.07542294119570493,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.05188067444876784
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.049328125,
+            "status": "ESTIMATED",
+            "upper": 0.07457674711685552,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.049328125
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.05,
+            "status": "ESTIMATED",
+            "upper": 0.07407580477673935,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.05
+        },
+        "left_detector": "ds_v2",
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-DMB",
+        "right_detector": "dg_v1",
+        "shared_fn": 40,
+        "union_fn": 771
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 0,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "left_detector": "dm_b_v1",
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-DMB",
+        "right_detector": "dg_v1",
+        "shared_fn": 0,
+        "union_fn": 770
+      },
+      {
+        "attack_count": 698,
+        "benign_count": 0,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "left_detector": "ds_v2",
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-D_S",
+        "right_detector": "dm_b_v1",
+        "shared_fn": 0,
+        "union_fn": 104
+      },
+      {
+        "attack_count": 698,
+        "benign_count": 0,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": -0.0011140518068601757,
+            "point": 0.0037520217403798073,
+            "status": "ESTIMATED",
+            "upper": 0.007715933539187981,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0037520217403798073
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.061330612244897956,
+            "point": 0.15246636771300448,
+            "status": "ESTIMATED",
+            "upper": 0.19636021151017227,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.15246636771300448
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0552269711606981,
+            "point": 0.14237978341721333,
+            "status": "ESTIMATED",
+            "upper": 0.19053344006683187,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.14237978341721333
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.05655164458506361,
+            "point": 0.14613180515759314,
+            "status": "ESTIMATED",
+            "upper": 0.19252130113760302,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.14613180515759314
+        },
+        "left_detector": "ds_v2",
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-D_S",
+        "right_detector": "dg_v1",
+        "shared_fn": 102,
+        "union_fn": 669
+      },
+      {
+        "attack_count": 698,
+        "benign_count": 0,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "left_detector": "dm_b_v1",
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-D_S",
+        "right_detector": "dg_v1",
+        "shared_fn": 0,
+        "union_fn": 667
+      },
+      {
+        "attack_count": 97,
+        "benign_count": 0,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 993
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "left_detector": "ds_v2",
+        "population_type": "ATTACK_ONLY",
+        "regime": "R3",
+        "right_detector": "dm_b_v1",
+        "shared_fn": 0,
+        "union_fn": 5
+      },
+      {
+        "attack_count": 97,
+        "benign_count": 0,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.00042512488043362773,
+            "point": 0.00265703050271017,
+            "status": "ESTIMATED",
+            "upper": 0.006801998086938044,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.00265703050271017
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.01098901098901099,
+            "point": 0.05434782608695652,
+            "status": "ESTIMATED",
+            "upper": 0.10638297872340426,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.05434782608695652
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.009777872249973429,
+            "point": 0.04888936124986715,
+            "status": "ESTIMATED",
+            "upper": 0.09565309809756616,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.04888936124986715
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.010309278350515464,
+            "point": 0.05154639175257732,
+            "status": "ESTIMATED",
+            "upper": 0.10309278350515463,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.05154639175257732
+        },
+        "left_detector": "ds_v2",
+        "population_type": "ATTACK_ONLY",
+        "regime": "R3",
+        "right_detector": "dg_v1",
+        "shared_fn": 5,
+        "union_fn": 92
+      },
+      {
+        "attack_count": 97,
+        "benign_count": 0,
+        "ejf": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "fn_jaccard": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "independence_reference": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "left_detector": "dm_b_v1",
+        "population_type": "ATTACK_ONLY",
+        "regime": "R3",
+        "right_detector": "dg_v1",
+        "shared_fn": 0,
+        "union_fn": 92
+      }
+    ],
+    "C": [
+      {
+        "all_three_fn": 2,
+        "all_three_jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.01092896174863388,
+            "status": "ESTIMATED",
+            "upper": 0.0273224043715847,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.01092896174863388
+        },
+        "attack_count": 183,
+        "benign_count": 952,
+        "failure_patterns": {
+          "000": {
+            "ci95": {
+              "status": "NOT_IN_FROZEN_BUNDLE"
+            },
+            "count": 24,
+            "meaning": "All three catch",
+            "rate": 0.13114754098360656
+          },
+          "001": {
+            "ci95": {
+              "status": "NOT_IN_FROZEN_BUNDLE"
+            },
+            "count": 89,
+            "meaning": "Only D_G misses",
+            "rate": 0.48633879781420764
+          },
+          "010": {
+            "ci95": {
+              "status": "NOT_IN_FROZEN_BUNDLE"
+            },
+            "count": 0,
+            "meaning": "Only D_M-B misses",
+            "rate": 0.0
+          },
+          "011": {
+            "ci95": {
+              "status": "NOT_IN_FROZEN_BUNDLE"
+            },
+            "count": 0,
+            "meaning": "D_M-B and D_G miss; D_S catches",
+            "rate": 0.0
+          },
+          "100": {
+            "ci95": {
+              "status": "NOT_IN_FROZEN_BUNDLE"
+            },
+            "count": 18,
+            "meaning": "Only D_S misses",
+            "rate": 0.09836065573770492
+          },
+          "101": {
+            "ci95": {
+              "status": "NOT_IN_FROZEN_BUNDLE"
+            },
+            "count": 50,
+            "meaning": "D_S and D_G miss; D_M-B catches",
+            "rate": 0.273224043715847
+          },
+          "110": {
+            "ci95": {
+              "status": "NOT_IN_FROZEN_BUNDLE"
+            },
+            "count": 0,
+            "meaning": "D_S and D_M-B miss; D_G catches",
+            "rate": 0.0
+          },
+          "111": {
+            "ci95": {
+              "status": "NOT_IN_FROZEN_BUNDLE"
+            },
+            "count": 2,
+            "meaning": "All three miss",
+            "rate": 0.01092896174863388
+          }
+        },
+        "population_type": "MIXED",
+        "recovery": {
+          "dg_v1": {
+            "both_others_miss_count": 2,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": null,
+                "point": 0.0,
+                "status": "UNSTABLE_DENOMINATOR",
+                "upper": null,
+                "valid_replicates": 871
+              },
+              "denominator": 2,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            },
+            "unique_catch_count": 0,
+            "unique_catch_pattern": "110",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 183,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            }
+          },
+          "dm_b_v1": {
+            "both_others_miss_count": 52,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.8965337643678161,
+                "point": 0.9615384615384616,
+                "status": "ESTIMATED",
+                "upper": 1.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 52,
+              "numerator": 50,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.9615384615384616
+            },
+            "unique_catch_count": 50,
+            "unique_catch_pattern": "101",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.20765027322404372,
+                "point": 0.273224043715847,
+                "status": "ESTIMATED",
+                "upper": 0.3333333333333333,
+                "valid_replicates": 1000
+              },
+              "denominator": 183,
+              "numerator": 50,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.273224043715847
+            }
+          },
+          "ds_v2": {
+            "both_others_miss_count": 2,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": null,
+                "point": 0.0,
+                "status": "UNSTABLE_DENOMINATOR",
+                "upper": null,
+                "valid_replicates": 871
+              },
+              "denominator": 2,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            },
+            "unique_catch_count": 0,
+            "unique_catch_pattern": "011",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 183,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            }
+          }
+        },
+        "regime": "R0"
+      },
+      {
+        "all_three_fn": 0,
+        "all_three_jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "attack_count": 800,
+        "benign_count": 1000,
+        "failure_patterns": {
+          "000": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.017206502169250033,
+              "point": 0.04375,
+              "status": "ESTIMATED",
+              "upper": 0.11399522632229557,
+              "valid_replicates": 1000
+            },
+            "count": 35,
+            "meaning": "All three catch",
+            "rate": 0.04375
+          },
+          "001": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.8002430997950457,
+              "point": 0.82875,
+              "status": "ESTIMATED",
+              "upper": 0.9058265925176946,
+              "valid_replicates": 1000
+            },
+            "count": 663,
+            "meaning": "Only D_G misses",
+            "rate": 0.82875
+          },
+          "010": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "Only D_M-B misses",
+            "rate": 0.0
+          },
+          "011": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "D_M-B and D_G miss; D_S catches",
+            "rate": 0.0
+          },
+          "100": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.00125,
+              "status": "ESTIMATED",
+              "upper": 0.00541882227632376,
+              "valid_replicates": 1000
+            },
+            "count": 1,
+            "meaning": "Only D_S misses",
+            "rate": 0.00125
+          },
+          "101": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.023909471001207352,
+              "point": 0.12625,
+              "status": "ESTIMATED",
+              "upper": 0.17503849483029715,
+              "valid_replicates": 1000
+            },
+            "count": 101,
+            "meaning": "D_S and D_G miss; D_M-B catches",
+            "rate": 0.12625
+          },
+          "110": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "D_S and D_M-B miss; D_G catches",
+            "rate": 0.0
+          },
+          "111": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "All three miss",
+            "rate": 0.0
+          }
+        },
+        "population_type": "MIXED",
+        "recovery": {
+          "dg_v1": {
+            "both_others_miss_count": 0,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": null,
+                "point": null,
+                "status": "OBSERVED_UNDEFINED",
+                "upper": null,
+                "valid_replicates": 0
+              },
+              "denominator": 0,
+              "numerator": 0,
+              "reason": "ZERO_DENOMINATOR",
+              "status": "UNDEFINED",
+              "value": null
+            },
+            "unique_catch_count": 0,
+            "unique_catch_pattern": "110",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 800,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            }
+          },
+          "dm_b_v1": {
+            "both_others_miss_count": 101,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 1.0,
+                "point": 1.0,
+                "status": "ESTIMATED",
+                "upper": 1.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 101,
+              "numerator": 101,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 1.0
+            },
+            "unique_catch_count": 101,
+            "unique_catch_pattern": "101",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.023909471001207352,
+                "point": 0.12625,
+                "status": "ESTIMATED",
+                "upper": 0.17503849483029715,
+                "valid_replicates": 1000
+              },
+              "denominator": 800,
+              "numerator": 101,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.12625
+            }
+          },
+          "ds_v2": {
+            "both_others_miss_count": 0,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": null,
+                "point": null,
+                "status": "OBSERVED_UNDEFINED",
+                "upper": null,
+                "valid_replicates": 0
+              },
+              "denominator": 0,
+              "numerator": 0,
+              "reason": "ZERO_DENOMINATOR",
+              "status": "UNDEFINED",
+              "value": null
+            },
+            "unique_catch_count": 0,
+            "unique_catch_pattern": "011",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 800,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            }
+          }
+        },
+        "regime": "R1"
+      },
+      {
+        "all_three_fn": 0,
+        "all_three_jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "attack_count": 800,
+        "benign_count": 0,
+        "failure_patterns": {
+          "000": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.015902882381475147,
+              "point": 0.03625,
+              "status": "ESTIMATED",
+              "upper": 0.09457953394123605,
+              "valid_replicates": 1000
+            },
+            "count": 29,
+            "meaning": "All three catch",
+            "rate": 0.03625
+          },
+          "001": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.8946014577277858,
+              "point": 0.9125,
+              "status": "ESTIMATED",
+              "upper": 0.9522731205250596,
+              "valid_replicates": 1000
+            },
+            "count": 730,
+            "meaning": "Only D_G misses",
+            "rate": 0.9125
+          },
+          "010": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "Only D_M-B misses",
+            "rate": 0.0
+          },
+          "011": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "D_M-B and D_G miss; D_S catches",
+            "rate": 0.0
+          },
+          "100": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.00125,
+              "status": "ESTIMATED",
+              "upper": 0.0019035532994923859,
+              "valid_replicates": 1000
+            },
+            "count": 1,
+            "meaning": "Only D_S misses",
+            "rate": 0.00125
+          },
+          "101": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.05,
+              "status": "ESTIMATED",
+              "upper": 0.07407580477673935,
+              "valid_replicates": 1000
+            },
+            "count": 40,
+            "meaning": "D_S and D_G miss; D_M-B catches",
+            "rate": 0.05
+          },
+          "110": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "D_S and D_M-B miss; D_G catches",
+            "rate": 0.0
+          },
+          "111": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "All three miss",
+            "rate": 0.0
+          }
+        },
+        "population_type": "ATTACK_ONLY",
+        "recovery": {
+          "dg_v1": {
+            "both_others_miss_count": 0,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": null,
+                "point": null,
+                "status": "OBSERVED_UNDEFINED",
+                "upper": null,
+                "valid_replicates": 0
+              },
+              "denominator": 0,
+              "numerator": 0,
+              "reason": "ZERO_DENOMINATOR",
+              "status": "UNDEFINED",
+              "value": null
+            },
+            "unique_catch_count": 0,
+            "unique_catch_pattern": "110",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 800,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            }
+          },
+          "dm_b_v1": {
+            "both_others_miss_count": 40,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 1.0,
+                "point": 1.0,
+                "status": "ESTIMATED",
+                "upper": 1.0,
+                "valid_replicates": 954
+              },
+              "denominator": 40,
+              "numerator": 40,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 1.0
+            },
+            "unique_catch_count": 40,
+            "unique_catch_pattern": "101",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.05,
+                "status": "ESTIMATED",
+                "upper": 0.07407580477673935,
+                "valid_replicates": 1000
+              },
+              "denominator": 800,
+              "numerator": 40,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.05
+            }
+          },
+          "ds_v2": {
+            "both_others_miss_count": 0,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": null,
+                "point": null,
+                "status": "OBSERVED_UNDEFINED",
+                "upper": null,
+                "valid_replicates": 0
+              },
+              "denominator": 0,
+              "numerator": 0,
+              "reason": "ZERO_DENOMINATOR",
+              "status": "UNDEFINED",
+              "value": null
+            },
+            "unique_catch_count": 0,
+            "unique_catch_pattern": "011",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 800,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            }
+          }
+        },
+        "regime": "R2-DMB"
+      },
+      {
+        "all_three_fn": 0,
+        "all_three_jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "attack_count": 698,
+        "benign_count": 0,
+        "failure_patterns": {
+          "000": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.01676821751575504,
+              "point": 0.04154727793696275,
+              "status": "ESTIMATED",
+              "upper": 0.10127130592806115,
+              "valid_replicates": 1000
+            },
+            "count": 29,
+            "meaning": "All three catch",
+            "rate": 0.04154727793696275
+          },
+          "001": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.7791197867055154,
+              "point": 0.8094555873925502,
+              "status": "ESTIMATED",
+              "upper": 0.8813733159495871,
+              "valid_replicates": 1000
+            },
+            "count": 565,
+            "meaning": "Only D_G misses",
+            "rate": 0.8094555873925502
+          },
+          "010": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "Only D_M-B misses",
+            "rate": 0.0
+          },
+          "011": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "D_M-B and D_G miss; D_S catches",
+            "rate": 0.0
+          },
+          "100": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0028653295128939827,
+              "status": "ESTIMATED",
+              "upper": 0.007614697562676793,
+              "valid_replicates": 1000
+            },
+            "count": 2,
+            "meaning": "Only D_S misses",
+            "rate": 0.0028653295128939827
+          },
+          "101": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.05655164458506361,
+              "point": 0.14613180515759314,
+              "status": "ESTIMATED",
+              "upper": 0.19252130113760302,
+              "valid_replicates": 1000
+            },
+            "count": 102,
+            "meaning": "D_S and D_G miss; D_M-B catches",
+            "rate": 0.14613180515759314
+          },
+          "110": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "D_S and D_M-B miss; D_G catches",
+            "rate": 0.0
+          },
+          "111": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "All three miss",
+            "rate": 0.0
+          }
+        },
+        "population_type": "ATTACK_ONLY",
+        "recovery": {
+          "dg_v1": {
+            "both_others_miss_count": 0,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": null,
+                "point": null,
+                "status": "OBSERVED_UNDEFINED",
+                "upper": null,
+                "valid_replicates": 0
+              },
+              "denominator": 0,
+              "numerator": 0,
+              "reason": "ZERO_DENOMINATOR",
+              "status": "UNDEFINED",
+              "value": null
+            },
+            "unique_catch_count": 0,
+            "unique_catch_pattern": "110",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 698,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            }
+          },
+          "dm_b_v1": {
+            "both_others_miss_count": 102,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 1.0,
+                "point": 1.0,
+                "status": "ESTIMATED",
+                "upper": 1.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 102,
+              "numerator": 102,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 1.0
+            },
+            "unique_catch_count": 102,
+            "unique_catch_pattern": "101",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.05655164458506361,
+                "point": 0.14613180515759314,
+                "status": "ESTIMATED",
+                "upper": 0.19252130113760302,
+                "valid_replicates": 1000
+              },
+              "denominator": 698,
+              "numerator": 102,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.14613180515759314
+            }
+          },
+          "ds_v2": {
+            "both_others_miss_count": 0,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": null,
+                "point": null,
+                "status": "OBSERVED_UNDEFINED",
+                "upper": null,
+                "valid_replicates": 0
+              },
+              "denominator": 0,
+              "numerator": 0,
+              "reason": "ZERO_DENOMINATOR",
+              "status": "UNDEFINED",
+              "value": null
+            },
+            "unique_catch_count": 0,
+            "unique_catch_pattern": "011",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 698,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            }
+          }
+        },
+        "regime": "R2-D_S"
+      },
+      {
+        "all_three_fn": 0,
+        "all_three_jfn": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "status": "OBSERVED",
+          "value": 0.0
+        },
+        "attack_count": 97,
+        "benign_count": 0,
+        "failure_patterns": {
+          "000": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.010309278350515464,
+              "point": 0.05154639175257732,
+              "status": "ESTIMATED",
+              "upper": 0.10309278350515463,
+              "valid_replicates": 1000
+            },
+            "count": 5,
+            "meaning": "All three catch",
+            "rate": 0.05154639175257732
+          },
+          "001": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.8247422680412371,
+              "point": 0.8969072164948454,
+              "status": "ESTIMATED",
+              "upper": 0.9484536082474226,
+              "valid_replicates": 1000
+            },
+            "count": 87,
+            "meaning": "Only D_G misses",
+            "rate": 0.8969072164948454
+          },
+          "010": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "Only D_M-B misses",
+            "rate": 0.0
+          },
+          "011": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "D_M-B and D_G miss; D_S catches",
+            "rate": 0.0
+          },
+          "100": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "Only D_S misses",
+            "rate": 0.0
+          },
+          "101": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.010309278350515464,
+              "point": 0.05154639175257732,
+              "status": "ESTIMATED",
+              "upper": 0.10309278350515463,
+              "valid_replicates": 1000
+            },
+            "count": 5,
+            "meaning": "D_S and D_G miss; D_M-B catches",
+            "rate": 0.05154639175257732
+          },
+          "110": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "D_S and D_M-B miss; D_G catches",
+            "rate": 0.0
+          },
+          "111": {
+            "ci95": {
+              "domain": "ATTACK_ONLY",
+              "lower": 0.0,
+              "point": 0.0,
+              "status": "ESTIMATED",
+              "upper": 0.0,
+              "valid_replicates": 1000
+            },
+            "count": 0,
+            "meaning": "All three miss",
+            "rate": 0.0
+          }
+        },
+        "population_type": "ATTACK_ONLY",
+        "recovery": {
+          "dg_v1": {
+            "both_others_miss_count": 0,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": null,
+                "point": null,
+                "status": "OBSERVED_UNDEFINED",
+                "upper": null,
+                "valid_replicates": 0
+              },
+              "denominator": 0,
+              "numerator": 0,
+              "reason": "ZERO_DENOMINATOR",
+              "status": "UNDEFINED",
+              "value": null
+            },
+            "unique_catch_count": 0,
+            "unique_catch_pattern": "110",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 97,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            }
+          },
+          "dm_b_v1": {
+            "both_others_miss_count": 5,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 1.0,
+                "point": 1.0,
+                "status": "ESTIMATED",
+                "upper": 1.0,
+                "valid_replicates": 993
+              },
+              "denominator": 5,
+              "numerator": 5,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 1.0
+            },
+            "unique_catch_count": 5,
+            "unique_catch_pattern": "101",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.010309278350515464,
+                "point": 0.05154639175257732,
+                "status": "ESTIMATED",
+                "upper": 0.10309278350515463,
+                "valid_replicates": 1000
+              },
+              "denominator": 97,
+              "numerator": 5,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.05154639175257732
+            }
+          },
+          "ds_v2": {
+            "both_others_miss_count": 0,
+            "conditional_recovery": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": null,
+                "point": null,
+                "status": "OBSERVED_UNDEFINED",
+                "upper": null,
+                "valid_replicates": 0
+              },
+              "denominator": 0,
+              "numerator": 0,
+              "reason": "ZERO_DENOMINATOR",
+              "status": "UNDEFINED",
+              "value": null
+            },
+            "unique_catch_count": 0,
+            "unique_catch_pattern": "011",
+            "unique_catch_rate": {
+              "ci95": {
+                "domain": "ATTACK_ONLY",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 97,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            }
+          }
+        },
+        "regime": "R3"
+      }
+    ],
+    "D": [
+      {
+        "attack_count": 183,
+        "benign_count": 952,
+        "population_type": "MIXED",
+        "regime": "R0",
+        "status": "NOT_APPLICABLE_NON_TARGETED_REGIME",
+        "target_detector": null
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 1000,
+        "population_type": "MIXED",
+        "regime": "R1",
+        "status": "NOT_APPLICABLE_NON_TARGETED_REGIME",
+        "target_detector": null
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 0,
+        "interval_note": null,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-DMB",
+        "target_detector": "dm_b_v1",
+        "target_evasion_count": 0,
+        "target_evasion_lineage_count": 0,
+        "target_evasion_rate": {
+          "ci95": {
+            "domain": "VALID_TARGET_ATTEMPTS",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "denominator": 800,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "transfer_status": "UNDEFINED_ZERO_TARGET_EVASIONS",
+        "transfers": [
+          {
+            "etr": {
+              "ci95": {
+                "domain": "VALID_TARGET_ATTEMPTS",
+                "lower": null,
+                "point": null,
+                "status": "OBSERVED_UNDEFINED",
+                "upper": null,
+                "valid_replicates": 0
+              },
+              "denominator": 0,
+              "numerator": 0,
+              "reason": "ZERO_DENOMINATOR",
+              "status": "UNDEFINED",
+              "value": null
+            },
+            "joint_evasion_count": 0,
+            "transfer_detector": "ds_v2"
+          },
+          {
+            "etr": {
+              "ci95": {
+                "domain": "VALID_TARGET_ATTEMPTS",
+                "lower": null,
+                "point": null,
+                "status": "OBSERVED_UNDEFINED",
+                "upper": null,
+                "valid_replicates": 0
+              },
+              "denominator": 0,
+              "numerator": 0,
+              "reason": "ZERO_DENOMINATOR",
+              "status": "UNDEFINED",
+              "value": null
+            },
+            "joint_evasion_count": 0,
+            "transfer_detector": "dg_v1"
+          }
+        ],
+        "valid_attempt_count": 800
+      },
+      {
+        "attack_count": 698,
+        "benign_count": 0,
+        "interval_note": null,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-D_S",
+        "target_detector": "ds_v2",
+        "target_evasion_count": 104,
+        "target_evasion_lineage_count": 28,
+        "target_evasion_rate": {
+          "ci95": {
+            "domain": "VALID_TARGET_ATTEMPTS",
+            "lower": 0.05986527423469388,
+            "point": 0.1489971346704871,
+            "status": "ESTIMATED",
+            "upper": 0.19592120415199615,
+            "valid_replicates": 1000
+          },
+          "denominator": 698,
+          "numerator": 104,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.1489971346704871
+        },
+        "transfer_status": "OBSERVED",
+        "transfers": [
+          {
+            "etr": {
+              "ci95": {
+                "domain": "VALID_TARGET_ATTEMPTS",
+                "lower": 0.0,
+                "point": 0.0,
+                "status": "ESTIMATED",
+                "upper": 0.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 104,
+              "numerator": 0,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.0
+            },
+            "joint_evasion_count": 0,
+            "transfer_detector": "dm_b_v1"
+          },
+          {
+            "etr": {
+              "ci95": {
+                "domain": "VALID_TARGET_ATTEMPTS",
+                "lower": 0.9130434782608695,
+                "point": 0.9807692307692307,
+                "status": "ESTIMATED",
+                "upper": 1.0,
+                "valid_replicates": 1000
+              },
+              "denominator": 104,
+              "numerator": 102,
+              "reason": null,
+              "status": "DEFINED",
+              "value": 0.9807692307692307
+            },
+            "joint_evasion_count": 102,
+            "transfer_detector": "dg_v1"
+          }
+        ],
+        "valid_attempt_count": 698
+      },
+      {
+        "attack_count": 97,
+        "benign_count": 0,
+        "interval_note": "R3 target interval is the frozen ATTACK_ONLY all_three/jfn interval (identical population and numerator).",
+        "population_type": "ATTACK_ONLY",
+        "regime": "R3",
+        "target_detector": "ALL",
+        "target_evasion_count": 0,
+        "target_evasion_lineage_count": 0,
+        "target_evasion_rate": {
+          "ci95": {
+            "domain": "ATTACK_ONLY",
+            "lower": 0.0,
+            "point": 0.0,
+            "status": "ESTIMATED",
+            "upper": 0.0,
+            "valid_replicates": 1000
+          },
+          "denominator": 97,
+          "numerator": 0,
+          "reason": null,
+          "status": "DEFINED",
+          "value": 0.0
+        },
+        "transfer_status": "NOT_APPLICABLE_TARGET_ALL",
+        "transfers": [],
+        "valid_attempt_count": 97
+      }
+    ],
+    "E": [
+      {
+        "attack_count": 183,
+        "benign_count": 952,
+        "population_type": "MIXED",
+        "regime": "R0",
+        "status": "NOT_APPLICABLE_NO_PARENT_CHILD_STRUCTURE"
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 1000,
+        "population_type": "MIXED",
+        "regime": "R1",
+        "status": "NOT_APPLICABLE_NO_PARENT_CHILD_STRUCTURE"
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 0,
+        "catch_to_catch": 694,
+        "catch_to_miss": 4,
+        "detector_id": "ds_v2",
+        "miss_to_catch": 65,
+        "miss_to_miss": 37,
+        "parent_child_pairs": 800,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-DMB"
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 0,
+        "catch_to_catch": 800,
+        "catch_to_miss": 0,
+        "detector_id": "dm_b_v1",
+        "miss_to_catch": 0,
+        "miss_to_miss": 0,
+        "parent_child_pairs": 800,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-DMB"
+      },
+      {
+        "attack_count": 800,
+        "benign_count": 0,
+        "catch_to_catch": 23,
+        "catch_to_miss": 13,
+        "detector_id": "dg_v1",
+        "miss_to_catch": 7,
+        "miss_to_miss": 757,
+        "parent_child_pairs": 800,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-DMB"
+      },
+      {
+        "attack_count": 698,
+        "benign_count": 0,
+        "catch_to_catch": 594,
+        "catch_to_miss": 104,
+        "detector_id": "ds_v2",
+        "miss_to_catch": 0,
+        "miss_to_miss": 0,
+        "parent_child_pairs": 698,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-D_S"
+      },
+      {
+        "attack_count": 698,
+        "benign_count": 0,
+        "catch_to_catch": 698,
+        "catch_to_miss": 0,
+        "detector_id": "dm_b_v1",
+        "miss_to_catch": 0,
+        "miss_to_miss": 0,
+        "parent_child_pairs": 698,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-D_S"
+      },
+      {
+        "attack_count": 698,
+        "benign_count": 0,
+        "catch_to_catch": 24,
+        "catch_to_miss": 11,
+        "detector_id": "dg_v1",
+        "miss_to_catch": 7,
+        "miss_to_miss": 656,
+        "parent_child_pairs": 698,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R2-D_S"
+      },
+      {
+        "attack_count": 97,
+        "benign_count": 0,
+        "catch_to_catch": 89,
+        "catch_to_miss": 0,
+        "detector_id": "ds_v2",
+        "miss_to_catch": 3,
+        "miss_to_miss": 5,
+        "parent_child_pairs": 97,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R3"
+      },
+      {
+        "attack_count": 97,
+        "benign_count": 0,
+        "catch_to_catch": 97,
+        "catch_to_miss": 0,
+        "detector_id": "dm_b_v1",
+        "miss_to_catch": 0,
+        "miss_to_miss": 0,
+        "parent_child_pairs": 97,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R3"
+      },
+      {
+        "attack_count": 97,
+        "benign_count": 0,
+        "catch_to_catch": 3,
+        "catch_to_miss": 2,
+        "detector_id": "dg_v1",
+        "miss_to_catch": 2,
+        "miss_to_miss": 90,
+        "parent_child_pairs": 97,
+        "population_type": "ATTACK_ONLY",
+        "regime": "R3"
+      }
+    ],
+    "F": [
+      {
+        "regime": "R0",
+        "source": "ALL",
+        "status": "SOURCE_DECOMPOSITION_UNAVAILABLE_IN_FROZEN_INPUTS"
+      },
+      {
+        "all_three_fn": 0,
+        "attacks": 400,
+        "dg_v1/fn": 399,
+        "dg_v1/fnr": 0.9975,
+        "dm_b_v1/fn": 0,
+        "dm_b_v1/fnr": 0.0,
+        "ds_v2/fn": 86,
+        "ds_v2/fnr": 0.215,
+        "lineages": 1,
+        "regime": "R1",
+        "source": "INJECAGENT_BASE",
+        "uncertainty_status": "ONE_CLUSTER_NOT_INDEPENDENT_SOURCE_INFERENCE"
+      },
+      {
+        "all_three_fn": 0,
+        "attacks": 400,
+        "dg_v1/fn": 365,
+        "dg_v1/fnr": 0.9125,
+        "dm_b_v1/fn": 0,
+        "dm_b_v1/fnr": 0.0,
+        "ds_v2/fn": 16,
+        "ds_v2/fnr": 0.04,
+        "lineages": 96,
+        "regime": "R1",
+        "source": "LLMAIL_INJECT",
+        "uncertainty_status": "NO_ADDITIONAL_FAMILY_CI_REQUESTED"
+      },
+      {
+        "all_three_fn": 0,
+        "attacks": 400,
+        "dg_v1/fn": 397,
+        "dg_v1/fnr": 0.9925,
+        "dm_b_v1/fn": 0,
+        "dm_b_v1/fnr": 0.0,
+        "ds_v2/fn": 39,
+        "ds_v2/fnr": 0.0975,
+        "etr/dg_v1": "UNDEFINED",
+        "etr/dg_v1/ci95": "OBSERVED_UNDEFINED",
+        "etr/ds_v2": "UNDEFINED",
+        "etr/ds_v2/ci95": "OBSERVED_UNDEFINED",
+        "lineages": 1,
+        "regime": "R2-DMB",
+        "source": "INJECAGENT_BASE",
+        "target_evasion_ci95": [
+          0.0,
+          0.0
+        ],
+        "target_evasion_count": 0,
+        "target_evasion_rate": 0.0
+      },
+      {
+        "all_three_fn": 0,
+        "attacks": 400,
+        "dg_v1/fn": 373,
+        "dg_v1/fnr": 0.9325,
+        "dm_b_v1/fn": 0,
+        "dm_b_v1/fnr": 0.0,
+        "ds_v2/fn": 2,
+        "ds_v2/fnr": 0.005,
+        "etr/dg_v1": "UNDEFINED",
+        "etr/dg_v1/ci95": "OBSERVED_UNDEFINED",
+        "etr/ds_v2": "UNDEFINED",
+        "etr/ds_v2/ci95": "OBSERVED_UNDEFINED",
+        "lineages": 96,
+        "regime": "R2-DMB",
+        "source": "LLMAIL_INJECT",
+        "target_evasion_ci95": [
+          0.0,
+          0.0
+        ],
+        "target_evasion_count": 0,
+        "target_evasion_rate": 0.0
+      },
+      {
+        "all_three_fn": 0,
+        "attacks": 314,
+        "dg_v1/fn": 312,
+        "dg_v1/fnr": 0.9936305732484076,
+        "dm_b_v1/fn": 0,
+        "dm_b_v1/fnr": 0.0,
+        "ds_v2/fn": 73,
+        "ds_v2/fnr": 0.23248407643312102,
+        "etr/dg_v1": 0.9863013698630136,
+        "etr/dg_v1/ci95": [
+          0.9863013698630136,
+          0.9863013698630136
+        ],
+        "etr/dm_b_v1": 0.0,
+        "etr/dm_b_v1/ci95": [
+          0.0,
+          0.0
+        ],
+        "lineages": 1,
+        "regime": "R2-D_S",
+        "source": "INJECAGENT_BASE",
+        "target_evasion_ci95": [
+          0.23248407643312102,
+          0.23248407643312102
+        ],
+        "target_evasion_count": 73,
+        "target_evasion_rate": 0.23248407643312102
+      },
+      {
+        "all_three_fn": 0,
+        "attacks": 384,
+        "dg_v1/fn": 355,
+        "dg_v1/fnr": 0.9244791666666666,
+        "dm_b_v1/fn": 0,
+        "dm_b_v1/fnr": 0.0,
+        "ds_v2/fn": 31,
+        "ds_v2/fnr": 0.08072916666666667,
+        "etr/dg_v1": 0.967741935483871,
+        "etr/dg_v1/ci95": [
+          0.8846153846153846,
+          1.0
+        ],
+        "etr/dm_b_v1": 0.0,
+        "etr/dm_b_v1/ci95": [
+          0.0,
+          0.0
+        ],
+        "lineages": 93,
+        "regime": "R2-D_S",
+        "source": "LLMAIL_INJECT",
+        "target_evasion_ci95": [
+          0.05398111528574254,
+          0.11286089238845144
+        ],
+        "target_evasion_count": 31,
+        "target_evasion_rate": 0.08072916666666667
+      },
+      {
+        "all_three_fn": 0,
+        "attacks": 1,
+        "dg_v1/fn": 1,
+        "dg_v1/fnr": 1.0,
+        "dg_v1/fnr/ci95": [
+          1.0,
+          1.0
+        ],
+        "dm_b_v1/fn": 0,
+        "dm_b_v1/fnr": 0.0,
+        "dm_b_v1/fnr/ci95": [
+          0.0,
+          0.0
+        ],
+        "ds_v2/fn": 1,
+        "ds_v2/fnr": 1.0,
+        "ds_v2/fnr/ci95": [
+          1.0,
+          1.0
+        ],
+        "lineages": 1,
+        "regime": "R3",
+        "source": "INJECAGENT_BASE",
+        "target_evasion_ci95": [
+          0.0,
+          0.0
+        ],
+        "target_evasion_count": 0,
+        "target_evasion_rate": 0.0
+      },
+      {
+        "all_three_fn": 0,
+        "attacks": 96,
+        "dg_v1/fn": 91,
+        "dg_v1/fnr": 0.9479166666666666,
+        "dg_v1/fnr/ci95": [
+          0.8958333333333334,
+          0.9895833333333334
+        ],
+        "dm_b_v1/fn": 0,
+        "dm_b_v1/fnr": 0.0,
+        "dm_b_v1/fnr/ci95": [
+          0.0,
+          0.0
+        ],
+        "ds_v2/fn": 4,
+        "ds_v2/fnr": 0.041666666666666664,
+        "ds_v2/fnr/ci95": [
+          0.010416666666666666,
+          0.08333333333333333
+        ],
+        "lineages": 96,
+        "regime": "R3",
+        "source": "LLMAIL_INJECT",
+        "target_evasion_ci95": [
+          0.0,
+          0.0
+        ],
+        "target_evasion_count": 0,
+        "target_evasion_rate": 0.0
+      }
+    ]
+  },
+  "undefined": "Undefined values remain UNDEFINED with null value; never zero."
+}
