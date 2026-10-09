@@ -1,0 +1,75 @@
+{
+  "binding": {
+    "all_three_failure_manifest.population_count": "equals result_bundle.core_metrics.common_mode.all_three_fn_count",
+    "common_mode": "equals result_bundle.core_metrics.common_mode",
+    "failure_patterns": "equals result_bundle.core_metrics.failure_patterns",
+    "prediction_manifest.prediction_batch_sha": "equals result_bundle.core_metrics.individual.provenance.prediction_batch_sha",
+    "uncertainty": "equals result_bundle.uncertainty"
+  },
+  "committed_reads_only": true,
+  "contract_version": "r3_result_input_contract_v1",
+  "entrypoint": "phase1_synthesis.validate_r3_handoff(handoff, CommittedR3Reader(root, phase2_authorized=True))",
+  "freeze_receipt_required": {
+    "artifact_hashes": "Exact map of six component role hashes",
+    "failure_population_freeze_receipt": "See verifier failure_population_input_contract_v1.json",
+    "frozen": true,
+    "protected_evaluation_accessed": false,
+    "status": "ACCEPTED",
+    "verifier_authoritative_queries_at_freeze": 0
+  },
+  "handoff_required": {
+    "artifacts": {
+      "all_three_failure_manifest": {
+        "hash": "SHA256 of committed artifact bytes",
+        "path_scope": "artifacts/research_protocol/r3/",
+        "required": true
+      },
+      "common_mode": {
+        "hash": "SHA256 of committed artifact bytes",
+        "path_scope": "artifacts/research_protocol/r3/",
+        "required": true
+      },
+      "failure_patterns": {
+        "hash": "SHA256 of committed artifact bytes",
+        "path_scope": "artifacts/research_protocol/r3/",
+        "required": true
+      },
+      "freeze_receipt": {
+        "hash": "SHA256 of committed artifact bytes",
+        "path_scope": "artifacts/research_protocol/r3/",
+        "required": true
+      },
+      "prediction_manifest": {
+        "hash": "SHA256 of committed artifact bytes",
+        "path_scope": "artifacts/research_protocol/r3/",
+        "required": true
+      },
+      "result_bundle": {
+        "hash": "SHA256 of committed artifact bytes",
+        "path_scope": "artifacts/research_protocol/r3/",
+        "required": true
+      },
+      "uncertainty": {
+        "hash": "SHA256 of committed artifact bytes",
+        "path_scope": "artifacts/research_protocol/r3/",
+        "required": true
+      }
+    },
+    "freeze_commit_sha": "40 lowercase hex, existing Git commit",
+    "frozen": true,
+    "status": "ACCEPTED"
+  },
+  "phase1_real_r3_reads": false,
+  "phase1_status": "AWAITING_FROZEN_R3_BUNDLE",
+  "rejection": [
+    "partial",
+    "not accepted",
+    "not frozen",
+    "uncommitted",
+    "missing freeze receipt",
+    "missing hash",
+    "hash mismatch",
+    "component mismatch"
+  ],
+  "synthetic_reader_requires": "Explicit SYNTHETIC_FIXTURE marker on handoff and reader"
+}

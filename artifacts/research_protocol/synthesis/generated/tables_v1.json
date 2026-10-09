@@ -1,0 +1,1124 @@
+{
+  "A": [
+    {
+      "ap": {
+        "status": "OBSERVED",
+        "value": 0.7315865803288281
+      },
+      "attack_count": 183,
+      "benign_count": 952,
+      "detector_id": "ds_v2",
+      "fn": 70,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.3825136612021858
+      },
+      "fp": 43,
+      "fpr": {
+        "status": "OBSERVED",
+        "value": 0.045168067226890755
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 0.6174863387978142
+      },
+      "regime": "R0",
+      "roc_auc": {
+        "status": "OBSERVED",
+        "value": 0.896760343481655
+      },
+      "status": "OBSERVED",
+      "threshold": 0.5585373573968287,
+      "threshold_id": "ds_v2_op3_cal_v1",
+      "tn": 909,
+      "tp": 113
+    },
+    {
+      "ap": {
+        "status": "OBSERVED",
+        "value": 0.9877044339233646
+      },
+      "attack_count": 183,
+      "benign_count": 952,
+      "detector_id": "dm_b_v1",
+      "fn": 2,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.01092896174863388
+      },
+      "fp": 58,
+      "fpr": {
+        "status": "OBSERVED",
+        "value": 0.06092436974789916
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 0.9890710382513661
+      },
+      "regime": "R0",
+      "roc_auc": {
+        "status": "OBSERVED",
+        "value": 0.9963493594158975
+      },
+      "status": "OBSERVED",
+      "threshold": 0.0004967087297700347,
+      "threshold_id": "dm_b_v1_op3_raw_v1",
+      "tn": 894,
+      "tp": 181
+    },
+    {
+      "ap": {
+        "status": "OBSERVED",
+        "value": 0.5006519683988974
+      },
+      "attack_count": 183,
+      "benign_count": 952,
+      "detector_id": "dg_v1",
+      "fn": 141,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.7704918032786885
+      },
+      "fp": 17,
+      "fpr": {
+        "status": "OBSERVED",
+        "value": 0.017857142857142856
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 0.22950819672131148
+      },
+      "regime": "R0",
+      "roc_auc": {
+        "status": "OBSERVED",
+        "value": 0.814953850392616
+      },
+      "status": "OBSERVED",
+      "threshold": 0.21291141211986545,
+      "threshold_id": "dg_v1_op3_raw_v1",
+      "tn": 935,
+      "tp": 42
+    },
+    {
+      "ap": {
+        "status": "OBSERVED",
+        "value": 0.9748953375370448
+      },
+      "attack_count": 800,
+      "benign_count": 1000,
+      "detector_id": "ds_v2",
+      "fn": 102,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.1275
+      },
+      "fp": 28,
+      "fpr": {
+        "status": "OBSERVED",
+        "value": 0.028
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 0.8725
+      },
+      "regime": "R1",
+      "roc_auc": {
+        "status": "OBSERVED",
+        "value": 0.97433625
+      },
+      "status": "OBSERVED",
+      "threshold": 0.5585373573968287,
+      "threshold_id": "ds_v2_op3_cal_v1",
+      "tn": 972,
+      "tp": 698
+    },
+    {
+      "ap": {
+        "status": "OBSERVED",
+        "value": 0.9999999999999911
+      },
+      "attack_count": 800,
+      "benign_count": 1000,
+      "detector_id": "dm_b_v1",
+      "fn": 0,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "fp": 132,
+      "fpr": {
+        "status": "OBSERVED",
+        "value": 0.132
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 1.0
+      },
+      "regime": "R1",
+      "roc_auc": {
+        "status": "OBSERVED",
+        "value": 1.0
+      },
+      "status": "OBSERVED",
+      "threshold": 0.0004967087297700347,
+      "threshold_id": "dm_b_v1_op3_raw_v1",
+      "tn": 868,
+      "tp": 800
+    },
+    {
+      "ap": {
+        "status": "OBSERVED",
+        "value": 0.37789020357305086
+      },
+      "attack_count": 800,
+      "benign_count": 1000,
+      "detector_id": "dg_v1",
+      "fn": 764,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.955
+      },
+      "fp": 207,
+      "fpr": {
+        "status": "OBSERVED",
+        "value": 0.207
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 0.045
+      },
+      "regime": "R1",
+      "roc_auc": {
+        "status": "OBSERVED",
+        "value": 0.40694875
+      },
+      "status": "OBSERVED",
+      "threshold": 0.21291141211986545,
+      "threshold_id": "dg_v1_op3_raw_v1",
+      "tn": 793,
+      "tp": 36
+    },
+    {
+      "ap": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "attack_count": 800,
+      "benign_count": 0,
+      "detector_id": "ds_v2",
+      "fn": 41,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.05125
+      },
+      "fp": null,
+      "fpr": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 0.94875
+      },
+      "regime": "R2-DMB",
+      "roc_auc": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "status": "OBSERVED",
+      "threshold": 0.5585373573968287,
+      "threshold_id": "ds_v2_op3_cal_v1",
+      "tn": null,
+      "tp": 759
+    },
+    {
+      "ap": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "attack_count": 800,
+      "benign_count": 0,
+      "detector_id": "dm_b_v1",
+      "fn": 0,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "fp": null,
+      "fpr": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 1.0
+      },
+      "regime": "R2-DMB",
+      "roc_auc": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "status": "OBSERVED",
+      "threshold": 0.0004967087297700347,
+      "threshold_id": "dm_b_v1_op3_raw_v1",
+      "tn": null,
+      "tp": 800
+    },
+    {
+      "ap": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "attack_count": 800,
+      "benign_count": 0,
+      "detector_id": "dg_v1",
+      "fn": 770,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.9625
+      },
+      "fp": null,
+      "fpr": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 0.0375
+      },
+      "regime": "R2-DMB",
+      "roc_auc": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "status": "OBSERVED",
+      "threshold": 0.21291141211986545,
+      "threshold_id": "dg_v1_op3_raw_v1",
+      "tn": null,
+      "tp": 30
+    },
+    {
+      "ap": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "attack_count": 698,
+      "benign_count": 0,
+      "detector_id": "ds_v2",
+      "fn": 104,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.1489971346704871
+      },
+      "fp": null,
+      "fpr": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 0.8510028653295129
+      },
+      "regime": "R2-D_S",
+      "roc_auc": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "status": "OBSERVED",
+      "threshold": 0.5585373573968287,
+      "threshold_id": "ds_v2_op3_cal_v1",
+      "tn": null,
+      "tp": 594
+    },
+    {
+      "ap": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "attack_count": 698,
+      "benign_count": 0,
+      "detector_id": "dm_b_v1",
+      "fn": 0,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "fp": null,
+      "fpr": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 1.0
+      },
+      "regime": "R2-D_S",
+      "roc_auc": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "status": "OBSERVED",
+      "threshold": 0.0004967087297700347,
+      "threshold_id": "dm_b_v1_op3_raw_v1",
+      "tn": null,
+      "tp": 698
+    },
+    {
+      "ap": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "attack_count": 698,
+      "benign_count": 0,
+      "detector_id": "dg_v1",
+      "fn": 667,
+      "fnr": {
+        "status": "OBSERVED",
+        "value": 0.9555873925501432
+      },
+      "fp": null,
+      "fpr": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "recall": {
+        "status": "OBSERVED",
+        "value": 0.044412607449856735
+      },
+      "regime": "R2-D_S",
+      "roc_auc": {
+        "status": "NOT_APPLICABLE",
+        "value": null
+      },
+      "status": "OBSERVED",
+      "threshold": 0.21291141211986545,
+      "threshold_id": "dg_v1_op3_raw_v1",
+      "tn": null,
+      "tp": 31
+    },
+    {
+      "ap": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "attack_count": null,
+      "detector_id": "ds_v2",
+      "fnr": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "fpr": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "recall": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "regime": "R3",
+      "roc_auc": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "status": "AWAITING_FROZEN_R3_BUNDLE"
+    },
+    {
+      "ap": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "attack_count": null,
+      "detector_id": "dm_b_v1",
+      "fnr": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "fpr": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "recall": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "regime": "R3",
+      "roc_auc": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "status": "AWAITING_FROZEN_R3_BUNDLE"
+    },
+    {
+      "ap": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "attack_count": null,
+      "detector_id": "dg_v1",
+      "fnr": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "fpr": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "recall": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "regime": "R3",
+      "roc_auc": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "status": "AWAITING_FROZEN_R3_BUNDLE"
+    }
+  ],
+  "B": [
+    {
+      "attack_count": 183,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.006748484577025292
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.02857142857142857
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.004180477171608588
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.01092896174863388
+      },
+      "left_detector": "ds_v2",
+      "regime": "R0",
+      "right_detector": "dm_b_v1",
+      "shared_fn": 2,
+      "status": "OBSERVED",
+      "union_fn": 70
+    },
+    {
+      "attack_count": 183,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": -0.010570635133924589
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.3270440251572327
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.29472364059840545
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.28415300546448086
+      },
+      "left_detector": "ds_v2",
+      "regime": "R0",
+      "right_detector": "dg_v1",
+      "shared_fn": 52,
+      "status": "OBSERVED",
+      "union_fn": 159
+    },
+    {
+      "attack_count": 183,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.002508286302965153
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.014184397163120567
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.008420675445668727
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.01092896174863388
+      },
+      "left_detector": "dm_b_v1",
+      "regime": "R0",
+      "right_detector": "dg_v1",
+      "shared_fn": 2,
+      "status": "OBSERVED",
+      "union_fn": 141
+    },
+    {
+      "attack_count": 800,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "left_detector": "ds_v2",
+      "regime": "R1",
+      "right_detector": "dm_b_v1",
+      "shared_fn": 0,
+      "status": "OBSERVED",
+      "union_fn": 102
+    },
+    {
+      "attack_count": 800,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.004487500000000005
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.13202614379084968
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.1217625
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.12625
+      },
+      "left_detector": "ds_v2",
+      "regime": "R1",
+      "right_detector": "dg_v1",
+      "shared_fn": 101,
+      "status": "OBSERVED",
+      "union_fn": 765
+    },
+    {
+      "attack_count": 800,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "left_detector": "dm_b_v1",
+      "regime": "R1",
+      "right_detector": "dg_v1",
+      "shared_fn": 0,
+      "status": "OBSERVED",
+      "union_fn": 764
+    },
+    {
+      "attack_count": 800,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "left_detector": "ds_v2",
+      "regime": "R2-DMB",
+      "right_detector": "dm_b_v1",
+      "shared_fn": 0,
+      "status": "OBSERVED",
+      "union_fn": 41
+    },
+    {
+      "attack_count": 800,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.0006718750000000023
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.05188067444876784
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.049328125
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.05
+      },
+      "left_detector": "ds_v2",
+      "regime": "R2-DMB",
+      "right_detector": "dg_v1",
+      "shared_fn": 40,
+      "status": "OBSERVED",
+      "union_fn": 771
+    },
+    {
+      "attack_count": 800,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "left_detector": "dm_b_v1",
+      "regime": "R2-DMB",
+      "right_detector": "dg_v1",
+      "shared_fn": 0,
+      "status": "OBSERVED",
+      "union_fn": 770
+    },
+    {
+      "attack_count": 698,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "left_detector": "ds_v2",
+      "regime": "R2-D_S",
+      "right_detector": "dm_b_v1",
+      "shared_fn": 0,
+      "status": "OBSERVED",
+      "union_fn": 104
+    },
+    {
+      "attack_count": 698,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.0037520217403798073
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.15246636771300448
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.14237978341721333
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.14613180515759314
+      },
+      "left_detector": "ds_v2",
+      "regime": "R2-D_S",
+      "right_detector": "dg_v1",
+      "shared_fn": 102,
+      "status": "OBSERVED",
+      "union_fn": 669
+    },
+    {
+      "attack_count": 698,
+      "ejf": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "fn_jaccard": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "independence_reference": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "jfn": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "left_detector": "dm_b_v1",
+      "regime": "R2-D_S",
+      "right_detector": "dg_v1",
+      "shared_fn": 0,
+      "status": "OBSERVED",
+      "union_fn": 667
+    },
+    {
+      "attack_count": null,
+      "ejf": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "fn_jaccard": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "independence_reference": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "jfn": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "left_detector": "ds_v2",
+      "regime": "R3",
+      "right_detector": "dm_b_v1",
+      "shared_fn": null,
+      "status": "AWAITING_FROZEN_R3_BUNDLE"
+    },
+    {
+      "attack_count": null,
+      "ejf": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "fn_jaccard": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "independence_reference": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "jfn": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "left_detector": "ds_v2",
+      "regime": "R3",
+      "right_detector": "dg_v1",
+      "shared_fn": null,
+      "status": "AWAITING_FROZEN_R3_BUNDLE"
+    },
+    {
+      "attack_count": null,
+      "ejf": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "fn_jaccard": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "independence_reference": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "jfn": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "left_detector": "dm_b_v1",
+      "regime": "R3",
+      "right_detector": "dg_v1",
+      "shared_fn": null,
+      "status": "AWAITING_FROZEN_R3_BUNDLE"
+    }
+  ],
+  "C": [
+    {
+      "all_three_fn": 2,
+      "all_three_jfn": {
+        "status": "OBSERVED",
+        "value": 0.01092896174863388
+      },
+      "attack_count": 183,
+      "ci95": {
+        "ci_lower": 0.0,
+        "ci_upper": 0.0273224043715847,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.01092896174863388,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      "regime": "R0",
+      "status": "OBSERVED"
+    },
+    {
+      "all_three_fn": 0,
+      "all_three_jfn": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "attack_count": 800,
+      "ci95": {
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.0,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      "regime": "R1",
+      "status": "OBSERVED"
+    },
+    {
+      "all_three_fn": 0,
+      "all_three_jfn": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "attack_count": 800,
+      "ci95": {
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.0,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      "regime": "R2-DMB",
+      "status": "OBSERVED"
+    },
+    {
+      "all_three_fn": 0,
+      "all_three_jfn": {
+        "status": "OBSERVED",
+        "value": 0.0
+      },
+      "attack_count": 698,
+      "ci95": {
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "metric_id": "all_three/jfn",
+        "point_estimate": 0.0,
+        "replicates_invalid": 0,
+        "replicates_requested": 1000,
+        "replicates_valid": 1000,
+        "status": "ESTIMATED"
+      },
+      "regime": "R2-D_S",
+      "status": "OBSERVED"
+    },
+    {
+      "all_three_fn": null,
+      "all_three_jfn": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "attack_count": null,
+      "ci95": {
+        "status": "NOT_YET_OBSERVED"
+      },
+      "regime": "R3",
+      "status": "AWAITING_FROZEN_R3_BUNDLE"
+    }
+  ],
+  "D": [
+    {
+      "attack_count": 800,
+      "regime": "R2-DMB",
+      "status": "OBSERVED",
+      "target_detector": "dm_b_v1",
+      "target_evasion_count": 0,
+      "target_evasion_lineage_count": 0,
+      "target_evasion_rate": {
+        "denominator": 800,
+        "numerator": 0,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.0
+      },
+      "transfers": [
+        {
+          "etr": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "joint_evasion_count": 0,
+          "target_detector": "dm_b_v1",
+          "target_evasion_count": 0,
+          "transfer_detector": "ds_v2",
+          "valid_attempt_count": 800
+        },
+        {
+          "etr": {
+            "denominator": 0,
+            "numerator": 0,
+            "reason": "ZERO_DENOMINATOR",
+            "status": "UNDEFINED",
+            "value": null
+          },
+          "joint_evasion_count": 0,
+          "target_detector": "dm_b_v1",
+          "target_evasion_count": 0,
+          "transfer_detector": "dg_v1",
+          "valid_attempt_count": 800
+        }
+      ],
+      "unique_lineage_count": 97,
+      "valid_attempt_count": 800,
+      "valid_attempt_lineage_count": 97
+    },
+    {
+      "attack_count": 698,
+      "regime": "R2-D_S",
+      "status": "OBSERVED",
+      "target_detector": "ds_v2",
+      "target_evasion_count": 104,
+      "target_evasion_lineage_count": 28,
+      "target_evasion_rate": {
+        "denominator": 698,
+        "numerator": 104,
+        "reason": null,
+        "status": "DEFINED",
+        "value": 0.1489971346704871
+      },
+      "transfers": [
+        {
+          "etr": {
+            "denominator": 104,
+            "numerator": 0,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.0
+          },
+          "joint_evasion_count": 0,
+          "target_detector": "ds_v2",
+          "target_evasion_count": 104,
+          "transfer_detector": "dm_b_v1",
+          "valid_attempt_count": 698
+        },
+        {
+          "etr": {
+            "denominator": 104,
+            "numerator": 102,
+            "reason": null,
+            "status": "DEFINED",
+            "value": 0.9807692307692307
+          },
+          "joint_evasion_count": 102,
+          "target_detector": "ds_v2",
+          "target_evasion_count": 104,
+          "transfer_detector": "dg_v1",
+          "valid_attempt_count": 698
+        }
+      ],
+      "unique_lineage_count": 94,
+      "valid_attempt_count": 698,
+      "valid_attempt_lineage_count": 94
+    },
+    {
+      "attack_count": null,
+      "regime": "R3",
+      "status": "AWAITING_FROZEN_R3_BUNDLE",
+      "target_detector": "ALL",
+      "target_evasion_rate": {
+        "status": "NOT_YET_OBSERVED",
+        "value": null
+      },
+      "transfers": []
+    }
+  ],
+  "E": [
+    {
+      "attack_count": 800,
+      "catch_to_catch": 23,
+      "catch_to_miss": 13,
+      "detector_id": "dg_v1",
+      "miss_to_catch": 7,
+      "miss_to_miss": 757,
+      "regime": "R2-DMB",
+      "status": "OBSERVED"
+    },
+    {
+      "attack_count": 800,
+      "catch_to_catch": 800,
+      "catch_to_miss": 0,
+      "detector_id": "dm_b_v1",
+      "miss_to_catch": 0,
+      "miss_to_miss": 0,
+      "regime": "R2-DMB",
+      "status": "OBSERVED"
+    },
+    {
+      "attack_count": 800,
+      "catch_to_catch": 694,
+      "catch_to_miss": 4,
+      "detector_id": "ds_v2",
+      "miss_to_catch": 65,
+      "miss_to_miss": 37,
+      "regime": "R2-DMB",
+      "status": "OBSERVED"
+    },
+    {
+      "attack_count": 698,
+      "catch_to_catch": 24,
+      "catch_to_miss": 11,
+      "detector_id": "dg_v1",
+      "miss_to_catch": 7,
+      "miss_to_miss": 656,
+      "regime": "R2-D_S",
+      "status": "OBSERVED"
+    },
+    {
+      "attack_count": 698,
+      "catch_to_catch": 698,
+      "catch_to_miss": 0,
+      "detector_id": "dm_b_v1",
+      "miss_to_catch": 0,
+      "miss_to_miss": 0,
+      "regime": "R2-D_S",
+      "status": "OBSERVED"
+    },
+    {
+      "attack_count": 698,
+      "catch_to_catch": 594,
+      "catch_to_miss": 104,
+      "detector_id": "ds_v2",
+      "miss_to_catch": 0,
+      "miss_to_miss": 0,
+      "regime": "R2-D_S",
+      "status": "OBSERVED"
+    },
+    {
+      "attack_count": null,
+      "regime": "R3",
+      "status": "AWAITING_FROZEN_R3_BUNDLE",
+      "transition_status": "NOT_YET_OBSERVED"
+    }
+  ]
+}

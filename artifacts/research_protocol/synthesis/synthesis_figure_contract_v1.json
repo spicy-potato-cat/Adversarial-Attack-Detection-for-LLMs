@@ -1,0 +1,57 @@
+{
+  "backend": "Existing Matplotlib Agg; SVG Date omitted and hash salt fixed",
+  "contract_version": "synthesis_figure_contract_v1",
+  "exports": {
+    "01_fnr": {
+      "data_export": "generated/figure_data_v1.json",
+      "file": "01_fnr.svg",
+      "rows": 15
+    },
+    "02_pairwise_jfn": {
+      "data_export": "generated/figure_data_v1.json",
+      "file": "02_pairwise_jfn.svg",
+      "rows": 15
+    },
+    "03_ejf": {
+      "data_export": "generated/figure_data_v1.json",
+      "file": "03_ejf.svg",
+      "rows": 15
+    },
+    "04_fn_jaccard": {
+      "data_export": "generated/figure_data_v1.json",
+      "file": "04_fn_jaccard.svg",
+      "rows": 15
+    },
+    "05_all_three_jfn": {
+      "data_export": "generated/figure_data_v1.json",
+      "file": "05_all_three_jfn.svg",
+      "rows": 5
+    },
+    "06_targeted_evasion": {
+      "data_export": "generated/figure_data_v1.json",
+      "file": "06_targeted_evasion.svg",
+      "rows": 3
+    },
+    "07_transfer_matrix": {
+      "data_export": "generated/figure_data_v1.json",
+      "file": "07_transfer_matrix.svg",
+      "rows": 5
+    },
+    "08_source_failure": {
+      "data_export": "generated/figure_data_v1.json",
+      "file": "08_source_failure.svg",
+      "rows": 20
+    },
+    "09_verifier_recovery": {
+      "data_export": "generated/figure_data_v1.json",
+      "file": "09_verifier_recovery.svg",
+      "rows": 3
+    }
+  },
+  "generator": "python -B -m detection_service.research_protocol.phase1_synthesis --output artifacts/research_protocol/synthesis/generated",
+  "rate_unit": "fraction",
+  "source": "Frozen family-group core metrics or paired transition terminal counts; no new uncertainty",
+  "transfer": "Frozen conditional ETR, not detector-independent transfer probability",
+  "unavailable": "Excluded from numeric bars and labeled NOT_YET_OBSERVED/UNDEFINED; never imputed zero",
+  "verifier": "Placeholder only; no recovery numerator or denominator before failure freeze"
+}
