@@ -1,0 +1,530 @@
+{
+  "$defs": {
+    "OverlapMetric": {
+      "properties": {
+        "catch_jaccard": {
+          "additionalProperties": true,
+          "title": "Catch Jaccard",
+          "type": "object"
+        },
+        "left_verifier": {
+          "enum": [
+            "V1",
+            "V2",
+            "V3"
+          ],
+          "title": "Left Verifier",
+          "type": "string"
+        },
+        "population_count": {
+          "title": "Population Count",
+          "type": "integer"
+        },
+        "right_verifier": {
+          "enum": [
+            "V1",
+            "V2",
+            "V3"
+          ],
+          "title": "Right Verifier",
+          "type": "string"
+        },
+        "shared_catches": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Shared Catches"
+        },
+        "status": {
+          "enum": [
+            "COMPLETE",
+            "INCOMPLETE",
+            "NOT_YET_OBSERVED"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "left_verifier",
+        "right_verifier",
+        "population_count",
+        "shared_catches",
+        "catch_jaccard",
+        "status"
+      ],
+      "title": "OverlapMetric",
+      "type": "object"
+    },
+    "PredictionResult": {
+      "additionalProperties": false,
+      "properties": {
+        "decision": {
+          "anyOf": [
+            {
+              "enum": [
+                "ATTACK",
+                "BENIGN"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Decision"
+        },
+        "evidence_kind": {
+          "enum": [
+            "SYNTHETIC_FIXTURE",
+            "FROZEN_FAILURE_EXECUTION"
+          ],
+          "title": "Evidence Kind",
+          "type": "string"
+        },
+        "input_coverage": {
+          "title": "Input Coverage",
+          "type": "number"
+        },
+        "latency_ms": {
+          "title": "Latency Ms",
+          "type": "number"
+        },
+        "lineage_id": {
+          "title": "Lineage Id",
+          "type": "string"
+        },
+        "model_revision": {
+          "title": "Model Revision",
+          "type": "string"
+        },
+        "normalized_probability": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Normalized Probability"
+        },
+        "probability_semantics": {
+          "enum": [
+            "NATIVE_CLASS_SOFTMAX",
+            "UNAVAILABLE"
+          ],
+          "title": "Probability Semantics",
+          "type": "string"
+        },
+        "provenance": {
+          "additionalProperties": true,
+          "title": "Provenance",
+          "type": "object"
+        },
+        "raw_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Raw Score"
+        },
+        "regime": {
+          "title": "Regime",
+          "type": "string"
+        },
+        "sample_id": {
+          "title": "Sample Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "OK",
+            "ERROR",
+            "INVALID_OUTPUT",
+            "INPUT_LIMIT_EXCEEDED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "truncation": {
+          "title": "Truncation",
+          "type": "boolean"
+        },
+        "verifier_id": {
+          "enum": [
+            "V1",
+            "V2",
+            "V3"
+          ],
+          "title": "Verifier Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sample_id",
+        "lineage_id",
+        "regime",
+        "verifier_id",
+        "model_revision",
+        "raw_score",
+        "normalized_probability",
+        "probability_semantics",
+        "decision",
+        "status",
+        "input_coverage",
+        "truncation",
+        "latency_ms",
+        "provenance",
+        "evidence_kind"
+      ],
+      "title": "PredictionResult",
+      "type": "object"
+    },
+    "RecoveryMetric": {
+      "additionalProperties": false,
+      "properties": {
+        "ci95": {
+          "additionalProperties": true,
+          "title": "Ci95",
+          "type": "object"
+        },
+        "population_count": {
+          "title": "Population Count",
+          "type": "integer"
+        },
+        "recovered_count": {
+          "title": "Recovered Count",
+          "type": "integer"
+        },
+        "recovery": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Recovery"
+        },
+        "status": {
+          "enum": [
+            "COMPLETE",
+            "INCOMPLETE",
+            "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "population_count",
+        "recovered_count",
+        "status",
+        "recovery",
+        "ci95"
+      ],
+      "title": "RecoveryMetric",
+      "type": "object"
+    },
+    "SourceRecovery": {
+      "properties": {
+        "group_id": {
+          "title": "Group Id",
+          "type": "string"
+        },
+        "group_type": {
+          "enum": [
+            "source",
+            "attack_family"
+          ],
+          "title": "Group Type",
+          "type": "string"
+        },
+        "lineage_count": {
+          "title": "Lineage Count",
+          "type": "integer"
+        },
+        "metric": {
+          "$ref": "#/$defs/RecoveryMetric"
+        },
+        "verifier_id": {
+          "enum": [
+            "V1",
+            "V2",
+            "V3"
+          ],
+          "title": "Verifier Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "verifier_id",
+        "group_type",
+        "group_id",
+        "lineage_count",
+        "metric"
+      ],
+      "title": "SourceRecovery",
+      "type": "object"
+    },
+    "UncertaintyResult": {
+      "properties": {
+        "confidence_level": {
+          "const": 0.95,
+          "default": 0.95,
+          "title": "Confidence Level",
+          "type": "number"
+        },
+        "intervals": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Intervals",
+          "type": "array"
+        },
+        "lineage_clustered": {
+          "title": "Lineage Clustered",
+          "type": "boolean"
+        },
+        "method": {
+          "title": "Method",
+          "type": "string"
+        },
+        "population_sha256": {
+          "title": "Population Sha256",
+          "type": "string"
+        },
+        "provenance": {
+          "additionalProperties": true,
+          "title": "Provenance",
+          "type": "object"
+        },
+        "replicates": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Replicates"
+        },
+        "seed": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Seed"
+        },
+        "status": {
+          "enum": [
+            "SUPPLIED_FROZEN_INTERVAL",
+            "NOT_YET_OBSERVED",
+            "UNDEFINED"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "population_sha256",
+        "method",
+        "lineage_clustered",
+        "replicates",
+        "seed",
+        "intervals",
+        "provenance"
+      ],
+      "title": "UncertaintyResult",
+      "type": "object"
+    },
+    "UniqueRecovery": {
+      "properties": {
+        "compared_verifier_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Compared Verifier Ids",
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "COMPLETE",
+            "INCOMPLETE",
+            "NOT_YET_OBSERVED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "unique_catches": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unique Catches"
+        },
+        "unique_sample_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unique Sample Ids",
+          "type": "array"
+        },
+        "verifier_id": {
+          "enum": [
+            "V1",
+            "V2",
+            "V3"
+          ],
+          "title": "Verifier Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "verifier_id",
+        "compared_verifier_ids",
+        "unique_catches",
+        "unique_sample_ids",
+        "status"
+      ],
+      "title": "UniqueRecovery",
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact_names": {
+    "verifier_overlap_v1": "OverlapMetric",
+    "verifier_predictions_v1": "PredictionResult",
+    "verifier_recovery_metrics_v1": "RecoveryMetric",
+    "verifier_result_bundle_v1": "VerifierResultBundle",
+    "verifier_source_analysis_v1": "SourceRecovery",
+    "verifier_uncertainty_v1": "UncertaintyResult",
+    "verifier_unique_recovery_v1": "UniqueRecovery"
+  },
+  "properties": {
+    "evidence_kind": {
+      "enum": [
+        "SYNTHETIC_FIXTURE",
+        "FROZEN_FAILURE_EXECUTION"
+      ],
+      "title": "Evidence Kind",
+      "type": "string"
+    },
+    "freeze_commit_sha": {
+      "title": "Freeze Commit Sha",
+      "type": "string"
+    },
+    "overlap": {
+      "items": {
+        "$ref": "#/$defs/OverlapMetric"
+      },
+      "title": "Overlap",
+      "type": "array"
+    },
+    "pending_verifier_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Pending Verifier Ids",
+      "type": "array"
+    },
+    "population_sha256": {
+      "title": "Population Sha256",
+      "type": "string"
+    },
+    "predictions": {
+      "items": {
+        "$ref": "#/$defs/PredictionResult"
+      },
+      "title": "Predictions",
+      "type": "array"
+    },
+    "provenance": {
+      "additionalProperties": true,
+      "title": "Provenance",
+      "type": "object"
+    },
+    "recovery": {
+      "additionalProperties": {
+        "$ref": "#/$defs/RecoveryMetric"
+      },
+      "title": "Recovery",
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "verifier_result_bundle_v1",
+      "default": "verifier_result_bundle_v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_analysis": {
+      "items": {
+        "$ref": "#/$defs/SourceRecovery"
+      },
+      "title": "Source Analysis",
+      "type": "array"
+    },
+    "uncertainty": {
+      "$ref": "#/$defs/UncertaintyResult"
+    },
+    "unique_recovery": {
+      "items": {
+        "$ref": "#/$defs/UniqueRecovery"
+      },
+      "title": "Unique Recovery",
+      "type": "array"
+    },
+    "unrecovered_sample_ids": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Unrecovered Sample Ids"
+    }
+  },
+  "required": [
+    "population_sha256",
+    "freeze_commit_sha",
+    "evidence_kind",
+    "predictions",
+    "recovery",
+    "overlap",
+    "unique_recovery",
+    "source_analysis",
+    "uncertainty",
+    "unrecovered_sample_ids",
+    "pending_verifier_ids",
+    "provenance"
+  ],
+  "title": "VerifierResultBundle",
+  "type": "object"
+}

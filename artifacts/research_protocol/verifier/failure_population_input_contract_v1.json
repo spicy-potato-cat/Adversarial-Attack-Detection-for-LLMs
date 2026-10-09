@@ -1,0 +1,47 @@
+{
+  "automatic_broadening": false,
+  "contract_version": "failure_population_input_contract_v1",
+  "empty_status": "VERIFIER_RECOVERY_UNDEFINED_EMPTY_FAILURE_POPULATION",
+  "entrypoint": "verifier_phase2.load_failure_population(handoff, committed_reader)",
+  "manifest_required": {
+    "partition": "INTERNAL_TEST",
+    "population_count": "equals len(samples)",
+    "regime": "R3",
+    "samples": "array, unique sample IDs",
+    "status": "ACCEPTED"
+  },
+  "phase1_authoritative_queries": 0,
+  "phase2": "Verify frozen_at < first_verifier_query_at before query; record actual first-query timestamp in execution receipt",
+  "receipt_required": {
+    "frozen": true,
+    "frozen_at": "timezone-aware ISO timestamp",
+    "manifest_sha256": "matches committed manifest bytes",
+    "protected_evaluation_accessed": false,
+    "r3_status": "ACCEPTED",
+    "status": "ACCEPTED",
+    "verifier_authoritative_queries_at_freeze": 0
+  },
+  "replacement_population": false,
+  "sample_required": {
+    "attack_family": "string or null",
+    "base_decisions": [
+      "BENIGN",
+      "BENIGN",
+      "BENIGN"
+    ],
+    "lineage_id": "nonempty inherited lineage",
+    "parent_sample_id": "nonempty parent ID",
+    "partition": "INTERNAL_TEST",
+    "regime": "R3",
+    "sample_id": "nonempty string",
+    "source": "nonempty string",
+    "text": "forbidden until execution",
+    "text_ref": {
+      "path": "relative local UTF-8 text file",
+      "sha256": "64 lowercase hex"
+    },
+    "truth_label": 1
+  },
+  "text_resolution": "resolve_local_text(..., phase2_authorized=True); root containment and SHA256 check; no text read by manifest loader",
+  "upstream": "Full accepted R3 handoff validated against r3_result_input_contract_v1.json before manifest use"
+}
